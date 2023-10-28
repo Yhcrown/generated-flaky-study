@@ -1,0 +1,40 @@
+[TIME]: 0:00:01.383323
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class net.tuis.ubench.TaskRunner specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.NonClosingSystemOut specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.InlineFormatter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.ParallelExecutionModel specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.SequentialExecutionModel specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.ScaleControl specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface net.tuis.ubench.TaskExecutionModel specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface net.tuis.ubench.Task specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.StdoutHandler specified via --testclass or --classlist.
+Cannot instantiate non-accessible class net.tuis.ubench.InterleavedExecutionModel specified via --testclass or --classlist.
+
+Will try to generate tests for 11 out of 21 classes.
+PUBLIC MEMBERS=114
+
+Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
+java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
+	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
+	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
+	at randoop.main.GenTests.handle(GenTests.java:406)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
+	... 5 more
+
+Randoop failed.
+No sequences generated.

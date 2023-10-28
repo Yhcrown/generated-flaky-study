@@ -1,0 +1,11 @@
+[TIME]: 0:00:01.700432
+
+Throwable thrown while handling command: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "java.util.Properties.getProperty(String)" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "java.util.Properties.getProperty(String)" is null
+	at randoop.Globals.getRandoopVersion(Globals.java:50)
+	at randoop.main.GenTests.handle(GenTests.java:198)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+
+Randoop failed.
+No sequences generated.

@@ -1,0 +1,153 @@
+[TIME]: 0:00:12.626312
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class io.muserver.Http2ConnectionFlowControl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.NettyRequestAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http1Headers specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.FormRequestBodyReader specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.HttpExchangeState specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.PreReader specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.InvalidHttpRequestException specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.HttpExchange specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.RateLimiterImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.BackPressureHandler specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.ChunkedHttpOutputStream specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.RequestBodyReader specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuUploadedFile specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.SniKeyManager specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.NettyResponseAdaptor specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http1Connection specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.ResponseStateChangeListener specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.RequestStateChangeListener specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http1Response specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.ServerSettings specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.HttpExchangeStateChangeListener specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http2Response specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.AsyncSsePublisherImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Headtils specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuWebSocketSessionImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuCompressorHttp2ConnectionEncoder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.AlpnHandler specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http2ConnectionBuilder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.NettyHandlerAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.SSLInfoImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.RequestBodyReaderInputStreamAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuExceptionFiredEvent specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.UnexpectedMessageException specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.SslContextProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.SelectiveHttpContentCompressor specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.RequestState specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.ExchangeUpgradeEvent specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuGzipHttp2ConnectionEncoder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http2To1RequestAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http2Headers specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.ParseUtils specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuServerImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.Exchange specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.Http2Connection specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.MuStatsImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.SsePublisherImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.NettyRequestParameters specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.openapi.OpenApiUtils specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.openapi.Jsonizer specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.openapi.JsonWriter specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.handlers.ResourceProviderFactory specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.handlers.ClasspathCache specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.handlers.DirectoryLister specified via --testclass or --classlist.
+Cannot instantiate non-accessible interface io.muserver.handlers.ResourceProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.handlers.AsyncFileProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.handlers.ClasspathResourceProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.handlers.BytesRange specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.HtmlDocumentor specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxRSResponse specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.SchemaReference specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.CombinedMediaType specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.rest.ResourceMethod specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.BuiltInParamConverterProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.StringEntityProviders specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MuPathSegment specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ApiResponseObj specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.rest.MuUriBuilder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ResourceMethodParam specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxRSRequest specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxRsHttpHeadersAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.LowercasedMultivaluedHashMap specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.FilterManagerThing specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxOutboundSseEvent specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.LinkHeaderDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.Jaxutils specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MuVariantListBuilder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxSseEventSinkImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ResourceClass specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.EntityProviders specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.rest.RequestMatcher specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.AsyncResponseAdapter specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.CustomExceptionMapper specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.NullOutputStream specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.SseBroadcasterImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.BinaryEntityProviders specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.EmptyInputStream specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.CookieHeaderDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.OpenApiDocumentor specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MuSecurityContext specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxClassLocator specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxSseImpl specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.NotImplementedException specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxOutboundSseEventBuilder specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ObjWithType specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.CacheControlHeaderDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MediaTypeHeaderDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.JaxMethodLocator specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.DescriptionData specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ReadOnlyMultivaluedMap specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.EntityTagDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MuUriInfo specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.ProviderWrapper specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.rest.NotMatchedException specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.PrimitiveEntityProvider specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.NewCookieHeaderDelegate specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.LazyAccessOutputStream specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.LazyAccessInputStream specified via --testclass or --classlist.
+Cannot instantiate non-accessible class io.muserver.rest.MediaTypeDeterminer specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class io.muserver.rest.CompositeSchemaObjectCustomizer specified via --testclass or --classlist.
+
+Will try to generate tests for 155 out of 256 classes.
+PUBLIC MEMBERS=1609
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:36:11.453951Z     73.4M used)
+Progress update: steps=1000, test inputs generated=337, failing inputs=3      (2023-10-28T04:36:16.825412Z     133M used)
+Progress update: steps=1378, test inputs generated=509, failing inputs=4      (2023-10-28T04:36:20.327293Z     191M used)
+Normal method executions: 11029
+Exceptional method executions: 38
+
+Average method execution time (normal termination):      0.152
+Average method execution time (exceptional termination): 0.0701
+Approximate memory usage 191M
+Explorer = ForwardGenerator(steps: 1378, null steps: 869, num_sequences_generated: 509;
+    allSequences: 509, regresson seqs: 496, error seqs: 4=4=4, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 9;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 46)
+
+Error-revealing test output:
+Error-revealing test count: 4
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/randoop_tests/3redronin-mu-server/84e2fb234fd5cf732436ce8f6662b45385c9981a/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/randoop_tests/3redronin-mu-server/84e2fb234fd5cf732436ce8f6662b45385c9981a/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 359 regression sequences.
+
+Regression test output:
+Regression test count: 359
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/randoop_tests/3redronin-mu-server/84e2fb234fd5cf732436ce8f6662b45385c9981a/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/randoop_tests/3redronin-mu-server/84e2fb234fd5cf732436ce8f6662b45385c9981a/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 8).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

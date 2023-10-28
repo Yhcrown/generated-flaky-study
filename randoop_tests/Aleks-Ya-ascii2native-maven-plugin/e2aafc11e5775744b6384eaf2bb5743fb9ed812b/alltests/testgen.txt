@@ -1,0 +1,31 @@
+[TIME]: 0:00:01.436452
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class ru.yaal.maven.ascii2native.Converter specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 2 classes.
+PUBLIC MEMBERS=11
+
+Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/Aleks-Ya-ascii2native-maven-plugin/e2aafc11e5775744b6384eaf2bb5743fb9ed812b/alltests/literal.log (No such file or directory)
+java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/Aleks-Ya-ascii2native-maven-plugin/e2aafc11e5775744b6384eaf2bb5743fb9ed812b/alltests/literal.log (No such file or directory)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
+	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
+	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
+	at randoop.main.GenTests.handle(GenTests.java:406)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/Aleks-Ya-ascii2native-maven-plugin/e2aafc11e5775744b6384eaf2bb5743fb9ed812b/alltests/literal.log (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
+	... 5 more
+
+Randoop failed.
+No sequences generated.

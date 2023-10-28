@@ -1,0 +1,32 @@
+[TIME]: 0:00:02.310248
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+Cannot instantiate non-accessible class org.sevensource.magnolia.responsivedam.imaging.operation.XYPair specified via --testclass or --classlist.
+
+Will try to generate tests for 42 out of 43 classes.
+PUBLIC MEMBERS=736
+
+Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/sevensource-magnolia-responsive-dam/dd10a84c2ab9b10f5479fd94888392804760b0b6/alltests/literal.log (No such file or directory)
+java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/sevensource-magnolia-responsive-dam/dd10a84c2ab9b10f5479fd94888392804760b0b6/alltests/literal.log (No such file or directory)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
+	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
+	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
+	at randoop.main.GenTests.handle(GenTests.java:406)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/sevensource-magnolia-responsive-dam/dd10a84c2ab9b10f5479fd94888392804760b0b6/alltests/literal.log (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
+	... 5 more
+
+Randoop failed.
+No sequences generated.

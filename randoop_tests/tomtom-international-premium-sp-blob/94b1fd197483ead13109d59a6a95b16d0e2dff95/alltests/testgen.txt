@@ -1,0 +1,40 @@
+[TIME]: 0:00:09.619612
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class com.tomtom.traffic.iqr.io.premium.blob.ZigZagEncoding specified via --testclass or --classlist; will use its static methods.
+Cannot instantiate non-accessible class com.tomtom.traffic.iqr.io.premium.blob.VarIntEncoding specified via --testclass or --classlist; will use its static methods.
+
+Will try to generate tests for 5 classes.
+PUBLIC MEMBERS=32
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:36:43.374171Z     13.1M used)
+Progress update: steps=747, test inputs generated=557, failing inputs=0      (2023-10-28T04:36:50.831268Z     186M used)
+Normal method executions: 300554
+Exceptional method executions: 62
+
+Average method execution time (normal termination):      6.50e-05
+Average method execution time (exceptional termination): 0.0620
+Approximate memory usage 186M
+Explorer = ForwardGenerator(steps: 747, null steps: 190, num_sequences_generated: 557;
+    allSequences: 557, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 57;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 109)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 322 regression sequences.
+
+Regression test output:
+Regression test count: 322
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/randoop_tests/tomtom-international-premium-sp-blob/94b1fd197483ead13109d59a6a95b16d0e2dff95/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/randoop_tests/tomtom-international-premium-sp-blob/94b1fd197483ead13109d59a6a95b16d0e2dff95/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 56).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

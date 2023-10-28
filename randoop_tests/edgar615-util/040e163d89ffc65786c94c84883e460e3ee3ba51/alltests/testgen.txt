@@ -1,0 +1,50 @@
+[TIME]: 0:00:01.431924
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.RoundRobinStrategy specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.WeightRoundbinStrategy specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.StickyStrategy specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.RandomStrategy specified via --testclass or --classlist.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Cannot instantiate non-accessible class com.github.edgar615.util.crypto.CryptoPublicKey specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.crypto.CryptoMac specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.crypto.CryptoSignature specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.crypto.CryptoPrivateKey specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.crypto.CryptoNone specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.sort.SortUtils specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.reflect.PropertyDescriptorCache specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.LikeParser specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.BetweenParser specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.LoeParser specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.SearchConvert specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.GoeParser specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.github.edgar615.util.search.EqParser specified via --testclass or --classlist.
+
+Will try to generate tests for 110 out of 127 classes.
+PUBLIC MEMBERS=791
+
+Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
+java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
+	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
+	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
+	at randoop.main.GenTests.handle(GenTests.java:406)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
+	... 5 more
+
+Randoop failed.
+No sequences generated.

@@ -1,0 +1,40 @@
+[TIME]: 0:00:01.790504
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/private/tmp/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/private/tmp/jars/slf4j-jcl-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/private/tmp/jars/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/private/tmp/jars/logback-classic-1.2.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:WARN No appenders could be found for logger (com.alipay.sofa.common.tracer.TracerIdAdapter).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+Will try to generate tests for 88 classes.
+PUBLIC MEMBERS=1280
+
+Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/alipay-sofa-common-tools/e0151950768fd6c7c89a6024b2dc8c76f6b23f42/alltests/literal.log (No such file or directory)
+java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/alipay-sofa-common-tools/e0151950768fd6c7c89a6024b2dc8c76f6b23f42/alltests/literal.log (No such file or directory)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
+	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
+	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
+	at randoop.main.GenTests.handle(GenTests.java:406)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/alipay-sofa-common-tools/e0151950768fd6c7c89a6024b2dc8c76f6b23f42/alltests/literal.log (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
+	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
+	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
+	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
+	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
+	... 5 more
+
+Randoop failed.
+No sequences generated.

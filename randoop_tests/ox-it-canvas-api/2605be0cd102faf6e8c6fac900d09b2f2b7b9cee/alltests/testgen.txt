@@ -1,0 +1,198 @@
+[TIME]: 0:00:10.654600
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/private/tmp/jars/slf4j-log4j12-1.7.27.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/private/tmp/jars/slf4j-simple-1.7.27.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+
+Will try to generate tests for 236 classes.
+PUBLIC MEMBERS=2956
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:38:34.738631Z     37.9M used)DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing content migrations for the group
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/groups//content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/groups//content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/groups//content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts//content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/accounts//content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the group
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/groups/course_progress/content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/groups/course_progress/content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.SelectiveDataImpl        ] listing the items available for a content migration for the group
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/accounts/conclude/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/accounts/conclude/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/accounts/conclude/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.interfaces.CourseReader       ] getting course settings for hi!
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v0/courses/hi!/settings?per_page=10
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v0/courses/hi!/settings?per_page=10
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing content migrations for the user
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/users/conclude/content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/users/conclude/content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/users/conclude/content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] updating course content migration
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts//content_migrations/0?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/accounts//content_migrations/0?per_page=-1
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing a migration issue for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/accounts//content_migrations/0/migration_issues/0?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/accounts//content_migrations/0/migration_issues/0?per_page=0
+DEBUG [edu.ksu.canvas.impl.AccountImpl              ] creating account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress/api/v100/accounts/conclude/api/v1/course_progress/sub_accounts?per_page=100
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v-1/accounts/deleted/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v-1/accounts/deleted/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v-1/accounts/deleted/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.interfaces.QuizReader         ] Getting quizzes for course conclude
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v0/courses/conclude/quizzes?per_page=10
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v0/courses/conclude/quizzes?per_page=10
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v0/courses/conclude/quizzes?per_page=10
+DEBUG [edu.ksu.canvas.model.report.AccountReport    ] Deleting report ID 1 for report  on behalf of account 
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/accounts//reports//1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing a migration issue for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/users/conclude/content_migrations/-1/migration_issues/10?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/users/conclude/content_migrations/-1/migration_issues/10?per_page=0
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] updating course content migration
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v-1/courses/conclude/api/v1/course_progress/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v-1/courses/conclude/api/v1/course_progress/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v-1/courses/conclude/api/v1/course_progress/content_migrations/100/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.SelectiveDataImpl        ] listing the items available for a content migration for the user
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.SelectiveDataImpl        ] listing the items available for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/accounts/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/accounts/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/accounts/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/accounts/total_scores/content_migrations/1/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/accounts/total_scores/content_migrations/1/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/accounts/total_scores/content_migrations/1/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] creating course content migration
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v0/accounts/deleted/content_migrations/-1/migration_issues?per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v0/accounts/deleted/content_migrations/-1/migration_issues?per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v0/accounts/deleted/content_migrations/-1/migration_issues?per_page=1
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the group
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/groups/conclude/content_migrations/0?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/groups/conclude/content_migrations/0?per_page=-1
+DEBUG [edu.ksu.canvas.net.SimpleRestClient          ] Sending API DELETE request to URL: course_progress
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing content migrations for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts//content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/accounts//content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/accounts//content_migrations?per_page=-1
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager is shutting down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager shut down
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: conclude
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: conclude
+DEBUG [edu.ksu.canvas.impl.ProgressImpl             ] getting the progress of an asynchronous operation by ID: 10
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v100/progress/10?per_page=100
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v100/progress/10?per_page=100
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v1/courses/deleted/assignments/null?per_page=100
+
+Progress update: steps=1000, test inputs generated=236, failing inputs=0      (2023-10-28T04:38:39.215526Z     133M used)DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts/key/content_migrations/100?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/accounts/key/content_migrations/100?per_page=-1
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v1/event
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] updating account content migration
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts/hi!/api/v1/event/content_migrations/100?per_page=-1
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v1/event
+DEBUG [edu.ksu.canvas.impl.AccountImpl              ] creating account
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress/api/v100/accounts/undated/sub_accounts?per_page=100
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the user
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/users/hi!/api/v1/event/content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/users/hi!/api/v1/event/content_migrations/-1?per_page=-1
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing the migration issues for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/users//content_migrations/10/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/users//content_migrations/10/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/users//content_migrations/10/migration_issues?per_page=0
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v1/courses/hi!/api/v1/event/assignments/null?per_page=100
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.net.SimpleRestClient          ] Sending API PUT request to URL: hi!/api/v1/event
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v1/courses/conclude/assignments/1?per_page=100&as_user_id=sis_user_id%3Ahi%21%2Fapi%2Fv1%2Fevent
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager is shutting down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager shut down
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v1/course_progress
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v1/event
+DEBUG [edu.ksu.canvas.net.SimpleRestClient          ] Sending JSON POST to URL: key
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] updating group content migration
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/groups/ta/content_migrations/1?per_page=-1
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager is shutting down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager shut down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager is shutting down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager shut down
+DEBUG [edu.ksu.canvas.interfaces.CourseReader       ] updating course settings for hi!/api/v1/event
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v0/courses/hi!/api/v1/event/settings?per_page=10&as_user_id=deleted
+DEBUG [edu.ksu.canvas.impl.AccountImpl              ] updating account
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing a migration issue for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v-1/users/deactivate/content_migrations/0/migration_issues/10?per_page=0
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v-1/users/deactivate/content_migrations/0/migration_issues/10?per_page=0
+DEBUG [edu.ksu.canvas.impl.SelectiveDataImpl        ] listing the items available for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/courses/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/courses/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/courses/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1
+DEBUG [edu.ksu.canvas.impl.SelectiveDataImpl        ] listing the items available for a content migration for the user
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: /api/v10/users/conclude/content_migrations/10/selective_data?type=course_progress&per_page=1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.net.SimpleRestClient          ] Sending API DELETE request to URL: deactivate
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager is shutting down
+DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection manager shut down
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] creating account content migration
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/accounts/UTF-8/content_migrations?per_page=-1
+DEBUG [edu.ksu.canvas.impl.LoginImpl                ] Retrieving logins for user id hi!
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - conclude/api/v0/users/hi!/logins?per_page=-1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: conclude/api/v0/users/hi!/logins?per_page=-1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: conclude/api/v0/users/hi!/logins?per_page=-1&as_user_id=total_scores
+DEBUG [edu.ksu.canvas.CanvasApiFactory              ] Creating Canvas API factory with base URL: student
+DEBUG [edu.ksu.canvas.model.report.AccountReport    ] Starting new report of type undated for account conclude
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - /api/v10/accounts/conclude/reports/undated?per_page=-1
+DEBUG [edu.ksu.canvas.impl.MigrationIssueImpl       ] listing a migration issue for a content migration for the course
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - course_progress/api/v1/users/total_students/content_migrations/10/migration_issues/0?per_page=0&as_user_id=conclude
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: course_progress/api/v1/users/total_students/content_migrations/10/migration_issues/0?per_page=0&as_user_id=conclude
+DEBUG [edu.ksu.canvas.impl.ContentMigrationImpl     ] listing a content migration for the user
+DEBUG [edu.ksu.canvas.util.CanvasURLBuilder         ] Built Canvas url - hi!/api/v100/users/hi!/content_migrations/0?per_page=-1&as_user_id=hi%21%2Fapi%2Fv1%2Fevent
+DEBUG [edu.ksu.canvas.impl.RestCanvasMessenger      ] Sending GET request to: hi!/api/v100/users/hi!/content_migrations/0?per_page=-1&as_user_id=hi%21%2Fapi%2Fv1%2Fevent
+
+Progress update: steps=1651, test inputs generated=508, failing inputs=1      (2023-10-28T04:38:42.698148Z     68.4M used)
+Normal method executions: 6752
+Exceptional method executions: 73
+
+Average method execution time (normal termination):      0.00356
+Average method execution time (exceptional termination): 1.57
+Approximate memory usage 68.4M
+Explorer = ForwardGenerator(steps: 1651, null steps: 1143, num_sequences_generated: 508;
+    allSequences: 508, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 8;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 55)
+
+Error-revealing test output:
+Error-revealing test count: 1
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/randoop_tests/ox-it-canvas-api/2605be0cd102faf6e8c6fac900d09b2f2b7b9cee/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/randoop_tests/ox-it-canvas-api/2605be0cd102faf6e8c6fac900d09b2f2b7b9cee/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 336 regression sequences.
+
+Regression test output:
+Regression test count: 336
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/randoop_tests/ox-it-canvas-api/2605be0cd102faf6e8c6fac900d09b2f2b7b9cee/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/randoop_tests/ox-it-canvas-api/2605be0cd102faf6e8c6fac900d09b2f2b7b9cee/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 8).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

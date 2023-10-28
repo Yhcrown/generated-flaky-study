@@ -128,7 +128,7 @@ def run_randoop(project,target_dir):
                   # + ' --literals-level=ALL'
     logging.info(randoop_cmd)
     test_gen_log = generated_dir + '/testgen.txt'
-    subprocess.run(randoop_cmd,shell=True,stdout=open(test_gen_log,'w'),stderr=subprocess.STDOUT)
+    subprocess.run(randoop_cmd,shell=True,stdout=open(test_gen_log,'w'),stderr=subprocess.STDOUT, timeout=90)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, test_gen_log)
     os.chdir(cwd)
@@ -158,6 +158,8 @@ if __name__ == '__main__':
         if not os.path.exists(target_dir+'/build.log'):
             build_project(target_dir)
         # print(os.listdir(target_dir))
+        if "edwardcapriolo-teknek-core" == project_name or "mbknor-dropwizard-activemq-bundle" == project_name:
+            continue
         run_randoop(project,target_dir)
         # break
         # os.chdir(PROJECTS_DIRECTORY+project_name)

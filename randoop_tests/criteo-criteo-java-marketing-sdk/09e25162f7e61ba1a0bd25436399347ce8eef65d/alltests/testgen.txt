@@ -1,0 +1,145 @@
+[TIME]: 0:00:17.042982
+Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class com.criteo.marketing.GzipRequestInterceptor specified via --testclass or --classlist.
+
+Will try to generate tests for 112 out of 113 classes.
+PUBLIC MEMBERS=2870
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:37:36.278432Z     154M used)
+Progress update: steps=1000, test inputs generated=389, failing inputs=0      (2023-10-28T04:37:45.438742Z     106M used)Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Progress update: steps=1230, test inputs generated=502, failing inputs=0      (2023-10-28T04:37:48.055033Z     64.7M used)
+Normal method executions: 4044
+Exceptional method executions: 65
+
+Average method execution time (normal termination):      0.00318
+Average method execution time (exceptional termination): 36.4
+Approximate memory usage 64.7M
+Explorer = ForwardGenerator(steps: 1230, null steps: 728, num_sequences_generated: 502;
+    allSequences: 502, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 2;
+    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 178)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 393 regression sequences.
+
+Regression test output:
+Regression test count: 393
+Writing regression JUnit tests...
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Exception in thread "OkHttp Dispatcher" Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+java.lang.NullPointerException: Cannot invoke "com.criteo.marketing.ApiCallback.onFailure(com.criteo.marketing.ApiException, int, java.util.Map)" because "this.val$callback" is null
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Created file /Users/yhcrown/Documents/randoop_tests/criteo-criteo-java-marketing-sdk/09e25162f7e61ba1a0bd25436399347ce8eef65d/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/randoop_tests/criteo-criteo-java-marketing-sdk/09e25162f7e61ba1a0bd25436399347ce8eef65d/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 2).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
