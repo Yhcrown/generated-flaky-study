@@ -1,10 +1,12 @@
-
 import pandas as pd
 import os
 import shutil
 import subprocess
 import datetime
 import time
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
 PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
 CURRENT_DIRECTORY = os.getcwd()
@@ -104,7 +106,7 @@ def run_randoop(project,target_dir):
     with open(class_list_file, 'w') as fw:
         for clz in all_classes:
             if '$' in clz:
-                print(clz)
+                # print(clz)
                 clz = clz.split('$')[0]
             fw.write(clz + '\n')
 
@@ -124,7 +126,7 @@ def run_randoop(project,target_dir):
                   + str(test_method_max_size) + 'Case' \
                   # + ' --literals-file=' + literals_file \
                   # + ' --literals-level=ALL'
-    print(randoop_cmd)
+    logging.info(randoop_cmd)
     test_gen_log = generated_dir + '/testgen.txt'
     subprocess.run(randoop_cmd,shell=True,stdout=open(test_gen_log,'w'),stderr=subprocess.STDOUT)
     end_time = time.time()
