@@ -1,4 +1,4 @@
-[TIME]: 0:00:01.567269
+[TIME]: 0:00:34.439485
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -6,28 +6,55 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 
 Will try to generate tests for 44 classes.
 PUBLIC MEMBERS=212
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:57:20.359Z     18.0M used)
+Progress update: steps=772, test inputs generated=501, failing inputs=5      (2023-10-31T23:57:50.340Z     785M used)
+Normal method executions: 622353
+Exceptional method executions: 58
 
-Randoop failed.
-No sequences generated.
+Average method execution time (normal termination):      0.0354
+Average method execution time (exceptional termination): 0.187
+Approximate memory usage 785M
+Explorer = ForwardGenerator(steps: 772, null steps: 271, num_sequences_generated: 501;
+    allSequences: 501, regresson seqs: 495, error seqs: 5=5=5, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 72)
+
+Error-revealing test output:
+Error-revealing test count: 5
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 283 regression sequences.
+
+Regression test output:
+Regression test count: 283
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/graphaware-reco/5bc1ea80134d1a707c9581af958fc15698eb45f9/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  com.graphaware.reco.generic.result.Recommendation.getUuid()
+  Possibly flaky:  com.graphaware.reco.generic.result.Recommendation.compareTo(com.graphaware.reco.generic.result.Recommendation<com.graphaware.reco.generic.transform.ParetoScoreTransformer<com.graphaware.reco.generic.policy.ParticipationPolicy>>)
+  Possibly flaky:  com.graphaware.reco.generic.result.Recommendation.add(java.lang.String,float)
+  Possibly flaky:  com.graphaware.reco.generic.result.Recommendation.getScore()
+  Possibly flaky:  java.lang.String.valueOf(int)
+  Possibly flaky:  java.lang.Integer.valueOf(int)
+  Possibly flaky:  java.lang.Integer.toString(int)
+  Possibly flaky:  java.lang.Integer.toOctalString(int)
+  Possibly flaky:  java.lang.Integer.toHexString(int)
+  Possibly flaky:  java.lang.Integer.toBinaryString(int)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

@@ -1,20 +1,20 @@
-[TIME]: 0:00:01.565274
+[TIME]: 0:00:02.421255
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 0 classes.
 You provided no methods to test, so no tests for them can be generated.
 
 Additional diagnostis appear below.
-Model with hashcode 951880373:
+Model with hashcode 1525037790:
   classTypes = [java.lang.Object]
   inputTypes = []
   coveredClassesGoal = []
   classLiteralMap = {}
   annotatedTestValues = []
   contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@687080dc, randoop.contract.EqualsToNullRetFalse@23d2a7e8, randoop.contract.EqualsReturnsNormally@7a9273a8, randoop.contract.CompareToReflexive@26a7b76d, randoop.contract.SizeToArrayLength@4abdb505]
-    arity 2: [randoop.contract.EqualsSymmetric@7ce6a65d, randoop.contract.EqualsHashcode@1500955a, randoop.contract.CompareToAntiSymmetric@e874448, randoop.contract.CompareToEquals@29b5cd00]
-    arity 3: [randoop.contract.EqualsTransitive@60285225, randoop.contract.CompareToSubs@7113b13f, randoop.contract.CompareToTransitive@45820e51]
+    arity 1: [randoop.contract.EqualsReflexive@610694f1, randoop.contract.EqualsToNullRetFalse@43814d18, randoop.contract.EqualsReturnsNormally@5c5a1b69, randoop.contract.CompareToReflexive@3701eaf6, randoop.contract.SizeToArrayLength@627551fb]
+    arity 2: [randoop.contract.EqualsSymmetric@2b552920, randoop.contract.EqualsHashcode@2758fe70, randoop.contract.CompareToAntiSymmetric@1f36e637, randoop.contract.CompareToEquals@578486a3]
+    arity 3: [randoop.contract.EqualsTransitive@551aa95a, randoop.contract.CompareToSubs@35d176f7, randoop.contract.CompareToTransitive@1dfe2924]
   omitMethods = [
     \bensuresCapacity\b
     ^\Qcom.google.common.collect.Iterators.cycle(

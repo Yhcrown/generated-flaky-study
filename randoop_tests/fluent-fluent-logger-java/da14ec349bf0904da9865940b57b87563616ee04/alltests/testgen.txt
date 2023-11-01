@@ -1,74 +1,152 @@
-[TIME]: 0:00:01.429270
+[TIME]: 0:01:32.012754
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 12 classes.
+PUBLIC MEMBERS=96
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 1489069835:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@6b57696f, randoop.contract.EqualsToNullRetFalse@5bb21b69, randoop.contract.EqualsReturnsNormally@6b9651f3, randoop.contract.CompareToReflexive@38bc8ab5, randoop.contract.SizeToArrayLength@687080dc]
-    arity 2: [randoop.contract.EqualsSymmetric@23d2a7e8, randoop.contract.EqualsHashcode@7a9273a8, randoop.contract.CompareToAntiSymmetric@26a7b76d, randoop.contract.CompareToEquals@4abdb505]
-    arity 3: [randoop.contract.EqualsTransitive@7ce6a65d, randoop.contract.CompareToSubs@1500955a, randoop.contract.CompareToTransitive@e874448]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:42:24.514Z     55.6M used)2023-10-31 18:42:24,938 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,006 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,400 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,497 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,534 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,617 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:25,801 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:31,028 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:34,186 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:34,380 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:34,798 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
+2023-10-31 18:42:34,880 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:34,921 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:35,105 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:38,125 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:38,179 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:41,194 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:41,301 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
+2023-10-31 18:42:41,309 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
+2023-10-31 18:42:44,454 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:47,526 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:50,623 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:50,899 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: fluentd.logger.sender.class
+2023-10-31 18:42:50,931 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Can't assign requested address (connect failed)
+2023-10-31 18:42:50,933 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-10-31 18:42:51,125 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:51,127 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:51,134 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:51,135 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:51,197 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-10-31 18:42:54,220 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:57,225 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:42:57,250 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,284 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,285 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,365 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,365 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-10-31 18:42:57,384 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,435 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-10-31 18:42:57,646 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,647 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,695 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,696 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,865 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,872 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:57,978 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-10-31 18:42:57,988 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
+2023-10-31 18:42:58,002 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,003 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,165 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,200 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,289 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,343 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,343 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:42:58,509 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-10-31 18:43:01,523 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketTimeoutException: connect timed out
+2023-10-31 18:43:01,560 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
+2023-10-31 18:43:01,603 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Progress update: steps=575, test inputs generated=515, failing inputs=16      (2023-10-31T23:43:01.703Z     581M used)
+Normal method executions: 6889
+Exceptional method executions: 124
+
+Average method execution time (normal termination):      4.03
+Average method execution time (exceptional termination): 1.21
+Approximate memory usage 581M
+Explorer = ForwardGenerator(steps: 575, null steps: 60, num_sequences_generated: 515;
+    allSequences: 515, regresson seqs: 484, error seqs: 16=16=16, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 15;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 57)
+
+Error-revealing test output:
+Error-revealing test count: 16
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fluent-fluent-logger-java/da14ec349bf0904da9865940b57b87563616ee04/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fluent-fluent-logger-java/da14ec349bf0904da9865940b57b87563616ee04/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 275 regression sequences.
+
+Regression test output:
+Regression test count: 275
+Writing regression JUnit tests...
+
+                                                                                                                                                                                                       
+Command 'java -ea -classpath $(find /Users/yhcrown/Documents/flaky_java_projects/fluent-fluent-logger-java -name "classes" -type d | xargs echo | tr ' ' ':'):$(find /Users/yhcrown/Documents/flaky_java_projects/fluent-fluent-logger-java -name "test-classes" -type d | xargs echo | tr ' ' ':'):$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr ' ' ':'):/Users/yhcrown/Documents/tools/randoop-all-4.3.2.jar:/Users/yhcrown/Documents/tools/junit-4.13.2.jar:/Users/yhcrown/Documents/tools/hamcrest-core-1.3.jar:/Users/yhcrown/Documents/tools/guava-32.1.3-jre.jar randoop.main.Main gentests --classlist=/tmp/classes.txt --output-limit=500 --time-limit=60 --junit-output-dir=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fluent-fluent-logger-java/da14ec349bf0904da9865940b57b87563616ee04/alltests/ --regression-test-basename=TestGroup100Case --log=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fluent-fluent-logger-java/da14ec349bf0904da9865940b57b87563616ee04/alltests/randoop-log.txt --usethreads=true' timed out after 89.99996645795181 seconds

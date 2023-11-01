@@ -15,7 +15,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint.Builder builder1 = com.lightstep.tracer.grpc.MetricPoint.newBuilder(metricPoint0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"kind_\" because \"x0\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -42,7 +42,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse.Builder builder1 = com.lightstep.tracer.grpc.IngestResponse.newBuilder(ingestResponse0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"unknownFields\" because \"x0\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -88,7 +88,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue1 = com.lightstep.tracer.grpc.KeyValue.parseFrom(byteString0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.ByteString.newCodedInput()\" because \"data\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -102,7 +102,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest1 = com.lightstep.tracer.grpc.IngestRequest.parseFrom(byteString0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.ByteString.newCodedInput()\" because \"data\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -116,7 +116,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint metricPoint1 = com.lightstep.tracer.grpc.MetricPoint.parseFrom(byteBuffer0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -153,7 +153,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter1 = com.lightstep.tracer.grpc.Reporter.parseFrom(byteBuffer0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -175,7 +175,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue1 = com.lightstep.tracer.grpc.KeyValue.parseDelimitedFrom(inputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -189,7 +189,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest.Builder builder1 = com.lightstep.tracer.grpc.IngestRequest.newBuilder(ingestRequest0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.lightstep.tracer.grpc.IngestRequest.getIdempotencyKey()\" because \"other\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -203,7 +203,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse ingestResponse1 = com.lightstep.tracer.grpc.IngestResponse.parseFrom(byteString0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.ByteString.newCodedInput()\" because \"data\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -243,7 +243,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int2 = builder0.getRepeatedFieldCount(fieldDescriptor1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -269,7 +269,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter2 = com.lightstep.tracer.grpc.Reporter.parseDelimitedFrom(inputStream0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -291,7 +291,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter1 = com.lightstep.tracer.grpc.Reporter.parseFrom(byteString0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.ByteString.newCodedInput()\" because \"data\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -360,7 +360,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue1 = com.lightstep.tracer.grpc.KeyValue.parseFrom(codedInputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.CodedInputStream.readTag()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -423,7 +423,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest2 = com.lightstep.tracer.grpc.IngestRequest.parseDelimitedFrom(inputStream0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -492,7 +492,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean5 = keyValue3.hasField(fieldDescriptor4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -526,7 +526,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter1 = com.lightstep.tracer.grpc.Reporter.parseDelimitedFrom(inputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -566,7 +566,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue2 = com.lightstep.tracer.grpc.KeyValue.parseDelimitedFrom(inputStream0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -627,7 +627,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue1 = com.lightstep.tracer.grpc.KeyValue.parseFrom(byteBuffer0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -789,7 +789,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.google.protobuf.Descriptors.FieldDescriptor fieldDescriptor6 = keyValue0.getOneofFieldDescriptor(oneofDescriptor5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -809,7 +809,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = keyValue0.hasOneof(oneofDescriptor3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -875,7 +875,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj4 = keyValue0.getRepeatedField(fieldDescriptor2, (int) (byte) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -942,7 +942,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest1 = com.lightstep.tracer.grpc.IngestRequest.parseDelimitedFrom(inputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -957,7 +957,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.KeyValue keyValue2 = com.lightstep.tracer.grpc.KeyValue.parseFrom(byteBuffer0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1044,7 +1044,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.google.protobuf.Descriptors.EnumValueDescriptor enumValueDescriptor1 = metricKind0.getValueDescriptor();
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 3 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 3");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -1094,7 +1094,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse ingestResponse2 = com.lightstep.tracer.grpc.IngestResponse.parseDelimitedFrom(inputStream0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1137,7 +1137,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = keyValue0.hasOneof(oneofDescriptor5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1169,7 +1169,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest2 = com.lightstep.tracer.grpc.IngestRequest.parseFrom(byteBuffer0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1191,7 +1191,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter1 = com.lightstep.tracer.grpc.Reporter.parseFrom(codedInputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.CodedInputStream.readTag()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1398,7 +1398,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint metricPoint2 = com.lightstep.tracer.grpc.MetricPoint.parseFrom(byteBuffer0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1412,7 +1412,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse ingestResponse1 = com.lightstep.tracer.grpc.IngestResponse.parseFrom(byteBuffer0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1459,7 +1459,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj6 = keyValue3.getField(fieldDescriptor5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1545,7 +1545,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.Reporter reporter2 = com.lightstep.tracer.grpc.Reporter.parseFrom(byteBuffer0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1785,7 +1785,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int5 = builder2.getRepeatedFieldCount(fieldDescriptor4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1829,7 +1829,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean5 = keyValue3.hasOneof(oneofDescriptor4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1953,7 +1953,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int4 = ingestResponse1.getRepeatedFieldCount(fieldDescriptor3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2197,7 +2197,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = keyValue0.hasField(fieldDescriptor5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2304,7 +2304,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = ingestRequest2.hasOneof(oneofDescriptor3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2378,7 +2378,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse ingestResponse2 = com.lightstep.tracer.grpc.IngestResponse.parseFrom(byteBuffer0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2393,7 +2393,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj3 = ingestRequest0.getRepeatedField(fieldDescriptor1, (int) (short) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2433,7 +2433,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj8 = timestamp6.getField(fieldDescriptor7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2471,7 +2471,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestResponse ingestResponse1 = com.lightstep.tracer.grpc.IngestResponse.parseFrom(codedInputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.CodedInputStream.readTag()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2594,7 +2594,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean11 = ingestRequest5.hasField(fieldDescriptor10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2657,7 +2657,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean5 = reporter3.hasField(fieldDescriptor4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2851,7 +2851,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.google.protobuf.Descriptors.FieldDescriptor fieldDescriptor7 = metricPoint2.getOneofFieldDescriptor(oneofDescriptor6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$OneofDescriptor.getContainingType()\" because \"oneof\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2948,7 +2948,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest1 = com.lightstep.tracer.grpc.IngestRequest.parseFrom(byteBuffer0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.nio.ByteBuffer.hasArray()\" because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2978,7 +2978,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.IngestRequest ingestRequest1 = com.lightstep.tracer.grpc.IngestRequest.parseFrom(codedInputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.CodedInputStream.readTag()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3119,7 +3119,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int2 = builder0.getRepeatedFieldCount(fieldDescriptor1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3169,7 +3169,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint metricPoint2 = com.lightstep.tracer.grpc.MetricPoint.parseFrom(byteString0, extensionRegistryLite1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.ByteString.newCodedInput()\" because \"data\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3236,7 +3236,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint metricPoint1 = com.lightstep.tracer.grpc.MetricPoint.parseDelimitedFrom(inputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3678,7 +3678,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj5 = keyValue0.getRepeatedField(fieldDescriptor3, 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3823,7 +3823,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.lightstep.tracer.grpc.MetricPoint metricPoint1 = com.lightstep.tracer.grpc.MetricPoint.parseFrom(codedInputStream0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.CodedInputStream.readTag()\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4117,7 +4117,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = metricPoint1.hasField(fieldDescriptor3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4501,7 +4501,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj4 = ingestResponse1.getRepeatedField(fieldDescriptor2, (int) (short) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.protobuf.Descriptors$FieldDescriptor.getContainingType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

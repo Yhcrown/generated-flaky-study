@@ -16,7 +16,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj2 = randomObjectFactory0.getRandomValueForField(field1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.lang.reflect.Field.getType()\" because \"field\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

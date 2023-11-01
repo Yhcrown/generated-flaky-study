@@ -1,30 +1,30 @@
-[TIME]: 0:00:01.389520
+[TIME]: 0:01:31.849122
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 10 classes.
 PUBLIC MEMBERS=54
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:46:13.058Z     44.9M used)
+Progress update: steps=690, test inputs generated=378, failing inputs=0      (2023-10-31T23:47:13.074Z     209M used)
+Progress update: steps=690, test inputs generated=378, failing inputs=0      (2023-10-31T23:47:13.304Z     209M used)
+Normal method executions: 29383
+Exceptional method executions: 104
 
-Randoop failed.
-No sequences generated.
+Average method execution time (normal termination):      0.562
+Average method execution time (exceptional termination): 1.94
+Approximate memory usage 209M
+Explorer = ForwardGenerator(steps: 690, null steps: 312, num_sequences_generated: 378;
+    allSequences: 378, regresson seqs: 377, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 42)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 221 regression sequences.
+
+Regression test output:
+Regression test count: 221
+Writing regression JUnit tests...
+Command 'java -ea -classpath $(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "classes" -type d | xargs echo | tr ' ' ':'):$(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "test-classes" -type d | xargs echo | tr ' ' ':'):$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr ' ' ':'):/Users/yhcrown/Documents/tools/randoop-all-4.3.2.jar:/Users/yhcrown/Documents/tools/junit-4.13.2.jar:/Users/yhcrown/Documents/tools/hamcrest-core-1.3.jar:/Users/yhcrown/Documents/tools/guava-32.1.3-jre.jar randoop.main.Main gentests --classlist=/tmp/classes.txt --output-limit=500 --time-limit=60 --junit-output-dir=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/ --regression-test-basename=TestGroup100Case --log=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/randoop-log.txt --usethreads=true' timed out after 89.99996041692793 seconds

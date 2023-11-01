@@ -1,30 +1,101 @@
-[TIME]: 0:00:01.327997
+[TIME]: 0:01:03.357865
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 4 classes.
 PUBLIC MEMBERS=23
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/showcodes-cn-promise/c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/showcodes-cn-promise/c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/showcodes-cn-promise/c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:10:20.704Z     41.7M used)Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> cn.showcodes.promise.Promise<T,J>.resolve : (ParameterType [ NullType, java.lang.Object ]) -> cn.showcodes.promise.Promise
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=934, test inputs generated=365, failing inputs=0      (2023-11-01T00:11:20.712Z     32.2M used)
+Progress update: steps=934, test inputs generated=366, failing inputs=0      (2023-11-01T00:11:21.052Z     62.1M used)
+Normal method executions: 1605052
+Exceptional method executions: 23
+
+Average method execution time (normal termination):      0.0334
+Average method execution time (exceptional termination): 0.339
+Approximate memory usage 62.1M
+Explorer = ForwardGenerator(steps: 934, null steps: 568, num_sequences_generated: 366;
+    allSequences: 366, regresson seqs: 365, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 196 regression sequences.
+
+Regression test output:
+Regression test count: 196
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/showcodes-cn-promise/c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/showcodes-cn-promise/c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

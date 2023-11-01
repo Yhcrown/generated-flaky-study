@@ -1,4 +1,4 @@
-[TIME]: 0:00:01.614011
+[TIME]: 0:00:53.578466
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class io.fabric8.zjsonpatch.Constants specified via --testclass or --classlist.
 Cannot instantiate non-accessible class io.fabric8.zjsonpatch.Diff specified via --testclass or --classlist; will use its static methods.
@@ -9,28 +9,55 @@ Cannot instantiate non-accessible class io.fabric8.zjsonpatch.Operation specifie
 
 Will try to generate tests for 22 out of 25 classes.
 PUBLIC MEMBERS=77
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fabric8io-zjsonpatch/d62dd71a0cf1440de73517d163a3a22afed5aedc/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fabric8io-zjsonpatch/d62dd71a0cf1440de73517d163a3a22afed5aedc/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fabric8io-zjsonpatch/d62dd71a0cf1440de73517d163a3a22afed5aedc/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:41:01.763Z     53.7M used)
+Progress update: steps=1000, test inputs generated=588, failing inputs=0      (2023-10-31T23:41:43.685Z     561M used)
+Progress update: steps=1070, test inputs generated=624, failing inputs=0      (2023-10-31T23:41:45.977Z     587M used)
+Normal method executions: 1098869
+Exceptional method executions: 70
 
-Randoop failed.
-No sequences generated.
+Average method execution time (normal termination):      0.0326
+Average method execution time (exceptional termination): 0.131
+Approximate memory usage 587M
+Explorer = ForwardGenerator(steps: 1070, null steps: 446, num_sequences_generated: 624;
+    allSequences: 624, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 124;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 786)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 283 regression sequences.
+
+Regression test output:
+Regression test count: 283
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fabric8io-zjsonpatch/d62dd71a0cf1440de73517d163a3a22afed5aedc/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fabric8io-zjsonpatch/d62dd71a0cf1440de73517d163a3a22afed5aedc/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.util.EnumSet.noneOf(java.lang.Class<T>)
+  Possibly flaky:  java.util.Collections.addAll(java.util.Collection<io.fabric8.zjsonpatch.CompatibilityFlags>,io.fabric8.zjsonpatch.CompatibilityFlags[])
+  Possibly flaky:  java.util.Collections.addAll(java.util.Collection<java.lang.Object[]>,java.lang.Object[][])
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.guava.Preconditions.checkNotNull(io.fabric8.zjsonpatch.CompatibilityFlags,java.lang.String,java.lang.Object[])
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.guava.Preconditions.checkNotNull(io.fabric8.zjsonpatch.NoopProcessor,java.lang.String,java.lang.Object[])
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.guava.Preconditions.checkNotNull(io.fabric8.zjsonpatch.InvalidJsonPatchException,java.lang.String,java.lang.Object[])
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.guava.Preconditions.checkNotNull(java.lang.Throwable[],java.lang.String,java.lang.Object[])
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.collections4.sequence.SequencesComparator.getScript()
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.collections4.Equator.hash(io.fabric8.zjsonpatch.JsonPatchApplicationException)
+  Possibly flaky:  io.fabric8.zjsonpatch.internal.collections4.Equator.equate(io.fabric8.zjsonpatch.JsonPatchApplicationException,io.fabric8.zjsonpatch.JsonPatchApplicationException)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 123).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

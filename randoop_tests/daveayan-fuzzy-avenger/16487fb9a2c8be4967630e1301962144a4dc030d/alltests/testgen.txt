@@ -1,74 +1,81 @@
-[TIME]: 0:00:01.553116
+[TIME]: 0:00:26.521191
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class com.daveayan.fuzzyavenger.providers.akka.Message_AL2_to_AL1 specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0 specified via --testclass or --classlist.
+Cannot instantiate non-accessible class com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL2 specified via --testclass or --classlist.
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 8 out of 11 classes.
+PUBLIC MEMBERS=52
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 1489069835:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@6b57696f, randoop.contract.EqualsToNullRetFalse@5bb21b69, randoop.contract.EqualsReturnsNormally@6b9651f3, randoop.contract.CompareToReflexive@38bc8ab5, randoop.contract.SizeToArrayLength@687080dc]
-    arity 2: [randoop.contract.EqualsSymmetric@23d2a7e8, randoop.contract.EqualsHashcode@7a9273a8, randoop.contract.CompareToAntiSymmetric@26a7b76d, randoop.contract.CompareToEquals@4abdb505]
-    arity 3: [randoop.contract.EqualsTransitive@7ce6a65d, randoop.contract.CompareToSubs@1500955a, randoop.contract.CompareToTransitive@e874448]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:00:19.547Z     47.2M used)[INFO] [10/31/2023 19:00:28.731] [fuzzy-avenger-1698796828723-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796828723/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796828723/deadLetters] to Actor[akka://fuzzy-avenger-1698796828723/user/shutdownCommandListener#2115837307] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:29.105] [fuzzy-avenger-1698796829104-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796829104/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796829104/deadLetters] to Actor[akka://fuzzy-avenger-1698796829104/user/shutdownCommandListener#-795426340] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:29.189] [fuzzy-avenger-1698796829184-akka.actor.default-dispatcher-6] [akka://fuzzy-avenger-1698796829184/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796829184/deadLetters] to Actor[akka://fuzzy-avenger-1698796829184/user/shutdownCommandListener#-1977932408] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Progress update: steps=1000, test inputs generated=317, failing inputs=2      (2023-11-01T00:00:30.414Z     378M used)[INFO] [10/31/2023 19:00:35.275] [fuzzy-avenger-1698796835260-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796835260/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835260/deadLetters] to Actor[akka://fuzzy-avenger-1698796835260/user/shutdownCommandListener#2015950381] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:35.508] [fuzzy-avenger-1698796835506-akka.actor.default-dispatcher-3] [akka://fuzzy-avenger-1698796835506/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835506/deadLetters] to Actor[akka://fuzzy-avenger-1698796835506/user/shutdownCommandListener#763436339] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:35.650] [fuzzy-avenger-1698796835642-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796835642/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835642/deadLetters] to Actor[akka://fuzzy-avenger-1698796835642/user/shutdownCommandListener#-1873049605] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:40.177] [fuzzy-avenger-1698796840162-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796840162/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796840162/deadLetters] to Actor[akka://fuzzy-avenger-1698796840162/user/shutdownCommandListener#2121982058] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:41.057] [fuzzy-avenger-1698796841052-akka.actor.default-dispatcher-6] [akka://fuzzy-avenger-1698796841052/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796841052/deadLetters] to Actor[akka://fuzzy-avenger-1698796841052/user/shutdownCommandListener#1412528160] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [10/31/2023 19:00:42.125] [fuzzy-avenger-1698796842107-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796842107/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796842107/deadLetters] to Actor[akka://fuzzy-avenger-1698796842107/user/shutdownCommandListener#719672309] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+createAndClassifySequences threw an exception
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:719)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeThreaded(ReflectionExecutor.java:131)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:88)
+	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:515)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+
+
+Throwable thrown while handling command: java.lang.OutOfMemoryError: unable to create new native thread
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:719)
+	at randoop.util.ReflectionExecutor.executeReflectionCodeThreaded(ReflectionExecutor.java:131)
+	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:88)
+	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:515)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
+
+Randoop failed.
+Last sequence under execution: 
+com.daveayan.fuzzyavenger.providers.akka.AkkaExecutionProvider akkaExecutionProvider0 = new com.daveayan.fuzzyavenger.providers.akka.AkkaExecutionProvider();
+akka.actor.ActorSystem actorSystem1 = null;
+akkaExecutionProvider0.system = actorSystem1;
+akkaExecutionProvider0.initialize();
+akkaExecutionProvider0.shutdown();
+akkaExecutionProvider0.initialize();
+com.daveayan.fuzzyavenger.providers.akka.AkkaExecutionProvider akkaExecutionProvider6 = new com.daveayan.fuzzyavenger.providers.akka.AkkaExecutionProvider();
+akka.actor.ActorSystem actorSystem7 = null;
+akkaExecutionProvider6.system = actorSystem7;
+akka.actor.ActorRef actorRef9 = null;
+akkaExecutionProvider6.shutdownCommandListener = actorRef9;
+akkaExecutionProvider6.initialize();
+akka.actor.ActorSystem actorSystem12 = null;
+akkaExecutionProvider6.system = actorSystem12;
+akka.actor.ActorRef actorRef14 = akkaExecutionProvider6.shutdownCommandListener;
+akkaExecutionProvider6.initialize();
+akka.actor.ActorRef actorRef16 = akkaExecutionProvider6.shutdownCommandListener;
+akkaExecutionProvider0.shutdownCommandListener = actorRef16;
+com.daveayan.fuzzyavenger.Lists lists18 = com.daveayan.fuzzyavenger.Lists.initialize((com.daveayan.fuzzyavenger.ExecutionProvider)akkaExecutionProvider0);
+lists18.shutdown();

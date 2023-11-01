@@ -1,146 +1,74 @@
-[TIME]: 0:00:05.452098
+[TIME]: 0:00:02.548733
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLSicredi specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLUnibanco specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBanestes specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoDoBrasilNN10 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLHSBC specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLMercantilDoBrasil specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLUnibancoCobrancaNaoRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoDoBrasilNN17Convenio7 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoReal specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoRuralCobrancaRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLMercantilDoBrasil specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBanestes specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoSafra specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoCitiBankNN11 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLCaixaEconomicaFederalSIGCB specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLCaixaEconomicaFederalSICOBNossoNumero10 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBradesco specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoDoBrasilNN11 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoDoBrasil specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoIntermedium specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLCaixaEconomicaFederal specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoDoBrasilNN17Convenio6 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLCaixaEconomicaFederalSICOBNossoNumero14 specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBanrisul specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoCitibank specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBanrisulCobrancaRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoReal specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBanrisulCobrancaNaoRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLItau specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLSantander specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoDoNordesteDoBrasil specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoRural specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLBancoob specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLHSBCCobrancaRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLItauPadrao specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoSafraCobrancaNaoRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLHSBCCobrancaNaoRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoSantander specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoRuralCobrancaNaoRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLItauComCarteirasEspeciais specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoSafraCobrancaRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCLSicredi specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.AbstractCampoLivre specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoRuralCobrancaNaoRegistradaSeguradora specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBancoIntermedium specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLUnibancoCobrancaRegistrada specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLBradesco specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.campolivre.CLCaixaEconomicaFederalSINCO specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.view.ViewerPDF specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.view.PdfViewer specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.bopepo.view.PdfViewerMultiProcessor specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.texgit.FixedFieldBuilder specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.texgit.TexgitSchemaValidator specified via --testclass or --classlist.
-Cannot instantiate non-accessible class org.jrimum.texgit.TexgitXmlReader specified via --testclass or --classlist; will use its static methods.
-Cannot instantiate non-accessible class org.jrimum.texgit.RecordBuilder specified via --testclass or --classlist.
 
-Will try to generate tests for 208 out of 262 classes.
-PUBLIC MEMBERS=2358
-Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
-    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
-    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+Will try to generate tests for 0 classes.
+You provided no methods to test, so no tests for them can be generated.
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:35:02.357827Z     98.3M used)23:35:03.560 [main] ERROR org.jrimum.utilix.FileUtil -  RECEBER PROCESSAMENTO String pathNomeArquivo: 
-java.io.FileNotFoundException:  (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
-	at java.base/java.io.FileReader.<init>(FileReader.java:75) ~[?:?]
-	at org.jrimum.utilix.FileUtil.readFile(FileUtil.java:447) [classes/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53) [randoop-all-4.3.2.jar:?]
-	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
-	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164) [randoop-all-4.3.2.jar:?]
-	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94) [randoop-all-4.3.2.jar:?]
-	at randoop.operation.MethodCall.execute(MethodCall.java:176) [randoop-all-4.3.2.jar:?]
-	at randoop.operation.TypedOperation.execute(TypedOperation.java:310) [randoop-all-4.3.2.jar:?]
-	at randoop.sequence.Statement.execute(Statement.java:163) [randoop-all-4.3.2.jar:?]
-	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416) [randoop-all-4.3.2.jar:?]
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308) [randoop-all-4.3.2.jar:?]
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237) [randoop-all-4.3.2.jar:?]
-	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237) [randoop-all-4.3.2.jar:?]
-	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321) [randoop-all-4.3.2.jar:?]
-	at randoop.main.GenTests.handle(GenTests.java:515) [randoop-all-4.3.2.jar:?]
-	at randoop.main.Main.nonStaticMain(Main.java:69) [randoop-all-4.3.2.jar:?]
-	at randoop.main.Main.main(Main.java:31) [randoop-all-4.3.2.jar:?]
-createAndClassifySequences threw an exception
-randoop.main.RandoopBug: code=Call to public org.jrimum.texgit.AbstractStringOfFields(), args: [] failed to run
-	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:169)
-	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
-	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
-	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
-	at randoop.sequence.Statement.execute(Statement.java:163)
-	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
-	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
-	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
-	at randoop.main.GenTests.handle(GenTests.java:515)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: randoop.util.ReflectionCode$ReflectionCodeException: java.lang.InstantiationException
-	at randoop.util.ConstructorReflectionCode.runReflectionCodeRaw(ConstructorReflectionCode.java:57)
-	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
-	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
-	... 12 more
-Caused by: java.lang.InstantiationException
-	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at randoop.util.ConstructorReflectionCode.runReflectionCodeRaw(ConstructorReflectionCode.java:51)
-	... 14 more
+Additional diagnostis appear below.
+Model with hashcode 1232306490:
+  classTypes = [java.lang.Object]
+  inputTypes = []
+  coveredClassesGoal = []
+  classLiteralMap = {}
+  annotatedTestValues = []
+  contracts = ContractSet[size=12]
+    arity 1: [randoop.contract.EqualsReflexive@6321e813, randoop.contract.EqualsToNullRetFalse@79be0360, randoop.contract.EqualsReturnsNormally@22a67b4, randoop.contract.CompareToReflexive@57855c9a, randoop.contract.SizeToArrayLength@3b084709]
+    arity 2: [randoop.contract.EqualsSymmetric@3224f60b, randoop.contract.EqualsHashcode@63e2203c, randoop.contract.CompareToAntiSymmetric@1efed156, randoop.contract.CompareToEquals@6737fd8f]
+    arity 3: [randoop.contract.EqualsTransitive@72b6cbcc, randoop.contract.CompareToSubs@a7e666, randoop.contract.CompareToTransitive@68bbe345]
+  omitMethods = [
+    \bensuresCapacity\b
+    ^\Qcom.google.common.collect.Iterators.cycle(
+    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
+    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
+    ^\Qjava.util.Date.<init>()\E$
+    ^\Qorg.joda.time.DateTime.now()\E$
+    ^\Qorg.joda.time.LocalDate.<init>\E$
+    ^\Qnew org.joda.time.Partial.<init>()\E$
+    ^\Qjava.io.File.list()\E$
+    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
+    ^\Qjava.io.File.listFiles()\E$
+    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
+    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
+    ^\Qjava.io.File.listRoots()\E$
+    ^\Qjava.lang.Class.getSigners()\E$
+    ^\Qjava.lang.Object.hashCode()\E$
+    ^\Qjava.lang.String.hashCode()\E$
+    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
+    ^\Qjava.lang.System.console()\E$
+    ^\Qjava.lang.System.currentTimeMillis()\E$
+    ^\Qjava.lang.System.getProperties()\E$
+    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
+    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
+    ^\Qjava.lang.System.getSecurityManager()\E$
+    ^\Qjava.lang.System.getenv()\E$
+    ^\Qjava.lang.System.getenv(java.lang.String)\E$
+    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
+    ^\Qjava.lang.System.inheritedChannel()\E$
+    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
+    ^\Qjava.lang.System.nanoTime()\E$
+    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
+    ^\Qjava.lang.reflect.Method.hashCode()\E$
+    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
+    ^\Qjava.util.AbstractList.hashCode()\E$
+    ^\Qjava.util.AbstractSet.hashCode()\E$
+    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
+    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
+    ^\Qjava.util.Arrays.hashCode(byte[])\E$
+    ^\Qjava.util.Arrays.hashCode(char[])\E$
+    ^\Qjava.util.Arrays.hashCode(double[])\E$
+    ^\Qjava.util.Arrays.hashCode(float[])\E$
+    ^\Qjava.util.Arrays.hashCode(int[])\E$
+    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
+    ^\Qjava.util.Arrays.hashCode(long[])\E$
+    ^\Qjava.util.Arrays.hashCode(short[])\E$
+    ^\Qjava.util.Collection.hashCode()\E$
+    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
+    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
+    ^\Qjava.util.List.hashCode()\E$
+    ^\Qjava.util.Random.<init>()\E$
+    ^\Qjava.util.Set.hashCode()\E$
+  ]
+Operations: (1)
+  java.lang.Object.<init> : () -> java.lang.Object
 
-
-Randoop failed in an unexpected way.
-Please report at https://github.com/randoop/randoop/issues ,
-providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .
-randoop.main.RandoopBug: code=Call to public org.jrimum.texgit.AbstractStringOfFields(), args: [] failed to run
-	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:169)
-	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:94)
-	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
-	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
-	at randoop.sequence.Statement.execute(Statement.java:163)
-	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
-	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
-	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
-	at randoop.main.GenTests.handle(GenTests.java:515)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: randoop.util.ReflectionCode$ReflectionCodeException: java.lang.InstantiationException
-	at randoop.util.ConstructorReflectionCode.runReflectionCodeRaw(ConstructorReflectionCode.java:57)
-	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
-	at randoop.util.ReflectionExecutor.executeReflectionCodeUnThreaded(ReflectionExecutor.java:164)
-	... 12 more
-Caused by: java.lang.InstantiationException
-	at java.base/jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at randoop.util.ConstructorReflectionCode.runReflectionCodeRaw(ConstructorReflectionCode.java:51)
-	... 14 more
+There are no methods for Randoop to test.  See diagnostics above.  Exiting.

@@ -1,4 +1,4 @@
-[TIME]: 0:00:01.431924
+[TIME]: 0:00:19.727886
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.RoundRobinStrategy specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.WeightRoundbinStrategy specified via --testclass or --classlist.
@@ -22,29 +22,59 @@ Cannot instantiate non-accessible class com.github.edgar615.util.search.GoeParse
 Cannot instantiate non-accessible class com.github.edgar615.util.search.EqParser specified via --testclass or --classlist.
 
 Will try to generate tests for 110 out of 127 classes.
-PUBLIC MEMBERS=791
+PUBLIC MEMBERS=781
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:44:59.330Z     18.4M used)Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler<T>.create : (ParameterType [ NullType, java.lang.Object ]) -> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler
+Instantiation error for operation
+ <ParameterType [ NullType, java.lang.Object ]> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler<T>.createProxy : (java.lang.Class<T>, ParameterType [ NullType, java.lang.Object ]) -> ParameterType [ NullType, java.lang.Object ]
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=919, test inputs generated=529, failing inputs=0      (2023-10-31T23:45:15.008Z     23.4M used)
+Normal method executions: 118800
+Exceptional method executions: 102
+
+Average method execution time (normal termination):      0.0400
+Average method execution time (exceptional termination): 0.504
+Approximate memory usage 23.4M
+Explorer = ForwardGenerator(steps: 919, null steps: 390, num_sequences_generated: 529;
+    allSequences: 529, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 29;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 73)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 316 regression sequences.
+
+Regression test output:
+Regression test count: 316
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/edgar615-util/040e163d89ffc65786c94c84883e460e3ee3ba51/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.util.UUID.toString()
+  Possibly flaky:  java.util.AbstractCollection.toArray()
+  Possibly flaky:  com.github.edgar615.util.uuid.UUIDFactory.uuid()
+  Possibly flaky:  com.github.edgar615.util.uuid.UUIDFactory.concurrentUUIDFactory()
+  Possibly flaky:  com.github.edgar615.util.uuid.DefaultUUIDFactory.uuid()
+  Possibly flaky:  com.github.edgar615.util.collection.ArraySkipList.get(java.util.UUID)
+  Possibly flaky:  com.github.edgar615.util.collection.ArraySkipList.add(java.util.UUID,java.lang.Object[])
+  Possibly flaky:  com.github.edgar615.util.base.Randoms.randomString(int,java.lang.String)
+  Possibly flaky:  com.github.edgar615.util.base.Randoms.randomNumber(int)
+  Possibly flaky:  com.github.edgar615.util.base.Randoms.randomAlphabetAndNum(int)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 27).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

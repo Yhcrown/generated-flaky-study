@@ -1,30 +1,91 @@
-[TIME]: 0:00:01.680643
+[TIME]: 0:01:05.721749
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 20 classes.
 PUBLIC MEMBERS=90
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/amlinv-javaScheduler/173058f9b4c88e8c129a5e2ace15d98b87d4c6c9/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/amlinv-javaScheduler/173058f9b4c88e8c129a5e2ace15d98b87d4c6c9/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/amlinv-javaScheduler/173058f9b4c88e8c129a5e2ace15d98b87d4c6c9/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:53:36.142Z     55.1M used)2023-10-31 18:53:48,514 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:53:54,148 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:53:54,227 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:09,847 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:16,014 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:16,054 WARN  [standard-non-blocking-scheduler-processor-thread#1] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:16,156 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:16,406 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:21,650 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:21,807 WARN  [standard-non-blocking-scheduler-processor-thread#1] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:21,871 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:32,620 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:32,649 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
+2023-10-31 18:54:32,685 WARN  [standard-non-blocking-scheduler-processor-thread#0] com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine - failed step execution
+java.lang.NullPointerException
+	at com.amlinv.javasched.engine.ProcessStepExecutionSlip.execute(ProcessStepExecutionSlip.java:41)
+	at com.amlinv.javasched.impl.StandardNonBlockingSchedulerEngine$ProcessorThread.run(StandardNonBlockingSchedulerEngine.java:202)
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=453, test inputs generated=371, failing inputs=0      (2023-10-31T23:54:36.153Z     100M used)
+Progress update: steps=453, test inputs generated=372, failing inputs=0      (2023-10-31T23:54:38.103Z     100M used)
+Normal method executions: 55596
+Exceptional method executions: 63
+
+Average method execution time (normal termination):      0.0607
+Average method execution time (exceptional termination): 0.206
+Approximate memory usage 100M
+Explorer = ForwardGenerator(steps: 453, null steps: 81, num_sequences_generated: 372;
+    allSequences: 372, regresson seqs: 360, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 12;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 40)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 194 regression sequences.
+
+Regression test output:
+Regression test count: 194
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/amlinv-javaScheduler/173058f9b4c88e8c129a5e2ace15d98b87d4c6c9/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/amlinv-javaScheduler/173058f9b4c88e8c129a5e2ace15d98b87d4c6c9/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

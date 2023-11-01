@@ -1,4 +1,4 @@
-[TIME]: 0:00:01.348961
+[TIME]: 0:01:02.898775
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.mattunderscore.rated.executor.RatedExecutor specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.mattunderscore.rated.executor.ScheduledInternalExecutor specified via --testclass or --classlist.
@@ -13,28 +13,158 @@ Cannot instantiate non-accessible class com.mattunderscore.executors.BaseFuture 
 
 Will try to generate tests for 18 out of 28 classes.
 PUBLIC MEMBERS=88
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/mattunderscorechampion-rated-executor/462cbd6360f23aaea28ca2313948942b5f391818/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/mattunderscorechampion-rated-executor/462cbd6360f23aaea28ca2313948942b5f391818/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/mattunderscorechampion-rated-executor/462cbd6360f23aaea28ca2313948942b5f391818/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:43:56.498Z     51.1M used)Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
+Unhandled exception in thread RatedExecutor-0
+java.lang.NullPointerException
+	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
+	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
+	at java.lang.Thread.run(Thread.java:750)
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=594, test inputs generated=421, failing inputs=0      (2023-10-31T23:44:56.497Z     590M used)
+Normal method executions: 15688
+Exceptional method executions: 256
+
+Average method execution time (normal termination):      0.0678
+Average method execution time (exceptional termination): 0.133
+Approximate memory usage 590M
+Explorer = ForwardGenerator(steps: 594, null steps: 173, num_sequences_generated: 421;
+    allSequences: 421, regresson seqs: 272, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 149;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 41)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 176 regression sequences.
+
+Regression test output:
+Regression test count: 176
+Writing regression JUnit tests...
+
+                                                                                                                                                                                                       
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mattunderscorechampion-rated-executor/462cbd6360f23aaea28ca2313948942b5f391818/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mattunderscorechampion-rated-executor/462cbd6360f23aaea28ca2313948942b5f391818/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 73).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

@@ -1,30 +1,57 @@
-[TIME]: 0:00:01.398157
+[TIME]: 0:00:12.057502
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 2 classes.
 PUBLIC MEMBERS=202
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:56:03.810Z     51.1M used)
+Progress update: steps=545, test inputs generated=504, failing inputs=1      (2023-10-31T23:56:12.523Z     610M used)
+Normal method executions: 85617
+Exceptional method executions: 54
 
-Randoop failed.
-No sequences generated.
+Average method execution time (normal termination):      0.0425
+Average method execution time (exceptional termination): 0.222
+Approximate memory usage 610M
+Explorer = ForwardGenerator(steps: 545, null steps: 41, num_sequences_generated: 504;
+    allSequences: 504, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 4;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 110)
+
+Error-revealing test output:
+Error-revealing test count: 1
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 289 regression sequences.
+
+Regression test output:
+Regression test count: 289
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/swiftech-swifttime/d7ddd29635409d7b9f255f17dbc98f6cb7fa7e62/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.util.Calendar.getInstance()
+  Possibly flaky:  com.github.swiftech.swifttime.TimeFormatBuilder.separator(java.lang.String)
+  Possibly flaky:  com.github.swiftech.swifttime.TimeFormatBuilder.format(long)
+  Possibly flaky:  com.github.swiftech.swifttime.TimeFormatBuilder.year()
+  Possibly flaky:  java.util.regex.Pattern.quote(java.lang.String)
+  Possibly flaky:  java.lang.String.trim()
+  Possibly flaky:  java.lang.String.toUpperCase()
+  Possibly flaky:  java.lang.String.toString()
+  Possibly flaky:  java.lang.String.toLowerCase()
+  Possibly flaky:  java.lang.String.intern()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0

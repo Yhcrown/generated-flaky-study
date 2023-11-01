@@ -69,7 +69,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             htmlFileReceiver6.checkAlive();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -94,7 +94,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean5 = htmlFileReceiver3.doSendFrame("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -122,7 +122,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj15 = dispatchFunction8.handle(sockJsRequest11, sockJsResponse12, (java.lang.Object) sockJsServer13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsRequest.getHeader(String)\" because \"req\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -150,7 +150,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = htmlFileReceiver3.doSendFrame("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -165,7 +165,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str1 = org.projectodd.sockjs.Utils.generateExpires(date0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: date must not be null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -185,7 +185,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = htmlFileReceiver6.doSendFrame("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -199,7 +199,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.WebsocketReceiver websocketReceiver1 = new org.projectodd.sockjs.servlet.WebsocketReceiver(session0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.addMessageHandler(javax.websocket.MessageHandler)\" because \"this.ws\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -236,7 +236,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = sockJsConnection1.close((int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.close(int, String)\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -259,7 +259,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean2 = sockJsConnection1.close();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.close()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -285,7 +285,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str7 = sockJsServletResponse3.getHeader("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.getHeader(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -313,7 +313,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session7 = org.projectodd.sockjs.Transport.registerNoSession(sockJsRequest0, sockJsServer1, (org.projectodd.sockjs.GenericReceiver) htmlFileReceiver5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"options\" because \"server\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -330,7 +330,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str4 = sockJsServletResponse2.getHeader("c[1,\"\"]");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.getHeader(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -346,7 +346,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse2.writeHead((int) (short) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -366,7 +366,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = htmlFileReceiver6.doSendFrame("\"\\\"\\\"\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -382,7 +382,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver3 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver(sockJsRequest0, sockJsServer1, session2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"options\" because \"server\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -472,7 +472,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str2 = sockJsServletRequest1.getRemoteAddr();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemoteAddr()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -492,8 +492,8 @@ public class TestGroup100Case0 {
         java.lang.Integer int7 = sockJsServletResponse3.cacheFor();
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse3.setHeader("", "75fb46a2-f528-40f7-a8ee-5401d7109454");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setHeader(String, String)\" because \"this.response\" is null");
+            sockJsServletResponse3.setHeader("", "cc90bf66-5961-4693-b141-fc94fdea3cdb");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -517,7 +517,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str2 = sockJsServletRequest1.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getPathInfo()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -537,8 +537,8 @@ public class TestGroup100Case0 {
         sockJsServletResponse3.cacheFor((java.lang.Integer) 1);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str10 = sockJsServletResponse3.getHeader("fa8af226-eed5-42a9-b5e0-4c4c5408d114");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.getHeader(String)\" because \"this.response\" is null");
+            java.lang.String str10 = sockJsServletResponse3.getHeader("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -550,7 +550,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test038");
         java.lang.String str0 = org.projectodd.sockjs.Utils.uuid();
-// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "b0d74fd5-da79-44bc-ac34-aaac339390e4" + "'", str0, "b0d74fd5-da79-44bc-ac34-aaac339390e4");
+// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "0265a1ec-9de6-420c-91f3-dee4c9b56288" + "'", str0, "0265a1ec-9de6-420c-91f3-dee4c9b56288");
     }
 
     @Test
@@ -572,7 +572,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean5 = htmlFileReceiver3.doSendFrame("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -598,7 +598,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str8 = sockJsServletRequest1.getContentType();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContentType()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -613,8 +613,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest1 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest0);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str3 = sockJsServletRequest1.getCookie("d81e27c6-e4b2-4398-8cc3-e8be55b878e6");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            java.lang.String str3 = sockJsServletRequest1.getCookie("562be256-042b-4385-b848-18fdfc3062ad");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -633,14 +633,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = sockJsConnection1.write("b0d74fd5-da79-44bc-ac34-aaac339390e4");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.send(String)\" because \"this.session\" is null");
+            boolean boolean10 = sockJsConnection1.write("0265a1ec-9de6-420c-91f3-dee4c9b56288");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "af4f295d-74ad-4597-be48-149230874490" + "'", str6, "af4f295d-74ad-4597-be48-149230874490");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "156e8689-bb38-498a-a2ab-2e6e12657ee7" + "'", str6, "156e8689-bb38-498a-a2ab-2e6e12657ee7");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "af4f295d-74ad-4597-be48-149230874490" + "'", str8, "af4f295d-74ad-4597-be48-149230874490");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "156e8689-bb38-498a-a2ab-2e6e12657ee7" + "'", str8, "156e8689-bb38-498a-a2ab-2e6e12657ee7");
     }
 
     @Test
@@ -686,7 +686,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             htmlFileReceiver3.checkAlive();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -718,7 +718,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str4 = sockJsServletRequest1.getUrl();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRequestURI()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -738,7 +738,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             htmlFileReceiver3.checkAlive();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -758,14 +758,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            sockJsConnection1.end("75fb46a2-f528-40f7-a8ee-5401d7109454");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.send(String)\" because \"this.session\" is null");
+            sockJsConnection1.end("cc90bf66-5961-4693-b141-fc94fdea3cdb");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "922969bf-f51f-4c80-943a-65a89a99b8d4" + "'", str6, "922969bf-f51f-4c80-943a-65a89a99b8d4");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "7d5c31f0-b88a-42b2-9323-1ea458de9b35" + "'", str6, "7d5c31f0-b88a-42b2-9323-1ea458de9b35");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "922969bf-f51f-4c80-943a-65a89a99b8d4" + "'", str8, "922969bf-f51f-4c80-943a-65a89a99b8d4");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "7d5c31f0-b88a-42b2-9323-1ea458de9b35" + "'", str8, "7d5c31f0-b88a-42b2-9323-1ea458de9b35");
     }
 
     @Test
@@ -784,7 +784,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str3 = sockJsServletRequest1.getCookie("\"hi!\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -811,7 +811,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Transport.READY_STATE rEADY_STATE6 = sockJsConnection1.getReadyState();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"readyState\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -857,7 +857,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str2 = sockJsServletRequest1.getUrl();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRequestURI()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -874,7 +874,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str5 = sockJsServletRequest1.getHeader("org.projectodd.sockjs.SockJsException");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -893,7 +893,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str4 = sockJsServletRequest1.getRemoteAddr();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemoteAddr()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -905,8 +905,8 @@ public class TestGroup100Case0 {
     public void test060() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test060");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("fa8af226-eed5-42a9-b5e0-4c4c5408d114");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"fa8af226-eed5-42a9-b5e0-4c4c5408d114\"" + "'", str1, "\"fa8af226-eed5-42a9-b5e0-4c4c5408d114\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe\"" + "'", str1, "\"1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe\"");
     }
 
     @Test
@@ -958,7 +958,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj28 = dispatchFunction8.handle((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest12, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse22, (java.lang.Object) (short) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -974,7 +974,7 @@ public class TestGroup100Case0 {
     public void test063() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test063");
-        org.projectodd.sockjs.Session session1 = org.projectodd.sockjs.Session.bySessionId("fa8af226-eed5-42a9-b5e0-4c4c5408d114");
+        org.projectodd.sockjs.Session session1 = org.projectodd.sockjs.Session.bySessionId("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
         org.junit.Assert.assertNull(session1);
     }
 
@@ -982,8 +982,8 @@ public class TestGroup100Case0 {
     public void test064() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test064");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.md5Hex("d81e27c6-e4b2-4398-8cc3-e8be55b878e6");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "db3a1009d51511ad545a6c7fa1fad124" + "'", str1, "db3a1009d51511ad545a6c7fa1fad124");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.md5Hex("562be256-042b-4385-b848-18fdfc3062ad");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "546f310ca65138f89daa56a18aed0658" + "'", str1, "546f310ca65138f89daa56a18aed0658");
     }
 
     @Test
@@ -1013,7 +1013,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str2 = sockJsServletRequest1.getMethod();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getMethod()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1042,7 +1042,7 @@ public class TestGroup100Case0 {
         java.lang.String str9 = options4.sockjsUrl;
         int int10 = options4.responseLimit;
         java.lang.String str11 = options4.sockjsUrl;
-        options4.baseUrl = "75fb46a2-f528-40f7-a8ee-5401d7109454";
+        options4.baseUrl = "cc90bf66-5961-4693-b141-fc94fdea3cdb";
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str9, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str11, "http://cdn.sockjs.org/sockjs-0.3.min.js");
@@ -1079,8 +1079,8 @@ public class TestGroup100Case0 {
         java.lang.String str2 = sockJsServletRequest1.session();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str4 = sockJsServletRequest1.getCookie("db3a1009d51511ad545a6c7fa1fad124");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            java.lang.String str4 = sockJsServletRequest1.getCookie("546f310ca65138f89daa56a18aed0658");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1096,8 +1096,8 @@ public class TestGroup100Case0 {
         java.lang.String str2 = sockJsServletRequest1.session();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str4 = sockJsServletRequest1.getQueryParameter("db3a1009d51511ad545a6c7fa1fad124");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getParameter(String)\" because \"this.request\" is null");
+            java.lang.String str4 = sockJsServletRequest1.getQueryParameter("546f310ca65138f89daa56a18aed0658");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1116,7 +1116,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletRequest1.onDataAvailable();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getInputStream()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1148,11 +1148,11 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest11, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Dispatcher.dispatch(org.projectodd.sockjs.SockJsRequest, org.projectodd.sockjs.SockJsResponse)\" because \"this.dispatcher\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "08d1b860-bda9-436a-a054-6f577e274b71" + "'", str7, "08d1b860-bda9-436a-a054-6f577e274b71");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "04a2c8e4-6cc0-4927-be4a-688619279c44" + "'", str7, "04a2c8e4-6cc0-4927-be4a-688619279c44");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + 200 + "'", int18 == 200);
     }
@@ -1167,7 +1167,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletResponse sockJsServletResponse3 = new org.projectodd.sockjs.servlet.SockJsServletResponse(httpServletResponse1, asyncContext2);
         org.projectodd.sockjs.SockJsServer.Options options4 = new org.projectodd.sockjs.SockJsServer.Options();
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver5 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
-        boolean boolean7 = xhrPollingReceiver5.doSendFrame("07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        boolean boolean7 = xhrPollingReceiver5.doSendFrame("1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
     }
 
@@ -1198,7 +1198,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver12 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer2, session11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1276,7 +1276,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction67 = websocketHandler66.rawWebsocket;
         org.projectodd.sockjs.Dispatcher dispatcher68 = new org.projectodd.sockjs.Dispatcher(dispatchFunction53, dispatchFunction62, dispatchFunction67);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray69 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction18, dispatchFunction31, dispatchFunction35, dispatchFunction62 };
-        dispatcher13.push("fa8af226-eed5-42a9-b5e0-4c4c5408d114", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
+        dispatcher13.push("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
         javax.servlet.http.HttpServletRequest httpServletRequest71 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest72 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest71);
         javax.servlet.http.HttpServletResponse httpServletResponse73 = null;
@@ -1285,7 +1285,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             dispatcher13.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest72, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse75);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getPathInfo()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1334,8 +1334,8 @@ public class TestGroup100Case0 {
     public void test079() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test079");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("f8a9fbc4-f11f-4a66-8e38-02fef71a03fc");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"" + "'", str1, "\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"" + "'", str1, "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
     }
 
     @Test
@@ -1358,7 +1358,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int6 = sockJsServletRequest1.getRemotePort();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemotePort()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1376,7 +1376,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str3 = sockJsServletRequest1.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getPathInfo()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1389,7 +1389,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test083");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         javax.websocket.Session session5 = null;
         org.projectodd.sockjs.SockJsException sockJsException7 = new org.projectodd.sockjs.SockJsException("hi!");
         sockJsEndpoint4.onError(session5, (java.lang.Throwable) sockJsException7);
@@ -1402,7 +1402,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test084");
         org.projectodd.sockjs.DispatchException dispatchException2 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
-        dispatchException2.message = "\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"";
+        dispatchException2.message = "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"";
     }
 
     @Test
@@ -1415,7 +1415,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str5 = sockJsWebsocketRequest4.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1434,7 +1434,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = sockJsConnection1.close();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.close()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1471,7 +1471,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str22 = sockJsServletRequest1.getMethod();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getMethod()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1514,7 +1514,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session14 = org.projectodd.sockjs.Transport.register((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer5, (org.projectodd.sockjs.GenericReceiver) htmlFileReceiver13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemoteAddr()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1546,14 +1546,14 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver20 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest15, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse18, options19);
         org.projectodd.sockjs.Session session21 = null;
         xhrPollingReceiver20.session = session21;
-        java.lang.String[] strArray28 = new java.lang.String[] { "75fb46a2-f528-40f7-a8ee-5401d7109454", "f3418579-354d-4372-9e1c-acc5fa224d70", "org.projectodd.sockjs.SockJsException", "75fb46a2-f528-40f7-a8ee-5401d7109454", "f3418579-354d-4372-9e1c-acc5fa224d70" };
+        java.lang.String[] strArray28 = new java.lang.String[] { "cc90bf66-5961-4693-b141-fc94fdea3cdb", "9289dfd2-7a07-47e7-b902-844e36a12d2a", "org.projectodd.sockjs.SockJsException", "cc90bf66-5961-4693-b141-fc94fdea3cdb", "9289dfd2-7a07-47e7-b902-844e36a12d2a" };
         java.util.ArrayList<java.lang.String> strList29 = new java.util.ArrayList<java.lang.String>();
         boolean boolean30 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList29, strArray28);
         xhrPollingReceiver20.doSendBulk((java.util.List<java.lang.String>) strList29);
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session32 = org.projectodd.sockjs.Transport.register((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, sockJsServer5, (org.projectodd.sockjs.GenericReceiver) xhrPollingReceiver20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1588,8 +1588,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse7, options15);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str22 = sockJsServletRequest1.getHeader("f3418579-354d-4372-9e1c-acc5fa224d70");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            java.lang.String str22 = sockJsServletRequest1.getHeader("9289dfd2-7a07-47e7-b902-844e36a12d2a");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1624,8 +1624,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options16);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str24 = sockJsServletRequest1.getHeader("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            java.lang.String str24 = sockJsServletRequest1.getHeader("99bb2ca2-b220-445b-a4ac-c77322095a71");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1644,7 +1644,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.pathname = "hi!";
         java.lang.String str4 = sockJsConnection1.remoteAddress;
-        sockJsConnection1.emitData("\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"");
+        sockJsConnection1.emitData("\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
         org.junit.Assert.assertNull(str4);
     }
 
@@ -1676,7 +1676,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse7.writeHead((int) (short) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1712,7 +1712,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str21 = sockJsServletRequest1.getContentType();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContentType()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1744,17 +1744,17 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options18 = new org.projectodd.sockjs.SockJsServer.Options();
         int int19 = options18.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest14, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options18);
-        boolean boolean22 = eventSourceReceiver20.doSendFrame("43d8b917-8827-49ca-89c1-ae736376a4ee");
+        boolean boolean22 = eventSourceReceiver20.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session23 = org.projectodd.sockjs.Transport.register((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer4, (org.projectodd.sockjs.GenericReceiver) eventSourceReceiver20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertNull(dispatchFunction3);
-// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "9a3f72f4-3ba8-4d23-8537-d9db8729ce50" + "'", str11, "9a3f72f4-3ba8-4d23-8537-d9db8729ce50");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "66a164aa-f045-4f22-8d98-d12fadec67d2" + "'", str11, "66a164aa-f045-4f22-8d98-d12fadec67d2");
         org.junit.Assert.assertNull(str12);
         org.junit.Assert.assertTrue("'" + int19 + "' != '" + 25000 + "'", int19 == 25000);
         org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
@@ -1784,7 +1784,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.Dispatcher dispatcher17 = new org.projectodd.sockjs.Dispatcher(dispatchFunction2, dispatchFunction11, dispatchFunction16);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray22 = new org.projectodd.sockjs.DispatchFunction[] {};
         org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry23 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("hi!", "hi!", dispatchFunctionArray22);
-        dispatcher17.push("dc9dd578-ea65-4146-9751-8f3f686e5c5a", "fa8af226-eed5-42a9-b5e0-4c4c5408d114", dispatchFunctionArray22);
+        dispatcher17.push("42393e10-600d-4023-8e90-2e0df2e16503", "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", dispatchFunctionArray22);
         org.junit.Assert.assertNotNull(dispatchFunction2);
         org.junit.Assert.assertNotNull(dispatchFunction5);
         org.junit.Assert.assertNotNull(dispatchFunction8);
@@ -1828,7 +1828,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int8 = sockJsServletRequest1.getRemotePort();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemotePort()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1873,7 +1873,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse7.writeHead((int) (byte) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1906,7 +1906,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str17 = sockJsServletRequest1.getContentType();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContentType()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1924,7 +1924,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str5 = sockJsWebsocketRequest4.getUrl();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1943,7 +1943,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Transport.READY_STATE rEADY_STATE8 = sockJsConnection1.getReadyState();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"readyState\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1960,9 +1960,9 @@ public class TestGroup100Case0 {
         java.lang.String str6 = sockJsConnection1.id;
         java.lang.String str7 = sockJsConnection1.toString();
         java.lang.String str8 = sockJsConnection1.id;
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str6, "511fc947-e7d8-4680-8ae4-9a351a395cf8");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "<SockJSConnection 511fc947-e7d8-4680-8ae4-9a351a395cf8>" + "'", str7, "<SockJSConnection 511fc947-e7d8-4680-8ae4-9a351a395cf8>");
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str8, "511fc947-e7d8-4680-8ae4-9a351a395cf8");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "dc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str6, "dc9978fd-25e8-4379-9ca9-e5909baefee9");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>" + "'", str7, "<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "dc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str8, "dc9978fd-25e8-4379-9ca9-e5909baefee9");
     }
 
     @Test
@@ -1978,7 +1978,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver6 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse3.end("d81e27c6-e4b2-4398-8cc3-e8be55b878e6");
+            sockJsServletResponse3.end("562be256-042b-4385-b848-18fdfc3062ad");
             org.junit.Assert.fail("Expected exception of type org.projectodd.sockjs.SockJsException; message: Error writing response:");
         } catch (org.projectodd.sockjs.SockJsException e) {
             // Expected exception.
@@ -2004,7 +2004,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str5 = sockJsWebsocketRequest4.getUrl();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2053,7 +2053,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str8 = sockJsServletResponse3.getHeader("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.getHeader(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2100,7 +2100,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str18 = sockJsServletRequest1.getHeader("\"\\\"\\\"\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2157,8 +2157,8 @@ public class TestGroup100Case0 {
         dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "\"hi!\"", dispatchFunctionArray45);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray51 = new org.projectodd.sockjs.DispatchFunction[] {};
         org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry52 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("hi!", "hi!", dispatchFunctionArray51);
-        dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "75fb46a2-f528-40f7-a8ee-5401d7109454", dispatchFunctionArray51);
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry54 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("<SockJSConnection 511fc947-e7d8-4680-8ae4-9a351a395cf8>", "<SockJSConnection dc9dd578-ea65-4146-9751-8f3f686e5c5a>", dispatchFunctionArray51);
+        dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "cc90bf66-5961-4693-b141-fc94fdea3cdb", dispatchFunctionArray51);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry54 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>", "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>", dispatchFunctionArray51);
         org.junit.Assert.assertNotNull(dispatchFunction4);
         org.junit.Assert.assertNotNull(dispatchFunction7);
         org.junit.Assert.assertNotNull(dispatchFunction10);
@@ -2196,11 +2196,11 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.clearTimeout(scheduledFuture16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledFuture.cancel(boolean)\" because \"future\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "97bb0a04-7914-4c14-b78d-5afbbccd5f4d" + "'", str7, "97bb0a04-7914-4c14-b78d-5afbbccd5f4d");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "b75c8de0-71cd-432f-8f45-4de164f08d98" + "'", str7, "b75c8de0-71cd-432f-8f45-4de164f08d98");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -2210,7 +2210,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test117");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler5 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
         org.projectodd.sockjs.AppHandler appHandler6 = new org.projectodd.sockjs.AppHandler(sockJsServer0);
     }
@@ -2236,7 +2236,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse3.end();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.AsyncContext.complete()\" because \"this.asyncContext\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2258,7 +2258,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean9 = htmlFileReceiver6.doSendFrame("\"\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2362,7 +2362,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str21 = sockJsServletRequest1.getRemoteAddr();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemoteAddr()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2375,8 +2375,8 @@ public class TestGroup100Case0 {
     public void test127() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test127");
-        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("43d8b917-8827-49ca-89c1-ae736376a4ee", "\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"");
-        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "43d8b917-8827-49ca-89c1-ae736376a4ee" + "'", str2, "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("2df7967b-c163-40e4-9df1-d5dcf52a6339", "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "2df7967b-c163-40e4-9df1-d5dcf52a6339" + "'", str2, "2df7967b-c163-40e4-9df1-d5dcf52a6339");
     }
 
     @Test
@@ -2385,7 +2385,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test128");
         org.projectodd.sockjs.SockJsException sockJsException2 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException3 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException2);
-        org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException("\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"", (java.lang.Throwable) sockJsException2);
+        org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException("\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"", (java.lang.Throwable) sockJsException2);
     }
 
     @Test
@@ -2401,7 +2401,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str8 = sockJsServletRequest1.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getPathInfo()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2475,7 +2475,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj63 = dispatchFunction22.handle((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest25, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse39, (java.lang.Object) dispatchFunction61);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setContentType(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2506,10 +2506,10 @@ public class TestGroup100Case0 {
         sockJsConnection1.prefix = "\"\"";
         sockJsConnection1.url = "\"\\\"\\\"\"";
         java.lang.String str6 = sockJsConnection1.id;
-        sockJsConnection1.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection1.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         org.projectodd.sockjs.SockJsConnection.OnCloseHandler onCloseHandler9 = null;
         sockJsConnection1.onClose(onCloseHandler9);
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "801c1e87-b800-49b0-8912-424dc32eae62" + "'", str6, "801c1e87-b800-49b0-8912-424dc32eae62");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f6091292-7c6e-4d5b-9828-40d53b360c32" + "'", str6, "f6091292-7c6e-4d5b-9828-40d53b360c32");
     }
 
     @Test
@@ -2542,7 +2542,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         org.projectodd.sockjs.SockJsServer sockJsServer17 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler18 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer17);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "dc9dd578-ea65-4146-9751-8f3f686e5c5a");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
         javax.websocket.Session session22 = null;
         org.projectodd.sockjs.SockJsException sockJsException24 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException25 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException24);
@@ -2580,13 +2580,13 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session62 = org.projectodd.sockjs.Transport.register((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer28, (org.projectodd.sockjs.GenericReceiver) htmlFileReceiver61);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertTrue("'" + int14 + "' != '" + 25000 + "'", int14 == 25000);
-// flaky:         org.junit.Assert.assertEquals("'" + str35 + "' != '" + "f45dc42e-bd8b-4b40-8215-c258b8f67fd4" + "'", str35, "f45dc42e-bd8b-4b40-8215-c258b8f67fd4");
+// flaky:         org.junit.Assert.assertEquals("'" + str35 + "' != '" + "d71bb72c-d7c7-4960-8ae5-c9a2f6758d03" + "'", str35, "d71bb72c-d7c7-4960-8ae5-c9a2f6758d03");
         org.junit.Assert.assertNull(str36);
         org.junit.Assert.assertNull(str41);
         org.junit.Assert.assertTrue("'" + int53 + "' != '" + 25000 + "'", int53 == 25000);
@@ -2632,7 +2632,7 @@ public class TestGroup100Case0 {
         dispatchEntry3.method = "org.projectodd.sockjs.SockJsException";
         java.lang.String[] strArray7 = null;
         dispatchEntry3.groups = strArray7;
-        dispatchEntry3.method = "43d8b917-8827-49ca-89c1-ae736376a4ee";
+        dispatchEntry3.method = "2df7967b-c163-40e4-9df1-d5dcf52a6339";
         java.lang.Class<?> wildcardClass11 = dispatchEntry3.getClass();
         org.junit.Assert.assertNotNull(dispatchFunctionArray2);
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi!" + "'", str4, "hi!");
@@ -2643,8 +2643,8 @@ public class TestGroup100Case0 {
     public void test136() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test136");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("db3a1009d51511ad545a6c7fa1fad124");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"db3a1009d51511ad545a6c7fa1fad124\"" + "'", str1, "\"db3a1009d51511ad545a6c7fa1fad124\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("546f310ca65138f89daa56a18aed0658");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"546f310ca65138f89daa56a18aed0658\"" + "'", str1, "\"546f310ca65138f89daa56a18aed0658\"");
     }
 
     @Test
@@ -2692,7 +2692,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test138");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         java.lang.String str4 = sockJsConnection1.pathname;
         org.junit.Assert.assertNull(str4);
     }
@@ -2708,7 +2708,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsException sockJsException6 = new org.projectodd.sockjs.SockJsException("", (java.lang.Throwable) sockJsException5);
         sockJsServletRequest1.onError((java.lang.Throwable) sockJsException5);
         sockJsServletRequest1.onAllDataRead();
-        sockJsServletRequest1.addMatch("http://cdn.sockjs.org/sockjs-0.3.min.js", "f8a9fbc4-f11f-4a66-8e38-02fef71a03fc");
+        sockJsServletRequest1.addMatch("http://cdn.sockjs.org/sockjs-0.3.min.js", "0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
         org.junit.Assert.assertNull(str2);
     }
 
@@ -2800,7 +2800,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction67 = websocketHandler66.rawWebsocket;
         org.projectodd.sockjs.Dispatcher dispatcher68 = new org.projectodd.sockjs.Dispatcher(dispatchFunction53, dispatchFunction62, dispatchFunction67);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray69 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction18, dispatchFunction31, dispatchFunction35, dispatchFunction62 };
-        dispatcher13.push("fa8af226-eed5-42a9-b5e0-4c4c5408d114", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
+        dispatcher13.push("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
         javax.websocket.Session session71 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap74 = null;
         org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest75 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session71, "\"hi!\"", "c[1,\"\"]", strMap74);
@@ -2815,7 +2815,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             dispatcher13.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest75, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse79);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2895,7 +2895,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.destroy();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.shutdownNow()\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2927,16 +2927,16 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
         org.projectodd.sockjs.SockJsServer sockJsServer27 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer27.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint31 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer27, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint34 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer27, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint31 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer27, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint34 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer27, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         javax.websocket.Session session35 = null;
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver36 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer27, session35);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.addMessageHandler(javax.websocket.MessageHandler)\" because \"this.ws\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2958,7 +2958,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str9 = sockJsServletRequest1.getPrefix();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContextPath()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3021,11 +3021,11 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest11, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse23);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Dispatcher.dispatch(org.projectodd.sockjs.SockJsRequest, org.projectodd.sockjs.SockJsResponse)\" because \"this.dispatcher\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "13e91b90-9cf7-4089-ab16-2ffa93821e5f" + "'", str7, "13e91b90-9cf7-4089-ab16-2ffa93821e5f");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "42bf3332-f6d0-494a-aaf3-4db4e4ba355e" + "'", str7, "42bf3332-f6d0-494a-aaf3-4db4e4ba355e");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNull(str12);
         org.junit.Assert.assertNull(dispatchFunction13);
@@ -3105,13 +3105,13 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean11 = sockJsConnection1.close();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.close()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "211af3d8-f515-40cb-98d2-8b071ea4e1c7" + "'", str6, "211af3d8-f515-40cb-98d2-8b071ea4e1c7");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "93e0457b-336a-43e3-9320-2b902f01d485" + "'", str6, "93e0457b-336a-43e3-9320-2b902f01d485");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "211af3d8-f515-40cb-98d2-8b071ea4e1c7" + "'", str8, "211af3d8-f515-40cb-98d2-8b071ea4e1c7");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "93e0457b-336a-43e3-9320-2b902f01d485" + "'", str8, "93e0457b-336a-43e3-9320-2b902f01d485");
         org.junit.Assert.assertNotNull(strMap10);
     }
 
@@ -3119,7 +3119,7 @@ public class TestGroup100Case0 {
     public void test151() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test151");
-        org.projectodd.sockjs.SockJsException sockJsException1 = new org.projectodd.sockjs.SockJsException("\"db3a1009d51511ad545a6c7fa1fad124\"");
+        org.projectodd.sockjs.SockJsException sockJsException1 = new org.projectodd.sockjs.SockJsException("\"546f310ca65138f89daa56a18aed0658\"");
     }
 
     @Test
@@ -3128,7 +3128,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test152");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint4 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "26d673b2-bd96-4f3d-ab84-368077a6d9ab", "f8a9fbc4-f11f-4a66-8e38-02fef71a03fc");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint4 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "99bb2ca2-b220-445b-a4ac-c77322095a71", "0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
     }
 
     @Test
@@ -3149,7 +3149,7 @@ public class TestGroup100Case0 {
         sockJsConnection12.prefix = "\"\"";
         sockJsServer0.emitConnection(sockJsConnection12);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler16 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6268c5e8-cb89-44ae-8604-43fb4dd19ce5" + "'", str7, "6268c5e8-cb89-44ae-8604-43fb4dd19ce5");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c780d6ce-cb5b-433b-9a0c-69eb41f555dd" + "'", str7, "c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -3177,7 +3177,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse6.writeHead((int) (short) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3191,7 +3191,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test155");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         int int6 = sockJsWebsocketRequest4.getRemotePort();
         org.junit.Assert.assertNull(nextFilter5);
@@ -3206,7 +3206,7 @@ public class TestGroup100Case0 {
         int int1 = options0.heartbeatDelay;
         boolean boolean2 = options0.jsessionid;
         java.lang.String str3 = options0.baseUrl;
-        options0.baseUrl = "<SockJSConnection dc9dd578-ea65-4146-9751-8f3f686e5c5a>";
+        options0.baseUrl = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
         options0.jsessionid = false;
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 25000 + "'", int1 == 25000);
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
@@ -3236,8 +3236,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str18 = sockJsServletRequest1.getCookie("<SockJSConnection 511fc947-e7d8-4680-8ae4-9a351a395cf8>");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            java.lang.String str18 = sockJsServletRequest1.getCookie("<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3274,7 +3274,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str23 = sockJsServletRequest1.getCookie("c[1,\"\"]");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3365,7 +3365,7 @@ public class TestGroup100Case0 {
         websocketHandler70.rawWebsocket = dispatchFunction74;
         appHandler67.disabledTransport = dispatchFunction74;
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray77 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction4, dispatchFunction18, dispatchFunction37, dispatchFunction50, dispatchFunction64, dispatchFunction74 };
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry78 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("26d673b2-bd96-4f3d-ab84-368077a6d9ab", "\"\\\"\\\"\"", dispatchFunctionArray77);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry78 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("99bb2ca2-b220-445b-a4ac-c77322095a71", "\"\\\"\\\"\"", dispatchFunctionArray77);
         java.lang.String str79 = dispatchEntry78.method;
         org.junit.Assert.assertNotNull(dispatchFunction4);
         org.junit.Assert.assertNotNull(dispatchFunction7);
@@ -3391,7 +3391,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(dispatchFunction71);
         org.junit.Assert.assertNotNull(dispatchFunction74);
         org.junit.Assert.assertNotNull(dispatchFunctionArray77);
-        org.junit.Assert.assertEquals("'" + str79 + "' != '" + "26d673b2-bd96-4f3d-ab84-368077a6d9ab" + "'", str79, "26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        org.junit.Assert.assertEquals("'" + str79 + "' != '" + "99bb2ca2-b220-445b-a4ac-c77322095a71" + "'", str79, "99bb2ca2-b220-445b-a4ac-c77322095a71");
     }
 
     @Test
@@ -3423,7 +3423,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -3445,11 +3445,11 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("\"db3a1009d51511ad545a6c7fa1fad124\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.Map.keySet()\" because \"this.headers\" is null");
+            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("\"546f310ca65138f89daa56a18aed0658\"");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3469,7 +3469,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test161");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "dc9dd578-ea65-4146-9751-8f3f686e5c5a");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler5 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
     }
 
@@ -3495,7 +3495,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse3.end();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.AsyncContext.complete()\" because \"this.asyncContext\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3555,7 +3555,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object obj50 = dispatchFunction16.handle(sockJsRequest18, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse26, (java.lang.Object) sockJsConnection41);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsRequest.getHeader(String)\" because \"req\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3597,7 +3597,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         sockJsServlet0.setServer(sockJsServer1);
         // The following exception was thrown during execution in test generation
         try {
@@ -3673,11 +3673,11 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str27 = sockJsServletRequest1.getMethod();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getMethod()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3697,8 +3697,8 @@ public class TestGroup100Case0 {
     public void test171() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test171");
-        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("516b8bdb-e2c8-4e7a-a3f3-610aef70e24b", "");
-        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "516b8bdb-e2c8-4e7a-a3f3-610aef70e24b" + "'", str2, "516b8bdb-e2c8-4e7a-a3f3-610aef70e24b");
+        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("7030d516-c9fc-4b3e-a24b-c4d736555f2d", "");
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "7030d516-c9fc-4b3e-a24b-c4d736555f2d" + "'", str2, "7030d516-c9fc-4b3e-a24b-c4d736555f2d");
     }
 
     @Test
@@ -3795,8 +3795,8 @@ public class TestGroup100Case0 {
         websocketHandler86.rawWebsocket = dispatchFunction90;
         appHandler83.disabledTransport = dispatchFunction90;
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray93 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction20, dispatchFunction34, dispatchFunction53, dispatchFunction66, dispatchFunction80, dispatchFunction90 };
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry94 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("26d673b2-bd96-4f3d-ab84-368077a6d9ab", "\"\\\"\\\"\"", dispatchFunctionArray93);
-        dispatcher13.push("\"hi!\"", "d81e27c6-e4b2-4398-8cc3-e8be55b878e6", dispatchFunctionArray93);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry94 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("99bb2ca2-b220-445b-a4ac-c77322095a71", "\"\\\"\\\"\"", dispatchFunctionArray93);
+        dispatcher13.push("\"hi!\"", "562be256-042b-4385-b848-18fdfc3062ad", dispatchFunctionArray93);
         org.junit.Assert.assertNotNull(dispatchFunction2);
         org.junit.Assert.assertNotNull(dispatchFunction5);
         org.junit.Assert.assertNotNull(dispatchFunction8);
@@ -3854,7 +3854,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int21 = sockJsServletRequest1.getRemotePort();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemotePort()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3869,13 +3869,13 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test174");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "dc9dd578-ea65-4146-9751-8f3f686e5c5a");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
         javax.websocket.Session session5 = null;
         javax.websocket.EndpointConfig endpointConfig6 = null;
         // The following exception was thrown during execution in test generation
         try {
             sockJsEndpoint4.onOpen(session5, endpointConfig6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getPathParameters()\" because \"session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3956,7 +3956,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str8 = sockJsServletResponse3.getHeader("\"\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.getHeader(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3976,14 +3976,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = sockJsConnection1.write("6268c5e8-cb89-44ae-8604-43fb4dd19ce5");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.send(String)\" because \"this.session\" is null");
+            boolean boolean10 = sockJsConnection1.write("c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "2658f87c-936d-4366-b311-0c21fbcfef13" + "'", str6, "2658f87c-936d-4366-b311-0c21fbcfef13");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "4e47451f-ae74-4816-ab2d-dcaf258ab277" + "'", str6, "4e47451f-ae74-4816-ab2d-dcaf258ab277");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2658f87c-936d-4366-b311-0c21fbcfef13" + "'", str8, "2658f87c-936d-4366-b311-0c21fbcfef13");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "4e47451f-ae74-4816-ab2d-dcaf258ab277" + "'", str8, "4e47451f-ae74-4816-ab2d-dcaf258ab277");
     }
 
     @Test
@@ -4029,7 +4029,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str17 = sockJsServletRequest1.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getPathInfo()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4060,7 +4060,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         org.projectodd.sockjs.SockJsServer sockJsServer17 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler18 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer17);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "dc9dd578-ea65-4146-9751-8f3f686e5c5a");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
         javax.websocket.Session session22 = null;
         org.projectodd.sockjs.SockJsException sockJsException24 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException25 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException24);
@@ -4069,7 +4069,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str29 = sockJsServletRequest1.getHeader("9d4568c009d203ab10e33ea9953a0264");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4083,8 +4083,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test183");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         javax.websocket.Session session8 = null;
         java.lang.Throwable throwable9 = null;
         rawWebsocketEndpoint7.onError(session8, throwable9);
@@ -4144,7 +4144,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str6 = sockJsServletRequest1.getContentType();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContentType()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4188,7 +4188,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse3.writeHead((int) '4');
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4206,10 +4206,10 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         sockJsConnection2.remotePort = (short) 10;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "483f904d-8c7e-406d-bf6d-27d273c35024" + "'", str7, "483f904d-8c7e-406d-bf6d-27d273c35024");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "eb3aba54-425c-4866-9648-b27c1de06974" + "'", str7, "eb3aba54-425c-4866-9648-b27c1de06974");
     }
 
     @Test
@@ -4281,7 +4281,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -4303,7 +4303,7 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         int int59 = sockJsWebsocketRequest4.getRemotePort();
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 200 + "'", int20 == 200);
@@ -4323,7 +4323,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         sockJsServlet0.setServer(sockJsServer1);
         // The following exception was thrown during execution in test generation
         try {
@@ -4365,7 +4365,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str2 = sockJsServlet0.getInitParameter("43d8b917-8827-49ca-89c1-ae736376a4ee");
+            java.lang.String str2 = sockJsServlet0.getInitParameter("2df7967b-c163-40e4-9df1-d5dcf52a6339");
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: ServletConfig has not been initialized");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
@@ -4411,7 +4411,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver5 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
         org.projectodd.sockjs.Session session6 = null;
         xhrPollingReceiver5.session = session6;
-        boolean boolean9 = xhrPollingReceiver5.doSendFrame("43d8b917-8827-49ca-89c1-ae736376a4ee");
+        boolean boolean9 = xhrPollingReceiver5.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
         org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
     }
 
@@ -4444,7 +4444,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             int int22 = sockJsServletRequest1.getRemotePort();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRemotePort()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4482,7 +4482,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str24 = sockJsServletRequest1.getHeader("9d4568c009d203ab10e33ea9953a0264");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getHeader(String)\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4552,7 +4552,7 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection2.remoteAddress;
         sockJsServer0.emitConnection(sockJsConnection2);
         java.lang.String str10 = sockJsConnection2.remoteAddress;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ec32cdda-b57c-43fe-b7f6-330f3ce46604" + "'", str7, "ec32cdda-b57c-43fe-b7f6-330f3ce46604");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "fd484e31-0854-4cd0-9a14-f7e9c04236f1" + "'", str7, "fd484e31-0854-4cd0-9a14-f7e9c04236f1");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNull(str10);
     }
@@ -4571,7 +4571,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str9 = sockJsServletRequest1.getMethod();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getMethod()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4584,8 +4584,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test203");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.projectodd.sockjs.SockJsServer.Options options8 = sockJsServer0.options;
         org.junit.Assert.assertNotNull(options8);
     }
@@ -4601,11 +4601,11 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options4 = new org.projectodd.sockjs.SockJsServer.Options();
         int int5 = options4.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver6 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
-        boolean boolean8 = eventSourceReceiver6.doSendFrame("43d8b917-8827-49ca-89c1-ae736376a4ee");
+        boolean boolean8 = eventSourceReceiver6.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = eventSourceReceiver6.doSendFrame("6268c5e8-cb89-44ae-8604-43fb4dd19ce5");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            boolean boolean10 = eventSourceReceiver6.doSendFrame("c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4619,18 +4619,18 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test205");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         java.lang.String str5 = sockJsWebsocketRequest4.getPrefix();
         org.projectodd.sockjs.SockJsServer sockJsServer6 = new org.projectodd.sockjs.SockJsServer();
         javax.websocket.Session session7 = null;
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver8 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, sockJsServer6, session7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str5, "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str5, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
     }
 
     @Test
@@ -4639,7 +4639,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test206");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "dc9dd578-ea65-4146-9751-8f3f686e5c5a");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
         javax.servlet.http.HttpServletRequest httpServletRequest5 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest6 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest5);
         java.lang.String str7 = sockJsServletRequest6.session();
@@ -4648,7 +4648,7 @@ public class TestGroup100Case0 {
         sockJsServletRequest6.onEnd(onEndHandler9);
         javax.websocket.Session session11 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap14 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest15 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session11, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap14);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest15 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session11, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap14);
         java.lang.String str16 = sockJsWebsocketRequest15.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest17 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse18 = null;
@@ -4668,13 +4668,13 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse20);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Dispatcher.dispatch(org.projectodd.sockjs.SockJsRequest, org.projectodd.sockjs.SockJsResponse)\" because \"this.dispatcher\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertNull(dispatchFunction8);
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str16, "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8");
+        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str16, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
         org.junit.Assert.assertTrue("'" + int23 + "' != '" + 200 + "'", int23 == 200);
     }
 
@@ -4684,12 +4684,12 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test207");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str7 = sockJsWebsocketRequest4.getHeader("\"hi!\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.Map.keySet()\" because \"this.headers\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4736,8 +4736,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "db3a1009d51511ad545a6c7fa1fad124");
-        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException29);
         org.projectodd.sockjs.DispatchException dispatchException33 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException33);
@@ -4768,7 +4768,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test211");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         org.projectodd.sockjs.SockJsServer sockJsServer5 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session6 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection7 = new org.projectodd.sockjs.SockJsConnection(session6);
@@ -4787,11 +4787,11 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver23 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, sockJsServer5, session22);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit)\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "e5ec098e-2226-4fd9-a608-adc524d3b99d" + "'", str12, "e5ec098e-2226-4fd9-a608-adc524d3b99d");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "c0b67cb2-5b41-4eb0-a642-0be186babb22" + "'", str12, "c0b67cb2-5b41-4eb0-a642-0be186babb22");
         org.junit.Assert.assertNull(str13);
     }
 
@@ -4810,7 +4810,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver rawWebsocketSessionReceiver8 = new org.projectodd.sockjs.servlet.RawWebsocketSessionReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer6, session7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"options\" because \"server\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4835,7 +4835,7 @@ public class TestGroup100Case0 {
         dispatchEntry3.method = "org.projectodd.sockjs.SockJsException";
         java.lang.String[] strArray7 = null;
         dispatchEntry3.groups = strArray7;
-        dispatchEntry3.method = "43d8b917-8827-49ca-89c1-ae736376a4ee";
+        dispatchEntry3.method = "2df7967b-c163-40e4-9df1-d5dcf52a6339";
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray11 = dispatchEntry3.functions;
         org.junit.Assert.assertNotNull(dispatchFunctionArray2);
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi!" + "'", str4, "hi!");
@@ -4849,7 +4849,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         sockJsServlet0.setServer(sockJsServer1);
         org.projectodd.sockjs.SockJsServer sockJsServer7 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session8 = null;
@@ -4867,7 +4867,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "b6b6bea1-b49d-4af3-9657-89a8dbed9b4a" + "'", str14, "b6b6bea1-b49d-4af3-9657-89a8dbed9b4a");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "c7c8063c-0a1c-4886-bdb9-3cc3e216bafb" + "'", str14, "c7c8063c-0a1c-4886-bdb9-3cc3e216bafb");
         org.junit.Assert.assertNull(str15);
     }
 
@@ -4884,8 +4884,8 @@ public class TestGroup100Case0 {
         boolean boolean7 = xhrPollingReceiver5.doSendFrame("\"\"");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean9 = xhrPollingReceiver5.doSendFrame("516b8bdb-e2c8-4e7a-a3f3-610aef70e24b");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            boolean boolean9 = xhrPollingReceiver5.doSendFrame("7030d516-c9fc-4b3e-a24b-c4d736555f2d");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4921,7 +4921,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -4943,9 +4943,9 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         java.lang.String str59 = sockJsWebsocketRequest4.getContentType();
-        java.lang.String str61 = sockJsWebsocketRequest4.getCookie("516b8bdb-e2c8-4e7a-a3f3-610aef70e24b");
+        java.lang.String str61 = sockJsWebsocketRequest4.getCookie("7030d516-c9fc-4b3e-a24b-c4d736555f2d");
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 200 + "'", int20 == 200);
         org.junit.Assert.assertNull(str34);
@@ -4964,8 +4964,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test218");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.projectodd.sockjs.SockJsRequest sockJsRequest8 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse9 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest10 = null;
@@ -4977,7 +4977,7 @@ public class TestGroup100Case0 {
         java.lang.String str17 = options12.sockjsUrl;
         int int18 = options12.responseLimit;
         java.lang.String str19 = options12.sockjsUrl;
-        options12.sockjsUrl = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        options12.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         sockJsServer0.options = options12;
         org.projectodd.sockjs.SockJsServer sockJsServer23 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session24 = null;
@@ -4998,7 +4998,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals("'" + str17 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str17, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str19, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "5ff017d8-d3db-42e6-8865-6e9ce1a04c1b" + "'", str30, "5ff017d8-d3db-42e6-8865-6e9ce1a04c1b");
+// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "e9cbdfff-25c5-4384-9b52-64cfa602c655" + "'", str30, "e9cbdfff-25c5-4384-9b52-64cfa602c655");
         org.junit.Assert.assertNull(str31);
         org.junit.Assert.assertNull(str39);
     }
@@ -5023,7 +5023,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler16 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
         org.projectodd.sockjs.DispatchFunction dispatchFunction17 = eventsourceHandler16.eventsource;
         org.projectodd.sockjs.DispatchFunction dispatchFunction18 = eventsourceHandler16.eventsource;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9e793ec0-4aa6-401f-b1ec-57586cb1f397" + "'", str7, "9e793ec0-4aa6-401f-b1ec-57586cb1f397");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "4df1bf63-6d12-4300-b19f-35389611d1da" + "'", str7, "4df1bf63-6d12-4300-b19f-35389611d1da");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNotNull(dispatchFunction17);
         org.junit.Assert.assertNotNull(dispatchFunction18);
@@ -5039,10 +5039,10 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
-        sockJsConnection2.emitData("188b116a-483b-400a-8c71-4bde766c9638");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9c32c9de-30f8-42ef-94fe-77827b0ded69" + "'", str7, "9c32c9de-30f8-42ef-94fe-77827b0ded69");
+        sockJsConnection2.emitData("de9a8da6-580d-432b-bbe5-42d5a97c653f");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "96c4603c-3098-4810-bbe2-2f8d3d821aca" + "'", str7, "96c4603c-3098-4810-bbe2-2f8d3d821aca");
     }
 
     @Test
@@ -5104,7 +5104,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str17 = sockJsServletRequest1.getPrefix();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getContextPath()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5190,7 +5190,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.prefix = "\"\"";
         java.lang.String str4 = sockJsConnection1.toString();
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "<SockJSConnection eb16dcc1-2c36-4dcb-beb4-7b56e0c9d5ad>" + "'", str4, "<SockJSConnection eb16dcc1-2c36-4dcb-beb4-7b56e0c9d5ad>");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "<SockJSConnection 2581f79a-8ce7-4075-aede-791f8359e2ae>" + "'", str4, "<SockJSConnection 2581f79a-8ce7-4075-aede-791f8359e2ae>");
     }
 
     @Test
@@ -5208,7 +5208,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletResponse3.writeHead(25000);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setStatus(int)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5252,7 +5252,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str4 = sockJsServletRequest1.getMethod();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getMethod()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5266,7 +5266,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test229");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         java.lang.String str4 = sockJsConnection1.prefix;
         org.junit.Assert.assertNull(str4);
     }
@@ -5280,7 +5280,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException3);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServlet0.log("75fb46a2-f528-40f7-a8ee-5401d7109454", (java.lang.Throwable) sockJsException3);
+            sockJsServlet0.log("cc90bf66-5961-4693-b141-fc94fdea3cdb", (java.lang.Throwable) sockJsException3);
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: ServletConfig has not been initialized");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
@@ -5314,11 +5314,11 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test232");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         java.lang.String str6 = sockJsWebsocketRequest4.getPrefix();
         org.junit.Assert.assertNull(nextFilter5);
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str6, "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str6, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
     }
 
     @Test
@@ -5331,12 +5331,12 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer.Options options12 = sockJsServer0.options;
         options12.responseLimit = 100;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "2699f772-1f33-4c17-a8f7-95d929e2329d" + "'", str7, "2699f772-1f33-4c17-a8f7-95d929e2329d");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c843a36f-67a3-4198-9024-291640dd99b7" + "'", str7, "c843a36f-67a3-4198-9024-291640dd99b7");
         org.junit.Assert.assertNotNull(options12);
     }
 
@@ -5567,8 +5567,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver21 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse9, options18);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str23 = sockJsServletRequest1.getQueryParameter("d4151e56-5aea-4f2f-beb4-9c236f111d3c");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getParameter(String)\" because \"this.request\" is null");
+            java.lang.String str23 = sockJsServletRequest1.getQueryParameter("03547ec1-506f-4c73-a4d0-a9eae9f95fdd");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5650,7 +5650,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             dispatcher26.dispatch((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest31, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse55);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5727,7 +5727,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             dispatcher13.push("", strArray53, dispatchFunctionArray56);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 0");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -5796,11 +5796,11 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServer0.destroy();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.concurrent.ScheduledExecutorService.shutdownNow()\" because \"this.scheduledExecutor\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "06ef2fdb-d2ba-4f43-86d4-d841525e8eda" + "'", str7, "06ef2fdb-d2ba-4f43-86d4-d841525e8eda");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "0199325e-1796-4db3-9302-2930e18bea9d" + "'", str7, "0199325e-1796-4db3-9302-2930e18bea9d");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -5810,12 +5810,12 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test246");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         org.projectodd.sockjs.SockJsServer sockJsServer6 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer6.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint10 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer6, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint13 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer6, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint10 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer6, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint13 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer6, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.projectodd.sockjs.SockJsRequest sockJsRequest14 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse15 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest16 = null;
@@ -5827,7 +5827,7 @@ public class TestGroup100Case0 {
         java.lang.String str23 = options18.sockjsUrl;
         int int24 = options18.responseLimit;
         java.lang.String str25 = options18.sockjsUrl;
-        options18.sockjsUrl = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        options18.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         sockJsServer6.options = options18;
         org.projectodd.sockjs.SockJsRequest sockJsRequest29 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse30 = null;
@@ -5836,11 +5836,11 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options33 = new org.projectodd.sockjs.SockJsServer.Options();
         int int34 = options33.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver35 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest29, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse32, options33);
-        boolean boolean37 = eventSourceReceiver35.doSendFrame("801c1e87-b800-49b0-8912-424dc32eae62");
+        boolean boolean37 = eventSourceReceiver35.doSendFrame("f6091292-7c6e-4d5b-9828-40d53b360c32");
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session38 = org.projectodd.sockjs.Transport.registerNoSession((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, sockJsServer6, (org.projectodd.sockjs.GenericReceiver) eventSourceReceiver35);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5865,7 +5865,7 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection2.remoteAddress;
         sockJsServer0.emitConnection(sockJsConnection2);
         sockJsServer0.init();
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "423c158c-6bf6-4edc-97f3-f4fa14f043a2" + "'", str7, "423c158c-6bf6-4edc-97f3-f4fa14f043a2");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9447fbf5-abee-45cd-ae27-de993b58c47b" + "'", str7, "9447fbf5-abee-45cd-ae27-de993b58c47b");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -5896,7 +5896,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str21 = sockJsServletRequest1.getUrl();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getRequestURI()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5942,8 +5942,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "db3a1009d51511ad545a6c7fa1fad124");
-        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException29);
         org.projectodd.sockjs.DispatchException dispatchException33 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException33);
@@ -5961,7 +5961,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test251");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
         java.lang.String str5 = sockJsWebsocketRequest4.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest6 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse7 = null;
@@ -5979,7 +5979,7 @@ public class TestGroup100Case0 {
         options17.jsessionid = false;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver21 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse9, options17);
         java.lang.Integer int22 = sockJsServletResponse9.cacheFor();
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str5, "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str5, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 200 + "'", int12 == 200);
         org.junit.Assert.assertNull(int22);
     }
@@ -5994,7 +5994,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             sockJsServletRequest1.onDataAvailable();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getInputStream()\" because \"this.request\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6023,11 +6023,11 @@ public class TestGroup100Case0 {
         java.lang.String str18 = sockJsConnection14.pathname;
         java.lang.String str19 = sockJsConnection14.toString();
         sockJsServer0.emitConnection(sockJsConnection14);
-        sockJsConnection14.url = "<SockJSConnection dc9dd578-ea65-4146-9751-8f3f686e5c5a>";
-// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "1631a633-2691-43bc-977a-1cf8dc7f048f" + "'", str9, "1631a633-2691-43bc-977a-1cf8dc7f048f");
+        sockJsConnection14.url = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "df0498b0-c170-472f-8b59-6f3ca4705612" + "'", str9, "df0498b0-c170-472f-8b59-6f3ca4705612");
         org.junit.Assert.assertNull(str10);
         org.junit.Assert.assertNull(str18);
-// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "<SockJSConnection 83c6b6f8-3c99-4c6e-95f3-f569191c106b>" + "'", str19, "<SockJSConnection 83c6b6f8-3c99-4c6e-95f3-f569191c106b>");
+// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>" + "'", str19, "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>");
     }
 
     @Test
@@ -6059,7 +6059,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -6081,11 +6081,11 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("61243f8a-d570-4594-bf36-00cae87600f1");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.Map.keySet()\" because \"this.headers\" is null");
+            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("3591a922-3c4d-478c-8558-f5359b3ef3f4");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6141,7 +6141,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -6163,12 +6163,12 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         org.projectodd.sockjs.DispatchFunction dispatchFunction59 = sockJsWebsocketRequest4.lastFunction;
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str60 = sockJsWebsocketRequest4.getPath();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestURI()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6187,8 +6187,8 @@ public class TestGroup100Case0 {
     public void test257() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test257");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("9c32c9de-30f8-42ef-94fe-77827b0ded69");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"9c32c9de-30f8-42ef-94fe-77827b0ded69\"" + "'", str1, "\"9c32c9de-30f8-42ef-94fe-77827b0ded69\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("96c4603c-3098-4810-bbe2-2f8d3d821aca");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"" + "'", str1, "\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"");
     }
 
     @Test
@@ -6237,9 +6237,9 @@ public class TestGroup100Case0 {
         sockJsConnection9.emitClose();
         java.util.Map<java.lang.String, java.lang.String> strMap18 = sockJsConnection9.headers;
         sockJsConnection1.headers = strMap18;
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "fc887954-e09c-4e31-8d9d-9b09fc2d35cf" + "'", str14, "fc887954-e09c-4e31-8d9d-9b09fc2d35cf");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "cf9e4030-02de-4018-8679-b18bb23bcabc" + "'", str14, "cf9e4030-02de-4018-8679-b18bb23bcabc");
         org.junit.Assert.assertNull(str15);
-// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "fc887954-e09c-4e31-8d9d-9b09fc2d35cf" + "'", str16, "fc887954-e09c-4e31-8d9d-9b09fc2d35cf");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "cf9e4030-02de-4018-8679-b18bb23bcabc" + "'", str16, "cf9e4030-02de-4018-8679-b18bb23bcabc");
         org.junit.Assert.assertNotNull(strMap18);
     }
 
@@ -6257,7 +6257,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean9 = xhrPollingReceiver5.doSendFrame("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6270,11 +6270,11 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test262");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Transport.READY_STATE rEADY_STATE4 = sockJsConnection1.getReadyState();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"readyState\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6295,7 +6295,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.pathname = "hi!";
         sockJsConnection1.emitClose();
-        sockJsConnection1.id = "0c355190-fa43-429c-9071-9f2b62582e69";
+        sockJsConnection1.id = "711201c2-086b-4341-8148-1f2bff1799c8";
     }
 
     @Test
@@ -6308,11 +6308,11 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.DispatchFunction dispatchFunction12 = chunkingHandler11.infoOptions;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "04a26746-2050-49b0-95de-e8ddcdbd6852" + "'", str7, "04a26746-2050-49b0-95de-e8ddcdbd6852");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "2c1f18bc-eb67-4e1d-8ff2-de2f99870128" + "'", str7, "2c1f18bc-eb67-4e1d-8ff2-de2f99870128");
         org.junit.Assert.assertNotNull(dispatchFunction12);
     }
 
@@ -6326,13 +6326,13 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer.Options options12 = sockJsServer0.options;
         org.projectodd.sockjs.XhrHandler xhrHandler13 = new org.projectodd.sockjs.XhrHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint16 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "", "<SockJSConnection 83c6b6f8-3c99-4c6e-95f3-f569191c106b>");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3125958e-c446-4c56-a165-3e82606c5f96" + "'", str7, "3125958e-c446-4c56-a165-3e82606c5f96");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint16 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "", "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c985b2e3-92ea-4a8a-8c7a-51c45a743bec" + "'", str7, "c985b2e3-92ea-4a8a-8c7a-51c45a743bec");
         org.junit.Assert.assertNotNull(options12);
     }
 
@@ -6350,8 +6350,8 @@ public class TestGroup100Case0 {
         boolean boolean8 = eventSourceReceiver6.doSendFrame("\"9d4568c009d203ab10e33ea9953a0264\"");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = eventSourceReceiver6.doSendFrame("07a16de8-6bb8-4c77-a257-5f343eb13d51");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.SockJsResponse.write(String)\" because \"this.response\" is null");
+            boolean boolean10 = eventSourceReceiver6.doSendFrame("1f2d0367-affd-4bc4-9047-35ed487203f3");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6500,8 +6500,8 @@ public class TestGroup100Case0 {
         dispatcher67.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "\"hi!\"", dispatchFunctionArray97);
         // The following exception was thrown during execution in test generation
         try {
-            dispatcher13.push("9e793ec0-4aa6-401f-b1ec-57586cb1f397", strArray53, dispatchFunctionArray97);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
+            dispatcher13.push("4df1bf63-6d12-4300-b19f-35389611d1da", strArray53, dispatchFunctionArray97);
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 0");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -6580,12 +6580,12 @@ public class TestGroup100Case0 {
         sockJsServer0.emitConnection(sockJsConnection12);
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean18 = sockJsConnection12.close((int) (short) 10, "0d212a2c-27fc-4a51-86a5-4187a762b7e3");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.close(int, String)\" because \"this.session\" is null");
+            boolean boolean18 = sockJsConnection12.close((int) (short) 10, "3724d827-52f3-42c3-b48e-fb3c2b6c47aa");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9a5ca7c5-20d2-49f1-94c5-35b151b61846" + "'", str7, "9a5ca7c5-20d2-49f1-94c5-35b151b61846");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6cb217ac-494e-4c4a-b588-1c04055903ae" + "'", str7, "6cb217ac-494e-4c4a-b588-1c04055903ae");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -6595,7 +6595,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test272");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         javax.websocket.Session session5 = null;
         org.projectodd.sockjs.SockJsException sockJsException7 = new org.projectodd.sockjs.SockJsException("hi!");
         sockJsEndpoint4.onError(session5, (java.lang.Throwable) sockJsException7);
@@ -6657,11 +6657,11 @@ public class TestGroup100Case0 {
         sockJsConnection47.prefix = "\"\"";
         sockJsConnection47.url = "\"\\\"\\\"\"";
         java.lang.String str52 = sockJsConnection47.id;
-        sockJsConnection47.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection47.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer45.emitConnection(sockJsConnection47);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler56 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer45);
         org.projectodd.sockjs.SockJsServer.Options options57 = sockJsServer45.options;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver59 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse30, options57, "\"f8a9fbc4-f11f-4a66-8e38-02fef71a03fc\"");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver59 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse30, options57, "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
         int int60 = sockJsServletResponse30.statusCode();
         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
         org.junit.Assert.assertTrue("'" + int9 + "' != '" + 200 + "'", int9 == 200);
@@ -6672,7 +6672,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int32 + "' != '" + 200 + "'", int32 == 200);
         org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
         org.junit.Assert.assertEquals("'" + str43 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str43, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str52 + "' != '" + "fa589893-7f8b-4ef0-ae15-a5b5b8d2ff51" + "'", str52, "fa589893-7f8b-4ef0-ae15-a5b5b8d2ff51");
+// flaky:         org.junit.Assert.assertEquals("'" + str52 + "' != '" + "714b1f9d-4865-45b6-8fae-8dedc0faf59c" + "'", str52, "714b1f9d-4865-45b6-8fae-8dedc0faf59c");
         org.junit.Assert.assertNotNull(options57);
         org.junit.Assert.assertTrue("'" + int60 + "' != '" + 200 + "'", int60 == 200);
     }
@@ -6735,9 +6735,9 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         sockJsConnection1.pathname = "\"hi!\"";
         java.lang.String str11 = sockJsConnection1.url;
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f7bd7af2-3c71-4b20-8399-90ff3ced9d14" + "'", str6, "f7bd7af2-3c71-4b20-8399-90ff3ced9d14");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f5a2f1e7-4785-43a9-874e-ef06f55748eb" + "'", str6, "f5a2f1e7-4785-43a9-874e-ef06f55748eb");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "f7bd7af2-3c71-4b20-8399-90ff3ced9d14" + "'", str8, "f7bd7af2-3c71-4b20-8399-90ff3ced9d14");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "f5a2f1e7-4785-43a9-874e-ef06f55748eb" + "'", str8, "f5a2f1e7-4785-43a9-874e-ef06f55748eb");
         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "\"\\\"\\\"\"" + "'", str11, "\"\\\"\\\"\"");
     }
 
@@ -6760,7 +6760,7 @@ public class TestGroup100Case0 {
         sockJsServer0.emitConnection(sockJsConnection12);
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler16 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
         org.projectodd.sockjs.WebsocketHandler websocketHandler17 = new org.projectodd.sockjs.WebsocketHandler(sockJsServer0);
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "0bad92a4-cc7a-4f6b-8cf6-c9a60775ea7a" + "'", str7, "0bad92a4-cc7a-4f6b-8cf6-c9a60775ea7a");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "92fdbffc-5023-4faf-8cd5-d1e3723de8db" + "'", str7, "92fdbffc-5023-4faf-8cd5-d1e3723de8db");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -6815,8 +6815,8 @@ public class TestGroup100Case0 {
         websocketHandler1.sockjsWebsocket = dispatchFunction9;
         org.projectodd.sockjs.SockJsServer sockJsServer11 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer11.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint15 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer11, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint18 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer11, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint15 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer11, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint18 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer11, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.projectodd.sockjs.SockJsRequest sockJsRequest19 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse20 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest21 = null;
@@ -6828,7 +6828,7 @@ public class TestGroup100Case0 {
         java.lang.String str28 = options23.sockjsUrl;
         int int29 = options23.responseLimit;
         java.lang.String str30 = options23.sockjsUrl;
-        options23.sockjsUrl = "07a16de8-6bb8-4c77-a257-5f343eb13d51";
+        options23.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
         sockJsServer11.options = options23;
         org.projectodd.sockjs.SockJsServer sockJsServer34 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session35 = null;
@@ -6854,7 +6854,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals("'" + str28 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str28, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str30, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str41 + "' != '" + "574b2875-2318-4d32-a4b9-c66d9ef4f26d" + "'", str41, "574b2875-2318-4d32-a4b9-c66d9ef4f26d");
+// flaky:         org.junit.Assert.assertEquals("'" + str41 + "' != '" + "b88cbd8d-43d4-43ad-9f4d-db4193cd0069" + "'", str41, "b88cbd8d-43d4-43ad-9f4d-db4193cd0069");
         org.junit.Assert.assertNull(str42);
         org.junit.Assert.assertNull(str50);
         org.junit.Assert.assertNotNull(dispatchFunction53);
@@ -6900,8 +6900,8 @@ public class TestGroup100Case0 {
         int int1 = options0.heartbeatDelay;
         boolean boolean2 = options0.jsessionid;
         java.lang.String str3 = options0.baseUrl;
-        options0.baseUrl = "<SockJSConnection dc9dd578-ea65-4146-9751-8f3f686e5c5a>";
-        options0.sockjsUrl = "2699f772-1f33-4c17-a8f7-95d929e2329d";
+        options0.baseUrl = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
+        options0.sockjsUrl = "c843a36f-67a3-4198-9024-291640dd99b7";
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 25000 + "'", int1 == 25000);
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
         org.junit.Assert.assertNull(str3);
@@ -6917,7 +6917,7 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet11 = new org.projectodd.sockjs.servlet.SockJsServlet(sockJsServer0);
         javax.servlet.ServletRequest servletRequest12 = null;
@@ -6929,7 +6929,7 @@ public class TestGroup100Case0 {
         } catch (javax.servlet.ServletException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "f2239104-5ae5-4912-957e-206b97d7ed36" + "'", str7, "f2239104-5ae5-4912-957e-206b97d7ed36");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "33f77f7c-12d3-4eb0-8be5-91ad41e52fc8" + "'", str7, "33f77f7c-12d3-4eb0-8be5-91ad41e52fc8");
     }
 
     @Test
@@ -6949,13 +6949,13 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = sockJsConnection1.write("\"hi!\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.projectodd.sockjs.Session.send(String)\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "44150f28-31f6-4382-b5fe-825a3331c02c" + "'", str6, "44150f28-31f6-4382-b5fe-825a3331c02c");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "2fbd983b-8cc5-45fe-9b85-463c12e4f520" + "'", str6, "2fbd983b-8cc5-45fe-9b85-463c12e4f520");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "44150f28-31f6-4382-b5fe-825a3331c02c" + "'", str8, "44150f28-31f6-4382-b5fe-825a3331c02c");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2fbd983b-8cc5-45fe-9b85-463c12e4f520" + "'", str8, "2fbd983b-8cc5-45fe-9b85-463c12e4f520");
         org.junit.Assert.assertNotNull(strMap10);
     }
 
@@ -6985,8 +6985,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse7, options15);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str22 = sockJsServletRequest1.getCookie("\"9c32c9de-30f8-42ef-94fe-77827b0ded69\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletRequest.getCookies()\" because \"this.request\" is null");
+            java.lang.String str22 = sockJsServletRequest1.getCookie("\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -7004,8 +7004,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletResponse sockJsServletResponse2 = new org.projectodd.sockjs.servlet.SockJsServletResponse(httpServletResponse0, asyncContext1);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse2.setHeader("75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8", "GET");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.servlet.http.HttpServletResponse.setHeader(String, String)\" because \"this.response\" is null");
+            sockJsServletResponse2.setHeader("cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9", "GET");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -7037,7 +7037,7 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.Session session12 = null;
@@ -7053,7 +7053,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.IframeHandler iframeHandler24 = new org.projectodd.sockjs.IframeHandler(sockJsServer23);
         org.projectodd.sockjs.DispatchFunction dispatchFunction25 = iframeHandler24.iframe;
         xhrHandler22.xhrPoll = dispatchFunction25;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "dc743fbe-da47-4129-9d54-38ff3438c09b" + "'", str7, "dc743fbe-da47-4129-9d54-38ff3438c09b");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "99a9e8ed-27b0-4262-8d1a-f24044825acc" + "'", str7, "99a9e8ed-27b0-4262-8d1a-f24044825acc");
         org.junit.Assert.assertNull(str16);
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "\"\"" + "'", str19, "\"\"");
         org.junit.Assert.assertNotNull(dispatchFunction25);
@@ -7068,7 +7068,7 @@ public class TestGroup100Case0 {
         sockJsConnection1.pathname = "hi!";
         sockJsConnection1.emitClose();
         java.lang.String str5 = sockJsConnection1.url;
-        sockJsConnection1.emitData("0156467f-4414-4dbf-9048-cb95a01d2315");
+        sockJsConnection1.emitData("0970ee06-4d6c-485d-a9a1-adc25df78a3f");
         org.junit.Assert.assertNull(str5);
     }
 
@@ -7082,10 +7082,10 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction3 = sockJsServletRequest1.lastFunction;
         org.projectodd.sockjs.SockJsServer sockJsServer4 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer4.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint8 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer4, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint11 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer4, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint8 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer4, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint11 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer4, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         javax.websocket.Session session12 = null;
-        org.projectodd.sockjs.DispatchException dispatchException15 = new org.projectodd.sockjs.DispatchException(0, "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.DispatchException dispatchException15 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
         int int16 = dispatchException15.status;
         rawWebsocketEndpoint11.onError(session12, (java.lang.Throwable) dispatchException15);
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException15);
@@ -7162,9 +7162,9 @@ public class TestGroup100Case0 {
         sockJsConnection1.onClose(onCloseHandler20);
         org.junit.Assert.assertNull(str4);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "\"\"" + "'", str7, "\"\"");
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "e6195651-58c6-4251-bee6-1fb90f671250" + "'", str14, "e6195651-58c6-4251-bee6-1fb90f671250");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "16afa01d-c1b2-4656-a80e-2a15a4b27d84" + "'", str14, "16afa01d-c1b2-4656-a80e-2a15a4b27d84");
         org.junit.Assert.assertNull(str15);
-// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "e6195651-58c6-4251-bee6-1fb90f671250" + "'", str16, "e6195651-58c6-4251-bee6-1fb90f671250");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "16afa01d-c1b2-4656-a80e-2a15a4b27d84" + "'", str16, "16afa01d-c1b2-4656-a80e-2a15a4b27d84");
         org.junit.Assert.assertNotNull(strMap18);
     }
 
@@ -7178,14 +7178,14 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "fa8af226-eed5-42a9-b5e0-4c4c5408d114";
+        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer sockJsServer12 = null;
         org.projectodd.sockjs.ChunkingHandler chunkingHandler13 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer12);
         org.projectodd.sockjs.DispatchFunction dispatchFunction14 = chunkingHandler13.info;
         chunkingHandler11.info = dispatchFunction14;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "93685307-be97-40fc-9ffa-b80793bc7b3c" + "'", str7, "93685307-be97-40fc-9ffa-b80793bc7b3c");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "a23a9e5d-1704-421f-a2f0-be895e0aa814" + "'", str7, "a23a9e5d-1704-421f-a2f0-be895e0aa814");
         org.junit.Assert.assertNotNull(dispatchFunction14);
     }
 
@@ -7218,7 +7218,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "db3a1009d51511ad545a6c7fa1fad124");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -7240,7 +7240,7 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("26d673b2-bd96-4f3d-ab84-368077a6d9ab");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
         org.projectodd.sockjs.DispatchFunction dispatchFunction59 = sockJsWebsocketRequest4.lastFunction;
         java.lang.String str60 = sockJsWebsocketRequest4.getRemoteAddr();
         org.junit.Assert.assertNull(str7);
@@ -7268,7 +7268,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.NextFilter nextFilter8 = sockJsServletRequest1.nextFilter;
         javax.websocket.Session session9 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap12 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest13 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session9, "75fb46a2-f528-40f7-a8ee-5401d7109454", "511fc947-e7d8-4680-8ae4-9a351a395cf8", strMap12);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest13 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session9, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap12);
         java.lang.String str14 = sockJsWebsocketRequest13.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest15 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse16 = null;
@@ -7298,7 +7298,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver41 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse18, options40);
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertNull(nextFilter8);
-        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8" + "'", str14, "75fb46a2-f528-40f7-a8ee-5401d7109454511fc947-e7d8-4680-8ae4-9a351a395cf8");
+        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str14, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
         org.junit.Assert.assertTrue("'" + int21 + "' != '" + 200 + "'", int21 == 200);
         org.junit.Assert.assertNotNull(options40);
     }
@@ -7309,8 +7309,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test297");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "07a16de8-6bb8-4c77-a257-5f343eb13d51");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
         org.projectodd.sockjs.WebHandler webHandler8 = new org.projectodd.sockjs.WebHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer sockJsServer9 = null;
         org.projectodd.sockjs.WebsocketHandler websocketHandler10 = new org.projectodd.sockjs.WebsocketHandler(sockJsServer9);
@@ -7356,7 +7356,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str23 = sockJsWebsocketRequest4.getQueryParameter("\"\\\"\\\\\\\"\\\\\\\"\\\"\"");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"javax.websocket.Session.getRequestParameterMap()\" because \"this.session\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -7373,7 +7373,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "07a16de8-6bb8-4c77-a257-5f343eb13d51", "43d8b917-8827-49ca-89c1-ae736376a4ee");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
         sockJsServlet0.setServer(sockJsServer1);
         org.projectodd.sockjs.SockJsServer sockJsServer7 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session8 = null;
@@ -7385,7 +7385,7 @@ public class TestGroup100Case0 {
         sockJsServer7.emitConnection(sockJsConnection9);
         sockJsServlet0.setServer(sockJsServer7);
         org.projectodd.sockjs.SockJsServer sockJsServer18 = sockJsServlet0.getServer();
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "5446318b-2a7e-408b-bfa4-dc488c11dfa8" + "'", str14, "5446318b-2a7e-408b-bfa4-dc488c11dfa8");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "bcfe847e-f34a-4f13-a0c4-b7b3adb6a7ac" + "'", str14, "bcfe847e-f34a-4f13-a0c4-b7b3adb6a7ac");
         org.junit.Assert.assertNull(str15);
         org.junit.Assert.assertNotNull(sockJsServer18);
     }

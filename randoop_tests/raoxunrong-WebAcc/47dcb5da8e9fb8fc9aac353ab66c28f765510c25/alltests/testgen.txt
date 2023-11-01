@@ -1,74 +1,43 @@
-[TIME]: 0:00:01.465514
+[TIME]: 0:00:13.543412
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class org.raoxunrong.demo.BaiduPage specified via --testclass or --classlist.
+Cannot instantiate non-accessible class org.raoxunrong.demo.BaiduResultPage specified via --testclass or --classlist.
+Cannot instantiate non-accessible class org.raoxunrong.demo.DuckPage specified via --testclass or --classlist.
+Cannot instantiate non-accessible class org.raoxunrong.demo.LocalTestPage specified via --testclass or --classlist.
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 42 out of 46 classes.
+PUBLIC MEMBERS=136
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 770189387:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@396e2f39, randoop.contract.EqualsToNullRetFalse@a74868d, randoop.contract.EqualsReturnsNormally@12c8a2c0, randoop.contract.CompareToReflexive@7e0e6aa2, randoop.contract.SizeToArrayLength@365185bd]
-    arity 2: [randoop.contract.EqualsSymmetric@18bf3d14, randoop.contract.EqualsHashcode@4fb64261, randoop.contract.CompareToAntiSymmetric@42607a4f, randoop.contract.CompareToEquals@782663d3]
-    arity 3: [randoop.contract.EqualsTransitive@1990a65e, randoop.contract.CompareToSubs@64485a47, randoop.contract.CompareToTransitive@25bbf683]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:02:11.018Z     15.2M used)
+Progress update: steps=800, test inputs generated=529, failing inputs=11      (2023-11-01T00:02:21.080Z     432M used)
+Normal method executions: 112670
+Exceptional method executions: 123
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Average method execution time (normal termination):      0.0429
+Average method execution time (exceptional termination): 0.304
+Approximate memory usage 432M
+Explorer = ForwardGenerator(steps: 800, null steps: 271, num_sequences_generated: 529;
+    allSequences: 529, regresson seqs: 489, error seqs: 11=11=11, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 29;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 61)
+
+Error-revealing test output:
+Error-revealing test count: 11
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/raoxunrong-WebAcc/47dcb5da8e9fb8fc9aac353ab66c28f765510c25/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/raoxunrong-WebAcc/47dcb5da8e9fb8fc9aac353ab66c28f765510c25/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 268 regression sequences.
+
+Regression test output:
+Regression test count: 268
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/raoxunrong-WebAcc/47dcb5da8e9fb8fc9aac353ab66c28f765510c25/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/raoxunrong-WebAcc/47dcb5da8e9fb8fc9aac353ab66c28f765510c25/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

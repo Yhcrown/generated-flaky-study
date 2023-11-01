@@ -1,74 +1,4288 @@
-[TIME]: 0:00:01.521968
+[TIME]: 0:00:28.036042
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 82 classes.
+PUBLIC MEMBERS=617
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 84739718:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@7a3d45bd, randoop.contract.EqualsToNullRetFalse@1e7c7811, randoop.contract.EqualsReturnsNormally@77ec78b9, randoop.contract.CompareToReflexive@1a3869f4, randoop.contract.SizeToArrayLength@a38d7a3]
-    arity 2: [randoop.contract.EqualsSymmetric@77f99a05, randoop.contract.EqualsHashcode@63440df3, randoop.contract.CompareToAntiSymmetric@3aeaafa6, randoop.contract.CompareToEquals@76a3e297]
-    arity 3: [randoop.contract.EqualsTransitive@4d3167f4, randoop.contract.CompareToSubs@ed9d034, randoop.contract.CompareToTransitive@6121c9d6]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:39:21.128Z     64.1M used)Tests 17
+*** Test number 1
+***** Nodes 1
+examples/model6.json
+*** Test number 2
+***** Nodes 2
+examples/model3.json
+*** Test number 3
+***** Nodes 1
+examples/model5.json
+*** Test number 4
+***** Nodes 1
+examples/model5.json
+*** Test number 5
+***** Nodes 1
+examples/model4.json
+*** Test number 6
+***** Nodes 2
+examples/model6.json
+*** Test number 7
+***** Nodes 2
+examples/model4.json
+*** Test number 8
+***** Nodes 2
+examples/model3.json
+*** Test number 9
+***** Nodes 2
+examples/model6.json
+*** Test number 10
+***** Nodes 1
+examples/model6.json
+*** Test number 11
+***** Nodes 1
+examples/model6.json
+*** Test number 12
+***** Nodes 1
+examples/model4.json
+*** Test number 13
+***** Nodes 1
+examples/model3.json
+*** Test number 14
+***** Nodes 1
+examples/model5.json
+*** Test number 15
+***** Nodes 2
+examples/model3.json
+*** Test number 16
+***** Nodes 2
+examples/model2.json
+*** Test number 17
+***** Nodes 2
+examples/model3.json
+Tests 79
+*** Test number 1
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Insert Model Nodes: 48 to manipulate: [26]
+Inserting creditCardExpiry_1 : ${creditCardExpiry} in [product:[material:${material}, price:${price}, product:${productName}]]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "creditCardExpiry_1": "${creditCardExpiry}",
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 2
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Substitute Model Nodes: 2 to manipulate: [2]
+Substituting ciccio Type: n.d. With: citySuffix_1 : ${citySuffix}
+Result
+{
+    "citySuffix_1": "${citySuffix}"
+}
+*** Test number 3
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [8, 10]
+Substituting [product:[material:${material}, price:${price}, product:${productName}]] Type: map With: map_1 : [bool_2:${bool}, buildingNumber_3:${buildingNumber}, invalidSSN_4:${invalidSSN}]
+Substituting material Type: string With: integer_3 : ${integer}
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "bool_2": "${bool}",
+            "buildingNumber_3": "${buildingNumber}",
+            "invalidSSN_4": "${invalidSSN}"
+        }
+    ]
+}
+*** Test number 4
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [11, 9]
+Substituting product Type: map With: map_1 : [url_2:${url}, streetAddressNumber_3:${streetAddressNumber}]
+Substituting price Type: string With: bool_4 : ${bool}
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "map_1": {
+                "url_2": "${url}",
+                "streetAddressNumber_3": "${streetAddressNumber}"
+            }
+        }
+    ]
+}
+*** Test number 5
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 6
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Remove Model Nodes: 48 to manipulate: [40]
+Removing ${creditCardExpiry} from [${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 7
+***** Nodes 2
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Deep Remove Model Nodes: 21 to manipulate: [3, 12]
+Removing building from [building:${buildingNumber}, city:${cityName}, street:${streetName}]
+Removing email from [address:[city:${cityName}, street:${streetName}], age:${integer}, ciccio:pasticcio, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, mobile:${mobile}, name:${fullName}, nonesiste:${abdefg}, null:null, phone:${phone}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+{
+    "address": {
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 8
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Insert Model Nodes: 3 to manipulate: [3]
+Inserting domainSuffix_1 : ${domainSuffix} in [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${domainSuffix}"
+]
+*** Test number 9
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Insert Model Nodes: 48 to manipulate: [2, 37]
+Inserting currency_1 : ${currency} in [[companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [${companyName}, ${suffix}, ${industry}, [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [valoreNull:null]], [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]]
+Inserting timeZone_1 : ${timeZone} in [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}",
+        "timeZone_1": "${timeZone}"
+    },
+    "${currency}"
+]
+*** Test number 10
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Insert Model Nodes: 2 to manipulate: [2, 2]
+Inserting streetPrefix_1 : ${streetPrefix} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "streetPrefix_1": "${streetPrefix}"
+}
+*** Test number 11
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [2, 3]
+Removing ${suffix} from [${companyName}, ${suffix}, ${industry}]
+Removing ${industry} from [${companyName}, ${industry}]
+Result
+[
+    "${companyName}"
+]
+*** Test number 12
+***** Nodes 1
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Flat Remove Model Nodes: 6 to manipulate: [4]
+Removing ${cityName} from [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+*** Test number 13
+***** Nodes 1
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Deep Substitute Model Nodes: 21 to manipulate: [8]
+Substituting creditCard Type: list With: list_1 : [${fullAddress}, ${price}, ${state}, ${secondaryAddress}, ${url}, ${domainWord}, ${countryCodeSL}]
+Result
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "list_1": [
+        "${fullAddress}",
+        "${price}",
+        "${state}",
+        "${secondaryAddress}",
+        "${url}",
+        "${domainWord}",
+        "${countryCodeSL}"
+    ],
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 14
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Substitute Model Nodes: 4 to manipulate: [3, 3]
+Substituting ${suffix} Type: string With: integer_1 : ${integer}
+Result
+[
+    "${companyName}",
+    "${industry}",
+    "${integer}"
+]
+*** Test number 15
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [8]
+Substituting [product:[material:${material}, price:${price}, product:${productName}]] Type: map With: map_1 : [capital_2:${capital}, streetPrefix_3:${streetPrefix}, country_4:${country}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "capital_2": "${capital}",
+            "streetPrefix_3": "${streetPrefix}",
+            "country_4": "${country}"
+        }
+    ]
+}
+*** Test number 16
+***** Nodes 2
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Deep Substitute Model Nodes: 21 to manipulate: [14, 3]
+Substituting building Type: string With: decimal_1 : ${decimal}
+Substituting mobile Type: string With: decimal_2 : ${decimal}
+Result
+{
+    "address": {
+        "city": "${cityName}",
+        "decimal_1": "${decimal}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "decimal_2": "${decimal}",
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 17
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Remove Model Nodes: 12 to manipulate: [8]
+Removing [product:[material:${material}, price:${price}, product:${productName}]] from [[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        }
+    ]
+}
+*** Test number 18
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Substitute Model Nodes: 48 to manipulate: [36]
+Substituting street Type: n.d. With: currency_1 : ${currency}
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "currency_1": "${currency}"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 19
+***** Nodes 2
+examples/model7.json
+MANIPULATE
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}",
+                "ssn": "${validSSN}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    },
+    "mother": {
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+Mode: Deep Remove Model Nodes: 31 to manipulate: [18, 27]
+Removing ssn from [email:${emailAddress}, girlfriend:[email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}]
+Removing email from [email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}]
+Result
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    },
+    "mother": {
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+*** Test number 20
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Remove Model Nodes: 48 to manipulate: [33, 5]
+Removing company from [company:[company:${companyName}, industry:${industry}, suffix:${suffix}]]
+Removing address from [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 21
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Substitute Model Nodes: 48 to manipulate: [3]
+Substituting companiesAndProducts Type: list With: list_1 : [${companyName}, ${cityPrefix}, ${url}, ${zipCode}, ${capital}, ${fullAddress}, ${cityPrefix}, ${streetPrefix}]
+Result
+[
+    {
+        "list_1": [
+            "${companyName}",
+            "${cityPrefix}",
+            "${url}",
+            "${zipCode}",
+            "${capital}",
+            "${fullAddress}",
+            "${cityPrefix}",
+            "${streetPrefix}"
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 22
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Substitute Model Nodes: 2 to manipulate: [2, 2]
+Substituting ciccio Type: n.d. With: industry_1 : ${industry}
+Result
+{
+    "industry_1": "${industry}"
+}
+*** Test number 23
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [2, 2]
+Result
+{
+    "ciccio": "null"
+}
+*** Test number 24
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Remove Model Nodes: 4 to manipulate: [2, 3]
+Removing ${companyName} from [${companyName}, ${suffix}, ${industry}]
+Removing ${suffix} from [${suffix}, ${industry}]
+Result
+[
+    "${industry}"
+]
+*** Test number 25
+***** Nodes 2
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Flat Insert Model Nodes: 14 to manipulate: [3, 5]
+Inserting currencyCode_1 : ${currencyCode} in [address:[building:${buildingNumber}, city:${cityName}, street:${streetName}], age:${integer}, ciccio:pasticcio, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, mobile:${mobile}, name:${fullName}, nonesiste:${abdefg}, null:null, phone:${phone}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Inserting promotionCode_2 : ${promotionCode} in [address:[building:${buildingNumber}, city:${cityName}, street:${streetName}], age:${integer}, ciccio:pasticcio, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], currencyCode_1:${currencyCode}, email:${emailAddress}, id:${uuid}, mobile:${mobile}, name:${fullName}, nonesiste:${abdefg}, null:null, phone:${phone}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "currencyCode_1": "${currencyCode}",
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "promotionCode_2": "${promotionCode}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 26
+***** Nodes 2
+examples/model1.json
+fill
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Result
+{
+    "address": {
+        "building": "4490",
+        "city": "North Gustavo",
+        "street": "Colin Mill"
+    },
+    "age": 79,
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "1228-1221-1221-1431",
+        "2012-11-12",
+        "diners_club"
+    ],
+    "email": "chasidy.leannon@yahoo.com",
+    "id": "9da13da5-e916-447c-9a28-b88a05fa556f",
+    "mobile": "(160) 315-2710",
+    "name": "Arnulfo Ullrich I",
+    "nonesiste": "Data generator 'abdefg' does not exist in extension F",
+    "null": null,
+    "phone": "1-465-202-5960 x5339",
+    "profession": "dentist",
+    "ssn": "451021-7799",
+    "subscribed": false
+}
+*** Test number 27
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Deep Substitute Model Nodes: 16 to manipulate: [2, 4]
+Substituting ${companyName} Type: string With: decimal_1 : ${decimal}
+Substituting id Type: string With: integer_0 : ${integer}
+Result
+[
+    {
+        "integer_0": "${integer}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    },
+    "${decimal}"
+]
+*** Test number 28
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [2, 1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 29
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Insert Model Nodes: 12 to manipulate: [10]
+Inserting creditCardType_1 : ${creditCardType} in [material:${material}, price:${price}, product:${productName}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "creditCardType_1": "${creditCardType}",
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 30
+***** Nodes 1
+examples/model7.json
+MANIPULATE
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}",
+                "ssn": "${validSSN}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    },
+    "mother": {
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+Mode: Flat Remove Model Nodes: 2 to manipulate: [2]
+Removing mother from [father:[brother:[email:${emailAddress}, id:${uuid}, name:${fullName}, nephwe:[email:${emailAddress}, girlfriend:[email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], profession:${profession}, ssn:${validSSN}], email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], mother:[email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}]]
+Result
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}",
+                "ssn": "${validSSN}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+*** Test number 31
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Insert Model Nodes: 12 to manipulate: [11, 8]
+Inserting capital_1 : ${capital} in [[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]
+Inserting domainWord_1 : ${domainWord} in [material:${material}, price:${price}, product:${productName}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "domainWord_1": "${domainWord}",
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        },
+        "${capital}"
+    ]
+}
+*** Test number 32
+***** Nodes 1
+examples/model7.json
+MANIPULATE
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}",
+                "ssn": "${validSSN}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    },
+    "mother": {
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+Mode: Flat Remove Model Nodes: 2 to manipulate: [2]
+Removing mother from [father:[brother:[email:${emailAddress}, id:${uuid}, name:${fullName}, nephwe:[email:${emailAddress}, girlfriend:[email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], profession:${profession}, ssn:${validSSN}], email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}], mother:[email:${emailAddress}, id:${uuid}, name:${fullName}, profession:${profession}, ssn:${validSSN}]]
+Result
+{
+    "father": {
+        "brother": {
+            "email": "${emailAddress}",
+            "id": "${uuid}",
+            "name": "${fullName}",
+            "nephwe": {
+                "email": "${emailAddress}",
+                "girlfriend": {
+                    "email": "${emailAddress}",
+                    "id": "${uuid}",
+                    "name": "${fullName}",
+                    "profession": "${profession}",
+                    "ssn": "${validSSN}"
+                },
+                "id": "${uuid}",
+                "name": "${fullName}",
+                "profession": "${profession}",
+                "ssn": "${validSSN}"
+            },
+            "profession": "${profession}",
+            "ssn": "${validSSN}"
+        },
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}"
+    }
+}
+*** Test number 33
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Insert Model Nodes: 48 to manipulate: [24, 26]
+Inserting citySuffix_1 : ${citySuffix} in [company:${companyName}, industry:${industry}, suffix:${suffix}]
+Inserting timeZone_2 : ${timeZone} in [product:[material:${material}, price:${price}, product:${productName}]]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "citySuffix_1": "${citySuffix}",
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    },
+                    "timeZone_2": "${timeZone}"
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 34
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Insert Model Nodes: 1 to manipulate: [2, 1]
+Inserting invalidID_1 : ${invalidID} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "invalidID_1": "${invalidID}"
+}
+*** Test number 35
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1, 1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 36
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Insert Model Nodes: 1 to manipulate: [1]
+Inserting state_1 : ${state} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "state_1": "${state}"
+}
+*** Test number 37
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [2, 1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 38
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Remove Model Nodes: 12 to manipulate: [4, 8]
+Removing company from [company:[company:${companyName}, industry:${industry}, suffix:${suffix}]]
+Removing [product:[material:${material}, price:${price}, product:${productName}]] from [[:], [product:[material:${material}, price:${price}, product:${productName}]]]
+Result
+{
+    "companiesAndProducts": [
+        {
+            
+        }
+    ]
+}
+*** Test number 39
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Substitute Model Nodes: 4 to manipulate: [3, 3]
+Substituting ${suffix} Type: string With: integer_1 : ${integer}
+Result
+[
+    "${companyName}",
+    "${industry}",
+    "${integer}"
+]
+*** Test number 40
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Insert Model Nodes: 4 to manipulate: [2]
+Inserting creditCardExpiry_1 : ${creditCardExpiry} in [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${creditCardExpiry}"
+]
+*** Test number 41
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Deep Insert Model Nodes: 16 to manipulate: [3, 11]
+Inserting validSSN_1 : ${validSSN} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Inserting invalidSSN_1 : ${invalidSSN} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null], ${validSSN}]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    },
+    "${validSSN}",
+    "${invalidSSN}"
+]
+*** Test number 42
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [2]
+Removing [${companyName}, ${suffix}, ${industry}, [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [valoreNull:null]] from [[companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [${companyName}, ${suffix}, ${industry}, [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [valoreNull:null]], [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 43
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Deep Remove Model Nodes: 16 to manipulate: [3, 12]
+Removing [id:${uuid}, ssn:${validSSN}] from [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Removing ${companyName} from [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+*** Test number 44
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Flat Insert Model Nodes: 6 to manipulate: [4, 3]
+Inserting citySuffix_1 : ${citySuffix} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Inserting integer_1 : ${integer} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null], ${citySuffix}]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    },
+    "${citySuffix}",
+    "${integer}"
+]
+*** Test number 45
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Remove Model Nodes: 12 to manipulate: [5]
+Removing company from [company:${companyName}, industry:${industry}, suffix:${suffix}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 46
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1, 1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 47
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Remove Model Nodes: 12 to manipulate: [4, 5]
+Removing company from [company:[company:${companyName}, industry:${industry}, suffix:${suffix}]]
+Removing company from [company:${companyName}, industry:${industry}, suffix:${suffix}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 48
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [3, 2]
+Removing [${companyName}, ${suffix}, ${industry}, [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [valoreNull:null]] from [[companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [${companyName}, ${suffix}, ${industry}, [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [valoreNull:null]], [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]]
+Removing [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}] from [[companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]], [address:[bulding:${buildingNumber}, city:${cityName}, street:${streetName*], age:${integer}, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, name:${fullName}, nonesiste:${abdefg}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    }
+]
+*** Test number 49
+***** Nodes 2
+examples/model4.json
+fill
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Result
+[
+    "Larkin, Will and Wolff",
+    {
+        "id": "01838129-cbcf-4a9d-afe8-f8e02dd972aa",
+        "ssn": "310620+4476"
+    },
+    {
+        "email": "dewitt.senger@gmail.com",
+        "name": "Rufus Predovic Jr.",
+        "profession": "fiherman"
+    },
+    "New Buddy",
+    [
+        "Pagac Inc",
+        "LLC",
+        "Mechanical or Industrial Engineering"
+    ],
+    {
+        "ciccio": null
+    }
+]
+*** Test number 50
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Insert Model Nodes: 2 to manipulate: [2, 2]
+Inserting lastName_1 : ${lastName} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "lastName_1": "${lastName}"
+}
+*** Test number 51
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Remove Model Nodes: 12 to manipulate: [5]
+Removing company from [company:${companyName}, industry:${industry}, suffix:${suffix}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 52
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Insert Model Nodes: 2 to manipulate: [2]
+Inserting currency_1 : ${currency} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "currency_1": "${currency}"
+}
+*** Test number 53
+***** Nodes 1
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Deep Insert Model Nodes: 16 to manipulate: [2]
+Inserting timeZone_1 : ${timeZone} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    },
+    "${timeZone}"
+]
+*** Test number 54
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Insert Model Nodes: 1 to manipulate: [2]
+Result
+{
+    "ciccio": "null"
+}
+*** Test number 55
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [3, 2]
+Substituting companiesAndProducts Type: list With: list_1 : [${url}, ${streetSuffix}, ${invalidSSN}, ${profession}]
+Substituting [company:[company:${companyName}, industry:${industry}, suffix:${suffix}]] Type: map With: map_2 : [profession_3:${profession}, streetSuffix_4:${streetSuffix}, productName_5:${productName}, currencyCode_6:${currencyCode}, decimal_7:${decimal}, domainName_8:${domainName}, emailAddress_9:${emailAddress}, lastName_10:${lastName}, streetPrefix_11:${streetPrefix}]
+Result
+{
+    "list_1": [
+        "${url}",
+        "${streetSuffix}",
+        "${invalidSSN}",
+        "${profession}"
+    ]
+}
+*** Test number 56
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Insert Model Nodes: 2 to manipulate: [2, 2]
+Inserting currencyCode_1 : ${currencyCode} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "currencyCode_1": "${currencyCode}"
+}
+*** Test number 57
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Substitute Model Nodes: 48 to manipulate: [12, 37]
+Substituting price Type: string With: bool_1 : ${bool}
+Substituting age Type: number With: citySuffix_2 : ${citySuffix}
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "bool_1": "${bool}",
+                    "material": "${material}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "citySuffix_2": "${citySuffix}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 58
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [2, 2]
+Result
+{
+    "ciccio": "null"
+}
+*** Test number 59
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [2, 2]
+Removing ${suffix} from [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${industry}"
+]
+*** Test number 60
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Substitute Model Nodes: 4 to manipulate: [2]
+Substituting ${companyName} Type: string With: integer_1 : ${integer}
+Result
+[
+    "${suffix}",
+    "${industry}",
+    "${integer}"
+]
+*** Test number 61
+***** Nodes 1
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Remove Model Nodes: 48 to manipulate: [41]
+Removing ${creditCardType} from [${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 62
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Insert Model Nodes: 3 to manipulate: [3, 2]
+Inserting domainWord_1 : ${domainWord} in [${companyName}, ${suffix}, ${industry}]
+Inserting profession_1 : ${profession} in [${companyName}, ${suffix}, ${industry}, ${domainWord}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${domainWord}",
+    "${profession}"
+]
+*** Test number 63
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Insert Model Nodes: 48 to manipulate: [5, 5]
+Inserting material_1 : ${material} in [company:[company:${companyName}, industry:${industry}, suffix:${suffix}]]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                },
+                "material_1": "${material}"
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 64
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [3]
+Removing ${industry} from [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${suffix}"
+]
+*** Test number 65
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Remove Model Nodes: 2 to manipulate: [2, 2]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 66
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Flat Insert Model Nodes: 6 to manipulate: [3, 4]
+Inserting secondaryAddress_1 : ${secondaryAddress} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Inserting fullName_1 : ${fullName} in [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null], ${secondaryAddress}]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    },
+    "${secondaryAddress}",
+    "${fullName}"
+]
+*** Test number 67
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Insert Model Nodes: 12 to manipulate: [6, 9]
+Inserting secondaryAddress_1 : ${secondaryAddress} in [company:${companyName}, industry:${industry}, suffix:${suffix}]
+Inserting cityPrefix_2 : ${cityPrefix} in [product:[material:${material}, price:${price}, product:${productName}]]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "secondaryAddress_1": "${secondaryAddress}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "cityPrefix_2": "${cityPrefix}",
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 68
+***** Nodes 2
+examples/model2.json
+fill
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "Moen, Fahey and Anderson",
+                "industry": "International Affairs",
+                "suffix": "and Sons"
+            }
+        },
+        {
+            "product": {
+                "material": "Steel",
+                "price": "6.10",
+                "product": "Lightweight Marble Chair"
+            }
+        }
+    ]
+}
+*** Test number 69
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Remove Model Nodes: 48 to manipulate: [36, 10]
+Removing product from [product:[material:${material}, price:${price}, product:${productName}]]
+Removing street from [bulding:${buildingNumber}, city:${cityName}, street:${streetName*]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 70
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Insert Model Nodes: 3 to manipulate: [3, 2]
+Inserting url_1 : ${url} in [${companyName}, ${suffix}, ${industry}]
+Inserting integer_1 : ${integer} in [${companyName}, ${suffix}, ${industry}, ${url}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${url}",
+    "${integer}"
+]
+*** Test number 71
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [4, 9]
+Substituting company Type: map With: map_1 : [creditCardType_2:${creditCardType}]
+Substituting product Type: map With: map_3 : [lastName_4:${lastName}, streetSuffix_5:${streetSuffix}, url_6:${url}, countryCodeSL3d_7:${countryCodeSL3d}, emailAddress_8:${emailAddress}, secondaryAddress_9:${secondaryAddress}]
+Result
+{
+    "companiesAndProducts": [
+        {
+            "map_1": {
+                "creditCardType_2": "${creditCardType}"
+            }
+        },
+        {
+            "map_3": {
+                "lastName_4": "${lastName}",
+                "streetSuffix_5": "${streetSuffix}",
+                "url_6": "${url}",
+                "countryCodeSL3d_7": "${countryCodeSL3d}",
+                "emailAddress_8": "${emailAddress}",
+                "secondaryAddress_9": "${secondaryAddress}"
+            }
+        }
+    ]
+}
+*** Test number 72
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Remove Model Nodes: 4 to manipulate: [3, 2]
+Removing ${companyName} from [${companyName}, ${suffix}, ${industry}]
+Removing ${suffix} from [${suffix}, ${industry}]
+Result
+[
+    "${industry}"
+]
+*** Test number 73
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1, 1]
+Removing companiesAndProducts from [companiesAndProducts:[[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]]
+Result
+{
+    
+}
+*** Test number 74
+***** Nodes 2
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [4, 11]
+Substituting company Type: map With: map_1 : [invalidSSN_2:${invalidSSN}, suffix_3:${suffix}, decimal_4:${decimal}, countryCode_5:${countryCode}]
+Substituting price Type: string With: decimal_6 : ${decimal}
+Result
+{
+    "companiesAndProducts": [
+        {
+            "map_1": {
+                "invalidSSN_2": "${invalidSSN}",
+                "suffix_3": "${suffix}",
+                "decimal_4": "${decimal}",
+                "countryCode_5": "${countryCode}"
+            }
+        },
+        {
+            "product": {
+                "decimal_6": "${decimal}",
+                "material": "${material}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 75
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Insert Model Nodes: 4 to manipulate: [3]
+Inserting invalidID_1 : ${invalidID} in [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${invalidID}"
+]
+*** Test number 76
+***** Nodes 1
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Insert Model Nodes: 4 to manipulate: [2]
+Inserting domainSuffix_1 : ${domainSuffix} in [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}",
+    "${domainSuffix}"
+]
+*** Test number 77
+***** Nodes 2
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Flat Remove Model Nodes: 14 to manipulate: [11, 11]
+Removing phone from [address:[building:${buildingNumber}, city:${cityName}, street:${streetName}], age:${integer}, ciccio:pasticcio, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, mobile:${mobile}, name:${fullName}, nonesiste:${abdefg}, null:null, phone:${phone}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 78
+***** Nodes 1
+examples/model2.json
+MANIPULATE
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "industry": "${industry}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+Mode: Deep Substitute Model Nodes: 12 to manipulate: [6]
+Substituting industry Type: string With: decimal_1 : ${decimal}
+Result
+{
+    "companiesAndProducts": [
+        {
+            "company": {
+                "company": "${companyName}",
+                "decimal_1": "${decimal}",
+                "suffix": "${suffix}"
+            }
+        },
+        {
+            "product": {
+                "material": "${material}",
+                "price": "${price}",
+                "product": "${productName}"
+            }
+        }
+    ]
+}
+*** Test number 79
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Substitute Model Nodes: 4 to manipulate: [3, 2]
+Substituting ${companyName} Type: string With: bool_1 : ${bool}
+Substituting ${suffix} Type: string With: integer_0 : ${integer}
+Result
+[
+    "${industry}",
+    "${bool}",
+    "${integer}"
+]
+Tests 4
+*** Test number 1
+***** Nodes 2
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Insert Model Nodes: 2 to manipulate: [2, 2]
+Inserting promotionCode_1 : ${promotionCode} in [ciccio:null]
+Result
+{
+    "ciccio": "null",
+    "promotionCode_1": "${promotionCode}"
+}
+*** Test number 2
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 3
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Deep Remove Model Nodes: 4 to manipulate: [2, 2]
+Removing ${companyName} from [${companyName}, ${suffix}, ${industry}]
+Result
+[
+    "${suffix}",
+    "${industry}"
+]
+*** Test number 4
+***** Nodes 2
+examples/model3.json
+MANIPULATE
+[
+    "${companyName}",
+    "${suffix}",
+    "${industry}"
+]
+Mode: Flat Remove Model Nodes: 3 to manipulate: [2, 3]
+Removing ${suffix} from [${companyName}, ${suffix}, ${industry}]
+Removing ${industry} from [${companyName}, ${industry}]
+Result
+[
+    "${companyName}"
+]
+Tests 5
+*** Test number 1
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Flat Remove Model Nodes: 1 to manipulate: [1]
+Removing ciccio from [ciccio:null]
+Result
+{
+    
+}
+*** Test number 2
+***** Nodes 1
+examples/model1.json
+MANIPULATE
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+Mode: Flat Insert Model Nodes: 14 to manipulate: [9]
+Inserting firstName_1 : ${firstName} in [address:[building:${buildingNumber}, city:${cityName}, street:${streetName}], age:${integer}, ciccio:pasticcio, creditCard:[${creditCardNumber}, ${creditCardExpiry}, ${creditCardType}], email:${emailAddress}, id:${uuid}, mobile:${mobile}, name:${fullName}, nonesiste:${abdefg}, null:null, phone:${phone}, profession:${profession}, ssn:${validSSN}, subscribed:${bool}]
+Result
+{
+    "address": {
+        "building": "${buildingNumber}",
+        "city": "${cityName}",
+        "street": "${streetName}"
+    },
+    "age": "${integer}",
+    "ciccio": "pasticcio",
+    "creditCard": [
+        "${creditCardNumber}",
+        "${creditCardExpiry}",
+        "${creditCardType}"
+    ],
+    "email": "${emailAddress}",
+    "firstName_1": "${firstName}",
+    "id": "${uuid}",
+    "mobile": "${mobile}",
+    "name": "${fullName}",
+    "nonesiste": "${abdefg}",
+    "null": "null",
+    "phone": "${phone}",
+    "profession": "${profession}",
+    "ssn": "${validSSN}",
+    "subscribed": "${bool}"
+}
+*** Test number 3
+***** Nodes 2
+examples/model4.json
+MANIPULATE
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    {
+        "email": "${emailAddress}",
+        "name": "${fullName}",
+        "profession": "${profession}"
+    },
+    "${cityName}",
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+Mode: Flat Remove Model Nodes: 6 to manipulate: [4, 3]
+Removing [email:${emailAddress}, name:${fullName}, profession:${profession}] from [${companyName}, [id:${uuid}, ssn:${validSSN}], [email:${emailAddress}, name:${fullName}, profession:${profession}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Removing ${cityName} from [${companyName}, [id:${uuid}, ssn:${validSSN}], ${cityName}, [${companyName}, ${suffix}, ${industry}], [ciccio:null]]
+Result
+[
+    "${companyName}",
+    {
+        "id": "${uuid}",
+        "ssn": "${validSSN}"
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}"
+    ],
+    {
+        "ciccio": "null"
+    }
+]
+*** Test number 4
+***** Nodes 2
+examples/model6.json
+MANIPULATE
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            },
+            {
+                "product": {
+                    "material": "${material}",
+                    "price": "${price}",
+                    "product": "${productName}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "price": "${price}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+Mode: Deep Remove Model Nodes: 48 to manipulate: [9, 28]
+Removing [product:[material:${material}, price:${price}, product:${productName}]] from [[company:[company:${companyName}, industry:${industry}, suffix:${suffix}]], [product:[material:${material}, price:${price}, product:${productName}]]]
+Removing price from [material:${material}, price:${price}, product:${productName}]
+Result
+[
+    {
+        "companiesAndProducts": [
+            {
+                "company": {
+                    "company": "${companyName}",
+                    "industry": "${industry}",
+                    "suffix": "${suffix}"
+                }
+            }
+        ]
+    },
+    [
+        "${companyName}",
+        "${suffix}",
+        "${industry}",
+        {
+            "companiesAndProducts": [
+                {
+                    "company": {
+                        "company": "${companyName}",
+                        "industry": "${industry}",
+                        "suffix": "${suffix}"
+                    }
+                },
+                {
+                    "product": {
+                        "material": "${material}",
+                        "product": "${productName}"
+                    }
+                }
+            ]
+        },
+        {
+            "valoreNull": "null"
+        }
+    ],
+    {
+        "address": {
+            "bulding": "${buildingNumber}",
+            "city": "${cityName}",
+            "street": "${streetName*"
+        },
+        "age": "${integer}",
+        "creditCard": [
+            "${creditCardNumber}",
+            "${creditCardExpiry}",
+            "${creditCardType}"
+        ],
+        "email": "${emailAddress}",
+        "id": "${uuid}",
+        "name": "${fullName}",
+        "nonesiste": "${abdefg}",
+        "profession": "${profession}",
+        "ssn": "${validSSN}",
+        "subscribed": "${bool}"
+    }
+]
+*** Test number 5
+***** Nodes 1
+examples/model5.json
+MANIPULATE
+{
+    "ciccio": "null"
+}
+Mode: Deep Substitute Model Nodes: 2 to manipulate: [2]
+Substituting ciccio Type: n.d. With: fullName_1 : ${fullName}
+Result
+{
+    "fullName_1": "${fullName}"
+}
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Progress update: steps=1000, test inputs generated=497, failing inputs=0      (2023-10-31T23:39:29.869Z     146M used)
+Progress update: steps=1039, test inputs generated=523, failing inputs=0      (2023-10-31T23:39:30.198Z     1.25G used)
+Normal method executions: 48019
+Exceptional method executions: 46
+
+Average method execution time (normal termination):      0.0792
+Average method execution time (exceptional termination): 1.10
+Approximate memory usage 1.25G
+Explorer = ForwardGenerator(steps: 1039, null steps: 516, num_sequences_generated: 523;
+    allSequences: 523, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 23;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 750)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 283 regression sequences.
+
+Regression test output:
+Regression test count: 283
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/apifortress-apif-faker/002318fdeeb863ff73b9e380c84e6eb68106f22a/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/apifortress-apif-faker/002318fdeeb863ff73b9e380c84e6eb68106f22a/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.lang.String.valueOf(double)
+  Possibly flaky:  java.lang.String.valueOf(char)
+  Possibly flaky:  java.lang.Double.valueOf(double)
+  Possibly flaky:  java.lang.Double.toString(double)
+  Possibly flaky:  java.lang.Double.toHexString(double)
+  Possibly flaky:  java.lang.Character.toString(char)
+  Possibly flaky:  java.lang.Boolean.toString()
+  Possibly flaky:  com.github.javafaker.service.RandomService.nextInt(int)
+  Possibly flaky:  com.github.javafaker.service.RandomService.nextBoolean()
+  Possibly flaky:  com.github.javafaker.service.RandomService.hex()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 21).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

@@ -1,4 +1,4 @@
-[TIME]: 0:00:11.502972
+[TIME]: 0:00:10.501538
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.lightstep.tracer.metrics.ValueAdapter specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.lightstep.tracer.metrics.NetworkMetricGroup specified via --testclass or --classlist.
@@ -13,7 +13,7 @@ Cannot instantiate non-accessible class com.lightstep.tracer.metrics.GaugeMetric
 
 Will try to generate tests for 23 out of 33 classes.
 Removing com.lightstep.tracer.grpc.IngestRequest$Builder from the classes under test due to problem extracting operations:
-java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be cast to class randoop.types.InstantiatedType (randoop.types.NonParameterizedType and randoop.types.InstantiatedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: randoop.types.NonParameterizedType cannot be cast to randoop.types.InstantiatedType
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:295)
 	at randoop.types.InstantiatedType.getMatchingSupertype(InstantiatedType.java:161)
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:298)
@@ -32,7 +32,7 @@ java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be
 	at randoop.main.Main.main(Main.java:31)
 
 Removing com.lightstep.tracer.grpc.IngestResponse$Builder from the classes under test due to problem extracting operations:
-java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be cast to class randoop.types.InstantiatedType (randoop.types.NonParameterizedType and randoop.types.InstantiatedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: randoop.types.NonParameterizedType cannot be cast to randoop.types.InstantiatedType
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:295)
 	at randoop.types.InstantiatedType.getMatchingSupertype(InstantiatedType.java:161)
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:298)
@@ -51,7 +51,7 @@ java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be
 	at randoop.main.Main.main(Main.java:31)
 
 Removing com.lightstep.tracer.grpc.KeyValue$Builder from the classes under test due to problem extracting operations:
-java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be cast to class randoop.types.InstantiatedType (randoop.types.NonParameterizedType and randoop.types.InstantiatedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: randoop.types.NonParameterizedType cannot be cast to randoop.types.InstantiatedType
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:295)
 	at randoop.types.InstantiatedType.getMatchingSupertype(InstantiatedType.java:161)
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:298)
@@ -70,7 +70,7 @@ java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be
 	at randoop.main.Main.main(Main.java:31)
 
 Removing com.lightstep.tracer.grpc.MetricPoint$Builder from the classes under test due to problem extracting operations:
-java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be cast to class randoop.types.InstantiatedType (randoop.types.NonParameterizedType and randoop.types.InstantiatedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: randoop.types.NonParameterizedType cannot be cast to randoop.types.InstantiatedType
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:295)
 	at randoop.types.InstantiatedType.getMatchingSupertype(InstantiatedType.java:161)
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:298)
@@ -89,7 +89,7 @@ java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be
 	at randoop.main.Main.main(Main.java:31)
 
 Removing com.lightstep.tracer.grpc.Reporter$Builder from the classes under test due to problem extracting operations:
-java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be cast to class randoop.types.InstantiatedType (randoop.types.NonParameterizedType and randoop.types.InstantiatedType are in unnamed module of loader 'app')
+java.lang.ClassCastException: randoop.types.NonParameterizedType cannot be cast to randoop.types.InstantiatedType
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:295)
 	at randoop.types.InstantiatedType.getMatchingSupertype(InstantiatedType.java:161)
 	at randoop.types.ClassOrInterfaceType.getMatchingSupertype(ClassOrInterfaceType.java:298)
@@ -110,19 +110,19 @@ java.lang.ClassCastException: class randoop.types.NonParameterizedType cannot be
 PUBLIC MEMBERS=344
 Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
-    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:37:22.813091Z     65.8M used)
-Progress update: steps=721, test inputs generated=501, failing inputs=0      (2023-10-28T04:37:31.788540Z     127M used)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:28:53.703Z     53.4M used)
+Progress update: steps=721, test inputs generated=501, failing inputs=0      (2023-10-31T23:29:00.639Z     457M used)
 Normal method executions: 30456
 Exceptional method executions: 120
 
-Average method execution time (normal termination):      0.000922
-Average method execution time (exceptional termination): 1.04
-Approximate memory usage 127M
+Average method execution time (normal termination):      0.0470
+Average method execution time (exceptional termination): 1.40
+Approximate memory usage 457M
 Explorer = ForwardGenerator(steps: 721, null steps: 220, num_sequences_generated: 501;
     allSequences: 501, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
-    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 59)
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 59)
 
 No error-revealing tests to output.
 
@@ -131,8 +131,8 @@ About to look for failing assertions in 330 regression sequences.
 Regression test output:
 Regression test count: 330
 Writing regression JUnit tests...
-Created file /Users/yhcrown/Documents/randoop_tests/lightstep-lightstep-metrics-java/66adb9cc291bd4392c62c08d5b2ecb0766eabe2f/alltests/TestGroup100Case0.java
-Created file /Users/yhcrown/Documents/randoop_tests/lightstep-lightstep-metrics-java/66adb9cc291bd4392c62c08d5b2ecb0766eabe2f/alltests/TestGroup100Case.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/lightstep-lightstep-metrics-java/66adb9cc291bd4392c62c08d5b2ecb0766eabe2f/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/lightstep-lightstep-metrics-java/66adb9cc291bd4392c62c08d5b2ecb0766eabe2f/alltests/TestGroup100Case.java
 Wrote regression JUnit tests.
 About to look for flaky methods.
 

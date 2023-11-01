@@ -31,7 +31,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.CreateSisImportOptions createSisImportOptions6 = new edu.ksu.canvas.requestOptions.CreateSisImportOptions("hi!", "hi!", importType2, "", inputStream4, false);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateSisImportOptions$ImportType.toString()\" because \"importType\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -150,7 +150,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.ContentMigration> contentMigrationList10 = contentMigrationImpl8.getGroupContentMigrations("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -199,7 +199,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.getAccountContentMigration("", (java.lang.Integer) (-1));
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -276,7 +276,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response7 = restCanvasMessenger3.sendJsonPutToCanvas(oauthToken4, "", jsonObject6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.gson.JsonObject.toString()\" because \"requestBody\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -304,7 +304,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.UpdateCoursesOptions updateCoursesOptions1 = new edu.ksu.canvas.requestOptions.UpdateCoursesOptions(eventType0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.UpdateCoursesOptions$EventType.toString()\" because \"eventType\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -331,7 +331,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.assignment.Assignment> assignmentList10 = assignmentImpl8.listUserAssignments(listUserAssignmentOptions9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.ListUserAssignmentOptions.getUserId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -347,7 +347,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.getGroupContentMigration("course_progress", (java.lang.Integer) (-1));
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -438,7 +438,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.SelectiveData> selectiveDataList10 = selectiveDataImpl8.getGroupSelectiveDataFromMigration(getSelectiveDataOptions9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.GetSelectiveDataOptions.getItemId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -500,7 +500,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.CreateSisImportOptions createSisImportOptions5 = new edu.ksu.canvas.requestOptions.CreateSisImportOptions("hi!", "course_progress", importType2, "hi!", inputStream4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateSisImportOptions$ImportType.toString()\" because \"importType\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -515,7 +515,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.CreateConversationOptions createConversationOptions4 = createConversationOptions2.mediaCommentType(mediaCommentType3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateConversationOptions$MediaCommentType.toString()\" because \"type\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -546,7 +546,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getAccountMigrationIssues("conclude", (java.lang.Integer) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -564,7 +564,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.CourseSettings> courseSettingsOptional12 = courseSettingsReader10.getCourseSettings("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -619,7 +619,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.ContentMigration> contentMigrationList10 = contentMigrationImpl8.getUserContentMigrations("conclude");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -696,7 +696,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.updateCourseContentMigration((java.lang.Integer) (-1), createCourseContentMigrationOptions10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions.getDestinationCourseId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -753,7 +753,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.getAccountContentMigration("", (java.lang.Integer) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -769,7 +769,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.MigrationIssue> migrationIssueOptional12 = migrationIssueImpl8.getAccountMigrationIssue("", (java.lang.Integer) 0, (java.lang.Integer) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -786,7 +786,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Account> accountOptional11 = accountImpl8.createAccount("conclude/api/v1/course_progress", account10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.Account.toJsonObject(java.lang.Boolean)\" because \"account\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -818,7 +818,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getAccountMigrationIssues("deleted", (java.lang.Integer) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -834,7 +834,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.assignment.Quiz> quizList10 = quizImpl8.getQuizzesInCourse("conclude");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -850,7 +850,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.report.AccountReport> accountReportOptional12 = accountReportImpl8.deleteReport("", "", (java.lang.Integer) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiDelete(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -877,7 +877,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.MigrationIssue> migrationIssueOptional12 = migrationIssueImpl8.getUserMigrationIssue("conclude", (java.lang.Integer) (-1), (java.lang.Integer) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -940,7 +940,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.assignment.Assignment> assignmentList12 = assignmentImpl8.listCourseAssignments(listCourseAssignmentsOptions11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.ListCourseAssignmentsOptions.getCourseId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1016,7 +1016,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.updateCourseContentMigration((java.lang.Integer) 1, createCourseContentMigrationOptions10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions.getDestinationCourseId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1032,7 +1032,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getCourseMigrationIssues("conclude/api/v1/course_progress", (java.lang.Integer) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1049,7 +1049,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.SelectiveData> selectiveDataList13 = selectiveDataImpl8.getUserSelectiveDataFromMigration(getSelectiveDataOptions12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1089,7 +1089,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.SelectiveData> selectiveDataList13 = selectiveDataImpl8.getAccountSelectiveDataFromMigration(getSelectiveDataOptions12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1114,7 +1114,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean3 = genericErrorHandler0.shouldHandle(httpRequest1, httpResponse2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.apache.http.HttpRequest.getRequestLine()\" because \"httpRequest\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1130,7 +1130,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getAccountMigrationIssues("total_scores", (java.lang.Integer) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1158,7 +1158,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional12 = contentMigrationImpl8.createCourseContentMigration(createCourseContentMigrationOptions11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions.getDestinationCourseId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1178,7 +1178,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response10 = restCanvasMessenger3.deleteFromCanvas(oauthToken4, "conclude/api/v1/course_progress", strMap9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiDelete(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1247,7 +1247,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Login> loginOptional12 = loginImpl8.deleteLogin(login11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.Login.getId()\" because \"login\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1282,7 +1282,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getAccountMigrationIssues("deleted", (java.lang.Integer) (-1));
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1317,7 +1317,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response10 = restCanvasMessenger3.deleteFromCanvas(oauthToken4, "total_scores", strMap9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiDelete(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1335,7 +1335,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.getGroupContentMigration("conclude", (java.lang.Integer) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1353,7 +1353,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response9 = refreshingRestClient0.sendApiDelete(oauthToken1, "course_progress", strMap6, (int) (short) 1, (int) (short) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.oauth.OauthToken.getAccessToken()\" because \"token\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1387,7 +1387,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.ContentMigration> contentMigrationList10 = contentMigrationImpl8.getAccountContentMigrations("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1419,7 +1419,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.net.Response> responseList6 = restCanvasMessenger3.getFromCanvas(oauthToken4, "conclude");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1507,7 +1507,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Progress> progressOptional10 = progressImpl8.getProgress((java.lang.Integer) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1526,7 +1526,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.assignment.Assignment> assignmentOptional13 = assignmentImpl8.editAssignment("deleted", assignment12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendJsonPut(edu.ksu.canvas.oauth.OauthToken, String, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1559,7 +1559,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean3 = genericErrorHandler0.shouldHandle(httpRequest1, httpResponse2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.apache.http.HttpRequest.getRequestLine()\" because \"httpRequest\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1593,7 +1593,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional11 = contentMigrationImpl8.getAccountContentMigration("key", (java.lang.Integer) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1651,7 +1651,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional14 = contentMigrationImpl8.updateAccountContentMigration("hi!/api/v1/event", (java.lang.Integer) 100, createContentMigrationOptions13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateContentMigrationOptions.getOptionsMap()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1684,7 +1684,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response19 = restCanvasMessenger3.deleteFromCanvas(oauthToken4, "event", strMap15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiDelete(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1842,7 +1842,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Account> accountOptional11 = accountImpl8.createAccount("undated", account10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.Account.toJsonObject(java.lang.Boolean)\" because \"account\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1873,7 +1873,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional13 = contentMigrationImpl8.getUserContentMigration("hi!/api/v1/event", (java.lang.Integer) (-1));
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1922,7 +1922,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.assignment.Assignment> assignmentList12 = assignmentImpl8.listCourseAssignments(listCourseAssignmentsOptions11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.ListCourseAssignmentsOptions.getCourseId()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1984,7 +1984,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.assignment.Quiz> quizOptional13 = quizImpl8.updateQuiz(quiz11, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.assignment.Quiz.getId()\" because \"quiz\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2001,7 +2001,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.MigrationIssue> migrationIssueList11 = migrationIssueImpl8.getUserMigrationIssues("", (java.lang.Integer) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2188,7 +2188,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.assignment.Assignment> assignmentOptional14 = assignmentImpl8.editAssignment("hi!/api/v1/event", assignment10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendJsonPut(edu.ksu.canvas.oauth.OauthToken, String, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2220,7 +2220,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response14 = refreshingRestClient0.sendApiPut(oauthToken1, "hi!/api/v1/event", strMap9, (int) (byte) 0, 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.oauth.OauthToken.getAccessToken()\" because \"token\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2284,7 +2284,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.assignment.Assignment> assignmentOptional15 = assignmentImpl8.deleteAssignment("conclude", (java.lang.Integer) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiDelete(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2372,7 +2372,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response14 = refreshingRestClient3.sendJsonPost(oauthToken9, "key", "deleted", (int) (short) 1, 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.oauth.OauthToken.getAccessToken()\" because \"token\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2409,7 +2409,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional16 = contentMigrationWriter12.updateGroupContentMigration("ta", (java.lang.Integer) 1, createContentMigrationOptions15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateContentMigrationOptions.getOptionsMap()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2507,7 +2507,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions createCourseContentMigrationOptions7 = new edu.ksu.canvas.requestOptions.CreateCourseContentMigrationOptions("hi!/api/v1/event", "course_progress", migrationType2, false, strArray6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateContentMigrationOptions$MigrationType.toString()\" because \"migrationType\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2526,7 +2526,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.CourseSettings> courseSettingsOptional13 = courseSettingsWriter10.updateCourseSettings("hi!/api/v1/event", courseSettings12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.CourseSettings.toPostMap(boolean)\" because \"settings\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2584,7 +2584,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.requestOptions.GetMultipleSubmissionsOptions getMultipleSubmissionsOptions3 = getMultipleSubmissionsOptions1.gradedSince(date2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.Date.toString()\" because \"gradedSince\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2626,7 +2626,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             genericErrorHandler0.handle(httpRequest1, httpResponse2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.apache.http.HttpResponse.getEntity()\" because \"httpResponse\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2882,7 +2882,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Account> accountOptional12 = accountImpl8.updateAccount(account11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.Account.getId()\" because \"account\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2935,7 +2935,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.MigrationIssue> migrationIssueOptional12 = migrationIssueImpl8.getUserMigrationIssue("deactivate", (java.lang.Integer) 0, (java.lang.Integer) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2961,7 +2961,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.SelectiveData> selectiveDataList15 = selectiveDataImpl8.getCourseSelectiveDataFromMigration(getSelectiveDataOptions12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3024,7 +3024,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.SelectiveData> selectiveDataList15 = selectiveDataReader10.getUserSelectiveDataFromMigration(getSelectiveDataOptions14);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3152,7 +3152,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             edu.ksu.canvas.net.Response response17 = simpleRestClient3.sendApiDelete(oauthToken9, "deactivate", strMap14, 100, 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.oauth.OauthToken.getAccessToken()\" because \"token\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3190,7 +3190,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional13 = contentMigrationImpl8.createAccountContentMigration("UTF-8", createContentMigrationOptions12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.requestOptions.CreateContentMigrationOptions.getOptionsMap()\" because \"options\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3316,7 +3316,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<edu.ksu.canvas.model.Login> loginList14 = loginImpl8.getLoginForUser("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3641,7 +3641,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.CalendarEvent> calendarEventOptional26 = calendarEventImpl24.editCalendarEvent(calendarEvent25);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.CalendarEvent.getId()\" because \"calendarEvent\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3741,7 +3741,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.report.AccountReport> accountReportOptional16 = accountReportImpl8.startReport(accountReportOptions13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiPost(edu.ksu.canvas.oauth.OauthToken, String, java.util.Map, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3773,7 +3773,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.MigrationIssue> migrationIssueOptional14 = migrationIssueImpl8.getUserMigrationIssue("total_students", (java.lang.Integer) 10, (java.lang.Integer) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3870,7 +3870,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.Login> loginOptional15 = loginImpl8.createLogin(login13, createLoginOptions14);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.model.Login.getAccountId()\" because \"login\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3889,7 +3889,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<edu.ksu.canvas.model.ContentMigration> contentMigrationOptional13 = contentMigrationImpl8.getUserContentMigration("hi!", (java.lang.Integer) 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"edu.ksu.canvas.net.RestClient.sendApiGet(edu.ksu.canvas.oauth.OauthToken, String, int, int)\" because \"this.restClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

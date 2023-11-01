@@ -162,7 +162,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean7 = premiumProfileBlobData4.hasDaySpeeds((int) (short) 50);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from object array because \"dayToSpeeds\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -179,7 +179,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData5 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray3);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -358,7 +358,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean7 = premiumProfileBlobData4.hasDaySpeeds((int) (short) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from object array because \"dayToSpeeds\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -380,7 +380,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional24 = premiumProfileBlobData22.getDaySpeeds((int) (short) 5);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 5 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 5");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -448,7 +448,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional8 = premiumProfileBlobData6.getDaySpeeds((int) (short) -3);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index -3 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: -3");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -491,7 +491,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean1 = com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.hasSupportedVersion(byteArray0);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 0 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 0");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -531,7 +531,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.setMeanSpeeds(byteArray2, 0, (int) (short) 50);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -556,7 +556,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean1 = com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.hasSupportedVersion(byteArray0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -621,7 +621,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.setMeanSpeeds(byteArray2, 52, (int) (short) 50);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -689,7 +689,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData8 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -711,7 +711,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean19 = premiumProfileBlobData17.hasDaySpeeds((int) (short) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 10 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 10");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -1142,7 +1142,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.setMeanSpeeds(byteArray0, (-32768), (int) (short) 840);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1284,7 +1284,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData32 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray31);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1366,7 +1366,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData2 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1709,7 +1709,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<double[]> doubleArrayOptional21 = premiumProfileBlobData18.getDaySpeedsAsArray((int) (short) 400);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 400 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 400");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -1740,7 +1740,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData14 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1783,7 +1783,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.setMeanSpeeds(byteArray2, 2, (int) (short) 64);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -2300,7 +2300,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<double[]> doubleArrayOptional6 = premiumProfileBlobData4.getDaySpeedsAsArray(10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from object array because \"dayToSpeeds\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2453,7 +2453,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional37 = premiumProfileBlobData34.getDaySpeeds((int) (short) 1023);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 1023 out of bounds for length 6");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 1023");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -2529,7 +2529,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean15 = premiumProfileBlobData13.hasDaySpeeds((int) (short) 1023);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 1023 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 1023");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -2913,7 +2913,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean7 = premiumProfileBlobData4.hasDaySpeeds((int) (byte) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from object array because \"dayToSpeeds\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2946,7 +2946,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<double[]> doubleArrayOptional8 = premiumProfileBlobData6.getDaySpeedsAsArray((int) 'a');
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 97 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 97");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -3171,7 +3171,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobConverter.setMeanSpeeds(byteArray0, (int) (short) 16384, 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot load from byte/boolean array because \"blob\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3270,7 +3270,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray20 = premiumProfileBlobConverter0.toBinaryBlob(premiumProfileBlobData19);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.getWeekDaySpeed()\" because \"blobData\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3640,7 +3640,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional7 = premiumProfileBlobData5.getDaySpeeds((int) (short) 652);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 652 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 652");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4263,7 +4263,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean40 = premiumProfileBlobData38.hasDaySpeeds(10);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 10 out of bounds for length 6");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 10");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4364,7 +4364,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional7 = premiumProfileBlobData5.getDaySpeeds((int) (short) 50);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 50 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 50");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4415,7 +4415,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData14 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray11);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4665,7 +4665,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional12 = premiumProfileBlobData10.getDaySpeeds(144);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 144 out of bounds for length 0");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 144");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4715,7 +4715,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData premiumProfileBlobData39 = premiumProfileBlobConverter0.fromBinaryBlob(byteArray37);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 2 out of bounds for length 2");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 2");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4990,7 +4990,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional36 = premiumProfileBlobData34.getDaySpeeds((int) ' ');
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 32 out of bounds for length 6");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 32");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -5174,7 +5174,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Optional<com.tomtom.traffic.iqr.io.premium.blob.PremiumProfileBlobData.DaySpeedsAccessor> daySpeedsAccessorOptional40 = premiumProfileBlobData38.getDaySpeeds((int) '4');
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index 52 out of bounds for length 6");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 52");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -6060,7 +6060,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean21 = premiumProfileBlobData19.hasDaySpeeds((-32768));
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Index -32768 out of bounds for length 3");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: -32768");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }

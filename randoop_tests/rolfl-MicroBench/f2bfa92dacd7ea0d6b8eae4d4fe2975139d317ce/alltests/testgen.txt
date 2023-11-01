@@ -1,4 +1,4 @@
-[TIME]: 0:00:01.383323
+[TIME]: 0:00:39.999710
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class net.tuis.ubench.TaskRunner specified via --testclass or --classlist.
 Cannot instantiate non-accessible class net.tuis.ubench.NonClosingSystemOut specified via --testclass or --classlist.
@@ -13,28 +13,388 @@ Cannot instantiate non-accessible class net.tuis.ubench.InterleavedExecutionMode
 
 Will try to generate tests for 11 out of 21 classes.
 PUBLIC MEMBERS=114
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:40:21.676Z     51.0M used)Oct 31, 2023 6:40:22 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+Oct 31, 2023 6:40:22 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+Oct 31, 2023 6:40:22 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+net.tuis.ubench.UBenchRuntimeException: 
+========================================
 
-Randoop failed.
-No sequences generated.
+Oct 31, 2023 6:40:22 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite 
+Oct 31, 2023 6:40:22 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite 
+Oct 31, 2023 6:40:27 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+Oct 31, 2023 6:40:27 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+Oct 31, 2023 6:40:32 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+Oct 31, 2023 6:40:32 PM net.tuis.ubench.UBench <init>
+INFO: Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:37.888 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:37.925 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:37.950 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:37.964 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:37.975 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+net
+
+====
+
+INFO   2023-10-31 18:40:38.028 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:38.092 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.105 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.115 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:38.127 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.150 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.162 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.188 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.200 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+net
+
+====
+
+INFO   2023-10-31 18:40:38.303 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:38.357 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.393 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.403 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.415 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.430 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:38.454 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.467 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:38.519 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:43.559 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:43.587 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:43.602 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:43.630 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f
+INFO   2023-10-31 18:40:43.636 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f
+INFO   2023-10-31 18:40:48.648 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:48.656 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:48.667 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+hi!
+===
+
+INFO   2023-10-31 18:40:48.726 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+WARNING 2023-10-31 18:40:48.763 net.tuis.ubench.UUtils(readResource): Unexpected exception loading resource %f
+java.lang.NullPointerException
+	at net.tuis.ubench.UUtils.readResource(UUtils.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
+	at randoop.util.RunnerThread.run(RunnerThread.java:43)
+net
+
+====
+
+%f
+==
+
+INFO   2023-10-31 18:40:48.832 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:48.846 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+O(log n)
+========
+
+INFO   2023-10-31 18:40:48.878 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:48.922 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:48.932 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+net
+
+====
+
+INFO   2023-10-31 18:40:48.952 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:49.044 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:49.053 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:49.065 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+WARNING 2023-10-31 18:40:49.084 net.tuis.ubench.UUtils(readResource): Unexpected exception loading resource O(log n)
+java.lang.NullPointerException
+	at net.tuis.ubench.UUtils.readResource(UUtils.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
+	at randoop.util.RunnerThread.run(RunnerThread.java:43)
+INFO   2023-10-31 18:40:49.142 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:49.150 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:49.158 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+O(1)
+====
+
+INFO   2023-10-31 18:40:49.303 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:49.312 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:49.331 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+net.tuis.ubench.UBenchRuntimeException: 
+========================================
+
+INFO   2023-10-31 18:40:49.417 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:49.819 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+O(log n)
+========
+
+O(1)
+====
+
+INFO   2023-10-31 18:40:49.926 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:49.935 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.234 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.374 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.383 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.398 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.520 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.531 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.543 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.553 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:50.579 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.598 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.701 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.805 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.814 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.824 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.842 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:50.981 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:50.993 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.000 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.008 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.183 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.280 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.292 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.300 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.315 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+%f
+==
+
+net
+ with precision -1.0
+========================
+
+INFO   2023-10-31 18:40:51.411 net.tuis.ubench.UBench(<init>): Creating UBench for suite O(1)
+INFO   2023-10-31 18:40:51.432 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:51.583 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+%f * log n
+==========
+
+INFO   2023-10-31 18:40:51.937 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+{name: "O(1)", valid: true, format: "", description: "", parameters: [10.000000, -1.000000, 0.000000, -1.000000, 100.000000], rsquare: -1.000000}
+=================================================================================================================================================
+
+INFO   2023-10-31 18:40:52.349 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.355 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.387 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.394 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:52.423 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+hi!
+===
+
+INFO   2023-10-31 18:40:52.440 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.490 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+%f*n + %f
+=========
+
+INFO   2023-10-31 18:40:52.514 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.529 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.645 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.785 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.792 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:52.798 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.810 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.838 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:52.850 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.858 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:52.866 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.093 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.120 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.193 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:53.200 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.209 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.215 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.224 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.234 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+{name: "O(1)", valid: true, format: "", description: "", parameters: [10.000000, -1.000000, 0.000000, -1.000000, 100.000000], rsquare: -1.000000}
+=================================================================================================================================================
+
+INFO   2023-10-31 18:40:53.383 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:53.398 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.663 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+ with precision -1.0
+====================
+
+net.tuis.ubench.UBenchRuntimeException: 
+========================================
+
+INFO   2023-10-31 18:40:53.802 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.810 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:53.851 net.tuis.ubench.UBench(<init>): Creating UBench for suite 
+INFO   2023-10-31 18:40:53.858 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+WARNING 2023-10-31 18:40:53.906 net.tuis.ubench.UUtils(readResource): Unexpected exception loading resource net.tuis.ubench.UBenchRuntimeException: 
+java.lang.NullPointerException
+	at net.tuis.ubench.UUtils.readResource(UUtils.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
+	at randoop.util.RunnerThread.run(RunnerThread.java:43)
+INFO   2023-10-31 18:40:53.974 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.017 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.251 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.630 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.637 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.827 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.834 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.852 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.872 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:54.966 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.073 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.082 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.092 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:55.199 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.207 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.250 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.308 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.316 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:55.323 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.331 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.403 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f * log n
+INFO   2023-10-31 18:40:55.442 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.451 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.466 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.472 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:55.544 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.647 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.877 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.884 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+{name: "O(n)", valid: true, format: "net
+", description: "net
+", parameters: [1.000000, -1.000000, -1.000000, -1.000000, 52.000000, 100.000000], rsquare: -1.000000}
+====================================================================================================================================================================
+
+INFO   2023-10-31 18:40:55.988 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:55.995 net.tuis.ubench.UBench(<init>): Creating UBench for suite net
+ with precision -1.0
+INFO   2023-10-31 18:40:56.000 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+net.tuis.ubench.UBenchRuntimeException: %f*n + %f
+=================================================
+
+INFO   2023-10-31 18:40:56.144 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:56.150 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f
+INFO   2023-10-31 18:40:56.335 net.tuis.ubench.UBench(<init>): Creating UBench for suite {name: "O(n)", valid: true, format: "net
+", description: "net
+", parameters: [1.000000, -1.000000, -1.000000, -1.000000, 52.000000, 100.000000], rsquare: -1.000000}
+WARNING 2023-10-31 18:40:56.364 net.tuis.ubench.UUtils(readResource): Unexpected exception loading resource hi!
+java.lang.NullPointerException
+	at net.tuis.ubench.UUtils.readResource(UUtils.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
+	at randoop.util.RunnerThread.run(RunnerThread.java:43)
+INFO   2023-10-31 18:40:56.370 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:56.517 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:56.897 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:56.999 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:57.006 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:57.076 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:57.129 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+hi!
+===
+
+INFO   2023-10-31 18:40:57.179 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:57.333 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:57.403 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:57.409 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+INFO   2023-10-31 18:40:57.552 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:57.568 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f
+net.tuis.ubench.UBenchRuntimeException: %f*n + %f
+=================================================
+
+INFO   2023-10-31 18:40:57.588 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+WARNING 2023-10-31 18:40:57.606 net.tuis.ubench.UUtils(readResource): Unexpected exception loading resource net
+ with precision -1.0
+java.lang.NullPointerException
+	at net.tuis.ubench.UUtils.readResource(UUtils.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53)
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63)
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
+	at randoop.util.RunnerThread.run(RunnerThread.java:43)
+INFO   2023-10-31 18:40:57.618 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+
+Progress update: steps=1000, test inputs generated=503, failing inputs=5      (2023-10-31T23:40:57.636Z     356M used)INFO   2023-10-31 18:40:57.862 net.tuis.ubench.UBench(<init>): Creating UBench for suite %f*n + %f
+INFO   2023-10-31 18:40:57.868 net.tuis.ubench.UBench(<init>): Creating UBench for suite net.tuis.ubench.UBenchRuntimeException: 
+{name: "O(n)", valid: true, format: "net
+", description: "net
+", parameters: [1.000000, -1.000000, -1.000000, -1.000000, 52.000000, 100.000000], rsquare: -1.000000}
+====================================================================================================================================================================
+
+
+Progress update: steps=1017, test inputs generated=513, failing inputs=5      (2023-10-31T23:40:58.049Z     936M used)
+Normal method executions: 174980
+Exceptional method executions: 160
+
+Average method execution time (normal termination):      0.0350
+Average method execution time (exceptional termination): 0.323
+Approximate memory usage 936M
+Explorer = ForwardGenerator(steps: 1017, null steps: 504, num_sequences_generated: 513;
+    allSequences: 513, regresson seqs: 495, error seqs: 5=5=5, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 54)
+
+Error-revealing test output:
+Error-revealing test count: 5
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 304 regression sequences.
+
+Regression test output:
+Regression test count: 304
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/rolfl-MicroBench/f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  net.tuis.ubench.UUtils.readResource(java.lang.String)
+  Possibly flaky:  net.tuis.ubench.UUtils.getNanoTick()
+  Possibly flaky:  java.lang.String.valueOf(long)
+  Possibly flaky:  java.lang.Long.valueOf(long)
+  Possibly flaky:  java.lang.Long.toString(long)
+  Possibly flaky:  java.lang.Long.toOctalString(long)
+  Possibly flaky:  java.lang.Long.toHexString(long)
+  Possibly flaky:  java.lang.Long.toBinaryString(long)
+  Possibly flaky:  java.util.regex.Pattern.quote(java.lang.String)
+  Possibly flaky:  java.lang.String.trim()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 7).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

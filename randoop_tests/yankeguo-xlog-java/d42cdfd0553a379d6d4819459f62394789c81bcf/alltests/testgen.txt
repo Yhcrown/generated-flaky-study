@@ -1,146 +1,205 @@
-[TIME]: 0:00:09.798518
+[TIME]: 0:00:11.029083
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 29 classes.
-PUBLIC MEMBERS=304
+PUBLIC MEMBERS=298
 Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
-    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 38)
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-28T04:34:40.347739Z     20.3M used)LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:23:44.455Z     33.8M used)18:23:45.804 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:45.799-05:00"}
+18:23:45.953 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:45.953-05:00"}
+18:23:46.143 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:46.139-05:00"}
+18:23:46.337 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:46.337-05:00"}
+18:23:46.358 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:46.358-05:00"}
+18:23:46.673 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:46.672-05:00"}
+18:23:46.756 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:46.756-05:00"}
+18:23:46.808 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:46.807-05:00"}
+18:23:46.824 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:46.823-05:00"}
+18:23:46.894 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:46.894-05:00"}
+18:23:46.936 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:46.936-05:00"}
+18:23:46.994 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"[%d{yyyy/MM/dd HH:mm:ss.SSS}] %msg%n","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":5,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:46.994-05:00"}
+18:23:47.026 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.026-05:00"}
+18:23:47.073 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.073-05:00"}
+18:23:47.136 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.136-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.192 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"[%d{yyyy/MM/dd HH:mm:ss.SSS}] %msg%n","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:47.192-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.214 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.214-05:00"}
+18:23:47.215 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.214-05:00"}
+18:23:47.245 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:47.245-05:00"}
+18:23:47.285 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:47.285-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.345 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.345-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.393 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.393-05:00"}
+18:23:47.426 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.426-05:00"}
+18:23:47.440 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:47.440-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.577 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.577-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:47.635 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:47.635-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+18:23:47.754 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:47.754-05:00"}
+18:23:47.782 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:47.782-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:42.148 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:42.145-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+18:23:48.001 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.001-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+18:23:48.119 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:48.119-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:42.609 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:42.609-05:00"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:43.238 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-27T23:34:43.238-05:00"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:43.760 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:43.760-05:00"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:43.979 [main] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-27T23:34:43.979-05:00"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.188 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.188-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:44.226 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-27T23:34:44.226-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.331 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.331-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:44.332 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.331-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.435 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.435-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:44.436 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.435-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.513 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.513-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.572 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-27T23:34:44.571-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.670 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-27T23:34:44.670-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.805 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.805-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:44.806 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.805-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:44.832 [main] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-27T23:34:44.832-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:44.911 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-27T23:34:44.911-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[CRID[-]]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:45.526 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-27T23:34:45.526-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:45.671 [main] INFO xlog.Event - {"arguments":["X-Correlation-ID","_json_","FORM"," K[true,-1,hi!,hi!]","","CLIENT_CERT"," K[10,-1.0,10,-1,-1.0]","net.landzero.xlog.logback.XLogRedisAppender[null]","X-Correlation-ID","CRID_-_","ff","","CRID[-]","X-Correlation-ID","71c609df539c50766146d8d2ed1f5715"],"duration":100,"topic":"x-perf","crid":"01","timestamp":"2023-10-27T23:34:45.671-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
+18:23:48.322 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.322-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:45.805 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"01","timestamp":"2023-10-27T23:34:45.805-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.468 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.468-05:00"}
+18:23:48.485 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:48.485-05:00"}
+18:23:48.491 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.491-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.230 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.230-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.260 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.260-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.279 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.279-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.291 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.291-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.453 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.453-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.549 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"cridMark","method_name":"BASIC","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.548-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.589 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.589-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.728 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.728-05:00"}
+18:23:48.744 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.743-05:00"}
+18:23:48.744 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.743-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.778 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.778-05:00"}
+18:23:48.779 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.778-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.796 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.796-05:00"}
+18:23:48.813 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.813-05:00"}
+18:23:48.853 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.853-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.888 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"cridMark","method_name":"BASIC","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.888-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.916 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.916-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+18:23:48.962 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:48.962-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:48.996 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:48.996-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.055 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"cridMark","method_name":"BASIC","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.055-05:00"}
+18:23:49.066 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.066-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
+18:23:49.089 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.089-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.145 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.145-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
+18:23:49.201 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.201-05:00"}
+18:23:49.203 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":2,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.201-05:00"}
+18:23:49.203 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":2,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.201-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.251 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.251-05:00"}
+18:23:49.252 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"plain","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.251-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[crid]
+18:23:49.286 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"[%d{yyyy/MM/dd HH:mm:ss.SSS}] %msg%n","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.286-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.333 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.333-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.730 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.730-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
+18:23:49.385 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.385-05:00"}
+18:23:49.386 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.385-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.832 [main] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.832-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
+18:23:49.458 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.458-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.899 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.899-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.899 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.899-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.909 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":0,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.908-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:46.909 [main] INFO xlog.Event - {"class_name":"20231026","method_name":"-","duration":1,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.908-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
+18:23:49.490 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"cridMark","method_name":"BASIC","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.490-05:00"}
 LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
-23:34:46.965 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:46.965-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:47.004 [main] INFO xlog.Event - {"action":"","arguments":["10","-1.0","10","-1","-1.0"],"class_name":"jdk.internal.reflect.NativeMethodAccessorImpl","method_name":"invoke0","duration":0,"topic":"x-perf","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:47.004-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
-23:34:47.027 [main] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"K[true,-1,hi!,hi!]","timestamp":"2023-10-27T23:34:47.027-05:00","path":"x-access","path_digest":"c7cc1b83c3bb6f7b1534373f68d6f2fc"}
+18:23:49.526 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.526-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[crid]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
+18:23:49.595 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.595-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.684 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.684-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.738 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.738-05:00"}
+18:23:49.753 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.753-05:00"}
+18:23:49.762 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.761-05:00"}
+18:23:49.785 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.785-05:00"}
+18:23:49.786 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"plain","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":2,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.785-05:00"}
+18:23:49.786 [randoop.util.RunnerThread] INFO xlog.Event - {"action":"plain","arguments":[],"class_name":"CRID[-]","method_name":"FORM","duration":2,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.785-05:00"}
+18:23:49.799 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":1,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.799-05:00"}
+18:23:49.806 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.806-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[crid]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogFileAppender[null]
+18:23:49.874 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.874-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:49.927 [randoop.util.RunnerThread] INFO xlog.Event - {"status":0,"duration":0,"topic":"x-access","crid":"-","timestamp":"2023-10-31T18:23:49.927-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[ K[]]
+18:23:49.973 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:49.973-05:00"}
+18:23:49.987 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"cridMark","method_name":"BASIC","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:49.987-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:50.079 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.079-05:00"}
+18:23:50.079 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.079-05:00"}
+18:23:50.080 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.079-05:00"}
+18:23:50.085 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.085-05:00"}
+18:23:50.114 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:50.113-05:00"}
+18:23:50.114 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":1,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:50.113-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[crid]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+18:23:50.162 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.162-05:00"}
+18:23:50.162 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"error":"DIGEST","topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.162-05:00"}
+18:23:50.174 [randoop.util.RunnerThread] INFO xlog.Event - {"class_name":"CRID[-]","method_name":"FORM","duration":0,"topic":"x-perf","crid":"-","timestamp":"2023-10-31T18:23:50.173-05:00"}
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
+LOGBACK: No context given for net.landzero.xlog.logback.XLogRedisAppender[null]
 
-Progress update: steps=945, test inputs generated=501, failing inputs=0      (2023-10-28T04:34:47.164575Z     71.5M used)
-Normal method executions: 12300
-Exceptional method executions: 22
+Progress update: steps=1000, test inputs generated=491, failing inputs=1      (2023-10-31T23:23:50.230Z     910M used)18:23:50.236 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.236-05:00"}
+18:23:50.237 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":0,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.236-05:00"}
+18:23:50.237 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.236-05:00"}
+18:23:50.237 [randoop.util.RunnerThread] INFO xlog.Event - {"duration":1,"topic":"x-mybatis-track","crid":"-","timestamp":"2023-10-31T18:23:50.236-05:00"}
 
-Average method execution time (normal termination):      0.00350
-Average method execution time (exceptional termination): 0.0627
-Approximate memory usage 71.5M
-Explorer = ForwardGenerator(steps: 945, null steps: 444, num_sequences_generated: 501;
-    allSequences: 501, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
-    sideEffectFreeMethods: 1113, runtimePrimitivesSeen: 76)
+Progress update: steps=1020, test inputs generated=501, failing inputs=1      (2023-10-31T23:23:50.301Z     213M used)
+Normal method executions: 11100
+Exceptional method executions: 10
 
-No error-revealing tests to output.
+Average method execution time (normal termination):      0.0866
+Average method execution time (exceptional termination): 0.191
+Approximate memory usage 213M
+Explorer = ForwardGenerator(steps: 1020, null steps: 519, num_sequences_generated: 501;
+    allSequences: 501, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 85)
 
-About to look for failing assertions in 291 regression sequences.
+Error-revealing test output:
+Error-revealing test count: 1
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 294 regression sequences.
 
 Regression test output:
-Regression test count: 291
+Regression test count: 294
 Writing regression JUnit tests...
-Created file /Users/yhcrown/Documents/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/TestGroup100Case0.java
-Created file /Users/yhcrown/Documents/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/TestGroup100Case.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/yankeguo-xlog-java/d42cdfd0553a379d6d4819459f62394789c81bcf/alltests/TestGroup100Case.java
 Wrote regression JUnit tests.
 About to look for flaky methods.
 
@@ -152,12 +211,12 @@ are the most likely to be the problem.
   Possibly flaky:  net.landzero.xlog.utils.Dates.yesterday()
   Possibly flaky:  net.landzero.xlog.utils.CallerInfo.getMethodName()
   Possibly flaky:  net.landzero.xlog.utils.CallerInfo.getClassName()
+  Possibly flaky:  net.landzero.xlog.mybatis.TrackEvent.getSqlDigest()
   Possibly flaky:  net.landzero.xlog.XLogEvent.setTimestamp(java.util.Date)
-  Possibly flaky:  net.landzero.xlog.utils.CallerInfo.setMethodName(java.lang.String)
-  Possibly flaky:  net.landzero.xlog.XLogEvent.setCrid(java.lang.String)
+  Possibly flaky:  net.landzero.xlog.XLogEvent.getProject()
+  Possibly flaky:  net.landzero.xlog.XLog.crid()
   Possibly flaky:  net.landzero.xlog.utils.Reflections.getCallerInfo()
-  Possibly flaky:  net.landzero.xlog.perf.XPerfEvent.topic()
-  Possibly flaky:  net.landzero.xlog.XLogEventBuilder.build()
+  Possibly flaky:  net.landzero.xlog.mybatis.TrackEvent.getDuration()
 To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
  at https://randoop.github.io/randoop/manual/#flaky-tests .
 

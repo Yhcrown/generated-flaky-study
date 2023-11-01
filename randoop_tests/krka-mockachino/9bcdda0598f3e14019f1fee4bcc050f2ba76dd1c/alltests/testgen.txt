@@ -1,74 +1,62 @@
-[TIME]: 0:00:01.449389
+[TIME]: 0:00:31.511009
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class se.mockachino.verifier.MatchAny specified via --testclass or --classlist.
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 83 out of 84 classes.
+PUBLIC MEMBERS=441
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 1253946629:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@7ce6a65d, randoop.contract.EqualsToNullRetFalse@1500955a, randoop.contract.EqualsReturnsNormally@e874448, randoop.contract.CompareToReflexive@29b5cd00, randoop.contract.SizeToArrayLength@60285225]
-    arity 2: [randoop.contract.EqualsSymmetric@7113b13f, randoop.contract.EqualsHashcode@45820e51, randoop.contract.CompareToAntiSymmetric@42d8062c, randoop.contract.CompareToEquals@6043cd28]
-    arity 3: [randoop.contract.EqualsTransitive@cb51256, randoop.contract.CompareToSubs@59906517, randoop.contract.CompareToTransitive@5bfbf16f]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:58:30.965Z     57.1M used)
+Progress update: steps=750, test inputs generated=508, failing inputs=21      (2023-10-31T23:58:46.899Z     291M used)
+Normal method executions: 251859
+Exceptional method executions: 149
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Average method execution time (normal termination):      0.0393
+Average method execution time (exceptional termination): 0.193
+Approximate memory usage 291M
+Explorer = ForwardGenerator(steps: 750, null steps: 242, num_sequences_generated: 508;
+    allSequences: 508, regresson seqs: 479, error seqs: 21=21=21, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 8;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 55)
+
+Error-revealing test output:
+Error-revealing test count: 21
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/krka-mockachino/9bcdda0598f3e14019f1fee4bcc050f2ba76dd1c/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/krka-mockachino/9bcdda0598f3e14019f1fee4bcc050f2ba76dd1c/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 299 regression sequences.
+
+Regression test output:
+Regression test count: 299
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/krka-mockachino/9bcdda0598f3e14019f1fee4bcc050f2ba76dd1c/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/krka-mockachino/9bcdda0598f3e14019f1fee4bcc050f2ba76dd1c/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.withTimeout(long)
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.onMethodWithAnyArgument(java.lang.Object,se.mockachino.util.MockachinoMethod)
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.onMethod(java.lang.Object,se.mockachino.matchers.MethodMatcher)
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.onAnyMethod(java.lang.Object)
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.on(se.mockachino.matchers.matcher.Matcher<se.mockachino.MethodCall>)
+  Possibly flaky:  se.mockachino.verifier.VerifyRangeStart.on(se.mockachino.order.MockPointIterator)
+  Possibly flaky:  se.mockachino.stub.returnvalue.SequentialAnswers.verify(se.mockachino.util.MockachinoMethod)
+  Possibly flaky:  se.mockachino.stub.returnvalue.ReturnAnswer.verify(se.mockachino.util.MockachinoMethod)
+  Possibly flaky:  se.mockachino.stub.returnvalue.ReturnAnswer.invoke(java.lang.Object,se.mockachino.MethodCall)
+  Possibly flaky:  se.mockachino.stub.Stubber.thenThrow(java.lang.Throwable)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 4).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

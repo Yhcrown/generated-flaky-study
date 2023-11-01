@@ -40,5 +40,13 @@ public class ErrorTest0 {
         io.muserver.Headers headers0 = io.muserver.handlers.ResourceType.noCache();
         org.junit.Assert.assertTrue("Contract failed: headers0.equals(headers0)", headers0.equals(headers0));
     }
+
+    @Test
+    public void test5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "ErrorTest0.test5");
+        io.muserver.Headers headers0 = io.muserver.Headers.http1Headers();
+        org.junit.Assert.assertTrue("Contract failed: headers0.equals(headers0)", headers0.equals(headers0));
+    }
 }
 

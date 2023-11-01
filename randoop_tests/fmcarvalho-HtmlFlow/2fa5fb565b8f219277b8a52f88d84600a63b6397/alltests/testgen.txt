@@ -1,32 +1,175 @@
-[TIME]: 0:00:01.634781
+[TIME]: 0:00:08.601980
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class htmlflow.Indentation specified via --testclass or --classlist; will use its static methods.
 Cannot instantiate non-accessible class htmlflow.Tags specified via --testclass or --classlist.
 
 Will try to generate tests for 14 out of 15 classes.
-PUBLIC MEMBERS=589
+PUBLIC MEMBERS=587
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:06:57.724Z     79.1M used)Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
 
-Randoop failed.
-No sequences generated.
+public class flowified {
+    public static htmlview get() {
+        final htmlview html = statichtml.view().setindented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+ not found for the node name import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
+
+public class Flowified {
+    public static HtmlView get() {
+        final HtmlView html = StaticHtml.view().setIndented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+
+Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
+
+public class flowified {
+    public static htmlview get() {
+        final htmlview html = statichtml.view().setindented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+ not found for the node name import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
+
+public class Flowified {
+    public static HtmlView get() {
+        final HtmlView html = StaticHtml.view().setIndented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+
+Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
+
+public class flowified {
+    public static htmlview get() {
+        final htmlview html = statichtml.view().setindented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+ not found for the node name import htmlflow.*;
+import org.xmlet.htmlapifaster.*;
+
+public class Flowified {
+    public static HtmlView get() {
+        final HtmlView html = StaticHtml.view().setIndented(false)
+            .html()
+                .head()
+                .__() //head
+                .body()
+                .__() //body
+            .__() //html
+            ;
+        return html;
+    }
+}
+
+Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class "hi!" not found for the node name "hi!"
+Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class "hi!" not found for the node name "hi!"
+Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:01 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class "\"hi!\"" not found for the node name "\"hi!\""
+Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class Hi! not found for the node name hi!
+Oct 31, 2023 7:07:03 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+WARNING: Class 
+ not found for the node name 
+
+
+Progress update: steps=979, test inputs generated=513, failing inputs=2      (2023-11-01T00:07:03.234Z     318M used)
+Normal method executions: 11402
+Exceptional method executions: 61
+
+Average method execution time (normal termination):      0.0827
+Average method execution time (exceptional termination): 0.144
+Approximate memory usage 318M
+Explorer = ForwardGenerator(steps: 979, null steps: 466, num_sequences_generated: 513;
+    allSequences: 513, regresson seqs: 498, error seqs: 2=2=2, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 45)
+
+Error-revealing test output:
+Error-revealing test count: 2
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 261 regression sequences.
+
+Regression test output:
+Regression test count: 261
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/fmcarvalho-HtmlFlow/2fa5fb565b8f219277b8a52f88d84600a63b6397/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 13).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

@@ -1,30 +1,66 @@
-[TIME]: 0:00:01.756659
+[TIME]: 0:00:36.081189
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 26 classes.
 PUBLIC MEMBERS=303
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:55:06.234Z     40.4M used)Exception in thread "MetricsPersisterJob" java.lang.NullPointerException
+	at com.j256.simplemetrics.persister.MetricsPersisterJob.run(MetricsPersisterJob.java:97)
+	at java.lang.Thread.run(Thread.java:750)
+# persisting metrics to System.out
+# persisting metrics to System.out
+Exception in thread "MetricsPersisterJob" java.lang.NullPointerException
+Exception in thread "MetricsPersisterJob" java.lang.NullPointerException
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=862, test inputs generated=582, failing inputs=29      (2023-10-31T23:55:27.500Z     757M used)
+Normal method executions: 60442
+Exceptional method executions: 64
+
+Average method execution time (normal termination):      0.137
+Average method execution time (exceptional termination): 0.662
+Approximate memory usage 757M
+Explorer = ForwardGenerator(steps: 862, null steps: 280, num_sequences_generated: 582;
+    allSequences: 582, regresson seqs: 471, error seqs: 29=29=29, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 82;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 58)
+
+Error-revealing test output:
+Error-revealing test count: 29
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 240 regression sequences.
+
+Regression test output:
+Regression test count: 240
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/j256-simplemetrics/498e29ea86b6bb96cb632927429a67779c1cc70e/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  com.j256.simplemetrics.metric.ControlledMetricTimer.stop(long)
+  Possibly flaky:  com.j256.simplemetrics.metric.ControlledMetricTimer.start()
+  Possibly flaky:  java.lang.String.valueOf(long)
+  Possibly flaky:  java.lang.Long.valueOf(long)
+  Possibly flaky:  java.lang.Long.toString(long)
+  Possibly flaky:  java.lang.Long.toOctalString(long)
+  Possibly flaky:  java.lang.Long.toHexString(long)
+  Possibly flaky:  java.lang.Long.toBinaryString(long)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 80).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

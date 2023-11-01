@@ -10,13 +10,15 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
 PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
 CURRENT_DIRECTORY = os.getcwd()
-RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/randoop_tests/"
+RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
 TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
 RANDOOP_JAR = TOOLS_DIRECTORY + 'randoop-all-4.3.2.jar'
 GUAVA_JAR = TOOLS_DIRECTORY + 'guava-32.1.3-jre.jar'
 HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-1.3.jar'
 JUNIT_JAR = TOOLS_DIRECTORY + 'junit-4.13.2.jar'
 
+
+error_case_num = 0
 def read_dataset():
     path = "./dataset.csv"
     df = pd.read_csv(path)
@@ -51,6 +53,7 @@ def build_project(target_dir):
     build_log = target_dir+'/build.log'
     start_time = time.time()
     print('Building client ... ' + str(datetime.datetime.now()))
+    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
     subprocess.run('mvn install -DskipTests -Ddetector.detector_type=random-class-method -Ddt.randomize.rounds=10 -Ddt.detector.original_order.all_must_pass=false -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip -Dlicense.skip=true -am  ', shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, build_log)
@@ -95,13 +98,15 @@ def run_randoop(project,target_dir):
     test_method_max_size = 100
     class_list_file = '/tmp/classes.txt'
     all_classes = []
+    print(target_dir)
     for dir_path, subpaths, files in os.walk(target_dir):
         for f in files:
+
             if f.endswith('.class') and '/classes/' in dir_path:
                 clz = (dir_path + '/' + f.split('.')[0]).split('/classes/')[-1].replace('/', '.')
                 if clz not in all_classes:
                     all_classes.append(clz)
-    # print(all_classes)
+    print(all_classes)
 
     with open(class_list_file, 'w') as fw:
         for clz in all_classes:
@@ -115,7 +120,7 @@ def run_randoop(project,target_dir):
     concat_class_path += HAMCREST_JAR + ':'
     concat_class_path += GUAVA_JAR
 
-
+    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
     randoop_cmd = 'java -ea -classpath ' + concat_class_path + \
                   ' randoop.main.Main gentests' \
                   + ' --classlist=' + class_list_file \
@@ -124,11 +129,18 @@ def run_randoop(project,target_dir):
                   + ' --junit-output-dir=' + generated_dir \
                   + ' --regression-test-basename=TestGroup' \
                   + str(test_method_max_size) + 'Case' \
+                  + ' --log='+str(generated_dir)+'randoop-log.txt' \
+                  + ' --usethreads=true' \
                   # + ' --literals-file=' + literals_file \
                   # + ' --literals-level=ALL'
     logging.info(randoop_cmd)
     test_gen_log = generated_dir + '/testgen.txt'
-    subprocess.run(randoop_cmd,shell=True,stdout=open(test_gen_log,'w'),stderr=subprocess.STDOUT, timeout=90)
+    try:
+        subprocess.run(randoop_cmd,shell=True,stdout=open(test_gen_log,'w'),stderr=subprocess.STDOUT, timeout=90)
+    except subprocess.TimeoutExpired as e:
+        with open(test_gen_log,"a+") as f:
+            f.write(str(e))
+        print(project['Project_Name'],e)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, test_gen_log)
     os.chdir(cwd)
@@ -144,10 +156,34 @@ def insertTimeInLog(start_time, end_time, log):
     fw.write(''.join(lines))
     fw.close()
 
+#def search_build_error():
+#     for dir,subpath, files in os.walk(PROJECTS_DIRECTORY):
+#         for file in files:
+#             if file == 'build.log':
+#                 with open(dir+'/'+files,'r') as f:
+#                     lines = f.readlines()
+#                     if 'build failed' in lines:
+
+
+def search_error_cause():
+    global error_case_num
+    for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY):
+        for file in files:
+            if file == "testgen.txt":
+                if len(files) <3:
+                    print("no generated test in project:", dir.split("/")[-3])
+                    error_case_num = error_case_num + 1
+                    break
+
+
+
 
 
 if __name__ == '__main__':
+    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
     projects_info = read_dataset()
+    os.system('java -version')
+    # subprocess.run("mvn -v",shell=True,stdout=subprocess.STDOUT,stderr=subprocess.STDOUT,timeout=90)
     if not os.path.exists(PROJECTS_DIRECTORY):
         os.mkdir(PROJECTS_DIRECTORY)
     for index,project in projects_info.iterrows():
@@ -158,10 +194,14 @@ if __name__ == '__main__':
         if not os.path.exists(target_dir+'/build.log'):
             build_project(target_dir)
         # print(os.listdir(target_dir))
-        if "edwardcapriolo-teknek-core" == project_name or "mbknor-dropwizard-activemq-bundle" == project_name:
-            continue
+        # if "edwardcapriolo-teknek-core" == project_name or "mbknor-dropwizard-activemq-bundle" == project_name:
+        #     continue
+
         run_randoop(project,target_dir)
+        # search_error_cause()
         # break
         # os.chdir(PROJECTS_DIRECTORY+project_name)
         # print(os.getcwd())
+    search_error_cause()
+    print("error case #:", error_case_num)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

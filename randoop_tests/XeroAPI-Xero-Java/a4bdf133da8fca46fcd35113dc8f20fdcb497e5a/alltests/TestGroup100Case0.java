@@ -133,7 +133,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.xero.api.XeroBadRequestException xeroBadRequestException5 = new com.xero.api.XeroBadRequestException("", leaveApplications1, (java.lang.Exception) xeroConflictException4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.models.payrollau.LeaveApplications.getLeaveApplications()\" because \"leaveApplications\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -687,7 +687,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.xero.api.XeroBadRequestException xeroBadRequestException5 = new com.xero.api.XeroBadRequestException("", timesheets1, (java.lang.Exception) xeroConflictException4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.models.payrollau.Timesheets.getTimesheets()\" because \"timesheets\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1526,7 +1526,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.xero.api.XeroMethodNotAllowedException xeroMethodNotAllowedException2 = new com.xero.api.XeroMethodNotAllowedException("bank-feed-not-found", statements1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.models.bankfeeds.Statements.getItems()\" because \"error\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1902,7 +1902,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.io.ByteArrayInputStream byteArrayInputStream3 = bankFeedsApi1.convertInputToByteArray(inputStream2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.InputStream.read(byte[])\" because \"input\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1983,7 +1983,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.google.api.client.http.HttpResponse httpResponse4 = assetApi1.getAssetTypesForHttpResponse("hi!", "");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.api.ApiClient.getBasePath()\" because \"this.apiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2129,7 +2129,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.xero.api.XeroMethodNotAllowedException xeroMethodNotAllowedException2 = new com.xero.api.XeroMethodNotAllowedException("AUTHORISED", feedConnections1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.models.bankfeeds.FeedConnections.getItems()\" because \"error\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2145,7 +2145,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.google.api.client.http.HttpResponse httpResponse5 = assetApi1.createAssetTypeForHttpResponse("class BatchPayments {\n    batchPayments: []\n}", "class PayRunCalendar {\n    payrollCalendarID: null\n    name: null\n    calendarType: null\n    periodStartDate: null\n    periodEndDate: null\n    paymentDate: null\n    updatedDateUTC: null\n}", assetType4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.xero.api.ApiClient.getBasePath()\" because \"this.apiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3435,7 +3435,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             batchPayment0.setDate(localDate2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.threeten.bp.LocalDate.atStartOfDay(org.threeten.bp.ZoneId)\" because \"date\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

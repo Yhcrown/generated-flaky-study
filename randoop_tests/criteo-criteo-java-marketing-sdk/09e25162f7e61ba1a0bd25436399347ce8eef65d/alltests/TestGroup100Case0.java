@@ -823,7 +823,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call5 = statisticsApi1.getStatsCall("active", statsQueryMessageEx3, apiCallback4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToString(Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1007,7 +1007,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call8 = campaignsApi1.getCampaignsCall("Seller", "title", "", "budgetType", "minHandlingTime", apiCallback7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1092,7 +1092,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call7 = budgetsApi1.getAsync("product", "status", "format", (java.lang.Boolean) true, budgetMessageListApiCallback6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1318,7 +1318,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call7 = budgetsApi1.getAsync("tax", "shippingWidth", "contactEmail", (java.lang.Boolean) false, budgetMessageListApiCallback6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1426,7 +1426,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call12 = sellersV2StatsApi1.sellerCampaignsAsync("numberOfReviews", "link", "customLabel2", offsetDateTime5, offsetDateTime6, "nbMatchesEmail", "mobileLink", (java.lang.Integer) 1, (java.lang.Integer) 0, byteArrayApiCallback11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1594,7 +1594,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             offsetDateTimeTypeAdapter0.write(jsonWriter1, offsetDateTime2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.google.gson.stream.JsonWriter.nullValue()\" because \"out\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1629,7 +1629,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.criteo.marketing.model.CategoryMessage categoryMessage7 = campaignsApi1.getCategories((java.lang.Integer) 1, "value", (java.lang.Boolean) false);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.escapeString(String)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1823,7 +1823,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<com.criteo.marketing.model.CampaignBidMessage> campaignBidMessageList9 = campaignsApi1.getBids("gumCallerId", "categoryHashCode", "", "Active", "customLabel1", "shippingHeight", (java.lang.Boolean) true);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1841,7 +1841,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call10 = campaignsApi1.getCampaignsAsync("categories", "", "bid", "null", "active", campaignMessageListApiCallback9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2687,7 +2687,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<com.criteo.marketing.model.CampaignMessage> campaignMessageList6 = campaignsApi1.updateBids("currency", (java.util.List<com.criteo.marketing.model.CampaignBidChangeRequest>) campaignBidChangeRequestList4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToString(Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2732,7 +2732,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call12 = campaignsApi1.getBidsCall("googleProductCategory", "sampleInvalidIdentifiers", "campaignStatus", "customLabel0", "pattern", "nbInvalidIdentifiers", (java.lang.Boolean) false, apiCallback11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3252,7 +3252,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.criteo.marketing.ApiResponse<byte[]> byteArrayApiResponse4 = statisticsApi1.getCampaignReportWithHttpInfo("productRating", campaignReportQueryMessage3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToString(Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3270,7 +3270,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call12 = sellersV2StatsApi1.sellerCampaignsAsync("", "targetCountry", "ageGroup", offsetDateTime5, offsetDateTime6, "offerId", "customLabel1", (java.lang.Integer) 1, (java.lang.Integer) 0, byteArrayApiCallback11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3324,7 +3324,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.criteo.marketing.ApiResponse<byte[]> byteArrayApiResponse10 = sellersV2StatsApi1.campaignsWithHttpInfo("class CampaignReportQueryMessage {\n    advertiserIds: null\n    startDate: null\n    endDate: null\n    dimensions: null\n    metrics: null\n    format: null\n    currency: null\n    timezone: null\n}", "tax", "umsId", offsetDateTime5, offsetDateTime6, "campaignId", (java.lang.Integer) 0, (java.lang.Integer) (-1));
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3341,7 +3341,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.criteo.marketing.model.InlineResponse200 inlineResponse200_7 = authenticationApi1.oAuth2TokenPost("currency", "categoryHashcode", "quotaLimit");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.selectHeaderAccept(String[])\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3421,7 +3421,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call11 = sellersV2StatsApi1.campaignsAsync("price", "campaignId", "Seller", offsetDateTime5, offsetDateTime6, "shippingWeight", (java.lang.Integer) 1, (java.lang.Integer) 0, byteArrayApiCallback10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3479,7 +3479,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.criteo.marketing.ApiResponse<com.criteo.marketing.model.CategoryMessage> categoryMessageApiResponse5 = campaignsApi1.getCategoriesWithHttpInfo((java.lang.Integer) 1, "class SellerBudgetsCreateMessage {\n    campaignId: null\n    sellerBudgets: [null]\n}", (java.lang.Boolean) true);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.escapeString(String)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3611,7 +3611,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call7 = publishersApi1.getStatsAsync("errorCode", publisherStatsQueryMessage3, publisherStatsMessageListApiCallback6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToString(Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3688,7 +3688,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call9 = campaignsApi1.updateBidsAsync("categoryHashCode", (java.util.List<com.criteo.marketing.model.CampaignBidChangeRequest>) campaignBidChangeRequestList6, campaignMessageListApiCallback8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToString(Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3745,7 +3745,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray11 = sellersV2StatsApi1.sellerCampaigns("productTypeKey", "adult", "campaignStatus", offsetDateTime5, offsetDateTime6, "format", "format", (java.lang.Integer) (-1), (java.lang.Integer) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3838,7 +3838,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             okhttp3.Call call11 = sellersV2StatsApi1.sellersAsync("currencyName", "tax", "class AdvertiserCampaignMessage {\n    id: null\n    campaignName: null\n    campaignStatus: null\n    status: null\n}", offsetDateTime5, offsetDateTime6, "", (java.lang.Integer) (-1), (java.lang.Integer) 10, byteArrayApiCallback10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.criteo.marketing.ApiClient.parameterToPair(String, Object)\" because \"this.localVarApiClient\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

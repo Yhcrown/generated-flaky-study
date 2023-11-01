@@ -1,74 +1,80 @@
-[TIME]: 0:00:01.441966
+[TIME]: 0:00:13.377550
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 9 classes.
+PUBLIC MEMBERS=36
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 149047107:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@74a10858, randoop.contract.EqualsToNullRetFalse@23fe1d71, randoop.contract.EqualsReturnsNormally@28ac3dc3, randoop.contract.CompareToReflexive@32eebfca, randoop.contract.SizeToArrayLength@4e718207]
-    arity 2: [randoop.contract.EqualsSymmetric@1d371b2d, randoop.contract.EqualsHashcode@543c6f6d, randoop.contract.CompareToAntiSymmetric@13eb8acf, randoop.contract.CompareToEquals@51c8530f]
-    arity 3: [randoop.contract.EqualsTransitive@7403c468, randoop.contract.CompareToSubs@43738a82, randoop.contract.CompareToTransitive@c81cdd1]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:00:47.372Z     56.5M used)[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[info] Node not detected. Falling back to rhino
+[error] com.github.mcheely.maven.requirejs.RhinoRunnerException: org.apache.maven.plugin.Mojo:line 100:column 100:com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!
+	org.apache.maven.plugin.Mojo
+[info] Node not detected. Falling back to rhino
+[error] com.github.mcheely.maven.requirejs.RhinoRunnerException: :line 0:column 1:unknown error
+	hi!
+[warn] com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line 0:column 10:com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	org.apache.maven.plugin.Mojo
+[info] Node not detected. Falling back to rhino
+[error] hi!:line 0:column 100:org.apache.maven.plugin.Mojo
+	hi!
+[info] Node not detected. Falling back to rhino
+[warn] com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line 0:column 10:com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	org.apache.maven.plugin.Mojo
+[error] com.github.mcheely.maven.requirejs.OptimizationException: :line 10:column 100:com.github.mcheely.maven.requirejs.OptimizationException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!
+[error] hi!:line 0:column 100:org.apache.maven.plugin.Mojo
+	hi!
+[error] com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.OptimizationException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line 0:column 100:com.github.mcheely.maven.requirejs.OptimizationException: com.github.mcheely.maven.requirejs.OptimizationException: com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	com.github.mcheely.maven.requirejs.OptimizationException: 
+[error] com.github.mcheely.maven.requirejs.RhinoRunnerException: :line 0:column -1:com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	com.github.mcheely.maven.requirejs.OptimizationException: org.apache.maven.plugin.Mojo
+[warn] com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line 0:column 10:com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	org.apache.maven.plugin.Mojo
+[error] com.github.mcheely.maven.requirejs.RhinoRunnerException: :line 100:column -1:unknown error
+	com.github.mcheely.maven.requirejs.OptimizationException: 
+[warn] com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line 0:column 10:com.github.mcheely.maven.requirejs.RhinoRunnerException: 
+	org.apache.maven.plugin.Mojo
+[warn] com.github.mcheely.maven.requirejs.OptimizationException: org.apache.maven.plugin.Mojo:line 10:column 0:com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!
+	hi!
+[error] com.github.mcheely.maven.requirejs.OptimizationException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!:line -1:column 100:com.github.mcheely.maven.requirejs.RhinoRunnerException: hi!
+	com.github.mcheely.maven.requirejs.OptimizationException: org.apache.maven.plugin.Mojo
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Progress update: steps=588, test inputs generated=501, failing inputs=13      (2023-11-01T00:00:57.619Z     1.04G used)
+Normal method executions: 150761
+Exceptional method executions: 159
+
+Average method execution time (normal termination):      0.0347
+Average method execution time (exceptional termination): 1.37
+Approximate memory usage 1.04G
+Explorer = ForwardGenerator(steps: 588, null steps: 87, num_sequences_generated: 501;
+    allSequences: 501, regresson seqs: 487, error seqs: 13=13=13, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 55)
+
+Error-revealing test output:
+Error-revealing test count: 13
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mcheely-requirejs-maven-plugin/a5f90d4372ae244a772def0174257c2661d9b8ab/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mcheely-requirejs-maven-plugin/a5f90d4372ae244a772def0174257c2661d9b8ab/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 299 regression sequences.
+
+Regression test output:
+Regression test count: 299
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mcheely-requirejs-maven-plugin/a5f90d4372ae244a772def0174257c2661d9b8ab/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/mcheely-requirejs-maven-plugin/a5f90d4372ae244a772def0174257c2661d9b8ab/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

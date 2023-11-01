@@ -1,74 +1,787 @@
-[TIME]: 0:00:01.415034
+[TIME]: 0:00:32.942304
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
+Cannot instantiate non-accessible class com.bizo.asperatus.tracker.impl.Aggregation specified via --testclass or --classlist.
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 20 out of 21 classes.
+PUBLIC MEMBERS=119
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 1166151249:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@42d8062c, randoop.contract.EqualsToNullRetFalse@6043cd28, randoop.contract.EqualsReturnsNormally@cb51256, randoop.contract.CompareToReflexive@59906517, randoop.contract.SizeToArrayLength@5bfbf16f]
-    arity 2: [randoop.contract.EqualsSymmetric@25af5db5, randoop.contract.EqualsHashcode@12cdcf4, randoop.contract.CompareToAntiSymmetric@5bcea91b, randoop.contract.CompareToEquals@5f3a4b84]
-    arity 3: [randoop.contract.EqualsTransitive@27f723, randoop.contract.CompareToSubs@670b40af, randoop.contract.CompareToTransitive@4923ab24]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:31:10.120Z     55.1M used)Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:10 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:11 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Gigabytes = -1 (Count)
+Oct 31, 2023 6:31:12 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:12 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:12 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:12 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:13 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Oct 31, 2023 6:31:14 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:14 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+Oct 31, 2023 6:31:14 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:14 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:15 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+Oct 31, 2023 6:31:16 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:16 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Oct 31, 2023 6:31:16 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:16 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+Milliseconds = 100 (Gigabits)
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:17 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Kilobits = null (Bits)
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:18 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+hi! = 100.0 (Terabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+ = -1 (null)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:19 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+ = -1 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 0.0 (None)
+ = 0.0 (Count)
+Milliseconds = 100 (Gigabits)
+ = 0.0 (Count)
+Dimension[hi!=hi!] = 100.0 (Count)
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = 100.0 (Kilobytes)
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:21 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+ = -1 (null)
+Oct 31, 2023 6:31:22 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:22 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:22 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:22 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:22 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property Gigabytes, using default of Microseconds
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:23 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Oct 31, 2023 6:31:24 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:24 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:24 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:24 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property CompoundDimension[dimensions=[Dimension[hi!=hi!], Dimension[hi!=hi!], Dimension[hi!=hi!]]], using default of hi!
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+ = Infinity (Terabits)
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:25 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:26 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = Infinity (Kilobits)
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:27 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:28 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+ = -1 (Count)
+Dimension[us-east-1=hi!] = 0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:29 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property Dimension[hi!=hi!], using default of Terabytes
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:30 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:31 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = 100.0 (Kilobytes)
+Dimension[hi!=hi!] = 10 (KilobytesSecond)
+Terabytes = NaN (Kilobits)
+Oct 31, 2023 6:31:32 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:32 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:32 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:32 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+CompoundDimension[dimensions=[Dimension[hi!=hi!]]] = -1 (Gigabytes)
+CompoundDimension[dimensions=[Dimension[hi!=hi!], Dimension[hi!=hi!], Dimension[hi!=hi!]]] = 10.0 (Gigabytes)
+ = 0.0 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+us-east-1 = 10 (Count)
+Milliseconds = 0 (Count)
+Microseconds = 0.0 (Gigabits)
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property Milliseconds, using default of MetricKey[metricName=,dimension=CompoundDimension[dimensions=[Dimension[hi!=hi!]]]]
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property Dimension[us-east-1=hi!], using default of MetricKey[metricName=hi!,dimension=CompoundDimension[dimensions=[Dimension[hi!=hi!]]]]
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Dimension[hi!=hi!] = 1 (Count)
+Terabytes = 100.0 (Count)
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:34 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
+ = 0.0 (Count)
+us-east-1 = 10.0 (MegabytesSecond)
+Terabytes = 0.0 (Terabytes)
+Oct 31, 2023 6:31:35 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property STAGE, using default of dev
+Oct 31, 2023 6:31:35 PM com.bizo.asperatus.tracker.Env envOrProperty
+WARNING: Warning, missing property EC2_REGION, using default of us-east-1
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Progress update: steps=630, test inputs generated=501, failing inputs=0      (2023-10-31T23:31:35.326Z     404M used)
+Normal method executions: 503552
+Exceptional method executions: 48
+
+Average method execution time (normal termination):      0.0359
+Average method execution time (exceptional termination): 0.709
+Approximate memory usage 404M
+Explorer = ForwardGenerator(steps: 630, null steps: 129, num_sequences_generated: 501;
+    allSequences: 501, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 60)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 253 regression sequences.
+
+Regression test output:
+Regression test count: 253
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/bizo-asperatus/adbfa633c6dabe31862beba7470371f0f48d19cb/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/bizo-asperatus/adbfa633c6dabe31862beba7470371f0f48d19cb/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

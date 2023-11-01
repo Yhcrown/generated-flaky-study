@@ -1,30 +1,35 @@
-[TIME]: 0:00:01.421868
+[TIME]: 0:01:03.740397
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 11 classes.
 PUBLIC MEMBERS=71
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/BriteSnow-jomni/311b3e2693c5a9e3fddb18694b13e50bbae32c1f/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/BriteSnow-jomni/311b3e2693c5a9e3fddb18694b13e50bbae32c1f/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/BriteSnow-jomni/311b3e2693c5a9e3fddb18694b13e50bbae32c1f/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:56:16.111Z     46.2M used)
+Progress update: steps=653, test inputs generated=470, failing inputs=0      (2023-10-31T23:57:16.116Z     618M used)
+Progress update: steps=653, test inputs generated=471, failing inputs=0      (2023-10-31T23:57:16.144Z     656M used)
+Normal method executions: 1486839
+Exceptional method executions: 17
 
-Randoop failed.
-No sequences generated.
+Average method execution time (normal termination):      0.0341
+Average method execution time (exceptional termination): 0.252
+Approximate memory usage 656M
+Explorer = ForwardGenerator(steps: 653, null steps: 182, num_sequences_generated: 471;
+    allSequences: 471, regresson seqs: 470, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 42)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 228 regression sequences.
+
+Regression test output:
+Regression test count: 228
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/BriteSnow-jomni/311b3e2693c5a9e3fddb18694b13e50bbae32c1f/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/BriteSnow-jomni/311b3e2693c5a9e3fddb18694b13e50bbae32c1f/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Invalid tests generated: 0

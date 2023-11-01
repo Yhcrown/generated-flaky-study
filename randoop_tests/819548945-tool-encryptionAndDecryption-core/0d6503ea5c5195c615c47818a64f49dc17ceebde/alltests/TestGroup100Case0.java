@@ -165,7 +165,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.PrivateKey privateKey8 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toGMPrivateKeyBySignedAndEnvelopedData(byteArray0, privateKey1, byteArray7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.bouncycastle.asn1.DLSequence.getObjectAt(int)\" because \"sequence\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -185,7 +185,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.PrivateKey privateKey4 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toGMPrivateKeyBySignedAndEnvelopedData(byteArray0, privateKey1, byteArray3);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"org.bouncycastle.asn1.DLSequence.getObjectAt(int)\" because \"sequence\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -223,7 +223,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray6 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray3, privateKey4, x509Certificate5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.cert.X509Certificate.getSigAlgName()\" because \"cert\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -240,7 +240,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.KeyStoreTool.toPKCS12(keyPair0, publicKeyInfo1, "SM2", "SM2WITHBLAKE2S");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.KeyPair.getPrivate()\" because \"keyPair\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -283,7 +283,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -189");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -355,7 +355,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.KeyStoreTool.toPKCS10(keyPair0, "RSASSA_PSS", "SHA3-512WithRSA");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.KeyPair.getPrivate()\" because \"kp\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -377,7 +377,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.encrypt(byteArray0, publicKey1, "SHA224WithRSA");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -439,7 +439,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray1, privateKey3, "SM2WITHBLAKE2S");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -456,7 +456,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray2 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.GMC1C3C2TOSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -163");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -502,7 +502,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray1 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toEnvelopedKeyBlobByGMPrivateKey(privateKey0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.cert.X509Certificate.getPublicKey()\" because \"lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.rootGMX509Certificate\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -621,7 +621,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray1, privateKey3, x509Certificate4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -643,7 +643,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.verify(byteArray1, byteArray4, publicKey6, "SHA224");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -738,7 +738,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.KeyStoreTool.toPKCS12(keyPair0, publicKeyInfo1, "hi!", "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"lich.tool.encryptionAndDecryption.asymmetric.OtherObj.PublicKeyInfo.getSubject()\" because \"pki\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -792,7 +792,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray1 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.getPrivateKeyBytes(privateKey0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getEncoded()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -861,7 +861,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray1, privateKey3, x509Certificate4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -904,7 +904,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray1 = lich.tool.encryptionAndDecryption.core.asymmetric.PublicKeyTool.getPublicKeyByte(publicKey0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -955,7 +955,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -8");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -974,7 +974,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.encrypt(byteArray1, publicKey3, "SM2WITHSHA512");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1030,7 +1030,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.KeyStoreTool.toPKCS10(privateKey0, publicKey1, "", "");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1191,7 +1191,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray5 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.decrypt(byteArray1, privateKey3, "SHA1WithRSA");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1384,7 +1384,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.PrivateKey privateKey5 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toGMPrivateKeyByEnvelopedKeyBlob(byteArray4);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 272 out of bounds for byte[4]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -1755,7 +1755,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -8");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -1808,7 +1808,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.RSToSM2Signature(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 32 out of bounds for byte[1]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -1881,7 +1881,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.KeyStoreTool.toPKCS10(keyPair0, "", "RSASSA_PSS");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.KeyPair.getPrivate()\" because \"kp\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2211,7 +2211,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray9 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.encrypt(byteArray4, publicKey7, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2290,7 +2290,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean11 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.verify(byteArray1, byteArray6, publicKey9, "SHA1WithRSA");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2338,7 +2338,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.PrivateKey privateKey6 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toGMPrivateKeyByEnvelopedKeyBlob(byteArray1, privateKey5);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 272 out of bounds for byte[1]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -2513,7 +2513,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray8 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.encrypt(byteArray5, publicKey6, "SM2WITHSHA512");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PublicKey.getAlgorithm()\" because \"publicKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2574,7 +2574,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray7 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray4, privateKey5, "MD2");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -2774,7 +2774,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.PrivateKey privateKey30 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toGMPrivateKeyByEnvelopedKeyBlob(byteArray4, privateKey23);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 272 out of bounds for byte[1]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -2807,7 +2807,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.GMC1C3C2TOSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -163");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -3040,7 +3040,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray7 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.GMC1C3C2TOSM2Cipher(byteArray6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -158");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -3088,7 +3088,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray2 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toEnvelopedKeyBlobByGMPrivateKey(privateKey0, publicKey1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ClassCastException; message: class org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey cannot be cast to class org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey (org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey and org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey are in unnamed module of loader 'app')");
+            org.junit.Assert.fail("Expected exception of type java.lang.ClassCastException; message: org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey cannot be cast to org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey");
         } catch (java.lang.ClassCastException e) {
             // Expected exception.
         }
@@ -3365,7 +3365,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray50 = lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toEnvelopedKeyBlobByGMPrivateKey(privateKey24, publicKey49);
-            org.junit.Assert.fail("Expected exception of type java.lang.ClassCastException; message: class org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey cannot be cast to class org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey (org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey and org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey are in unnamed module of loader 'app')");
+            org.junit.Assert.fail("Expected exception of type java.lang.ClassCastException; message: org.bouncycastle.jcajce.provider.asymmetric.rsa.BCRSAPrivateCrtKey cannot be cast to org.bouncycastle.jcajce.provider.asymmetric.ec.BCECPrivateKey");
         } catch (java.lang.ClassCastException e) {
             // Expected exception.
         }
@@ -3531,7 +3531,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray30 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.sign(byteArray1, privateKey3, x509Certificate12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.PrivateKey.getAlgorithm()\" because \"privateKey\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -3773,7 +3773,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -32");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -3794,7 +3794,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray7 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -8");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -4132,7 +4132,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.RSToSM2Signature(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 32 out of bounds for byte[1]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4328,7 +4328,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray66 = null; // flaky: lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.toEnvelopedKeyBlobByGMPrivateKey(privateKey52);
-// flaky:             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.security.cert.X509Certificate.getPublicKey()\" because \"lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool.rootGMX509Certificate\" is null");
+// flaky:             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4443,7 +4443,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray12 = lich.tool.encryptionAndDecryption.core.SymmetricTool.decrypt(byteArray1, byteArray8, cipher11);
-            org.junit.Assert.fail("Expected exception of type org.bouncycastle.jcajce.provider.symmetric.util.BaseWrapCipher.InvalidKeyOrParametersException; message: Index 7 out of bounds for length 1");
+            org.junit.Assert.fail("Expected exception of type org.bouncycastle.jcajce.provider.symmetric.util.BaseWrapCipher.InvalidKeyOrParametersException; message: 7");
         } catch (java.security.InvalidKeyException e) {
             // Expected exception.
         }
@@ -4478,7 +4478,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray4 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.RSToSM2Signature(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: arraycopy: last source index 32 out of bounds for byte[1]");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
@@ -4710,7 +4710,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray3 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.GMC1C3C2TOSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -163");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -5258,7 +5258,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.cert.X509Certificate[] x509CertificateArray2 = lich.tool.encryptionAndDecryption.core.asymmetric.PublicKeyTool.loadP7bToChain(byteArray0, true);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read the array length because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -5846,7 +5846,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.cert.X509Certificate[] x509CertificateArray2 = lich.tool.encryptionAndDecryption.core.asymmetric.PublicKeyTool.loadP7bToChain(byteArray0, false);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read the array length because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6458,7 +6458,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray9 = lich.tool.encryptionAndDecryption.core.asymmetric.AsymmetricTool.SM2EncDataC1C2C3ToSM2Cipher(byteArray1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: -8");
+            org.junit.Assert.fail("Expected exception of type java.lang.NegativeArraySizeException; message: null");
         } catch (java.lang.NegativeArraySizeException e) {
             // Expected exception.
         }
@@ -6481,7 +6481,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.security.cert.X509Certificate x509Certificate2 = lich.tool.encryptionAndDecryption.core.asymmetric.PublicKeyTool.loadP7bToX509Certificate(byteArray0, true);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read the array length because \"buf\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -7057,7 +7057,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             byte[] byteArray12 = lich.tool.encryptionAndDecryption.core.SymmetricTool.encrypt(byteArray1, byteArray3, cipher4, byteArray9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"lich.tool.encryptionAndDecryption.ProviderMode$Symmetric$Cipher.getAlgorithm()\" because \"algorithm\" is null");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }

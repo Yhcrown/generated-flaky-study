@@ -1,30 +1,227 @@
-[TIME]: 0:00:02.170270
+[TIME]: 0:01:30.039987
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 26 classes.
 PUBLIC MEMBERS=154
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
-	at randoop.main.Main.nonStaticMain(Main.java:69)
-	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:07:34.795Z     13.2M used)19:07:41.702 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:hi!,message:{markdown={content=hi!}, msgtype=markdown}
+19:07:43.239 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:hi!,message:{markdown={content=hi!}, msgtype=markdown},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797263591814051538514], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
+19:07:43.463 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:44.709 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797264131150489524209], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:45.256 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:46.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:07:46.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313287]]
+19:07:46.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:07:46.493 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797266429392083366899], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:49.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:07:49.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313287]]
+19:07:49.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:07:49.728 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:50.948 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797270421712976157246], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:51.365 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:07:52.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:07:52.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313287]]
+19:07:52.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:07:52.565 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797272120933095190356], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:52.620 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:hi!,message:{markdown={content=hi!}, msgtype=markdown}
+19:07:53.947 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:hi!,message:{markdown={content=hi!}, msgtype=markdown},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797273338730757753217], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
+19:07:54.952 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:55.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:07:55.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313287]]
+19:07:55.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:07:56.178 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797276567743207074609], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:56.198 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:57.490 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797277419150721636244], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:57.496 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null'],message:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:07:57.734 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null'],message:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797277562581199503699], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
+19:07:57.924 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:07:58.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:07:58.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313287]]
+19:07:58.278 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:07:59.170 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797279200120579301251], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:07:59.201 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:08:00.451 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797280562583971866877], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:00.812 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:08:01.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:01.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:01.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:02.049 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797281294862394469131], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:04.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:04.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:04.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:04.911 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:08:06.136 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797286056941315488795], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:06.976 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:08:07.272 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:07.272 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:07.272 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:08.197 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797288142831133527676], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:08.202 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null'],message:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:08:08.431 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null'],message:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797288123492879689661], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
+19:08:08.618 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:hi!,message:{markdown={content=hi!}, msgtype=markdown}
+19:08:09.841 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:hi!,message:{markdown={content=hi!}, msgtype=markdown},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797289255360205662593], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
+19:08:10.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:10.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:10.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:10.637 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}}
+19:08:11.907 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:{msgtype=text, text={content=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},message:{msgtype=image, image={base64=状态已关闭, md5={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797291142831498588629], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:12.938 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_request.key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}}
+19:08:13.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:13.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:13.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:14.189 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - send_response key:状态已关闭,message:{msgtype=image, image={base64=状态已关闭, md5=QyWeixinRobotResponse[errcode=0, errmsg='ok', type='null', media_id='null', created_at='null']}},response:QyWeixinRobotResponse[errcode=40058, errmsg='image.md5 exceed max length 64. invalid Request Parameter, hint: [1698797294347802018486743], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=40058', type='null', media_id='null', created_at='null']
+19:08:14.191 [randoop.util.RunnerThread] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - sendAsync_request.key:{markdown={content=hi!}, msgtype=markdown},message:{markdown={content={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}, msgtype=markdown}
+19:08:14.415 [OkHttp https://qyapi.weixin.qq.com/...] DEBUG io.github.wesleyone.qy.weixin.robot.component.QyWeixinRobotHttpClientComponent - sendAsync_onResponse key:{markdown={content=hi!}, msgtype=markdown},message:{markdown={content={markdown={content=QyWeixinRobotResponse[errcode=99999, errmsg='', type='null', media_id='null', created_at='null']}, msgtype=markdown}}, msgtype=markdown},response:QyWeixinRobotResponse[errcode=93000, errmsg='invalid webhook url, hint: [1698797294424273491924787], from ip: 69.219.174.213, more info at https://open.work.weixin.qq.com/devtool/query?e=93000', type='null', media_id='null', created_at='null']
 
-Randoop failed.
-No sequences generated.
+Progress update: steps=723, test inputs generated=507, failing inputs=1      (2023-11-01T00:08:14.619Z     666M used)
+Normal method executions: 355527
+Exceptional method executions: 21
+
+Average method execution time (normal termination):      0.0941
+Average method execution time (exceptional termination): 1.42
+Approximate memory usage 666M
+Explorer = ForwardGenerator(steps: 723, null steps: 216, num_sequences_generated: 507;
+    allSequences: 507, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 7;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 56)
+
+Error-revealing test output:
+Error-revealing test count: 1
+Writing error-revealing JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/ErrorTest0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/ErrorTest.java
+Wrote error-revealing JUnit tests.
+
+About to look for failing assertions in 252 regression sequences.
+
+Regression test output:
+Regression test count: 252
+Writing regression JUnit tests...
+[INFO] Testable processor initialized
+19:08:16.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:16.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:16.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:17.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:17.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:17.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:19.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:19.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:19.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:20.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:20.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:20.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:22.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:22.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:22.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:23.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:23.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:23.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:25.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:25.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:25.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:26.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:26.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:26.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:28.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:28.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:28.273 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:29.250 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:29.250 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:29.250 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+[INFO] Testable processor initialized
+19:08:31.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:31.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:31.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:32.251 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:32.251 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:32.252 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:34.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:34.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:34.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+
+                                                                                                                                                                                                       
+19:08:35.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:35.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:35.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:37.271 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:37.272 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:37.272 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:38.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:38.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:38.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:40.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:40.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:40.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:41.251 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:41.252 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:41.252 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:43.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:43.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:43.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:44.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:44.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:44.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:46.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:46.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:46.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+[INFO] Testable processor initialized
+19:08:47.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:47.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:47.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:49.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:49.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:49.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:50.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:50.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:50.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:52.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:52.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:52.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:53.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:53.254 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:53.255 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:55.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:55.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:55.277 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:56.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:56.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:56.253 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:58.274 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:58.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313288]]
+19:08:58.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:08:59.251 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:08:59.252 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='factoryBeanObjectType', timestamp=28313288], SelectKey[key='SelectKey[key='hi!', timestamp=28313287]', timestamp=28313288], SelectKey[key='{markdown={content=hi!}, msgtype=markdown}', timestamp=28313288]]
+19:08:59.252 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+19:09:01.275 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client Status:true
+19:09:01.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client selectKeys:[SelectKey[key='hi!', timestamp=28313289]]
+19:09:01.276 [QY-WEIXIN-ROB-SCHEDULE-1] DEBUG io.github.wesleyone.qy.weixin.robot.client.QyWeixinRobotGroupClient - Client consume messages:[]
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/WesleyOne-qy-weixin-robot-spring-boot-starter/7a359dea58c333a0cce2389fb48f9504490cab1a/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  java.lang.String.valueOf(long)
+  Possibly flaky:  java.lang.Long.valueOf(long)
+  Possibly flaky:  java.lang.Long.toString(long)
+  Possibly flaky:  java.lang.Long.toOctalString(long)
+  Possibly flaky:  java.lang.Long.toHexString(long)
+  Possibly flaky:  java.lang.Long.toBinaryString(long)
+  Possibly flaky:  io.github.wesleyone.qy.weixin.robot.common.QyWeixinRobotKey$SelectKey.toString()
+  Possibly flaky:  io.github.wesleyone.qy.weixin.robot.common.QyWeixinRobotKey.decrement()
+  Possibly flaky:  io.github.wesleyone.qy.weixin.robot.common.QyWeixinRobotKey$SelectKey.getTimestamp()
+  Possibly flaky:  io.github.wesleyone.qy.weixin.robot.common.QyWeixinRobotKey$SelectKey.getKey()
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 6).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

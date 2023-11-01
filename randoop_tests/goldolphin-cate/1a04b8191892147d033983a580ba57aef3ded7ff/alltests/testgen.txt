@@ -1,74 +1,57 @@
-[TIME]: 0:00:01.587152
+[TIME]: 0:01:05.650940
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
-Will try to generate tests for 0 classes.
-You provided no methods to test, so no tests for them can be generated.
+Will try to generate tests for 37 classes.
+PUBLIC MEMBERS=142
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Additional diagnostis appear below.
-Model with hashcode 438135304:
-  classTypes = [java.lang.Object]
-  inputTypes = []
-  coveredClassesGoal = []
-  classLiteralMap = {}
-  annotatedTestValues = []
-  contracts = ContractSet[size=12]
-    arity 1: [randoop.contract.EqualsReflexive@37d31475, randoop.contract.EqualsToNullRetFalse@27808f31, randoop.contract.EqualsReturnsNormally@436e852b, randoop.contract.CompareToReflexive@32d2fa64, randoop.contract.SizeToArrayLength@1d8d30f7]
-    arity 2: [randoop.contract.EqualsSymmetric@3e57cd70, randoop.contract.EqualsHashcode@9a7504c, randoop.contract.CompareToAntiSymmetric@2c039ac6, randoop.contract.CompareToEquals@587d1d39]
-    arity 3: [randoop.contract.EqualsTransitive@58c1670b, randoop.contract.CompareToSubs@6b57696f, randoop.contract.CompareToTransitive@5bb21b69]
-  omitMethods = [
-    \bensuresCapacity\b
-    ^\Qcom.google.common.collect.Iterators.cycle(
-    ^\Qorg.apache.commons.math4.genetics.GeneticAlgorithm.getRandomGenerator()\E$
-    ^\Qorg.apache.commons.math4.util.FastMath.random()\E$
-    ^\Qjava.util.Date.<init>()\E$
-    ^\Qorg.joda.time.DateTime.now()\E$
-    ^\Qorg.joda.time.LocalDate.<init>\E$
-    ^\Qnew org.joda.time.Partial.<init>()\E$
-    ^\Qjava.io.File.list()\E$
-    ^\Qjava.io.File.list(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listFiles()\E$
-    ^\Qjava.io.File.listFiles(java.io.FileFilter)\E$
-    ^\Qjava.io.File.listFiles(java.io.FilenameFilter)\E$
-    ^\Qjava.io.File.listRoots()\E$
-    ^\Qjava.lang.Class.getSigners()\E$
-    ^\Qjava.lang.Object.hashCode()\E$
-    ^\Qjava.lang.String.hashCode()\E$
-    ^\Qjava.lang.System.clearProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.console()\E$
-    ^\Qjava.lang.System.currentTimeMillis()\E$
-    ^\Qjava.lang.System.getProperties()\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String)\E$
-    ^\Qjava.lang.System.getProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.System.getSecurityManager()\E$
-    ^\Qjava.lang.System.getenv()\E$
-    ^\Qjava.lang.System.getenv(java.lang.String)\E$
-    ^\Qjava.lang.System.identityHashCode(java.lang.Object)\E$
-    ^\Qjava.lang.System.inheritedChannel()\E$
-    ^\Qjava.lang.System.mapLibraryName(java.lang.String)\E$
-    ^\Qjava.lang.System.nanoTime()\E$
-    ^\Qjava.lang.System.setProperty(java.lang.String, java.lang.String)\E$
-    ^\Qjava.lang.reflect.Method.hashCode()\E$
-    ^\Qjava.text.BreakIterator.getAvailableLocales()\E$
-    ^\Qjava.util.AbstractList.hashCode()\E$
-    ^\Qjava.util.AbstractSet.hashCode()\E$
-    ^\Qjava.util.Arrays.deepHashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(boolean[])\E$
-    ^\Qjava.util.Arrays.hashCode(byte[])\E$
-    ^\Qjava.util.Arrays.hashCode(char[])\E$
-    ^\Qjava.util.Arrays.hashCode(double[])\E$
-    ^\Qjava.util.Arrays.hashCode(float[])\E$
-    ^\Qjava.util.Arrays.hashCode(int[])\E$
-    ^\Qjava.util.Arrays.hashCode(java.lang.Object[])\E$
-    ^\Qjava.util.Arrays.hashCode(long[])\E$
-    ^\Qjava.util.Arrays.hashCode(short[])\E$
-    ^\Qjava.util.Collection.hashCode()\E$
-    ^\Qjava.util.Collections.shuffle(java.util.List)\E$
-    ^\Qjava.util.Comparator.compare(java.lang.Object, java.lang.Object)\E$
-    ^\Qjava.util.List.hashCode()\E$
-    ^\Qjava.util.Random.<init>()\E$
-    ^\Qjava.util.Set.hashCode()\E$
-  ]
-Operations: (1)
-  java.lang.Object.<init> : () -> java.lang.Object
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:24:19.110Z     34.7M used)
+Progress update: steps=521, test inputs generated=329, failing inputs=0      (2023-10-31T23:25:19.123Z     174M used)
+Progress update: steps=521, test inputs generated=330, failing inputs=0      (2023-10-31T23:25:19.571Z     235M used)
+Normal method executions: 693659
+Exceptional method executions: 77
 
-There are no methods for Randoop to test.  See diagnostics above.  Exiting.
+Average method execution time (normal termination):      0.0335
+Average method execution time (exceptional termination): 0.834
+Approximate memory usage 235M
+Explorer = ForwardGenerator(steps: 521, null steps: 191, num_sequences_generated: 330;
+    allSequences: 330, regresson seqs: 303, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 27;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 51)
+
+No error-revealing tests to output.
+
+About to look for failing assertions in 148 regression sequences.
+
+Regression test output:
+Regression test count: 148
+Writing regression JUnit tests...
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/goldolphin-cate/1a04b8191892147d033983a580ba57aef3ded7ff/alltests/TestGroup100Case0.java
+Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/goldolphin-cate/1a04b8191892147d033983a580ba57aef3ded7ff/alltests/TestGroup100Case.java
+Wrote regression JUnit tests.
+About to look for flaky methods.
+
+Flaky tests were generated. This means that your program contains
+methods that are nondeterministic or depend on non-local state.
+The following methods, in decreasing order of likelihood,
+are the most likely to be the problem.
+  Possibly flaky:  net.goldolphin.cate.IStore.contains(net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit,net.goldolphin.cate.Unit>>>)
+  Possibly flaky:  net.goldolphin.cate.partitioned.HashedPartitioner.partition(net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler,net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence,java.io.Serializable>>,int)
+  Possibly flaky:  net.goldolphin.cate.partitioned.HashedPartitioner.instance()
+  Possibly flaky:  net.goldolphin.cate.partitioned.IPartitioner.partition(net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler,net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence,java.io.Serializable>>,int)
+  Possibly flaky:  java.lang.String.valueOf(int)
+  Possibly flaky:  java.lang.Integer.valueOf(int)
+  Possibly flaky:  java.lang.Integer.toString(int)
+  Possibly flaky:  java.lang.Integer.toOctalString(int)
+  Possibly flaky:  java.lang.Integer.toHexString(int)
+  Possibly flaky:  java.lang.Integer.toBinaryString(int)
+To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
+ at https://randoop.github.io/randoop/manual/#flaky-tests .
+
+
+Invalid tests generated: 0
+
+Uncompilable sequences generated (count: 14).
+Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
+providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

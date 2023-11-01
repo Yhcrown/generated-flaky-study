@@ -1,32 +1,59 @@
-[TIME]: 0:00:01.613187
+[TIME]: 0:00:03.211532
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class io.vertx.spi.cluster.consul.impl.ConsulEntry specified via --testclass or --classlist.
 Cannot instantiate non-accessible class io.vertx.spi.cluster.consul.impl.ConversationUtils specified via --testclass or --classlist.
 
 Will try to generate tests for 10 out of 12 classes.
 PUBLIC MEMBERS=98
+Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
+    allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
+    sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Throwable thrown while handling command: java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/reactiverse-consul-cluster-manager/39cc0145fb68551b25243eee5b8ab57ffcf80abf/alltests/literal.log (No such file or directory)
-java.lang.Error: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/reactiverse-consul-cluster-manager/39cc0145fb68551b25243eee5b8ab57ffcf80abf/alltests/literal.log (No such file or directory)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:57)
-	at randoop.reflection.LiteralFileReader.parse(LiteralFileReader.java:108)
-	at randoop.reflection.OperationModel.addClassLiterals(OperationModel.java:273)
-	at randoop.main.GenTests.handle(GenTests.java:406)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:53:31.539Z     17.7M used)createAndClassifySequences threw an exception
+java.lang.NullPointerException
+	at io.vertx.spi.cluster.consul.impl.ConsulMap.plainEntries(ConsulMap.java:247)
+	at io.vertx.spi.cluster.consul.impl.ConsulMap.entries(ConsulMap.java:157)
+	at io.vertx.spi.cluster.consul.impl.ConsulSyncMap.entrySet(ConsulSyncMap.java:117)
+	at randoop.org.plumelib.util.StringsPlume.mapToStringAndClass(StringsPlume.java:1176)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1059)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1033)
+	at randoop.operation.MethodCall.execute(MethodCall.java:170)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:515)
 	at randoop.main.Main.nonStaticMain(Main.java:69)
 	at randoop.main.Main.main(Main.java:31)
-Caused by: java.io.FileNotFoundException: /Users/yhcrown/Documents/randoop_tests/reactiverse-consul-cluster-manager/39cc0145fb68551b25243eee5b8ab57ffcf80abf/alltests/literal.log (No such file or directory)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:70)
-	at randoop.org.plumelib.util.FilesPlume.newFileInputStream(FilesPlume.java:98)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:153)
-	at randoop.org.plumelib.util.FilesPlume.newFileReader(FilesPlume.java:197)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:275)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:256)
-	at randoop.org.plumelib.util.FilesPlume.newBufferedFileReader(FilesPlume.java:219)
-	at randoop.util.RecordListReader.parse(RecordListReader.java:54)
-	... 5 more
+
+
+Throwable thrown while handling command: java.lang.NullPointerException
+java.lang.NullPointerException
+	at io.vertx.spi.cluster.consul.impl.ConsulMap.plainEntries(ConsulMap.java:247)
+	at io.vertx.spi.cluster.consul.impl.ConsulMap.entries(ConsulMap.java:157)
+	at io.vertx.spi.cluster.consul.impl.ConsulSyncMap.entrySet(ConsulSyncMap.java:117)
+	at randoop.org.plumelib.util.StringsPlume.mapToStringAndClass(StringsPlume.java:1176)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1059)
+	at randoop.org.plumelib.util.StringsPlume.toStringAndClass(StringsPlume.java:1033)
+	at randoop.operation.MethodCall.execute(MethodCall.java:170)
+	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
+	at randoop.sequence.Statement.execute(Statement.java:163)
+	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
+	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
+	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
+	at randoop.main.GenTests.handle(GenTests.java:515)
+	at randoop.main.Main.nonStaticMain(Main.java:69)
+	at randoop.main.Main.main(Main.java:31)
 
 Randoop failed.
-No sequences generated.
+Last sequence under execution: 
+io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext clusterManagerInternalContext1 = new io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext();
+io.vertx.spi.cluster.consul.impl.ConsulSyncMap<java.lang.CharSequence,io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext> charSequenceMap2 = new io.vertx.spi.cluster.consul.impl.ConsulSyncMap<java.lang.CharSequence,io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext>("", clusterManagerInternalContext1);
+io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext clusterManagerInternalContext4 = new io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext();
+io.vertx.spi.cluster.consul.impl.ConsulSyncMap<java.lang.CharSequence,io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext> charSequenceMap5 = new io.vertx.spi.cluster.consul.impl.ConsulSyncMap<java.lang.CharSequence,io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext>("", clusterManagerInternalContext4);
+charSequenceMap2.putAll((java.util.Map<java.lang.CharSequence,io.vertx.spi.cluster.consul.impl.ClusterManagerInternalContext>)charSequenceMap5);
