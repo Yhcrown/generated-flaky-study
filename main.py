@@ -16,8 +16,10 @@ RANDOOP_JAR = TOOLS_DIRECTORY + 'randoop-all-4.3.2.jar'
 GUAVA_JAR = TOOLS_DIRECTORY + 'guava-32.1.3-jre.jar'
 HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-1.3.jar'
 JUNIT_JAR = TOOLS_DIRECTORY + 'junit-4.13.2.jar'
+SUMMARY_LOG = CURRENT_DIRECTORY+'/logs/'
 
-
+build_fails = set()
+generate_fails = set()
 error_case_num = 0
 def read_dataset():
     path = "./dataset.csv"
@@ -156,23 +158,49 @@ def insertTimeInLog(start_time, end_time, log):
     fw.write(''.join(lines))
     fw.close()
 
-#def search_build_error():
-#     for dir,subpath, files in os.walk(PROJECTS_DIRECTORY):
-#         for file in files:
-#             if file == 'build.log':
-#                 with open(dir+'/'+files,'r') as f:
-#                     lines = f.readlines()
-#                     if 'build failed' in lines:
+def search_build_error():
+    log = open(SUMMARY_LOG+'build_summary.log', 'w+')
+    global error_case_num
+    for dir,subpath, files in os.walk(PROJECTS_DIRECTORY):
+        for file in files:
+            if file == 'build.log':
+                with open(dir+'/'+file,'r') as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        if '[INFO] BUILD FAILURE' in line:
+                            log.write(dir.split("/")[-1]+', BUILD FAILURE\n')
+                            build_fails.add(dir.split('/')[-1])
+                            # error_case_num = error_case_num +1
+                        if '[ERROR]' in line:
+                            log.write(line)
+    log.close()
 
+def search_generate_error():
+    log = open(SUMMARY_LOG+'generated_summary.log','w+')
+    for dir,subpath, files in os.walk(PROJECTS_DIRECTORY):
+        for file in files:
+            if file == 'build.log':
+                with open(dir+'/'+file,'r') as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        if '[INFO] BUILD FAILURE' in line:
+                            log.write(dir.split("/")[-1]+', BUILD FAILURE\n')
+                            build_fails.add(dir.split('/')[-1])
+                        if '[ERROR]' in line:
+                            log.write(line)
+    log.close()
 
 def search_error_cause():
     global error_case_num
     for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY):
         for file in files:
             if file == "testgen.txt":
-                if len(files) <3:
+                if len(files) <4:
                     print("no generated test in project:", dir.split("/")[-3])
                     error_case_num = error_case_num + 1
+                    generate_fails.add(dir.split('/')[-3])
+                    if dir.split("/")[-3] not in build_fails:
+                        print("-----",dir.split("/")[-3])
                     break
 
 
@@ -193,15 +221,24 @@ if __name__ == '__main__':
             download_project(project,target_dir)
         if not os.path.exists(target_dir+'/build.log'):
             build_project(target_dir)
+        else:
+            shutil.copy(target_dir+'/build.log',RANDOOP_GENERATED_DIRECTORY + project['Project_Name']+ '/'+ project['Project_Hash']+'/alltests/build.log')
         # print(os.listdir(target_dir))
         # if "edwardcapriolo-teknek-core" == project_name or "mbknor-dropwizard-activemq-bundle" == project_name:
         #     continue
 
-        run_randoop(project,target_dir)
+        # run_randoop(project,target_dir)
         # search_error_cause()
         # break
         # os.chdir(PROJECTS_DIRECTORY+project_name)
         # print(os.getcwd())
+    search_build_error()
     search_error_cause()
+    # print(generate_fails.intersection(build_fails))
+    print(len(generate_fails),generate_fails)
+    print("build but not generate:",generate_fails - build_fails)
+    print("generate but build fails",build_fails - generate_fails)
+    # print(generate_fails.discard(generate_fails.intersection(build_fails)))
+    print(len(build_fails),build_fails)
     print("error case #:", error_case_num)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
