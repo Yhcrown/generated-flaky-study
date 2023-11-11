@@ -5,6 +5,7 @@ import subprocess
 import datetime
 import time
 import logging
+import re
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
@@ -20,6 +21,9 @@ SUMMARY_LOG = CURRENT_DIRECTORY+'/logs/'
 
 build_fails = set()
 generate_fails = set()
+flaky_projects = []
+
+
 error_case_num = 0
 def read_dataset():
     path = "./dataset.csv"
@@ -34,6 +38,7 @@ def read_dataset():
     print(df['flaky'].unique()) ## not flaky, NOD,  OD
     print(developer_NOD_projects,len(developer_NOD_projects)) ## 105, same as paper
 
+    print("evosuite:",len( df['Project_Name'].loc[df['flaky'] == 'NOD'].loc[df['language'] == 'Java'].loc[df['test_type'] == 'evosuite_Default'].unique()))
     return developer_NOD_info
 
 def download_project(project,target_dir):
@@ -204,6 +209,38 @@ def search_error_cause():
                     break
 
 
+def find_flaky():
+    log = open(SUMMARY_LOG + 'flaky_summary.log', 'w+')
+    log2 = open(SUMMARY_LOG + 'flaky_line.log', 'w+')
+    for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY):
+        for file in files:
+            if file == "testgen.txt":
+                with open(dir+'/'+file,'r') as f:
+                    lines = f.readlines()
+                    first = True
+                    for line in lines:
+                        if 'Possibly flaky:' in line:
+                            if first:
+                                log.write(dir.split("/")[-3]+'\n')
+                                first = False
+                                flaky_projects.append(dir.split('/')[-3])
+                            log.write(line)
+    pattern = r'@Test\s+public void .*?\(\) throws Throwable \{.*?// flaky:.*?\}'
+
+    for project in flaky_projects:
+        for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY+"/"+project):
+            for file in files:
+                if file == "TestGroup100Case0.java":
+                    with open(dir + '/' + file, 'r') as f:
+                        java_code = f.read()
+                        matches = re.findall(pattern, java_code, re.DOTALL)
+                        log2.write(dir.split("/")[-3]+ ", length: "+str(len(matches))+"\n")
+
+                        for match in matches:
+                            test_case = match.strip().split('@Test')[-1]
+                            # print(test_case)
+                            log2.write(test_case+"\n")
+
 
 
 
@@ -234,6 +271,8 @@ if __name__ == '__main__':
         # print(os.getcwd())
     search_build_error()
     search_error_cause()
+    find_flaky()
+
     # print(generate_fails.intersection(build_fails))
     print(len(generate_fails),generate_fails)
     print("build but not generate:",generate_fails - build_fails)
