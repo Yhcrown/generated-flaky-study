@@ -4,7 +4,7 @@ randoop-log.txt
 *.class
 
 # Log file
-*.log
+build.log
 
 # BlueJ files
 *.ctxt
