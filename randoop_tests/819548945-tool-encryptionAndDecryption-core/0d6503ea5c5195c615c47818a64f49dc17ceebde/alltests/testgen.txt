@@ -1,4 +1,4 @@
-[TIME]: 0:00:15.885454
+[TIME]: 0:00:12.636037
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 15 classes.
@@ -7,7 +7,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:33:51.573Z     40.7M used)java.lang.reflect.InvocationTargetException
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:42:53.624Z     41.7M used)java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -5008,13 +5008,13 @@ java.lang.IllegalArgumentException: RSA publicExponent is even
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Progress update: steps=574, test inputs generated=513, failing inputs=1      (2023-10-31T23:34:00.276Z     397M used)
+Progress update: steps=574, test inputs generated=513, failing inputs=1      (2023-11-20T08:43:00.704Z     1.15G used)
 Normal method executions: 79524
 Exceptional method executions: 155
 
-Average method execution time (normal termination):      0.0435
-Average method execution time (exceptional termination): 0.560
-Approximate memory usage 397M
+Average method execution time (normal termination):      0.0365
+Average method execution time (exceptional termination): 0.417
+Approximate memory usage 1.15G
 Explorer = ForwardGenerator(steps: 574, null steps: 61, num_sequences_generated: 513;
     allSequences: 513, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 75)

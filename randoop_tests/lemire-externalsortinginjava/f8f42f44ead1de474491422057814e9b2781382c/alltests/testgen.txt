@@ -1,4 +1,4 @@
-[TIME]: 0:01:08.193887
+[TIME]: 0:01:03.147524
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 8 classes.
@@ -7,14 +7,14 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:03:38.123Z     47.1M used)
-Progress update: steps=1000, test inputs generated=469, failing inputs=0      (2023-11-01T00:04:14.729Z     1.22G used)
-Progress update: steps=1056, test inputs generated=501, failing inputs=0      (2023-11-01T00:04:20.008Z     393M used)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T09:21:35.883Z     47.1M used)
+Progress update: steps=1000, test inputs generated=469, failing inputs=0      (2023-11-20T09:22:09.498Z     850M used)
+Progress update: steps=1056, test inputs generated=501, failing inputs=0      (2023-11-20T09:22:14.261Z     393M used)
 Normal method executions: 562238
 Exceptional method executions: 150
 
-Average method execution time (normal termination):      0.0582
-Average method execution time (exceptional termination): 6.04
+Average method execution time (normal termination):      0.0533
+Average method execution time (exceptional termination): 5.86
 Approximate memory usage 393M
 Explorer = ForwardGenerator(steps: 1056, null steps: 555, num_sequences_generated: 501;
     allSequences: 501, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;

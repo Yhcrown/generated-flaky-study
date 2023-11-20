@@ -918,7 +918,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test049");
         long long0 = net.tuis.ubench.UUtils.getNanoTick();
-// flaky:         org.junit.Assert.assertTrue("'" + long0 + "' != '" + 83L + "'", long0 == 83L);
+        org.junit.Assert.assertTrue("'" + long0 + "' != '" + 41L + "'", long0 == 41L);
     }
 
     @Test
@@ -2111,7 +2111,7 @@ public class TestGroup100Case0 {
         java.util.concurrent.TimeUnit timeUnit11 = net.tuis.ubench.UStats.findBestUnit(0L);
         // The following exception was thrown during execution in test generation
         try {
-            net.tuis.ubench.UReport uReport12 = uBench1.press(uMode5, 0, 0, (double) '4', 83L, timeUnit11);
+            net.tuis.ubench.UReport uReport12 = uBench1.press(uMode5, 0, 0, (double) '4', 41L, timeUnit11);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -2236,7 +2236,7 @@ public class TestGroup100Case0 {
         java.util.concurrent.TimeUnit timeUnit11 = net.tuis.ubench.UStats.findBestUnit(0L);
         // The following exception was thrown during execution in test generation
         try {
-            net.tuis.ubench.UReport uReport12 = uBench4.press(uMode5, (int) (byte) -1, (int) ' ', (double) 83L, (long) 1, timeUnit11);
+            net.tuis.ubench.UReport uReport12 = uBench4.press(uMode5, (int) (byte) -1, (int) ' ', (double) 41L, (long) 1, timeUnit11);
             org.junit.Assert.fail("Expected exception of type net.tuis.ubench.UBenchRuntimeException; message: Parallel Execution failed. See cause.");
         } catch (net.tuis.ubench.UBenchRuntimeException e) {
             // Expected exception.
@@ -4246,7 +4246,7 @@ public class TestGroup100Case0 {
         double[] doubleArray21 = mathModel11.getInitialValues();
         double[] doubleArray27 = new double[] { (short) 1, ' ', ' ', 10.0d, ' ' };
         java.util.function.DoubleUnaryOperator doubleUnaryOperator28 = mathModel11.createFunction(doubleArray27);
-        double[] doubleArray33 = new double[] { (-1L), (byte) -1, 83L, (-1L) };
+        double[] doubleArray33 = new double[] { (-1L), (byte) -1, 41L, (-1L) };
         net.tuis.ubench.scale.MathEquation mathEquation36 = new net.tuis.ubench.scale.MathEquation(mathModel10, doubleUnaryOperator28, doubleArray33, "%f * log n", (double) 1000000000);
         net.tuis.ubench.scale.MathModel mathModel37 = mathEquation36.getModel();
         org.junit.Assert.assertNotNull(doubleArray9);
@@ -4263,7 +4263,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray27), "[1.0, 32.0, 32.0, 10.0, 32.0]");
         org.junit.Assert.assertNotNull(doubleUnaryOperator28);
         org.junit.Assert.assertNotNull(doubleArray33);
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[-1.0, -1.0, 83.0, -1.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray33), "[-1.0, -1.0, 41.0, -1.0]");
         org.junit.Assert.assertNotNull(mathModel37);
     }
 
@@ -5179,7 +5179,7 @@ public class TestGroup100Case0 {
         java.util.concurrent.TimeUnit timeUnit20 = net.tuis.ubench.UStats.findBestUnit((long) 0);
         // The following exception was thrown during execution in test generation
         try {
-            net.tuis.ubench.UReport uReport21 = uBench16.press(uMode17, 83L, timeUnit20);
+            net.tuis.ubench.UReport uReport21 = uBench16.press(uMode17, 41L, timeUnit20);
             org.junit.Assert.fail("Expected exception of type net.tuis.ubench.UBenchRuntimeException; message: Parallel Execution failed. See cause.");
         } catch (net.tuis.ubench.UBenchRuntimeException e) {
             // Expected exception.
@@ -8022,7 +8022,7 @@ public class TestGroup100Case0 {
         double[] doubleArray63 = mathModel53.getInitialValues();
         double[] doubleArray69 = new double[] { (short) 1, ' ', ' ', 10.0d, ' ' };
         java.util.function.DoubleUnaryOperator doubleUnaryOperator70 = mathModel53.createFunction(doubleArray69);
-        double[] doubleArray75 = new double[] { (-1L), (byte) -1, 83L, (-1L) };
+        double[] doubleArray75 = new double[] { (-1L), (byte) -1, 41L, (-1L) };
         net.tuis.ubench.scale.MathEquation mathEquation78 = new net.tuis.ubench.scale.MathEquation(mathModel52, doubleUnaryOperator70, doubleArray75, "%f * log n", (double) 1000000000);
         double[] doubleArray79 = null;
         net.tuis.ubench.scale.MathEquation mathEquation82 = new net.tuis.ubench.scale.MathEquation(mathModel0, doubleUnaryOperator70, doubleArray79, "", 100.0d);
@@ -8059,7 +8059,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray69), "[1.0, 32.0, 32.0, 10.0, 32.0]");
         org.junit.Assert.assertNotNull(doubleUnaryOperator70);
         org.junit.Assert.assertNotNull(doubleArray75);
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray75), "[-1.0, -1.0, 83.0, -1.0]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(doubleArray75), "[-1.0, -1.0, 41.0, -1.0]");
         org.junit.Assert.assertNotNull(mathModel83);
     }
 

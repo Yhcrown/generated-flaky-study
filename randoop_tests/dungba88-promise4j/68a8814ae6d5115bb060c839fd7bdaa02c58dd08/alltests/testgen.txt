@@ -1,4 +1,4 @@
-[TIME]: 0:01:03.652274
+[TIME]: 0:01:03.929363
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 ERROR StatusLogger No Log4j 2 configuration file found. Using default configuration (logging only errors to the console), or user programmatically provided configurations. Set system property 'log4j2.debug' to show Log4j 2 internal initialization logging. See https://logging.apache.org/log4j/2.x/manual/configuration.html for instructions on how to configure Log4j 2
 Cannot instantiate non-accessible class org.joo.promise4j.impl.InternalJoinedResults specified via --testclass or --classlist.
@@ -9,7 +9,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:36:33.659Z     57.2M used)18:36:45.394 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:45:28.021Z     58.6M used)02:45:39.721 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -25,7 +25,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:45.435 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:39.769 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -42,7 +42,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:45.435 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:39.770 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -59,7 +59,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:50.614 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:45:44.931 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -76,7 +76,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.794 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:50.102 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -92,7 +92,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.883 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:50.179 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -104,7 +104,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.908 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
+02:45:50.203 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:71) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.fail(SimpleFailurePromise.java:29) [classes/:?]
@@ -116,7 +116,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.921 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:50.221 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -133,7 +133,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.921 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:50.222 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -150,7 +150,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:36:55.921 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:50.222 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -167,7 +167,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.198 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.500 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -184,7 +184,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.318 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.615 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -201,7 +201,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.318 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.615 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -218,7 +218,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.319 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.615 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -235,7 +235,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.452 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.775 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -252,7 +252,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.587 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.900 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -269,7 +269,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:01.588 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:45:55.901 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -286,7 +286,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:06.806 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.112 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -303,7 +303,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:06.928 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
+02:46:01.228 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:71) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.fail(SimpleFailurePromise.java:29) [classes/:?]
@@ -315,7 +315,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:06.936 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.236 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -332,7 +332,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:06.943 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.245 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -349,7 +349,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:06.944 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.245 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -366,7 +366,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.031 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.332 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -383,7 +383,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.031 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.332 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -400,7 +400,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.104 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.409 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -412,7 +412,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.185 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.493 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.always(SimpleDonePromise.java:35) [classes/:?]
@@ -424,7 +424,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.192 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.500 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -441,7 +441,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.193 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.501 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -458,7 +458,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.249 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.552 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -473,7 +473,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.250 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.552 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -488,7 +488,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.275 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.577 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -500,7 +500,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.283 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.590 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -517,7 +517,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.331 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.629 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -534,7 +534,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.439 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.732 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -549,7 +549,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.440 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.733 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -564,7 +564,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.441 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.734 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -581,7 +581,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.507 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.797 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -597,7 +597,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.531 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.822 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -612,7 +612,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.548 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.841 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -629,7 +629,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.576 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.868 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -646,7 +646,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.580 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:01.869 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -662,7 +662,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.590 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:01.881 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.AsyncDeferredObject.always(AsyncDeferredObject.java:90) [classes/:?]
@@ -674,7 +674,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.927 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.227 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.always(SimpleDonePromise.java:35) [classes/:?]
@@ -686,7 +686,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:07.972 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:02.263 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -701,7 +701,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.014 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.303 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -716,7 +716,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.114 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.405 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -733,7 +733,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.114 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.405 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -750,7 +750,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.161 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.452 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -767,7 +767,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.278 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.549 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -779,7 +779,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.308 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.586 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -794,7 +794,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.337 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:02.610 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -809,7 +809,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.337 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:02.610 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -824,7 +824,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.394 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:02.671 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -839,7 +839,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.437 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:02.717 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -854,7 +854,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.704 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:02.979 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -871,7 +871,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:08.746 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:03.016 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -888,7 +888,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:09.107 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:03.366 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.done(SimpleDonePromise.java:24) [classes/:?]
@@ -900,7 +900,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:09.210 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:03.473 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -917,7 +917,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:09.211 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:03.473 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -933,7 +933,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:09.821 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.082 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -950,7 +950,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.118 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.367 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -965,7 +965,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.118 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.368 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -981,7 +981,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.174 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.423 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -996,7 +996,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.347 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.597 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1013,7 +1013,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.347 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.597 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1029,7 +1029,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.363 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.615 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1046,7 +1046,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.375 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.626 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1061,7 +1061,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.386 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:04.636 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1076,7 +1076,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.510 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.759 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1093,7 +1093,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.510 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.759 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1110,7 +1110,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.510 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.759 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1127,7 +1127,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.512 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.760 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1143,7 +1143,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.513 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.760 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1159,7 +1159,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.600 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.841 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1176,7 +1176,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.644 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.882 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.AsyncDeferredObject.always(AsyncDeferredObject.java:90) [classes/:?]
@@ -1189,7 +1189,7 @@ java.lang.NullPointerException: null
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
 
-Progress update: steps=1000, test inputs generated=328, failing inputs=0      (2023-10-31T23:37:10.696Z     463M used)18:37:10.752 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+Progress update: steps=1000, test inputs generated=328, failing inputs=0      (2023-11-20T08:46:04.925Z     386M used)02:46:04.949 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1204,7 +1204,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.781 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:04.975 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1220,7 +1220,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.923 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:05.116 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1236,7 +1236,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.924 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:05.116 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1252,7 +1252,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.924 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:05.117 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1268,7 +1268,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.964 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:05.161 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.done(SimpleDonePromise.java:24) [classes/:?]
@@ -1280,7 +1280,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.984 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:05.180 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1295,7 +1295,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:10.984 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:05.181 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1311,7 +1311,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:11.028 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:05.226 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1326,7 +1326,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:11.438 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:05.607 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1341,7 +1341,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:11.915 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:06.045 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1357,7 +1357,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:11.915 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:06.045 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1373,7 +1373,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:17.063 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:11.175 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.done(SimpleDonePromise.java:24) [classes/:?]
@@ -1385,7 +1385,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.099 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:16.201 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1400,7 +1400,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.134 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:16.226 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1416,7 +1416,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.155 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:16.246 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1432,7 +1432,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.215 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:16.307 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1448,7 +1448,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.282 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
+02:46:16.373 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:71) [classes/:?]
 	at org.joo.promise4j.impl.AsyncDeferredObject.fail(AsyncDeferredObject.java:106) [classes/:?]
@@ -1460,7 +1460,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.314 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:16.404 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1476,7 +1476,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.342 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:16.431 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1491,7 +1491,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.486 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:16.568 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleDonePromise.always(SimpleDonePromise.java:35) [classes/:?]
@@ -1503,7 +1503,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:22.503 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:16.582 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1518,7 +1518,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:27.651 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:21.730 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1533,7 +1533,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:27.653 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:21.732 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1548,7 +1548,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:27.699 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:21.765 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -1560,7 +1560,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:27.834 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:21.891 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.always(SimpleFailurePromise.java:35) [classes/:?]
@@ -1572,7 +1572,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:32.870 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:26.918 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1587,7 +1587,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:32.893 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:26.930 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1603,7 +1603,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:32.893 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:26.930 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1619,7 +1619,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:32.893 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+02:46:26.931 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
@@ -1635,7 +1635,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.168 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
+02:46:27.212 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling fail
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:71) [classes/:?]
 	at org.joo.promise4j.impl.SimpleFailurePromise.fail(SimpleFailurePromise.java:29) [classes/:?]
@@ -1647,7 +1647,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.179 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:27.222 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1664,7 +1664,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.387 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:27.424 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1679,7 +1679,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.387 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:27.425 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1695,7 +1695,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.435 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:27.472 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1710,7 +1710,49 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-18:37:33.582 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+02:46:27.622 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
+java.lang.NullPointerException: null
+	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
+	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670) [?:1.8.0_382]
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:683) [?:1.8.0_382]
+	at java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2010) [?:1.8.0_382]
+	at org.joo.promise4j.impl.CompletableDeferredObject.done(CompletableDeferredObject.java:34) [classes/:?]
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_382]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_382]
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53) [randoop-all-4.3.2.jar:?]
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
+02:46:27.742 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+java.lang.NullPointerException: null
+	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) [classes/:?]
+	at org.joo.promise4j.impl.SimpleDonePromise.always(SimpleDonePromise.java:35) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_382]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_382]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_382]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_382]
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53) [randoop-all-4.3.2.jar:?]
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
+02:46:27.856 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling always
+java.lang.NullPointerException: null
+	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:82) ~[classes/:?]
+	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$always$2(CompletableDeferredObject.java:46) ~[classes/:?]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774) [?:1.8.0_382]
+	at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:792) [?:1.8.0_382]
+	at java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2153) [?:1.8.0_382]
+	at org.joo.promise4j.impl.CompletableDeferredObject.always(CompletableDeferredObject.java:46) [classes/:?]
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_382]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_382]
+	at randoop.util.MethodReflectionCode.runReflectionCodeRaw(MethodReflectionCode.java:53) [randoop-all-4.3.2.jar:?]
+	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
+	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
+02:46:27.857 [randoop.util.RunnerThread] ERROR org.joo.promise4j.impl.AbstractPromise - Exception caught while handling done
 java.lang.NullPointerException: null
 	at org.joo.promise4j.impl.AbstractPromise.complete(AbstractPromise.java:61) ~[classes/:?]
 	at org.joo.promise4j.impl.CompletableDeferredObject.lambda$done$0(CompletableDeferredObject.java:34) ~[classes/:?]
@@ -1726,26 +1768,25 @@ java.lang.NullPointerException: null
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
 
-Progress update: steps=1148, test inputs generated=426, failing inputs=0      (2023-10-31T23:37:33.660Z     273M used)
-Normal method executions: 133346
-Exceptional method executions: 129
+Progress update: steps=1158, test inputs generated=433, failing inputs=0      (2023-11-20T08:46:28.035Z     143M used)
+Progress update: steps=1158, test inputs generated=434, failing inputs=0      (2023-11-20T08:46:28.209Z     203M used)
+Normal method executions: 145755
+Exceptional method executions: 133
 
-Average method execution time (normal termination):      0.0363
-Average method execution time (exceptional termination): 0.217
-Approximate memory usage 273M
-Explorer = ForwardGenerator(steps: 1148, null steps: 722, num_sequences_generated: 426;
-    allSequences: 426, regresson seqs: 415, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 11;
+Average method execution time (normal termination):      0.0346
+Average method execution time (exceptional termination): 0.286
+Approximate memory usage 203M
+Explorer = ForwardGenerator(steps: 1158, null steps: 724, num_sequences_generated: 434;
+    allSequences: 434, regresson seqs: 423, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 11;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 42)
 
 No error-revealing tests to output.
 
-About to look for failing assertions in 260 regression sequences.
+About to look for failing assertions in 263 regression sequences.
 
 Regression test output:
-Regression test count: 260
+Regression test count: 263
 Writing regression JUnit tests...
-
-                                                                                                                                                                                                       
 Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/dungba88-promise4j/68a8814ae6d5115bb060c839fd7bdaa02c58dd08/alltests/TestGroup100Case0.java
 Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/dungba88-promise4j/68a8814ae6d5115bb060c839fd7bdaa02c58dd08/alltests/TestGroup100Case.java
 Wrote regression JUnit tests.

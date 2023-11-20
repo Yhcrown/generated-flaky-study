@@ -1,4 +1,4 @@
-[TIME]: 0:00:15.314801
+[TIME]: 0:00:14.071609
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
 Cannot instantiate non-accessible class org.sevensource.magnolia.responsivedam.imaging.operation.XYPair specified via --testclass or --classlist.
@@ -9,8 +9,8 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:02:52.210Z     76.9M used)
-Progress update: steps=1000, test inputs generated=295, failing inputs=0      (2023-11-01T00:02:58.314Z     788M used)19:02:59.349 [randoop.util.RunnerThread] ERROR info.magnolia.context.MgnlContext - MgnlContext is not initialized. This could happen if the request does not go through the Magnolia default filters.
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T09:20:41.794Z     74.3M used)
+Progress update: steps=1000, test inputs generated=295, failing inputs=0      (2023-11-20T09:20:47.200Z     867M used)03:20:48.213 [randoop.util.RunnerThread] ERROR info.magnolia.context.MgnlContext - MgnlContext is not initialized. This could happen if the request does not go through the Magnolia default filters.
 java.lang.IllegalStateException: MgnlContext is not set for this thread
 	at info.magnolia.context.MgnlContext.getInstance(MgnlContext.java:282) [magnolia-core-6.1.4.jar:?]
 	at info.magnolia.context.MgnlContext.getJCRSession(MgnlContext.java:642) [magnolia-core-6.1.4.jar:?]
@@ -23,7 +23,7 @@ java.lang.IllegalStateException: MgnlContext is not set for this thread
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-19:03:01.162 [randoop.util.RunnerThread] ERROR org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions - Exception while encoding image as base64
+03:20:49.993 [randoop.util.RunnerThread] ERROR org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions - Exception while encoding image as base64
 java.lang.NullPointerException: null
 	at org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions.getBase64EncodedRendition(ResponsiveDamTemplatingFunctions.java:54) [classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_382]
@@ -34,7 +34,7 @@ java.lang.NullPointerException: null
 	at randoop.util.ReflectionCode.runReflectionCode(ReflectionCode.java:63) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
-19:03:01.834 [randoop.util.RunnerThread] ERROR org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions - Exception while encoding image as base64
+03:20:50.629 [randoop.util.RunnerThread] ERROR org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions - Exception while encoding image as base64
 java.lang.NullPointerException: null
 	at org.sevensource.magnolia.responsivedam.templating.ResponsiveDamTemplatingFunctions.getBase64EncodedRendition(ResponsiveDamTemplatingFunctions.java:54) [classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_382]
@@ -46,13 +46,13 @@ java.lang.NullPointerException: null
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49) [randoop-all-4.3.2.jar:?]
 	at randoop.util.RunnerThread.run(RunnerThread.java:43) [randoop-all-4.3.2.jar:?]
 
-Progress update: steps=1360, test inputs generated=532, failing inputs=0      (2023-11-01T00:03:02.265Z     121M used)
+Progress update: steps=1360, test inputs generated=532, failing inputs=0      (2023-11-20T09:20:51.047Z     910M used)
 Normal method executions: 57468
 Exceptional method executions: 75
 
-Average method execution time (normal termination):      0.0504
-Average method execution time (exceptional termination): 0.870
-Approximate memory usage 121M
+Average method execution time (normal termination):      0.0463
+Average method execution time (exceptional termination): 0.808
+Approximate memory usage 910M
 Explorer = ForwardGenerator(steps: 1360, null steps: 828, num_sequences_generated: 532;
     allSequences: 532, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 32;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 60)

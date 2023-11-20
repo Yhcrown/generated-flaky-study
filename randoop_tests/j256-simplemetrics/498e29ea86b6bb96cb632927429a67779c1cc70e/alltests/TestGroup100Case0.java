@@ -2540,7 +2540,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test166");
         com.j256.simplemetrics.metric.ControlledMetricTimer controlledMetricTimer4 = new com.j256.simplemetrics.metric.ControlledMetricTimer("hi!", "never", "hi!", "com.j256");
         long long6 = controlledMetricTimer4.stop((long) (byte) 10);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698796522535L + "'", long6 == 1698796522535L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700471538023L + "'", long6 == 1700471538023L);
     }
 
     @Test
@@ -3266,8 +3266,8 @@ public class TestGroup100Case0 {
         com.j256.simplemetrics.metric.ControlledMetricTimer controlledMetricTimer4 = new com.j256.simplemetrics.metric.ControlledMetricTimer("hi!", "never", "hi!", "com.j256");
         long long6 = controlledMetricTimer4.stop((long) 100);
         long long7 = controlledMetricTimer4.start();
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698796525183L + "'", long6 == 1698796525183L);
-// flaky:         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 1698796525283L + "'", long7 == 1698796525283L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700471540565L + "'", long6 == 1700471540565L);
+// flaky:         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 1700471540665L + "'", long7 == 1700471540665L);
     }
 
     @Test

@@ -1,4 +1,4 @@
-[TIME]: 0:00:14.377099
+[TIME]: 0:00:13.355509
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.criteo.marketing.GzipRequestInterceptor specified via --testclass or --classlist.
 
@@ -8,15 +8,8 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:29:13.065Z     102M used)
-Progress update: steps=1000, test inputs generated=389, failing inputs=0      (2023-10-31T23:29:19.062Z     308M used)Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
-	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
-	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
-	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:38:35.033Z     102M used)
+Progress update: steps=1000, test inputs generated=389, failing inputs=0      (2023-11-20T08:38:40.627Z     232M used)Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
 	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
 	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
@@ -80,13 +73,13 @@ Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:750)
 
-Progress update: steps=1230, test inputs generated=502, failing inputs=0      (2023-10-31T23:29:20.890Z     112M used)
+Progress update: steps=1230, test inputs generated=502, failing inputs=0      (2023-11-20T08:38:42.356Z     579M used)
 Normal method executions: 4044
 Exceptional method executions: 65
 
-Average method execution time (normal termination):      0.0875
-Average method execution time (exceptional termination): 34.7
-Approximate memory usage 112M
+Average method execution time (normal termination):      0.0979
+Average method execution time (exceptional termination): 28.8
+Approximate memory usage 579M
 Explorer = ForwardGenerator(steps: 1230, null steps: 728, num_sequences_generated: 502;
     allSequences: 502, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 2;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 178)
@@ -98,6 +91,13 @@ About to look for failing assertions in 393 regression sequences.
 Regression test output:
 Regression test count: 393
 Writing regression JUnit tests...
+Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
+	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
 Exception in thread "OkHttp Dispatcher" java.lang.NullPointerException
 	at com.criteo.marketing.ApiClient$1.onResponse(ApiClient.java:927)
 	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:174)

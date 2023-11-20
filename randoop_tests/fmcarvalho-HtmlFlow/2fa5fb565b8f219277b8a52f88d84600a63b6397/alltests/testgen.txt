@@ -1,4 +1,4 @@
-[TIME]: 0:00:08.601980
+[TIME]: 0:00:08.261468
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class htmlflow.Indentation specified via --testclass or --classlist; will use its static methods.
 Cannot instantiate non-accessible class htmlflow.Tags specified via --testclass or --classlist.
@@ -9,9 +9,9 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:06:57.724Z     79.1M used)Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T09:25:20.875Z     13.3M used)Nov 20, 2023 3:25:22 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:22 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Import htmlflow.*;
 import org.xmlet.htmlapifaster.*;
 
@@ -45,7 +45,7 @@ public class Flowified {
     }
 }
 
-Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:22 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Import htmlflow.*;
 import org.xmlet.htmlapifaster.*;
 
@@ -79,7 +79,7 @@ public class Flowified {
     }
 }
 
-Oct 31, 2023 7:06:59 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:22 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Import htmlflow.*;
 import org.xmlet.htmlapifaster.*;
 
@@ -113,40 +113,40 @@ public class Flowified {
     }
 }
 
-Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:23 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class "hi!" not found for the node name "hi!"
-Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:23 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class "hi!" not found for the node name "hi!"
-Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:23 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:23 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:00 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:23 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:01 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:24 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class "\"hi!\"" not found for the node name "\"hi!\""
-Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:02 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class Hi! not found for the node name hi!
-Oct 31, 2023 7:07:03 PM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
+Nov 20, 2023 3:25:25 AM htmlflow.flowifier.AbstractHtmlToJavaHtmlFlowNodeVisitor getClassFromNodeName
 WARNING: Class 
  not found for the node name 
 
 
-Progress update: steps=979, test inputs generated=513, failing inputs=2      (2023-11-01T00:07:03.234Z     318M used)
+Progress update: steps=979, test inputs generated=513, failing inputs=2      (2023-11-20T09:25:26.088Z     404M used)
 Normal method executions: 11402
 Exceptional method executions: 61
 
-Average method execution time (normal termination):      0.0827
-Average method execution time (exceptional termination): 0.144
-Approximate memory usage 318M
+Average method execution time (normal termination):      0.0788
+Average method execution time (exceptional termination): 0.212
+Approximate memory usage 404M
 Explorer = ForwardGenerator(steps: 979, null steps: 466, num_sequences_generated: 513;
     allSequences: 513, regresson seqs: 498, error seqs: 2=2=2, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 45)

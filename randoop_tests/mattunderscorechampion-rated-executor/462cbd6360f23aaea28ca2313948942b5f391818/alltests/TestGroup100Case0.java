@@ -268,27 +268,13 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test017");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
-        com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
-        boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
-        com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
-        runnableWrapperIRepeatingFutureSingleFuture1.setTask(iTaskWrapper3);
-        boolean boolean5 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.IUniversalExecutor>(iTaskCanceller0, 10);
     }
 
     @Test
     public void test018() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test018");
-        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
-        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.IUniversalExecutor>(iTaskCanceller0, 10);
-    }
-
-    @Test
-    public void test019() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test019");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -305,9 +291,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test020() throws Throwable {
+    public void test019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test020");
+            System.out.format("%n%s%n", "TestGroup100Case0.test019");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (byte) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -323,16 +309,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test021() throws Throwable {
+    public void test020() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test021");
+            System.out.format("%n%s%n", "TestGroup100Case0.test020");
         com.mattunderscore.executors.UncaughtExceptionResult<com.mattunderscore.rated.executor.IRatedExecutor> iRatedExecutorUncaughtExceptionResult0 = new com.mattunderscore.executors.UncaughtExceptionResult<com.mattunderscore.rated.executor.IRatedExecutor>();
     }
 
     @Test
-    public void test022() throws Throwable {
+    public void test021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test022");
+            System.out.format("%n%s%n", "TestGroup100Case0.test021");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -347,9 +333,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test023() throws Throwable {
+    public void test022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test023");
+            System.out.format("%n%s%n", "TestGroup100Case0.test022");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -368,9 +354,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test024() throws Throwable {
+    public void test023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test024");
+            System.out.format("%n%s%n", "TestGroup100Case0.test023");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
@@ -388,9 +374,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test025() throws Throwable {
+    public void test024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test025");
+            System.out.format("%n%s%n", "TestGroup100Case0.test024");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (-1), timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -405,18 +391,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test026() throws Throwable {
+    public void test025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test026");
-        java.util.concurrent.Callable<java.lang.Comparable<java.lang.String>> strComparableCallable0 = null;
-        com.mattunderscore.executors.ITaskResultProcessor<java.lang.Comparable<java.lang.String>> strComparableITaskResultProcessor1 = null;
-        com.mattunderscore.executors.TaskWrapper<java.lang.Comparable<java.lang.String>> strComparableTaskWrapper2 = new com.mattunderscore.executors.TaskWrapper<java.lang.Comparable<java.lang.String>>(strComparableCallable0, strComparableITaskResultProcessor1);
-    }
-
-    @Test
-    public void test027() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test027");
+            System.out.format("%n%s%n", "TestGroup100Case0.test025");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -429,9 +406,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test028() throws Throwable {
+    public void test026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test028");
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -448,9 +425,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test029() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+            System.out.format("%n%s%n", "TestGroup100Case0.test027");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
@@ -464,16 +441,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test030() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+            System.out.format("%n%s%n", "TestGroup100Case0.test028");
         com.mattunderscore.executors.UncaughtExceptionResult<java.lang.CharSequence> charSequenceUncaughtExceptionResult0 = new com.mattunderscore.executors.UncaughtExceptionResult<java.lang.CharSequence>();
     }
 
     @Test
-    public void test031() throws Throwable {
+    public void test029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test031");
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
@@ -490,9 +467,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test032() throws Throwable {
+    public void test030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test032");
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -513,9 +490,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test033() throws Throwable {
+    public void test031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test033");
+            System.out.format("%n%s%n", "TestGroup100Case0.test031");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
@@ -530,9 +507,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test034() throws Throwable {
+    public void test032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test034");
+            System.out.format("%n%s%n", "TestGroup100Case0.test032");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -552,9 +529,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test035() throws Throwable {
+    public void test033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test035");
+            System.out.format("%n%s%n", "TestGroup100Case0.test033");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.util.concurrent.TimeUnit timeUnit4 = null;
@@ -568,9 +545,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test036() throws Throwable {
+    public void test034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test036");
+            System.out.format("%n%s%n", "TestGroup100Case0.test034");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -591,9 +568,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test037() throws Throwable {
+    public void test035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test037");
+            System.out.format("%n%s%n", "TestGroup100Case0.test035");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -610,9 +587,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test038() throws Throwable {
+    public void test036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test038");
+            System.out.format("%n%s%n", "TestGroup100Case0.test036");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -626,9 +603,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test039() throws Throwable {
+    public void test037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test039");
+            System.out.format("%n%s%n", "TestGroup100Case0.test037");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
@@ -642,9 +619,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test040() throws Throwable {
+    public void test038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test040");
+            System.out.format("%n%s%n", "TestGroup100Case0.test038");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -657,9 +634,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test041() throws Throwable {
+    public void test039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test041");
+            System.out.format("%n%s%n", "TestGroup100Case0.test039");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -683,9 +660,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test042() throws Throwable {
+    public void test040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test042");
+            System.out.format("%n%s%n", "TestGroup100Case0.test040");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -704,9 +681,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test043() throws Throwable {
+    public void test041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test043");
+            System.out.format("%n%s%n", "TestGroup100Case0.test041");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -726,9 +703,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test044() throws Throwable {
+    public void test042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test044");
+            System.out.format("%n%s%n", "TestGroup100Case0.test042");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         int int3 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
@@ -743,9 +720,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test045() throws Throwable {
+    public void test043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test045");
+            System.out.format("%n%s%n", "TestGroup100Case0.test043");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -762,9 +739,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test046() throws Throwable {
+    public void test044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test046");
+            System.out.format("%n%s%n", "TestGroup100Case0.test044");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -777,9 +754,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test047() throws Throwable {
+    public void test045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test047");
+            System.out.format("%n%s%n", "TestGroup100Case0.test045");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) 'a', timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -794,9 +771,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test048() throws Throwable {
+    public void test046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+            System.out.format("%n%s%n", "TestGroup100Case0.test046");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -817,18 +794,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test049() throws Throwable {
+    public void test047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test049");
+            System.out.format("%n%s%n", "TestGroup100Case0.test047");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor(1L, timeUnit1);
         org.junit.Assert.assertNotNull(iRatedExecutor2);
     }
 
     @Test
-    public void test050() throws Throwable {
+    public void test048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
@@ -838,9 +815,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test051() throws Throwable {
+    public void test049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+            System.out.format("%n%s%n", "TestGroup100Case0.test049");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (byte) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -856,9 +833,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test052() throws Throwable {
+    public void test050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test052");
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -882,26 +859,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test053() throws Throwable {
+    public void test051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test053");
-        java.lang.Throwable throwable0 = null;
-        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
-        java.lang.Comparable<java.lang.String> strComparable2 = strComparableTaskExecutionResult1.result;
-        org.junit.Assert.assertNull(strComparable2);
-    }
-
-    @Test
-    public void test054() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
         com.mattunderscore.executors.UncaughtExceptionResult<java.lang.Object> objUncaughtExceptionResult0 = new com.mattunderscore.executors.UncaughtExceptionResult<java.lang.Object>();
     }
 
     @Test
-    public void test055() throws Throwable {
+    public void test052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test055");
+            System.out.format("%n%s%n", "TestGroup100Case0.test052");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -923,9 +890,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test056() throws Throwable {
+    public void test053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) 100, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -940,9 +907,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test057() throws Throwable {
+    public void test054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test057");
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -964,9 +931,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test058() throws Throwable {
+    public void test055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test058");
+            System.out.format("%n%s%n", "TestGroup100Case0.test055");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -985,9 +952,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test059() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1011,9 +978,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test060() throws Throwable {
+    public void test057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+            System.out.format("%n%s%n", "TestGroup100Case0.test057");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor3 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 0, timeUnit1, threadFactory2);
@@ -1030,9 +997,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test061() throws Throwable {
+    public void test058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+            System.out.format("%n%s%n", "TestGroup100Case0.test058");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
@@ -1044,9 +1011,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test062() throws Throwable {
+    public void test059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor(0L, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1059,9 +1026,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test063() throws Throwable {
+    public void test060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isDone();
@@ -1071,9 +1038,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test064() throws Throwable {
+    public void test061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1090,9 +1057,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test065() throws Throwable {
+    public void test062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor(0L, timeUnit1);
         java.util.concurrent.Callable<java.lang.Void> voidCallable3 = null;
@@ -1107,9 +1074,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1126,9 +1093,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1152,9 +1119,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         java.lang.Runnable runnable0 = null;
         com.mattunderscore.executors.RunnableWrapper runnableWrapper1 = new com.mattunderscore.executors.RunnableWrapper(runnable0);
         // The following exception was thrown during execution in test generation
@@ -1167,9 +1134,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -1181,9 +1148,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
@@ -1199,9 +1166,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) -1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1211,9 +1178,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test072");
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1229,9 +1196,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) (short) 0);
         // The following exception was thrown during execution in test generation
@@ -1244,9 +1211,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test074");
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1265,25 +1232,25 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+            System.out.format("%n%s%n", "TestGroup100Case0.test072");
         java.util.concurrent.Callable<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorCallable0 = null;
         com.mattunderscore.executors.ITaskResultProcessor<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorITaskResultProcessor1 = null;
         com.mattunderscore.executors.TaskWrapper<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorTaskWrapper2 = new com.mattunderscore.executors.TaskWrapper<com.mattunderscore.executors.IUniversalExecutor>(iUniversalExecutorCallable0, iUniversalExecutorITaskResultProcessor1);
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
         com.mattunderscore.executors.UncaughtExceptionResult<java.io.Serializable> serializableUncaughtExceptionResult0 = new com.mattunderscore.executors.UncaughtExceptionResult<java.io.Serializable>();
     }
 
     @Test
-    public void test077() throws Throwable {
+    public void test074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test077");
+            System.out.format("%n%s%n", "TestGroup100Case0.test074");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
@@ -1303,9 +1270,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1326,9 +1293,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1347,9 +1314,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test080() throws Throwable {
+    public void test077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+            System.out.format("%n%s%n", "TestGroup100Case0.test077");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1367,9 +1334,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1388,9 +1355,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1403,9 +1370,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test083");
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1421,9 +1388,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
         java.util.concurrent.Callable<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureCallable0 = null;
         com.mattunderscore.executors.ITaskResultProcessor<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureITaskResultProcessor1 = null;
         com.mattunderscore.executors.TaskWrapper<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureTaskWrapper2 = new com.mattunderscore.executors.TaskWrapper<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureCallable0, runnableWrapperRepeatingFutureITaskResultProcessor1);
@@ -1437,9 +1404,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test085() throws Throwable {
+    public void test082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1464,9 +1431,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test083");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1481,9 +1448,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1508,9 +1475,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory2 = new com.mattunderscore.executors.TaskWrapperFactory();
@@ -1528,9 +1495,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1553,9 +1520,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor(0L, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1568,9 +1535,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         java.lang.Throwable throwable0 = null;
         com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
         java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
@@ -1583,9 +1550,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory2 = new com.mattunderscore.executors.TaskWrapperFactory();
@@ -1618,24 +1585,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
-        java.lang.Throwable throwable0 = null;
-        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
-        java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
-        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
-        java.util.concurrent.ExecutionException executionException4 = strComparableTaskExecutionResult1.exception;
-        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult5 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>((java.lang.Throwable) executionException4);
-        org.junit.Assert.assertNotNull(executionException2);
-        org.junit.Assert.assertNotNull(executionException3);
-        org.junit.Assert.assertNotNull(executionException4);
-    }
-
-    @Test
-    public void test094() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) ' ', timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1645,9 +1597,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1666,29 +1618,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
-        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
-        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
-        com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
-        runnableWrapperRepeatingFuture2.setTask(iTaskWrapper3);
-        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
-        int int6 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
-        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
-        boolean boolean8 = runnableWrapperRepeatingFuture2.isDone();
-        java.lang.Throwable throwable9 = null;
-        runnableWrapperRepeatingFuture2.setException(throwable9);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 97 + "'", int6 == 97);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-    }
-
-    @Test
-    public void test097() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1704,9 +1636,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor3 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (short) 100, timeUnit1, threadFactory2);
@@ -1714,17 +1646,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<java.lang.Comparable<java.lang.String>> strComparableSingleFuture1 = new com.mattunderscore.executors.SingleFuture<java.lang.Comparable<java.lang.String>>(iTaskCanceller0);
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) 'a', timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1740,17 +1672,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test101() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<java.lang.String> strSingleFuture1 = new com.mattunderscore.executors.SingleFuture<java.lang.String>(iTaskCanceller0);
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<java.lang.Throwable> throwableSingleFuture1 = new com.mattunderscore.executors.SingleFuture<java.lang.Throwable>(iTaskCanceller0);
         java.lang.Class<?> wildcardClass2 = throwableSingleFuture1.getClass();
@@ -1758,9 +1690,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1784,9 +1716,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (byte) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1801,18 +1733,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test105() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (short) 1, timeUnit1);
         org.junit.Assert.assertNotNull(iRatedExecutor2);
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory2 = new com.mattunderscore.executors.TaskWrapperFactory();
@@ -1844,9 +1776,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory2 = new com.mattunderscore.executors.TaskWrapperFactory();
@@ -1882,9 +1814,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 100, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1896,9 +1828,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test109() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor(0L, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -1916,9 +1848,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         int int3 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
@@ -1934,16 +1866,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         com.mattunderscore.executors.UncaughtExceptionResult<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorUncaughtExceptionResult0 = new com.mattunderscore.executors.UncaughtExceptionResult<com.mattunderscore.executors.IUniversalExecutor>();
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -1962,9 +1894,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor3 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) 'a', timeUnit1, threadFactory2);
@@ -1980,9 +1912,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         java.lang.Throwable throwable0 = null;
         com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
         java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
@@ -1991,9 +1923,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         java.util.concurrent.TimeUnit timeUnit3 = null;
@@ -2007,9 +1939,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2028,9 +1960,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -2043,9 +1975,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2068,9 +2000,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         java.util.concurrent.Callable<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureCallable2 = null;
@@ -2098,9 +2030,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -2113,9 +2045,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         java.util.concurrent.Callable<java.util.concurrent.Executor> executorCallable0 = null;
         com.mattunderscore.executors.ITaskResultProcessor<java.util.concurrent.Executor> executorITaskResultProcessor1 = null;
         com.mattunderscore.executors.TaskWrapper<java.util.concurrent.Executor> executorTaskWrapper2 = new com.mattunderscore.executors.TaskWrapper<java.util.concurrent.Executor>(executorCallable0, executorITaskResultProcessor1);
@@ -2129,9 +2061,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -2143,9 +2075,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2162,9 +2094,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2182,17 +2114,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (byte) 10, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2207,9 +2139,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test127() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2221,18 +2153,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) 97, timeUnit1);
         org.junit.Assert.assertNotNull(iRatedExecutor2);
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>((java.lang.Comparable<java.lang.String>) "hi!");
         java.lang.Comparable<java.lang.String> strComparable2 = strComparableTaskExecutionResult1.result;
         java.lang.Comparable<java.lang.String> strComparable3 = strComparableTaskExecutionResult1.result;
@@ -2241,9 +2173,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller3 = null;
@@ -2267,9 +2199,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2291,9 +2223,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (short) 10, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2303,34 +2235,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
-        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
-        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
-        java.lang.Throwable throwable3 = null;
-        runnableWrapperRepeatingFuture2.setException(throwable3);
-        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
-        int int6 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
-        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
-        int int8 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
-        java.lang.Throwable throwable9 = null;
-        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult10 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable9);
-        java.util.concurrent.ExecutionException executionException11 = strComparableTaskExecutionResult10.exception;
-        java.util.concurrent.ExecutionException executionException12 = strComparableTaskExecutionResult10.exception;
-        runnableWrapperRepeatingFuture2.setException((java.lang.Throwable) executionException12);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 1 + "'", int6 == 1);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 1 + "'", int7 == 1);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
-        org.junit.Assert.assertNotNull(executionException11);
-        org.junit.Assert.assertNotNull(executionException12);
-    }
-
-    @Test
-    public void test134() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2348,9 +2255,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test135() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory0 = new com.mattunderscore.executors.TaskWrapperFactory();
         java.lang.Runnable runnable1 = null;
         com.mattunderscore.executors.ITaskResultProcessor<java.lang.Void> voidITaskResultProcessor2 = null;
@@ -2359,9 +2266,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor3 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) 'a', timeUnit1, threadFactory2);
@@ -2377,27 +2284,27 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) (byte) -1, timeUnit1);
         org.junit.Assert.assertNotNull(iUniversalExecutor2);
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) 97, timeUnit1);
         org.junit.Assert.assertNotNull(iUniversalExecutor2);
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor3 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((-1L), timeUnit1, threadFactory2);
@@ -2405,17 +2312,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IUniversalExecutor> iUniversalExecutorSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IUniversalExecutor>(iTaskCanceller0);
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) (short) 0);
         java.util.concurrent.TimeUnit timeUnit5 = null;
@@ -2429,9 +2336,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) 1, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2446,9 +2353,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>((java.lang.Comparable<java.lang.String>) "hi!");
         java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
         java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
@@ -2457,9 +2364,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test144() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2481,9 +2388,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test145() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2503,9 +2410,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2523,9 +2430,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 100, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2535,9 +2442,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.UnboundedFuture unboundedFuture1 = new com.mattunderscore.executors.UnboundedFuture(iTaskCanceller0);
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller2 = null;
@@ -2572,9 +2479,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test149() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 100, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2587,9 +2494,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test150() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2615,9 +2522,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test151() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -2630,9 +2537,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test152() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2653,27 +2560,27 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test153() throws Throwable {
+    public void test147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor(0L, timeUnit1);
         org.junit.Assert.assertNotNull(iUniversalExecutor2);
     }
 
     @Test
-    public void test154() throws Throwable {
+    public void test148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test154");
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) 100, timeUnit1);
         org.junit.Assert.assertNotNull(iRatedExecutor2);
     }
 
     @Test
-    public void test155() throws Throwable {
+    public void test149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2695,9 +2602,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test156() throws Throwable {
+    public void test150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2713,9 +2620,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test157() throws Throwable {
+    public void test151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         java.util.concurrent.Callable<com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>> runnableWrapperIRepeatingFutureSingleFutureCallable2 = null;
@@ -2745,9 +2652,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test158() throws Throwable {
+    public void test152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2759,9 +2666,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test159() throws Throwable {
+    public void test153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 100, timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -2773,29 +2680,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
-        java.lang.Throwable throwable0 = null;
-        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
-        java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
-        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
-        java.util.concurrent.ExecutionException executionException4 = strComparableTaskExecutionResult1.exception;
-        java.lang.Comparable<java.lang.String> strComparable5 = strComparableTaskExecutionResult1.result;
-        java.lang.Comparable<java.lang.String> strComparable6 = strComparableTaskExecutionResult1.result;
-        java.lang.Comparable<java.lang.String> strComparable7 = strComparableTaskExecutionResult1.result;
-        org.junit.Assert.assertNotNull(executionException2);
-        org.junit.Assert.assertNotNull(executionException3);
-        org.junit.Assert.assertNotNull(executionException4);
-        org.junit.Assert.assertNull(strComparable5);
-        org.junit.Assert.assertNull(strComparable6);
-        org.junit.Assert.assertNull(strComparable7);
-    }
-
-    @Test
-    public void test161() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test154");
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory0 = new com.mattunderscore.executors.TaskWrapperFactory();
         java.lang.Runnable runnable1 = null;
         com.mattunderscore.executors.ITaskResultProcessor<java.lang.Void> voidITaskResultProcessor2 = null;
@@ -2811,9 +2698,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.interruptableRatedExecutor((long) (byte) 100, timeUnit1);
         com.mattunderscore.executors.TaskExecutionResult<java.util.concurrent.Executor> executorTaskExecutionResult3 = new com.mattunderscore.executors.TaskExecutionResult<java.util.concurrent.Executor>((java.util.concurrent.Executor) iRatedExecutor2);
@@ -2821,9 +2708,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.UnboundedFuture unboundedFuture1 = new com.mattunderscore.executors.UnboundedFuture(iTaskCanceller0);
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller2 = null;
@@ -2862,17 +2749,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.ITaskResultProcessor> iTaskResultProcessorISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.ITaskResultProcessor> iTaskResultProcessorFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.ITaskResultProcessor>(iTaskResultProcessorISettableFuture0);
     }
 
     @Test
-    public void test165() throws Throwable {
+    public void test158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.UnboundedFuture unboundedFuture1 = new com.mattunderscore.executors.UnboundedFuture(iTaskCanceller0);
         boolean boolean2 = unboundedFuture1.isDone();
@@ -2880,9 +2767,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test166() throws Throwable {
+    public void test159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+            System.out.format("%n%s%n", "TestGroup100Case0.test159");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         int int3 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
@@ -2898,9 +2785,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test167() throws Throwable {
+    public void test160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         java.util.concurrent.ThreadFactory threadFactory2 = null;
         // The following exception was thrown during execution in test generation
@@ -2913,9 +2800,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test168() throws Throwable {
+    public void test161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
         com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
         com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
         com.mattunderscore.executors.TaskWrapperFactory taskWrapperFactory2 = new com.mattunderscore.executors.TaskWrapperFactory();
@@ -2940,9 +2827,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test169() throws Throwable {
+    public void test162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2970,9 +2857,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test170() throws Throwable {
+    public void test163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -2996,9 +2883,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test171() throws Throwable {
+    public void test164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.UnboundedFuture unboundedFuture1 = new com.mattunderscore.executors.UnboundedFuture(iTaskCanceller0);
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller2 = null;
@@ -3034,9 +2921,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test172() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller3 = null;
@@ -3067,9 +2954,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test173() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -3092,9 +2979,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test174() throws Throwable {
+    public void test167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
         java.lang.Throwable throwable3 = null;
@@ -3146,9 +3033,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test175() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
         java.util.concurrent.TimeUnit timeUnit1 = null;
         com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (-1), timeUnit1);
         java.lang.Runnable runnable3 = null;
@@ -3164,9 +3051,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test176() throws Throwable {
+    public void test169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
         com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
         com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
         boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
@@ -3182,6 +3069,388 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
         org.junit.Assert.assertNotNull(executionException8);
         org.junit.Assert.assertNotNull(executionException9);
+    }
+
+    @Test
+    public void test170() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        java.lang.Throwable throwable3 = null;
+        runnableWrapperRepeatingFuture2.setException(throwable3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int6 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        boolean boolean7 = runnableWrapperRepeatingFuture2.isDone();
+        int int8 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        java.lang.Throwable throwable9 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult10 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable9);
+        java.util.concurrent.ExecutionException executionException11 = strComparableTaskExecutionResult10.exception;
+        java.util.concurrent.ExecutionException executionException12 = strComparableTaskExecutionResult10.exception;
+        java.util.concurrent.ExecutionException executionException13 = strComparableTaskExecutionResult10.exception;
+        runnableWrapperRepeatingFuture2.setException((java.lang.Throwable) executionException13);
+        boolean boolean15 = runnableWrapperRepeatingFuture2.isDone();
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 1 + "'", int6 == 1);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 1 + "'", int8 == 1);
+        org.junit.Assert.assertNotNull(executionException11);
+        org.junit.Assert.assertNotNull(executionException12);
+        org.junit.Assert.assertNotNull(executionException13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+    }
+
+    @Test
+    public void test171() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        java.lang.Throwable throwable0 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
+        java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
+        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
+        java.util.concurrent.ExecutionException executionException4 = strComparableTaskExecutionResult1.exception;
+        java.lang.Comparable<java.lang.String> strComparable5 = strComparableTaskExecutionResult1.result;
+        java.lang.Comparable<java.lang.String> strComparable6 = strComparableTaskExecutionResult1.result;
+        java.lang.Comparable<java.lang.String> strComparable7 = strComparableTaskExecutionResult1.result;
+        java.util.concurrent.ExecutionException executionException8 = strComparableTaskExecutionResult1.exception;
+        org.junit.Assert.assertNotNull(executionException2);
+        org.junit.Assert.assertNotNull(executionException3);
+        org.junit.Assert.assertNotNull(executionException4);
+        org.junit.Assert.assertNull(strComparable5);
+        org.junit.Assert.assertNull(strComparable6);
+        org.junit.Assert.assertNull(strComparable7);
+        org.junit.Assert.assertNotNull(executionException8);
+    }
+
+    @Test
+    public void test172() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+        java.lang.Throwable throwable0 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
+        java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
+        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
+        java.lang.Comparable<java.lang.String> strComparable4 = strComparableTaskExecutionResult1.result;
+        org.junit.Assert.assertNotNull(executionException2);
+        org.junit.Assert.assertNotNull(executionException3);
+        org.junit.Assert.assertNull(strComparable4);
+    }
+
+    @Test
+    public void test173() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
+        runnableWrapperRepeatingFuture2.setTask(iTaskWrapper3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int6 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        int int8 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 97 + "'", int6 == 97);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
+    }
+
+    @Test
+    public void test174() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+        java.util.concurrent.TimeUnit timeUnit1 = null;
+        com.mattunderscore.executors.IUniversalExecutor iUniversalExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.simpleRatedExecutor((long) (short) -1, timeUnit1);
+        org.junit.Assert.assertNotNull(iUniversalExecutor2);
+    }
+
+    @Test
+    public void test175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+        java.util.concurrent.TimeUnit timeUnit1 = null;
+        com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor((long) (-1), timeUnit1);
+        java.lang.Runnable runnable3 = null;
+        com.mattunderscore.executors.RunnableWrapper runnableWrapper4 = new com.mattunderscore.executors.RunnableWrapper(runnable3);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.util.concurrent.Future<java.lang.Void> voidFuture5 = iRatedExecutor2.submit((java.util.concurrent.Callable<java.lang.Void>) runnableWrapper4);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(iRatedExecutor2);
+    }
+
+    @Test
+    public void test176() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+        java.lang.Throwable throwable0 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
+        java.lang.Comparable<java.lang.String> strComparable2 = strComparableTaskExecutionResult1.result;
+        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
+        org.junit.Assert.assertNull(strComparable2);
+        org.junit.Assert.assertNotNull(executionException3);
+    }
+
+    @Test
+    public void test177() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperIRepeatingFutureSingleFuture1 = new com.mattunderscore.executors.SingleFuture<com.mattunderscore.executors.IRepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(iTaskCanceller0);
+        boolean boolean2 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
+        com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
+        runnableWrapperIRepeatingFutureSingleFuture1.setTask(iTaskWrapper3);
+        boolean boolean5 = runnableWrapperIRepeatingFutureSingleFuture1.isCancelled();
+        java.util.concurrent.TimeUnit timeUnit7 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj8 = runnableWrapperIRepeatingFutureSingleFuture1.get((long) (short) 10, timeUnit7);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+    @Test
+    public void test178() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        java.lang.Throwable throwable3 = null;
+        runnableWrapperRepeatingFuture2.setException(throwable3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        boolean boolean6 = runnableWrapperRepeatingFuture2.isCancelled();
+        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        boolean boolean8 = runnableWrapperRepeatingFuture2.isCancelled();
+        // The following exception was thrown during execution in test generation
+        try {
+            com.mattunderscore.executors.RunnableWrapper runnableWrapper10 = runnableWrapperRepeatingFuture2.getResult(100);
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 100");
+        } catch (java.lang.ArrayIndexOutOfBoundsException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 1 + "'", int7 == 1);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test179() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test179");
+        com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
+        com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
+        com.mattunderscore.executors.ITaskWrapper iTaskWrapper2 = null;
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller3 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture5 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller3, (int) 'a');
+        java.lang.Throwable throwable6 = null;
+        runnableWrapperRepeatingFuture5.setException(throwable6);
+        int int8 = runnableWrapperRepeatingFuture5.getExpectedExecutions();
+        int int9 = runnableWrapperRepeatingFuture5.getCompletedExecutions();
+        boolean boolean10 = runnableWrapperRepeatingFuture5.isDone();
+        int int11 = runnableWrapperRepeatingFuture5.getExpectedExecutions();
+        int int12 = runnableWrapperRepeatingFuture5.getCompletedExecutions();
+        int int13 = runnableWrapperRepeatingFuture5.getCompletedExecutions();
+        // The following exception was thrown during execution in test generation
+        try {
+            runnableWrapperRepeatingFutureFutureSetResult1.onResult(iTaskWrapper2, runnableWrapperRepeatingFuture5);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 1 + "'", int9 == 1);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 97 + "'", int11 == 97);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 1 + "'", int12 == 1);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 1 + "'", int13 == 1);
+    }
+
+    @Test
+    public void test180() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.UnboundedFuture unboundedFuture1 = new com.mattunderscore.executors.UnboundedFuture(iTaskCanceller0);
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller2 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture4 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller2, (int) 'a');
+        java.lang.Throwable throwable5 = null;
+        runnableWrapperRepeatingFuture4.setException(throwable5);
+        int int7 = runnableWrapperRepeatingFuture4.getExpectedExecutions();
+        int int8 = runnableWrapperRepeatingFuture4.getCompletedExecutions();
+        boolean boolean9 = runnableWrapperRepeatingFuture4.isDone();
+        int int10 = runnableWrapperRepeatingFuture4.getCompletedExecutions();
+        java.lang.Throwable throwable11 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult12 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable11);
+        java.util.concurrent.ExecutionException executionException13 = strComparableTaskExecutionResult12.exception;
+        java.util.concurrent.ExecutionException executionException14 = strComparableTaskExecutionResult12.exception;
+        java.util.concurrent.ExecutionException executionException15 = strComparableTaskExecutionResult12.exception;
+        runnableWrapperRepeatingFuture4.setException((java.lang.Throwable) executionException15);
+        unboundedFuture1.setException((java.lang.Throwable) executionException15);
+        java.lang.Void void18 = null;
+        unboundedFuture1.setResult(void18);
+        java.lang.Void void20 = unboundedFuture1.get();
+        java.lang.Void void21 = unboundedFuture1.get();
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 97 + "'", int7 == 97);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 1 + "'", int8 == 1);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 1 + "'", int10 == 1);
+        org.junit.Assert.assertNotNull(executionException13);
+        org.junit.Assert.assertNotNull(executionException14);
+        org.junit.Assert.assertNotNull(executionException15);
+        org.junit.Assert.assertNull(void20);
+        org.junit.Assert.assertNull(void21);
+    }
+
+    @Test
+    public void test181() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+        com.mattunderscore.executors.ISettableFuture<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureISettableFuture0 = null;
+        com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>> runnableWrapperRepeatingFutureFutureSetResult1 = new com.mattunderscore.executors.FutureSetResult<com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>>(runnableWrapperRepeatingFutureISettableFuture0);
+        java.util.concurrent.Callable<java.lang.Comparable<java.lang.String>> strComparableCallable2 = null;
+        com.mattunderscore.executors.ITaskResultProcessor<java.lang.Comparable<java.lang.String>> strComparableITaskResultProcessor3 = null;
+        com.mattunderscore.executors.TaskWrapper<java.lang.Comparable<java.lang.String>> strComparableTaskWrapper4 = new com.mattunderscore.executors.TaskWrapper<java.lang.Comparable<java.lang.String>>(strComparableCallable2, strComparableITaskResultProcessor3);
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller5 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture7 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller5, (int) 'a');
+        java.lang.Throwable throwable8 = null;
+        runnableWrapperRepeatingFuture7.setException(throwable8);
+        int int10 = runnableWrapperRepeatingFuture7.getExpectedExecutions();
+        int int11 = runnableWrapperRepeatingFuture7.getCompletedExecutions();
+        int int12 = runnableWrapperRepeatingFuture7.getCompletedExecutions();
+        int int13 = runnableWrapperRepeatingFuture7.getExpectedExecutions();
+        java.lang.Throwable throwable14 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult15 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable14);
+        java.util.concurrent.ExecutionException executionException16 = strComparableTaskExecutionResult15.exception;
+        java.util.concurrent.ExecutionException executionException17 = strComparableTaskExecutionResult15.exception;
+        runnableWrapperRepeatingFuture7.setException((java.lang.Throwable) executionException17);
+        // The following exception was thrown during execution in test generation
+        try {
+            runnableWrapperRepeatingFutureFutureSetResult1.onThrowable((com.mattunderscore.executors.ITaskWrapper) strComparableTaskWrapper4, (java.lang.Throwable) executionException17);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 97 + "'", int10 == 97);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 1 + "'", int11 == 1);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 1 + "'", int12 == 1);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 97 + "'", int13 == 97);
+        org.junit.Assert.assertNotNull(executionException16);
+        org.junit.Assert.assertNotNull(executionException17);
+    }
+
+    @Test
+    public void test182() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+        java.lang.Throwable throwable0 = null;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult1 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>(throwable0);
+        java.util.concurrent.ExecutionException executionException2 = strComparableTaskExecutionResult1.exception;
+        java.util.concurrent.ExecutionException executionException3 = strComparableTaskExecutionResult1.exception;
+        java.util.concurrent.ExecutionException executionException4 = strComparableTaskExecutionResult1.exception;
+        com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>> strComparableTaskExecutionResult5 = new com.mattunderscore.executors.TaskExecutionResult<java.lang.Comparable<java.lang.String>>((java.lang.Throwable) executionException4);
+        java.util.concurrent.ExecutionException executionException6 = strComparableTaskExecutionResult5.exception;
+        org.junit.Assert.assertNotNull(executionException2);
+        org.junit.Assert.assertNotNull(executionException3);
+        org.junit.Assert.assertNotNull(executionException4);
+        org.junit.Assert.assertNotNull(executionException6);
+    }
+
+    @Test
+    public void test183() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
+        java.util.concurrent.TimeUnit timeUnit1 = null;
+        com.mattunderscore.rated.executor.IRatedExecutor iRatedExecutor2 = com.mattunderscore.rated.executor.RatedExecutors.ratedExecutor(0L, timeUnit1);
+        java.lang.Runnable runnable3 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            iRatedExecutor2.execute(runnable3);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(iRatedExecutor2);
+    }
+
+    @Test
+    public void test184() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test184");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        com.mattunderscore.executors.ITaskWrapper iTaskWrapper3 = null;
+        runnableWrapperRepeatingFuture2.setTask(iTaskWrapper3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int6 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        boolean boolean8 = runnableWrapperRepeatingFuture2.isDone();
+        java.lang.Throwable throwable9 = null;
+        runnableWrapperRepeatingFuture2.setException(throwable9);
+        // The following exception was thrown during execution in test generation
+        try {
+            boolean boolean12 = runnableWrapperRepeatingFuture2.cancel(false);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 97 + "'", int6 == 97);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test185() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        java.lang.Throwable throwable3 = null;
+        runnableWrapperRepeatingFuture2.setException(throwable3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int6 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        int int7 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        int int8 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj9 = runnableWrapperRepeatingFuture2.get();
+            org.junit.Assert.fail("Expected exception of type java.util.concurrent.ExecutionException; message: null");
+        } catch (java.util.concurrent.ExecutionException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 1 + "'", int6 == 1);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 1 + "'", int7 == 1);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
+    }
+
+    @Test
+    public void test186() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test186");
+        com.mattunderscore.executors.ITaskCanceller iTaskCanceller0 = null;
+        com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper> runnableWrapperRepeatingFuture2 = new com.mattunderscore.executors.RepeatingFuture<com.mattunderscore.executors.RunnableWrapper>(iTaskCanceller0, (int) 'a');
+        java.lang.Throwable throwable3 = null;
+        runnableWrapperRepeatingFuture2.setException(throwable3);
+        int int5 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int6 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        boolean boolean7 = runnableWrapperRepeatingFuture2.isDone();
+        int int8 = runnableWrapperRepeatingFuture2.getExpectedExecutions();
+        int int9 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        int int10 = runnableWrapperRepeatingFuture2.getCompletedExecutions();
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 97 + "'", int5 == 97);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 1 + "'", int6 == 1);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 97 + "'", int8 == 97);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 1 + "'", int9 == 1);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 1 + "'", int10 == 1);
     }
 }
 

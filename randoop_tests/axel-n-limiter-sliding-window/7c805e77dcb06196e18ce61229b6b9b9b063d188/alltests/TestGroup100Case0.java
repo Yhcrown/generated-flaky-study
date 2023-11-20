@@ -823,6 +823,15 @@ public class TestGroup100Case0 {
     public void test048() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test048");
+        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
+        long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + (-1L) + "'", long6 == (-1L));
+    }
+
+    @Test
+    public void test049() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test049");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -844,9 +853,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test049() throws Throwable {
+    public void test050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test049");
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -868,9 +877,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test050() throws Throwable {
+    public void test051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException1 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         reachedLimitException0.addSuppressed((java.lang.Throwable) reachedLimitException1);
@@ -879,9 +888,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test051() throws Throwable {
+    public void test052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+            System.out.format("%n%s%n", "TestGroup100Case0.test052");
         io.github.axel_n.limiter.Limiter[] limiterArray0 = new io.github.axel_n.limiter.Limiter[] {};
         java.util.ArrayList<io.github.axel_n.limiter.Limiter> limiterList1 = new java.util.ArrayList<io.github.axel_n.limiter.Limiter>();
         boolean boolean2 = java.util.Collections.addAll((java.util.Collection<io.github.axel_n.limiter.Limiter>) limiterList1, limiterArray0);
@@ -901,9 +910,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test052() throws Throwable {
+    public void test053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test052");
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -924,9 +933,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test053() throws Throwable {
+    public void test054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -943,18 +952,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test054() throws Throwable {
+    public void test055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+            System.out.format("%n%s%n", "TestGroup100Case0.test055");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 10, (int) (byte) 10, (long) 1, 100L, "");
         long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1L + "'", long6 == 1L);
     }
 
     @Test
-    public void test055() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test055");
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -984,16 +993,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test056() throws Throwable {
+    public void test057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+            System.out.format("%n%s%n", "TestGroup100Case0.test057");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) '4', (int) (byte) 1, 97L, (long) 32, "");
     }
 
     @Test
-    public void test057() throws Throwable {
+    public void test058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test057");
+            System.out.format("%n%s%n", "TestGroup100Case0.test058");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1010,9 +1019,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test058() throws Throwable {
+    public void test059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test058");
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1034,9 +1043,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test059() throws Throwable {
+    public void test060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1057,9 +1066,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test060() throws Throwable {
+    public void test061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         java.lang.String str7 = limiterConfig5.getInstanceName();
@@ -1070,9 +1079,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test061() throws Throwable {
+    public void test062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1089,9 +1098,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test062() throws Throwable {
+    public void test063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1104,9 +1113,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test063() throws Throwable {
+    public void test064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 100);
@@ -1123,18 +1132,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test064() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) ' ', (int) ' ', (long) ' ', (long) (byte) -1, "");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
     }
 
     @Test
-    public void test065() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         int int7 = limiterConfig5.getMaxRequestsInWindow();
@@ -1143,16 +1152,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (short) 10, 0, (long) (byte) 100, (long) (byte) 1, "");
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Class<?> wildcardClass2 = throwableArray1.getClass();
@@ -1161,9 +1170,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -1182,9 +1191,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1204,9 +1213,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1230,9 +1239,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+            System.out.format("%n%s%n", "TestGroup100Case0.test072");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1254,18 +1263,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test072");
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) 10, (int) 'a', (long) 32, (long) (byte) 10, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 97 + "'", int6 == 97);
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+            System.out.format("%n%s%n", "TestGroup100Case0.test074");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1282,9 +1291,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test074");
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1298,9 +1307,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1322,9 +1331,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+            System.out.format("%n%s%n", "TestGroup100Case0.test077");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1345,9 +1354,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test077() throws Throwable {
+    public void test078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test077");
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1368,9 +1377,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1392,9 +1401,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1412,9 +1421,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test080() throws Throwable {
+    public void test081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (-1), 0, (long) (byte) 1, (long) (-1), "");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         java.lang.String str7 = limiterConfig5.getInstanceName();
@@ -1423,9 +1432,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1441,9 +1450,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+            System.out.format("%n%s%n", "TestGroup100Case0.test083");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -1455,9 +1464,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test083");
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -1471,9 +1480,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1495,9 +1504,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test085() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1519,9 +1528,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1540,9 +1549,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1565,9 +1574,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -1584,18 +1593,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 10, (int) (byte) 10, (long) 1, 100L, "");
         java.lang.Class<?> wildcardClass6 = limiterConfig5.getClass();
         org.junit.Assert.assertNotNull(wildcardClass6);
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -1630,9 +1639,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1655,9 +1664,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1671,9 +1680,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1700,16 +1709,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test094() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) ' ', 10, (long) (byte) 10, (long) 1, "io.github.axel_n.limiter.exception.ReachedLimitException");
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -1742,9 +1751,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1762,9 +1771,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test097() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1789,9 +1798,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1818,9 +1827,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1842,9 +1851,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -1858,9 +1867,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test101() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1876,9 +1885,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -1905,9 +1914,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -1923,9 +1932,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
         int int7 = limiterConfig5.getMaxRequestsInWindow();
@@ -1936,9 +1945,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test105() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -1970,9 +1979,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -1984,9 +1993,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2008,16 +2017,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 10, (int) '4', (long) 97, (long) (short) 10, "");
     }
 
     @Test
-    public void test109() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2043,9 +2052,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2063,9 +2072,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2076,9 +2085,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2099,16 +2108,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, (int) (short) 100, (long) 32, 0L, "io.github.axel_n.limiter.exception.ReachedLimitException");
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2133,9 +2142,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2151,9 +2160,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2173,9 +2182,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -2188,9 +2197,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2211,9 +2220,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2228,9 +2237,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2247,9 +2256,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2271,9 +2280,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2282,9 +2291,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 100);
@@ -2303,18 +2312,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) 100, (int) ' ', (long) 32, (long) (byte) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 100L + "'", long6 == 100L);
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -2373,9 +2382,31 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
+        long long6 = limiterConfig5.getSizeWindowInMilliseconds();
+        long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
+        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow8 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
+        boolean boolean9 = limiterSlidingWindow8.isPossibleSendRequest();
+        limiterSlidingWindow8.writeHistory();
+        boolean boolean11 = limiterSlidingWindow8.isPossibleSendRequest();
+        io.github.axel_n.limiter.dto.LimiterType limiterType12 = limiterSlidingWindow8.getLimiterType();
+        limiterSlidingWindow8.writeHistory();
+        io.github.axel_n.limiter.dto.LimiterType limiterType14 = limiterSlidingWindow8.getLimiterType();
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + (-1L) + "'", long6 == (-1L));
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + (-1L) + "'", long7 == (-1L));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + limiterType12 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType12.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
+        org.junit.Assert.assertTrue("'" + limiterType14 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType14.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
+    }
+
+    @Test
+    public void test128() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2400,9 +2431,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test127() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2418,9 +2449,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2435,9 +2466,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2460,9 +2491,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2484,9 +2515,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 100);
@@ -2505,9 +2536,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2533,9 +2564,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2548,9 +2579,20 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test134() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
+        long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
+        int int7 = limiterConfig5.getMaxRequestsInWindow();
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 10L + "'", long6 == 10L);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 1 + "'", int7 == 1);
+    }
+
+    @Test
+    public void test137() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2567,9 +2609,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test135() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2588,9 +2630,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         java.util.concurrent.TimeUnit timeUnit2 = null;
         // The following exception was thrown during execution in test generation
@@ -2603,9 +2645,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2615,9 +2657,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2634,9 +2676,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2651,9 +2693,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2669,9 +2711,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2685,9 +2727,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2707,9 +2749,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException2 = new io.github.axel_n.limiter.exception.ReachedLimitException();
@@ -2730,9 +2772,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test144() throws Throwable {
+    public void test147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -2747,9 +2789,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test145() throws Throwable {
+    public void test148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2772,9 +2814,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2794,9 +2836,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2815,9 +2857,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2838,9 +2880,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test149() throws Throwable {
+    public void test152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -2860,9 +2902,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test150() throws Throwable {
+    public void test153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2879,9 +2921,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test151() throws Throwable {
+    public void test154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+            System.out.format("%n%s%n", "TestGroup100Case0.test154");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -2894,9 +2936,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test152() throws Throwable {
+    public void test155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2908,9 +2950,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test153() throws Throwable {
+    public void test156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -2925,9 +2967,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test154() throws Throwable {
+    public void test157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test154");
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 10, (int) (byte) 10, (long) 1, 100L, "");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -2943,9 +2985,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test155() throws Throwable {
+    public void test158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -2980,9 +3022,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test156() throws Throwable {
+    public void test159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+            System.out.format("%n%s%n", "TestGroup100Case0.test159");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3010,9 +3052,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test157() throws Throwable {
+    public void test160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3033,9 +3075,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test158() throws Throwable {
+    public void test161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3060,9 +3102,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test159() throws Throwable {
+    public void test162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3089,9 +3131,24 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
+        java.lang.String str6 = limiterConfig5.getInstanceName();
+        long long7 = limiterConfig5.getSizeWindowInMilliseconds();
+        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow8 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
+        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow9 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
+        io.github.axel_n.limiter.dto.LimiterType limiterType10 = limiterSlidingWindow9.getLimiterType();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "io.github.axel_n.limiter.exception.ReachedLimitException" + "'", str6, "io.github.axel_n.limiter.exception.ReachedLimitException");
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 97L + "'", long7 == 97L);
+        org.junit.Assert.assertTrue("'" + limiterType10 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType10.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
+    }
+
+    @Test
+    public void test164() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(1L, 0, (long) 1, 0L, "");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         int int7 = limiterConfig5.getMaxRequestsInWindow();
@@ -3100,9 +3157,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test161() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3120,9 +3177,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException1 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         reachedLimitException0.addSuppressed((java.lang.Throwable) reachedLimitException1);
@@ -3133,9 +3190,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 100);
@@ -3150,9 +3207,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder2 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 0);
         java.util.concurrent.TimeUnit timeUnit4 = null;
@@ -3167,9 +3224,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test165() throws Throwable {
+    public void test169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -3183,18 +3240,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test166() throws Throwable {
+    public void test170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) 10, (int) (byte) 0, (long) (byte) 0, 100L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
     }
 
     @Test
-    public void test167() throws Throwable {
+    public void test171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -3219,9 +3276,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test168() throws Throwable {
+    public void test172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3246,9 +3303,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test169() throws Throwable {
+    public void test173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3264,9 +3321,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test170() throws Throwable {
+    public void test174() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+            System.out.format("%n%s%n", "TestGroup100Case0.test174");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3279,9 +3336,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test171() throws Throwable {
+    public void test175() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder2 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 0);
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder4 = limiterConfigBuilder2.setInstanceName("io.github.axel_n.limiter.exception.ReachedLimitException");
@@ -3290,9 +3347,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test172() throws Throwable {
+    public void test176() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setMaxRequestsInWindow((int) (short) 100);
@@ -3311,9 +3368,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test173() throws Throwable {
+    public void test177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3333,9 +3390,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test174() throws Throwable {
+    public void test178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -3370,9 +3427,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test175() throws Throwable {
+    public void test179() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+            System.out.format("%n%s%n", "TestGroup100Case0.test179");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -3483,9 +3540,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test176() throws Throwable {
+    public void test180() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+            System.out.format("%n%s%n", "TestGroup100Case0.test180");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3510,9 +3567,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test177() throws Throwable {
+    public void test181() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+            System.out.format("%n%s%n", "TestGroup100Case0.test181");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3539,9 +3596,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test178() throws Throwable {
+    public void test182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3566,9 +3623,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test179() throws Throwable {
+    public void test183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test179");
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3593,9 +3650,23 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test180() throws Throwable {
+    public void test184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+            System.out.format("%n%s%n", "TestGroup100Case0.test184");
+        io.github.axel_n.limiter.Limiter[] limiterArray0 = new io.github.axel_n.limiter.Limiter[] {};
+        java.util.ArrayList<io.github.axel_n.limiter.Limiter> limiterList1 = new java.util.ArrayList<io.github.axel_n.limiter.Limiter>();
+        boolean boolean2 = java.util.Collections.addAll((java.util.Collection<io.github.axel_n.limiter.Limiter>) limiterList1, limiterArray0);
+        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect3 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
+        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect4 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
+        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect5 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
+        org.junit.Assert.assertNotNull(limiterArray0);
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+    }
+
+    @Test
+    public void test185() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3614,9 +3685,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test181() throws Throwable {
+    public void test186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+            System.out.format("%n%s%n", "TestGroup100Case0.test186");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder2 = limiterConfigBuilder0.setInstanceName("");
         java.util.concurrent.TimeUnit timeUnit4 = null;
@@ -3631,9 +3702,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test182() throws Throwable {
+    public void test187() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+            System.out.format("%n%s%n", "TestGroup100Case0.test187");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3649,9 +3720,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test183() throws Throwable {
+    public void test188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test183");
+            System.out.format("%n%s%n", "TestGroup100Case0.test188");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         java.lang.Throwable[] throwableArray2 = reachedLimitException0.getSuppressed();
@@ -3696,9 +3767,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test184() throws Throwable {
+    public void test189() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test184");
+            System.out.format("%n%s%n", "TestGroup100Case0.test189");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3717,9 +3788,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test185() throws Throwable {
+    public void test190() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3738,9 +3809,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test186() throws Throwable {
+    public void test191() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test186");
+            System.out.format("%n%s%n", "TestGroup100Case0.test191");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -3759,9 +3830,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test187() throws Throwable {
+    public void test192() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test187");
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -3777,9 +3848,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test188() throws Throwable {
+    public void test193() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test188");
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException2 = new io.github.axel_n.limiter.exception.ReachedLimitException();
@@ -3822,9 +3893,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test189() throws Throwable {
+    public void test194() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test189");
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -3840,9 +3911,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test190() throws Throwable {
+    public void test195() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test190");
+            System.out.format("%n%s%n", "TestGroup100Case0.test195");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -3869,9 +3940,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test191() throws Throwable {
+    public void test196() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test191");
+            System.out.format("%n%s%n", "TestGroup100Case0.test196");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3888,16 +3959,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test192() throws Throwable {
+    public void test197() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+            System.out.format("%n%s%n", "TestGroup100Case0.test197");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(97L, (int) (short) 10, 97L, (long) (byte) -1, "io.github.axel_n.limiter.exception.ReachedLimitException");
     }
 
     @Test
-    public void test193() throws Throwable {
+    public void test198() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+            System.out.format("%n%s%n", "TestGroup100Case0.test198");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(1L, 0, (long) 1, 0L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -3906,9 +3977,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test194() throws Throwable {
+    public void test199() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+            System.out.format("%n%s%n", "TestGroup100Case0.test199");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -3925,9 +3996,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test195() throws Throwable {
+    public void test200() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test195");
+            System.out.format("%n%s%n", "TestGroup100Case0.test200");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -3947,9 +4018,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test196() throws Throwable {
+    public void test201() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test196");
+            System.out.format("%n%s%n", "TestGroup100Case0.test201");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -3982,9 +4053,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test197() throws Throwable {
+    public void test202() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test197");
+            System.out.format("%n%s%n", "TestGroup100Case0.test202");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4004,9 +4075,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test198() throws Throwable {
+    public void test203() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test198");
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4025,9 +4096,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test199() throws Throwable {
+    public void test204() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test199");
+            System.out.format("%n%s%n", "TestGroup100Case0.test204");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4052,9 +4123,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test200() throws Throwable {
+    public void test205() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test200");
+            System.out.format("%n%s%n", "TestGroup100Case0.test205");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4066,9 +4137,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test201() throws Throwable {
+    public void test206() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test201");
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -4086,9 +4157,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test202() throws Throwable {
+    public void test207() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test202");
+            System.out.format("%n%s%n", "TestGroup100Case0.test207");
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException0 = new io.github.axel_n.limiter.exception.ReachedLimitException();
         java.lang.Throwable[] throwableArray1 = reachedLimitException0.getSuppressed();
         io.github.axel_n.limiter.exception.ReachedLimitException reachedLimitException2 = new io.github.axel_n.limiter.exception.ReachedLimitException();
@@ -4109,9 +4180,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test203() throws Throwable {
+    public void test208() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+            System.out.format("%n%s%n", "TestGroup100Case0.test208");
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder0 = new io.github.axel_n.limiter.config.LimiterConfigBuilder();
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig1 = limiterConfigBuilder0.build();
         io.github.axel_n.limiter.config.LimiterConfigBuilder limiterConfigBuilder3 = limiterConfigBuilder0.setInstanceName("");
@@ -4128,9 +4199,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test204() throws Throwable {
+    public void test209() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test204");
+            System.out.format("%n%s%n", "TestGroup100Case0.test209");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -4141,9 +4212,9 @@ public class TestGroup100Case0 {
         java.lang.Runnable runnable12 = null;
         // The following exception was thrown during execution in test generation
         try {
-            limiterSlidingWindow7.executeOrThrowException(runnable12);
-            org.junit.Assert.fail("Expected exception of type io.github.axel_n.limiter.exception.ReachedLimitException; message: null");
-        } catch (io.github.axel_n.limiter.exception.ReachedLimitException e) {
+// flaky:             limiterSlidingWindow7.executeOrThrowException(runnable12);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
         org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
@@ -4152,9 +4223,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test205() throws Throwable {
+    public void test210() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test205");
+            System.out.format("%n%s%n", "TestGroup100Case0.test210");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 10, (int) (byte) 10, (long) 1, 100L, "");
         long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -4170,9 +4241,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test206() throws Throwable {
+    public void test211() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4189,9 +4260,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test207() throws Throwable {
+    public void test212() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test207");
+            System.out.format("%n%s%n", "TestGroup100Case0.test212");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -4210,9 +4281,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test208() throws Throwable {
+    public void test213() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test208");
+            System.out.format("%n%s%n", "TestGroup100Case0.test213");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -4227,9 +4298,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test209() throws Throwable {
+    public void test214() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test209");
+            System.out.format("%n%s%n", "TestGroup100Case0.test214");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
         java.lang.String str6 = limiterConfig5.getInstanceName();
         long long7 = limiterConfig5.getSizeWindowInMilliseconds();
@@ -4246,9 +4317,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test210() throws Throwable {
+    public void test215() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test210");
+            System.out.format("%n%s%n", "TestGroup100Case0.test215");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow7 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
@@ -4262,9 +4333,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test211() throws Throwable {
+    public void test216() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+            System.out.format("%n%s%n", "TestGroup100Case0.test216");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4289,9 +4360,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test212() throws Throwable {
+    public void test217() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test212");
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         int int6 = limiterConfig5.getMaxRequestsInWindow();
         long long7 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
@@ -4305,9 +4376,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test213() throws Throwable {
+    public void test218() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test213");
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
         long long6 = limiterConfig5.getSizeWindowInMilliseconds();
         long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
@@ -4326,9 +4397,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test214() throws Throwable {
+    public void test219() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test214");
+            System.out.format("%n%s%n", "TestGroup100Case0.test219");
         io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (short) -1, (long) 100, "");
         long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
         int int7 = limiterConfig5.getMaxRequestsInWindow();
@@ -4338,136 +4409,5 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertTrue("'" + long9 + "' != '" + 100L + "'", long9 == 100L);
-    }
-
-    @Test
-    public void test215() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test215");
-        io.github.axel_n.limiter.Limiter[] limiterArray0 = new io.github.axel_n.limiter.Limiter[] {};
-        java.util.ArrayList<io.github.axel_n.limiter.Limiter> limiterList1 = new java.util.ArrayList<io.github.axel_n.limiter.Limiter>();
-        boolean boolean2 = java.util.Collections.addAll((java.util.Collection<io.github.axel_n.limiter.Limiter>) limiterList1, limiterArray0);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect3 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect4 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect5 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        org.aspectj.lang.ProceedingJoinPoint proceedingJoinPoint6 = null;
-        io.github.axel_n.limiter.annotation.LimiterConfig limiterConfig7 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            java.lang.Object obj8 = limiterAspect5.process(proceedingJoinPoint6, limiterConfig7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-            // Expected exception.
-        }
-        org.junit.Assert.assertNotNull(limiterArray0);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-    }
-
-    @Test
-    public void test216() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test216");
-        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) 'a', (int) ' ', 10L, (long) 10, "io.github.axel_n.limiter.exception.ReachedLimitException");
-        java.lang.String str6 = limiterConfig5.getInstanceName();
-        long long7 = limiterConfig5.getSizeWindowInMilliseconds();
-        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow8 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
-        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow9 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
-        io.github.axel_n.limiter.dto.LimiterType limiterType10 = limiterSlidingWindow9.getLimiterType();
-        java.lang.Runnable runnable11 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            limiterSlidingWindow9.executeOrWait(runnable11, (long) (byte) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-            // Expected exception.
-        }
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "io.github.axel_n.limiter.exception.ReachedLimitException" + "'", str6, "io.github.axel_n.limiter.exception.ReachedLimitException");
-        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 97L + "'", long7 == 97L);
-        org.junit.Assert.assertTrue("'" + limiterType10 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType10.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
-    }
-
-    @Test
-    public void test217() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test217");
-        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(0L, 1, (long) 10, 10L, "io.github.axel_n.limiter.exception.ReachedLimitException");
-        long long6 = limiterConfig5.getMaxAwaitExecutionTimeInMilliseconds();
-        int int7 = limiterConfig5.getMaxRequestsInWindow();
-        java.lang.String str8 = limiterConfig5.getInstanceName();
-        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 10L + "'", long6 == 10L);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 1 + "'", int7 == 1);
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "io.github.axel_n.limiter.exception.ReachedLimitException" + "'", str8, "io.github.axel_n.limiter.exception.ReachedLimitException");
-    }
-
-    @Test
-    public void test218() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test218");
-        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig(100L, (int) (byte) 100, (long) (short) -1, (long) 10, "hi!");
-        long long6 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
-        long long7 = limiterConfig5.getSizeWindowInMilliseconds();
-        org.junit.Assert.assertTrue("'" + long6 + "' != '" + (-1L) + "'", long6 == (-1L));
-        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 100L + "'", long7 == 100L);
-    }
-
-    @Test
-    public void test219() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test219");
-        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
-        long long6 = limiterConfig5.getSizeWindowInMilliseconds();
-        long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
-        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow8 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
-        boolean boolean9 = limiterSlidingWindow8.isPossibleSendRequest();
-        limiterSlidingWindow8.writeHistory();
-        boolean boolean11 = limiterSlidingWindow8.isPossibleSendRequest();
-        io.github.axel_n.limiter.dto.LimiterType limiterType12 = limiterSlidingWindow8.getLimiterType();
-        limiterSlidingWindow8.writeHistory();
-        io.github.axel_n.limiter.dto.LimiterType limiterType14 = limiterSlidingWindow8.getLimiterType();
-        boolean boolean15 = limiterSlidingWindow8.isPossibleSendRequest();
-        org.junit.Assert.assertTrue("'" + long6 + "' != '" + (-1L) + "'", long6 == (-1L));
-        org.junit.Assert.assertTrue("'" + long7 + "' != '" + (-1L) + "'", long7 == (-1L));
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + limiterType12 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType12.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
-        org.junit.Assert.assertTrue("'" + limiterType14 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType14.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
-// flaky:         org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
-    }
-
-    @Test
-    public void test220() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test220");
-        io.github.axel_n.limiter.config.LimiterConfig limiterConfig5 = new io.github.axel_n.limiter.config.LimiterConfig((long) (byte) -1, (-1), (long) (-1), 1L, "");
-        long long6 = limiterConfig5.getSizeWindowInMilliseconds();
-        long long7 = limiterConfig5.getPeriodForCheckExecutionInMilliseconds();
-        io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow limiterSlidingWindow8 = new io.github.axel_n.limiter.sliding_window.LimiterSlidingWindow(limiterConfig5);
-        boolean boolean9 = limiterSlidingWindow8.isPossibleSendRequest();
-        limiterSlidingWindow8.writeHistory();
-        io.github.axel_n.limiter.dto.LimiterType limiterType11 = limiterSlidingWindow8.getLimiterType();
-        limiterSlidingWindow8.writeHistory();
-        java.lang.String str13 = limiterSlidingWindow8.getInstanceName();
-        java.lang.String str14 = limiterSlidingWindow8.getInstanceName();
-        org.junit.Assert.assertTrue("'" + long6 + "' != '" + (-1L) + "'", long6 == (-1L));
-        org.junit.Assert.assertTrue("'" + long7 + "' != '" + (-1L) + "'", long7 == (-1L));
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + limiterType11 + "' != '" + io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW + "'", limiterType11.equals(io.github.axel_n.limiter.dto.LimiterType.SLIDING_WINDOW));
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "" + "'", str13, "");
-        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "" + "'", str14, "");
-    }
-
-    @Test
-    public void test221() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test221");
-        io.github.axel_n.limiter.Limiter[] limiterArray0 = new io.github.axel_n.limiter.Limiter[] {};
-        java.util.ArrayList<io.github.axel_n.limiter.Limiter> limiterList1 = new java.util.ArrayList<io.github.axel_n.limiter.Limiter>();
-        boolean boolean2 = java.util.Collections.addAll((java.util.Collection<io.github.axel_n.limiter.Limiter>) limiterList1, limiterArray0);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect3 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect4 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect5 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        io.github.axel_n.limiter.annotation.LimiterAspect limiterAspect6 = new io.github.axel_n.limiter.annotation.LimiterAspect((java.util.List<io.github.axel_n.limiter.Limiter>) limiterList1);
-        org.junit.Assert.assertNotNull(limiterArray0);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
     }
 }

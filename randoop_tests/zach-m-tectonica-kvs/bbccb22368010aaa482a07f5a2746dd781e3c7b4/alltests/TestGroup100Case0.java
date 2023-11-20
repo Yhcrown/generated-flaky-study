@@ -322,110 +322,6 @@ public class TestGroup100Case0 {
     public void test013() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test013");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet11 = eventTypeSerializerInMemKeyValueStore8.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet16 = eventTypeSerializerInMemKeyValueStore13.keySet();
-        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore8.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater18 = null;
-        int int19 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16, strUpdater18);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper20 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore21 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper20);
-        int int22 = eventTypeSerializerInMemKeyValueStore21.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer23 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList24 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean25 = eventTypeSerializerList24.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer23);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor26 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList24);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean30 = eventTypeSerializerInMemKeyValueStore28.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
-        boolean boolean31 = eventTypeSerializerInMemKeyValueStore21.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper32 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore33 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper32);
-        int int34 = eventTypeSerializerInMemKeyValueStore33.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer35 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList36 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean37 = eventTypeSerializerList36.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer35);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor38 = eventTypeSerializerInMemKeyValueStore33.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList36);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper39 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore40 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper39);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer41 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean42 = eventTypeSerializerInMemKeyValueStore40.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer41);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet43 = eventTypeSerializerInMemKeyValueStore40.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper44 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore45 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper44);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean47 = eventTypeSerializerInMemKeyValueStore45.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet48 = eventTypeSerializerInMemKeyValueStore45.keySet();
-        java.util.List<java.lang.String> strList49 = eventTypeSerializerInMemKeyValueStore40.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet48);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater50 = null;
-        int int51 = eventTypeSerializerInMemKeyValueStore33.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet48, strUpdater50);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor53 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet48, true);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper54 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore55 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper54);
-        int int56 = eventTypeSerializerInMemKeyValueStore55.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer57 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList58 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean59 = eventTypeSerializerList58.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer57);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor60 = eventTypeSerializerInMemKeyValueStore55.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList58);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper61 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore62 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper61);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer63 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean64 = eventTypeSerializerInMemKeyValueStore62.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63);
-        boolean boolean65 = eventTypeSerializerInMemKeyValueStore55.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63);
-        java.lang.String str66 = eventTypeSerializerInMemKeyValueStore21.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63);
-        java.lang.String str68 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63, true);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet11);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet16);
-        org.junit.Assert.assertNotNull(strList17);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 0 + "'", int22 == 0);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor26);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
-        org.junit.Assert.assertTrue("'" + int34 + "' != '" + 0 + "'", int34 == 0);
-        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + true + "'", boolean37 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor38);
-        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet43);
-        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet48);
-        org.junit.Assert.assertNotNull(strList49);
-        org.junit.Assert.assertTrue("'" + int51 + "' != '" + 0 + "'", int51 == 0);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor53);
-        org.junit.Assert.assertTrue("'" + int56 + "' != '" + 0 + "'", int56 == 0);
-        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + true + "'", boolean59 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor60);
-        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
-        org.junit.Assert.assertTrue("'" + boolean65 + "' != '" + false + "'", boolean65 == false);
-        org.junit.Assert.assertNull(str66);
-        org.junit.Assert.assertNull(str68);
-    }
-
-    @Test
-    public void test014() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test014");
         java.lang.Class<com.tectonica.kvs.KeyValueStore.EventType> eventTypeClass0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, com.tectonica.kvs.KeyValueStore.EventType> strKeyMapper2 = null;
         // The following exception was thrown during execution in test generation
@@ -438,9 +334,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test015() throws Throwable {
+    public void test014() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test015");
+            System.out.format("%n%s%n", "TestGroup100Case0.test014");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -498,9 +394,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test016() throws Throwable {
+    public void test015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test016");
+            System.out.format("%n%s%n", "TestGroup100Case0.test015");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -529,16 +425,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test017() throws Throwable {
+    public void test016() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test017");
+            System.out.format("%n%s%n", "TestGroup100Case0.test016");
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>>> serializableKeyValueKryoSerializer0 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>>>();
     }
 
     @Test
-    public void test018() throws Throwable {
+    public void test017() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test018");
+            System.out.format("%n%s%n", "TestGroup100Case0.test017");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -635,9 +531,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test019() throws Throwable {
+    public void test018() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test019");
+            System.out.format("%n%s%n", "TestGroup100Case0.test018");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -745,9 +641,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test020() throws Throwable {
+    public void test019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test020");
+            System.out.format("%n%s%n", "TestGroup100Case0.test019");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -801,9 +697,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test021() throws Throwable {
+    public void test020() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test021");
+            System.out.format("%n%s%n", "TestGroup100Case0.test020");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -831,17 +727,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test022() throws Throwable {
+    public void test021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test022");
+            System.out.format("%n%s%n", "TestGroup100Case0.test021");
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.util.Iterator<java.lang.String>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> strItorKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<java.util.Iterator<java.lang.String>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> strItorInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<java.util.Iterator<java.lang.String>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>>(strItorKeyMapper0);
     }
 
     @Test
-    public void test023() throws Throwable {
+    public void test022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test023");
+            System.out.format("%n%s%n", "TestGroup100Case0.test022");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -863,9 +759,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test024() throws Throwable {
+    public void test023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test024");
+            System.out.format("%n%s%n", "TestGroup100Case0.test023");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -890,9 +786,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test025() throws Throwable {
+    public void test024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test025");
+            System.out.format("%n%s%n", "TestGroup100Case0.test024");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -1014,9 +910,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test026() throws Throwable {
+    public void test025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test026");
+            System.out.format("%n%s%n", "TestGroup100Case0.test025");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1047,9 +943,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test027() throws Throwable {
+    public void test026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test027");
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1074,9 +970,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test028() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test028");
+            System.out.format("%n%s%n", "TestGroup100Case0.test027");
         com.tectonica.kvs.impl.GaeKeyValueStore.Config<java.io.Serializable> serializableConfig0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, java.io.Serializable> strKeyMapper1 = null;
         // The following exception was thrown during execution in test generation
@@ -1089,9 +985,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test029() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+            System.out.format("%n%s%n", "TestGroup100Case0.test028");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -1133,9 +1029,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test030() throws Throwable {
+    public void test029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -1178,9 +1074,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test031() throws Throwable {
+    public void test030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test031");
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -1245,9 +1141,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test032() throws Throwable {
+    public void test031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test032");
+            System.out.format("%n%s%n", "TestGroup100Case0.test031");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1352,9 +1248,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test033() throws Throwable {
+    public void test032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test033");
+            System.out.format("%n%s%n", "TestGroup100Case0.test032");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1479,9 +1375,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test034() throws Throwable {
+    public void test033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test034");
+            System.out.format("%n%s%n", "TestGroup100Case0.test033");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -1504,9 +1400,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test035() throws Throwable {
+    public void test034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test035");
+            System.out.format("%n%s%n", "TestGroup100Case0.test034");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1604,9 +1500,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test036() throws Throwable {
+    public void test035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test036");
+            System.out.format("%n%s%n", "TestGroup100Case0.test035");
         com.tectonica.kvs.impl.GaeKeyValueStore.Config<java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeEnumConfig0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> strKeyMapper1 = null;
         // The following exception was thrown during execution in test generation
@@ -1619,9 +1515,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test037() throws Throwable {
+    public void test036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test037");
+            System.out.format("%n%s%n", "TestGroup100Case0.test036");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1746,9 +1642,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test038() throws Throwable {
+    public void test037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test038");
+            System.out.format("%n%s%n", "TestGroup100Case0.test037");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -1767,9 +1663,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test039() throws Throwable {
+    public void test038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test039");
+            System.out.format("%n%s%n", "TestGroup100Case0.test038");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -1915,9 +1811,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test040() throws Throwable {
+    public void test039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test040");
+            System.out.format("%n%s%n", "TestGroup100Case0.test039");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -1939,9 +1835,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test041() throws Throwable {
+    public void test040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test041");
+            System.out.format("%n%s%n", "TestGroup100Case0.test040");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -2044,9 +1940,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test042() throws Throwable {
+    public void test041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test042");
+            System.out.format("%n%s%n", "TestGroup100Case0.test041");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -2146,9 +2042,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test043() throws Throwable {
+    public void test042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test043");
+            System.out.format("%n%s%n", "TestGroup100Case0.test042");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -2228,9 +2124,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test044() throws Throwable {
+    public void test043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test044");
+            System.out.format("%n%s%n", "TestGroup100Case0.test043");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2363,9 +2259,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test045() throws Throwable {
+    public void test044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test045");
+            System.out.format("%n%s%n", "TestGroup100Case0.test044");
         com.tectonica.kvs.impl.GaeKeyValueStore.Config<com.tectonica.kvs.KeyValueStore.EventType> eventTypeConfig0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, com.tectonica.kvs.KeyValueStore.EventType> strKeyMapper1 = null;
         // The following exception was thrown during execution in test generation
@@ -2378,9 +2274,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test046() throws Throwable {
+    public void test045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test046");
+            System.out.format("%n%s%n", "TestGroup100Case0.test045");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2476,9 +2372,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test047() throws Throwable {
+    public void test046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test047");
+            System.out.format("%n%s%n", "TestGroup100Case0.test046");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2610,9 +2506,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test048() throws Throwable {
+    public void test047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+            System.out.format("%n%s%n", "TestGroup100Case0.test047");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2742,9 +2638,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test049() throws Throwable {
+    public void test048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test049");
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2768,9 +2664,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test050() throws Throwable {
+    public void test049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+            System.out.format("%n%s%n", "TestGroup100Case0.test049");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -2906,9 +2802,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test051() throws Throwable {
+    public void test050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -3011,9 +2907,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test052() throws Throwable {
+    public void test051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test052");
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
         java.lang.Class<java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeEnumClass0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> strKeyMapper2 = null;
         // The following exception was thrown during execution in test generation
@@ -3026,9 +2922,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test053() throws Throwable {
+    public void test052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+            System.out.format("%n%s%n", "TestGroup100Case0.test052");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -3062,9 +2958,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test054() throws Throwable {
+    public void test053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
         java.lang.Class<java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>> eventTypeSerializerListClass0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>> strKeyMapper2 = null;
         // The following exception was thrown during execution in test generation
@@ -3077,71 +2973,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test055() throws Throwable {
+    public void test054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test055");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
-        int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer4 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList5 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean6 = eventTypeSerializerList5.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer4);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor7 = eventTypeSerializerInMemKeyValueStore2.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList5);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper8 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore9 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper8);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean11 = eventTypeSerializerInMemKeyValueStore9.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer12 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList13 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean14 = eventTypeSerializerList13.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer12);
-        java.util.Iterator<java.lang.String> strItor16 = eventTypeSerializerInMemKeyValueStore9.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13, false);
-        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore2.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer22 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList23 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean24 = eventTypeSerializerList23.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer22);
-        java.util.Iterator<java.lang.String> strItor26 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23, false);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
-        int int29 = eventTypeSerializerInMemKeyValueStore28.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer30 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList31 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean32 = eventTypeSerializerList31.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor33 = eventTypeSerializerInMemKeyValueStore28.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList31);
-        java.util.Iterator<java.lang.String> strItor34 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList31);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet35 = eventTypeSerializerInMemKeyValueStore19.keySet();
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor37 = eventTypeSerializerInMemKeyValueStore2.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet35, true);
-        com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> serializableKeyValue38 = com.tectonica.kvs.KvsUtil.keyValueOf((java.io.Serializable) 100L, (com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>) eventTypeSerializerInMemKeyValueStore2);
-        java.io.Serializable serializable39 = serializableKeyValue38.getKey();
-        com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerAbstractKeyValueStore40 = serializableKeyValue38.getValue();
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor7);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
-        org.junit.Assert.assertNotNull(strItor16);
-        org.junit.Assert.assertNotNull(strList17);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
-        org.junit.Assert.assertNotNull(strItor26);
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 0 + "'", int29 == 0);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor33);
-        org.junit.Assert.assertNotNull(strItor34);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet35);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor37);
-        org.junit.Assert.assertNotNull(serializableKeyValue38);
-        org.junit.Assert.assertEquals("'" + serializable39 + "' != '" + 100L + "'", serializable39, 100L);
-        org.junit.Assert.assertNotNull(eventTypeSerializerAbstractKeyValueStore40);
-    }
-
-    @Test
-    public void test056() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3220,9 +3054,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test057() throws Throwable {
+    public void test055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test057");
+            System.out.format("%n%s%n", "TestGroup100Case0.test055");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -3313,9 +3147,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test058() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test058");
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3442,9 +3276,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test059() throws Throwable {
+    public void test057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+            System.out.format("%n%s%n", "TestGroup100Case0.test057");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -3482,9 +3316,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test060() throws Throwable {
+    public void test058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+            System.out.format("%n%s%n", "TestGroup100Case0.test058");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3606,9 +3440,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test061() throws Throwable {
+    public void test059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3644,119 +3478,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test062() throws Throwable {
+    public void test060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.Comparable<java.lang.String>, java.io.Serializable> strComparableKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<java.lang.Comparable<java.lang.String>, java.io.Serializable> strComparableInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<java.lang.Comparable<java.lang.String>, java.io.Serializable>(strComparableKeyMapper0);
     }
 
     @Test
-    public void test063() throws Throwable {
+    public void test061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test063");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
-        boolean boolean11 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor12 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper13 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore14 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper13);
-        int int15 = eventTypeSerializerInMemKeyValueStore14.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer16 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList17 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean18 = eventTypeSerializerList17.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer16);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor19 = eventTypeSerializerInMemKeyValueStore14.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList17);
-        java.util.List<java.lang.String> strList20 = eventTypeSerializerInMemKeyValueStore14.values();
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet21 = eventTypeSerializerInMemKeyValueStore14.keySet();
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet22 = eventTypeSerializerInMemKeyValueStore14.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper23 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore24 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper23);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean26 = eventTypeSerializerInMemKeyValueStore24.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
-        java.util.List<java.lang.String> strList27 = eventTypeSerializerInMemKeyValueStore24.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper28 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore29 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper28);
-        int int30 = eventTypeSerializerInMemKeyValueStore29.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList32 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean33 = eventTypeSerializerList32.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor34 = eventTypeSerializerInMemKeyValueStore29.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper35 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore36 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper35);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean38 = eventTypeSerializerInMemKeyValueStore36.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
-        boolean boolean39 = eventTypeSerializerInMemKeyValueStore29.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper40 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore41 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper40);
-        int int42 = eventTypeSerializerInMemKeyValueStore41.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList44 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean45 = eventTypeSerializerList44.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor46 = eventTypeSerializerInMemKeyValueStore41.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList44);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper47 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore48 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper47);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean50 = eventTypeSerializerInMemKeyValueStore48.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet51 = eventTypeSerializerInMemKeyValueStore48.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper52 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore53 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper52);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean55 = eventTypeSerializerInMemKeyValueStore53.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet56 = eventTypeSerializerInMemKeyValueStore53.keySet();
-        java.util.List<java.lang.String> strList57 = eventTypeSerializerInMemKeyValueStore48.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater58 = null;
-        int int59 = eventTypeSerializerInMemKeyValueStore41.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56, strUpdater58);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor61 = eventTypeSerializerInMemKeyValueStore29.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56, true);
-        java.util.Iterator<java.lang.String> strItor62 = eventTypeSerializerInMemKeyValueStore24.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56);
-        java.util.Iterator<java.lang.String> strItor63 = eventTypeSerializerInMemKeyValueStore14.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56);
-        java.util.List<java.lang.String> strList64 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet56);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor12);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor19);
-        org.junit.Assert.assertNotNull(strList20);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet21);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet22);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(strList27);
-        org.junit.Assert.assertTrue("'" + int30 + "' != '" + 0 + "'", int30 == 0);
-        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor34);
-        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
-        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
-        org.junit.Assert.assertTrue("'" + int42 + "' != '" + 0 + "'", int42 == 0);
-        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + true + "'", boolean45 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor46);
-        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet51);
-        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + false + "'", boolean55 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet56);
-        org.junit.Assert.assertNotNull(strList57);
-        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor61);
-        org.junit.Assert.assertNotNull(strItor62);
-        org.junit.Assert.assertNotNull(strItor63);
-        org.junit.Assert.assertNotNull(strList64);
-    }
-
-    @Test
-    public void test064() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper2 = null;
@@ -3821,9 +3553,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test065() throws Throwable {
+    public void test062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3939,9 +3671,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -3963,9 +3695,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4019,9 +3751,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4115,9 +3847,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4197,9 +3929,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4211,9 +3943,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper2 = null;
@@ -4265,9 +3997,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test072");
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4311,9 +4043,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4355,9 +4087,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test074");
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4387,18 +4119,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+            System.out.format("%n%s%n", "TestGroup100Case0.test072");
         java.util.Iterator<java.lang.String> strItor0 = null;
         java.lang.Iterable<java.lang.String> strIterable1 = com.tectonica.kvs.KvsUtil.iterableOf(strItor0);
         org.junit.Assert.assertNotNull(strIterable1);
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4528,9 +4260,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test077() throws Throwable {
+    public void test074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test077");
+            System.out.format("%n%s%n", "TestGroup100Case0.test074");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
@@ -4584,9 +4316,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4650,9 +4382,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4687,9 +4419,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test080() throws Throwable {
+    public void test077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+            System.out.format("%n%s%n", "TestGroup100Case0.test077");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4756,9 +4488,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4788,9 +4520,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -4857,9 +4589,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test083");
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -4889,104 +4621,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test084");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
-        int int9 = eventTypeSerializerInMemKeyValueStore8.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList11 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean12 = eventTypeSerializerList11.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor13 = eventTypeSerializerInMemKeyValueStore8.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList11);
-        java.util.List<java.lang.String> strList14 = eventTypeSerializerInMemKeyValueStore8.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper15 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore16 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper15);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer17 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean18 = eventTypeSerializerInMemKeyValueStore16.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer17);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet19 = eventTypeSerializerInMemKeyValueStore16.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore16.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, "");
-        boolean boolean23 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer28 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList29 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean30 = eventTypeSerializerList29.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28);
-        java.util.Iterator<java.lang.String> strItor32 = eventTypeSerializerInMemKeyValueStore25.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29, false);
-        java.lang.String str33 = com.tectonica.kvs.KvsUtil.firstOf(strItor32);
-        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue34 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, strItor32);
-        java.lang.String str36 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, true);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet37 = eventTypeSerializerInMemKeyValueStore1.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper38 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore39 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper38);
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor40 = eventTypeSerializerInMemKeyValueStore39.keyIterator();
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor41 = eventTypeSerializerInMemKeyValueStore39.keyIterator();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper42 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore43 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper42);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer44 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean45 = eventTypeSerializerInMemKeyValueStore43.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer44);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList47 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean48 = eventTypeSerializerList47.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
-        java.util.Iterator<java.lang.String> strItor50 = eventTypeSerializerInMemKeyValueStore43.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList47, false);
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor51 = eventTypeSerializerInMemKeyValueStore43.keyIterator();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore43.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52, "hi!");
-        eventTypeSerializerInMemKeyValueStore39.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52, "hi!");
-        java.util.concurrent.locks.Lock lock57 = eventTypeSerializerInMemKeyValueStore1.getModificationLock((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean61 = eventTypeSerializerInMemKeyValueStore59.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet62 = eventTypeSerializerInMemKeyValueStore59.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer63 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore59.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63, "");
-        java.lang.String str67 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63, false);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet68 = eventTypeSerializerInMemKeyValueStore1.keySet();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor13);
-        org.junit.Assert.assertNotNull(strList14);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet19);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
-        org.junit.Assert.assertNotNull(strItor32);
-        org.junit.Assert.assertNull(str33);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue34);
-        org.junit.Assert.assertNull(str36);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet37);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor40);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor41);
-        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
-        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + true + "'", boolean48 == true);
-        org.junit.Assert.assertNotNull(strItor50);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor51);
-        org.junit.Assert.assertNotNull(lock57);
-        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet62);
-        org.junit.Assert.assertNull(str67);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet68);
-    }
-
-    @Test
-    public void test085() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -5129,9 +4766,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -5192,9 +4829,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test083");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -5250,9 +4887,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -5294,9 +4931,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -5374,9 +5011,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -5515,9 +5152,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -5572,9 +5209,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -5695,9 +5332,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
@@ -5722,9 +5359,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test094() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -5770,9 +5407,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -5857,9 +5494,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -5884,9 +5521,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test097() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -5948,9 +5585,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6057,9 +5694,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6173,25 +5810,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler3 = null;
-        eventTypeSerializerInMemKeyValueStore1.addListener(eventType2, eventTypeSerializerEventHandler3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor5 = eventTypeSerializerInMemKeyValueStore1.iterator();
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet6 = eventTypeSerializerInMemKeyValueStore1.keySet();
-        org.junit.Assert.assertTrue("'" + eventType2 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType2.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor5);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet6);
-    }
-
-    @Test
-    public void test101() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -6264,9 +5885,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -6277,9 +5898,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6321,140 +5942,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
-        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore8.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12, false);
-        java.util.List<java.lang.String> strList16 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
-        int int19 = eventTypeSerializerInMemKeyValueStore18.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor23 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer28 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList29 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean30 = eventTypeSerializerList29.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28);
-        java.util.Iterator<java.lang.String> strItor32 = eventTypeSerializerInMemKeyValueStore25.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29, false);
-        java.util.List<java.lang.String> strList33 = eventTypeSerializerInMemKeyValueStore18.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
-        int int36 = eventTypeSerializerInMemKeyValueStore35.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList38 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean39 = eventTypeSerializerList38.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor40 = eventTypeSerializerInMemKeyValueStore35.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList38);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
-        int int43 = eventTypeSerializerInMemKeyValueStore42.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer44 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList45 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean46 = eventTypeSerializerList45.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer44);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor47 = eventTypeSerializerInMemKeyValueStore42.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList45);
-        java.util.List<java.lang.String> strList48 = eventTypeSerializerInMemKeyValueStore42.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper49 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore50 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper49);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer51 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean52 = eventTypeSerializerInMemKeyValueStore50.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer51);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet53 = eventTypeSerializerInMemKeyValueStore50.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore50.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, "");
-        boolean boolean57 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean61 = eventTypeSerializerInMemKeyValueStore59.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer62 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList63 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean64 = eventTypeSerializerList63.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer62);
-        java.util.Iterator<java.lang.String> strItor66 = eventTypeSerializerInMemKeyValueStore59.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList63, false);
-        java.lang.String str67 = com.tectonica.kvs.KvsUtil.firstOf(strItor66);
-        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue68 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, strItor66);
-        java.lang.String str70 = eventTypeSerializerInMemKeyValueStore35.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, true);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet71 = eventTypeSerializerInMemKeyValueStore35.keySet();
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor72 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet71);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper73 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore74 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper73);
-        com.tectonica.kvs.KeyValueStore.EventType eventType75 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler76 = null;
-        eventTypeSerializerInMemKeyValueStore74.addListener(eventType75, eventTypeSerializerEventHandler76);
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler78 = null;
-        eventTypeSerializerInMemKeyValueStore18.addListener(eventType75, eventTypeSerializerEventHandler78);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper80 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore81 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper80);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer82 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean83 = eventTypeSerializerInMemKeyValueStore81.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82);
-        java.lang.String str85 = eventTypeSerializerInMemKeyValueStore18.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82, false);
-        java.lang.String str86 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNotNull(strItor15);
-        org.junit.Assert.assertNotNull(strList16);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor23);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
-        org.junit.Assert.assertNotNull(strItor32);
-        org.junit.Assert.assertNotNull(strList33);
-        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
-        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + true + "'", boolean39 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor40);
-        org.junit.Assert.assertTrue("'" + int43 + "' != '" + 0 + "'", int43 == 0);
-        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor47);
-        org.junit.Assert.assertNotNull(strList48);
-        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet53);
-        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
-        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
-        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + true + "'", boolean64 == true);
-        org.junit.Assert.assertNotNull(strItor66);
-        org.junit.Assert.assertNull(str67);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue68);
-        org.junit.Assert.assertNull(str70);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet71);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor72);
-        org.junit.Assert.assertTrue("'" + eventType75 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType75.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
-        org.junit.Assert.assertTrue("'" + boolean83 + "' != '" + false + "'", boolean83 == false);
-        org.junit.Assert.assertNull(str85);
-        org.junit.Assert.assertNull(str86);
-    }
-
-    @Test
-    public void test105() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.KeyValueStore.EventType, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.KeyValueStore.EventType, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.KeyValueStore.EventType, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>>(eventTypeKeyMapper0);
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -6535,9 +6033,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6632,9 +6130,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -6655,9 +6153,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test109() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6754,9 +6252,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -6785,9 +6283,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -6825,9 +6323,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6871,9 +6369,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -6997,9 +6495,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -7091,9 +6589,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -7156,9 +6654,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -7299,9 +6797,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -7322,9 +6820,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -7361,9 +6859,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
@@ -7431,9 +6929,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -7464,9 +6962,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -7568,9 +7066,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -7599,9 +7097,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -7623,9 +7121,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -7768,9 +7266,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -7790,79 +7288,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
-        java.util.List<java.lang.String> strList4 = eventTypeSerializerInMemKeyValueStore1.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper5 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore6 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper5);
-        int int7 = eventTypeSerializerInMemKeyValueStore6.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer8 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList9 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean10 = eventTypeSerializerList9.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer8);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor11 = eventTypeSerializerInMemKeyValueStore6.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList9);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
-        boolean boolean16 = eventTypeSerializerInMemKeyValueStore6.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
-        int int19 = eventTypeSerializerInMemKeyValueStore18.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor23 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet28 = eventTypeSerializerInMemKeyValueStore25.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper29 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore30 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper29);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean32 = eventTypeSerializerInMemKeyValueStore30.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet33 = eventTypeSerializerInMemKeyValueStore30.keySet();
-        java.util.List<java.lang.String> strList34 = eventTypeSerializerInMemKeyValueStore25.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater35 = null;
-        int int36 = eventTypeSerializerInMemKeyValueStore18.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, strUpdater35);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor38 = eventTypeSerializerInMemKeyValueStore6.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, true);
-        java.util.Iterator<java.lang.String> strItor39 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33);
-        int int40 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        int int41 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor42 = eventTypeSerializerInMemKeyValueStore1.iterator();
-        eventTypeSerializerInMemKeyValueStore1.clearCache();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(strList4);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor11);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor23);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet28);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet33);
-        org.junit.Assert.assertNotNull(strList34);
-        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor38);
-        org.junit.Assert.assertNotNull(strItor39);
-        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 0 + "'", int40 == 0);
-        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 0 + "'", int41 == 0);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor42);
-    }
-
-    @Test
-    public void test127() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -7987,9 +7415,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8010,9 +7438,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8092,9 +7520,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -8167,9 +7595,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8253,9 +7681,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8382,232 +7810,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet4 = eventTypeSerializerInMemKeyValueStore1.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer5 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore1.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer5, "");
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet8 = eventTypeSerializerInMemKeyValueStore1.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper9 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore10 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper9);
-        int int11 = eventTypeSerializerInMemKeyValueStore10.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer12 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList13 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean14 = eventTypeSerializerList13.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer12);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor15 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper16 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore17 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper16);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer18 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean19 = eventTypeSerializerInMemKeyValueStore17.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18);
-        boolean boolean20 = eventTypeSerializerInMemKeyValueStore10.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper21 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore22 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper21);
-        int int23 = eventTypeSerializerInMemKeyValueStore22.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer24 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList25 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean26 = eventTypeSerializerList25.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer24);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor27 = eventTypeSerializerInMemKeyValueStore22.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList25);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper28 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore29 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper28);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer30 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean31 = eventTypeSerializerInMemKeyValueStore29.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet32 = eventTypeSerializerInMemKeyValueStore29.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper33 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore34 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper33);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer35 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean36 = eventTypeSerializerInMemKeyValueStore34.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer35);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet37 = eventTypeSerializerInMemKeyValueStore34.keySet();
-        java.util.List<java.lang.String> strList38 = eventTypeSerializerInMemKeyValueStore29.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet37);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater39 = null;
-        int int40 = eventTypeSerializerInMemKeyValueStore22.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet37, strUpdater39);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor42 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet37, true);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper43 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore44 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper43);
-        int int45 = eventTypeSerializerInMemKeyValueStore44.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList47 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean48 = eventTypeSerializerList47.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor49 = eventTypeSerializerInMemKeyValueStore44.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList47);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean53 = eventTypeSerializerInMemKeyValueStore51.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
-        boolean boolean54 = eventTypeSerializerInMemKeyValueStore44.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
-        java.lang.String str55 = eventTypeSerializerInMemKeyValueStore10.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper56 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore57 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper56);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer58 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean59 = eventTypeSerializerInMemKeyValueStore57.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer58);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet60 = eventTypeSerializerInMemKeyValueStore57.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer61 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore57.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer61, "");
-        java.lang.String str64 = eventTypeSerializerInMemKeyValueStore10.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer61);
-        java.lang.String str66 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer61, false);
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet4);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet8);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 0 + "'", int23 == 0);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor27);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet32);
-        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet37);
-        org.junit.Assert.assertNotNull(strList38);
-        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 0 + "'", int40 == 0);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor42);
-        org.junit.Assert.assertTrue("'" + int45 + "' != '" + 0 + "'", int45 == 0);
-        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + true + "'", boolean48 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor49);
-        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
-        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + false + "'", boolean54 == false);
-        org.junit.Assert.assertNull(str55);
-        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + false + "'", boolean59 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet60);
-        org.junit.Assert.assertNull(str64);
-        org.junit.Assert.assertNull(str66);
-    }
-
-    @Test
-    public void test134() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet11 = eventTypeSerializerInMemKeyValueStore8.keySet();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet16 = eventTypeSerializerInMemKeyValueStore13.keySet();
-        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore8.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater18 = null;
-        int int19 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16, strUpdater18);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper20 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore21 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper20);
-        int int22 = eventTypeSerializerInMemKeyValueStore21.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer23 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList24 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean25 = eventTypeSerializerList24.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer23);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor26 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList24);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean30 = eventTypeSerializerInMemKeyValueStore28.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList32 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean33 = eventTypeSerializerList32.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
-        java.util.Iterator<java.lang.String> strItor35 = eventTypeSerializerInMemKeyValueStore28.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32, false);
-        java.util.List<java.lang.String> strList36 = eventTypeSerializerInMemKeyValueStore21.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer39 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean40 = eventTypeSerializerInMemKeyValueStore38.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer41 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList42 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean43 = eventTypeSerializerList42.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer41);
-        java.util.Iterator<java.lang.String> strItor45 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList42, false);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
-        int int48 = eventTypeSerializerInMemKeyValueStore47.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList50 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean51 = eventTypeSerializerList50.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor52 = eventTypeSerializerInMemKeyValueStore47.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
-        java.util.Iterator<java.lang.String> strItor53 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet54 = eventTypeSerializerInMemKeyValueStore38.keySet();
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor56 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet54, true);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper57 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore58 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper57);
-        int int59 = eventTypeSerializerInMemKeyValueStore58.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList61 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean62 = eventTypeSerializerList61.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor63 = eventTypeSerializerInMemKeyValueStore58.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList61);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper64 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore65 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper64);
-        int int66 = eventTypeSerializerInMemKeyValueStore65.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer67 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList68 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean69 = eventTypeSerializerList68.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer67);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor70 = eventTypeSerializerInMemKeyValueStore65.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList68);
-        java.util.List<java.lang.String> strList71 = eventTypeSerializerInMemKeyValueStore65.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet76 = eventTypeSerializerInMemKeyValueStore73.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer77 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore73.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
-        boolean boolean80 = eventTypeSerializerInMemKeyValueStore65.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
-        boolean boolean81 = eventTypeSerializerInMemKeyValueStore58.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
-        eventTypeSerializerInMemKeyValueStore21.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
-        java.lang.String str85 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, false);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater86 = null;
-        int int87 = eventTypeSerializerInMemKeyValueStore1.updateAll(strUpdater86);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet11);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet16);
-        org.junit.Assert.assertNotNull(strList17);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 0 + "'", int22 == 0);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor26);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
-        org.junit.Assert.assertNotNull(strItor35);
-        org.junit.Assert.assertNotNull(strList36);
-        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
-        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
-        org.junit.Assert.assertNotNull(strItor45);
-        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 0 + "'", int48 == 0);
-        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor52);
-        org.junit.Assert.assertNotNull(strItor53);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet54);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor56);
-        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
-        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + true + "'", boolean62 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor63);
-        org.junit.Assert.assertTrue("'" + int66 + "' != '" + 0 + "'", int66 == 0);
-        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor70);
-        org.junit.Assert.assertNotNull(strList71);
-        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet76);
-        org.junit.Assert.assertTrue("'" + boolean80 + "' != '" + false + "'", boolean80 == false);
-        org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
-        org.junit.Assert.assertNull(str85);
-        org.junit.Assert.assertTrue("'" + int87 + "' != '" + 0 + "'", int87 == 0);
-    }
-
-    @Test
-    public void test135() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -8705,9 +7910,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8809,9 +8014,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         com.tectonica.kvs.KvsUtil kvsUtil0 = new com.tectonica.kvs.KvsUtil();
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
@@ -8862,9 +8067,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -8997,9 +8202,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -9139,9 +8344,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -9211,9 +8416,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -9255,9 +8460,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -9388,122 +8593,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
-        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor3 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
-        com.tectonica.kvs.KeyValueStore.EventType eventType4 = com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate;
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler5 = null;
-        eventTypeSerializerInMemKeyValueStore1.addListener(eventType4, eventTypeSerializerEventHandler5);
-        com.tectonica.kvs.Updater<java.lang.String> strUpdater7 = null;
-        int int8 = eventTypeSerializerInMemKeyValueStore1.updateAll(strUpdater7);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper9 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore10 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper9);
-        int int11 = eventTypeSerializerInMemKeyValueStore10.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer12 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList13 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean14 = eventTypeSerializerList13.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer12);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor15 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper16 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore17 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper16);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer18 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean19 = eventTypeSerializerInMemKeyValueStore17.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
-        java.util.Iterator<java.lang.String> strItor24 = eventTypeSerializerInMemKeyValueStore17.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21, false);
-        java.util.List<java.lang.String> strList25 = eventTypeSerializerInMemKeyValueStore10.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper26 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore27 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper26);
-        int int28 = eventTypeSerializerInMemKeyValueStore27.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList30 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean31 = eventTypeSerializerList30.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor32 = eventTypeSerializerInMemKeyValueStore27.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList30);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper33 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore34 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper33);
-        int int35 = eventTypeSerializerInMemKeyValueStore34.deleteAll();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer36 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList37 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean38 = eventTypeSerializerList37.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer36);
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor39 = eventTypeSerializerInMemKeyValueStore34.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList37);
-        java.util.List<java.lang.String> strList40 = eventTypeSerializerInMemKeyValueStore34.values();
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean44 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore42.keySet();
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        eventTypeSerializerInMemKeyValueStore42.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, "");
-        boolean boolean49 = eventTypeSerializerInMemKeyValueStore34.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean53 = eventTypeSerializerInMemKeyValueStore51.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList55 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
-        boolean boolean56 = eventTypeSerializerList55.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
-        java.util.Iterator<java.lang.String> strItor58 = eventTypeSerializerInMemKeyValueStore51.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList55, false);
-        java.lang.String str59 = com.tectonica.kvs.KvsUtil.firstOf(strItor58);
-        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue60 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, strItor58);
-        java.lang.String str62 = eventTypeSerializerInMemKeyValueStore27.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, true);
-        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet63 = eventTypeSerializerInMemKeyValueStore27.keySet();
-        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor64 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet63);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper65 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore66 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper65);
-        com.tectonica.kvs.KeyValueStore.EventType eventType67 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler68 = null;
-        eventTypeSerializerInMemKeyValueStore66.addListener(eventType67, eventTypeSerializerEventHandler68);
-        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler70 = null;
-        eventTypeSerializerInMemKeyValueStore10.addListener(eventType67, eventTypeSerializerEventHandler70);
-        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
-        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
-        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
-        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
-        java.lang.String str77 = eventTypeSerializerInMemKeyValueStore10.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, false);
-        java.lang.String str79 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor2);
-        org.junit.Assert.assertNotNull(eventTypeSerializerItor3);
-        org.junit.Assert.assertTrue("'" + eventType4 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate + "'", eventType4.equals(com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate));
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNotNull(strItor24);
-        org.junit.Assert.assertNotNull(strList25);
-        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 0 + "'", int28 == 0);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor32);
-        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 0 + "'", int35 == 0);
-        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor39);
-        org.junit.Assert.assertNotNull(strList40);
-        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
-        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
-        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
-        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + true + "'", boolean56 == true);
-        org.junit.Assert.assertNotNull(strItor58);
-        org.junit.Assert.assertNull(str59);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue60);
-        org.junit.Assert.assertNull(str62);
-        org.junit.Assert.assertNotNull(eventTypeSerializerSet63);
-        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor64);
-        org.junit.Assert.assertTrue("'" + eventType67 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType67.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
-        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
-        org.junit.Assert.assertNull(str77);
-        org.junit.Assert.assertNull(str79);
-    }
-
-    @Test
-    public void test144() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -9563,9 +8655,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test145() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -9667,9 +8759,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -9685,9 +8777,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         java.lang.Class<java.lang.String> strClass0 = null;
         com.tectonica.kvs.KeyValueStore.KeyMapper<java.lang.String, java.lang.String> strKeyMapper2 = null;
         // The following exception was thrown during execution in test generation
@@ -9700,9 +8792,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -9726,9 +8818,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test149() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -9788,9 +8880,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test150() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -9851,9 +8943,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test151() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -9874,9 +8966,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test152() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
@@ -9890,9 +8982,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test153() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
         int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
@@ -9958,9 +9050,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test154() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test154");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10097,9 +9189,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test155() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper2 = null;
@@ -10157,9 +9249,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test156() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10179,9 +9271,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test157() throws Throwable {
+    public void test147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -10247,9 +9339,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test158() throws Throwable {
+    public void test148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10274,9 +9366,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test159() throws Throwable {
+    public void test149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10394,9 +9486,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10526,9 +9618,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test161() throws Throwable {
+    public void test151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -10649,9 +9741,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
@@ -10673,9 +9765,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper2 = null;
@@ -10775,9 +9867,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test154");
         com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
         com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
         com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
@@ -10875,6 +9967,2239 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor64);
         org.junit.Assert.assertTrue("'" + int66 + "' != '" + 0 + "'", int66 == 0);
         org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor68);
+    }
+
+    @Test
+    public void test155() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet11 = eventTypeSerializerInMemKeyValueStore8.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet16 = eventTypeSerializerInMemKeyValueStore13.keySet();
+        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore8.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater18 = null;
+        int int19 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16, strUpdater18);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper20 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore21 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper20);
+        int int22 = eventTypeSerializerInMemKeyValueStore21.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer23 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList24 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean25 = eventTypeSerializerList24.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer23);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor26 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList24);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean30 = eventTypeSerializerInMemKeyValueStore28.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList32 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean33 = eventTypeSerializerList32.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        java.util.Iterator<java.lang.String> strItor35 = eventTypeSerializerInMemKeyValueStore28.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32, false);
+        java.util.List<java.lang.String> strList36 = eventTypeSerializerInMemKeyValueStore21.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer39 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean40 = eventTypeSerializerInMemKeyValueStore38.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer41 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList42 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean43 = eventTypeSerializerList42.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer41);
+        java.util.Iterator<java.lang.String> strItor45 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList42, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        int int48 = eventTypeSerializerInMemKeyValueStore47.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList50 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean51 = eventTypeSerializerList50.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor52 = eventTypeSerializerInMemKeyValueStore47.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Iterator<java.lang.String> strItor53 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet54 = eventTypeSerializerInMemKeyValueStore38.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor56 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet54, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper57 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore58 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper57);
+        int int59 = eventTypeSerializerInMemKeyValueStore58.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList61 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean62 = eventTypeSerializerList61.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor63 = eventTypeSerializerInMemKeyValueStore58.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList61);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper64 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore65 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper64);
+        int int66 = eventTypeSerializerInMemKeyValueStore65.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer67 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList68 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean69 = eventTypeSerializerList68.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer67);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor70 = eventTypeSerializerInMemKeyValueStore65.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList68);
+        java.util.List<java.lang.String> strList71 = eventTypeSerializerInMemKeyValueStore65.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet76 = eventTypeSerializerInMemKeyValueStore73.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer77 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore73.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
+        boolean boolean80 = eventTypeSerializerInMemKeyValueStore65.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
+        boolean boolean81 = eventTypeSerializerInMemKeyValueStore58.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
+        eventTypeSerializerInMemKeyValueStore21.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
+        java.lang.String str85 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, false);
+        int int86 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        eventTypeSerializerInMemKeyValueStore1.clearCache();
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet88 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor89 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet11);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet16);
+        org.junit.Assert.assertNotNull(strList17);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 0 + "'", int22 == 0);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor26);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
+        org.junit.Assert.assertNotNull(strItor35);
+        org.junit.Assert.assertNotNull(strList36);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertNotNull(strItor45);
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 0 + "'", int48 == 0);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor52);
+        org.junit.Assert.assertNotNull(strItor53);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet54);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor56);
+        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + true + "'", boolean62 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor63);
+        org.junit.Assert.assertTrue("'" + int66 + "' != '" + 0 + "'", int66 == 0);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor70);
+        org.junit.Assert.assertNotNull(strList71);
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet76);
+        org.junit.Assert.assertTrue("'" + boolean80 + "' != '" + false + "'", boolean80 == false);
+        org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
+        org.junit.Assert.assertNull(str85);
+        org.junit.Assert.assertTrue("'" + int86 + "' != '" + 0 + "'", int86 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet88);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor89);
+    }
+
+    @Test
+    public void test156() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet4 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer5 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore1.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer5, "");
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet8 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper9 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore10 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper9);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper11 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore12 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper11);
+        int int13 = eventTypeSerializerInMemKeyValueStore12.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList15 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean16 = eventTypeSerializerList15.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor17 = eventTypeSerializerInMemKeyValueStore12.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList15);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer22 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList23 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean24 = eventTypeSerializerList23.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer22);
+        java.util.Iterator<java.lang.String> strItor26 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23, false);
+        java.util.List<java.lang.String> strList27 = eventTypeSerializerInMemKeyValueStore12.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper28 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore29 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper28);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer30 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean31 = eventTypeSerializerInMemKeyValueStore29.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
+        boolean boolean32 = eventTypeSerializerInMemKeyValueStore12.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet33 = eventTypeSerializerInMemKeyValueStore12.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor35 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, true);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor37 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, true);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet4);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet8);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor17);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(strItor26);
+        org.junit.Assert.assertNotNull(strList27);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet33);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor35);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor37);
+    }
+
+    @Test
+    public void test157() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler3 = null;
+        eventTypeSerializerInMemKeyValueStore1.addListener(eventType2, eventTypeSerializerEventHandler3);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper5 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore6 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper5);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer7 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean8 = eventTypeSerializerInMemKeyValueStore6.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer7);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet9 = eventTypeSerializerInMemKeyValueStore6.keySet();
+        java.util.List<java.lang.String> strList10 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet9);
+        java.util.Iterator<java.lang.String> strItor11 = eventTypeSerializerInMemKeyValueStore1.valueIterator();
+        java.util.List<java.lang.String> strList12 = eventTypeSerializerInMemKeyValueStore1.values();
+        org.junit.Assert.assertTrue("'" + eventType2 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType2.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet9);
+        org.junit.Assert.assertNotNull(strList10);
+        org.junit.Assert.assertNotNull(strItor11);
+        org.junit.Assert.assertNotNull(strList12);
+    }
+
+    @Test
+    public void test158() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor3 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        com.tectonica.kvs.KeyValueStore.EventType eventType4 = com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler5 = null;
+        eventTypeSerializerInMemKeyValueStore1.addListener(eventType4, eventTypeSerializerEventHandler5);
+        java.util.Iterator<java.lang.String> strItor7 = eventTypeSerializerInMemKeyValueStore1.valueIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper8 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore9 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper8);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet10 = eventTypeSerializerInMemKeyValueStore9.keySet();
+        java.util.Iterator<java.lang.String> strItor11 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet10);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer16 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList17 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean18 = eventTypeSerializerList17.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer16);
+        java.util.Iterator<java.lang.String> strItor20 = eventTypeSerializerInMemKeyValueStore13.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList17, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper21 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore22 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper21);
+        int int23 = eventTypeSerializerInMemKeyValueStore22.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer24 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList25 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean26 = eventTypeSerializerList25.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer24);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor27 = eventTypeSerializerInMemKeyValueStore22.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList25);
+        java.util.Iterator<java.lang.String> strItor28 = eventTypeSerializerInMemKeyValueStore13.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList25);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper29 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore30 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean32 = eventTypeSerializerInMemKeyValueStore30.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer33 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList34 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean35 = eventTypeSerializerList34.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer33);
+        java.util.Iterator<java.lang.String> strItor37 = eventTypeSerializerInMemKeyValueStore30.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList34, false);
+        java.util.List<java.lang.String> strList38 = eventTypeSerializerInMemKeyValueStore13.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList34);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper39 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore40 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper39);
+        int int41 = eventTypeSerializerInMemKeyValueStore40.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer42 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList43 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean44 = eventTypeSerializerList43.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer42);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor45 = eventTypeSerializerInMemKeyValueStore40.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList43);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer48 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean49 = eventTypeSerializerInMemKeyValueStore47.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        boolean boolean50 = eventTypeSerializerInMemKeyValueStore40.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        boolean boolean51 = eventTypeSerializerInMemKeyValueStore13.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater52 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str53 = eventTypeSerializerInMemKeyValueStore1.update((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48, strUpdater52);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor2);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor3);
+        org.junit.Assert.assertTrue("'" + eventType4 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate + "'", eventType4.equals(com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate));
+        org.junit.Assert.assertNotNull(strItor7);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet10);
+        org.junit.Assert.assertNotNull(strItor11);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        org.junit.Assert.assertNotNull(strItor20);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 0 + "'", int23 == 0);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor27);
+        org.junit.Assert.assertNotNull(strItor28);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertNotNull(strItor37);
+        org.junit.Assert.assertNotNull(strList38);
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 0 + "'", int41 == 0);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + true + "'", boolean44 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor45);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + false + "'", boolean51 == false);
+    }
+
+    @Test
+    public void test159() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet4 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer5 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore1.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer5, "");
+        eventTypeSerializerInMemKeyValueStore1.clearCache();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor9 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        java.util.Iterator<java.lang.String> strItor10 = eventTypeSerializerInMemKeyValueStore1.valueIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper11 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore12 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper11);
+        int int13 = eventTypeSerializerInMemKeyValueStore12.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList15 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean16 = eventTypeSerializerList15.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor17 = eventTypeSerializerInMemKeyValueStore12.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList15);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet22 = eventTypeSerializerInMemKeyValueStore19.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper23 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore24 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper23);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean26 = eventTypeSerializerInMemKeyValueStore24.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet27 = eventTypeSerializerInMemKeyValueStore24.keySet();
+        java.util.List<java.lang.String> strList28 = eventTypeSerializerInMemKeyValueStore19.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet27);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater29 = null;
+        int int30 = eventTypeSerializerInMemKeyValueStore12.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet27, strUpdater29);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper31 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore32 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper31);
+        int int33 = eventTypeSerializerInMemKeyValueStore32.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer34 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList35 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean36 = eventTypeSerializerList35.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer34);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor37 = eventTypeSerializerInMemKeyValueStore32.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList35);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper38 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore39 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper38);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer40 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean41 = eventTypeSerializerInMemKeyValueStore39.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer40);
+        boolean boolean42 = eventTypeSerializerInMemKeyValueStore32.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer40);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper43 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore44 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper43);
+        int int45 = eventTypeSerializerInMemKeyValueStore44.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList47 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean48 = eventTypeSerializerList47.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor49 = eventTypeSerializerInMemKeyValueStore44.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList47);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean53 = eventTypeSerializerInMemKeyValueStore51.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet54 = eventTypeSerializerInMemKeyValueStore51.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper55 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore56 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper55);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer57 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean58 = eventTypeSerializerInMemKeyValueStore56.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer57);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet59 = eventTypeSerializerInMemKeyValueStore56.keySet();
+        java.util.List<java.lang.String> strList60 = eventTypeSerializerInMemKeyValueStore51.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet59);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater61 = null;
+        int int62 = eventTypeSerializerInMemKeyValueStore44.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet59, strUpdater61);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor64 = eventTypeSerializerInMemKeyValueStore32.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet59, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper65 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore66 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper65);
+        int int67 = eventTypeSerializerInMemKeyValueStore66.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer68 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList69 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean70 = eventTypeSerializerList69.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer68);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor71 = eventTypeSerializerInMemKeyValueStore66.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList69);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        boolean boolean76 = eventTypeSerializerInMemKeyValueStore66.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.lang.String str77 = eventTypeSerializerInMemKeyValueStore32.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.lang.String str79 = eventTypeSerializerInMemKeyValueStore12.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, true);
+        com.tectonica.kvs.KeyValueStore.ValueGenerator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerValueGenerator80 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str81 = eventTypeSerializerInMemKeyValueStore1.putIfAbsent((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, eventTypeSerializerValueGenerator80);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet4);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor9);
+        org.junit.Assert.assertNotNull(strItor10);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor17);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet22);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet27);
+        org.junit.Assert.assertNotNull(strList28);
+        org.junit.Assert.assertTrue("'" + int30 + "' != '" + 0 + "'", int30 == 0);
+        org.junit.Assert.assertTrue("'" + int33 + "' != '" + 0 + "'", int33 == 0);
+        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + true + "'", boolean36 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor37);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
+        org.junit.Assert.assertTrue("'" + int45 + "' != '" + 0 + "'", int45 == 0);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + true + "'", boolean48 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor49);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet54);
+        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + false + "'", boolean58 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet59);
+        org.junit.Assert.assertNotNull(strList60);
+        org.junit.Assert.assertTrue("'" + int62 + "' != '" + 0 + "'", int62 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor64);
+        org.junit.Assert.assertTrue("'" + int67 + "' != '" + 0 + "'", int67 == 0);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + true + "'", boolean70 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor71);
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
+        org.junit.Assert.assertTrue("'" + boolean76 + "' != '" + false + "'", boolean76 == false);
+        org.junit.Assert.assertNull(str77);
+        org.junit.Assert.assertNull(str79);
+    }
+
+    @Test
+    public void test160() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet4 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper5 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore6 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper5);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer7 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean8 = eventTypeSerializerInMemKeyValueStore6.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer7);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet9 = eventTypeSerializerInMemKeyValueStore6.keySet();
+        java.util.List<java.lang.String> strList10 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet9);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper11 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore12 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper11);
+        int int13 = eventTypeSerializerInMemKeyValueStore12.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList15 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean16 = eventTypeSerializerList15.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor17 = eventTypeSerializerInMemKeyValueStore12.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList15);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        boolean boolean22 = eventTypeSerializerInMemKeyValueStore12.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor23 = eventTypeSerializerInMemKeyValueStore12.keyIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
+        int int26 = eventTypeSerializerInMemKeyValueStore25.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer27 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList28 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean29 = eventTypeSerializerList28.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer27);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor30 = eventTypeSerializerInMemKeyValueStore25.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList28);
+        java.util.List<java.lang.String> strList31 = eventTypeSerializerInMemKeyValueStore25.values();
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet32 = eventTypeSerializerInMemKeyValueStore25.keySet();
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet33 = eventTypeSerializerInMemKeyValueStore25.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer36 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean37 = eventTypeSerializerInMemKeyValueStore35.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer36);
+        java.util.List<java.lang.String> strList38 = eventTypeSerializerInMemKeyValueStore35.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper39 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore40 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper39);
+        int int41 = eventTypeSerializerInMemKeyValueStore40.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer42 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList43 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean44 = eventTypeSerializerList43.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer42);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor45 = eventTypeSerializerInMemKeyValueStore40.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList43);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer48 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean49 = eventTypeSerializerInMemKeyValueStore47.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        boolean boolean50 = eventTypeSerializerInMemKeyValueStore40.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper51 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore52 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper51);
+        int int53 = eventTypeSerializerInMemKeyValueStore52.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList55 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean56 = eventTypeSerializerList55.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor57 = eventTypeSerializerInMemKeyValueStore52.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList55);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean61 = eventTypeSerializerInMemKeyValueStore59.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet62 = eventTypeSerializerInMemKeyValueStore59.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper63 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore64 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper63);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer65 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean66 = eventTypeSerializerInMemKeyValueStore64.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet67 = eventTypeSerializerInMemKeyValueStore64.keySet();
+        java.util.List<java.lang.String> strList68 = eventTypeSerializerInMemKeyValueStore59.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater69 = null;
+        int int70 = eventTypeSerializerInMemKeyValueStore52.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67, strUpdater69);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor72 = eventTypeSerializerInMemKeyValueStore40.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67, true);
+        java.util.Iterator<java.lang.String> strItor73 = eventTypeSerializerInMemKeyValueStore35.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67);
+        java.util.Iterator<java.lang.String> strItor74 = eventTypeSerializerInMemKeyValueStore25.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67);
+        java.util.List<java.lang.String> strList75 = eventTypeSerializerInMemKeyValueStore12.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor76 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet67);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet4);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet9);
+        org.junit.Assert.assertNotNull(strList10);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor17);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor23);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 0 + "'", int26 == 0);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + true + "'", boolean29 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor30);
+        org.junit.Assert.assertNotNull(strList31);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet32);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet33);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(strList38);
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 0 + "'", int41 == 0);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + true + "'", boolean44 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor45);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + 0 + "'", int53 == 0);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + true + "'", boolean56 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor57);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet62);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet67);
+        org.junit.Assert.assertNotNull(strList68);
+        org.junit.Assert.assertTrue("'" + int70 + "' != '" + 0 + "'", int70 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor72);
+        org.junit.Assert.assertNotNull(strItor73);
+        org.junit.Assert.assertNotNull(strItor74);
+        org.junit.Assert.assertNotNull(strList75);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor76);
+    }
+
+    @Test
+    public void test161() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer4 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList5 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean6 = eventTypeSerializerList5.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer4);
+        java.util.Iterator<java.lang.String> strItor8 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList5, false);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor9 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore1.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10, "hi!");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper13 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore14 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper13);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer15 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean16 = eventTypeSerializerInMemKeyValueStore14.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer15);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet17 = eventTypeSerializerInMemKeyValueStore14.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer18 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore14.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18, "");
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet21 = eventTypeSerializerInMemKeyValueStore14.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper22 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore23 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper22);
+        int int24 = eventTypeSerializerInMemKeyValueStore23.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList26 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean27 = eventTypeSerializerList26.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor28 = eventTypeSerializerInMemKeyValueStore23.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList26);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper29 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore30 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean32 = eventTypeSerializerInMemKeyValueStore30.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        boolean boolean33 = eventTypeSerializerInMemKeyValueStore23.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
+        int int36 = eventTypeSerializerInMemKeyValueStore35.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList38 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean39 = eventTypeSerializerList38.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor40 = eventTypeSerializerInMemKeyValueStore35.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList38);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean44 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore42.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer48 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean49 = eventTypeSerializerInMemKeyValueStore47.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet50 = eventTypeSerializerInMemKeyValueStore47.keySet();
+        java.util.List<java.lang.String> strList51 = eventTypeSerializerInMemKeyValueStore42.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater52 = null;
+        int int53 = eventTypeSerializerInMemKeyValueStore35.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50, strUpdater52);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor55 = eventTypeSerializerInMemKeyValueStore23.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper56 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore57 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper56);
+        int int58 = eventTypeSerializerInMemKeyValueStore57.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer59 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList60 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean61 = eventTypeSerializerList60.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer59);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor62 = eventTypeSerializerInMemKeyValueStore57.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList60);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper63 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore64 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper63);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer65 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean66 = eventTypeSerializerInMemKeyValueStore64.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        boolean boolean67 = eventTypeSerializerInMemKeyValueStore57.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        java.lang.String str68 = eventTypeSerializerInMemKeyValueStore23.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper69 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore70 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper69);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer71 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean72 = eventTypeSerializerInMemKeyValueStore70.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer71);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet73 = eventTypeSerializerInMemKeyValueStore70.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore70.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, "");
+        java.lang.String str77 = eventTypeSerializerInMemKeyValueStore23.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.lang.String str79 = eventTypeSerializerInMemKeyValueStore14.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, false);
+        eventTypeSerializerInMemKeyValueStore1.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, "");
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(strItor8);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor9);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet17);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet21);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 0 + "'", int24 == 0);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor28);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + true + "'", boolean39 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor40);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet50);
+        org.junit.Assert.assertNotNull(strList51);
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + 0 + "'", int53 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor55);
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + 0 + "'", int58 == 0);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + true + "'", boolean61 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor62);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + false + "'", boolean67 == false);
+        org.junit.Assert.assertNull(str68);
+        org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + false + "'", boolean72 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet73);
+        org.junit.Assert.assertNull(str77);
+        org.junit.Assert.assertNull(str79);
+    }
+
+    @Test
+    public void test162() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSetKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSetInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>, java.lang.Enum<com.tectonica.kvs.KeyValueStore.EventType>>(eventTypeSerializerSetKeyMapper0);
+    }
+
+    @Test
+    public void test163() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor3 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        com.tectonica.kvs.KeyValueStore.EventType eventType4 = com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler5 = null;
+        eventTypeSerializerInMemKeyValueStore1.addListener(eventType4, eventTypeSerializerEventHandler5);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater7 = null;
+        int int8 = eventTypeSerializerInMemKeyValueStore1.updateAll(strUpdater7);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper9 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore10 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper9);
+        int int11 = eventTypeSerializerInMemKeyValueStore10.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer12 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList13 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean14 = eventTypeSerializerList13.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer12);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor15 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper16 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore17 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper16);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer18 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean19 = eventTypeSerializerInMemKeyValueStore17.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        java.util.Iterator<java.lang.String> strItor24 = eventTypeSerializerInMemKeyValueStore17.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21, false);
+        java.util.List<java.lang.String> strList25 = eventTypeSerializerInMemKeyValueStore10.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper26 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore27 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper26);
+        int int28 = eventTypeSerializerInMemKeyValueStore27.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList30 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean31 = eventTypeSerializerList30.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor32 = eventTypeSerializerInMemKeyValueStore27.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList30);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper33 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore34 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper33);
+        int int35 = eventTypeSerializerInMemKeyValueStore34.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer36 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList37 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean38 = eventTypeSerializerList37.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer36);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor39 = eventTypeSerializerInMemKeyValueStore34.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList37);
+        java.util.List<java.lang.String> strList40 = eventTypeSerializerInMemKeyValueStore34.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean44 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore42.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore42.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, "");
+        boolean boolean49 = eventTypeSerializerInMemKeyValueStore34.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean53 = eventTypeSerializerInMemKeyValueStore51.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList55 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean56 = eventTypeSerializerList55.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
+        java.util.Iterator<java.lang.String> strItor58 = eventTypeSerializerInMemKeyValueStore51.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList55, false);
+        java.lang.String str59 = com.tectonica.kvs.KvsUtil.firstOf(strItor58);
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue60 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, strItor58);
+        java.lang.String str62 = eventTypeSerializerInMemKeyValueStore27.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46, true);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet63 = eventTypeSerializerInMemKeyValueStore27.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor64 = eventTypeSerializerInMemKeyValueStore10.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet63);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper65 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore66 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper65);
+        com.tectonica.kvs.KeyValueStore.EventType eventType67 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler68 = null;
+        eventTypeSerializerInMemKeyValueStore66.addListener(eventType67, eventTypeSerializerEventHandler68);
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler70 = null;
+        eventTypeSerializerInMemKeyValueStore10.addListener(eventType67, eventTypeSerializerEventHandler70);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.lang.String str77 = eventTypeSerializerInMemKeyValueStore10.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, false);
+        java.lang.String str79 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, false);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor80 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor2);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor3);
+        org.junit.Assert.assertTrue("'" + eventType4 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate + "'", eventType4.equals(com.tectonica.kvs.KeyValueStore.EventType.PrePersistUpdate));
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor15);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(strItor24);
+        org.junit.Assert.assertNotNull(strList25);
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 0 + "'", int28 == 0);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor32);
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 0 + "'", int35 == 0);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor39);
+        org.junit.Assert.assertNotNull(strList40);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + true + "'", boolean56 == true);
+        org.junit.Assert.assertNotNull(strItor58);
+        org.junit.Assert.assertNull(str59);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue60);
+        org.junit.Assert.assertNull(str62);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet63);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor64);
+        org.junit.Assert.assertTrue("'" + eventType67 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType67.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
+        org.junit.Assert.assertNull(str77);
+        org.junit.Assert.assertNull(str79);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor80);
+    }
+
+    @Test
+    public void test164() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer4 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList5 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean6 = eventTypeSerializerList5.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer4);
+        java.util.Iterator<java.lang.String> strItor8 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList5, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper9 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore10 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper9);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean12 = eventTypeSerializerInMemKeyValueStore10.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.lang.String str13 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper14 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore15 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper14);
+        int int16 = eventTypeSerializerInMemKeyValueStore15.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer17 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList18 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean19 = eventTypeSerializerList18.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer17);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor20 = eventTypeSerializerInMemKeyValueStore15.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer21 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore15.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer21, "hi!");
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor24 = eventTypeSerializerInMemKeyValueStore15.keyIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper25 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore26 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper25);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer27 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean28 = eventTypeSerializerInMemKeyValueStore26.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer27);
+        java.util.List<java.lang.String> strList29 = eventTypeSerializerInMemKeyValueStore26.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper30 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore31 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper30);
+        int int32 = eventTypeSerializerInMemKeyValueStore31.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer33 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList34 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean35 = eventTypeSerializerList34.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer33);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor36 = eventTypeSerializerInMemKeyValueStore31.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList34);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer39 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean40 = eventTypeSerializerInMemKeyValueStore38.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
+        boolean boolean41 = eventTypeSerializerInMemKeyValueStore31.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper42 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore43 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper42);
+        int int44 = eventTypeSerializerInMemKeyValueStore43.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer45 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList46 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean47 = eventTypeSerializerList46.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer45);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor48 = eventTypeSerializerInMemKeyValueStore43.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList46);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper49 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore50 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper49);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer51 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean52 = eventTypeSerializerInMemKeyValueStore50.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer51);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet53 = eventTypeSerializerInMemKeyValueStore50.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper54 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore55 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper54);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer56 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean57 = eventTypeSerializerInMemKeyValueStore55.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer56);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet58 = eventTypeSerializerInMemKeyValueStore55.keySet();
+        java.util.List<java.lang.String> strList59 = eventTypeSerializerInMemKeyValueStore50.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet58);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater60 = null;
+        int int61 = eventTypeSerializerInMemKeyValueStore43.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet58, strUpdater60);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor63 = eventTypeSerializerInMemKeyValueStore31.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet58, true);
+        java.util.Iterator<java.lang.String> strItor64 = eventTypeSerializerInMemKeyValueStore26.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet58);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor65 = eventTypeSerializerInMemKeyValueStore15.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet58);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper66 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore67 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper66);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer68 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean69 = eventTypeSerializerInMemKeyValueStore67.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer68);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer70 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList71 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean72 = eventTypeSerializerList71.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer70);
+        java.util.Iterator<java.lang.String> strItor74 = eventTypeSerializerInMemKeyValueStore67.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList71, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper75 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore76 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper75);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer77 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean78 = eventTypeSerializerInMemKeyValueStore76.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet79 = eventTypeSerializerInMemKeyValueStore76.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper80 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore81 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper80);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer82 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean83 = eventTypeSerializerInMemKeyValueStore81.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet84 = eventTypeSerializerInMemKeyValueStore81.keySet();
+        java.util.List<java.lang.String> strList85 = eventTypeSerializerInMemKeyValueStore76.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet84);
+        java.util.List<java.lang.String> strList86 = eventTypeSerializerInMemKeyValueStore67.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet84);
+        java.util.Iterator<java.lang.String> strItor88 = eventTypeSerializerInMemKeyValueStore15.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet84, true);
+        java.util.Iterator<java.lang.String> strItor89 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet84);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(strItor8);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 0 + "'", int16 == 0);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor20);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor24);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertNotNull(strList29);
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + 0 + "'", int32 == 0);
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor36);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
+        org.junit.Assert.assertTrue("'" + int44 + "' != '" + 0 + "'", int44 == 0);
+        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + true + "'", boolean47 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor48);
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet53);
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet58);
+        org.junit.Assert.assertNotNull(strList59);
+        org.junit.Assert.assertTrue("'" + int61 + "' != '" + 0 + "'", int61 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor63);
+        org.junit.Assert.assertNotNull(strItor64);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor65);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + false + "'", boolean69 == false);
+        org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + true + "'", boolean72 == true);
+        org.junit.Assert.assertNotNull(strItor74);
+        org.junit.Assert.assertTrue("'" + boolean78 + "' != '" + false + "'", boolean78 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet79);
+        org.junit.Assert.assertTrue("'" + boolean83 + "' != '" + false + "'", boolean83 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet84);
+        org.junit.Assert.assertNotNull(strList85);
+        org.junit.Assert.assertNotNull(strList86);
+        org.junit.Assert.assertNotNull(strItor88);
+        org.junit.Assert.assertNotNull(strItor89);
+    }
+
+    @Test
+    public void test165() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore8.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12, false);
+        java.util.List<java.lang.String> strList16 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer19 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean20 = eventTypeSerializerInMemKeyValueStore18.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer19);
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore1.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer19);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet22 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper23 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore24 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper23);
+        int int25 = eventTypeSerializerInMemKeyValueStore24.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList27 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean28 = eventTypeSerializerList27.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor29 = eventTypeSerializerInMemKeyValueStore24.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList27);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper30 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore31 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper30);
+        int int32 = eventTypeSerializerInMemKeyValueStore31.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer33 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList34 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean35 = eventTypeSerializerList34.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer33);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor36 = eventTypeSerializerInMemKeyValueStore31.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList34);
+        java.util.List<java.lang.String> strList37 = eventTypeSerializerInMemKeyValueStore31.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper38 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore39 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper38);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer40 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean41 = eventTypeSerializerInMemKeyValueStore39.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer40);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet42 = eventTypeSerializerInMemKeyValueStore39.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore39.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43, "");
+        boolean boolean46 = eventTypeSerializerInMemKeyValueStore31.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper47 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore48 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper47);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean50 = eventTypeSerializerInMemKeyValueStore48.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer51 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList52 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean53 = eventTypeSerializerList52.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer51);
+        java.util.Iterator<java.lang.String> strItor55 = eventTypeSerializerInMemKeyValueStore48.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList52, false);
+        java.lang.String str56 = com.tectonica.kvs.KvsUtil.firstOf(strItor55);
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue57 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43, strItor55);
+        java.lang.String str59 = eventTypeSerializerInMemKeyValueStore24.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43, true);
+        boolean boolean60 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(strItor15);
+        org.junit.Assert.assertNotNull(strList16);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet22);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + 0 + "'", int25 == 0);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor29);
+        org.junit.Assert.assertTrue("'" + int32 + "' != '" + 0 + "'", int32 == 0);
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor36);
+        org.junit.Assert.assertNotNull(strList37);
+        org.junit.Assert.assertTrue("'" + boolean41 + "' != '" + false + "'", boolean41 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet42);
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + false + "'", boolean46 == false);
+        org.junit.Assert.assertTrue("'" + boolean50 + "' != '" + false + "'", boolean50 == false);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + true + "'", boolean53 == true);
+        org.junit.Assert.assertNotNull(strItor55);
+        org.junit.Assert.assertNull(str56);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue57);
+        org.junit.Assert.assertNull(str59);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
+    }
+
+    @Test
+    public void test166() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper1 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore2 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper1);
+        int int3 = eventTypeSerializerInMemKeyValueStore2.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer4 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList5 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean6 = eventTypeSerializerList5.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer4);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor7 = eventTypeSerializerInMemKeyValueStore2.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList5);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper8 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore9 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper8);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean11 = eventTypeSerializerInMemKeyValueStore9.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer12 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList13 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean14 = eventTypeSerializerList13.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer12);
+        java.util.Iterator<java.lang.String> strItor16 = eventTypeSerializerInMemKeyValueStore9.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13, false);
+        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore2.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList13);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer22 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList23 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean24 = eventTypeSerializerList23.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer22);
+        java.util.Iterator<java.lang.String> strItor26 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
+        int int29 = eventTypeSerializerInMemKeyValueStore28.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer30 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList31 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean32 = eventTypeSerializerList31.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor33 = eventTypeSerializerInMemKeyValueStore28.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList31);
+        java.util.Iterator<java.lang.String> strItor34 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList31);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet35 = eventTypeSerializerInMemKeyValueStore19.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor37 = eventTypeSerializerInMemKeyValueStore2.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet35, true);
+        com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> serializableKeyValue38 = com.tectonica.kvs.KvsUtil.keyValueOf((java.io.Serializable) 100L, (com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>) eventTypeSerializerInMemKeyValueStore2);
+        java.io.Serializable serializable39 = serializableKeyValue38.getKey();
+        com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerAbstractKeyValueStore40 = serializableKeyValue38.getValue();
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>>, java.lang.Comparable<java.lang.String>> serializableKeyValueKeyValue42 = com.tectonica.kvs.KvsUtil.keyValueOf(serializableKeyValue38, (java.lang.Comparable<java.lang.String>) "");
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor7);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + true + "'", boolean14 == true);
+        org.junit.Assert.assertNotNull(strItor16);
+        org.junit.Assert.assertNotNull(strList17);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(strItor26);
+        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 0 + "'", int29 == 0);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor33);
+        org.junit.Assert.assertNotNull(strItor34);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet35);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor37);
+        org.junit.Assert.assertNotNull(serializableKeyValue38);
+        org.junit.Assert.assertEquals("'" + serializable39 + "' != '" + 100L + "'", serializable39, 100L);
+        org.junit.Assert.assertNotNull(eventTypeSerializerAbstractKeyValueStore40);
+        org.junit.Assert.assertNotNull(serializableKeyValueKeyValue42);
+    }
+
+    @Test
+    public void test167() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor2 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor3 = eventTypeSerializerInMemKeyValueStore1.keyIterator();
+        java.util.Iterator<java.lang.String> strItor4 = eventTypeSerializerInMemKeyValueStore1.valueIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper6 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore7 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper6);
+        int int8 = eventTypeSerializerInMemKeyValueStore7.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList10 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean11 = eventTypeSerializerList10.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor12 = eventTypeSerializerInMemKeyValueStore7.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList10);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper13 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore14 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper13);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer15 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean16 = eventTypeSerializerInMemKeyValueStore14.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer15);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer17 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList18 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean19 = eventTypeSerializerList18.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer17);
+        java.util.Iterator<java.lang.String> strItor21 = eventTypeSerializerInMemKeyValueStore14.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList18, false);
+        java.util.List<java.lang.String> strList22 = eventTypeSerializerInMemKeyValueStore7.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList18);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper23 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore24 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper23);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean26 = eventTypeSerializerInMemKeyValueStore24.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer27 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList28 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean29 = eventTypeSerializerList28.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer27);
+        java.util.Iterator<java.lang.String> strItor31 = eventTypeSerializerInMemKeyValueStore24.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList28, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper32 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore33 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper32);
+        int int34 = eventTypeSerializerInMemKeyValueStore33.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer35 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList36 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean37 = eventTypeSerializerList36.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer35);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor38 = eventTypeSerializerInMemKeyValueStore33.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList36);
+        java.util.Iterator<java.lang.String> strItor39 = eventTypeSerializerInMemKeyValueStore24.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList36);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet40 = eventTypeSerializerInMemKeyValueStore24.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor42 = eventTypeSerializerInMemKeyValueStore7.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet40, true);
+        com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> serializableKeyValue43 = com.tectonica.kvs.KvsUtil.keyValueOf((java.io.Serializable) 100L, (com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>) eventTypeSerializerInMemKeyValueStore7);
+        com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerAbstractKeyValueStore44 = serializableKeyValue43.getValue();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper45 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore46 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper45);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer47 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean48 = eventTypeSerializerInMemKeyValueStore46.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer47);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet49 = eventTypeSerializerInMemKeyValueStore46.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer50 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore46.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer50, "");
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet53 = eventTypeSerializerInMemKeyValueStore46.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor54 = eventTypeSerializerAbstractKeyValueStore44.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet53);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor56 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet53, true);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater58 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str59 = eventTypeSerializerInMemKeyValueStore1.updateValue("hi!", strUpdater58);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor2);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor3);
+        org.junit.Assert.assertNotNull(strItor4);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor12);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(strItor21);
+        org.junit.Assert.assertNotNull(strList22);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + true + "'", boolean29 == true);
+        org.junit.Assert.assertNotNull(strItor31);
+        org.junit.Assert.assertTrue("'" + int34 + "' != '" + 0 + "'", int34 == 0);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + true + "'", boolean37 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor38);
+        org.junit.Assert.assertNotNull(strItor39);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet40);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor42);
+        org.junit.Assert.assertNotNull(serializableKeyValue43);
+        org.junit.Assert.assertNotNull(eventTypeSerializerAbstractKeyValueStore44);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + false + "'", boolean48 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet49);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet53);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor54);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor56);
+    }
+
+    @Test
+    public void test168() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        boolean boolean11 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
+        int int14 = eventTypeSerializerInMemKeyValueStore13.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer15 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList16 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean17 = eventTypeSerializerList16.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer15);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor18 = eventTypeSerializerInMemKeyValueStore13.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList16);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper19 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore20 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper19);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer21 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean22 = eventTypeSerializerInMemKeyValueStore20.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer21);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet23 = eventTypeSerializerInMemKeyValueStore20.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet28 = eventTypeSerializerInMemKeyValueStore25.keySet();
+        java.util.List<java.lang.String> strList29 = eventTypeSerializerInMemKeyValueStore20.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet28);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater30 = null;
+        int int31 = eventTypeSerializerInMemKeyValueStore13.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet28, strUpdater30);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor33 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet28, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
+        int int36 = eventTypeSerializerInMemKeyValueStore35.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList38 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean39 = eventTypeSerializerList38.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor40 = eventTypeSerializerInMemKeyValueStore35.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList38);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean44 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        boolean boolean45 = eventTypeSerializerInMemKeyValueStore35.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        java.lang.String str46 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        int int47 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper48 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore49 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper48);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
+        int int52 = eventTypeSerializerInMemKeyValueStore51.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer53 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList54 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean55 = eventTypeSerializerList54.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer53);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor56 = eventTypeSerializerInMemKeyValueStore51.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList54);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper57 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore58 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper57);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer59 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean60 = eventTypeSerializerInMemKeyValueStore58.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer59);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer61 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList62 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean63 = eventTypeSerializerList62.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer61);
+        java.util.Iterator<java.lang.String> strItor65 = eventTypeSerializerInMemKeyValueStore58.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList62, false);
+        java.util.List<java.lang.String> strList66 = eventTypeSerializerInMemKeyValueStore51.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList62);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper67 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore68 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper67);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer69 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean70 = eventTypeSerializerInMemKeyValueStore68.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        boolean boolean71 = eventTypeSerializerInMemKeyValueStore51.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        eventTypeSerializerInMemKeyValueStore49.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69, "");
+        boolean boolean74 = eventTypeSerializerInMemKeyValueStore1.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 0 + "'", int14 == 0);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor18);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet23);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet28);
+        org.junit.Assert.assertNotNull(strList29);
+        org.junit.Assert.assertTrue("'" + int31 + "' != '" + 0 + "'", int31 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor33);
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + true + "'", boolean39 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor40);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+        org.junit.Assert.assertNull(str46);
+        org.junit.Assert.assertTrue("'" + int47 + "' != '" + 0 + "'", int47 == 0);
+        org.junit.Assert.assertTrue("'" + int52 + "' != '" + 0 + "'", int52 == 0);
+        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + true + "'", boolean55 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor56);
+        org.junit.Assert.assertTrue("'" + boolean60 + "' != '" + false + "'", boolean60 == false);
+        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + true + "'", boolean63 == true);
+        org.junit.Assert.assertNotNull(strItor65);
+        org.junit.Assert.assertNotNull(strList66);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+        org.junit.Assert.assertTrue("'" + boolean71 + "' != '" + false + "'", boolean71 == false);
+        org.junit.Assert.assertTrue("'" + boolean74 + "' != '" + false + "'", boolean74 == false);
+    }
+
+    @Test
+    public void test169() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore8.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12, false);
+        java.util.List<java.lang.String> strList16 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer19 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean20 = eventTypeSerializerInMemKeyValueStore18.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer19);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer21 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList22 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean23 = eventTypeSerializerList22.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer21);
+        java.util.Iterator<java.lang.String> strItor25 = eventTypeSerializerInMemKeyValueStore18.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList22, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper26 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore27 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper26);
+        int int28 = eventTypeSerializerInMemKeyValueStore27.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList30 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean31 = eventTypeSerializerList30.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor32 = eventTypeSerializerInMemKeyValueStore27.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList30);
+        java.util.Iterator<java.lang.String> strItor33 = eventTypeSerializerInMemKeyValueStore18.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList30);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet34 = eventTypeSerializerInMemKeyValueStore18.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor36 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet34, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer39 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean40 = eventTypeSerializerInMemKeyValueStore38.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer41 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList42 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean43 = eventTypeSerializerList42.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer41);
+        java.util.Iterator<java.lang.String> strItor45 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList42, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        int int48 = eventTypeSerializerInMemKeyValueStore47.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList50 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean51 = eventTypeSerializerList50.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor52 = eventTypeSerializerInMemKeyValueStore47.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Iterator<java.lang.String> strItor53 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet54 = eventTypeSerializerInMemKeyValueStore38.keySet();
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater55 = null;
+        int int56 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet54, strUpdater55);
+        java.util.Iterator<java.lang.String> strItor57 = eventTypeSerializerInMemKeyValueStore1.valueIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper60 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore61 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper60);
+        int int62 = eventTypeSerializerInMemKeyValueStore61.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer63 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList64 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean65 = eventTypeSerializerList64.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor66 = eventTypeSerializerInMemKeyValueStore61.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList64);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper67 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore68 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper67);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer69 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean70 = eventTypeSerializerInMemKeyValueStore68.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer71 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList72 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean73 = eventTypeSerializerList72.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer71);
+        java.util.Iterator<java.lang.String> strItor75 = eventTypeSerializerInMemKeyValueStore68.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList72, false);
+        java.util.List<java.lang.String> strList76 = eventTypeSerializerInMemKeyValueStore61.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList72);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper77 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore78 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper77);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer79 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean80 = eventTypeSerializerInMemKeyValueStore78.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer79);
+        boolean boolean81 = eventTypeSerializerInMemKeyValueStore61.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer79);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet82 = eventTypeSerializerInMemKeyValueStore61.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor84 = eventTypeSerializerInMemKeyValueStore59.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet82, true);
+        java.util.Iterator<java.lang.String> strItor86 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet82, true);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(strItor15);
+        org.junit.Assert.assertNotNull(strList16);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
+        org.junit.Assert.assertNotNull(strItor25);
+        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 0 + "'", int28 == 0);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor32);
+        org.junit.Assert.assertNotNull(strItor33);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet34);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor36);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertNotNull(strItor45);
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 0 + "'", int48 == 0);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor52);
+        org.junit.Assert.assertNotNull(strItor53);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet54);
+        org.junit.Assert.assertTrue("'" + int56 + "' != '" + 0 + "'", int56 == 0);
+        org.junit.Assert.assertNotNull(strItor57);
+        org.junit.Assert.assertTrue("'" + int62 + "' != '" + 0 + "'", int62 == 0);
+        org.junit.Assert.assertTrue("'" + boolean65 + "' != '" + true + "'", boolean65 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor66);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+        org.junit.Assert.assertTrue("'" + boolean73 + "' != '" + true + "'", boolean73 == true);
+        org.junit.Assert.assertNotNull(strItor75);
+        org.junit.Assert.assertNotNull(strList76);
+        org.junit.Assert.assertTrue("'" + boolean80 + "' != '" + false + "'", boolean80 == false);
+        org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet82);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor84);
+        org.junit.Assert.assertNotNull(strItor86);
+    }
+
+    @Test
+    public void test170() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore8.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12, false);
+        java.util.List<java.lang.String> strList16 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
+        int int19 = eventTypeSerializerInMemKeyValueStore18.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor23 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer28 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList29 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean30 = eventTypeSerializerList29.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28);
+        java.util.Iterator<java.lang.String> strItor32 = eventTypeSerializerInMemKeyValueStore25.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29, false);
+        java.util.List<java.lang.String> strList33 = eventTypeSerializerInMemKeyValueStore18.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
+        int int36 = eventTypeSerializerInMemKeyValueStore35.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList38 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean39 = eventTypeSerializerList38.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor40 = eventTypeSerializerInMemKeyValueStore35.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList38);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
+        int int43 = eventTypeSerializerInMemKeyValueStore42.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer44 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList45 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean46 = eventTypeSerializerList45.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer44);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor47 = eventTypeSerializerInMemKeyValueStore42.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList45);
+        java.util.List<java.lang.String> strList48 = eventTypeSerializerInMemKeyValueStore42.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper49 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore50 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper49);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer51 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean52 = eventTypeSerializerInMemKeyValueStore50.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer51);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet53 = eventTypeSerializerInMemKeyValueStore50.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore50.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, "");
+        boolean boolean57 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean61 = eventTypeSerializerInMemKeyValueStore59.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer62 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList63 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean64 = eventTypeSerializerList63.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer62);
+        java.util.Iterator<java.lang.String> strItor66 = eventTypeSerializerInMemKeyValueStore59.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList63, false);
+        java.lang.String str67 = com.tectonica.kvs.KvsUtil.firstOf(strItor66);
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue68 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, strItor66);
+        java.lang.String str70 = eventTypeSerializerInMemKeyValueStore35.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54, true);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet71 = eventTypeSerializerInMemKeyValueStore35.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor72 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet71);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper73 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore74 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper73);
+        com.tectonica.kvs.KeyValueStore.EventType eventType75 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler76 = null;
+        eventTypeSerializerInMemKeyValueStore74.addListener(eventType75, eventTypeSerializerEventHandler76);
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler78 = null;
+        eventTypeSerializerInMemKeyValueStore18.addListener(eventType75, eventTypeSerializerEventHandler78);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper80 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore81 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper80);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer82 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean83 = eventTypeSerializerInMemKeyValueStore81.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82);
+        java.lang.String str85 = eventTypeSerializerInMemKeyValueStore18.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82, false);
+        java.lang.String str86 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer82);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater88 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str89 = eventTypeSerializerInMemKeyValueStore1.updateValue("", strUpdater88);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(strItor15);
+        org.junit.Assert.assertNotNull(strList16);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor23);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
+        org.junit.Assert.assertNotNull(strItor32);
+        org.junit.Assert.assertNotNull(strList33);
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + true + "'", boolean39 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor40);
+        org.junit.Assert.assertTrue("'" + int43 + "' != '" + 0 + "'", int43 == 0);
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor47);
+        org.junit.Assert.assertNotNull(strList48);
+        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet53);
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + true + "'", boolean64 == true);
+        org.junit.Assert.assertNotNull(strItor66);
+        org.junit.Assert.assertNull(str67);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue68);
+        org.junit.Assert.assertNull(str70);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet71);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor72);
+        org.junit.Assert.assertTrue("'" + eventType75 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType75.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
+        org.junit.Assert.assertTrue("'" + boolean83 + "' != '" + false + "'", boolean83 == false);
+        org.junit.Assert.assertNull(str85);
+        org.junit.Assert.assertNull(str86);
+    }
+
+    @Test
+    public void test171() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.KeyValueStore.EventType eventType2 = com.tectonica.kvs.KeyValueStore.EventType.PreAdd;
+        com.tectonica.kvs.KeyValueStore.EventHandler<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerEventHandler3 = null;
+        eventTypeSerializerInMemKeyValueStore1.addListener(eventType2, eventTypeSerializerEventHandler3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor5 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet6 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        int int9 = eventTypeSerializerInMemKeyValueStore8.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList11 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean12 = eventTypeSerializerList11.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor13 = eventTypeSerializerInMemKeyValueStore8.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList11);
+        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList11, true);
+        org.junit.Assert.assertTrue("'" + eventType2 + "' != '" + com.tectonica.kvs.KeyValueStore.EventType.PreAdd + "'", eventType2.equals(com.tectonica.kvs.KeyValueStore.EventType.PreAdd));
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor5);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet6);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor13);
+        org.junit.Assert.assertNotNull(strItor15);
+    }
+
+    @Test
+    public void test172() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet4 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer5 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore1.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer5, "");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper8 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore9 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper8);
+        int int10 = eventTypeSerializerInMemKeyValueStore9.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor14 = eventTypeSerializerInMemKeyValueStore9.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper15 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore16 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper15);
+        int int17 = eventTypeSerializerInMemKeyValueStore16.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer18 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList19 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean20 = eventTypeSerializerList19.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer18);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor21 = eventTypeSerializerInMemKeyValueStore16.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList19);
+        java.util.List<java.lang.String> strList22 = eventTypeSerializerInMemKeyValueStore16.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper23 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore24 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper23);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean26 = eventTypeSerializerInMemKeyValueStore24.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet27 = eventTypeSerializerInMemKeyValueStore24.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer28 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore24.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28, "");
+        boolean boolean31 = eventTypeSerializerInMemKeyValueStore16.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper32 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore33 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper32);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer34 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean35 = eventTypeSerializerInMemKeyValueStore33.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer34);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer36 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList37 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean38 = eventTypeSerializerList37.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer36);
+        java.util.Iterator<java.lang.String> strItor40 = eventTypeSerializerInMemKeyValueStore33.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList37, false);
+        java.lang.String str41 = com.tectonica.kvs.KvsUtil.firstOf(strItor40);
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue42 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28, strItor40);
+        java.lang.String str44 = eventTypeSerializerInMemKeyValueStore9.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28, true);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore9.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor48 = eventTypeSerializerInMemKeyValueStore47.keyIterator();
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor49 = eventTypeSerializerInMemKeyValueStore47.keyIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper50 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore51 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper50);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean53 = eventTypeSerializerInMemKeyValueStore51.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer54 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList55 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean56 = eventTypeSerializerList55.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer54);
+        java.util.Iterator<java.lang.String> strItor58 = eventTypeSerializerInMemKeyValueStore51.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList55, false);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor59 = eventTypeSerializerInMemKeyValueStore51.keyIterator();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore51.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60, "hi!");
+        eventTypeSerializerInMemKeyValueStore47.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60, "hi!");
+        java.util.concurrent.locks.Lock lock65 = eventTypeSerializerInMemKeyValueStore9.getModificationLock((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper66 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore67 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper66);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer68 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean69 = eventTypeSerializerInMemKeyValueStore67.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer68);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet70 = eventTypeSerializerInMemKeyValueStore67.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer71 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore67.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer71, "");
+        java.lang.String str75 = eventTypeSerializerInMemKeyValueStore9.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer71, false);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet76 = eventTypeSerializerInMemKeyValueStore9.keySet();
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater77 = null;
+        int int78 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet76, strUpdater77);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet4);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor14);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 0 + "'", int17 == 0);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor21);
+        org.junit.Assert.assertNotNull(strList22);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet27);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
+        org.junit.Assert.assertNotNull(strItor40);
+        org.junit.Assert.assertNull(str41);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue42);
+        org.junit.Assert.assertNull(str44);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor48);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor49);
+        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
+        org.junit.Assert.assertTrue("'" + boolean56 + "' != '" + true + "'", boolean56 == true);
+        org.junit.Assert.assertNotNull(strItor58);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor59);
+        org.junit.Assert.assertNotNull(lock65);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + false + "'", boolean69 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet70);
+        org.junit.Assert.assertNull(str75);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet76);
+        org.junit.Assert.assertTrue("'" + int78 + "' != '" + 0 + "'", int78 == 0);
+    }
+
+    @Test
+    public void test173() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet11 = eventTypeSerializerInMemKeyValueStore8.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet16 = eventTypeSerializerInMemKeyValueStore13.keySet();
+        java.util.List<java.lang.String> strList17 = eventTypeSerializerInMemKeyValueStore8.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater18 = null;
+        int int19 = eventTypeSerializerInMemKeyValueStore1.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet16, strUpdater18);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper20 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore21 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper20);
+        int int22 = eventTypeSerializerInMemKeyValueStore21.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer23 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList24 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean25 = eventTypeSerializerList24.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer23);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor26 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList24);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper27 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore28 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper27);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer29 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean30 = eventTypeSerializerInMemKeyValueStore28.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList32 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean33 = eventTypeSerializerList32.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        java.util.Iterator<java.lang.String> strItor35 = eventTypeSerializerInMemKeyValueStore28.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32, false);
+        java.util.List<java.lang.String> strList36 = eventTypeSerializerInMemKeyValueStore21.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList32);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer39 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean40 = eventTypeSerializerInMemKeyValueStore38.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer39);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer41 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList42 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean43 = eventTypeSerializerList42.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer41);
+        java.util.Iterator<java.lang.String> strItor45 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList42, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        int int48 = eventTypeSerializerInMemKeyValueStore47.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer49 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList50 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean51 = eventTypeSerializerList50.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer49);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor52 = eventTypeSerializerInMemKeyValueStore47.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Iterator<java.lang.String> strItor53 = eventTypeSerializerInMemKeyValueStore38.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList50);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet54 = eventTypeSerializerInMemKeyValueStore38.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor56 = eventTypeSerializerInMemKeyValueStore21.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet54, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper57 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore58 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper57);
+        int int59 = eventTypeSerializerInMemKeyValueStore58.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList61 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean62 = eventTypeSerializerList61.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor63 = eventTypeSerializerInMemKeyValueStore58.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList61);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper64 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore65 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper64);
+        int int66 = eventTypeSerializerInMemKeyValueStore65.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer67 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList68 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean69 = eventTypeSerializerList68.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer67);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor70 = eventTypeSerializerInMemKeyValueStore65.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList68);
+        java.util.List<java.lang.String> strList71 = eventTypeSerializerInMemKeyValueStore65.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper72 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore73 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper72);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean75 = eventTypeSerializerInMemKeyValueStore73.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet76 = eventTypeSerializerInMemKeyValueStore73.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer77 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore73.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
+        boolean boolean80 = eventTypeSerializerInMemKeyValueStore65.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
+        boolean boolean81 = eventTypeSerializerInMemKeyValueStore58.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77);
+        eventTypeSerializerInMemKeyValueStore21.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, "");
+        java.lang.String str85 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer77, false);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater86 = null;
+        int int87 = eventTypeSerializerInMemKeyValueStore1.updateAll(strUpdater86);
+        eventTypeSerializerInMemKeyValueStore1.clearCache();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet11);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet16);
+        org.junit.Assert.assertNotNull(strList17);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 0 + "'", int22 == 0);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor26);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
+        org.junit.Assert.assertNotNull(strItor35);
+        org.junit.Assert.assertNotNull(strList36);
+        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertNotNull(strItor45);
+        org.junit.Assert.assertTrue("'" + int48 + "' != '" + 0 + "'", int48 == 0);
+        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + true + "'", boolean51 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor52);
+        org.junit.Assert.assertNotNull(strItor53);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet54);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor56);
+        org.junit.Assert.assertTrue("'" + int59 + "' != '" + 0 + "'", int59 == 0);
+        org.junit.Assert.assertTrue("'" + boolean62 + "' != '" + true + "'", boolean62 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor63);
+        org.junit.Assert.assertTrue("'" + int66 + "' != '" + 0 + "'", int66 == 0);
+        org.junit.Assert.assertTrue("'" + boolean69 + "' != '" + true + "'", boolean69 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor70);
+        org.junit.Assert.assertNotNull(strList71);
+        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet76);
+        org.junit.Assert.assertTrue("'" + boolean80 + "' != '" + false + "'", boolean80 == false);
+        org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + false + "'", boolean81 == false);
+        org.junit.Assert.assertNull(str85);
+        org.junit.Assert.assertTrue("'" + int87 + "' != '" + 0 + "'", int87 == 0);
+    }
+
+    @Test
+    public void test174() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer9 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean10 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer9);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer11 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList12 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean13 = eventTypeSerializerList12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer11);
+        java.util.Iterator<java.lang.String> strItor15 = eventTypeSerializerInMemKeyValueStore8.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12, false);
+        java.util.List<java.lang.String> strList16 = eventTypeSerializerInMemKeyValueStore1.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer19 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean20 = eventTypeSerializerInMemKeyValueStore18.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer19);
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore1.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer19);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper22 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore23 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper22);
+        int int24 = eventTypeSerializerInMemKeyValueStore23.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer25 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList26 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean27 = eventTypeSerializerList26.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer25);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor28 = eventTypeSerializerInMemKeyValueStore23.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList26);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper29 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore30 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean32 = eventTypeSerializerInMemKeyValueStore30.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        boolean boolean33 = eventTypeSerializerInMemKeyValueStore23.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper34 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore35 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper34);
+        int int36 = eventTypeSerializerInMemKeyValueStore35.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer37 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList38 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean39 = eventTypeSerializerList38.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer37);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor40 = eventTypeSerializerInMemKeyValueStore35.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList38);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper41 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore42 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper41);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer43 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean44 = eventTypeSerializerInMemKeyValueStore42.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer43);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore42.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper46 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore47 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper46);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer48 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean49 = eventTypeSerializerInMemKeyValueStore47.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer48);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet50 = eventTypeSerializerInMemKeyValueStore47.keySet();
+        java.util.List<java.lang.String> strList51 = eventTypeSerializerInMemKeyValueStore42.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater52 = null;
+        int int53 = eventTypeSerializerInMemKeyValueStore35.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50, strUpdater52);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor55 = eventTypeSerializerInMemKeyValueStore23.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet50, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper56 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore57 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper56);
+        int int58 = eventTypeSerializerInMemKeyValueStore57.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer59 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList60 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean61 = eventTypeSerializerList60.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer59);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor62 = eventTypeSerializerInMemKeyValueStore57.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList60);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper63 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore64 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper63);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer65 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean66 = eventTypeSerializerInMemKeyValueStore64.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        boolean boolean67 = eventTypeSerializerInMemKeyValueStore57.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        java.lang.String str68 = eventTypeSerializerInMemKeyValueStore23.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer65);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper69 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore70 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper69);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer71 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean72 = eventTypeSerializerInMemKeyValueStore70.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer71);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet73 = eventTypeSerializerInMemKeyValueStore70.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer74 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore70.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, "");
+        java.lang.String str77 = eventTypeSerializerInMemKeyValueStore23.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74);
+        java.lang.String str79 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer74, true);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper80 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore81 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper80);
+        int int82 = eventTypeSerializerInMemKeyValueStore81.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer83 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList84 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean85 = eventTypeSerializerList84.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer83);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor86 = eventTypeSerializerInMemKeyValueStore81.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList84);
+        java.util.List<java.lang.String> strList87 = eventTypeSerializerInMemKeyValueStore81.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper88 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore89 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper88);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer90 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean91 = eventTypeSerializerInMemKeyValueStore89.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer90);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet92 = eventTypeSerializerInMemKeyValueStore89.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer93 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore89.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer93, "");
+        boolean boolean96 = eventTypeSerializerInMemKeyValueStore81.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer93);
+        boolean boolean97 = eventTypeSerializerInMemKeyValueStore1.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer93);
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        org.junit.Assert.assertNotNull(strItor15);
+        org.junit.Assert.assertNotNull(strList16);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 0 + "'", int24 == 0);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor28);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
+        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + true + "'", boolean39 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor40);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
+        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet50);
+        org.junit.Assert.assertNotNull(strList51);
+        org.junit.Assert.assertTrue("'" + int53 + "' != '" + 0 + "'", int53 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor55);
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + 0 + "'", int58 == 0);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + true + "'", boolean61 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor62);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + false + "'", boolean67 == false);
+        org.junit.Assert.assertNull(str68);
+        org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + false + "'", boolean72 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet73);
+        org.junit.Assert.assertNull(str77);
+        org.junit.Assert.assertNull(str79);
+        org.junit.Assert.assertTrue("'" + int82 + "' != '" + 0 + "'", int82 == 0);
+        org.junit.Assert.assertTrue("'" + boolean85 + "' != '" + true + "'", boolean85 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor86);
+        org.junit.Assert.assertNotNull(strList87);
+        org.junit.Assert.assertTrue("'" + boolean91 + "' != '" + false + "'", boolean91 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet92);
+        org.junit.Assert.assertTrue("'" + boolean96 + "' != '" + false + "'", boolean96 == false);
+        org.junit.Assert.assertTrue("'" + boolean97 + "' != '" + false + "'", boolean97 == false);
+    }
+
+    @Test
+    public void test175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper7 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore8 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper7);
+        int int9 = eventTypeSerializerInMemKeyValueStore8.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer10 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList11 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean12 = eventTypeSerializerList11.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer10);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor13 = eventTypeSerializerInMemKeyValueStore8.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList11);
+        java.util.List<java.lang.String> strList14 = eventTypeSerializerInMemKeyValueStore8.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper15 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore16 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper15);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer17 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean18 = eventTypeSerializerInMemKeyValueStore16.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer17);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet19 = eventTypeSerializerInMemKeyValueStore16.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore16.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, "");
+        boolean boolean23 = eventTypeSerializerInMemKeyValueStore8.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer28 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList29 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean30 = eventTypeSerializerList29.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer28);
+        java.util.Iterator<java.lang.String> strItor32 = eventTypeSerializerInMemKeyValueStore25.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList29, false);
+        java.lang.String str33 = com.tectonica.kvs.KvsUtil.firstOf(strItor32);
+        com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.util.Iterator<java.lang.String>> eventTypeSerializerKeyValue34 = com.tectonica.kvs.KvsUtil.keyValueOf((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, strItor32);
+        java.lang.String str36 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20, true);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet37 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper38 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore39 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper38);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor40 = eventTypeSerializerInMemKeyValueStore39.keyIterator();
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor41 = eventTypeSerializerInMemKeyValueStore39.keyIterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper42 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore43 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper42);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer44 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean45 = eventTypeSerializerInMemKeyValueStore43.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer44);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer46 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList47 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean48 = eventTypeSerializerList47.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer46);
+        java.util.Iterator<java.lang.String> strItor50 = eventTypeSerializerInMemKeyValueStore43.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList47, false);
+        java.util.Iterator<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerItor51 = eventTypeSerializerInMemKeyValueStore43.keyIterator();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore43.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52, "hi!");
+        eventTypeSerializerInMemKeyValueStore39.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52, "hi!");
+        java.util.concurrent.locks.Lock lock57 = eventTypeSerializerInMemKeyValueStore1.getModificationLock((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper58 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore59 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper58);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer60 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean61 = eventTypeSerializerInMemKeyValueStore59.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer60);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet62 = eventTypeSerializerInMemKeyValueStore59.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer63 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore59.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63, "");
+        java.lang.String str67 = eventTypeSerializerInMemKeyValueStore1.get((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer63, false);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater69 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str70 = eventTypeSerializerInMemKeyValueStore1.updateValue("", strUpdater69);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor13);
+        org.junit.Assert.assertNotNull(strList14);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet19);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
+        org.junit.Assert.assertNotNull(strItor32);
+        org.junit.Assert.assertNull(str33);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValue34);
+        org.junit.Assert.assertNull(str36);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet37);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor40);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor41);
+        org.junit.Assert.assertTrue("'" + boolean45 + "' != '" + false + "'", boolean45 == false);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + true + "'", boolean48 == true);
+        org.junit.Assert.assertNotNull(strItor50);
+        org.junit.Assert.assertNotNull(eventTypeSerializerItor51);
+        org.junit.Assert.assertNotNull(lock57);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet62);
+        org.junit.Assert.assertNull(str67);
+    }
+
+    @Test
+    public void test176() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        java.util.List<java.lang.String> strList4 = eventTypeSerializerInMemKeyValueStore1.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper5 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore6 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper5);
+        int int7 = eventTypeSerializerInMemKeyValueStore6.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer8 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList9 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean10 = eventTypeSerializerList9.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer8);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor11 = eventTypeSerializerInMemKeyValueStore6.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList9);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper12 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore13 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper12);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean15 = eventTypeSerializerInMemKeyValueStore13.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        boolean boolean16 = eventTypeSerializerInMemKeyValueStore6.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper17 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore18 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper17);
+        int int19 = eventTypeSerializerInMemKeyValueStore18.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList21 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean22 = eventTypeSerializerList21.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor23 = eventTypeSerializerInMemKeyValueStore18.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList21);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper24 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore25 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper24);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer26 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean27 = eventTypeSerializerInMemKeyValueStore25.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer26);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet28 = eventTypeSerializerInMemKeyValueStore25.keySet();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper29 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore30 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper29);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer31 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean32 = eventTypeSerializerInMemKeyValueStore30.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer31);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet33 = eventTypeSerializerInMemKeyValueStore30.keySet();
+        java.util.List<java.lang.String> strList34 = eventTypeSerializerInMemKeyValueStore25.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater35 = null;
+        int int36 = eventTypeSerializerInMemKeyValueStore18.update((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, strUpdater35);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor38 = eventTypeSerializerInMemKeyValueStore6.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33, true);
+        java.util.Iterator<java.lang.String> strItor39 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet33);
+        int int40 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        int int41 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor42 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        eventTypeSerializerInMemKeyValueStore1.clearCache();
+        java.util.List<java.lang.String> strList44 = eventTypeSerializerInMemKeyValueStore1.values();
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertNotNull(strList4);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 0 + "'", int7 == 0);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor11);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 0 + "'", int19 == 0);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor23);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet28);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet33);
+        org.junit.Assert.assertNotNull(strList34);
+        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 0 + "'", int36 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor38);
+        org.junit.Assert.assertNotNull(strItor39);
+        org.junit.Assert.assertTrue("'" + int40 + "' != '" + 0 + "'", int40 == 0);
+        org.junit.Assert.assertTrue("'" + int41 + "' != '" + 0 + "'", int41 == 0);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor42);
+        org.junit.Assert.assertNotNull(strList44);
+    }
+
+    @Test
+    public void test177() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer2 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean3 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer2);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer4 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList5 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean6 = eventTypeSerializerList5.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer4);
+        java.util.Iterator<java.lang.String> strItor8 = eventTypeSerializerInMemKeyValueStore1.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList5, false);
+        eventTypeSerializerInMemKeyValueStore1.clearCache();
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        org.junit.Assert.assertNotNull(strItor8);
+    }
+
+    @Test
+    public void test178() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper0 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore1 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper0);
+        int int2 = eventTypeSerializerInMemKeyValueStore1.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer3 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList4 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean5 = eventTypeSerializerList4.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer3);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor6 = eventTypeSerializerInMemKeyValueStore1.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList4);
+        java.util.List<java.lang.String> strList7 = eventTypeSerializerInMemKeyValueStore1.values();
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet8 = eventTypeSerializerInMemKeyValueStore1.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor9 = eventTypeSerializerInMemKeyValueStore1.iterator();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper11 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore12 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper11);
+        int int13 = eventTypeSerializerInMemKeyValueStore12.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer14 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList15 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean16 = eventTypeSerializerList15.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer14);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor17 = eventTypeSerializerInMemKeyValueStore12.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList15);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper18 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore19 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper18);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer20 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean21 = eventTypeSerializerInMemKeyValueStore19.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer20);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer22 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList23 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean24 = eventTypeSerializerList23.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer22);
+        java.util.Iterator<java.lang.String> strItor26 = eventTypeSerializerInMemKeyValueStore19.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23, false);
+        java.util.List<java.lang.String> strList27 = eventTypeSerializerInMemKeyValueStore12.valuesFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList23);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper28 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore29 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper28);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer30 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean31 = eventTypeSerializerInMemKeyValueStore29.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer30);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer32 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList33 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean34 = eventTypeSerializerList33.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer32);
+        java.util.Iterator<java.lang.String> strItor36 = eventTypeSerializerInMemKeyValueStore29.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList33, false);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper37 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore38 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper37);
+        int int39 = eventTypeSerializerInMemKeyValueStore38.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer40 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList41 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean42 = eventTypeSerializerList41.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer40);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor43 = eventTypeSerializerInMemKeyValueStore38.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList41);
+        java.util.Iterator<java.lang.String> strItor44 = eventTypeSerializerInMemKeyValueStore29.valueIteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList41);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet45 = eventTypeSerializerInMemKeyValueStore29.keySet();
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor47 = eventTypeSerializerInMemKeyValueStore12.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerSet45, true);
+        com.tectonica.kvs.KeyValueStore.KeyValue<java.io.Serializable, com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> serializableKeyValue48 = com.tectonica.kvs.KvsUtil.keyValueOf((java.io.Serializable) 100L, (com.tectonica.kvs.AbstractKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>) eventTypeSerializerInMemKeyValueStore12);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper49 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore50 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper49);
+        int int51 = eventTypeSerializerInMemKeyValueStore50.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer52 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList53 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean54 = eventTypeSerializerList53.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer52);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor55 = eventTypeSerializerInMemKeyValueStore50.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList53);
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper56 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore57 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper56);
+        int int58 = eventTypeSerializerInMemKeyValueStore57.deleteAll();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer59 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerList60 = new java.util.ArrayList<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>();
+        boolean boolean61 = eventTypeSerializerList60.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer59);
+        java.util.Iterator<com.tectonica.kvs.KeyValueStore.KeyValue<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>> eventTypeSerializerKeyValueItor62 = eventTypeSerializerInMemKeyValueStore57.iteratorFor((java.util.Collection<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>>) eventTypeSerializerList60);
+        java.util.List<java.lang.String> strList63 = eventTypeSerializerInMemKeyValueStore57.values();
+        com.tectonica.kvs.KeyValueStore.KeyMapper<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerKeyMapper64 = null;
+        com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String> eventTypeSerializerInMemKeyValueStore65 = new com.tectonica.kvs.impl.InMemKeyValueStore<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>, java.lang.String>(eventTypeSerializerKeyMapper64);
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer66 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        boolean boolean67 = eventTypeSerializerInMemKeyValueStore65.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer66);
+        java.util.Set<com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>> eventTypeSerializerSet68 = eventTypeSerializerInMemKeyValueStore65.keySet();
+        com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType> eventTypeKryoSerializer69 = new com.tectonica.kvs.impl.GaeKeyValueStore.KryoSerializer<com.tectonica.kvs.KeyValueStore.EventType>();
+        eventTypeSerializerInMemKeyValueStore65.put((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69, "");
+        boolean boolean72 = eventTypeSerializerInMemKeyValueStore57.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        boolean boolean73 = eventTypeSerializerInMemKeyValueStore50.containsKey((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        eventTypeSerializerInMemKeyValueStore12.add((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69, "hi!");
+        boolean boolean76 = eventTypeSerializerInMemKeyValueStore1.delete((com.tectonica.kvs.impl.GaeKeyValueStore.Serializer<com.tectonica.kvs.KeyValueStore.EventType>) eventTypeKryoSerializer69);
+        com.tectonica.kvs.Updater<java.lang.String> strUpdater78 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str79 = eventTypeSerializerInMemKeyValueStore1.updateValue("hi!", strUpdater78);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor6);
+        org.junit.Assert.assertNotNull(strList7);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet8);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor9);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 0 + "'", int13 == 0);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor17);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
+        org.junit.Assert.assertNotNull(strItor26);
+        org.junit.Assert.assertNotNull(strList27);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
+        org.junit.Assert.assertNotNull(strItor36);
+        org.junit.Assert.assertTrue("'" + int39 + "' != '" + 0 + "'", int39 == 0);
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor43);
+        org.junit.Assert.assertNotNull(strItor44);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet45);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor47);
+        org.junit.Assert.assertNotNull(serializableKeyValue48);
+        org.junit.Assert.assertTrue("'" + int51 + "' != '" + 0 + "'", int51 == 0);
+        org.junit.Assert.assertTrue("'" + boolean54 + "' != '" + true + "'", boolean54 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor55);
+        org.junit.Assert.assertTrue("'" + int58 + "' != '" + 0 + "'", int58 == 0);
+        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + true + "'", boolean61 == true);
+        org.junit.Assert.assertNotNull(eventTypeSerializerKeyValueItor62);
+        org.junit.Assert.assertNotNull(strList63);
+        org.junit.Assert.assertTrue("'" + boolean67 + "' != '" + false + "'", boolean67 == false);
+        org.junit.Assert.assertNotNull(eventTypeSerializerSet68);
+        org.junit.Assert.assertTrue("'" + boolean72 + "' != '" + false + "'", boolean72 == false);
+        org.junit.Assert.assertTrue("'" + boolean73 + "' != '" + false + "'", boolean73 == false);
+        org.junit.Assert.assertTrue("'" + boolean76 + "' != '" + false + "'", boolean76 == false);
     }
 }
 

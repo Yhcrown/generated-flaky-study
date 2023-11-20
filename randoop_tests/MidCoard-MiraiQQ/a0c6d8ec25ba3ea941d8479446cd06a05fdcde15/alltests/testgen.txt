@@ -1,4 +1,4 @@
-[TIME]: 0:00:02.927484
+[TIME]: 0:00:02.695297
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Throwable thrown while handling command: java.lang.NoSuchFieldError: ANNOTATION_PROCESSOR_MODULE_PATH

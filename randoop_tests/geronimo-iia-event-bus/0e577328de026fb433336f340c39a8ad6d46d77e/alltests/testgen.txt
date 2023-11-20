@@ -1,4 +1,4 @@
-[TIME]: 0:00:02.322717
+[TIME]: 0:00:01.788170
 
 Throwable thrown while handling command: java.lang.NullPointerException
 java.lang.NullPointerException

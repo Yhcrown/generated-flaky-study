@@ -1,4 +1,4 @@
-[TIME]: 0:00:19.727886
+[TIME]: 0:00:18.911522
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.RoundRobinStrategy specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.github.edgar615.util.loadbalance.WeightRoundbinStrategy specified via --testclass or --classlist.
@@ -27,18 +27,18 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:44:59.330Z     18.4M used)Instantiation error for operation
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:54:12.423Z     18.4M used)Instantiation error for operation
  <ParameterType [ NullType, java.lang.Object ]> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler<T>.create : (ParameterType [ NullType, java.lang.Object ]) -> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler
 Instantiation error for operation
  <ParameterType [ NullType, java.lang.Object ]> com.github.edgar615.util.reflect.ObjectProxyInvocationHandler<T>.createProxy : (java.lang.Class<T>, ParameterType [ NullType, java.lang.Object ]) -> ParameterType [ NullType, java.lang.Object ]
 
-Progress update: steps=919, test inputs generated=529, failing inputs=0      (2023-10-31T23:45:15.008Z     23.4M used)
+Progress update: steps=919, test inputs generated=529, failing inputs=0      (2023-11-20T08:54:27.516Z     160M used)
 Normal method executions: 118800
 Exceptional method executions: 102
 
-Average method execution time (normal termination):      0.0400
-Average method execution time (exceptional termination): 0.504
-Approximate memory usage 23.4M
+Average method execution time (normal termination):      0.0391
+Average method execution time (exceptional termination): 0.492
+Approximate memory usage 160M
 Explorer = ForwardGenerator(steps: 919, null steps: 390, num_sequences_generated: 529;
     allSequences: 529, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 29;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 73)

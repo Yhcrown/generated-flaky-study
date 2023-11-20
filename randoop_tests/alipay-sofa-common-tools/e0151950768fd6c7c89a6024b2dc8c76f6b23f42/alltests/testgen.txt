@@ -1,4 +1,4 @@
-[TIME]: 0:00:10.494187
+[TIME]: 0:00:10.036876
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/private/tmp/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -17,7 +17,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:37:37.585Z     20.5M used)Sofa-Middleware-Log:ERROR 10
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:46:32.004Z     20.5M used)Sofa-Middleware-Log:ERROR 10
 Sofa-Middleware-Log:WARN Unsupported change logger level in class com.alipay.sofa.common.log.proxy.TemporaryILoggerFactory, loggerName[10]
 Sofa-Middleware-Log:WARN Unsupported change logger level in class com.alipay.sofa.common.log.proxy.TemporaryILoggerFactory, loggerName[ROOT]
 Sofa-Middleware-Log:WARN Code space: "sofa.middleware.log.%s.console.level" is already initialized!
@@ -49,13 +49,13 @@ Sofa-Middleware-Log:WARN ThreadPoolConfig{threadPoolName='null', spaceName='null
 Sofa-Middleware-Log:WARN Unsupported change logger level in class com.alipay.sofa.common.log.proxy.TemporaryILoggerFactory, loggerName[ROOT]
 Sofa-Middleware-Log:WARN Unsupported change logger level in class com.alipay.sofa.common.log.proxy.TemporaryILoggerFactory, loggerName[ROOT]
 
-Progress update: steps=744, test inputs generated=513, failing inputs=1      (2023-10-31T23:37:43.684Z     64.0M used)
+Progress update: steps=744, test inputs generated=513, failing inputs=1      (2023-11-20T08:46:37.760Z     448M used)
 Normal method executions: 21277
 Exceptional method executions: 82
 
-Average method execution time (normal termination):      0.0569
-Average method execution time (exceptional termination): 0.203
-Approximate memory usage 64.0M
+Average method execution time (normal termination):      0.0571
+Average method execution time (exceptional termination): 0.260
+Approximate memory usage 448M
 Explorer = ForwardGenerator(steps: 744, null steps: 231, num_sequences_generated: 513;
     allSequences: 513, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 111)

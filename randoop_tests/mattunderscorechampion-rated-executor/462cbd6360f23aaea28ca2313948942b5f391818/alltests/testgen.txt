@@ -1,4 +1,4 @@
-[TIME]: 0:01:02.898775
+[TIME]: 0:01:02.525956
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.mattunderscore.rated.executor.RatedExecutor specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.mattunderscore.rated.executor.ScheduledInternalExecutor specified via --testclass or --classlist.
@@ -17,7 +17,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:43:56.498Z     51.1M used)Unhandled exception in thread RatedExecutor-0
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:53:05.370Z     51.2M used)Unhandled exception in thread RatedExecutor-0
 java.lang.NullPointerException
 	at java.util.concurrent.TimeUnit$1.convert(TimeUnit.java:83)
 	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
@@ -138,23 +138,23 @@ java.lang.NullPointerException
 	at com.mattunderscore.rated.executor.ThreadedInternalExecutor.run(ThreadedInternalExecutor.java:109)
 	at java.lang.Thread.run(Thread.java:750)
 
-Progress update: steps=594, test inputs generated=421, failing inputs=0      (2023-10-31T23:44:56.497Z     590M used)
-Normal method executions: 15688
-Exceptional method executions: 256
+Progress update: steps=631, test inputs generated=453, failing inputs=0      (2023-11-20T08:54:05.372Z     356M used)
+Normal method executions: 18721
+Exceptional method executions: 281
 
-Average method execution time (normal termination):      0.0678
-Average method execution time (exceptional termination): 0.133
-Approximate memory usage 590M
-Explorer = ForwardGenerator(steps: 594, null steps: 173, num_sequences_generated: 421;
-    allSequences: 421, regresson seqs: 272, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 149;
+Average method execution time (normal termination):      0.0603
+Average method execution time (exceptional termination): 0.154
+Approximate memory usage 356M
+Explorer = ForwardGenerator(steps: 631, null steps: 178, num_sequences_generated: 453;
+    allSequences: 453, regresson seqs: 289, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 164;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 41)
 
 No error-revealing tests to output.
 
-About to look for failing assertions in 176 regression sequences.
+About to look for failing assertions in 186 regression sequences.
 
 Regression test output:
-Regression test count: 176
+Regression test count: 186
 Writing regression JUnit tests...
 
                                                                                                                                                                                                        
@@ -165,6 +165,6 @@ About to look for flaky methods.
 
 Invalid tests generated: 0
 
-Uncompilable sequences generated (count: 73).
+Uncompilable sequences generated (count: 82).
 Please report uncompilable sequences at https://github.com/randoop/randoop/issues ,
 providing the information requested at https://randoop.github.io/randoop/manual/index.html#bug-reporting .

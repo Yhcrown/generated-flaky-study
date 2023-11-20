@@ -992,7 +992,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:01 CST 2023");
     }
 
     @Test
@@ -1096,7 +1096,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:01 CST 2023");
     }
 
     @Test
@@ -1288,7 +1288,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:01 CST 2023");
     }
 
     @Test
@@ -1321,7 +1321,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:02 CST 2023");
     }
 
     @Test
@@ -1422,7 +1422,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent10 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent10.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent15 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent15.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date16);
-// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Mon Nov 20 02:38:02 CST 2023");
     }
 
     @Test
@@ -1451,7 +1451,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:38 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:02 CST 2023");
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str18, "/etc/dataone/storage/hazelcast.xml");
     }
 
@@ -1645,7 +1645,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent4 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent4.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:02 CST 2023");
     }
 
     @Test
@@ -1698,7 +1698,7 @@ public class TestGroup100Case0 {
         java.lang.String str5 = metricLogEntry4.toString();
         java.lang.Long long6 = metricLogEntry4.getTimeToCompleteEventMS();
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
-// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-10-31T23:28:39.136+00:00\"}" + "'", str5, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-10-31T23:28:39.136+00:00\"}");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-11-20T08:38:02.572+00:00\"}" + "'", str5, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-11-20T08:38:02.572+00:00\"}");
         org.junit.Assert.assertNull(long6);
     }
 
@@ -1745,7 +1745,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent10 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent10.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent15 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent15.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date16);
-// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Mon Nov 20 02:38:02 CST 2023");
     }
 
     @Test
@@ -1802,7 +1802,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:02 CST 2023");
         org.junit.Assert.assertTrue("'" + auditEvent18 + "' != '" + org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND + "'", auditEvent18.equals(org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND));
     }
 
@@ -1865,7 +1865,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:02 CST 2023");
     }
 
     @Test
@@ -1907,7 +1907,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:02 CST 2023");
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "processing" + "'", str18, "processing");
     }
 
@@ -1972,7 +1972,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent4 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent4.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2173,7 +2173,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent4 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent4.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2215,7 +2215,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent8 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent8.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent13 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent13.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date14);
-// flaky:         org.junit.Assert.assertEquals(date14.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date14.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2242,7 +2242,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent4 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent4.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2290,7 +2290,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:39 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2397,7 +2397,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent11 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent11.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent16 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent16.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date17);
-// flaky:         org.junit.Assert.assertEquals(date17.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date17.toString(), "Mon Nov 20 02:38:03 CST 2023");
         org.junit.Assert.assertNull(str22);
         org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
     }
@@ -2428,9 +2428,9 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent5 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent5.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date6);
-// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Mon Nov 20 02:38:03 CST 2023");
         org.junit.Assert.assertNotNull(date9);
-// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2488,7 +2488,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent10 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent10.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent15 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent15.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date16);
-// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date16.toString(), "Mon Nov 20 02:38:03 CST 2023");
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str19, "/etc/dataone/storage/hazelcast.xml");
         org.junit.Assert.assertNull(str22);
         org.junit.Assert.assertTrue("'" + auditEvent26 + "' != '" + org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND + "'", auditEvent26.equals(org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND));
@@ -2769,7 +2769,7 @@ public class TestGroup100Case0 {
         org.dataone.cn.log.MetricLogEntry metricLogEntry4 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference1, identifier2, "smreplicationpolicy");
         org.dataone.service.types.v1.NodeReference nodeReference5 = null;
         org.dataone.service.types.v1.Identifier identifier6 = null;
-        org.dataone.cn.log.MetricLogEntry metricLogEntry8 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference5, identifier6, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-10-31T23:28:39.078+00:00\"}");
+        org.dataone.cn.log.MetricLogEntry metricLogEntry8 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference5, identifier6, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-11-20T08:38:02.514+00:00\"}");
         org.dataone.cn.log.AuditLogEntry auditLogEntry11 = new org.dataone.cn.log.AuditLogEntry();
         java.util.Date date12 = null;
         auditLogEntry11.setDateLogged(date12);
@@ -2792,7 +2792,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent18 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent18.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent23 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent23.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date24);
-// flaky:         org.junit.Assert.assertEquals(date24.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date24.toString(), "Mon Nov 20 02:38:03 CST 2023");
     }
 
     @Test
@@ -2852,7 +2852,7 @@ public class TestGroup100Case0 {
         org.dataone.cn.log.MetricLogEntry metricLogEntry4 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference1, identifier2, "smreplicationpolicy");
         org.dataone.service.types.v1.NodeReference nodeReference5 = null;
         org.dataone.service.types.v1.Identifier identifier6 = null;
-        org.dataone.cn.log.MetricLogEntry metricLogEntry8 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference5, identifier6, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-10-31T23:28:39.078+00:00\"}");
+        org.dataone.cn.log.MetricLogEntry metricLogEntry8 = new org.dataone.cn.log.MetricLogEntry(metricEvent0, nodeReference5, identifier6, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-11-20T08:38:02.514+00:00\"}");
         org.dataone.service.types.v1.Identifier identifier9 = metricLogEntry8.getPid();
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNull(identifier9);
@@ -3082,7 +3082,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent19 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent19.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent24 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent24.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date25);
-// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "" + "'", str30, "");
     }
 
@@ -3133,7 +3133,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "replica not found" + "'", str18, "replica not found");
     }
 
@@ -3152,7 +3152,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent5 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent5.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date6);
-// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertNull(identifier9);
     }
 
@@ -3288,7 +3288,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent8 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent8.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent13 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent13.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date14);
-// flaky:         org.junit.Assert.assertEquals(date14.toString(), "Tue Oct 31 18:28:40 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date14.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3418,7 +3418,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent19 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent19.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent24 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent24.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date25);
-// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3495,7 +3495,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent23 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent23.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent28 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent28.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date29);
-// flaky:         org.junit.Assert.assertEquals(date29.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date29.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3560,7 +3560,7 @@ public class TestGroup100Case0 {
         org.dataone.cn.log.MetricLogEntry metricLogEntry5 = new org.dataone.cn.log.MetricLogEntry(metricEvent1, nodeReference2, identifier3, "smreplicationpolicy");
         org.dataone.service.types.v1.NodeReference nodeReference6 = null;
         org.dataone.service.types.v1.Identifier identifier7 = null;
-        org.dataone.cn.log.MetricLogEntry metricLogEntry9 = new org.dataone.cn.log.MetricLogEntry(metricEvent1, nodeReference6, identifier7, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-10-31T23:28:39.078+00:00\"}");
+        org.dataone.cn.log.MetricLogEntry metricLogEntry9 = new org.dataone.cn.log.MetricLogEntry(metricEvent1, nodeReference6, identifier7, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-11-20T08:38:02.514+00:00\"}");
         java.util.Date date10 = metricLogEntry9.getDateLogged();
         // The following exception was thrown during execution in test generation
         try {
@@ -3572,7 +3572,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(replicationDao0);
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3607,7 +3607,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.REPLICA_STATUS + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.REPLICA_STATUS));
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "replication status" + "'", str1, "replication status");
         org.junit.Assert.assertNotNull(date8);
-// flaky:         org.junit.Assert.assertEquals(date8.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date8.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3692,7 +3692,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str18, "/etc/dataone/storage/hazelcast.xml");
         org.junit.Assert.assertTrue("'" + auditEvent19 + "' != '" + org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND + "'", auditEvent19.equals(org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND));
         org.junit.Assert.assertEquals("'" + str20 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str20, "/etc/dataone/storage/hazelcast.xml");
@@ -3741,7 +3741,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent19 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent19.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent24 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent24.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date25);
-// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Mon Nov 20 02:38:04 CST 2023");
     }
 
     @Test
@@ -3831,7 +3831,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent3 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent3.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent8 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent8.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date9);
-// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertNull(auditEvent11);
         org.junit.Assert.assertNull(str12);
     }
@@ -3877,7 +3877,7 @@ public class TestGroup100Case0 {
         metricLogEntry3.setPid(identifier6);
         java.lang.String str8 = metricLogEntry3.toString();
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-10-31T23:28:41.311+00:00\"}" + "'", str8, "{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-10-31T23:28:41.311+00:00\"}");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-11-20T08:38:04.755+00:00\"}" + "'", str8, "{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-11-20T08:38:04.755+00:00\"}");
     }
 
     @Test
@@ -3940,7 +3940,7 @@ public class TestGroup100Case0 {
         java.lang.Long long7 = metricLogEntry3.getTimeToCompleteEventMS();
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
         org.junit.Assert.assertNotNull(date6);
-// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date6.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertNull(long7);
     }
 
@@ -3951,7 +3951,7 @@ public class TestGroup100Case0 {
         com.hazelcast.core.HazelcastInstance hazelcastInstance0 = null;
         // The following exception was thrown during execution in test generation
         try {
-            org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener clusterPartitionMembershipListener3 = new org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener(hazelcastInstance0, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-10-31T23:28:39.078+00:00\"}", "/etc/dataone/portal/hazelcast.xml");
+            org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener clusterPartitionMembershipListener3 = new org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener(hazelcastInstance0, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3511,\"dateLogged\":\"2023-11-20T08:38:02.514+00:00\"}", "/etc/dataone/portal/hazelcast.xml");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -3982,7 +3982,7 @@ public class TestGroup100Case0 {
         metricLogEntry5.setEvent(metricEvent17);
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
         org.junit.Assert.assertTrue("'" + metricEvent8 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent8.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
-// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-10-31T23:28:41.362+00:00\"}" + "'", str16, "{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-10-31T23:28:41.362+00:00\"}");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-11-20T08:38:04.805+00:00\"}" + "'", str16, "{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-11-20T08:38:04.805+00:00\"}");
         org.junit.Assert.assertTrue("'" + metricEvent17 + "' != '" + org.dataone.cn.log.MetricEvent.REPLICA_STATUS + "'", metricEvent17.equals(org.dataone.cn.log.MetricEvent.REPLICA_STATUS));
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "replication status" + "'", str18, "replication status");
     }
@@ -4173,7 +4173,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent14 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent14.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date15);
-// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date15.toString(), "Mon Nov 20 02:38:04 CST 2023");
         org.junit.Assert.assertEquals("'" + str18 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str18, "/etc/dataone/storage/hazelcast.xml");
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "/etc/dataone/storage/hazelcast.xml" + "'", str19, "/etc/dataone/storage/hazelcast.xml");
     }
@@ -4216,7 +4216,7 @@ public class TestGroup100Case0 {
         java.lang.String str4 = auditEvent3.toString();
         auditLogEntry0.setEvent(auditEvent3);
         auditLogEntry0.setId("replica not found");
-        auditLogEntry0.setPid("{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-10-31T23:28:41.311+00:00\"}");
+        auditLogEntry0.setPid("{\"event\":\"synchronization harvest submitted\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15620,\"dateLogged\":\"2023-11-20T08:38:04.755+00:00\"}");
         org.junit.Assert.assertTrue("'" + auditEvent3 + "' != '" + org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND + "'", auditEvent3.equals(org.dataone.cn.log.AuditEvent.REPLICA_NOT_FOUND));
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "replica not found" + "'", str4, "replica not found");
     }
@@ -4228,7 +4228,7 @@ public class TestGroup100Case0 {
         org.dataone.cn.dao.ReplicationDaoMetacatImpl replicationDaoMetacatImpl0 = new org.dataone.cn.dao.ReplicationDaoMetacatImpl();
         // The following exception was thrown during execution in test generation
         try {
-            java.util.Collection<org.dataone.cn.dao.ReplicationDao.ReplicaDto> replicaDtoCollection2 = replicationDaoMetacatImpl0.getQueuedReplicasByNode("{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-10-31T23:28:39.136+00:00\"}");
+            java.util.Collection<org.dataone.cn.dao.ReplicationDao.ReplicaDto> replicaDtoCollection2 = replicationDaoMetacatImpl0.getQueuedReplicasByNode("{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":3646,\"dateLogged\":\"2023-11-20T08:38:02.572+00:00\"}");
             org.junit.Assert.fail("Expected exception of type org.springframework.jdbc.BadSqlGrammarException; message: PreparedStatementCallback; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLException: Table \"SMREPLICATIONSTATUS\" not found; SQL statement:?SELECT        guid,                                  member_node,                           status,                                date_verified                          FROM  smreplicationstatus              WHERE member_node = ?               AND status = 'QUEUED'               ORDER BY date_verified ASC;           [42102-163]");
         } catch (org.springframework.jdbc.BadSqlGrammarException e) {
             // Expected exception.
@@ -4296,7 +4296,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test295");
         com.hazelcast.core.HazelcastInstance hazelcastInstance0 = null;
         org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener clusterPartitionMembershipListener2 = new org.dataone.cn.hazelcast.membership.ClusterPartitionMembershipListener(hazelcastInstance0, "isCnAdministrator");
-        clusterPartitionMembershipListener2.setExpectedIPList("{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-10-31T23:28:41.362+00:00\"}");
+        clusterPartitionMembershipListener2.setExpectedIPList("{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15743,\"dateLogged\":\"2023-11-20T08:38:04.805+00:00\"}");
     }
 
     @Test
@@ -4359,7 +4359,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent15 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent15.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent20 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent20.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date21);
-// flaky:         org.junit.Assert.assertEquals(date21.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date21.toString(), "Mon Nov 20 02:38:05 CST 2023");
         org.junit.Assert.assertNull(str26);
         org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
         org.junit.Assert.assertNull(str38);
@@ -4405,10 +4405,10 @@ public class TestGroup100Case0 {
         java.util.Date date12 = metricLogEntry9.getDateLogged();
         metricLogEntry4.setDateLogged(date12);
         org.junit.Assert.assertTrue("'" + metricEvent0 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent0.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
-// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":16770,\"dateLogged\":\"2023-10-31T23:28:41.590+00:00\"}" + "'", str5, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":16770,\"dateLogged\":\"2023-10-31T23:28:41.590+00:00\"}");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":16770,\"dateLogged\":\"2023-11-20T08:38:05.043+00:00\"}" + "'", str5, "{\"event\":\"log aggregation harvest retrieved\",\"message\":\"smreplicationpolicy\",\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":16770,\"dateLogged\":\"2023-11-20T08:38:05.043+00:00\"}");
         org.junit.Assert.assertTrue("'" + metricEvent6 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent6.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
         org.junit.Assert.assertNotNull(date12);
-// flaky:         org.junit.Assert.assertEquals(date12.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date12.toString(), "Mon Nov 20 02:38:05 CST 2023");
     }
 
     @Test
@@ -4529,8 +4529,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test308");
         // The following exception was thrown during execution in test generation
         try {
-            org.dataone.cn.hazelcast.ClientConfiguration clientConfiguration1 = new org.dataone.cn.hazelcast.ClientConfiguration("{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15223,\"dateLogged\":\"2023-10-31T23:28:41.233+00:00\"}");
-            org.junit.Assert.fail("Expected exception of type java.io.FileNotFoundException; message: {\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15223,\"dateLogged\":\"2023-10-31T23:28:41.233+00:00\"} (No such file or directory)");
+            org.dataone.cn.hazelcast.ClientConfiguration clientConfiguration1 = new org.dataone.cn.hazelcast.ClientConfiguration("{\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15223,\"dateLogged\":\"2023-11-20T08:38:04.681+00:00\"}");
+            org.junit.Assert.fail("Expected exception of type java.io.FileNotFoundException; message: {\"event\":\"synchronization harvest submitted\",\"message\":\"log aggregation harvest retrieved\",\"timeToCompleteEventMS\":-1,\"threadName\":\"randoop.util.RunnerThread\",\"threadId\":15223,\"dateLogged\":\"2023-11-20T08:38:04.681+00:00\"} (No such file or directory)");
         } catch (java.io.FileNotFoundException e) {
             // Expected exception.
         }
@@ -4578,9 +4578,9 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertTrue("'" + metricEvent1 + "' != '" + org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED + "'", metricEvent1.equals(org.dataone.cn.log.MetricEvent.SYNCHRONIZATION_HARVEST_SUBMITTED));
         org.junit.Assert.assertNotNull(date7);
-// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date7.toString(), "Mon Nov 20 02:38:05 CST 2023");
         org.junit.Assert.assertNotNull(date8);
-// flaky:         org.junit.Assert.assertEquals(date8.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date8.toString(), "Mon Nov 20 02:38:05 CST 2023");
     }
 
     @Test
@@ -4615,7 +4615,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent4 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent4.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent9 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent9.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date10);
-// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date10.toString(), "Mon Nov 20 02:38:05 CST 2023");
     }
 
     @Test
@@ -4662,7 +4662,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent19 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent19.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent24 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent24.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date25);
-// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Mon Nov 20 02:38:05 CST 2023");
     }
 
     @Test
@@ -4758,7 +4758,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + metricEvent19 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent19.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertTrue("'" + metricEvent24 + "' != '" + org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED + "'", metricEvent24.equals(org.dataone.cn.log.MetricEvent.LOG_AGGREGATION_HARVEST_RETRIEVED));
         org.junit.Assert.assertNotNull(date25);
-// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Tue Oct 31 18:28:41 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date25.toString(), "Mon Nov 20 02:38:05 CST 2023");
     }
 
     @Test

@@ -4018,8 +4018,8 @@ public class TestGroup100Case0 {
         java.lang.String str2 = nationDummy1.languageCodeTwoLetter();
         java.lang.String str3 = nationDummy1.languageCommon();
         org.junit.Assert.assertNotNull(nationDummy1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "mg" + "'", str2, "mg");
-// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Portuguese" + "'", str3, "Portuguese");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "he" + "'", str2, "he");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "English" + "'", str3, "English");
     }
 
     @Test
@@ -4038,8 +4038,8 @@ public class TestGroup100Case0 {
         java.lang.String str2 = nationDummy1.languageCodeTwoLetter();
         java.lang.String str3 = nationDummy1.languageCodeThreeLetterCommon();
         org.junit.Assert.assertNotNull(nationDummy1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "kl" + "'", str2, "kl");
-// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "rus" + "'", str3, "rus");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "nl" + "'", str2, "nl");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "fre" + "'", str3, "fre");
     }
 
     @Test
@@ -4102,7 +4102,7 @@ public class TestGroup100Case0 {
         dev.codesoapbox.dummy4j.dummies.NameDummy nameDummy1 = dummy4j0.name();
         java.lang.String str2 = nameDummy1.lastName();
         org.junit.Assert.assertNotNull(nameDummy1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Stanton" + "'", str2, "Stanton");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Holt" + "'", str2, "Holt");
     }
 
     @Test
@@ -4224,7 +4224,7 @@ public class TestGroup100Case0 {
         dev.codesoapbox.dummy4j.dummies.NationDummy nationDummy1 = dummy4j0.nation();
         java.lang.String str2 = nationDummy1.countryCode();
         org.junit.Assert.assertNotNull(nationDummy1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "HK" + "'", str2, "HK");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "CD" + "'", str2, "CD");
     }
 
     @Test
@@ -4245,7 +4245,7 @@ public class TestGroup100Case0 {
     public void test329() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test329");
-        dev.codesoapbox.dummy4j.ResolvedValue resolvedValue2 = dev.codesoapbox.dummy4j.ResolvedValue.of("mg", "hsba(10, 0%, 0%, 0)");
+        dev.codesoapbox.dummy4j.ResolvedValue resolvedValue2 = dev.codesoapbox.dummy4j.ResolvedValue.of("he", "hsba(10, 0%, 0%, 0)");
         org.junit.Assert.assertNotNull(resolvedValue2);
     }
 
@@ -4322,7 +4322,7 @@ public class TestGroup100Case0 {
         java.lang.String str3 = identifierDummy2.ean13();
         org.junit.Assert.assertNotNull(nameDummy1);
         org.junit.Assert.assertNotNull(identifierDummy2);
-// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "9386383790778" + "'", str3, "9386383790778");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "6226624843555" + "'", str3, "6226624843555");
     }
 
     @Test
@@ -4388,8 +4388,8 @@ public class TestGroup100Case0 {
     public void test339() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test339");
-        java.lang.String str3 = dev.codesoapbox.dummy4j.dummies.shared.string.StringFormatter.insertEveryNthCharacter("ab", "0", 9999);
-        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "ab" + "'", str3, "ab");
+        java.lang.String str3 = dev.codesoapbox.dummy4j.dummies.shared.string.StringFormatter.insertEveryNthCharacter("av", "0", 9999);
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "av" + "'", str3, "av");
     }
 
     @Test
@@ -4534,8 +4534,8 @@ public class TestGroup100Case0 {
         java.lang.String str4 = identifierDummy2.orcid();
         org.junit.Assert.assertNotNull(nameDummy1);
         org.junit.Assert.assertNotNull(identifierDummy2);
-// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "44-803834" + "'", str3, "44-803834");
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "4823-8816-7469-3136" + "'", str4, "4823-8816-7469-3136");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "01-450054" + "'", str3, "01-450054");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "2884-0230-4334-8942" + "'", str4, "2884-0230-4334-8942");
     }
 
     @Test
@@ -4692,14 +4692,14 @@ public class TestGroup100Case0 {
         dev.codesoapbox.dummy4j.dummies.NatoPhoneticAlphabetDummy natoPhoneticAlphabetDummy3 = new dev.codesoapbox.dummy4j.dummies.NatoPhoneticAlphabetDummy(dummy4j0);
         java.lang.String str4 = natoPhoneticAlphabetDummy3.word();
         org.junit.Assert.assertNotNull(nationDummy1);
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Tango" + "'", str4, "Tango");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Papa" + "'", str4, "Papa");
     }
 
     @Test
     public void test359() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test359");
-        dev.codesoapbox.dummy4j.ResolvedValue resolvedValue2 = dev.codesoapbox.dummy4j.ResolvedValue.of("Stanton", "44-803834");
+        dev.codesoapbox.dummy4j.ResolvedValue resolvedValue2 = dev.codesoapbox.dummy4j.ResolvedValue.of("Holt", "01-450054");
         org.junit.Assert.assertNotNull(resolvedValue2);
     }
 
@@ -4772,7 +4772,7 @@ public class TestGroup100Case0 {
         java.lang.String str4 = addressDummy3.postCode();
         org.junit.Assert.assertNotNull(nationDummy1);
         org.junit.Assert.assertNotNull(addressDummy3);
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "12211" + "'", str4, "12211");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "19713-9089" + "'", str4, "19713-9089");
     }
 
     @Test

@@ -1,4 +1,4 @@
-[TIME]: 0:01:31.849122
+[TIME]: 0:01:31.671695
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 10 classes.
@@ -7,24 +7,25 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:46:13.058Z     44.9M used)
-Progress update: steps=690, test inputs generated=378, failing inputs=0      (2023-10-31T23:47:13.074Z     209M used)
-Progress update: steps=690, test inputs generated=378, failing inputs=0      (2023-10-31T23:47:13.304Z     209M used)
-Normal method executions: 29383
-Exceptional method executions: 104
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:55:52.837Z     44.9M used)
+Progress update: steps=678, test inputs generated=371, failing inputs=0      (2023-11-20T08:56:52.839Z     94.8M used)
+Normal method executions: 29015
+Exceptional method executions: 102
 
-Average method execution time (normal termination):      0.562
-Average method execution time (exceptional termination): 1.94
-Approximate memory usage 209M
-Explorer = ForwardGenerator(steps: 690, null steps: 312, num_sequences_generated: 378;
-    allSequences: 378, regresson seqs: 377, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
+Average method execution time (normal termination):      0.751
+Average method execution time (exceptional termination): 1.56
+Approximate memory usage 94.8M
+Explorer = ForwardGenerator(steps: 678, null steps: 307, num_sequences_generated: 371;
+    allSequences: 371, regresson seqs: 370, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 42)
 
 No error-revealing tests to output.
 
-About to look for failing assertions in 221 regression sequences.
+About to look for failing assertions in 219 regression sequences.
 
 Regression test output:
-Regression test count: 221
+Regression test count: 219
 Writing regression JUnit tests...
-Command 'java -ea -classpath $(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "classes" -type d | xargs echo | tr ' ' ':'):$(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "test-classes" -type d | xargs echo | tr ' ' ':'):$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr ' ' ':'):/Users/yhcrown/Documents/tools/randoop-all-4.3.2.jar:/Users/yhcrown/Documents/tools/junit-4.13.2.jar:/Users/yhcrown/Documents/tools/hamcrest-core-1.3.jar:/Users/yhcrown/Documents/tools/guava-32.1.3-jre.jar randoop.main.Main gentests --classlist=/tmp/classes.txt --output-limit=500 --time-limit=60 --junit-output-dir=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/ --regression-test-basename=TestGroup100Case --log=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/randoop-log.txt --usethreads=true' timed out after 89.99996041692793 seconds
+
+                                                                                                                                                                                                       
+Command 'java -ea -classpath $(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "classes" -type d | xargs echo | tr ' ' ':'):$(find /Users/yhcrown/Documents/flaky_java_projects/axel-n-limiter-sliding-window -name "test-classes" -type d | xargs echo | tr ' ' ':'):$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr ' ' ':'):/Users/yhcrown/Documents/tools/randoop-all-4.3.2.jar:/Users/yhcrown/Documents/tools/junit-4.13.2.jar:/Users/yhcrown/Documents/tools/hamcrest-core-1.3.jar:/Users/yhcrown/Documents/tools/guava-32.1.3-jre.jar randoop.main.Main gentests --classlist=/tmp/classes.txt --output-limit=500 --time-limit=60 --junit-output-dir=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/ --regression-test-basename=TestGroup100Case --log=/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/axel-n-limiter-sliding-window/7c805e77dcb06196e18ce61229b6b9b9b063d188/alltests/randoop-log.txt --usethreads=true' timed out after 89.9999679159373 seconds

@@ -1,4 +1,4 @@
-[TIME]: 0:00:10.895638
+[TIME]: 0:00:10.510846
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 49 classes.
@@ -7,117 +7,117 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:39:49.029Z     43.1M used)18:39:49.377 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:49.378 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:49.378 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:49.434 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:49.434 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:49.434 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:49.434 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:49.776 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:49.776 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:49.776 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.023 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.023 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.023 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.023 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.041 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.041 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.041 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.219 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.219 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.219 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.219 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.232 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.232 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.232 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.232 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.310 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.310 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.310 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.594 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:50.594 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:50.594 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:50.935 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ S89AtjcOuVZaXNdCdRvyjfYuFygggkUi ]
-18:39:51.137 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file null:named/http/app.env. No compatible file processor found.
-18:39:51.137 [randoop.util.RunnerThread] ERROR i.c.core.processor.ProcessorSelector - null
-18:39:51.445 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file null:named/http/app.env. No compatible file processor found.
-18:39:51.445 [randoop.util.RunnerThread] ERROR i.c.core.processor.ProcessorSelector - null
-18:39:51.455 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:51.455 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:51.455 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:51.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:51.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:51.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.092 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.092 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.092 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.138 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.138 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.138 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.233 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.233 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.233 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.234 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.246 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.246 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.246 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.247 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.289 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.289 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.289 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.289 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.300 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.300 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.300 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.300 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.525 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:52.525 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:52.525 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:52.526 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:53.463 [randoop.util.RunnerThread] WARN  i.configrd.core.ConfigSourceResolver - Unable to find a config source matching 'null' for repo io.configrd.core.exception.InitializationException: .
-18:39:53.682 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:53.682 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:53.682 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:53.764 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ TzYpKTeC3aFg+DtLy0c4QdEBN//YyK+2 ]
-18:39:53.776 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:53.777 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:53.777 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:53.777 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:53.778 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:53.994 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
-18:39:54.027 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
-18:39:54.118 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:54.118 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:54.118 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:54.599 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ dqzAuqEmRut+d1v+4XmX1F2pkwnSRu/y ]
-18:39:54.601 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ SokpvMMST3PyqeRTG9WcVp8RNaNyZw0G ]
-18:39:54.984 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:54.984 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:54.985 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:54.985 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:55.015 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
-18:39:55.132 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:55.132 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:55.132 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:55.657 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:55.657 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:55.657 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:55.658 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:55.851 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:55.851 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:55.851 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
-18:39:56.257 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
-18:39:56.257 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
-18:39:56.257 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:48:42.404Z     43.4M used)02:48:42.737 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:42.738 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:42.738 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:42.798 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:42.798 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:42.798 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:42.798 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.103 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.103 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.103 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.323 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.323 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.323 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.324 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.341 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.341 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.341 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.528 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.529 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.529 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.529 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.541 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.541 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.541 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.541 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.612 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.612 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.612 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:43.903 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:43.903 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:43.903 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:44.209 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ aq1mxgoEgjLi9HbYyu8vcYoVPcTTsHGI ]
+02:48:44.450 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file null:named/http/app.env. No compatible file processor found.
+02:48:44.450 [randoop.util.RunnerThread] ERROR i.c.core.processor.ProcessorSelector - null
+02:48:44.792 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file null:named/http/app.env. No compatible file processor found.
+02:48:44.792 [randoop.util.RunnerThread] ERROR i.c.core.processor.ProcessorSelector - null
+02:48:44.802 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:44.802 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:44.802 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.284 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.284 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.284 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.465 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.465 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.465 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.507 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.507 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.507 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.596 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.596 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.596 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.596 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.607 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.607 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.607 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.608 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.659 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.659 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.659 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.660 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.673 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.673 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.673 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.673 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:45.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:45.892 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:45.893 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:46.827 [randoop.util.RunnerThread] WARN  i.configrd.core.ConfigSourceResolver - Unable to find a config source matching 'null' for repo io.configrd.core.exception.InitializationException: .
+02:48:47.029 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:47.029 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:47.029 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:47.113 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ xOIxSLCi+BmE7eRpgBl9mqNKAn0CUHah ]
+02:48:47.119 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:47.120 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:47.120 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:47.121 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:47.121 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:47.329 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
+02:48:47.362 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
+02:48:47.452 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:47.452 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:47.452 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:47.901 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ sD56YvscjI0bzALECc/rL7SrC2NqiVCg ]
+02:48:47.902 [randoop.util.RunnerThread] INFO  io.configrd.core.util.EncryptUtil - Encrypted [ password ] : [ CtJ6YaOoW0OzKpiw8IfTFhyqMru6uV1Y ]
+02:48:48.287 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:48.287 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:48.287 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:48.287 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:48.317 [randoop.util.RunnerThread] WARN  i.c.core.processor.ProcessorSelector - Unable to process file named/. No compatible file processor found.
+02:48:48.425 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:48.425 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:48.425 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:48.925 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:48.926 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:48.926 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:48.926 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:49.094 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:49.094 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:49.094 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
+02:48:49.446 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - No environment variable detected under 'spring.profiles' or system properties 'env', 'ENV', 'environment', 'ENVIRONMENT'
+02:48:49.446 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved hostname to: Hengchens-MBP
+02:48:49.446 [randoop.util.RunnerThread] INFO  io.configrd.core.util.Environment - Resolved ip to: 192.168.1.88
 
-Progress update: steps=729, test inputs generated=501, failing inputs=13      (2023-10-31T23:39:56.542Z     896M used)
+Progress update: steps=729, test inputs generated=501, failing inputs=13      (2023-11-20T08:48:49.713Z     548M used)
 Normal method executions: 63249
 Exceptional method executions: 47
 
-Average method execution time (normal termination):      0.0427
-Average method execution time (exceptional termination): 4.09
-Approximate memory usage 896M
+Average method execution time (normal termination):      0.0434
+Average method execution time (exceptional termination): 4.16
+Approximate memory usage 548M
 Explorer = ForwardGenerator(steps: 729, null steps: 228, num_sequences_generated: 501;
     allSequences: 501, regresson seqs: 487, error seqs: 13=13=13, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 81)

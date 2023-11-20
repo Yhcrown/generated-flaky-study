@@ -1,4 +1,4 @@
-[TIME]: 0:00:11.085448
+[TIME]: 0:00:09.307779
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 9 classes.
@@ -7,11 +7,11 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:33:23.836Z     44.3M used)Oct 31, 2023 6:33:25 PM io.github.stepio.jgforms.Log error
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:42:31.241Z     44.3M used)Nov 20, 2023 2:42:32 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException%3A+io.github.stepio.jgforms.exception.NotSubmittedException%3A+
-Oct 31, 2023 6:33:25 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:32 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException: 
-Oct 31, 2023 6:33:25 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:32 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -23,7 +23,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:25 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:32 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -35,7 +35,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:25 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:32 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -47,7 +47,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -59,7 +59,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -71,7 +71,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -83,7 +83,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -95,7 +95,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -106,7 +106,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -117,7 +117,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:26 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:33 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -128,7 +128,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -139,7 +139,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -150,7 +150,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -161,7 +161,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM java.util.logging.LogManager$RootLogger log
+Nov 20, 2023 2:42:34 AM java.util.logging.LogManager$RootLogger log
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException%3A+
 io.github.stepio.jgforms.exception.NotSubmittedException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
@@ -172,9 +172,9 @@ io.github.stepio.jgforms.exception.NotSubmittedException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -185,7 +185,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -196,7 +196,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -207,7 +207,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -218,7 +218,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -229,7 +229,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:27 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -240,7 +240,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -251,7 +251,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: io.github.stepio.jgforms.exception.NotSubmittedException%253A%2B
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -262,7 +262,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: io.github.ste
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -273,7 +273,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -284,7 +284,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -295,7 +295,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:34 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -306,7 +306,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -317,7 +317,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -331,9 +331,9 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 		at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
 		... 6 more
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException: 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -344,7 +344,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:28 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -355,7 +355,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -366,7 +366,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -377,9 +377,9 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException%3A+io.github.stepio.jgforms.exception.NotSubmittedException%3A+
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -390,7 +390,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -401,7 +401,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -412,7 +412,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -423,9 +423,9 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:35 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedExceptionNULL+
 io.github.stepio.jgforms.exception.NotSubmittedException: 
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
@@ -439,7 +439,7 @@ io.github.stepio.jgforms.exception.NotSubmittedException:
 		at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
 		... 6 more
 
-Oct 31, 2023 6:33:29 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException: 
 	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
@@ -453,7 +453,7 @@ Caused by: io.github.stepio.jgforms.exception.NotSubmittedException:
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -464,7 +464,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -475,7 +475,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException%253A%2B
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException%3A+
 	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
@@ -489,7 +489,7 @@ Caused by: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -500,7 +500,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -511,7 +511,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.MissingRequiredAnswerException%3A+hi%2521
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
@@ -522,7 +522,7 @@ io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgfor
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -533,7 +533,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:30 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:36 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException: 
 	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
@@ -547,7 +547,7 @@ Caused by: io.github.stepio.jgforms.exception.NotSubmittedException:
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:33:31 PM java.util.logging.LogManager$RootLogger log
+Nov 20, 2023 2:42:37 AM java.util.logging.LogManager$RootLogger log
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException%3A+io.github.stepio.jgforms.exception.NotSubmittedException%253A%2Bio.github.stepio.jgforms.exception.NotSubmittedException%253A%2B
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException%253A%2B
 	at sun.reflect.GeneratedConstructorAccessor4.newInstance(Unknown Source)
@@ -558,7 +558,7 @@ io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgfor
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: 
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -569,7 +569,7 @@ io.github.stepio.jgforms.exception.InvalidFormException:
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -580,7 +580,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -591,7 +591,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -602,7 +602,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -613,7 +613,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -624,7 +624,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -635,7 +635,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.InvalidFormException%3A+hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -648,7 +648,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	Suppressed: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 		... 7 more
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.InvalidFormException: io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException%3A+io.github.stepio.jgforms.exception.NotSubmittedException%3A+
 io.github.stepio.jgforms.exception.NotSubmittedException: io.github.stepio.jgforms.exception.NotSubmittedException%3A+
 	at sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
@@ -662,7 +662,7 @@ Caused by: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -673,7 +673,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.NotSubmittedException: 
 io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
@@ -684,7 +684,7 @@ io.github.stepio.jgforms.exception.InvalidFormException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -695,7 +695,7 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi%21
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:33:31 PM io.github.stepio.jgforms.Log error
+Nov 20, 2023 2:42:37 AM io.github.stepio.jgforms.Log error
 SEVERE: hi!
 io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
@@ -716,13 +716,13 @@ io.github.stepio.jgforms.exception.MissingRequiredAnswerException: hi!
 			... 6 more
 
 
-Progress update: steps=760, test inputs generated=585, failing inputs=0      (2023-10-31T23:33:31.791Z     237M used)
+Progress update: steps=760, test inputs generated=585, failing inputs=0      (2023-11-20T08:42:37.712Z     345M used)
 Normal method executions: 42233
 Exceptional method executions: 241
 
-Average method execution time (normal termination):      0.0509
-Average method execution time (exceptional termination): 0.165
-Approximate memory usage 237M
+Average method execution time (normal termination):      0.0420
+Average method execution time (exceptional termination): 0.133
+Approximate memory usage 345M
 Explorer = ForwardGenerator(steps: 760, null steps: 175, num_sequences_generated: 585;
     allSequences: 585, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 85;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 63)

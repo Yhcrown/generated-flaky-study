@@ -3769,7 +3769,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             se.mockachino.order.InOrderVerifyHandler inOrderVerifyHandler25 = new se.mockachino.order.InOrderVerifyHandler(orderingContext2, (java.lang.Object) mockUtil7, invocationIterable8, (-1));
-            org.junit.Assert.fail("Expected exception of type se.mockachino.exceptions.UsageError; message: argument se.mockachino.MockUtil@53e1308 is not a mock object");
+            org.junit.Assert.fail("Expected exception of type se.mockachino.exceptions.UsageError; message: argument se.mockachino.MockUtil@71e780bc is not a mock object");
         } catch (se.mockachino.exceptions.UsageError e) {
             // Expected exception.
         }
@@ -4264,7 +4264,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Object[] objArray10 = null; // flaky: observerAdder4.on((java.lang.Object[]) matcherArray6);
-// flaky:             org.junit.Assert.fail("Expected exception of type se.mockachino.exceptions.UsageError; message: argument [Lse.mockachino.matchers.matcher.Matcher;@5edaa3d1 is not a mock object");
+// flaky:             org.junit.Assert.fail("Expected exception of type se.mockachino.exceptions.UsageError; message: argument [Lse.mockachino.matchers.matcher.Matcher;@219c4481 is not a mock object");
         } catch (se.mockachino.exceptions.UsageError e) {
             // Expected exception.
         }

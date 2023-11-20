@@ -1,4 +1,4 @@
-[TIME]: 0:00:53.578466
+[TIME]: 0:00:50.579384
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class io.fabric8.zjsonpatch.Constants specified via --testclass or --classlist.
 Cannot instantiate non-accessible class io.fabric8.zjsonpatch.Diff specified via --testclass or --classlist; will use its static methods.
@@ -13,15 +13,15 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:41:01.763Z     53.7M used)
-Progress update: steps=1000, test inputs generated=588, failing inputs=0      (2023-10-31T23:41:43.685Z     561M used)
-Progress update: steps=1070, test inputs generated=624, failing inputs=0      (2023-10-31T23:41:45.977Z     587M used)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:50:05.160Z     53.7M used)
+Progress update: steps=1000, test inputs generated=588, failing inputs=0      (2023-11-20T08:50:44.557Z     152M used)
+Progress update: steps=1070, test inputs generated=624, failing inputs=0      (2023-11-20T08:50:46.700Z     48.4M used)
 Normal method executions: 1098869
 Exceptional method executions: 70
 
-Average method execution time (normal termination):      0.0326
-Average method execution time (exceptional termination): 0.131
-Approximate memory usage 587M
+Average method execution time (normal termination):      0.0305
+Average method execution time (exceptional termination): 0.127
+Approximate memory usage 48.4M
 Explorer = ForwardGenerator(steps: 1070, null steps: 446, num_sequences_generated: 624;
     allSequences: 624, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 124;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 786)

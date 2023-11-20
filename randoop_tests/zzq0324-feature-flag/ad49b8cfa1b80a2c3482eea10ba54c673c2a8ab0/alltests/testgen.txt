@@ -1,4 +1,4 @@
-[TIME]: 0:00:08.457226
+[TIME]: 0:00:08.380488
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -10,20 +10,20 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:39:12.111Z     44.9M used)
-Progress update: steps=1000, test inputs generated=133, failing inputs=0      (2023-10-31T23:39:13.943Z     126M used)
-Progress update: steps=2000, test inputs generated=207, failing inputs=0      (2023-10-31T23:39:14.746Z     100M used)
-Progress update: steps=3000, test inputs generated=264, failing inputs=0      (2023-10-31T23:39:15.256Z     276M used)
-Progress update: steps=4000, test inputs generated=326, failing inputs=0      (2023-10-31T23:39:15.757Z     266M used)
-Progress update: steps=5000, test inputs generated=380, failing inputs=0      (2023-10-31T23:39:16.206Z     209M used)
-Progress update: steps=6000, test inputs generated=443, failing inputs=0      (2023-10-31T23:39:16.696Z     410M used)
-Progress update: steps=6995, test inputs generated=501, failing inputs=0      (2023-10-31T23:39:17.267Z     333M used)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:48:03.490Z     43.5M used)
+Progress update: steps=1000, test inputs generated=133, failing inputs=0      (2023-11-20T08:48:05.341Z     125M used)
+Progress update: steps=2000, test inputs generated=207, failing inputs=0      (2023-11-20T08:48:06.011Z     77.7M used)
+Progress update: steps=3000, test inputs generated=264, failing inputs=0      (2023-11-20T08:48:06.509Z     218M used)
+Progress update: steps=4000, test inputs generated=326, failing inputs=0      (2023-11-20T08:48:07.081Z     213M used)
+Progress update: steps=5000, test inputs generated=380, failing inputs=0      (2023-11-20T08:48:07.508Z     282M used)
+Progress update: steps=6000, test inputs generated=443, failing inputs=0      (2023-11-20T08:48:07.987Z     229M used)
+Progress update: steps=6995, test inputs generated=501, failing inputs=0      (2023-11-20T08:48:08.557Z     751M used)
 Normal method executions: 1727
 Exceptional method executions: 345
 
-Average method execution time (normal termination):      0.243
-Average method execution time (exceptional termination): 0.810
-Approximate memory usage 333M
+Average method execution time (normal termination):      0.343
+Average method execution time (exceptional termination): 0.713
+Approximate memory usage 751M
 Explorer = ForwardGenerator(steps: 6995, null steps: 6494, num_sequences_generated: 501;
     allSequences: 501, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 1;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 44)

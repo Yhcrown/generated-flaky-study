@@ -1,4 +1,4 @@
-[TIME]: 0:00:13.224204
+[TIME]: 0:00:10.835379
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/private/tmp/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -13,43 +13,43 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:33:35.705Z     25.3M used)18:33:37.443 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:37.755 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:38.090 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:38.446 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:38.837 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:38.859 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:38.868 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:39.341 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:39.349 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:39.474 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:39.504 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:39.544 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:39.860 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:40.163 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:40.516 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:41.020 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:41.037 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:41.272 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:41.601 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl 
-18:33:42.087 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:42.324 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:43.273 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
-18:33:43.386 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl 
-18:33:43.414 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
-18:33:43.574 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:43.805 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:44.074 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl ActiveMQPoolConfig{maxConnections=null, maximumActiveSessionPerConnection=null, blockIfSessionPoolIsFull=true, idleTimeoutMills=null, expiryTimeoutMills=null, createConnectionOnStartup=null, timeBetweenExpirationCheckMillis=null}
-18:33:44.143 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
-18:33:44.594 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:42:40.845Z     25.3M used)02:42:42.211 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:42.459 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:42.703 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:42.934 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:43.269 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:43.295 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:43.302 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:43.662 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:43.669 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:43.771 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:43.797 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:43.828 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:44.106 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:44.344 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:44.660 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:45.096 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:45.109 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:45.306 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:45.585 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl 
+02:42:46.019 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:46.216 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:47.102 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Starting activeMQ client
+02:42:47.205 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl 
+02:42:47.231 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl null
+02:42:47.399 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:47.604 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:47.794 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Setting up activeMq with brokerUrl ActiveMQPoolConfig{maxConnections=null, maximumActiveSessionPerConnection=null, blockIfSessionPoolIsFull=true, idleTimeoutMills=null, expiryTimeoutMills=null, createConnectionOnStartup=null, timeBetweenExpirationCheckMillis=null}
+02:42:47.851 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
+02:42:48.262 [randoop.util.RunnerThread] INFO  c.k.d.activemq.ActiveMQBundle   - Stopping activeMQ client
 
-Progress update: steps=853, test inputs generated=524, failing inputs=5      (2023-10-31T23:33:44.782Z     993M used)
+Progress update: steps=853, test inputs generated=524, failing inputs=5      (2023-11-20T08:42:48.411Z     159M used)
 Normal method executions: 80691
 Exceptional method executions: 101
 
-Average method execution time (normal termination):      0.0412
-Average method execution time (exceptional termination): 0.359
-Approximate memory usage 993M
+Average method execution time (normal termination):      0.0359
+Average method execution time (exceptional termination): 0.307
+Approximate memory usage 159M
 Explorer = ForwardGenerator(steps: 853, null steps: 329, num_sequences_generated: 524;
     allSequences: 524, regresson seqs: 495, error seqs: 5=5=5, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 24;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 57)

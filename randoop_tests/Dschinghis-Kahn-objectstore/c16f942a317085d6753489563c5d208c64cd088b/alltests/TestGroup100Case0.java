@@ -2674,38 +2674,22 @@ public class TestGroup100Case0 {
     public void test224() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test224");
-        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
-        strObjectStore0.add("");
-        java.lang.String str3 = strObjectStore0.get();
-        java.lang.String str4 = strObjectStore0.get();
-        java.lang.String str5 = strObjectStore0.get();
-        java.lang.String str6 = strObjectStore0.getNextObject();
-        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str5);
-        org.junit.Assert.assertNull(str6);
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L, false);
     }
 
     @Test
     public void test225() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test225");
-        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L, false);
-    }
-
-    @Test
-    public void test226() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test226");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 1, false);
         java.lang.String str3 = strObjectStore2.getNextObject();
         org.junit.Assert.assertNull(str3);
     }
 
     @Test
-    public void test227() throws Throwable {
+    public void test226() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) '#', false);
         java.lang.String str3 = strObjectStore2.get();
         java.lang.String str4 = strObjectStore2.toString();
@@ -2714,18 +2698,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test228() throws Throwable {
+    public void test227() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test228");
+            System.out.format("%n%s%n", "TestGroup100Case0.test227");
         net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable> serializableObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable>((-1L));
         java.lang.Class<?> wildcardClass2 = serializableObjectStore1.getClass();
         org.junit.Assert.assertNotNull(wildcardClass2);
     }
 
     @Test
-    public void test229() throws Throwable {
+    public void test228() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test229");
+            System.out.format("%n%s%n", "TestGroup100Case0.test228");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -2739,9 +2723,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test230() throws Throwable {
+    public void test229() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test230");
+            System.out.format("%n%s%n", "TestGroup100Case0.test229");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         long long3 = strObjectStore0.getSize();
@@ -2755,9 +2739,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test231() throws Throwable {
+    public void test230() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test231");
+            System.out.format("%n%s%n", "TestGroup100Case0.test230");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L);
         long long2 = strObjectStore1.getSize();
         long long3 = strObjectStore1.getSize();
@@ -2770,25 +2754,25 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test232() throws Throwable {
+    public void test231() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+            System.out.format("%n%s%n", "TestGroup100Case0.test231");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement> annotatedElementObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement>(0L);
     }
 
     @Test
-    public void test233() throws Throwable {
+    public void test232() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test233");
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 1, true);
         boolean boolean3 = strObjectStore2.isEmpty();
         org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
     }
 
     @Test
-    public void test234() throws Throwable {
+    public void test233() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test234");
+            System.out.format("%n%s%n", "TestGroup100Case0.test233");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         long long3 = strObjectStore0.getSize();
@@ -2802,18 +2786,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test235() throws Throwable {
+    public void test234() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test235");
+            System.out.format("%n%s%n", "TestGroup100Case0.test234");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (-1));
         java.lang.String str2 = strObjectStore1.toString();
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "[]" + "'", str2, "[]");
     }
 
     @Test
-    public void test236() throws Throwable {
+    public void test235() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+            System.out.format("%n%s%n", "TestGroup100Case0.test235");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -2830,9 +2814,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test237() throws Throwable {
+    public void test236() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test237");
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         java.lang.String str1 = strObjectStore0.get();
         java.lang.String str2 = strObjectStore0.getNextObject();
@@ -2845,9 +2829,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test238() throws Throwable {
+    public void test237() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test238");
+            System.out.format("%n%s%n", "TestGroup100Case0.test237");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -2861,9 +2845,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test239() throws Throwable {
+    public void test238() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+            System.out.format("%n%s%n", "TestGroup100Case0.test238");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         long long3 = strObjectStore0.getSize();
@@ -2875,9 +2859,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test240() throws Throwable {
+    public void test239() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test240");
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         java.lang.String str1 = strObjectStore0.get();
         java.lang.String str2 = strObjectStore0.getNextObject();
@@ -2891,9 +2875,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test241() throws Throwable {
+    public void test240() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test241");
+            System.out.format("%n%s%n", "TestGroup100Case0.test240");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) ' ', false);
         boolean boolean3 = strObjectStore2.isEmpty();
         java.lang.String str4 = strObjectStore2.get();
@@ -2902,9 +2886,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test242() throws Throwable {
+    public void test241() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test242");
+            System.out.format("%n%s%n", "TestGroup100Case0.test241");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) 1, false);
         boolean boolean3 = strObjectStore2.isEmpty();
         java.lang.String str4 = strObjectStore2.getNextObject();
@@ -2913,9 +2897,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test243() throws Throwable {
+    public void test242() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+            System.out.format("%n%s%n", "TestGroup100Case0.test242");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 100);
         long long2 = strObjectStore1.getSize();
         strObjectStore1.add("[]");
@@ -2923,9 +2907,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test244() throws Throwable {
+    public void test243() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test244");
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) '4');
         java.lang.String str2 = strObjectStore1.toString();
         strObjectStore1.add("hi!");
@@ -2937,25 +2921,25 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test245() throws Throwable {
+    public void test244() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test245");
+            System.out.format("%n%s%n", "TestGroup100Case0.test244");
         net.dschinghiskahn.objectstore.ObjectStore<net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>> strObjectStoreObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>>();
         java.lang.Class<?> wildcardClass1 = strObjectStoreObjectStore0.getClass();
         org.junit.Assert.assertNotNull(wildcardClass1);
     }
 
     @Test
-    public void test246() throws Throwable {
+    public void test245() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test246");
+            System.out.format("%n%s%n", "TestGroup100Case0.test245");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement> annotatedElementObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement>((long) '4');
     }
 
     @Test
-    public void test247() throws Throwable {
+    public void test246() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test247");
+            System.out.format("%n%s%n", "TestGroup100Case0.test246");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         java.lang.String str3 = strObjectStore0.get();
@@ -2970,16 +2954,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test248() throws Throwable {
+    public void test247() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test248");
+            System.out.format("%n%s%n", "TestGroup100Case0.test247");
         net.dschinghiskahn.objectstore.ObjectStore<net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>> strObjectStoreObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>>(100L);
     }
 
     @Test
-    public void test249() throws Throwable {
+    public void test248() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test249");
+            System.out.format("%n%s%n", "TestGroup100Case0.test248");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -2996,9 +2980,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test250() throws Throwable {
+    public void test249() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+            System.out.format("%n%s%n", "TestGroup100Case0.test249");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         strObjectStore0.add("");
@@ -3007,9 +2991,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test251() throws Throwable {
+    public void test250() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test251");
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -3027,9 +3011,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test252() throws Throwable {
+    public void test251() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test252");
+            System.out.format("%n%s%n", "TestGroup100Case0.test251");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         strObjectStore0.add("hi!");
@@ -3039,16 +3023,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test253() throws Throwable {
+    public void test252() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test253");
+            System.out.format("%n%s%n", "TestGroup100Case0.test252");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(1024L, true);
     }
 
     @Test
-    public void test254() throws Throwable {
+    public void test253() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test254");
+            System.out.format("%n%s%n", "TestGroup100Case0.test253");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -3068,9 +3052,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test255() throws Throwable {
+    public void test254() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test255");
+            System.out.format("%n%s%n", "TestGroup100Case0.test254");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3085,16 +3069,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test256() throws Throwable {
+    public void test255() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test256");
+            System.out.format("%n%s%n", "TestGroup100Case0.test255");
         net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable> serializableObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable>(3L, true);
     }
 
     @Test
-    public void test257() throws Throwable {
+    public void test256() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+            System.out.format("%n%s%n", "TestGroup100Case0.test256");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         boolean boolean2 = strObjectStore0.isEmpty();
@@ -3103,9 +3087,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test258() throws Throwable {
+    public void test257() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test258");
+            System.out.format("%n%s%n", "TestGroup100Case0.test257");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         long long3 = strObjectStore0.getSize();
@@ -3124,9 +3108,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test259() throws Throwable {
+    public void test258() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+            System.out.format("%n%s%n", "TestGroup100Case0.test258");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) '4');
         java.lang.String str2 = strObjectStore1.toString();
         java.lang.String str3 = strObjectStore1.get();
@@ -3137,16 +3121,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test260() throws Throwable {
+    public void test259() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test260");
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
         net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable> serializableObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable>((long) ' ', true);
     }
 
     @Test
-    public void test261() throws Throwable {
+    public void test260() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+            System.out.format("%n%s%n", "TestGroup100Case0.test260");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -3167,9 +3151,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test262() throws Throwable {
+    public void test261() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test262");
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) 1);
         strObjectStore1.add("");
         java.lang.String str4 = strObjectStore1.get();
@@ -3177,9 +3161,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test263() throws Throwable {
+    public void test262() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test263");
+            System.out.format("%n%s%n", "TestGroup100Case0.test262");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -3193,9 +3177,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test264() throws Throwable {
+    public void test263() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test264");
+            System.out.format("%n%s%n", "TestGroup100Case0.test263");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L);
         long long2 = strObjectStore1.getSize();
         long long3 = strObjectStore1.getSize();
@@ -3210,18 +3194,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test265() throws Throwable {
+    public void test264() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test265");
+            System.out.format("%n%s%n", "TestGroup100Case0.test264");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(10L);
         java.lang.String str2 = strObjectStore1.get();
         org.junit.Assert.assertNull(str2);
     }
 
     @Test
-    public void test266() throws Throwable {
+    public void test265() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test266");
+            System.out.format("%n%s%n", "TestGroup100Case0.test265");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         java.lang.String str3 = strObjectStore0.get();
@@ -3237,9 +3221,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test267() throws Throwable {
+    public void test266() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test267");
+            System.out.format("%n%s%n", "TestGroup100Case0.test266");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3253,9 +3237,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test268() throws Throwable {
+    public void test267() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+            System.out.format("%n%s%n", "TestGroup100Case0.test267");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L);
         long long2 = strObjectStore1.getSize();
         java.lang.String str3 = strObjectStore1.toString();
@@ -3266,16 +3250,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test269() throws Throwable {
+    public void test268() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test269");
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement> annotatedElementObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.AnnotatedElement>((long) (byte) 0);
     }
 
     @Test
-    public void test270() throws Throwable {
+    public void test269() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test270");
+            System.out.format("%n%s%n", "TestGroup100Case0.test269");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(0L);
         long long2 = strObjectStore1.getSize();
         long long3 = strObjectStore1.getSize();
@@ -3294,9 +3278,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test271() throws Throwable {
+    public void test270() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test271");
+            System.out.format("%n%s%n", "TestGroup100Case0.test270");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3312,27 +3296,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test272() throws Throwable {
+    public void test271() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test272");
-        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
-        strObjectStore0.add("");
-        boolean boolean3 = strObjectStore0.isEmpty();
-        java.lang.String str4 = strObjectStore0.toString();
-        java.lang.String str5 = strObjectStore0.get();
-        java.lang.String str6 = strObjectStore0.get();
-        java.lang.String str7 = strObjectStore0.getNextObject();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "[]" + "'", str4, "[]");
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "" + "'", str5, "");
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str7);
-    }
-
-    @Test
-    public void test273() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test273");
+            System.out.format("%n%s%n", "TestGroup100Case0.test271");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         java.lang.String str3 = strObjectStore0.get();
@@ -3344,9 +3310,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test274() throws Throwable {
+    public void test272() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test274");
+            System.out.format("%n%s%n", "TestGroup100Case0.test272");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 10, false);
         java.lang.String str3 = strObjectStore2.toString();
         java.lang.String str4 = strObjectStore2.get();
@@ -3355,16 +3321,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test275() throws Throwable {
+    public void test273() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test275");
+            System.out.format("%n%s%n", "TestGroup100Case0.test273");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.GenericDeclaration> genericDeclarationObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.reflect.GenericDeclaration>((long) (byte) 100);
     }
 
     @Test
-    public void test276() throws Throwable {
+    public void test274() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test276");
+            System.out.format("%n%s%n", "TestGroup100Case0.test274");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(10L, false);
         boolean boolean3 = strObjectStore2.isEmpty();
         java.lang.String str4 = strObjectStore2.getNextObject();
@@ -3373,16 +3339,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test277() throws Throwable {
+    public void test275() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+            System.out.format("%n%s%n", "TestGroup100Case0.test275");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.Comparable<java.lang.String>> strComparableObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.Comparable<java.lang.String>>((long) (-1), false);
     }
 
     @Test
-    public void test278() throws Throwable {
+    public void test276() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test278");
+            System.out.format("%n%s%n", "TestGroup100Case0.test276");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(100L, true);
         java.lang.String str3 = strObjectStore2.getNextObject();
         java.lang.Class<?> wildcardClass4 = strObjectStore2.getClass();
@@ -3391,9 +3357,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test279() throws Throwable {
+    public void test277() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test279");
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         java.lang.String str3 = strObjectStore0.get();
@@ -3410,16 +3376,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test280() throws Throwable {
+    public void test278() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test280");
+            System.out.format("%n%s%n", "TestGroup100Case0.test278");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) 'a', true);
     }
 
     @Test
-    public void test281() throws Throwable {
+    public void test279() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test281");
+            System.out.format("%n%s%n", "TestGroup100Case0.test279");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         long long3 = strObjectStore0.getSize();
@@ -3434,9 +3400,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test282() throws Throwable {
+    public void test280() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test282");
+            System.out.format("%n%s%n", "TestGroup100Case0.test280");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>(100L);
         boolean boolean2 = strObjectStore1.isEmpty();
         strObjectStore1.add("[[]]");
@@ -3446,9 +3412,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test283() throws Throwable {
+    public void test281() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test283");
+            System.out.format("%n%s%n", "TestGroup100Case0.test281");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) 1);
         java.lang.String str2 = strObjectStore1.toString();
         java.lang.String str3 = strObjectStore1.toString();
@@ -3465,9 +3431,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test284() throws Throwable {
+    public void test282() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test284");
+            System.out.format("%n%s%n", "TestGroup100Case0.test282");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3482,16 +3448,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test285() throws Throwable {
+    public void test283() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test285");
+            System.out.format("%n%s%n", "TestGroup100Case0.test283");
         net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable> serializableObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.io.Serializable>((long) (byte) 1, true);
     }
 
     @Test
-    public void test286() throws Throwable {
+    public void test284() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test286");
+            System.out.format("%n%s%n", "TestGroup100Case0.test284");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         java.lang.String str3 = strObjectStore0.get();
@@ -3508,9 +3474,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test287() throws Throwable {
+    public void test285() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test287");
+            System.out.format("%n%s%n", "TestGroup100Case0.test285");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3526,9 +3492,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test288() throws Throwable {
+    public void test286() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test288");
+            System.out.format("%n%s%n", "TestGroup100Case0.test286");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3543,9 +3509,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test289() throws Throwable {
+    public void test287() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test289");
+            System.out.format("%n%s%n", "TestGroup100Case0.test287");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         strObjectStore0.add("");
         boolean boolean3 = strObjectStore0.isEmpty();
@@ -3563,36 +3529,36 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test290() throws Throwable {
+    public void test288() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test290");
+            System.out.format("%n%s%n", "TestGroup100Case0.test288");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (byte) 10, false);
         java.lang.String str3 = strObjectStore2.getNextObject();
         org.junit.Assert.assertNull(str3);
     }
 
     @Test
-    public void test291() throws Throwable {
+    public void test289() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test291");
+            System.out.format("%n%s%n", "TestGroup100Case0.test289");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 0);
         boolean boolean2 = strObjectStore1.isEmpty();
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
     }
 
     @Test
-    public void test292() throws Throwable {
+    public void test290() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test292");
+            System.out.format("%n%s%n", "TestGroup100Case0.test290");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) ' ');
         long long2 = strObjectStore1.getSize();
         org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
     }
 
     @Test
-    public void test293() throws Throwable {
+    public void test291() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test293");
+            System.out.format("%n%s%n", "TestGroup100Case0.test291");
         net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
         boolean boolean1 = strObjectStore0.isEmpty();
         long long2 = strObjectStore0.getSize();
@@ -3607,6 +3573,107 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1L + "'", long6 == 1L);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "hi!" + "'", str7, "hi!");
         org.junit.Assert.assertTrue("'" + long8 + "' != '" + 0L + "'", long8 == 0L);
+    }
+
+    @Test
+    public void test292() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test292");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (-1), false);
+        long long3 = strObjectStore2.getSize();
+        java.lang.String str4 = strObjectStore2.toString();
+        java.lang.String str5 = strObjectStore2.get();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "[]" + "'", str4, "[]");
+        org.junit.Assert.assertNull(str5);
+    }
+
+    @Test
+    public void test293() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test293");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
+        strObjectStore0.add("");
+        java.lang.String str3 = strObjectStore0.get();
+        java.lang.String str4 = strObjectStore0.get();
+        java.lang.String str5 = strObjectStore0.get();
+        java.lang.String str6 = strObjectStore0.getNextObject();
+        strObjectStore0.add("hi!");
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str5);
+        org.junit.Assert.assertNull(str6);
+    }
+
+    @Test
+    public void test294() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test294");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
+        strObjectStore0.add("");
+        java.lang.String str3 = strObjectStore0.get();
+        java.lang.String str4 = strObjectStore0.get();
+        java.lang.String str5 = strObjectStore0.toString();
+        strObjectStore0.add("[hi!]");
+        long long8 = strObjectStore0.getSize();
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "" + "'", str3, "");
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "[]" + "'", str5, "[]");
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 1L + "'", long8 == 1L);
+    }
+
+    @Test
+    public void test295() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test295");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore2 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 0, false);
+    }
+
+    @Test
+    public void test296() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test296");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
+        strObjectStore0.add("");
+        long long3 = strObjectStore0.getSize();
+        java.lang.String str4 = strObjectStore0.get();
+        java.lang.String str5 = strObjectStore0.getNextObject();
+        strObjectStore0.add("");
+        strObjectStore0.add("");
+        java.lang.String str10 = strObjectStore0.get();
+        java.lang.String str11 = strObjectStore0.toString();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 1L + "'", long3 == 1L);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "" + "'", str4, "");
+        org.junit.Assert.assertNull(str5);
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "" + "'", str10, "");
+        org.junit.Assert.assertEquals("'" + str11 + "' != '" + "[]" + "'", str11, "[]");
+    }
+
+    @Test
+    public void test297() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test297");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore1 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>((long) (short) 1);
+    }
+
+    @Test
+    public void test298() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test298");
+        net.dschinghiskahn.objectstore.ObjectStore<java.lang.String> strObjectStore0 = new net.dschinghiskahn.objectstore.ObjectStore<java.lang.String>();
+        strObjectStore0.add("");
+        boolean boolean3 = strObjectStore0.isEmpty();
+        java.lang.String str4 = strObjectStore0.toString();
+        java.lang.String str5 = strObjectStore0.get();
+        java.lang.String str6 = strObjectStore0.get();
+        java.lang.String str7 = strObjectStore0.getNextObject();
+        java.lang.Class<?> wildcardClass8 = strObjectStore0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "[]" + "'", str4, "[]");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "" + "'", str5, "");
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNotNull(wildcardClass8);
     }
 }
 

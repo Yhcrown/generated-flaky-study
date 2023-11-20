@@ -1,4 +1,4 @@
-[TIME]: 0:01:32.012754
+[TIME]: 0:01:31.878046
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 12 classes.
@@ -7,130 +7,132 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:42:24.514Z     55.6M used)2023-10-31 18:42:24,938 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:51:30.524Z     55.6M used)2023-11-20 02:51:30,916 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,006 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:30,991 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,400 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:31,385 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,497 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:31,497 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,534 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:31,538 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,617 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:31,678 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:25,801 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:31,851 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:31,028 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:37,011 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:34,186 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:40,176 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:34,380 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:40,338 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:34,798 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:40,808 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
-2023-10-31 18:42:34,880 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:40,881 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:34,921 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:40,915 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:35,105 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:41,060 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:38,125 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:44,078 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:38,179 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:44,116 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:41,194 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:47,135 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:41,301 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:47,233 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
-2023-10-31 18:42:41,309 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:47,240 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
-2023-10-31 18:42:44,454 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:50,371 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:47,526 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:53,421 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:50,623 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:56,473 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:50,899 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:56,772 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: fluentd.logger.sender.class
-2023-10-31 18:42:50,931 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:56,832 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-11-20 02:51:56,832 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Can't assign requested address (connect failed)
-2023-10-31 18:42:50,933 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:51:57,000 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-11-20 02:51:57,001 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-11-20 02:51:57,008 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-11-20 02:51:57,008 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2023-11-20 02:51:57,077 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
-2023-10-31 18:42:51,125 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
-java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:51,127 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
-java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:51,134 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
-java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:51,135 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
-java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:51,197 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
-java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
-2023-10-31 18:42:54,220 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:00,098 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:57,225 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,101 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:42:57,250 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,112 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,284 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,128 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,285 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,128 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,365 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,281 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,365 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,281 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
-2023-10-31 18:42:57,384 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,313 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,435 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,359 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
-2023-10-31 18:42:57,646 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,543 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,647 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,544 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,695 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,591 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,696 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,592 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,865 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,763 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,872 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,770 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:57,978 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,897 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
-2023-10-31 18:42:57,988 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,907 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
-2023-10-31 18:42:58,002 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,921 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,003 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:03,922 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,165 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,019 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,200 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,055 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,289 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,132 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,343 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,300 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,343 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,301 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:42:58,509 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:04,468 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.ConnectException: Connection refused (Connection refused)
-2023-10-31 18:43:01,523 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:07,485 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.SocketTimeoutException: connect timed out
-2023-10-31 18:43:01,560 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:07,499 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+java.net.UnknownHostException: org.fluentd.logger.FluentLogger{tagPrefix=hi!,sender=_10_-1_100}
+2023-11-20 02:52:07,510 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
-2023-10-31 18:43:01,603 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
+2023-11-20 02:52:07,551 [1;31mERROR[0;39m [randoop.util.RunnerThread] org.fluentd.logger.sender.RawSocketSender
 java.net.UnknownHostException: org.fluentd.logger.sender.NullSender
 
-Progress update: steps=575, test inputs generated=515, failing inputs=16      (2023-10-31T23:43:01.703Z     581M used)
+Progress update: steps=575, test inputs generated=515, failing inputs=16      (2023-11-20T08:52:07.636Z     1.09G used)
 Normal method executions: 6889
 Exceptional method executions: 124
 
-Average method execution time (normal termination):      4.03
-Average method execution time (exceptional termination): 1.21
-Approximate memory usage 581M
+Average method execution time (normal termination):      4.07
+Average method execution time (exceptional termination): 1.15
+Approximate memory usage 1.09G
 Explorer = ForwardGenerator(steps: 575, null steps: 60, num_sequences_generated: 515;
     allSequences: 515, regresson seqs: 484, error seqs: 16=16=16, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 15;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 57)

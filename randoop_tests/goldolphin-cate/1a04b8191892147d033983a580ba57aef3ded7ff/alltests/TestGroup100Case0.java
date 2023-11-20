@@ -2560,43 +2560,6 @@ public class TestGroup100Case0 {
     public void test064() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test064");
-        net.goldolphin.cate.Action0 action0_0 = null;
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
-        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
-        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter3 = unitWaiter2.continueWithWaiter();
-        java.util.concurrent.Executor executor4 = null;
-        net.goldolphin.cate.ExecutorScheduler executorScheduler5 = new net.goldolphin.cate.ExecutorScheduler(executor4);
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask6 = unitWaiter2.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler5);
-        net.goldolphin.cate.Unit unit7 = net.goldolphin.cate.Unit.VALUE;
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask8 = unitWaiter2.withInitState(unit7);
-        net.goldolphin.cate.Action0 action0_9 = null;
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask10 = net.goldolphin.cate.Task.create(action0_9);
-        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter11 = unitTask10.continueWithWaiter();
-        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter12 = unitWaiter11.continueWithWaiter();
-        java.util.concurrent.Executor executor13 = null;
-        net.goldolphin.cate.ExecutorScheduler executorScheduler14 = new net.goldolphin.cate.ExecutorScheduler(executor13);
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask15 = unitWaiter11.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler14);
-        net.goldolphin.cate.Unit unit16 = net.goldolphin.cate.Unit.VALUE;
-        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask17 = unitWaiter11.withInitState(unit16);
-        unitWaiter2.setResult(unit16);
-        org.junit.Assert.assertNotNull(unitTask1);
-        org.junit.Assert.assertNotNull(unitWaiter2);
-        org.junit.Assert.assertNotNull(unitWaiter3);
-        org.junit.Assert.assertNotNull(unitTask6);
-        org.junit.Assert.assertNotNull(unit7);
-        org.junit.Assert.assertNotNull(unitTask8);
-        org.junit.Assert.assertNotNull(unitTask10);
-        org.junit.Assert.assertNotNull(unitWaiter11);
-        org.junit.Assert.assertNotNull(unitWaiter12);
-        org.junit.Assert.assertNotNull(unitTask15);
-        org.junit.Assert.assertNotNull(unit16);
-        org.junit.Assert.assertNotNull(unitTask17);
-    }
-
-    @Test
-    public void test065() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         net.goldolphin.cate.Maybe<java.lang.Comparable<java.lang.String>> strComparableMaybe0 = net.goldolphin.cate.Maybe.nothing();
         java.lang.String str1 = strComparableMaybe0.toString();
         org.junit.Assert.assertNotNull(strComparableMaybe0);
@@ -2604,9 +2567,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         net.goldolphin.cate.ITask<java.lang.CharSequence, java.io.Serializable> charSequenceITask0 = null;
         net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable> charSequenceTaskWithInitState2 = new net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>(charSequenceITask0, (java.lang.CharSequence) "hi!");
         net.goldolphin.cate.ContextAction<java.lang.CharSequence, java.lang.reflect.GenericDeclaration> charSequenceContextAction3 = null;
@@ -2635,9 +2598,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
         net.goldolphin.cate.ITask<java.lang.CharSequence, java.io.Serializable> charSequenceITask0 = null;
         net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable> charSequenceTaskWithInitState2 = new net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>(charSequenceITask0, (java.lang.CharSequence) "hi!");
         net.goldolphin.cate.Action0 action0_4 = null;
@@ -2663,9 +2626,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
         net.goldolphin.cate.ITask<net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>, java.lang.reflect.Type> func0TaskPartitionedSchedulerPoolPartitionedStoreITask0 = null;
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
@@ -2764,9 +2727,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -2800,17 +2763,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
         net.goldolphin.cate.Maybe<java.io.Serializable> serializableMaybe1 = net.goldolphin.cate.Maybe.just((java.io.Serializable) false);
         org.junit.Assert.assertNotNull(serializableMaybe1);
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -2825,17 +2788,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test072");
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
         net.goldolphin.cate.Func0<net.goldolphin.cate.CollectTask.IndexContinuation> indexContinuationFunc0_0 = null;
         net.goldolphin.cate.Func0Task<net.goldolphin.cate.CollectTask.IndexContinuation> indexContinuationFunc0Task1 = new net.goldolphin.cate.Func0Task<net.goldolphin.cate.CollectTask.IndexContinuation>(indexContinuationFunc0_0);
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+            System.out.format("%n%s%n", "TestGroup100Case0.test072");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner0 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerTaskWithScheduler1 = null;
         // The following exception was thrown during execution in test generation
@@ -2849,9 +2812,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test074");
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -2972,9 +2935,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+            System.out.format("%n%s%n", "TestGroup100Case0.test074");
         net.goldolphin.cate.Action1<java.lang.Object> objAction1_0 = null;
         net.goldolphin.cate.Action1Task<java.lang.Object> objAction1Task1 = new net.goldolphin.cate.Action1Task<java.lang.Object>(objAction1_0);
         net.goldolphin.cate.Func0<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0_3 = null;
@@ -3019,17 +2982,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.SynchronizedScheduler> synchronizedSchedulerHashedPartitioner0 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         org.junit.Assert.assertNotNull(synchronizedSchedulerHashedPartitioner0);
     }
 
     @Test
-    public void test077() throws Throwable {
+    public void test076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test077");
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -3117,9 +3080,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+            System.out.format("%n%s%n", "TestGroup100Case0.test077");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -3135,9 +3098,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
         net.goldolphin.cate.ITask[] iTaskArray1 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray2 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray1;
@@ -3150,9 +3113,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test080() throws Throwable {
+    public void test079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
         net.goldolphin.cate.ITask[] iTaskArray1 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[] charSequenceITaskArray2 = (net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[]) iTaskArray1;
@@ -3169,9 +3132,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -3283,9 +3246,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
         net.goldolphin.cate.ITask[] iTaskArray1 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray2 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray1;
@@ -3301,9 +3264,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test083");
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -3341,9 +3304,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+            System.out.format("%n%s%n", "TestGroup100Case0.test083");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -3375,9 +3338,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test085() throws Throwable {
+    public void test084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
         net.goldolphin.cate.ContextAction<net.goldolphin.cate.CollectTask.Result, net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>> resultContextAction0 = null;
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
@@ -3445,9 +3408,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         net.goldolphin.cate.util.ExecutorTimer executorTimer0 = new net.goldolphin.cate.util.ExecutorTimer();
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
@@ -3484,9 +3447,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner0 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask1 = null;
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -3539,17 +3502,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         net.goldolphin.cate.ITask<java.lang.Comparable<java.lang.String>, net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> strComparableITask0 = null;
         net.goldolphin.cate.FlattenTask<java.lang.Comparable<java.lang.String>, net.goldolphin.cate.Unit, net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> strComparableFlattenTask1 = new net.goldolphin.cate.FlattenTask<java.lang.Comparable<java.lang.String>, net.goldolphin.cate.Unit, net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>(strComparableITask0);
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         net.goldolphin.cate.Func0<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0_1 = null;
         net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0Task2 = new net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>(unitWaiterFunc0_1);
         net.goldolphin.cate.Action0 action0_4 = null;
@@ -3644,9 +3607,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter3 = unitTask2.continueWithWaiter();
@@ -3669,9 +3632,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -3796,9 +3759,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -3871,17 +3834,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         net.goldolphin.cate.ITask<net.goldolphin.cate.SeqTask<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>, net.goldolphin.cate.FlattenTask.Continuation, net.goldolphin.cate.ExecutorScheduler>, java.lang.String> waiterFunc0TaskSeqTaskITask0 = null;
         net.goldolphin.cate.Waiter<net.goldolphin.cate.SeqTask<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>, net.goldolphin.cate.FlattenTask.Continuation, net.goldolphin.cate.ExecutorScheduler>, java.lang.String> waiterFunc0TaskSeqTaskWaiter1 = new net.goldolphin.cate.Waiter<net.goldolphin.cate.SeqTask<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>, net.goldolphin.cate.FlattenTask.Continuation, net.goldolphin.cate.ExecutorScheduler>, java.lang.String>(waiterFunc0TaskSeqTaskITask0);
     }
 
     @Test
-    public void test094() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         net.goldolphin.cate.IdenticalTask<java.lang.String> strIdenticalTask0 = net.goldolphin.cate.IdenticalTask.instance();
         net.goldolphin.cate.Func1<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>> partitionedSchedulerPoolMapArrayFunc1_1 = null;
         net.goldolphin.cate.Func1Task<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>> partitionedSchedulerPoolMapArrayFunc1Task2 = new net.goldolphin.cate.Func1Task<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>>(partitionedSchedulerPoolMapArrayFunc1_1);
@@ -3974,9 +3937,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         net.goldolphin.cate.ITask<java.lang.CharSequence, java.io.Serializable> charSequenceITask0 = null;
         java.lang.CharSequence charSequence1 = null;
         net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable> charSequenceTaskWithInitState2 = new net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>(charSequenceITask0, charSequence1);
@@ -4012,9 +3975,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4085,28 +4048,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test097() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
-        net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner2 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
-        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore3 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>(7, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner2);
-        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore4 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>((int) (short) 1, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner2);
-        org.junit.Assert.assertNotNull(iSchedulerTaskWithSchedulerHashedPartitioner2);
-    }
-
-    @Test
-    public void test098() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         net.goldolphin.cate.ITask<net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>>, net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>> iSchedulerTaskWithSchedulerHashedPartitionerITask0 = null;
         net.goldolphin.cate.ITask<net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>, java.io.Serializable> func0TaskPartitionedSchedulerPoolIStoreITask1 = null;
         net.goldolphin.cate.SeqTask<net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>>, net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>, java.io.Serializable> iSchedulerTaskWithSchedulerHashedPartitionerSeqTask2 = new net.goldolphin.cate.SeqTask<net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>>, net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>, java.io.Serializable>(iSchedulerTaskWithSchedulerHashedPartitionerITask0, func0TaskPartitionedSchedulerPoolIStoreITask1);
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4172,9 +4125,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4288,9 +4241,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test101() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         net.goldolphin.cate.SynchronizedScheduler synchronizedScheduler1 = new net.goldolphin.cate.SynchronizedScheduler();
         net.goldolphin.cate.CollectTask.Result result2 = new net.goldolphin.cate.CollectTask.Result(1, (java.lang.Object) synchronizedScheduler1);
         java.lang.Object obj3 = result2.value;
@@ -4298,9 +4251,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4375,9 +4328,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         net.goldolphin.cate.CollectTask.Counter counter1 = new net.goldolphin.cate.CollectTask.Counter((int) (short) 10);
         java.lang.Object[] objArray2 = counter1.getResults();
         int int3 = counter1.getComplete();
@@ -4408,9 +4361,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4456,9 +4409,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test105() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4533,9 +4486,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -4612,9 +4565,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.ContextAction<java.lang.CharSequence, java.lang.reflect.GenericDeclaration> charSequenceContextAction3 = null;
@@ -4706,9 +4659,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4782,16 +4735,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test109() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         net.goldolphin.cate.CollectTask.Counter counter1 = new net.goldolphin.cate.CollectTask.Counter((int) (byte) 1);
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -4816,9 +4769,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         net.goldolphin.cate.CollectTask.Counter counter1 = new net.goldolphin.cate.CollectTask.Counter((int) (byte) 0);
         net.goldolphin.cate.ITask[] iTaskArray4 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
@@ -4845,9 +4798,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4899,9 +4852,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -4936,9 +4889,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         net.goldolphin.cate.util.ExecutorTimer executorTimer0 = new net.goldolphin.cate.util.ExecutorTimer();
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
@@ -4998,17 +4951,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         net.goldolphin.cate.Func0<java.lang.CharSequence> charSequenceFunc0_0 = null;
         net.goldolphin.cate.Func0Task<java.lang.CharSequence> charSequenceFunc0Task1 = new net.goldolphin.cate.Func0Task<java.lang.CharSequence>(charSequenceFunc0_0);
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         net.goldolphin.cate.ContextAction<net.goldolphin.cate.CollectTask.Result, net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>> resultContextAction1 = null;
         net.goldolphin.cate.ITask[] iTaskArray3 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
@@ -5054,9 +5007,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -5071,9 +5024,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         net.goldolphin.cate.Maybe<java.lang.Comparable<java.lang.String>> strComparableMaybe0 = net.goldolphin.cate.Maybe.nothing();
         boolean boolean1 = strComparableMaybe0.isNothing();
         java.lang.Comparable<java.lang.String> strComparable2 = strComparableMaybe0.get();
@@ -5083,9 +5036,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -5101,9 +5054,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -5169,9 +5122,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -5194,9 +5147,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -5310,9 +5263,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         net.goldolphin.cate.Func0<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0_0 = null;
         net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0Task1 = new net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>(unitWaiterFunc0_0);
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -5391,9 +5344,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         net.goldolphin.cate.WhenAllTask whenAllTask0 = null;
         net.goldolphin.cate.ContextAction<net.goldolphin.cate.CollectTask.Result, net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>> resultContextAction1 = null;
         net.goldolphin.cate.ITask[] iTaskArray3 = new net.goldolphin.cate.ITask[0];
@@ -5426,9 +5379,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -5502,9 +5455,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         net.goldolphin.cate.Action1<java.lang.Object> objAction1_0 = null;
         net.goldolphin.cate.Action1Task<java.lang.Object> objAction1Task1 = new net.goldolphin.cate.Action1Task<java.lang.Object>(objAction1_0);
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -5525,9 +5478,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test127() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -5542,9 +5495,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         net.goldolphin.cate.util.ExecutorTimer executorTimer0 = new net.goldolphin.cate.util.ExecutorTimer();
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
@@ -5632,9 +5585,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
         net.goldolphin.cate.ITask[] iTaskArray2 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray3 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray2;
@@ -5655,9 +5608,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         net.goldolphin.cate.ITask<java.lang.CharSequence, java.io.Serializable> charSequenceITask0 = null;
         java.lang.CharSequence charSequence1 = null;
         net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable> charSequenceTaskWithInitState2 = new net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>(charSequenceITask0, charSequence1);
@@ -5693,9 +5646,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         net.goldolphin.cate.ITask[] iTaskArray1 = new net.goldolphin.cate.ITask[0];
         @SuppressWarnings("unchecked")
         net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[] iTaskArrayITaskArray2 = (net.goldolphin.cate.ITask<net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[], ?>[]) iTaskArray1;
@@ -5709,9 +5662,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         net.goldolphin.cate.Func1<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>> partitionedSchedulerPoolMapArrayFunc1_0 = null;
         net.goldolphin.cate.Func1Task<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>> partitionedSchedulerPoolMapArrayFunc1Task1 = new net.goldolphin.cate.Func1Task<java.util.Map<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>[], net.goldolphin.cate.IStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>>(partitionedSchedulerPoolMapArrayFunc1_0);
         net.goldolphin.cate.ContextAction<java.lang.CharSequence, java.lang.reflect.GenericDeclaration> charSequenceContextAction3 = null;
@@ -5779,9 +5732,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         net.goldolphin.cate.CollectTask.Counter counter1 = new net.goldolphin.cate.CollectTask.Counter((int) (short) 10);
         java.lang.Object[] objArray2 = counter1.getResults();
         int int3 = counter1.getComplete();
@@ -5800,26 +5753,26 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test134() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         net.goldolphin.cate.Action1<net.goldolphin.cate.WhenAnyTask<net.goldolphin.cate.util.ExecutorTimer>.Continuation> continuationAction1_0 = null;
         net.goldolphin.cate.Action1Task<net.goldolphin.cate.WhenAnyTask<net.goldolphin.cate.util.ExecutorTimer>.Continuation> continuationAction1Task1 = new net.goldolphin.cate.Action1Task<net.goldolphin.cate.WhenAnyTask<net.goldolphin.cate.util.ExecutorTimer>.Continuation>(continuationAction1_0);
     }
 
     @Test
-    public void test135() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         net.goldolphin.cate.ITask<net.goldolphin.cate.FlattenTask<net.goldolphin.cate.CollectTask.Counter, net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>, net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, ?>[] counterFlattenTaskITaskArray0 = null;
         net.goldolphin.cate.WhenAnyTask<net.goldolphin.cate.FlattenTask<net.goldolphin.cate.CollectTask.Counter, net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>, net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>> counterFlattenTaskWhenAnyTask1 = net.goldolphin.cate.Task.whenAny(counterFlattenTaskITaskArray0);
         org.junit.Assert.assertNotNull(counterFlattenTaskWhenAnyTask1);
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -5913,18 +5866,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         net.goldolphin.cate.util.ExecutorTimer executorTimer0 = new net.goldolphin.cate.util.ExecutorTimer();
         executorTimer0.shutdown();
         executorTimer0.shutdown();
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -6039,9 +5992,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore2 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>(1, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner1);
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner3 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
@@ -6096,9 +6049,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner2 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.Maybe<java.lang.Comparable<java.lang.String>>, net.goldolphin.cate.Unit> strComparableMaybePartitionedStore3 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.Maybe<java.lang.Comparable<java.lang.String>>, net.goldolphin.cate.Unit>((int) '#', (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner2);
         net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore4 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>((int) (short) 100, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner2);
@@ -6217,9 +6170,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         net.goldolphin.cate.ITask<java.lang.CharSequence, java.io.Serializable> charSequenceITask0 = null;
         net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable> charSequenceTaskWithInitState2 = new net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>(charSequenceITask0, (java.lang.CharSequence) "hi!");
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -6268,9 +6221,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -6411,9 +6364,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Action0Task action0Task1 = new net.goldolphin.cate.Action0Task(action0_0);
         net.goldolphin.cate.ITask[] iTaskArray3 = new net.goldolphin.cate.ITask[0];
@@ -6507,9 +6460,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test144() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         net.goldolphin.cate.Action0 action0_0 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
         net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
@@ -6555,9 +6508,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test145() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -6674,9 +6627,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
         net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
         net.goldolphin.cate.Action0 action0_3 = null;
@@ -6745,9 +6698,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         net.goldolphin.cate.util.ExecutorTimer executorTimer0 = new net.goldolphin.cate.util.ExecutorTimer();
         net.goldolphin.cate.Action0 action0_1 = null;
         net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
@@ -6778,9 +6731,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         net.goldolphin.cate.ContextAction<java.lang.CharSequence, java.lang.reflect.GenericDeclaration> charSequenceContextAction0 = null;
         net.goldolphin.cate.ContextTask<java.lang.CharSequence, java.lang.reflect.GenericDeclaration> charSequenceContextTask1 = new net.goldolphin.cate.ContextTask<java.lang.CharSequence, java.lang.reflect.GenericDeclaration>(charSequenceContextAction0);
         net.goldolphin.cate.Action0 action0_2 = null;
@@ -6915,5 +6868,302 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(iContinuation91);
         org.junit.Assert.assertNotNull(iContinuation92);
         org.junit.Assert.assertNotNull(iContinuation93);
+    }
+
+    @Test
+    public void test147() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+        net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner3 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
+        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore4 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>(7, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner3);
+        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore5 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>((int) (short) 1, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner3);
+        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.ContextCollectTask.DispatcherContinuation, net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[]> dispatcherContinuationPartitionedStore6 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.ContextCollectTask.DispatcherContinuation, net.goldolphin.cate.ITask<java.lang.CharSequence, ?>[]>(6, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner3);
+        org.junit.Assert.assertNotNull(iSchedulerTaskWithSchedulerHashedPartitioner3);
+    }
+
+    @Test
+    public void test148() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        net.goldolphin.cate.Action0 action0_0 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter3 = unitWaiter2.continueWithWaiter();
+        net.goldolphin.cate.Action0 action0_4 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask5 = net.goldolphin.cate.Task.create(action0_4);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter6 = unitTask5.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter7 = unitWaiter6.continueWithWaiter();
+        java.util.concurrent.Executor executor8 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler9 = new net.goldolphin.cate.ExecutorScheduler(executor8);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask10 = unitWaiter6.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler9);
+        net.goldolphin.cate.Unit unit11 = net.goldolphin.cate.Unit.VALUE;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask12 = unitWaiter6.withInitState(unit11);
+        net.goldolphin.cate.Action0 action0_13 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask14 = net.goldolphin.cate.Task.create(action0_13);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter15 = unitTask14.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter16 = unitWaiter15.continueWithWaiter();
+        java.util.concurrent.Executor executor17 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler18 = new net.goldolphin.cate.ExecutorScheduler(executor17);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask19 = unitWaiter15.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler18);
+        net.goldolphin.cate.Unit unit20 = net.goldolphin.cate.Unit.VALUE;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask21 = unitWaiter15.withInitState(unit20);
+        unitWaiter6.setResult(unit20);
+        unitWaiter2.setResult(unit20);
+        org.junit.Assert.assertNotNull(unitTask1);
+        org.junit.Assert.assertNotNull(unitWaiter2);
+        org.junit.Assert.assertNotNull(unitWaiter3);
+        org.junit.Assert.assertNotNull(unitTask5);
+        org.junit.Assert.assertNotNull(unitWaiter6);
+        org.junit.Assert.assertNotNull(unitWaiter7);
+        org.junit.Assert.assertNotNull(unitTask10);
+        org.junit.Assert.assertNotNull(unit11);
+        org.junit.Assert.assertNotNull(unitTask12);
+        org.junit.Assert.assertNotNull(unitTask14);
+        org.junit.Assert.assertNotNull(unitWaiter15);
+        org.junit.Assert.assertNotNull(unitWaiter16);
+        org.junit.Assert.assertNotNull(unitTask19);
+        org.junit.Assert.assertNotNull(unit20);
+        org.junit.Assert.assertNotNull(unitTask21);
+    }
+
+    @Test
+    public void test149() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+        net.goldolphin.cate.partitioned.HashedPartitioner<net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>> iSchedulerTaskWithSchedulerHashedPartitioner1 = net.goldolphin.cate.partitioned.HashedPartitioner.instance();
+        net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask2 = null;
+        net.goldolphin.cate.Action0 action0_3 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask4 = net.goldolphin.cate.Task.create(action0_3);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter5 = unitTask4.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter6 = unitWaiter5.continueWithWaiter();
+        java.util.concurrent.Executor executor7 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler8 = new net.goldolphin.cate.ExecutorScheduler(executor7);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask9 = unitWaiter5.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler8);
+        java.util.concurrent.Executor executor10 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler11 = new net.goldolphin.cate.ExecutorScheduler(executor10);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask12 = unitWaiter5.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler11);
+        net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerTaskWithScheduler13 = new net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>(iSchedulerITask2, (net.goldolphin.cate.IScheduler) executorScheduler11);
+        int int15 = iSchedulerTaskWithSchedulerHashedPartitioner1.partition(iSchedulerTaskWithScheduler13, (int) (byte) 10);
+        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore16 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>((int) (byte) 1, (net.goldolphin.cate.partitioned.IPartitioner) iSchedulerTaskWithSchedulerHashedPartitioner1);
+        net.goldolphin.cate.Action0 action0_17 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask18 = net.goldolphin.cate.Task.create(action0_17);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter19 = unitTask18.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter20 = unitWaiter19.continueWithWaiter();
+        java.util.concurrent.Executor executor21 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler22 = new net.goldolphin.cate.ExecutorScheduler(executor21);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask23 = unitWaiter19.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler22);
+        java.util.concurrent.Executor executor24 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler25 = new net.goldolphin.cate.ExecutorScheduler(executor24);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask26 = unitWaiter19.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler25);
+        java.util.concurrent.Executor executor27 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler28 = new net.goldolphin.cate.ExecutorScheduler(executor27);
+        net.goldolphin.cate.ITask<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerITask29 = null;
+        net.goldolphin.cate.Action0 action0_30 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask31 = net.goldolphin.cate.Task.create(action0_30);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter32 = unitTask31.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter33 = unitWaiter32.continueWithWaiter();
+        java.util.concurrent.Executor executor34 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler35 = new net.goldolphin.cate.ExecutorScheduler(executor34);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask36 = unitWaiter32.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler35);
+        java.util.concurrent.Executor executor37 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler38 = new net.goldolphin.cate.ExecutorScheduler(executor37);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask39 = unitWaiter32.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler38);
+        net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>> iSchedulerTaskWithScheduler40 = new net.goldolphin.cate.TaskWithScheduler<net.goldolphin.cate.IScheduler, net.goldolphin.cate.TaskWithInitState<java.lang.CharSequence, java.io.Serializable>>(iSchedulerITask29, (net.goldolphin.cate.IScheduler) executorScheduler38);
+        java.util.concurrent.Executor executor41 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler42 = new net.goldolphin.cate.ExecutorScheduler(executor41);
+        net.goldolphin.cate.IScheduler[] iSchedulerArray43 = new net.goldolphin.cate.IScheduler[] { executorScheduler25, executorScheduler28, executorScheduler38, executorScheduler42 };
+        net.goldolphin.cate.partitioned.IPartitioner<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>> unitWaiterFunc0TaskIPartitioner44 = null;
+        net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>> unitWaiterFunc0TaskPartitionedSchedulerPool45 = new net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>(iSchedulerArray43, unitWaiterFunc0TaskIPartitioner44);
+        net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler> waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore46 = new net.goldolphin.cate.partitioned.PartitionedStore<net.goldolphin.cate.partitioned.PartitionedSchedulerPool<net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>>, net.goldolphin.cate.IScheduler>((net.goldolphin.cate.partitioned.PartitionedSchedulerPool) unitWaiterFunc0TaskPartitionedSchedulerPool45);
+        net.goldolphin.cate.partitioned.IPartitioner iPartitioner47 = unitWaiterFunc0TaskPartitionedSchedulerPool45.getPartitioner();
+        net.goldolphin.cate.Func0<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0_48 = null;
+        net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitWaiterFunc0Task49 = new net.goldolphin.cate.Func0Task<net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>>(unitWaiterFunc0_48);
+        net.goldolphin.cate.Action0 action0_51 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask52 = net.goldolphin.cate.Task.create(action0_51);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter53 = unitTask52.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter54 = unitWaiter53.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter55 = new net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitWaiter54);
+        net.goldolphin.cate.IContinuation iContinuation56 = null;
+        net.goldolphin.cate.FlattenTask.Continuation continuation57 = new net.goldolphin.cate.FlattenTask.Continuation(iContinuation56);
+        net.goldolphin.cate.IContinuation iContinuation58 = unitWaiter54.buildContinuation(iContinuation56);
+        net.goldolphin.cate.CollectTask.IndexContinuation indexContinuation59 = new net.goldolphin.cate.CollectTask.IndexContinuation((int) (byte) 100, iContinuation56);
+        net.goldolphin.cate.IContinuation iContinuation60 = unitWaiterFunc0Task49.buildContinuation(iContinuation56);
+        net.goldolphin.cate.IContinuation iContinuation62 = net.goldolphin.cate.IContinuation.END_CONTINUATION;
+        net.goldolphin.cate.CollectTask.IndexContinuation indexContinuation63 = new net.goldolphin.cate.CollectTask.IndexContinuation((int) (short) -1, iContinuation62);
+        net.goldolphin.cate.IContinuation iContinuation64 = unitWaiterFunc0Task49.buildContinuation((net.goldolphin.cate.IContinuation) indexContinuation63);
+        net.goldolphin.cate.Action0 action0_65 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask66 = net.goldolphin.cate.Task.create(action0_65);
+        net.goldolphin.cate.Action0 action0_67 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask68 = net.goldolphin.cate.Task.create(action0_67);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter69 = unitTask68.continueWithWaiter();
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask70 = unitTask66.continueWith((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitWaiter69);
+        net.goldolphin.cate.Environment environment71 = null;
+        net.goldolphin.cate.Action0 action0_72 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask73 = net.goldolphin.cate.Task.create(action0_72);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter74 = unitTask73.continueWithWaiter();
+        net.goldolphin.cate.util.ExecutorTimer executorTimer75 = new net.goldolphin.cate.util.ExecutorTimer();
+        net.goldolphin.cate.Action0 action0_76 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask77 = net.goldolphin.cate.Task.create(action0_76);
+        net.goldolphin.cate.Action0 action0_78 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask79 = net.goldolphin.cate.Task.create(action0_78);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter80 = unitTask79.continueWithWaiter();
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask81 = unitTask77.continueWith((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitWaiter80);
+        net.goldolphin.cate.Action1<net.goldolphin.cate.Unit> unitAction1_82 = null;
+        java.util.concurrent.TimeUnit timeUnit84 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Maybe<net.goldolphin.cate.Unit>> unitTask85 = executorTimer75.withTimeout((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitTask77, unitAction1_82, (long) (byte) -1, timeUnit84);
+        net.goldolphin.cate.SynchronizedScheduler synchronizedScheduler86 = new net.goldolphin.cate.SynchronizedScheduler();
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask87 = unitTask77.withScheduler((net.goldolphin.cate.IScheduler) synchronizedScheduler86);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask88 = unitTask73.withScheduler((net.goldolphin.cate.IScheduler) synchronizedScheduler86);
+        indexContinuation63.apply((java.lang.Object) unitTask70, environment71, (net.goldolphin.cate.IScheduler) synchronizedScheduler86);
+        waiterFunc0TaskPartitionedSchedulerPoolPartitionedStore16.put(unitWaiterFunc0TaskPartitionedSchedulerPool45, (net.goldolphin.cate.IScheduler) synchronizedScheduler86);
+        org.junit.Assert.assertNotNull(iSchedulerTaskWithSchedulerHashedPartitioner1);
+        org.junit.Assert.assertNotNull(unitTask4);
+        org.junit.Assert.assertNotNull(unitWaiter5);
+        org.junit.Assert.assertNotNull(unitWaiter6);
+        org.junit.Assert.assertNotNull(unitTask9);
+        org.junit.Assert.assertNotNull(unitTask12);
+// flaky:         org.junit.Assert.assertTrue("'" + int15 + "' != '" + 5 + "'", int15 == 5);
+        org.junit.Assert.assertNotNull(unitTask18);
+        org.junit.Assert.assertNotNull(unitWaiter19);
+        org.junit.Assert.assertNotNull(unitWaiter20);
+        org.junit.Assert.assertNotNull(unitTask23);
+        org.junit.Assert.assertNotNull(unitTask26);
+        org.junit.Assert.assertNotNull(unitTask31);
+        org.junit.Assert.assertNotNull(unitWaiter32);
+        org.junit.Assert.assertNotNull(unitWaiter33);
+        org.junit.Assert.assertNotNull(unitTask36);
+        org.junit.Assert.assertNotNull(unitTask39);
+        org.junit.Assert.assertNotNull(iSchedulerArray43);
+        org.junit.Assert.assertNull(iPartitioner47);
+        org.junit.Assert.assertNotNull(unitTask52);
+        org.junit.Assert.assertNotNull(unitWaiter53);
+        org.junit.Assert.assertNotNull(unitWaiter54);
+        org.junit.Assert.assertNotNull(iContinuation58);
+        org.junit.Assert.assertNotNull(iContinuation60);
+        org.junit.Assert.assertNotNull(iContinuation62);
+        org.junit.Assert.assertNotNull(iContinuation64);
+        org.junit.Assert.assertNotNull(unitTask66);
+        org.junit.Assert.assertNotNull(unitTask68);
+        org.junit.Assert.assertNotNull(unitWaiter69);
+        org.junit.Assert.assertNotNull(unitTask70);
+        org.junit.Assert.assertNotNull(unitTask73);
+        org.junit.Assert.assertNotNull(unitWaiter74);
+        org.junit.Assert.assertNotNull(unitTask77);
+        org.junit.Assert.assertNotNull(unitTask79);
+        org.junit.Assert.assertNotNull(unitWaiter80);
+        org.junit.Assert.assertNotNull(unitTask81);
+        org.junit.Assert.assertNotNull(unitTask85);
+        org.junit.Assert.assertNotNull(unitTask87);
+        org.junit.Assert.assertNotNull(unitTask88);
+    }
+
+    @Test
+    public void test150() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+        net.goldolphin.cate.Action0 action0_0 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
+        net.goldolphin.cate.Action1<net.goldolphin.cate.Unit> unitAction1_3 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask4 = unitTask1.continueWith(unitAction1_3);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitTask5 = unitTask1.flatten();
+        net.goldolphin.cate.Action0 action0_6 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask7 = net.goldolphin.cate.Task.create(action0_6);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter8 = unitTask7.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter9 = unitWaiter8.continueWithWaiter();
+        java.util.concurrent.Executor executor10 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler11 = new net.goldolphin.cate.ExecutorScheduler(executor10);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask12 = unitWaiter8.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler11);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask13 = unitTask1.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler11);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter14 = unitTask13.continueWithWaiter();
+        org.junit.Assert.assertNotNull(unitTask1);
+        org.junit.Assert.assertNotNull(unitWaiter2);
+        org.junit.Assert.assertNotNull(unitTask4);
+        org.junit.Assert.assertNotNull(unitTask5);
+        org.junit.Assert.assertNotNull(unitTask7);
+        org.junit.Assert.assertNotNull(unitWaiter8);
+        org.junit.Assert.assertNotNull(unitWaiter9);
+        org.junit.Assert.assertNotNull(unitTask12);
+        org.junit.Assert.assertNotNull(unitTask13);
+        org.junit.Assert.assertNotNull(unitWaiter14);
+    }
+
+    @Test
+    public void test151() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+        net.goldolphin.cate.Action0 action0_1 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask2 = net.goldolphin.cate.Task.create(action0_1);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter3 = unitTask2.continueWithWaiter();
+        net.goldolphin.cate.Action1<net.goldolphin.cate.Unit> unitAction1_4 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask5 = unitTask2.continueWith(unitAction1_4);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>> unitTask6 = unitTask2.flatten();
+        net.goldolphin.cate.CollectTask.Result result7 = new net.goldolphin.cate.CollectTask.Result((int) (short) 0, (java.lang.Object) unitTask2);
+        java.lang.Object obj8 = result7.value;
+        org.junit.Assert.assertNotNull(unitTask2);
+        org.junit.Assert.assertNotNull(unitWaiter3);
+        org.junit.Assert.assertNotNull(unitTask5);
+        org.junit.Assert.assertNotNull(unitTask6);
+        org.junit.Assert.assertNotNull(obj8);
+    }
+
+    @Test
+    public void test152() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+        net.goldolphin.cate.Maybe<net.goldolphin.cate.IContinuation> iContinuationMaybe0 = net.goldolphin.cate.Maybe.nothing();
+        org.junit.Assert.assertNotNull(iContinuationMaybe0);
+    }
+
+    @Test
+    public void test153() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+        net.goldolphin.cate.Action0 action0_0 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask1 = net.goldolphin.cate.Task.create(action0_0);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter2 = unitTask1.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter3 = unitWaiter2.continueWithWaiter();
+        net.goldolphin.cate.Action1<net.goldolphin.cate.Unit> unitAction1_4 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask5 = unitWaiter2.continueWith(unitAction1_4);
+        net.goldolphin.cate.Action0 action0_6 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask7 = net.goldolphin.cate.Task.create(action0_6);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter8 = unitTask7.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter9 = unitWaiter8.continueWithWaiter();
+        java.util.concurrent.Executor executor10 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler11 = new net.goldolphin.cate.ExecutorScheduler(executor10);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask12 = unitWaiter8.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler11);
+        java.util.concurrent.Executor executor13 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler14 = new net.goldolphin.cate.ExecutorScheduler(executor13);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask15 = unitWaiter8.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler14);
+        boolean boolean16 = unitWaiter8.isComplete();
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask17 = unitTask5.continueWith((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitWaiter8);
+        net.goldolphin.cate.Action0 action0_18 = null;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask19 = net.goldolphin.cate.Task.create(action0_18);
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter20 = unitTask19.continueWithWaiter();
+        net.goldolphin.cate.Waiter<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitWaiter21 = unitWaiter20.continueWithWaiter();
+        java.util.concurrent.Executor executor22 = null;
+        net.goldolphin.cate.ExecutorScheduler executorScheduler23 = new net.goldolphin.cate.ExecutorScheduler(executor22);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask24 = unitWaiter20.withScheduler((net.goldolphin.cate.IScheduler) executorScheduler23);
+        net.goldolphin.cate.Unit unit25 = net.goldolphin.cate.Unit.VALUE;
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask26 = unitWaiter20.withInitState(unit25);
+        net.goldolphin.cate.Task<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit> unitTask27 = unitWaiter8.continueWith((net.goldolphin.cate.ITask<net.goldolphin.cate.Unit, net.goldolphin.cate.Unit>) unitWaiter20);
+        org.junit.Assert.assertNotNull(unitTask1);
+        org.junit.Assert.assertNotNull(unitWaiter2);
+        org.junit.Assert.assertNotNull(unitWaiter3);
+        org.junit.Assert.assertNotNull(unitTask5);
+        org.junit.Assert.assertNotNull(unitTask7);
+        org.junit.Assert.assertNotNull(unitWaiter8);
+        org.junit.Assert.assertNotNull(unitWaiter9);
+        org.junit.Assert.assertNotNull(unitTask12);
+        org.junit.Assert.assertNotNull(unitTask15);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(unitTask17);
+        org.junit.Assert.assertNotNull(unitTask19);
+        org.junit.Assert.assertNotNull(unitWaiter20);
+        org.junit.Assert.assertNotNull(unitWaiter21);
+        org.junit.Assert.assertNotNull(unitTask24);
+        org.junit.Assert.assertNotNull(unit25);
+        org.junit.Assert.assertNotNull(unitTask26);
+        org.junit.Assert.assertNotNull(unitTask27);
     }
 }

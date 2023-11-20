@@ -1690,60 +1690,6 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test084");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
-        java.lang.Throwable throwable1 = null;
-        org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
-        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise3 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException2);
-        org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException> deferredStatusAsyncDeferredObjectSimpleFailurePromise4 = new org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>(promiseException2);
-        org.joo.promise4j.DeferredStatus deferredStatus5 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
-        org.joo.promise4j.DoneCallback<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>> deferredStatusAsyncDeferredObjectDoneCallback6 = null;
-        org.joo.promise4j.Promise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException> deferredStatusAsyncDeferredObjectPromise7 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.done(deferredStatusAsyncDeferredObjectDoneCallback6);
-        org.joo.promise4j.DeferredStatus deferredStatus8 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
-        org.joo.promise4j.DeferredStatus deferredStatus9 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
-        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject10 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
-        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise11 = deferredStatusAsyncDeferredObject10.promise();
-        org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise12 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject10);
-        org.joo.promise4j.DeferredStatus deferredStatus13 = deferredStatusAsyncDeferredObjectSimpleDonePromise12.getStatus();
-        org.joo.promise4j.DeferredStatus deferredStatus14 = org.joo.promise4j.DeferredStatus.REJECTED;
-        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback15 = null;
-        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback16 = null;
-        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback17 = null;
-        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject18 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback15, throwableFailCallback16, deferredStatusAlwaysCallback17);
-        org.joo.promise4j.DeferredStatus deferredStatus19 = org.joo.promise4j.DeferredStatus.REJECTED;
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred20 = deferredStatusSimpleDeferredObject18.resolve(deferredStatus19);
-        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise21 = deferredStatusSimpleDeferredObject18.promise();
-        org.joo.promise4j.DeferredStatus deferredStatus22 = deferredStatusSimpleDeferredObject18.getStatus();
-        java.util.concurrent.TimeUnit timeUnit24 = null;
-        java.util.function.Supplier<java.lang.Throwable> throwableSupplier25 = null;
-        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise26 = deferredStatusSimpleDeferredObject18.timeoutAfter((long) (short) 100, timeUnit24, throwableSupplier25);
-        org.joo.promise4j.DeferredStatus deferredStatus27 = deferredStatusSimpleDeferredObject18.getStatus();
-        org.joo.promise4j.DeferredStatus[] deferredStatusArray28 = new org.joo.promise4j.DeferredStatus[] { deferredStatus9, deferredStatus13, deferredStatus14, deferredStatus27 };
-        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList29 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
-        boolean boolean30 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList29, deferredStatusArray28);
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred31 = deferredStatusListSyncDeferredObject0.resolve(deferredStatusList29);
-        org.junit.Assert.assertNotNull(wildcardClassPromise3);
-        org.junit.Assert.assertTrue("'" + deferredStatus5 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus5.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertNotNull(deferredStatusAsyncDeferredObjectPromise7);
-        org.junit.Assert.assertTrue("'" + deferredStatus8 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus8.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertTrue("'" + deferredStatus9 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus9.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertNotNull(deferredStatusPromise11);
-        org.junit.Assert.assertTrue("'" + deferredStatus13 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus13.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
-        org.junit.Assert.assertTrue("'" + deferredStatus14 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus14.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertTrue("'" + deferredStatus19 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus19.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertNotNull(deferredStatusDeferred20);
-        org.junit.Assert.assertNotNull(deferredStatusPromise21);
-        org.junit.Assert.assertTrue("'" + deferredStatus22 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus22.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
-        org.junit.Assert.assertNotNull(deferredStatusPromise26);
-        org.junit.Assert.assertTrue("'" + deferredStatus27 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus27.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
-        org.junit.Assert.assertNotNull(deferredStatusArray28);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred31);
-    }
-
-    @Test
-    public void test085() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
-        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.DoneCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>> deferredStatusListDoneCallback2 = null;
         org.joo.promise4j.Promise<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListPromise3 = deferredStatusListSyncDeferredObject0.done(deferredStatusListDoneCallback2);
@@ -1754,16 +1700,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         org.joo.promise4j.impl.SyncDeferredObject<java.lang.Class<?>, java.lang.Throwable> wildcardClassSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.lang.Class<?>, java.lang.Throwable>();
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -1788,9 +1734,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -1809,9 +1755,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -1853,29 +1799,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test090() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
-        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
-        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
-        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
-        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject3 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1, deferredStatusAlwaysCallback2);
-        org.joo.promise4j.DeferredStatus deferredStatus4 = org.joo.promise4j.DeferredStatus.REJECTED;
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred5 = deferredStatusSimpleDeferredObject3.resolve(deferredStatus4);
-        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise6 = deferredStatusSimpleDeferredObject3.promise();
-        java.util.concurrent.TimeUnit timeUnit8 = null;
-        java.util.function.Supplier<java.lang.Throwable> throwableSupplier9 = null;
-        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise10 = deferredStatusSimpleDeferredObject3.timeoutAfter(0L, timeUnit8, throwableSupplier9);
-        org.junit.Assert.assertTrue("'" + deferredStatus4 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus4.equals(org.joo.promise4j.DeferredStatus.REJECTED));
-        org.junit.Assert.assertNotNull(deferredStatusDeferred5);
-        org.junit.Assert.assertNotNull(deferredStatusPromise6);
-        org.junit.Assert.assertNotNull(deferredStatusPromise10);
-    }
-
-    @Test
-    public void test091() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -1891,9 +1817,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -1921,9 +1847,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -1941,9 +1867,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test094() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         java.lang.Throwable throwable2 = null;
@@ -1975,16 +1901,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         org.joo.promise4j.impl.AsyncDeferredObject<java.util.List<org.joo.promise4j.DeferredStatus>, java.lang.Throwable> deferredStatusListAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<java.util.List<org.joo.promise4j.DeferredStatus>, java.lang.Throwable>();
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -2009,9 +1935,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test097() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2045,9 +1971,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2089,9 +2015,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -2104,9 +2030,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -2136,9 +2062,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test101() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.DoneCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>> deferredStatusListDoneCallback2 = null;
@@ -2167,9 +2093,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1);
@@ -2184,9 +2110,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -2208,9 +2134,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -2225,9 +2151,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test105() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         org.joo.promise4j.Promise<java.lang.Iterable<org.joo.promise4j.DeferredStatus>, java.lang.Exception> deferredStatusIterablePromise0 = null;
         org.joo.promise4j.FilteredDoneCallback<java.lang.Iterable<org.joo.promise4j.DeferredStatus>, java.util.AbstractList<org.joo.promise4j.DeferredStatus>> deferredStatusIterableFilteredDoneCallback1 = null;
         org.joo.promise4j.FilteredFailureCallback<java.lang.Exception, org.joo.promise4j.PromiseException> exceptionFilteredFailureCallback2 = null;
@@ -2241,9 +2167,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -2257,9 +2183,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -2273,30 +2199,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
-        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
-        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
-        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
-        java.io.Serializable serializable4 = serializableCompletableDeferredObject0.get();
-        org.joo.promise4j.AlwaysCallback<java.io.Serializable, java.lang.Throwable> serializableAlwaysCallback5 = null;
-        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise6 = serializableCompletableDeferredObject0.always(serializableAlwaysCallback5);
-        org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback7 = null;
-        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise8 = serializablePromise6.done(serializableDoneCallback7);
-        java.io.Serializable serializable9 = serializablePromise6.get();
-        org.junit.Assert.assertNotNull(serializablePromise1);
-        org.junit.Assert.assertNotNull(serializableDeferred3);
-        org.junit.Assert.assertEquals("'" + serializable4 + "' != '" + 10L + "'", serializable4, 10L);
-        org.junit.Assert.assertNotNull(serializablePromise6);
-        org.junit.Assert.assertNotNull(serializablePromise8);
-        org.junit.Assert.assertEquals("'" + serializable9 + "' != '" + 10L + "'", serializable9, 10L);
-    }
-
-    @Test
-    public void test109() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2312,9 +2217,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -2332,9 +2237,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -2354,9 +2259,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1);
@@ -2371,9 +2276,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.DeferredStatus deferredStatus1 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred2 = deferredStatusAsyncDeferredObject0.resolve(deferredStatus1);
@@ -2384,9 +2289,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -2409,9 +2314,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -2431,9 +2336,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         org.joo.promise4j.Promise<java.lang.Iterable<org.joo.promise4j.DeferredStatus>, java.lang.Exception> deferredStatusIterablePromise0 = null;
         org.joo.promise4j.PipeAlwaysCallback<java.lang.Iterable<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>, java.lang.Exception, java.lang.Throwable> deferredStatusIterablePipeAlwaysCallback1 = null;
         // The following exception was thrown during execution in test generation
@@ -2446,9 +2351,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2483,9 +2388,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -2500,16 +2405,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         org.joo.promise4j.impl.AsyncDeferredObject<java.util.Spliterator<org.joo.promise4j.DeferredStatus>, java.lang.Throwable> deferredStatusSpliteratorAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<java.util.Spliterator<org.joo.promise4j.DeferredStatus>, java.lang.Throwable>();
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAlwaysCallback1 = null;
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise2 = deferredStatusAsyncDeferredObject0.always(deferredStatusAlwaysCallback1);
@@ -2517,9 +2422,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2543,9 +2448,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         java.util.function.Supplier[] supplierArray1 = new java.util.function.Supplier[0];
         @SuppressWarnings("unchecked")
         java.util.function.Supplier<org.joo.promise4j.Promise<?, ?>>[] wildcardPromiseSupplierArray2 = (java.util.function.Supplier<org.joo.promise4j.Promise<?, ?>>[]) supplierArray1;
@@ -2558,9 +2463,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -2573,9 +2478,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -2603,9 +2508,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         org.joo.promise4j.AlwaysCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListAlwaysCallback1 = null;
         org.joo.promise4j.Promise<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListPromise2 = deferredStatusListSyncDeferredObject0.always(deferredStatusListAlwaysCallback1);
@@ -2616,9 +2521,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         java.lang.Throwable throwable2 = null;
@@ -2654,9 +2559,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test127() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -2674,9 +2579,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -2694,9 +2599,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2735,9 +2640,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -2763,9 +2668,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.AlwaysCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListAlwaysCallback2 = null;
@@ -2777,9 +2682,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -2802,9 +2707,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<org.joo.promise4j.PromiseException, org.joo.promise4j.PromiseException>[] promiseExceptionPromiseArray2 = (org.joo.promise4j.Promise<org.joo.promise4j.PromiseException, org.joo.promise4j.PromiseException>[]) promiseArray1;
@@ -2814,9 +2719,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test134() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         org.joo.promise4j.Deferred<java.lang.String, java.lang.Exception> strDeferred0 = null;
         org.joo.promise4j.Deferred[] deferredArray2 = new org.joo.promise4j.Deferred[1];
         @SuppressWarnings("unchecked")
@@ -2834,9 +2739,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test135() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -2847,9 +2752,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject2 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
@@ -2927,9 +2832,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -2945,9 +2850,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -2963,9 +2868,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -2985,9 +2890,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         org.joo.promise4j.Deferred<java.lang.reflect.Type, java.lang.Throwable> typeDeferred0 = null;
         org.joo.promise4j.Deferred[] deferredArray2 = new org.joo.promise4j.Deferred[1];
         @SuppressWarnings("unchecked")
@@ -3005,9 +2910,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -3023,9 +2928,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3046,9 +2951,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         org.joo.promise4j.Promise<org.joo.promise4j.PromiseException, org.joo.promise4j.PromiseException> promiseExceptionPromise0 = null;
         org.joo.promise4j.FilteredDoneCallback<org.joo.promise4j.PromiseException, java.util.AbstractList<org.joo.promise4j.DeferredStatus>> promiseExceptionFilteredDoneCallback1 = null;
         org.joo.promise4j.FilteredFailureCallback<org.joo.promise4j.PromiseException, java.lang.Exception> promiseExceptionFilteredFailureCallback2 = null;
@@ -3062,22 +2967,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test144() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
-        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
-        boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
-        boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
-        org.joo.promise4j.DeferredStatus deferredStatus3 = deferredStatusListSyncDeferredObject0.getStatus();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertNull(deferredStatus3);
-    }
-
-    @Test
-    public void test145() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3098,9 +2990,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3116,9 +3008,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3132,9 +3024,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -3154,9 +3046,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test149() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3180,9 +3072,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test150() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -3206,9 +3098,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test151() throws Throwable {
+    public void test147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -3227,9 +3119,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test152() throws Throwable {
+    public void test148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.AlwaysCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListAlwaysCallback2 = null;
@@ -3248,9 +3140,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test153() throws Throwable {
+    public void test149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -3263,9 +3155,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test154() throws Throwable {
+    public void test150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test154");
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -3306,9 +3198,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test155() throws Throwable {
+    public void test151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -3325,9 +3217,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test156() throws Throwable {
+    public void test152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -3350,9 +3242,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test157() throws Throwable {
+    public void test153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
         org.joo.promise4j.util.TimeoutScheduler timeoutScheduler0 = new org.joo.promise4j.util.TimeoutScheduler();
         java.lang.Class<?> wildcardClass1 = timeoutScheduler0.getClass();
         java.lang.reflect.GenericDeclaration[] genericDeclarationArray2 = new java.lang.reflect.GenericDeclaration[] { wildcardClass1 };
@@ -3417,9 +3309,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test158() throws Throwable {
+    public void test154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+            System.out.format("%n%s%n", "TestGroup100Case0.test154");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -3438,9 +3330,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test159() throws Throwable {
+    public void test155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3464,9 +3356,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         org.joo.promise4j.DoneCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>> deferredStatusListDoneCallback2 = null;
@@ -3480,9 +3372,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test161() throws Throwable {
+    public void test157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3511,9 +3403,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -3551,9 +3443,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test159");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -3576,9 +3468,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -3597,9 +3489,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test165() throws Throwable {
+    public void test161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3650,9 +3542,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test166() throws Throwable {
+    public void test162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3671,9 +3563,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test167() throws Throwable {
+    public void test163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3708,9 +3600,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test168() throws Throwable {
+    public void test164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -3730,9 +3622,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test169() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.DeferredStatus deferredStatus1 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred2 = deferredStatusAsyncDeferredObject0.resolve(deferredStatus1);
@@ -3751,18 +3643,18 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test170() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.Promise[]> promiseArrayDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Exception> exceptionFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.Promise[], java.lang.Exception> promiseArraySimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.Promise[], java.lang.Exception>(promiseArrayDoneCallback0, exceptionFailCallback1);
     }
 
     @Test
-    public void test171() throws Throwable {
+    public void test167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -3781,9 +3673,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test172() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3808,9 +3700,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test173() throws Throwable {
+    public void test169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -3822,9 +3714,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test174() throws Throwable {
+    public void test170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -3836,9 +3728,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test175() throws Throwable {
+    public void test171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1);
@@ -3847,9 +3739,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test176() throws Throwable {
+    public void test172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3863,9 +3755,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test177() throws Throwable {
+    public void test173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -3891,9 +3783,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test178() throws Throwable {
+    public void test174() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+            System.out.format("%n%s%n", "TestGroup100Case0.test174");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -3922,9 +3814,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test179() throws Throwable {
+    public void test175() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test179");
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -3939,9 +3831,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test180() throws Throwable {
+    public void test176() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -3976,17 +3868,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test181() throws Throwable {
+    public void test177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
         java.util.concurrent.CompletableFuture<org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>> deferredStatusAsyncDeferredObjectSimpleFailurePromiseCompletableFuture0 = null;
         org.joo.promise4j.impl.CompletableDeferredObject<org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleFailurePromiseCompletableDeferredObject1 = new org.joo.promise4j.impl.CompletableDeferredObject<org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>, java.lang.Exception>(deferredStatusAsyncDeferredObjectSimpleFailurePromiseCompletableFuture0);
     }
 
     @Test
-    public void test182() throws Throwable {
+    public void test178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -4000,9 +3892,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test183() throws Throwable {
+    public void test179() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test183");
+            System.out.format("%n%s%n", "TestGroup100Case0.test179");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4041,9 +3933,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test184() throws Throwable {
+    public void test180() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test184");
+            System.out.format("%n%s%n", "TestGroup100Case0.test180");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -4062,9 +3954,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test185() throws Throwable {
+    public void test181() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+            System.out.format("%n%s%n", "TestGroup100Case0.test181");
         org.joo.promise4j.Deferred<java.lang.Object, java.lang.Throwable>[] objDeferredArray0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -4076,9 +3968,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test186() throws Throwable {
+    public void test182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test186");
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4088,9 +3980,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test187() throws Throwable {
+    public void test183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test187");
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4124,9 +4016,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test188() throws Throwable {
+    public void test184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test188");
+            System.out.format("%n%s%n", "TestGroup100Case0.test184");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -4143,9 +4035,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test189() throws Throwable {
+    public void test185() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test189");
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4164,102 +4056,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test190() throws Throwable {
+    public void test186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test190");
-        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
-        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
-        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise2 = serializableCompletableDeferredObject0.promise();
-        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback3 = null;
-        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback4 = null;
-        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback5 = null;
-        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject6 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback3, throwableFailCallback4, deferredStatusAlwaysCallback5);
-        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject7 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
-        boolean boolean8 = deferredStatusListSyncDeferredObject7.isRejected();
-        java.lang.Throwable throwable9 = null;
-        org.joo.promise4j.PromiseException promiseException10 = new org.joo.promise4j.PromiseException(throwable9);
-        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise11 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException10);
-        java.lang.Throwable[] throwableArray12 = promiseException10.getSuppressed();
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred13 = deferredStatusListSyncDeferredObject7.reject(promiseException10);
-        org.joo.promise4j.DeferredStatus deferredStatus14 = org.joo.promise4j.DeferredStatus.RESOLVED;
-        org.joo.promise4j.DeferredStatus[] deferredStatusArray15 = new org.joo.promise4j.DeferredStatus[] { deferredStatus14 };
-        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList16 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
-        boolean boolean17 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList16, deferredStatusArray15);
-        org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus> deferredStatusJoinedResults18 = new org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>((java.util.List<org.joo.promise4j.DeferredStatus>) deferredStatusList16);
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred19 = deferredStatusListSyncDeferredObject7.resolve(deferredStatusList16);
-        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject20 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
-        java.lang.Throwable throwable21 = null;
-        org.joo.promise4j.PromiseException promiseException22 = new org.joo.promise4j.PromiseException(throwable21);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred23 = deferredStatusAsyncDeferredObject20.reject((java.lang.Exception) promiseException22);
-        org.joo.promise4j.PromiseException promiseException24 = new org.joo.promise4j.PromiseException((java.lang.Throwable) promiseException22);
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred25 = deferredStatusListSyncDeferredObject7.reject(promiseException22);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred26 = deferredStatusSimpleDeferredObject6.reject((java.lang.Throwable) promiseException22);
-        boolean boolean27 = deferredStatusSimpleDeferredObject6.isPending();
-        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject28 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
-        java.lang.Throwable throwable29 = null;
-        org.joo.promise4j.PromiseException promiseException30 = new org.joo.promise4j.PromiseException(throwable29);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred31 = deferredStatusAsyncDeferredObject28.reject((java.lang.Exception) promiseException30);
-        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback32 = null;
-        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback33 = null;
-        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback34 = null;
-        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject35 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback32, throwableFailCallback33, deferredStatusAlwaysCallback34);
-        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject36 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
-        boolean boolean37 = deferredStatusListSyncDeferredObject36.isRejected();
-        java.lang.Throwable throwable38 = null;
-        org.joo.promise4j.PromiseException promiseException39 = new org.joo.promise4j.PromiseException(throwable38);
-        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise40 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException39);
-        java.lang.Throwable[] throwableArray41 = promiseException39.getSuppressed();
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred42 = deferredStatusListSyncDeferredObject36.reject(promiseException39);
-        org.joo.promise4j.DeferredStatus deferredStatus43 = org.joo.promise4j.DeferredStatus.RESOLVED;
-        org.joo.promise4j.DeferredStatus[] deferredStatusArray44 = new org.joo.promise4j.DeferredStatus[] { deferredStatus43 };
-        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList45 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
-        boolean boolean46 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList45, deferredStatusArray44);
-        org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus> deferredStatusJoinedResults47 = new org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>((java.util.List<org.joo.promise4j.DeferredStatus>) deferredStatusList45);
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred48 = deferredStatusListSyncDeferredObject36.resolve(deferredStatusList45);
-        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject49 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
-        java.lang.Throwable throwable50 = null;
-        org.joo.promise4j.PromiseException promiseException51 = new org.joo.promise4j.PromiseException(throwable50);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred52 = deferredStatusAsyncDeferredObject49.reject((java.lang.Exception) promiseException51);
-        org.joo.promise4j.PromiseException promiseException53 = new org.joo.promise4j.PromiseException((java.lang.Throwable) promiseException51);
-        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred54 = deferredStatusListSyncDeferredObject36.reject(promiseException51);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred55 = deferredStatusSimpleDeferredObject35.reject((java.lang.Throwable) promiseException51);
-        promiseException30.addSuppressed((java.lang.Throwable) promiseException51);
-        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred57 = deferredStatusSimpleDeferredObject6.reject((java.lang.Throwable) promiseException30);
-        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred58 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) promiseException30);
-        org.junit.Assert.assertNotNull(serializablePromise1);
-        org.junit.Assert.assertNotNull(serializablePromise2);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClassPromise11);
-        org.junit.Assert.assertNotNull(throwableArray12);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred13);
-        org.junit.Assert.assertTrue("'" + deferredStatus14 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus14.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
-        org.junit.Assert.assertNotNull(deferredStatusArray15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred19);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred23);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred25);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred26);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred31);
-        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
-        org.junit.Assert.assertNotNull(wildcardClassPromise40);
-        org.junit.Assert.assertNotNull(throwableArray41);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred42);
-        org.junit.Assert.assertTrue("'" + deferredStatus43 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus43.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
-        org.junit.Assert.assertNotNull(deferredStatusArray44);
-        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred48);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred52);
-        org.junit.Assert.assertNotNull(deferredStatusListDeferred54);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred55);
-        org.junit.Assert.assertNotNull(deferredStatusDeferred57);
-        org.junit.Assert.assertNotNull(serializableDeferred58);
-    }
-
-    @Test
-    public void test191() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test191");
+            System.out.format("%n%s%n", "TestGroup100Case0.test186");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -4281,9 +4080,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test192() throws Throwable {
+    public void test187() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+            System.out.format("%n%s%n", "TestGroup100Case0.test187");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         org.joo.promise4j.DoneCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>> deferredStatusListDoneCallback2 = null;
@@ -4325,9 +4124,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test193() throws Throwable {
+    public void test188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+            System.out.format("%n%s%n", "TestGroup100Case0.test188");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -4343,9 +4142,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test194() throws Throwable {
+    public void test189() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+            System.out.format("%n%s%n", "TestGroup100Case0.test189");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -4366,16 +4165,16 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test195() throws Throwable {
+    public void test190() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test195");
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
         org.joo.promise4j.impl.AsyncDeferredObject<java.lang.Comparable<java.lang.String>, java.lang.Exception> strComparableAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<java.lang.Comparable<java.lang.String>, java.lang.Exception>();
     }
 
     @Test
-    public void test196() throws Throwable {
+    public void test191() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test196");
+            System.out.format("%n%s%n", "TestGroup100Case0.test191");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -4397,9 +4196,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test197() throws Throwable {
+    public void test192() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test197");
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -4415,9 +4214,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test198() throws Throwable {
+    public void test193() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test198");
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.DeferredStatus deferredStatus1 = org.joo.promise4j.DeferredStatus.REJECTED;
         org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred2 = deferredStatusAsyncDeferredObject0.resolve(deferredStatus1);
@@ -4430,9 +4229,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test199() throws Throwable {
+    public void test194() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test199");
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4458,9 +4257,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test200() throws Throwable {
+    public void test195() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test200");
+            System.out.format("%n%s%n", "TestGroup100Case0.test195");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4484,9 +4283,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test201() throws Throwable {
+    public void test196() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test201");
+            System.out.format("%n%s%n", "TestGroup100Case0.test196");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4508,9 +4307,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test202() throws Throwable {
+    public void test197() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test202");
+            System.out.format("%n%s%n", "TestGroup100Case0.test197");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         java.util.concurrent.TimeUnit timeUnit3 = null;
@@ -4526,9 +4325,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test203() throws Throwable {
+    public void test198() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+            System.out.format("%n%s%n", "TestGroup100Case0.test198");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4555,9 +4354,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test204() throws Throwable {
+    public void test199() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test204");
+            System.out.format("%n%s%n", "TestGroup100Case0.test199");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -4574,9 +4373,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test205() throws Throwable {
+    public void test200() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test205");
+            System.out.format("%n%s%n", "TestGroup100Case0.test200");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -4598,9 +4397,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test206() throws Throwable {
+    public void test201() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+            System.out.format("%n%s%n", "TestGroup100Case0.test201");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4617,9 +4416,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test207() throws Throwable {
+    public void test202() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test207");
+            System.out.format("%n%s%n", "TestGroup100Case0.test202");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4646,9 +4445,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test208() throws Throwable {
+    public void test203() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test208");
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -4665,9 +4464,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test209() throws Throwable {
+    public void test204() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test209");
+            System.out.format("%n%s%n", "TestGroup100Case0.test204");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -4684,9 +4483,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test210() throws Throwable {
+    public void test205() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test210");
+            System.out.format("%n%s%n", "TestGroup100Case0.test205");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         org.joo.promise4j.DeferredStatus deferredStatus2 = deferredStatusListSyncDeferredObject0.getStatus();
@@ -4697,9 +4496,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test211() throws Throwable {
+    public void test206() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4716,9 +4515,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test212() throws Throwable {
+    public void test207() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test212");
+            System.out.format("%n%s%n", "TestGroup100Case0.test207");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -4810,9 +4609,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test213() throws Throwable {
+    public void test208() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test213");
+            System.out.format("%n%s%n", "TestGroup100Case0.test208");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -4860,9 +4659,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test214() throws Throwable {
+    public void test209() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test214");
+            System.out.format("%n%s%n", "TestGroup100Case0.test209");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -4881,9 +4680,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test215() throws Throwable {
+    public void test210() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test215");
+            System.out.format("%n%s%n", "TestGroup100Case0.test210");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -4901,9 +4700,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test216() throws Throwable {
+    public void test211() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test216");
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isRejected();
@@ -4912,9 +4711,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test217() throws Throwable {
+    public void test212() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+            System.out.format("%n%s%n", "TestGroup100Case0.test212");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -4945,9 +4744,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test218() throws Throwable {
+    public void test213() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+            System.out.format("%n%s%n", "TestGroup100Case0.test213");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -4999,9 +4798,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test219() throws Throwable {
+    public void test214() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test219");
+            System.out.format("%n%s%n", "TestGroup100Case0.test214");
         org.joo.promise4j.Promise[] promiseArray1 = new org.joo.promise4j.Promise[0];
         @SuppressWarnings("unchecked")
         org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[] deferredStatusCollectionPromiseArray2 = (org.joo.promise4j.Promise<java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Exception>[]) promiseArray1;
@@ -5017,9 +4816,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test220() throws Throwable {
+    public void test215() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+            System.out.format("%n%s%n", "TestGroup100Case0.test215");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise2 = serializableCompletableDeferredObject0.promise();
@@ -5037,9 +4836,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test221() throws Throwable {
+    public void test216() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+            System.out.format("%n%s%n", "TestGroup100Case0.test216");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.AlwaysCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListAlwaysCallback2 = null;
@@ -5054,9 +4853,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test222() throws Throwable {
+    public void test217() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.Promise[]> promiseArrayDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Exception> exceptionFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.Promise[], java.lang.Exception> promiseArraySimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.Promise[], java.lang.Exception>(promiseArrayDoneCallback0, exceptionFailCallback1);
@@ -5088,9 +4887,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test223() throws Throwable {
+    public void test218() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test223");
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -5112,9 +4911,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test224() throws Throwable {
+    public void test219() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test224");
+            System.out.format("%n%s%n", "TestGroup100Case0.test219");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -5151,9 +4950,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test225() throws Throwable {
+    public void test220() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+            System.out.format("%n%s%n", "TestGroup100Case0.test220");
         java.lang.Runnable runnable0 = null;
         java.util.concurrent.TimeUnit timeUnit2 = null;
         // The following exception was thrown during execution in test generation
@@ -5166,9 +4965,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test226() throws Throwable {
+    public void test221() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -5204,9 +5003,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test227() throws Throwable {
+    public void test222() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1);
@@ -5221,9 +5020,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test228() throws Throwable {
+    public void test223() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test228");
+            System.out.format("%n%s%n", "TestGroup100Case0.test223");
         org.joo.promise4j.DoneCallback<java.lang.Throwable> throwableDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Exception> exceptionFailCallback1 = null;
         org.joo.promise4j.impl.SimpleDeferredObject<java.lang.Throwable, java.lang.Exception> throwableSimpleDeferredObject2 = new org.joo.promise4j.impl.SimpleDeferredObject<java.lang.Throwable, java.lang.Exception>(throwableDoneCallback0, exceptionFailCallback1);
@@ -5239,9 +5038,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test229() throws Throwable {
+    public void test224() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test229");
+            System.out.format("%n%s%n", "TestGroup100Case0.test224");
         org.joo.promise4j.DeferredStatus deferredStatus0 = org.joo.promise4j.DeferredStatus.RESOLVED;
         org.joo.promise4j.DeferredStatus[] deferredStatusArray1 = new org.joo.promise4j.DeferredStatus[] { deferredStatus0 };
         java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList2 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
@@ -5256,9 +5055,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test230() throws Throwable {
+    public void test225() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test230");
+            System.out.format("%n%s%n", "TestGroup100Case0.test225");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -5307,9 +5106,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test231() throws Throwable {
+    public void test226() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test231");
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -5326,9 +5125,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test232() throws Throwable {
+    public void test227() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+            System.out.format("%n%s%n", "TestGroup100Case0.test227");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -5350,17 +5149,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test233() throws Throwable {
+    public void test228() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test233");
+            System.out.format("%n%s%n", "TestGroup100Case0.test228");
         java.util.concurrent.CompletableFuture<org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>> deferredStatusJoinedResultsCompletableFuture0 = null;
         org.joo.promise4j.impl.CompletableDeferredObject<org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusJoinedResultsCompletableDeferredObject1 = new org.joo.promise4j.impl.CompletableDeferredObject<org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>(deferredStatusJoinedResultsCompletableFuture0);
     }
 
     @Test
-    public void test234() throws Throwable {
+    public void test229() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test234");
+            System.out.format("%n%s%n", "TestGroup100Case0.test229");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -5377,9 +5176,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test235() throws Throwable {
+    public void test230() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test235");
+            System.out.format("%n%s%n", "TestGroup100Case0.test230");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -5398,9 +5197,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test236() throws Throwable {
+    public void test231() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+            System.out.format("%n%s%n", "TestGroup100Case0.test231");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -5420,9 +5219,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test237() throws Throwable {
+    public void test232() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test237");
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
         java.lang.Throwable throwable0 = null;
         org.joo.promise4j.PromiseException promiseException1 = new org.joo.promise4j.PromiseException(throwable0);
         org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise2 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException1);
@@ -5445,9 +5244,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test238() throws Throwable {
+    public void test233() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test238");
+            System.out.format("%n%s%n", "TestGroup100Case0.test233");
         org.joo.promise4j.Promise<java.lang.Throwable[], java.lang.Throwable> throwableArrayPromise0 = null;
         org.joo.promise4j.PipeAlwaysCallback<java.lang.Throwable[], java.lang.Cloneable, java.lang.Throwable, java.lang.Throwable> throwableArrayPipeAlwaysCallback1 = null;
         // The following exception was thrown during execution in test generation
@@ -5460,9 +5259,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test239() throws Throwable {
+    public void test234() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+            System.out.format("%n%s%n", "TestGroup100Case0.test234");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject2 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
@@ -5508,9 +5307,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test240() throws Throwable {
+    public void test235() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test240");
+            System.out.format("%n%s%n", "TestGroup100Case0.test235");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
@@ -5538,9 +5337,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test241() throws Throwable {
+    public void test236() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test241");
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -5601,9 +5400,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test242() throws Throwable {
+    public void test237() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test242");
+            System.out.format("%n%s%n", "TestGroup100Case0.test237");
         java.util.function.Supplier[] supplierArray1 = new java.util.function.Supplier[0];
         @SuppressWarnings("unchecked")
         java.util.function.Supplier<org.joo.promise4j.Promise<?, ?>>[] wildcardPromiseSupplierArray2 = (java.util.function.Supplier<org.joo.promise4j.Promise<?, ?>>[]) supplierArray1;
@@ -5618,9 +5417,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test243() throws Throwable {
+    public void test238() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+            System.out.format("%n%s%n", "TestGroup100Case0.test238");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject2 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
@@ -5652,9 +5451,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test244() throws Throwable {
+    public void test239() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test244");
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -5690,9 +5489,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test245() throws Throwable {
+    public void test240() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test245");
+            System.out.format("%n%s%n", "TestGroup100Case0.test240");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         java.lang.Throwable throwable2 = null;
@@ -5742,9 +5541,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test246() throws Throwable {
+    public void test241() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test246");
+            System.out.format("%n%s%n", "TestGroup100Case0.test241");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -5771,9 +5570,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test247() throws Throwable {
+    public void test242() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test247");
+            System.out.format("%n%s%n", "TestGroup100Case0.test242");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -5818,9 +5617,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test248() throws Throwable {
+    public void test243() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test248");
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -5840,9 +5639,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test249() throws Throwable {
+    public void test244() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test249");
+            System.out.format("%n%s%n", "TestGroup100Case0.test244");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -5857,9 +5656,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test250() throws Throwable {
+    public void test245() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+            System.out.format("%n%s%n", "TestGroup100Case0.test245");
         org.joo.promise4j.Promise<java.lang.Throwable[], java.lang.Exception> throwableArrayPromise0 = null;
         org.joo.promise4j.PipeDoneCallback<java.lang.Throwable[], java.lang.Throwable[], java.lang.Exception> throwableArrayPipeDoneCallback1 = null;
         java.util.function.Predicate<java.lang.Throwable[]> throwableArrayPredicate2 = null;
@@ -5873,9 +5672,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test251() throws Throwable {
+    public void test246() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test251");
+            System.out.format("%n%s%n", "TestGroup100Case0.test246");
         org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
         org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
         org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
@@ -5915,9 +5714,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test252() throws Throwable {
+    public void test247() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test252");
+            System.out.format("%n%s%n", "TestGroup100Case0.test247");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         java.lang.Throwable throwable2 = null;
@@ -5936,9 +5735,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test253() throws Throwable {
+    public void test248() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test253");
+            System.out.format("%n%s%n", "TestGroup100Case0.test248");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
         java.lang.Throwable throwable2 = null;
@@ -5961,9 +5760,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test254() throws Throwable {
+    public void test249() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test254");
+            System.out.format("%n%s%n", "TestGroup100Case0.test249");
         org.joo.promise4j.Promise<java.lang.Enum<org.joo.promise4j.DeferredStatus>, java.lang.Exception> deferredStatusEnumPromise0 = null;
         org.joo.promise4j.PipeAlwaysCallback<java.lang.Enum<org.joo.promise4j.DeferredStatus>, java.util.RandomAccess, java.lang.Exception, java.lang.Exception> deferredStatusEnumPipeAlwaysCallback1 = null;
         // The following exception was thrown during execution in test generation
@@ -5976,9 +5775,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test255() throws Throwable {
+    public void test250() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test255");
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject2 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
@@ -6025,9 +5824,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test256() throws Throwable {
+    public void test251() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test256");
+            System.out.format("%n%s%n", "TestGroup100Case0.test251");
         org.joo.promise4j.Promise<java.lang.String, java.lang.Throwable> strPromise0 = null;
         org.joo.promise4j.PipeAlwaysCallback<java.lang.String, java.util.AbstractCollection<org.joo.promise4j.DeferredStatus>, java.lang.Throwable, java.lang.Throwable> strPipeAlwaysCallback1 = null;
         // The following exception was thrown during execution in test generation
@@ -6040,9 +5839,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test257() throws Throwable {
+    public void test252() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+            System.out.format("%n%s%n", "TestGroup100Case0.test252");
         org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
         boolean boolean1 = deferredStatusListSyncDeferredObject0.isPending();
         boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
@@ -6062,9 +5861,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test258() throws Throwable {
+    public void test253() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test258");
+            System.out.format("%n%s%n", "TestGroup100Case0.test253");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
         org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
@@ -6097,9 +5896,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test259() throws Throwable {
+    public void test254() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+            System.out.format("%n%s%n", "TestGroup100Case0.test254");
         org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
         org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
         org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
@@ -6149,9 +5948,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test260() throws Throwable {
+    public void test255() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test260");
+            System.out.format("%n%s%n", "TestGroup100Case0.test255");
         org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
         java.lang.Throwable throwable1 = null;
         org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
@@ -6171,6 +5970,310 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(deferredStatusDeferred9);
         org.junit.Assert.assertNotNull(deferredStatusPromise11);
         org.junit.Assert.assertTrue("'" + deferredStatus12 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus12.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+    }
+
+    @Test
+    public void test256() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test256");
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
+        org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback2 = null;
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise3 = serializableCompletableDeferredObject0.done(serializableDoneCallback2);
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject4 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise5 = serializablePromise3.forward((org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable>) serializableCompletableDeferredObject4);
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject6 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        java.lang.Throwable throwable7 = null;
+        org.joo.promise4j.PromiseException promiseException8 = new org.joo.promise4j.PromiseException(throwable7);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred9 = deferredStatusAsyncDeferredObject6.reject((java.lang.Exception) promiseException8);
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject10 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        java.lang.Throwable throwable11 = null;
+        org.joo.promise4j.PromiseException promiseException12 = new org.joo.promise4j.PromiseException(throwable11);
+        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise13 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException12);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred14 = deferredStatusAsyncDeferredObject10.reject((java.lang.Exception) promiseException12);
+        promiseException8.addSuppressed((java.lang.Throwable) promiseException12);
+        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred16 = serializableCompletableDeferredObject4.resolve((java.io.Serializable) promiseException12);
+        java.io.Serializable serializable17 = serializableCompletableDeferredObject4.get();
+        org.junit.Assert.assertNotNull(serializablePromise1);
+        org.junit.Assert.assertNotNull(serializablePromise3);
+        org.junit.Assert.assertNotNull(serializablePromise5);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred9);
+        org.junit.Assert.assertNotNull(wildcardClassPromise13);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred14);
+        org.junit.Assert.assertNotNull(serializableDeferred16);
+        org.junit.Assert.assertNotNull(serializable17);
+    }
+
+    @Test
+    public void test257() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject0 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise1 = deferredStatusAsyncDeferredObject0.promise();
+        org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise2 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject0);
+        org.joo.promise4j.FailCallback<java.lang.Exception> exceptionFailCallback3 = null;
+        org.joo.promise4j.Promise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectPromise4 = deferredStatusAsyncDeferredObjectSimpleDonePromise2.fail(exceptionFailCallback3);
+        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectAlwaysCallback5 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.joo.promise4j.Promise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectPromise6 = deferredStatusAsyncDeferredObjectSimpleDonePromise2.always(deferredStatusAsyncDeferredObjectAlwaysCallback5);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(deferredStatusPromise1);
+        org.junit.Assert.assertNotNull(deferredStatusAsyncDeferredObjectPromise4);
+    }
+
+    @Test
+    public void test258() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test258");
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback0 = null;
+        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback1 = null;
+        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback2 = null;
+        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject3 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback0, throwableFailCallback1, deferredStatusAlwaysCallback2);
+        org.joo.promise4j.DeferredStatus deferredStatus4 = org.joo.promise4j.DeferredStatus.REJECTED;
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred5 = deferredStatusSimpleDeferredObject3.resolve(deferredStatus4);
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise6 = deferredStatusSimpleDeferredObject3.promise();
+        java.util.concurrent.TimeUnit timeUnit8 = null;
+        java.util.function.Supplier<java.lang.Throwable> throwableSupplier9 = null;
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise10 = deferredStatusSimpleDeferredObject3.timeoutAfter(0L, timeUnit8, throwableSupplier9);
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback11 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise12 = deferredStatusSimpleDeferredObject3.done(deferredStatusDoneCallback11);
+            org.junit.Assert.fail("Expected exception of type java.lang.UnsupportedOperationException; message: Callback cannot be deferred in non-deferred mode");
+        } catch (java.lang.UnsupportedOperationException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertTrue("'" + deferredStatus4 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus4.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertNotNull(deferredStatusDeferred5);
+        org.junit.Assert.assertNotNull(deferredStatusPromise6);
+        org.junit.Assert.assertNotNull(deferredStatusPromise10);
+    }
+
+    @Test
+    public void test259() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
+        java.lang.Throwable throwable1 = null;
+        org.joo.promise4j.PromiseException promiseException2 = new org.joo.promise4j.PromiseException(throwable1);
+        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise3 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException2);
+        org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException> deferredStatusAsyncDeferredObjectSimpleFailurePromise4 = new org.joo.promise4j.impl.SimpleFailurePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException>(promiseException2);
+        org.joo.promise4j.DeferredStatus deferredStatus5 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>> deferredStatusAsyncDeferredObjectDoneCallback6 = null;
+        org.joo.promise4j.Promise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, org.joo.promise4j.PromiseException> deferredStatusAsyncDeferredObjectPromise7 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.done(deferredStatusAsyncDeferredObjectDoneCallback6);
+        org.joo.promise4j.DeferredStatus deferredStatus8 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
+        org.joo.promise4j.DeferredStatus deferredStatus9 = deferredStatusAsyncDeferredObjectSimpleFailurePromise4.getStatus();
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject10 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusPromise11 = deferredStatusAsyncDeferredObject10.promise();
+        org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception> deferredStatusAsyncDeferredObjectSimpleDonePromise12 = new org.joo.promise4j.impl.SimpleDonePromise<org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>, java.lang.Exception>(deferredStatusAsyncDeferredObject10);
+        org.joo.promise4j.DeferredStatus deferredStatus13 = deferredStatusAsyncDeferredObjectSimpleDonePromise12.getStatus();
+        org.joo.promise4j.DeferredStatus deferredStatus14 = org.joo.promise4j.DeferredStatus.REJECTED;
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback15 = null;
+        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback16 = null;
+        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback17 = null;
+        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject18 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback15, throwableFailCallback16, deferredStatusAlwaysCallback17);
+        org.joo.promise4j.DeferredStatus deferredStatus19 = org.joo.promise4j.DeferredStatus.REJECTED;
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred20 = deferredStatusSimpleDeferredObject18.resolve(deferredStatus19);
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise21 = deferredStatusSimpleDeferredObject18.promise();
+        org.joo.promise4j.DeferredStatus deferredStatus22 = deferredStatusSimpleDeferredObject18.getStatus();
+        java.util.concurrent.TimeUnit timeUnit24 = null;
+        java.util.function.Supplier<java.lang.Throwable> throwableSupplier25 = null;
+        org.joo.promise4j.Promise<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusPromise26 = deferredStatusSimpleDeferredObject18.timeoutAfter((long) (short) 100, timeUnit24, throwableSupplier25);
+        org.joo.promise4j.DeferredStatus deferredStatus27 = deferredStatusSimpleDeferredObject18.getStatus();
+        org.joo.promise4j.DeferredStatus[] deferredStatusArray28 = new org.joo.promise4j.DeferredStatus[] { deferredStatus9, deferredStatus13, deferredStatus14, deferredStatus27 };
+        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList29 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
+        boolean boolean30 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList29, deferredStatusArray28);
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred31 = deferredStatusListSyncDeferredObject0.resolve(deferredStatusList29);
+        org.joo.promise4j.AlwaysCallback<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListAlwaysCallback32 = null;
+        org.joo.promise4j.Promise<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListPromise33 = deferredStatusListSyncDeferredObject0.always(deferredStatusListAlwaysCallback32);
+        org.junit.Assert.assertNotNull(wildcardClassPromise3);
+        org.junit.Assert.assertTrue("'" + deferredStatus5 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus5.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertNotNull(deferredStatusAsyncDeferredObjectPromise7);
+        org.junit.Assert.assertTrue("'" + deferredStatus8 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus8.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertTrue("'" + deferredStatus9 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus9.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertNotNull(deferredStatusPromise11);
+        org.junit.Assert.assertTrue("'" + deferredStatus13 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus13.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
+        org.junit.Assert.assertTrue("'" + deferredStatus14 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus14.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertTrue("'" + deferredStatus19 + "' != '" + org.joo.promise4j.DeferredStatus.REJECTED + "'", deferredStatus19.equals(org.joo.promise4j.DeferredStatus.REJECTED));
+        org.junit.Assert.assertNotNull(deferredStatusDeferred20);
+        org.junit.Assert.assertNotNull(deferredStatusPromise21);
+        org.junit.Assert.assertTrue("'" + deferredStatus22 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus22.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
+        org.junit.Assert.assertNotNull(deferredStatusPromise26);
+        org.junit.Assert.assertTrue("'" + deferredStatus27 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus27.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
+        org.junit.Assert.assertNotNull(deferredStatusArray28);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred31);
+        org.junit.Assert.assertNotNull(deferredStatusListPromise33);
+    }
+
+    @Test
+    public void test260() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test260");
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
+        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
+        java.io.Serializable serializable4 = serializableCompletableDeferredObject0.get();
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject5 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise6 = serializableCompletableDeferredObject5.promise();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise7 = serializableCompletableDeferredObject0.forward((org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable>) serializableCompletableDeferredObject5);
+        java.util.concurrent.TimeUnit timeUnit9 = null;
+        java.util.function.Supplier<java.lang.Throwable> throwableSupplier10 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred11 = serializableCompletableDeferredObject0.withTimeout((long) 10, timeUnit9, throwableSupplier10);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(serializablePromise1);
+        org.junit.Assert.assertNotNull(serializableDeferred3);
+        org.junit.Assert.assertEquals("'" + serializable4 + "' != '" + 10L + "'", serializable4, 10L);
+        org.junit.Assert.assertNotNull(serializablePromise6);
+        org.junit.Assert.assertNotNull(serializablePromise7);
+    }
+
+    @Test
+    public void test261() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
+        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred3 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) 10L);
+        java.io.Serializable serializable4 = serializableCompletableDeferredObject0.get();
+        org.joo.promise4j.AlwaysCallback<java.io.Serializable, java.lang.Throwable> serializableAlwaysCallback5 = null;
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise6 = serializableCompletableDeferredObject0.always(serializableAlwaysCallback5);
+        org.joo.promise4j.DoneCallback<java.io.Serializable> serializableDoneCallback7 = null;
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise8 = serializablePromise6.done(serializableDoneCallback7);
+        java.io.Serializable serializable9 = serializablePromise6.get();
+        java.util.concurrent.TimeUnit timeUnit11 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            java.io.Serializable serializable12 = serializablePromise6.get((long) 'a', timeUnit11);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(serializablePromise1);
+        org.junit.Assert.assertNotNull(serializableDeferred3);
+        org.junit.Assert.assertEquals("'" + serializable4 + "' != '" + 10L + "'", serializable4, 10L);
+        org.junit.Assert.assertNotNull(serializablePromise6);
+        org.junit.Assert.assertNotNull(serializablePromise8);
+        org.junit.Assert.assertEquals("'" + serializable9 + "' != '" + 10L + "'", serializable9, 10L);
+    }
+
+    @Test
+    public void test262() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test262");
+        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject0 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
+        boolean boolean1 = deferredStatusListSyncDeferredObject0.isRejected();
+        boolean boolean2 = deferredStatusListSyncDeferredObject0.isPending();
+        org.joo.promise4j.DeferredStatus deferredStatus3 = deferredStatusListSyncDeferredObject0.getStatus();
+        boolean boolean4 = deferredStatusListSyncDeferredObject0.isRejected();
+        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        org.junit.Assert.assertNull(deferredStatus3);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+    }
+
+    @Test
+    public void test263() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test263");
+        org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable> serializableCompletableDeferredObject0 = new org.joo.promise4j.impl.CompletableDeferredObject<java.io.Serializable, java.lang.Throwable>();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise1 = serializableCompletableDeferredObject0.promise();
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise2 = serializableCompletableDeferredObject0.promise();
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback3 = null;
+        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback4 = null;
+        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback5 = null;
+        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject6 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback3, throwableFailCallback4, deferredStatusAlwaysCallback5);
+        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject7 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
+        boolean boolean8 = deferredStatusListSyncDeferredObject7.isRejected();
+        java.lang.Throwable throwable9 = null;
+        org.joo.promise4j.PromiseException promiseException10 = new org.joo.promise4j.PromiseException(throwable9);
+        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise11 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException10);
+        java.lang.Throwable[] throwableArray12 = promiseException10.getSuppressed();
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred13 = deferredStatusListSyncDeferredObject7.reject(promiseException10);
+        org.joo.promise4j.DeferredStatus deferredStatus14 = org.joo.promise4j.DeferredStatus.RESOLVED;
+        org.joo.promise4j.DeferredStatus[] deferredStatusArray15 = new org.joo.promise4j.DeferredStatus[] { deferredStatus14 };
+        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList16 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
+        boolean boolean17 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList16, deferredStatusArray15);
+        org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus> deferredStatusJoinedResults18 = new org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>((java.util.List<org.joo.promise4j.DeferredStatus>) deferredStatusList16);
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred19 = deferredStatusListSyncDeferredObject7.resolve(deferredStatusList16);
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject20 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        java.lang.Throwable throwable21 = null;
+        org.joo.promise4j.PromiseException promiseException22 = new org.joo.promise4j.PromiseException(throwable21);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred23 = deferredStatusAsyncDeferredObject20.reject((java.lang.Exception) promiseException22);
+        org.joo.promise4j.PromiseException promiseException24 = new org.joo.promise4j.PromiseException((java.lang.Throwable) promiseException22);
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred25 = deferredStatusListSyncDeferredObject7.reject(promiseException22);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred26 = deferredStatusSimpleDeferredObject6.reject((java.lang.Throwable) promiseException22);
+        boolean boolean27 = deferredStatusSimpleDeferredObject6.isPending();
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject28 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        java.lang.Throwable throwable29 = null;
+        org.joo.promise4j.PromiseException promiseException30 = new org.joo.promise4j.PromiseException(throwable29);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred31 = deferredStatusAsyncDeferredObject28.reject((java.lang.Exception) promiseException30);
+        org.joo.promise4j.DoneCallback<org.joo.promise4j.DeferredStatus> deferredStatusDoneCallback32 = null;
+        org.joo.promise4j.FailCallback<java.lang.Throwable> throwableFailCallback33 = null;
+        org.joo.promise4j.AlwaysCallback<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusAlwaysCallback34 = null;
+        org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusSimpleDeferredObject35 = new org.joo.promise4j.impl.SimpleDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Throwable>(deferredStatusDoneCallback32, throwableFailCallback33, deferredStatusAlwaysCallback34);
+        org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListSyncDeferredObject36 = new org.joo.promise4j.impl.SyncDeferredObject<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException>();
+        boolean boolean37 = deferredStatusListSyncDeferredObject36.isRejected();
+        java.lang.Throwable throwable38 = null;
+        org.joo.promise4j.PromiseException promiseException39 = new org.joo.promise4j.PromiseException(throwable38);
+        org.joo.promise4j.Promise<java.lang.Class<?>, java.lang.Exception> wildcardClassPromise40 = org.joo.promise4j.Promise.ofCause((java.lang.Exception) promiseException39);
+        java.lang.Throwable[] throwableArray41 = promiseException39.getSuppressed();
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred42 = deferredStatusListSyncDeferredObject36.reject(promiseException39);
+        org.joo.promise4j.DeferredStatus deferredStatus43 = org.joo.promise4j.DeferredStatus.RESOLVED;
+        org.joo.promise4j.DeferredStatus[] deferredStatusArray44 = new org.joo.promise4j.DeferredStatus[] { deferredStatus43 };
+        java.util.ArrayList<org.joo.promise4j.DeferredStatus> deferredStatusList45 = new java.util.ArrayList<org.joo.promise4j.DeferredStatus>();
+        boolean boolean46 = java.util.Collections.addAll((java.util.Collection<org.joo.promise4j.DeferredStatus>) deferredStatusList45, deferredStatusArray44);
+        org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus> deferredStatusJoinedResults47 = new org.joo.promise4j.impl.JoinedResults<org.joo.promise4j.DeferredStatus>((java.util.List<org.joo.promise4j.DeferredStatus>) deferredStatusList45);
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred48 = deferredStatusListSyncDeferredObject36.resolve(deferredStatusList45);
+        org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusAsyncDeferredObject49 = new org.joo.promise4j.impl.AsyncDeferredObject<org.joo.promise4j.DeferredStatus, java.lang.Exception>();
+        java.lang.Throwable throwable50 = null;
+        org.joo.promise4j.PromiseException promiseException51 = new org.joo.promise4j.PromiseException(throwable50);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Exception> deferredStatusDeferred52 = deferredStatusAsyncDeferredObject49.reject((java.lang.Exception) promiseException51);
+        org.joo.promise4j.PromiseException promiseException53 = new org.joo.promise4j.PromiseException((java.lang.Throwable) promiseException51);
+        org.joo.promise4j.Deferred<java.util.ArrayList<org.joo.promise4j.DeferredStatus>, org.joo.promise4j.PromiseException> deferredStatusListDeferred54 = deferredStatusListSyncDeferredObject36.reject(promiseException51);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred55 = deferredStatusSimpleDeferredObject35.reject((java.lang.Throwable) promiseException51);
+        promiseException30.addSuppressed((java.lang.Throwable) promiseException51);
+        org.joo.promise4j.Deferred<org.joo.promise4j.DeferredStatus, java.lang.Throwable> deferredStatusDeferred57 = deferredStatusSimpleDeferredObject6.reject((java.lang.Throwable) promiseException30);
+        org.joo.promise4j.Deferred<java.io.Serializable, java.lang.Throwable> serializableDeferred58 = serializableCompletableDeferredObject0.resolve((java.io.Serializable) promiseException30);
+        org.joo.promise4j.Promise<java.io.Serializable, java.lang.Throwable> serializablePromise59 = serializableCompletableDeferredObject0.promise();
+        org.junit.Assert.assertNotNull(serializablePromise1);
+        org.junit.Assert.assertNotNull(serializablePromise2);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(wildcardClassPromise11);
+        org.junit.Assert.assertNotNull(throwableArray12);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred13);
+        org.junit.Assert.assertTrue("'" + deferredStatus14 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus14.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
+        org.junit.Assert.assertNotNull(deferredStatusArray15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred19);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred23);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred25);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred26);
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred31);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(wildcardClassPromise40);
+        org.junit.Assert.assertNotNull(throwableArray41);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred42);
+        org.junit.Assert.assertTrue("'" + deferredStatus43 + "' != '" + org.joo.promise4j.DeferredStatus.RESOLVED + "'", deferredStatus43.equals(org.joo.promise4j.DeferredStatus.RESOLVED));
+        org.junit.Assert.assertNotNull(deferredStatusArray44);
+        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred48);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred52);
+        org.junit.Assert.assertNotNull(deferredStatusListDeferred54);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred55);
+        org.junit.Assert.assertNotNull(deferredStatusDeferred57);
+        org.junit.Assert.assertNotNull(serializableDeferred58);
+        org.junit.Assert.assertNotNull(serializablePromise59);
     }
 }
 

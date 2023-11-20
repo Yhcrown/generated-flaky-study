@@ -1,4 +1,4 @@
-[TIME]: 0:00:21.930316
+[TIME]: 0:00:21.387758
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.mxw.crypto.SecureRandomUtils specified via --testclass or --classlist.
 log4j:WARN No appenders could be found for logger (com.mxw.crypto.LinuxSecureRandom).
@@ -12,14 +12,14 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:40:00.457Z     16.6M used)
-Progress update: steps=937, test inputs generated=500, failing inputs=0      (2023-10-31T23:40:10.934Z     908M used)
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:48:57.401Z     16.6M used)
+Progress update: steps=937, test inputs generated=500, failing inputs=0      (2023-11-20T08:49:07.585Z     639M used)
 Normal method executions: 34016
 Exceptional method executions: 134
 
-Average method execution time (normal termination):      0.161
-Average method execution time (exceptional termination): 3.12
-Approximate memory usage 910M
+Average method execution time (normal termination):      0.162
+Average method execution time (exceptional termination): 2.76
+Approximate memory usage 639M
 Explorer = ForwardGenerator(steps: 937, null steps: 437, num_sequences_generated: 500;
     allSequences: 500, regresson seqs: 500, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 91)

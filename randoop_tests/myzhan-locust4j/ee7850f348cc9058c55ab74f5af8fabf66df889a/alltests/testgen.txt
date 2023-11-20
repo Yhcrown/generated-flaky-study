@@ -1,4 +1,4 @@
-[TIME]: 0:01:09.613379
+[TIME]: 0:01:07.131513
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -10,17 +10,17 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:35:23.680Z     60.4M used)
-Progress update: steps=501, test inputs generated=388, failing inputs=13      (2023-10-31T23:36:23.690Z     117M used)
-Progress update: steps=501, test inputs generated=389, failing inputs=13      (2023-10-31T23:36:28.671Z     118M used)
-Normal method executions: 25540
-Exceptional method executions: 38
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:44:20.284Z     60.4M used)
+Progress update: steps=491, test inputs generated=379, failing inputs=13      (2023-11-20T08:45:20.294Z     30.3M used)
+Progress update: steps=491, test inputs generated=380, failing inputs=13      (2023-11-20T08:45:23.141Z     49.9M used)
+Normal method executions: 25403
+Exceptional method executions: 37
 
-Average method execution time (normal termination):      0.0513
-Average method execution time (exceptional termination): 0.704
-Approximate memory usage 118M
-Explorer = ForwardGenerator(steps: 501, null steps: 112, num_sequences_generated: 389;
-    allSequences: 389, regresson seqs: 363, error seqs: 13=13=13, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 13;
+Average method execution time (normal termination):      0.173
+Average method execution time (exceptional termination): 0.391
+Approximate memory usage 49.9M
+Explorer = ForwardGenerator(steps: 491, null steps: 111, num_sequences_generated: 380;
+    allSequences: 380, regresson seqs: 355, error seqs: 13=13=13, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 12;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 57)
 
 Error-revealing test output:
@@ -30,10 +30,10 @@ Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests
 Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/myzhan-locust4j/ee7850f348cc9058c55ab74f5af8fabf66df889a/alltests/ErrorTest.java
 Wrote error-revealing JUnit tests.
 
-About to look for failing assertions in 193 regression sequences.
+About to look for failing assertions in 188 regression sequences.
 
 Regression test output:
-Regression test count: 193
+Regression test count: 188
 Writing regression JUnit tests...
 Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/myzhan-locust4j/ee7850f348cc9058c55ab74f5af8fabf66df889a/alltests/TestGroup100Case0.java
 Created file /Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/myzhan-locust4j/ee7850f348cc9058c55ab74f5af8fabf66df889a/alltests/TestGroup100Case.java
@@ -50,10 +50,10 @@ are the most likely to be the problem.
   Possibly flaky:  com.github.myzhan.locust4j.stats.StatsEntry.getTotalResponseTime()
   Possibly flaky:  com.github.myzhan.locust4j.stats.StatsEntry.getNumFailures()
   Possibly flaky:  com.github.myzhan.locust4j.runtime.Runner.getNodeID()
-  Possibly flaky:  com.github.myzhan.locust4j.Locust.run(com.github.myzhan.locust4j.AbstractTask[])
   Possibly flaky:  com.github.myzhan.locust4j.AbstractTask.run()
   Possibly flaky:  com.github.myzhan.locust4j.taskset.AbstractTaskSet.addTask(com.github.myzhan.locust4j.AbstractTask)
   Possibly flaky:  com.github.myzhan.locust4j.stats.StatsEntry.setTotalResponseTime(long)
+  Possibly flaky:  com.github.myzhan.locust4j.runtime.Runner.getRemoteParams()
 To prevent the generation of flaky tests, see section 'Randoop generated flaky tests'
  at https://randoop.github.io/randoop/manual/#flaky-tests .
 

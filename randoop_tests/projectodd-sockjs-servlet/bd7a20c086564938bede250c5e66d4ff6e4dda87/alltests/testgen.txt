@@ -1,4 +1,4 @@
-[TIME]: 0:00:19.666106
+[TIME]: 0:00:15.267849
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 37 classes.
@@ -7,7 +7,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:23:56.187Z     25.0M used)Oct 31, 2023 6:23:58 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T08:33:25.290Z     24.9M used)Nov 20, 2023 2:33:27 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -19,7 +19,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:23:58 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:27 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -31,7 +31,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:23:59 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:27 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -43,7 +43,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:00 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:28 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -55,7 +55,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:00 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:28 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -67,7 +67,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:01 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:29 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -79,7 +79,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:01 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:29 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -91,7 +91,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:01 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:29 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -103,7 +103,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:02 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:29 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -114,7 +114,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:30 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -125,7 +125,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:30 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -136,7 +136,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:30 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -151,7 +151,7 @@ Caused by: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:30 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -166,7 +166,7 @@ Caused by: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:30 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -177,7 +177,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -188,7 +188,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -199,7 +199,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -211,7 +211,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -222,7 +222,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -233,7 +233,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -244,7 +244,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:03 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -255,7 +255,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:04 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -266,7 +266,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:04 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:31 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -277,7 +277,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -288,7 +288,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -299,7 +299,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -310,7 +310,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -322,7 +322,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -334,7 +334,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:05 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:32 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -345,7 +345,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -356,7 +356,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -368,7 +368,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -380,7 +380,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -391,7 +391,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -402,7 +402,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:06 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -417,7 +417,7 @@ Caused by: org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 	... 6 more
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -428,7 +428,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -439,7 +439,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -450,7 +450,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:33 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -461,7 +461,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:34 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -472,7 +472,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:34 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -484,7 +484,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:34 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -496,7 +496,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:34 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -507,7 +507,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:07 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:34 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -518,7 +518,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:08 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -529,7 +529,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:08 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -540,7 +540,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:08 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -551,7 +551,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:08 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
@@ -562,7 +562,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:08 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
@@ -573,7 +573,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -584,7 +584,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -595,7 +595,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -606,7 +606,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -617,7 +617,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:35 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -628,7 +628,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:36 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.DispatchException
 	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
@@ -639,7 +639,7 @@ org.projectodd.sockjs.DispatchException
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:36 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -650,7 +650,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:36 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -661,7 +661,7 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.executeReflectionCode(RunnerThread.java:49)
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
-Oct 31, 2023 6:24:09 PM org.projectodd.sockjs.servlet.SockJsServletRequest onError
+Nov 20, 2023 2:33:36 AM org.projectodd.sockjs.servlet.SockJsServletRequest onError
 WARNING: Error in SockJS request ReadListener
 org.projectodd.sockjs.SockJsException: hi!
 	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
@@ -673,13 +673,13 @@ org.projectodd.sockjs.SockJsException: hi!
 	at randoop.util.RunnerThread.run(RunnerThread.java:43)
 
 
-Progress update: steps=802, test inputs generated=504, failing inputs=1      (2023-10-31T23:24:10.066Z     483M used)
+Progress update: steps=802, test inputs generated=504, failing inputs=1      (2023-11-20T08:33:36.390Z     352M used)
 Normal method executions: 192587
 Exceptional method executions: 133
 
-Average method execution time (normal termination):      0.0388
-Average method execution time (exceptional termination): 0.385
-Approximate memory usage 483M
+Average method execution time (normal termination):      0.0323
+Average method execution time (exceptional termination): 0.381
+Approximate memory usage 352M
 Explorer = ForwardGenerator(steps: 802, null steps: 298, num_sequences_generated: 504;
     allSequences: 504, regresson seqs: 499, error seqs: 1=1=1, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 4;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 118)

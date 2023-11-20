@@ -2478,7 +2478,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
         org.junit.Assert.assertNotNull(httpResponse9);
         org.junit.Assert.assertNotNull(rates10);
-        org.junit.Assert.assertTrue("'" + double12 + "' != '" + 9.741530649E7d + "'", double12 == 9.741530649E7d);
+        org.junit.Assert.assertTrue("'" + double12 + "' != '" + 1.0409649781E8d + "'", double12 == 1.0409649781E8d);
     }
 
     @Test
@@ -2795,7 +2795,7 @@ public class TestGroup100Case0 {
     public void test260() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test260");
-        com.bitpay.sdk_light.model.Invoice.Invoice invoice2 = new com.bitpay.sdk_light.model.Invoice.Invoice((java.lang.Double) (-1.0d), "UYU");
+        com.bitpay.sdk_light.model.Invoice.Invoice invoice2 = new com.bitpay.sdk_light.model.Invoice.Invoice((java.lang.Double) 100.0d, "UYU");
         invoice2.setRedirectURL("USN");
     }
 
@@ -2806,7 +2806,7 @@ public class TestGroup100Case0 {
         com.bitpay.sdk_light.model.Invoice.MinerFees minerFees0 = new com.bitpay.sdk_light.model.Invoice.MinerFees();
         com.bitpay.sdk_light.model.Invoice.MinerFeesItem minerFeesItem1 = minerFees0.getBtc();
         java.lang.Double double2 = minerFeesItem1.getSatoshisPerByte();
-        minerFeesItem1.setSatoshisPerByte((java.lang.Double) 100.0d);
+        minerFeesItem1.setSatoshisPerByte((java.lang.Double) 1.0409649781E8d);
         org.junit.Assert.assertNotNull(minerFeesItem1);
         org.junit.Assert.assertNull(double2);
     }
@@ -3157,7 +3157,7 @@ public class TestGroup100Case0 {
         com.bitpay.sdk_light.model.Rate.Rate rate0 = new com.bitpay.sdk_light.model.Rate.Rate();
         rate0.setValue((java.lang.Double) 10.0d);
         java.lang.String str3 = rate0.getName();
-        rate0.setValue((java.lang.Double) 0.0d);
+        rate0.setValue((java.lang.Double) 100.0d);
         org.junit.Assert.assertNull(str3);
     }
 
@@ -3304,7 +3304,7 @@ public class TestGroup100Case0 {
         com.bitpay.sdk_light.model.Rate.Rate rate0 = new com.bitpay.sdk_light.model.Rate.Rate();
         rate0.setValue((java.lang.Double) 10.0d);
         java.lang.String str3 = rate0.getCode();
-        rate0.setValue((java.lang.Double) 9.741530649E7d);
+        rate0.setValue((java.lang.Double) 1.0409649781E8d);
         org.junit.Assert.assertNull(str3);
     }
 

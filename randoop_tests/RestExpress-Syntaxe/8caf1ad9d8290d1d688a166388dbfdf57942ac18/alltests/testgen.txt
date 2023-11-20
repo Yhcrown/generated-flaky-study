@@ -1,4 +1,4 @@
-[TIME]: 0:00:02.487507
+[TIME]: 0:00:01.940503
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 0 classes.

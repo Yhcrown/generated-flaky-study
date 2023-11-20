@@ -6125,7 +6125,7 @@ public class TestGroup100Case0 {
         participationPolicyParetoScoreTransformerRecommendations46.remove(participationPolicyParetoScoreTransformer64);
         com.graphaware.reco.generic.result.PartialScore partialScore79 = new com.graphaware.reco.generic.result.PartialScore((float) '#');
         participationPolicyParetoScoreTransformerRecommendations2.add(participationPolicyParetoScoreTransformer64, "{total:52.0, hi!:52.0}", partialScore79);
-        participationPolicyParetoScoreTransformerRecommendations0.add(participationPolicyParetoScoreTransformer64, "b2b42ca6-62ea-4f3c-8002-3e5c78e8f53d", 0.0f);
+        participationPolicyParetoScoreTransformerRecommendations0.add(participationPolicyParetoScoreTransformer64, "d7c6724b-fe67-404a-a653-46bc90ba61ba", 0.0f);
         org.junit.Assert.assertNotNull(participationPolicyParetoScoreTransformerRecommendationSet1);
         org.junit.Assert.assertNotNull(participationPolicyParetoScoreTransformerRecommendations13);
         org.junit.Assert.assertTrue("'" + int15 + "' != '" + 0 + "'", int15 == 0);
@@ -6472,7 +6472,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 0 + "'", int1 == 0);
         org.junit.Assert.assertNotNull(participationPolicyParetoScoreTransformerRecommendation6);
         org.junit.Assert.assertNotNull(score7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "e5c2912d-b85c-4f94-b2f2-d1e30a3a8bb7" + "'", str8, "e5c2912d-b85c-4f94-b2f2-d1e30a3a8bb7");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "652a09ef-9427-4c51-9bd6-ed50aac8937c" + "'", str8, "652a09ef-9427-4c51-9bd6-ed50aac8937c");
         org.junit.Assert.assertNotNull(participationPolicyParetoScoreTransformer9);
     }
 
@@ -7200,7 +7200,7 @@ public class TestGroup100Case0 {
         com.graphaware.reco.generic.config.SimpleConfig simpleConfig34 = typeFilteringContext32.input();
         java.util.List<com.graphaware.reco.generic.result.Recommendation<com.graphaware.reco.generic.engine.RecommendationEngine<com.graphaware.reco.generic.transform.ParetoScoreTransformer<com.graphaware.reco.generic.policy.ParticipationPolicy>, com.graphaware.reco.generic.stats.Statistics>>> paretoScoreTransformerRecommendationEngineRecommendationList35 = participationPolicyParetoScoreTransformerRecommendationEngineTopLevelDelegatingRecommendationEngine0.recommend((com.graphaware.reco.generic.web.ConfigParser<com.graphaware.reco.generic.config.SimpleConfig>) simpleConfigParser3, (com.graphaware.reco.generic.config.Config) simpleConfig34);
         com.graphaware.reco.generic.result.Recommendation<com.graphaware.reco.generic.web.ConfigParser<com.graphaware.reco.generic.config.SimpleConfig>> simpleConfigConfigParserRecommendation36 = new com.graphaware.reco.generic.result.Recommendation<com.graphaware.reco.generic.web.ConfigParser<com.graphaware.reco.generic.config.SimpleConfig>>((com.graphaware.reco.generic.web.ConfigParser<com.graphaware.reco.generic.config.SimpleConfig>) simpleConfigParser3);
-        com.graphaware.reco.generic.config.SimpleConfig simpleConfig40 = simpleConfigParser3.produceConfig(10, (long) ' ', "e5c2912d-b85c-4f94-b2f2-d1e30a3a8bb7");
+        com.graphaware.reco.generic.config.SimpleConfig simpleConfig40 = simpleConfigParser3.produceConfig(10, (long) ' ', "652a09ef-9427-4c51-9bd6-ed50aac8937c");
         org.junit.Assert.assertNotNull(simpleConfig7);
         org.junit.Assert.assertNotNull(simpleConfig12);
         org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
@@ -7610,7 +7610,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 0 + "'", int12 == 0);
         org.junit.Assert.assertNotNull(participationPolicyParetoScoreTransformerRecommendation17);
         org.junit.Assert.assertNotNull(score18);
-// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "f2f7c714-724c-4121-8f57-851dd10449e4" + "'", str19, "f2f7c714-724c-4121-8f57-851dd10449e4");
+// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "b612b905-7d7e-4a82-a639-1855e7c95c0f" + "'", str19, "b612b905-7d7e-4a82-a639-1855e7c95c0f");
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 1 + "'", int20 == 1);
     }
 

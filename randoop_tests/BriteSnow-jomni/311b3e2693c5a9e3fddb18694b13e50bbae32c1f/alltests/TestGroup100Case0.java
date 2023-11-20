@@ -357,21 +357,6 @@ public class TestGroup100Case0 {
     public void test024() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test024");
-        java.lang.Class class1 = null;
-        java.lang.Class class2 = null;
-        java.lang.reflect.Method method3 = null;
-        java.lang.reflect.Method method4 = null;
-        org.jomni.PropInfo propInfo5 = new org.jomni.PropInfo("", class1, class2, method3, method4);
-        java.lang.String str6 = propInfo5.getName();
-        java.util.Optional<java.lang.Class> classOptional7 = propInfo5.getGenericType();
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
-        org.junit.Assert.assertNotNull(classOptional7);
-    }
-
-    @Test
-    public void test025() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test025");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -392,9 +377,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test026() throws Throwable {
+    public void test025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test026");
+            System.out.format("%n%s%n", "TestGroup100Case0.test025");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         org.jomni.util.Pair<java.io.Serializable, org.jomni.MapperException.Error> serializablePair2 = new org.jomni.util.Pair<java.io.Serializable, org.jomni.MapperException.Error>((java.io.Serializable) '#', error1);
         org.jomni.JomniBuilder[] jomniBuilderArray3 = null;
@@ -452,66 +437,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test027() throws Throwable {
+    public void test026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test027");
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean((java.lang.Character) '#');
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test028() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test028");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap4 = org.jomni.util.Maps.asFlatMap(strMap3);
-        org.jomni.JomniBuilder jomniBuilder5 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder5, jomniBuilder6 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet8 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean9 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet8, jomniBuilderArray7);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair10 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet8);
-        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper12 = jomniBuilder11.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap14 = jomniMapper12.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.asFlatMap(strMap14);
-        org.jomni.JomniBuilder jomniBuilder16 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder17 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray18 = new org.jomni.JomniBuilder[] { jomniBuilder16, jomniBuilder17 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet19 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean20 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet19, jomniBuilderArray18);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair21 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap14, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet19);
-        java.util.LinkedHashSet[] linkedHashSetArray23 = new java.util.LinkedHashSet[2];
-        @SuppressWarnings("unchecked")
-        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray24 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray23;
-        jomniBuilderSetArray24[0] = jomniBuilderSet8;
-        jomniBuilderSetArray24[1] = jomniBuilderSet19;
-        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet29 = org.jomni.util.Maps.setOf(jomniBuilderSetArray24);
-        java.util.Map map30 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray24);
-        java.util.Map<java.lang.String, java.lang.Object> strMap31 = org.jomni.util.Maps.asNestedMap((java.util.Map<java.lang.String, java.lang.Object>) map30);
-        org.junit.Assert.assertNotNull(jomniMapper1);
-        org.junit.Assert.assertNotNull(strMap3);
-        org.junit.Assert.assertNotNull(strMap4);
-        org.junit.Assert.assertNotNull(jomniBuilderArray7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
-        org.junit.Assert.assertNotNull(jomniMapper12);
-        org.junit.Assert.assertNotNull(strMap14);
-        org.junit.Assert.assertNotNull(strMap15);
-        org.junit.Assert.assertNotNull(jomniBuilderArray18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertNotNull(linkedHashSetArray23);
-        org.junit.Assert.assertNotNull(jomniBuilderSetArray24);
-        org.junit.Assert.assertNotNull(jomniBuilderSetSet29);
-        org.junit.Assert.assertNotNull(map30);
-        org.junit.Assert.assertNotNull(strMap31);
-    }
-
-    @Test
-    public void test029() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+            System.out.format("%n%s%n", "TestGroup100Case0.test027");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         org.jomni.util.Pair<java.io.Serializable, org.jomni.MapperException.Error> serializablePair2 = new org.jomni.util.Pair<java.io.Serializable, org.jomni.MapperException.Error>((java.io.Serializable) '#', error1);
         java.lang.Class<?> wildcardClass3 = serializablePair2.getClass();
@@ -520,9 +456,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test030() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+            System.out.format("%n%s%n", "TestGroup100Case0.test028");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -553,9 +489,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test031() throws Throwable {
+    public void test029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test031");
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -609,9 +545,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test032() throws Throwable {
+    public void test030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test032");
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
         java.lang.Comparable<java.lang.String>[] strComparableArray0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -623,9 +559,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test033() throws Throwable {
+    public void test031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test033");
+            System.out.format("%n%s%n", "TestGroup100Case0.test031");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -649,9 +585,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test034() throws Throwable {
+    public void test032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test034");
+            System.out.format("%n%s%n", "TestGroup100Case0.test032");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -697,9 +633,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test035() throws Throwable {
+    public void test033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test035");
+            System.out.format("%n%s%n", "TestGroup100Case0.test033");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -709,9 +645,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test036() throws Throwable {
+    public void test034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test036");
+            System.out.format("%n%s%n", "TestGroup100Case0.test034");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = jomniMapper2.asMap((java.lang.Object) 0L);
@@ -759,9 +695,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test037() throws Throwable {
+    public void test035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test037");
+            System.out.format("%n%s%n", "TestGroup100Case0.test035");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -789,9 +725,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test038() throws Throwable {
+    public void test036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test038");
+            System.out.format("%n%s%n", "TestGroup100Case0.test036");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -845,9 +781,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test039() throws Throwable {
+    public void test037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test039");
+            System.out.format("%n%s%n", "TestGroup100Case0.test037");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -926,9 +862,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test040() throws Throwable {
+    public void test038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test040");
+            System.out.format("%n%s%n", "TestGroup100Case0.test038");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -952,17 +888,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test041() throws Throwable {
+    public void test039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test041");
+            System.out.format("%n%s%n", "TestGroup100Case0.test039");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean((java.lang.Number) (short) 10);
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test042() throws Throwable {
+    public void test040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test042");
+            System.out.format("%n%s%n", "TestGroup100Case0.test040");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -998,17 +934,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test043() throws Throwable {
+    public void test041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test043");
+            System.out.format("%n%s%n", "TestGroup100Case0.test041");
         org.jomni.Omni.SetterRule setterRule0 = org.jomni.Omni.SetterRule.not_nulls;
         org.junit.Assert.assertTrue("'" + setterRule0 + "' != '" + org.jomni.Omni.SetterRule.not_nulls + "'", setterRule0.equals(org.jomni.Omni.SetterRule.not_nulls));
     }
 
     @Test
-    public void test044() throws Throwable {
+    public void test042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test044");
+            System.out.format("%n%s%n", "TestGroup100Case0.test042");
         org.jomni.JomniBuilder[] jomniBuilderArray2 = null;
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass4 = error3.getClass();
@@ -1109,38 +1045,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test045() throws Throwable {
+    public void test043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test045");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
-        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
-        org.jomni.JomniBuilder jomniBuilder4 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray5 = new org.jomni.JomniBuilder[] { jomniBuilder4 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet6 = org.jomni.util.Maps.setOf(jomniBuilderArray5);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair7 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, jomniBuilderSet6);
-        boolean boolean9 = strMapPair7.equals((java.lang.Object) (byte) -1);
-        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper11 = jomniBuilder10.build();
-        boolean boolean12 = strMapPair7.equals((java.lang.Object) jomniMapper11);
-        java.util.Map<java.lang.String, java.lang.Object> strMap13 = strMapPair7.getA();
-        java.lang.String str14 = strMapPair7.toString();
-        org.junit.Assert.assertNotNull(jomniBuilderArray1);
-        org.junit.Assert.assertNotNull(jomniBuilderSet2);
-        org.junit.Assert.assertNotNull(strMap3);
-        org.junit.Assert.assertNotNull(jomniBuilderArray5);
-        org.junit.Assert.assertNotNull(jomniBuilderSet6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(jomniMapper11);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(strMap13);
-    }
-
-    @Test
-    public void test046() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test046");
+            System.out.format("%n%s%n", "TestGroup100Case0.test043");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -1158,9 +1065,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test047() throws Throwable {
+    public void test044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test047");
+            System.out.format("%n%s%n", "TestGroup100Case0.test044");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -1194,9 +1101,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test048() throws Throwable {
+    public void test045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+            System.out.format("%n%s%n", "TestGroup100Case0.test045");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -1217,17 +1124,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test049() throws Throwable {
+    public void test046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test049");
+            System.out.format("%n%s%n", "TestGroup100Case0.test046");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean((java.lang.Number) 0);
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test050() throws Throwable {
+    public void test047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+            System.out.format("%n%s%n", "TestGroup100Case0.test047");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -1269,9 +1176,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test051() throws Throwable {
+    public void test048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -1288,9 +1195,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test052() throws Throwable {
+    public void test049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test052");
+            System.out.format("%n%s%n", "TestGroup100Case0.test049");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -1351,95 +1258,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test053() throws Throwable {
+    public void test050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test053");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
-        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
-        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass15 = error14.getClass();
-        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass17 = error16.getClass();
-        java.lang.reflect.Method method18 = null;
-        java.lang.reflect.Method method19 = null;
-        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
-        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
-        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
-        java.util.Map map24 = charSequenceOmni5.asMap();
-        java.lang.String[] strArray31 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
-        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
-        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
-        java.util.Map<java.lang.String, java.lang.Object> strMap36 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
-        java.util.Map map37 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray33);
-        org.jomni.util.Maps.NamesValues namesValues38 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray33);
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni39 = charSequenceOmni5.setAll((java.lang.Object) namesValues38);
-        org.jomni.MapperException.Error error41 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass42 = error41.getClass();
-        org.jomni.MapperException.Error error43 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass44 = error43.getClass();
-        java.lang.reflect.Method method45 = null;
-        java.lang.reflect.Method method46 = null;
-        org.jomni.PropInfo propInfo47 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass42, (java.lang.Class) wildcardClass44, method45, method46);
-        java.lang.reflect.Method method48 = propInfo47.getWriteMethod();
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni49 = charSequenceOmni39.setAll((java.lang.Object) method48);
-        java.lang.CharSequence charSequence50 = charSequenceOmni39.get();
-        java.lang.Object obj52 = charSequenceOmni39.get("hi!");
-        org.jomni.JomniBuilder jomniBuilder54 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray55 = new org.jomni.JomniBuilder[] { jomniBuilder54 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet56 = org.jomni.util.Maps.setOf(jomniBuilderArray55);
-        java.util.Map<java.lang.String, java.lang.Object> strMap57 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
-        java.util.Map<java.lang.String, java.lang.Object> strMap58 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
-        java.util.Map<java.lang.String, java.lang.Object> strMap59 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
-        java.util.Map map60 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray55);
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni61 = charSequenceOmni39.set("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) map60);
-        org.junit.Assert.assertNotNull(jomniMapper1);
-        org.junit.Assert.assertNotNull(charSequenceOmni5);
-        org.junit.Assert.assertNotNull(jomniMapper8);
-        org.junit.Assert.assertNotNull(charSequenceOmni12);
-        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass15);
-        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass17);
-        org.junit.Assert.assertNull(method21);
-        org.junit.Assert.assertNotNull(charSequenceOmni22);
-        org.junit.Assert.assertNotNull(map24);
-        org.junit.Assert.assertNotNull(strArray31);
-        org.junit.Assert.assertNotNull(jomniBuilderArray33);
-        org.junit.Assert.assertNotNull(jomniBuilderSet34);
-        org.junit.Assert.assertNotNull(strMap35);
-        org.junit.Assert.assertNotNull(strMap36);
-        org.junit.Assert.assertNotNull(map37);
-        org.junit.Assert.assertNotNull(charSequenceOmni39);
-        org.junit.Assert.assertTrue("'" + error41 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error41.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass42);
-        org.junit.Assert.assertTrue("'" + error43 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error43.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass44);
-        org.junit.Assert.assertNull(method48);
-        org.junit.Assert.assertNotNull(charSequenceOmni49);
-        org.junit.Assert.assertEquals("'" + charSequence50 + "' != '" + "" + "'", charSequence50, "");
-        org.junit.Assert.assertNull(obj52);
-        org.junit.Assert.assertNotNull(jomniBuilderArray55);
-        org.junit.Assert.assertNotNull(jomniBuilderSet56);
-        org.junit.Assert.assertNotNull(strMap57);
-        org.junit.Assert.assertNotNull(strMap58);
-        org.junit.Assert.assertNotNull(strMap59);
-        org.junit.Assert.assertNotNull(map60);
-        org.junit.Assert.assertNotNull(charSequenceOmni61);
-    }
-
-    @Test
-    public void test054() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -1467,9 +1288,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test055() throws Throwable {
+    public void test051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test055");
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -1490,9 +1311,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test056() throws Throwable {
+    public void test052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+            System.out.format("%n%s%n", "TestGroup100Case0.test052");
         java.util.Map<java.lang.String, java.lang.Object> strMap0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -1504,9 +1325,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test057() throws Throwable {
+    public void test053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test057");
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -1563,17 +1384,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test058() throws Throwable {
+    public void test054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test058");
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
         java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) 100.0f);
         org.junit.Assert.assertNotNull(bigDecimal1);
     }
 
     @Test
-    public void test059() throws Throwable {
+    public void test055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+            System.out.format("%n%s%n", "TestGroup100Case0.test055");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -1589,9 +1410,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test060() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -1613,17 +1434,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test061() throws Throwable {
+    public void test057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+            System.out.format("%n%s%n", "TestGroup100Case0.test057");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap");
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test062() throws Throwable {
+    public void test058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+            System.out.format("%n%s%n", "TestGroup100Case0.test058");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -1645,9 +1466,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test063() throws Throwable {
+    public void test059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -1687,9 +1508,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test064() throws Throwable {
+    public void test060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -1700,9 +1521,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test065() throws Throwable {
+    public void test061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -1828,9 +1649,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test066() throws Throwable {
+    public void test062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -1900,9 +1721,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test067() throws Throwable {
+    public void test063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -2047,9 +1868,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test068() throws Throwable {
+    public void test064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -2146,9 +1967,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test069() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -2196,9 +2017,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test070() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -2252,9 +2073,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test071() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
         java.lang.String[] strArray6 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
         org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
@@ -2291,9 +2112,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test072() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test072");
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -2308,9 +2129,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test073() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -2342,9 +2163,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test074() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test074");
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -2469,9 +2290,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test075() throws Throwable {
+    public void test071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -2536,33 +2357,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test076() throws Throwable {
+    public void test072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test076");
-        java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
-        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet9 = org.jomni.util.Maps.setOf(jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap10 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap11 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map map13 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray8);
-        org.jomni.util.Maps.NamesValues namesValues14 = new org.jomni.util.Maps.NamesValues(strArray6, (java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map map15 = org.jomni.util.Maps.mapOf((java.lang.Object[]) strArray6);
-        org.junit.Assert.assertNotNull(strArray6);
-        org.junit.Assert.assertNotNull(jomniBuilderArray8);
-        org.junit.Assert.assertNotNull(jomniBuilderSet9);
-        org.junit.Assert.assertNotNull(strMap10);
-        org.junit.Assert.assertNotNull(strMap11);
-        org.junit.Assert.assertNotNull(strMap12);
-        org.junit.Assert.assertNotNull(map13);
-        org.junit.Assert.assertNotNull(map15);
-    }
-
-    @Test
-    public void test077() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test077");
+            System.out.format("%n%s%n", "TestGroup100Case0.test072");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -2579,9 +2376,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test078() throws Throwable {
+    public void test073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -2640,88 +2437,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test079() throws Throwable {
+    public void test074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test079");
-        java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
-        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet9 = org.jomni.util.Maps.setOf(jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap10 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap11 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
-        java.util.Map map13 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray8);
-        org.jomni.util.Maps.NamesValues namesValues14 = new org.jomni.util.Maps.NamesValues(strArray6, (java.lang.Object[]) jomniBuilderArray8);
-        java.lang.String[] strArray15 = namesValues14.names;
-        java.lang.String[] strArray16 = namesValues14.names;
-        org.jomni.JomniBuilder[] jomniBuilderArray17 = null;
-        org.jomni.MapperException.Error error18 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass19 = error18.getClass();
-        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair20 = org.jomni.util.Pair.newPair(jomniBuilderArray17, (java.lang.reflect.GenericDeclaration) wildcardClass19);
-        org.jomni.MapperException.Error error21 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass22 = error21.getClass();
-        org.jomni.MapperException mapperException23 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass19, (java.lang.Class) wildcardClass22);
-        org.jomni.MapperException.Error error24 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        boolean boolean25 = mapperException23.isError(error24);
-        org.jomni.MapperException.Error error26 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        boolean boolean27 = mapperException23.isError(error26);
-        org.jomni.JomniBuilder[] jomniBuilderArray28 = null;
-        org.jomni.MapperException.Error error29 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass30 = error29.getClass();
-        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair31 = org.jomni.util.Pair.newPair(jomniBuilderArray28, (java.lang.reflect.GenericDeclaration) wildcardClass30);
-        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
-        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
-        org.jomni.JomniBuilder jomniBuilder36 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray37 = new org.jomni.JomniBuilder[] { jomniBuilder36 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet38 = org.jomni.util.Maps.setOf(jomniBuilderArray37);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair39 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap35, jomniBuilderSet38);
-        java.lang.Class<?> wildcardClass40 = strMap35.getClass();
-        org.jomni.MapperException mapperException41 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass30, (java.lang.Class) wildcardClass40);
-        mapperException23.addSuppressed((java.lang.Throwable) mapperException41);
-        java.lang.Throwable[] throwableArray43 = mapperException23.getSuppressed();
-        org.jomni.util.Maps.NamesValues namesValues44 = new org.jomni.util.Maps.NamesValues(strArray16, (java.lang.Object[]) throwableArray43);
-        java.lang.Object[] objArray45 = namesValues44.values;
-        org.junit.Assert.assertNotNull(strArray6);
-        org.junit.Assert.assertNotNull(jomniBuilderArray8);
-        org.junit.Assert.assertNotNull(jomniBuilderSet9);
-        org.junit.Assert.assertNotNull(strMap10);
-        org.junit.Assert.assertNotNull(strMap11);
-        org.junit.Assert.assertNotNull(strMap12);
-        org.junit.Assert.assertNotNull(map13);
-        org.junit.Assert.assertNotNull(strArray15);
-        org.junit.Assert.assertNotNull(strArray16);
-        org.junit.Assert.assertTrue("'" + error18 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error18.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass19);
-        org.junit.Assert.assertNotNull(jomniBuilderArrayPair20);
-        org.junit.Assert.assertTrue("'" + error21 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error21.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass22);
-        org.junit.Assert.assertNotNull(mapperException23);
-        org.junit.Assert.assertTrue("'" + error24 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error24.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
-        org.junit.Assert.assertTrue("'" + error26 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error26.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
-        org.junit.Assert.assertTrue("'" + error29 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error29.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass30);
-        org.junit.Assert.assertNotNull(jomniBuilderArrayPair31);
-        org.junit.Assert.assertNotNull(jomniBuilderArray33);
-        org.junit.Assert.assertNotNull(jomniBuilderSet34);
-        org.junit.Assert.assertNotNull(strMap35);
-        org.junit.Assert.assertNotNull(jomniBuilderArray37);
-        org.junit.Assert.assertNotNull(jomniBuilderSet38);
-        org.junit.Assert.assertNotNull(wildcardClass40);
-        org.junit.Assert.assertNotNull(mapperException41);
-        org.junit.Assert.assertNotNull(throwableArray43);
-        org.junit.Assert.assertNotNull(objArray45);
-        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray45), "[org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap]");
-        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray45), "[org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap]");
-    }
-
-    @Test
-    public void test080() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+            System.out.format("%n%s%n", "TestGroup100Case0.test074");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -2743,9 +2461,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test081() throws Throwable {
+    public void test075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -2774,9 +2492,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test082() throws Throwable {
+    public void test076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -2920,9 +2638,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test083() throws Throwable {
+    public void test077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test083");
+            System.out.format("%n%s%n", "TestGroup100Case0.test077");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -2973,9 +2691,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test084() throws Throwable {
+    public void test078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3049,9 +2767,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test085() throws Throwable {
+    public void test079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -3062,9 +2780,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test086() throws Throwable {
+    public void test080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -3097,9 +2815,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test087() throws Throwable {
+    public void test081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
         java.util.Map map0 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -3111,9 +2829,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test088() throws Throwable {
+    public void test082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test088");
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -3184,49 +2902,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test089() throws Throwable {
+    public void test083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test089");
-        org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
-        org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass2 = error1.getClass();
-        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair3 = org.jomni.util.Pair.newPair(jomniBuilderArray0, (java.lang.reflect.GenericDeclaration) wildcardClass2);
-        org.jomni.MapperException.Error error4 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass5 = error4.getClass();
-        org.jomni.MapperException mapperException6 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass2, (java.lang.Class) wildcardClass5);
-        org.jomni.MapperException.Error error8 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass9 = error8.getClass();
-        org.jomni.MapperException.Error error10 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass11 = error10.getClass();
-        java.lang.reflect.Method method12 = null;
-        java.lang.reflect.Method method13 = null;
-        org.jomni.PropInfo propInfo14 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass9, (java.lang.Class) wildcardClass11, method12, method13);
-        org.jomni.MapperException mapperException15 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass5, (java.lang.Class) wildcardClass11);
-        java.lang.Throwable[] throwableArray16 = mapperException15.getSuppressed();
-        java.util.Map<java.lang.String, java.lang.Object> strMap17 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) throwableArray16);
-        java.util.Map<java.lang.String, java.lang.Object> strMap18 = org.jomni.util.Maps.asFlatMap(strMap17);
-        org.jomni.util.Maps.NamesValues namesValues19 = org.jomni.util.Maps.namesValuesOf((java.util.Map) strMap18);
-        org.junit.Assert.assertTrue("'" + error1 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error1.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass2);
-        org.junit.Assert.assertNotNull(jomniBuilderArrayPair3);
-        org.junit.Assert.assertTrue("'" + error4 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error4.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass5);
-        org.junit.Assert.assertNotNull(mapperException6);
-        org.junit.Assert.assertTrue("'" + error8 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error8.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass9);
-        org.junit.Assert.assertTrue("'" + error10 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error10.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass11);
-        org.junit.Assert.assertNotNull(mapperException15);
-        org.junit.Assert.assertNotNull(throwableArray16);
-        org.junit.Assert.assertNotNull(strMap17);
-        org.junit.Assert.assertNotNull(strMap18);
-        org.junit.Assert.assertNotNull(namesValues19);
-    }
-
-    @Test
-    public void test090() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+            System.out.format("%n%s%n", "TestGroup100Case0.test083");
         org.jomni.JomniBuilder[] jomniBuilderArray2 = null;
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass4 = error3.getClass();
@@ -3325,9 +3003,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test091() throws Throwable {
+    public void test084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3396,9 +3074,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test092() throws Throwable {
+    public void test085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3495,108 +3173,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test093() throws Throwable {
+    public void test086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test093");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap4 = org.jomni.util.Maps.asFlatMap(strMap3);
-        org.jomni.JomniBuilder jomniBuilder5 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder5, jomniBuilder6 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet8 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean9 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet8, jomniBuilderArray7);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair10 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet8);
-        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper12 = jomniBuilder11.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap14 = jomniMapper12.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.asFlatMap(strMap14);
-        org.jomni.JomniBuilder jomniBuilder16 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder17 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray18 = new org.jomni.JomniBuilder[] { jomniBuilder16, jomniBuilder17 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet19 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean20 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet19, jomniBuilderArray18);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair21 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap14, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet19);
-        java.util.LinkedHashSet[] linkedHashSetArray23 = new java.util.LinkedHashSet[2];
-        @SuppressWarnings("unchecked")
-        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray24 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray23;
-        jomniBuilderSetArray24[0] = jomniBuilderSet8;
-        jomniBuilderSetArray24[1] = jomniBuilderSet19;
-        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet29 = org.jomni.util.Maps.setOf(jomniBuilderSetArray24);
-        java.util.Map map30 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray24);
-        org.jomni.util.Maps.NamesValues namesValues31 = org.jomni.util.Maps.namesValuesOf(map30);
-        org.jomni.util.Maps.NamesValues namesValues32 = org.jomni.util.Maps.namesValuesOf(map30);
-        org.jomni.JomniBuilder jomniBuilder33 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper34 = jomniBuilder33.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap36 = jomniMapper34.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap37 = org.jomni.util.Maps.asFlatMap(strMap36);
-        org.jomni.JomniBuilder jomniBuilder38 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder39 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray40 = new org.jomni.JomniBuilder[] { jomniBuilder38, jomniBuilder39 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet41 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean42 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet41, jomniBuilderArray40);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair43 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap36, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet41);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair44 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>((java.util.Map<java.lang.String, java.lang.Object>) map30, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet41);
-        org.jomni.JomniBuilder jomniBuilder45 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper46 = jomniBuilder45.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair48 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper46, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni50 = jomniMapper46.omni((java.lang.CharSequence) "");
-        org.jomni.JomniBuilder jomniBuilder52 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper53 = jomniBuilder52.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair55 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper53, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni57 = jomniMapper53.omni((java.lang.CharSequence) "");
-        org.jomni.MapperException.Error error59 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass60 = error59.getClass();
-        org.jomni.MapperException.Error error61 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass62 = error61.getClass();
-        java.lang.reflect.Method method63 = null;
-        java.lang.reflect.Method method64 = null;
-        org.jomni.PropInfo propInfo65 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass60, (java.lang.Class) wildcardClass62, method63, method64);
-        java.lang.reflect.Method method66 = propInfo65.getReadMethod();
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni67 = charSequenceOmni57.setAll((java.lang.Object) method66);
-        charSequenceOmni50.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni57);
-        java.util.Map map69 = charSequenceOmni50.asMap();
-        boolean boolean70 = strMapPair44.equals((java.lang.Object) map69);
-        org.junit.Assert.assertNotNull(jomniMapper1);
-        org.junit.Assert.assertNotNull(strMap3);
-        org.junit.Assert.assertNotNull(strMap4);
-        org.junit.Assert.assertNotNull(jomniBuilderArray7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
-        org.junit.Assert.assertNotNull(jomniMapper12);
-        org.junit.Assert.assertNotNull(strMap14);
-        org.junit.Assert.assertNotNull(strMap15);
-        org.junit.Assert.assertNotNull(jomniBuilderArray18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertNotNull(linkedHashSetArray23);
-        org.junit.Assert.assertNotNull(jomniBuilderSetArray24);
-        org.junit.Assert.assertNotNull(jomniBuilderSetSet29);
-        org.junit.Assert.assertNotNull(map30);
-        org.junit.Assert.assertNotNull(namesValues31);
-        org.junit.Assert.assertNotNull(namesValues32);
-        org.junit.Assert.assertNotNull(jomniMapper34);
-        org.junit.Assert.assertNotNull(strMap36);
-        org.junit.Assert.assertNotNull(strMap37);
-        org.junit.Assert.assertNotNull(jomniBuilderArray40);
-        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
-        org.junit.Assert.assertNotNull(jomniMapper46);
-        org.junit.Assert.assertNotNull(charSequenceOmni50);
-        org.junit.Assert.assertNotNull(jomniMapper53);
-        org.junit.Assert.assertNotNull(charSequenceOmni57);
-        org.junit.Assert.assertTrue("'" + error59 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error59.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass60);
-        org.junit.Assert.assertTrue("'" + error61 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error61.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass62);
-        org.junit.Assert.assertNull(method66);
-        org.junit.Assert.assertNotNull(charSequenceOmni67);
-        org.junit.Assert.assertNotNull(map69);
-        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
-    }
-
-    @Test
-    public void test094() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test094");
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3638,9 +3217,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test095() throws Throwable {
+    public void test087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3711,9 +3290,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test096() throws Throwable {
+    public void test088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+            System.out.format("%n%s%n", "TestGroup100Case0.test088");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -3740,9 +3319,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test097() throws Throwable {
+    public void test089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -3757,9 +3336,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test098() throws Throwable {
+    public void test090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -3819,9 +3398,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test099() throws Throwable {
+    public void test091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test099");
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -3853,9 +3432,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test100() throws Throwable {
+    public void test092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test100");
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -3901,9 +3480,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test101() throws Throwable {
+    public void test093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+            System.out.format("%n%s%n", "TestGroup100Case0.test093");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -3922,9 +3501,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test102() throws Throwable {
+    public void test094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test102");
+            System.out.format("%n%s%n", "TestGroup100Case0.test094");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -4003,9 +3582,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test103() throws Throwable {
+    public void test095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -4073,9 +3652,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test104() throws Throwable {
+    public void test096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -4096,9 +3675,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test105() throws Throwable {
+    public void test097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test105");
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -4141,9 +3720,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test106() throws Throwable {
+    public void test098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -4169,17 +3748,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test107() throws Throwable {
+    public void test099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test107");
+            System.out.format("%n%s%n", "TestGroup100Case0.test099");
         java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) (byte) 10);
         org.junit.Assert.assertNotNull(bigDecimal1);
     }
 
     @Test
-    public void test108() throws Throwable {
+    public void test100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+            System.out.format("%n%s%n", "TestGroup100Case0.test100");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -4209,9 +3788,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test109() throws Throwable {
+    public void test101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -4304,9 +3883,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test110() throws Throwable {
+    public void test102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+            System.out.format("%n%s%n", "TestGroup100Case0.test102");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -4326,9 +3905,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test111() throws Throwable {
+    public void test103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -4398,9 +3977,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test112() throws Throwable {
+    public void test104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
         java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
         org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
@@ -4462,9 +4041,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test113() throws Throwable {
+    public void test105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+            System.out.format("%n%s%n", "TestGroup100Case0.test105");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -4588,9 +4167,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test114() throws Throwable {
+    public void test106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -4635,9 +4214,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test115() throws Throwable {
+    public void test107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+            System.out.format("%n%s%n", "TestGroup100Case0.test107");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = jomniMapper2.asMap((java.lang.Object) 0L);
@@ -4668,9 +4247,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test116() throws Throwable {
+    public void test108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test116");
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -4728,9 +4307,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test117() throws Throwable {
+    public void test109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -4844,9 +4423,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test118() throws Throwable {
+    public void test110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -4905,9 +4484,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test119() throws Throwable {
+    public void test111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -4969,9 +4548,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test120() throws Throwable {
+    public void test112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -5007,9 +4586,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test121() throws Throwable {
+    public void test113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -5107,9 +4686,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test122() throws Throwable {
+    public void test114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test122");
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -5124,9 +4703,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test123() throws Throwable {
+    public void test115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test123");
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -5200,9 +4779,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test124() throws Throwable {
+    public void test116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+            System.out.format("%n%s%n", "TestGroup100Case0.test116");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -5231,9 +4810,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test125() throws Throwable {
+    public void test117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -5324,9 +4903,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test126() throws Throwable {
+    public void test118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test126");
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
         java.lang.String[] strArray0 = null;
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray2 = new org.jomni.JomniBuilder[] { jomniBuilder1 };
@@ -5345,9 +4924,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test127() throws Throwable {
+    public void test119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -5368,9 +4947,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test128() throws Throwable {
+    public void test120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
         java.lang.String[] strArray6 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
         org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
@@ -5440,9 +5019,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test129() throws Throwable {
+    public void test121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
         org.jomni.JomniBuilder[] jomniBuilderArray2 = null;
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass4 = error3.getClass();
@@ -5545,9 +5124,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test130() throws Throwable {
+    public void test122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test130");
+            System.out.format("%n%s%n", "TestGroup100Case0.test122");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -5627,9 +5206,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test131() throws Throwable {
+    public void test123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test131");
+            System.out.format("%n%s%n", "TestGroup100Case0.test123");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -5676,9 +5255,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test132() throws Throwable {
+    public void test124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test132");
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -5803,9 +5382,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test133() throws Throwable {
+    public void test125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -5827,9 +5406,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test134() throws Throwable {
+    public void test126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test134");
+            System.out.format("%n%s%n", "TestGroup100Case0.test126");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -5852,9 +5431,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test135() throws Throwable {
+    public void test127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -5970,9 +5549,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test136() throws Throwable {
+    public void test128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -5986,9 +5565,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test137() throws Throwable {
+    public void test129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test137");
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -6018,9 +5597,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test138() throws Throwable {
+    public void test130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+            System.out.format("%n%s%n", "TestGroup100Case0.test130");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -6099,9 +5678,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test139() throws Throwable {
+    public void test131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+            System.out.format("%n%s%n", "TestGroup100Case0.test131");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -6235,9 +5814,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test140() throws Throwable {
+    public void test132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+            System.out.format("%n%s%n", "TestGroup100Case0.test132");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -6307,9 +5886,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test141() throws Throwable {
+    public void test133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test141");
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -6415,9 +5994,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test142() throws Throwable {
+    public void test134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+            System.out.format("%n%s%n", "TestGroup100Case0.test134");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -6449,9 +6028,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test143() throws Throwable {
+    public void test135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -6533,9 +6112,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test144() throws Throwable {
+    public void test136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -6601,9 +6180,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test145() throws Throwable {
+    public void test137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+            System.out.format("%n%s%n", "TestGroup100Case0.test137");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -6618,9 +6197,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test146() throws Throwable {
+    public void test138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -6661,9 +6240,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test147() throws Throwable {
+    public void test139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test147");
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -6775,9 +6354,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test148() throws Throwable {
+    public void test140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -6880,9 +6459,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test149() throws Throwable {
+    public void test141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+            System.out.format("%n%s%n", "TestGroup100Case0.test141");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -6930,9 +6509,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test150() throws Throwable {
+    public void test142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -6952,9 +6531,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test151() throws Throwable {
+    public void test143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         org.jomni.JomniMapper jomniMapper3 = jomniBuilder1.build();
@@ -7043,9 +6622,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test152() throws Throwable {
+    public void test144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -7096,9 +6675,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test153() throws Throwable {
+    public void test145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -7157,9 +6736,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test154() throws Throwable {
+    public void test146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test154");
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -7180,9 +6759,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test155() throws Throwable {
+    public void test147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+            System.out.format("%n%s%n", "TestGroup100Case0.test147");
         org.jomni.JomniBuilder[] jomniBuilderArray2 = null;
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass4 = error3.getClass();
@@ -7282,9 +6861,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test156() throws Throwable {
+    public void test148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -7366,9 +6945,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test157() throws Throwable {
+    public void test149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -7389,17 +6968,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test158() throws Throwable {
+    public void test150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean("org.jomni.MapperException: Cannot find resolver for sourceClass [Lorg.jomni.JomniBuilder; to targetClass [Lorg.jomni.JomniBuilder;");
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test159() throws Throwable {
+    public void test151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test159");
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -7442,9 +7021,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -7507,9 +7086,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test161() throws Throwable {
+    public void test153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -7553,9 +7132,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test154");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -7616,9 +7195,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -7691,9 +7270,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -7730,9 +7309,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test165() throws Throwable {
+    public void test157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -7757,9 +7336,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test166() throws Throwable {
+    public void test158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
         org.jomni.JomniBuilder jomniBuilder2 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper3 = jomniBuilder2.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap5 = jomniMapper3.asMap((java.lang.Object) 0L);
@@ -7798,9 +7377,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test167() throws Throwable {
+    public void test159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+            System.out.format("%n%s%n", "TestGroup100Case0.test159");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -7925,9 +7504,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test168() throws Throwable {
+    public void test160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -8024,9 +7603,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test169() throws Throwable {
+    public void test161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -8068,9 +7647,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test170() throws Throwable {
+    public void test162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -8159,17 +7738,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test171() throws Throwable {
+    public void test163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
         java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) 0.0d);
         org.junit.Assert.assertNotNull(bigDecimal1);
     }
 
     @Test
-    public void test172() throws Throwable {
+    public void test164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
         org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
@@ -8190,9 +7769,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test173() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test173");
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -8225,9 +7804,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test174() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test174");
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -8290,9 +7869,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test175() throws Throwable {
+    public void test167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -8333,9 +7912,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test176() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -8358,9 +7937,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test177() throws Throwable {
+    public void test169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -8429,9 +8008,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test178() throws Throwable {
+    public void test170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -8486,9 +8065,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test179() throws Throwable {
+    public void test171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test179");
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = jomniMapper2.asMap((java.lang.Object) 0L);
@@ -8610,9 +8189,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test180() throws Throwable {
+    public void test172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -8675,9 +8254,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test181() throws Throwable {
+    public void test173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
         org.jomni.MapperException.Error error0 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass1 = error0.getClass();
         java.lang.reflect.Type[] typeArray2 = new java.lang.reflect.Type[] { wildcardClass1 };
@@ -8689,9 +8268,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test182() throws Throwable {
+    public void test174() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+            System.out.format("%n%s%n", "TestGroup100Case0.test174");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -8766,9 +8345,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test183() throws Throwable {
+    public void test175() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test183");
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
         java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) 100.0d);
         java.lang.Boolean boolean2 = org.jomni.ExtraConverters.toBoolean((java.lang.Number) bigDecimal1);
         java.math.BigDecimal bigDecimal3 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) bigDecimal1);
@@ -8778,26 +8357,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test184() throws Throwable {
+    public void test176() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test184");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
-        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
-        java.util.Map map4 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray1);
-        java.util.Map<java.lang.String, java.lang.Object> strMap5 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
-        org.junit.Assert.assertNotNull(jomniBuilderArray1);
-        org.junit.Assert.assertNotNull(jomniBuilderSet2);
-        org.junit.Assert.assertNotNull(strMap3);
-        org.junit.Assert.assertNotNull(map4);
-        org.junit.Assert.assertNotNull(strMap5);
-    }
-
-    @Test
-    public void test185() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -8865,9 +8427,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test186() throws Throwable {
+    public void test177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test186");
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
         java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal((java.lang.Number) 2);
         java.lang.Boolean boolean2 = org.jomni.ExtraConverters.toBoolean((java.lang.Number) bigDecimal1);
         org.junit.Assert.assertNotNull(bigDecimal1);
@@ -8875,9 +8437,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test187() throws Throwable {
+    public void test178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test187");
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
         java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
         org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
@@ -8905,9 +8467,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test188() throws Throwable {
+    public void test179() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test188");
+            System.out.format("%n%s%n", "TestGroup100Case0.test179");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -8941,9 +8503,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test189() throws Throwable {
+    public void test180() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test189");
+            System.out.format("%n%s%n", "TestGroup100Case0.test180");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -9050,9 +8612,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test190() throws Throwable {
+    public void test181() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test190");
+            System.out.format("%n%s%n", "TestGroup100Case0.test181");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -9088,9 +8650,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test191() throws Throwable {
+    public void test182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test191");
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -9141,9 +8703,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test192() throws Throwable {
+    public void test183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -9273,9 +8835,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test193() throws Throwable {
+    public void test184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+            System.out.format("%n%s%n", "TestGroup100Case0.test184");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -9316,9 +8878,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test194() throws Throwable {
+    public void test185() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
         java.lang.Exception[] exceptionArray0 = new java.lang.Exception[] {};
         java.util.Set<java.lang.Exception> exceptionSet1 = org.jomni.util.Maps.setOf(exceptionArray0);
         org.junit.Assert.assertNotNull(exceptionArray0);
@@ -9326,9 +8888,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test195() throws Throwable {
+    public void test186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test195");
+            System.out.format("%n%s%n", "TestGroup100Case0.test186");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -9445,9 +9007,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test196() throws Throwable {
+    public void test187() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test196");
+            System.out.format("%n%s%n", "TestGroup100Case0.test187");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -9508,9 +9070,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test197() throws Throwable {
+    public void test188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test197");
+            System.out.format("%n%s%n", "TestGroup100Case0.test188");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -9599,9 +9161,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test198() throws Throwable {
+    public void test189() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test198");
+            System.out.format("%n%s%n", "TestGroup100Case0.test189");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -9622,9 +9184,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test199() throws Throwable {
+    public void test190() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test199");
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -9749,9 +9311,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test200() throws Throwable {
+    public void test191() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test200");
+            System.out.format("%n%s%n", "TestGroup100Case0.test191");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -9862,9 +9424,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test201() throws Throwable {
+    public void test192() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test201");
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -9938,9 +9500,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test202() throws Throwable {
+    public void test193() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test202");
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
         java.lang.String[] strArray6 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
         org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
@@ -10036,9 +9598,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test203() throws Throwable {
+    public void test194() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         org.jomni.JomniMapper jomniMapper3 = jomniBuilder1.build();
@@ -10183,9 +9745,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test204() throws Throwable {
+    public void test195() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test204");
+            System.out.format("%n%s%n", "TestGroup100Case0.test195");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = jomniMapper2.asMap((java.lang.Object) 0L);
@@ -10222,9 +9784,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test205() throws Throwable {
+    public void test196() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test205");
+            System.out.format("%n%s%n", "TestGroup100Case0.test196");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -10313,9 +9875,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test206() throws Throwable {
+    public void test197() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+            System.out.format("%n%s%n", "TestGroup100Case0.test197");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -10362,9 +9924,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test207() throws Throwable {
+    public void test198() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test207");
+            System.out.format("%n%s%n", "TestGroup100Case0.test198");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -10397,9 +9959,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test208() throws Throwable {
+    public void test199() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test208");
+            System.out.format("%n%s%n", "TestGroup100Case0.test199");
         java.lang.Class class1 = null;
         java.lang.Class class2 = null;
         java.lang.reflect.Method method3 = null;
@@ -10443,9 +10005,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test209() throws Throwable {
+    public void test200() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test209");
+            System.out.format("%n%s%n", "TestGroup100Case0.test200");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -10479,9 +10041,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test210() throws Throwable {
+    public void test201() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test210");
+            System.out.format("%n%s%n", "TestGroup100Case0.test201");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -10541,9 +10103,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test211() throws Throwable {
+    public void test202() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+            System.out.format("%n%s%n", "TestGroup100Case0.test202");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -10675,9 +10237,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test212() throws Throwable {
+    public void test203() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test212");
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -10782,77 +10344,17 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test213() throws Throwable {
+    public void test204() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test213");
+            System.out.format("%n%s%n", "TestGroup100Case0.test204");
         java.lang.Boolean boolean1 = org.jomni.ExtraConverters.toBoolean((java.lang.Number) (short) 100);
         org.junit.Assert.assertEquals("'" + boolean1 + "' != '" + false + "'", boolean1, false);
     }
 
     @Test
-    public void test214() throws Throwable {
+    public void test205() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test214");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
-        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
-        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
-        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass15 = error14.getClass();
-        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass17 = error16.getClass();
-        java.lang.reflect.Method method18 = null;
-        java.lang.reflect.Method method19 = null;
-        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
-        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
-        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
-        java.util.Map map24 = charSequenceOmni5.asMap();
-        java.lang.String[] strArray31 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
-        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
-        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
-        java.util.Map<java.lang.String, java.lang.Object> strMap36 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
-        java.util.Map map37 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray33);
-        org.jomni.util.Maps.NamesValues namesValues38 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray33);
-        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni39 = charSequenceOmni5.setAll((java.lang.Object) namesValues38);
-        java.util.Map map40 = charSequenceOmni39.asMap();
-        java.util.Map<java.lang.String, java.lang.Object> strMap41 = org.jomni.util.Maps.asNestedMap((java.util.Map<java.lang.String, java.lang.Object>) map40);
-        java.util.Map<java.lang.String, java.lang.Object> strMap42 = org.jomni.util.Maps.asFlatMap(strMap41);
-        java.util.Map<java.lang.String, java.lang.Object> strMap43 = org.jomni.util.Maps.asFlatMap(strMap42);
-        org.junit.Assert.assertNotNull(jomniMapper1);
-        org.junit.Assert.assertNotNull(charSequenceOmni5);
-        org.junit.Assert.assertNotNull(jomniMapper8);
-        org.junit.Assert.assertNotNull(charSequenceOmni12);
-        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass15);
-        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass17);
-        org.junit.Assert.assertNull(method21);
-        org.junit.Assert.assertNotNull(charSequenceOmni22);
-        org.junit.Assert.assertNotNull(map24);
-        org.junit.Assert.assertNotNull(strArray31);
-        org.junit.Assert.assertNotNull(jomniBuilderArray33);
-        org.junit.Assert.assertNotNull(jomniBuilderSet34);
-        org.junit.Assert.assertNotNull(strMap35);
-        org.junit.Assert.assertNotNull(strMap36);
-        org.junit.Assert.assertNotNull(map37);
-        org.junit.Assert.assertNotNull(charSequenceOmni39);
-        org.junit.Assert.assertNotNull(map40);
-        org.junit.Assert.assertNotNull(strMap41);
-        org.junit.Assert.assertNotNull(strMap42);
-        org.junit.Assert.assertNotNull(strMap43);
-    }
-
-    @Test
-    public void test215() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test215");
+            System.out.format("%n%s%n", "TestGroup100Case0.test205");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -10865,9 +10367,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test216() throws Throwable {
+    public void test206() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test216");
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
@@ -10912,92 +10414,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test217() throws Throwable {
+    public void test207() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test217");
-        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
-        org.jomni.JomniBuilder[] jomniBuilderArray4 = null;
-        org.jomni.MapperException.Error error5 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
-        java.lang.Class<?> wildcardClass6 = error5.getClass();
-        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair7 = org.jomni.util.Pair.newPair(jomniBuilderArray4, (java.lang.reflect.GenericDeclaration) wildcardClass6);
-        org.jomni.ClassInfo classInfo8 = jomniMapper1.getClassInfo((java.lang.Class) wildcardClass6);
-        org.jomni.JomniBuilder jomniBuilder9 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray10 = new org.jomni.JomniBuilder[] { jomniBuilder9 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet11 = org.jomni.util.Maps.setOf(jomniBuilderArray10);
-        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray10);
-        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray14 = new org.jomni.JomniBuilder[] { jomniBuilder13 };
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet15 = org.jomni.util.Maps.setOf(jomniBuilderArray14);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair16 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap12, jomniBuilderSet15);
-        java.lang.String str17 = strMapPair16.toString();
-        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet18 = strMapPair16.getB();
-        java.lang.Object obj20 = classInfo8.getValue((java.lang.Object) jomniBuilderSet18, "");
-        org.jomni.PropInfo propInfo22 = classInfo8.getPropInfo("hi!");
-        org.jomni.JomniBuilder jomniBuilder23 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper24 = jomniBuilder23.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap26 = jomniMapper24.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap27 = org.jomni.util.Maps.asFlatMap(strMap26);
-        org.jomni.JomniBuilder jomniBuilder28 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder29 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray30 = new org.jomni.JomniBuilder[] { jomniBuilder28, jomniBuilder29 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet31 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean32 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet31, jomniBuilderArray30);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair33 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap26, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet31);
-        org.jomni.JomniBuilder jomniBuilder34 = new org.jomni.JomniBuilder();
-        org.jomni.JomniMapper jomniMapper35 = jomniBuilder34.build();
-        java.util.Map<java.lang.String, java.lang.Object> strMap37 = jomniMapper35.asMap((java.lang.Object) 0L);
-        java.util.Map<java.lang.String, java.lang.Object> strMap38 = org.jomni.util.Maps.asFlatMap(strMap37);
-        org.jomni.JomniBuilder jomniBuilder39 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder jomniBuilder40 = new org.jomni.JomniBuilder();
-        org.jomni.JomniBuilder[] jomniBuilderArray41 = new org.jomni.JomniBuilder[] { jomniBuilder39, jomniBuilder40 };
-        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet42 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
-        boolean boolean43 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet42, jomniBuilderArray41);
-        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair44 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap37, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet42);
-        java.util.LinkedHashSet[] linkedHashSetArray46 = new java.util.LinkedHashSet[2];
-        @SuppressWarnings("unchecked")
-        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray47 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray46;
-        jomniBuilderSetArray47[0] = jomniBuilderSet31;
-        jomniBuilderSetArray47[1] = jomniBuilderSet42;
-        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet52 = org.jomni.util.Maps.setOf(jomniBuilderSetArray47);
-        java.util.Map map53 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray47);
-        java.lang.Object obj55 = classInfo8.getValue((java.lang.Object) jomniBuilderSetArray47, "");
-        org.junit.Assert.assertNotNull(jomniMapper1);
-        org.junit.Assert.assertNotNull(strMap3);
-        org.junit.Assert.assertTrue("'" + error5 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error5.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
-        org.junit.Assert.assertNotNull(wildcardClass6);
-        org.junit.Assert.assertNotNull(jomniBuilderArrayPair7);
-        org.junit.Assert.assertNotNull(classInfo8);
-        org.junit.Assert.assertNotNull(jomniBuilderArray10);
-        org.junit.Assert.assertNotNull(jomniBuilderSet11);
-        org.junit.Assert.assertNotNull(strMap12);
-        org.junit.Assert.assertNotNull(jomniBuilderArray14);
-        org.junit.Assert.assertNotNull(jomniBuilderSet15);
-        org.junit.Assert.assertNotNull(jomniBuilderSet18);
-        org.junit.Assert.assertNull(obj20);
-        org.junit.Assert.assertNull(propInfo22);
-        org.junit.Assert.assertNotNull(jomniMapper24);
-        org.junit.Assert.assertNotNull(strMap26);
-        org.junit.Assert.assertNotNull(strMap27);
-        org.junit.Assert.assertNotNull(jomniBuilderArray30);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
-        org.junit.Assert.assertNotNull(jomniMapper35);
-        org.junit.Assert.assertNotNull(strMap37);
-        org.junit.Assert.assertNotNull(strMap38);
-        org.junit.Assert.assertNotNull(jomniBuilderArray41);
-        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
-        org.junit.Assert.assertNotNull(linkedHashSetArray46);
-        org.junit.Assert.assertNotNull(jomniBuilderSetArray47);
-        org.junit.Assert.assertNotNull(jomniBuilderSetSet52);
-        org.junit.Assert.assertNotNull(map53);
-        org.junit.Assert.assertNull(obj55);
-    }
-
-    @Test
-    public void test218() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+            System.out.format("%n%s%n", "TestGroup100Case0.test207");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
         java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
@@ -11076,9 +10495,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test219() throws Throwable {
+    public void test208() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test219");
+            System.out.format("%n%s%n", "TestGroup100Case0.test208");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11223,9 +10642,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test220() throws Throwable {
+    public void test209() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+            System.out.format("%n%s%n", "TestGroup100Case0.test209");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11241,9 +10660,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test221() throws Throwable {
+    public void test210() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+            System.out.format("%n%s%n", "TestGroup100Case0.test210");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11334,9 +10753,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test222() throws Throwable {
+    public void test211() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
         org.jomni.JomniBuilder[] jomniBuilderArray1 = null;
         org.jomni.MapperException.Error error2 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass3 = error2.getClass();
@@ -11397,9 +10816,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test223() throws Throwable {
+    public void test212() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test223");
+            System.out.format("%n%s%n", "TestGroup100Case0.test212");
         org.jomni.JomniBuilder jomniBuilder1 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper2 = jomniBuilder1.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = jomniMapper2.asMap((java.lang.Object) 0L);
@@ -11517,9 +10936,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test224() throws Throwable {
+    public void test213() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test224");
+            System.out.format("%n%s%n", "TestGroup100Case0.test213");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
@@ -11614,9 +11033,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test225() throws Throwable {
+    public void test214() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+            System.out.format("%n%s%n", "TestGroup100Case0.test214");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11704,9 +11123,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test226() throws Throwable {
+    public void test215() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+            System.out.format("%n%s%n", "TestGroup100Case0.test215");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11780,9 +11199,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test227() throws Throwable {
+    public void test216() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+            System.out.format("%n%s%n", "TestGroup100Case0.test216");
         org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
         org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
         java.lang.Class<?> wildcardClass2 = error1.getClass();
@@ -11834,9 +11253,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test228() throws Throwable {
+    public void test217() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test228");
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
         org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
         org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
         org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
@@ -11919,6 +11338,1680 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(throwableArray51);
         org.junit.Assert.assertNotNull(throwableArray52);
         org.junit.Assert.assertNull(class54);
+    }
+
+    @Test
+    public void test218() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        org.jomni.JomniBuilder jomniBuilder2 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper3 = jomniBuilder2.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap5 = jomniMapper3.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray6 = null;
+        org.jomni.MapperException.Error error7 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass8 = error7.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair9 = org.jomni.util.Pair.newPair(jomniBuilderArray6, (java.lang.reflect.GenericDeclaration) wildcardClass8);
+        org.jomni.ClassInfo classInfo10 = jomniMapper3.getClassInfo((java.lang.Class) wildcardClass8);
+        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray12 = new org.jomni.JomniBuilder[] { jomniBuilder11 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet13 = org.jomni.util.Maps.setOf(jomniBuilderArray12);
+        java.util.Map<java.lang.String, java.lang.Object> strMap14 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray12);
+        java.lang.Class<?> wildcardClass15 = jomniBuilderArray12.getClass();
+        java.lang.reflect.Method method16 = null;
+        java.lang.reflect.Method method17 = null;
+        org.jomni.PropInfo propInfo18 = new org.jomni.PropInfo("", (java.lang.Class) wildcardClass8, (java.lang.Class) wildcardClass15, method16, method17);
+        org.jomni.MapperException.Error error19 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass20 = error19.getClass();
+        java.lang.reflect.Method method21 = null;
+        java.lang.reflect.Method method22 = null;
+        org.jomni.PropInfo propInfo23 = new org.jomni.PropInfo("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Class) wildcardClass8, (java.lang.Class) wildcardClass20, method21, method22);
+        java.lang.Class class24 = propInfo23.getType();
+        org.junit.Assert.assertNotNull(jomniMapper3);
+        org.junit.Assert.assertNotNull(strMap5);
+        org.junit.Assert.assertTrue("'" + error7 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error7.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass8);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair9);
+        org.junit.Assert.assertNotNull(classInfo10);
+        org.junit.Assert.assertNotNull(jomniBuilderArray12);
+        org.junit.Assert.assertNotNull(jomniBuilderSet13);
+        org.junit.Assert.assertNotNull(strMap14);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error19 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error19.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass20);
+        org.junit.Assert.assertNotNull(class24);
+    }
+
+    @Test
+    public void test219() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test219");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap4 = org.jomni.util.Maps.asFlatMap(strMap3);
+        org.jomni.JomniBuilder jomniBuilder5 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder5, jomniBuilder6 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet8 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean9 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet8, jomniBuilderArray7);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair10 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet8);
+        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper12 = jomniBuilder11.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap14 = jomniMapper12.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.asFlatMap(strMap14);
+        org.jomni.JomniBuilder jomniBuilder16 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder17 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray18 = new org.jomni.JomniBuilder[] { jomniBuilder16, jomniBuilder17 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet19 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean20 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet19, jomniBuilderArray18);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair21 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap14, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet19);
+        java.util.LinkedHashSet[] linkedHashSetArray23 = new java.util.LinkedHashSet[2];
+        @SuppressWarnings("unchecked")
+        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray24 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray23;
+        jomniBuilderSetArray24[0] = jomniBuilderSet8;
+        jomniBuilderSetArray24[1] = jomniBuilderSet19;
+        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet29 = org.jomni.util.Maps.setOf(jomniBuilderSetArray24);
+        java.util.Map map30 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray24);
+        java.util.Map<java.lang.String, java.lang.Object> strMap31 = org.jomni.util.Maps.asNestedMap((java.util.Map<java.lang.String, java.lang.Object>) map30);
+        java.util.Map<java.lang.String, java.lang.Object> strMap32 = org.jomni.util.Maps.asFlatMap(strMap31);
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(strMap4);
+        org.junit.Assert.assertNotNull(jomniBuilderArray7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(jomniMapper12);
+        org.junit.Assert.assertNotNull(strMap14);
+        org.junit.Assert.assertNotNull(strMap15);
+        org.junit.Assert.assertNotNull(jomniBuilderArray18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertNotNull(linkedHashSetArray23);
+        org.junit.Assert.assertNotNull(jomniBuilderSetArray24);
+        org.junit.Assert.assertNotNull(jomniBuilderSetSet29);
+        org.junit.Assert.assertNotNull(map30);
+        org.junit.Assert.assertNotNull(strMap31);
+        org.junit.Assert.assertNotNull(strMap32);
+    }
+
+    @Test
+    public void test220() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+        java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet9 = org.jomni.util.Maps.setOf(jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap10 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap11 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map map13 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray8);
+        org.jomni.util.Maps.NamesValues namesValues14 = new org.jomni.util.Maps.NamesValues(strArray6, (java.lang.Object[]) jomniBuilderArray8);
+        java.lang.String[] strArray15 = namesValues14.names;
+        java.lang.String[] strArray16 = namesValues14.names;
+        org.jomni.JomniBuilder[] jomniBuilderArray17 = null;
+        org.jomni.MapperException.Error error18 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass19 = error18.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair20 = org.jomni.util.Pair.newPair(jomniBuilderArray17, (java.lang.reflect.GenericDeclaration) wildcardClass19);
+        org.jomni.MapperException.Error error21 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass22 = error21.getClass();
+        org.jomni.MapperException mapperException23 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass19, (java.lang.Class) wildcardClass22);
+        org.jomni.MapperException.Error error24 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        boolean boolean25 = mapperException23.isError(error24);
+        org.jomni.MapperException.Error error26 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        boolean boolean27 = mapperException23.isError(error26);
+        org.jomni.JomniBuilder[] jomniBuilderArray28 = null;
+        org.jomni.MapperException.Error error29 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass30 = error29.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair31 = org.jomni.util.Pair.newPair(jomniBuilderArray28, (java.lang.reflect.GenericDeclaration) wildcardClass30);
+        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.JomniBuilder jomniBuilder36 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray37 = new org.jomni.JomniBuilder[] { jomniBuilder36 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet38 = org.jomni.util.Maps.setOf(jomniBuilderArray37);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair39 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap35, jomniBuilderSet38);
+        java.lang.Class<?> wildcardClass40 = strMap35.getClass();
+        org.jomni.MapperException mapperException41 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass30, (java.lang.Class) wildcardClass40);
+        mapperException23.addSuppressed((java.lang.Throwable) mapperException41);
+        java.lang.Throwable[] throwableArray43 = mapperException23.getSuppressed();
+        org.jomni.util.Maps.NamesValues namesValues44 = new org.jomni.util.Maps.NamesValues(strArray16, (java.lang.Object[]) throwableArray43);
+        java.lang.Object[] objArray45 = namesValues44.values;
+        java.lang.String[] strArray46 = namesValues44.names;
+        org.junit.Assert.assertNotNull(strArray6);
+        org.junit.Assert.assertNotNull(jomniBuilderArray8);
+        org.junit.Assert.assertNotNull(jomniBuilderSet9);
+        org.junit.Assert.assertNotNull(strMap10);
+        org.junit.Assert.assertNotNull(strMap11);
+        org.junit.Assert.assertNotNull(strMap12);
+        org.junit.Assert.assertNotNull(map13);
+        org.junit.Assert.assertNotNull(strArray15);
+        org.junit.Assert.assertNotNull(strArray16);
+        org.junit.Assert.assertTrue("'" + error18 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error18.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass19);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair20);
+        org.junit.Assert.assertTrue("'" + error21 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error21.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass22);
+        org.junit.Assert.assertNotNull(mapperException23);
+        org.junit.Assert.assertTrue("'" + error24 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error24.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertTrue("'" + error26 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error26.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + true + "'", boolean27 == true);
+        org.junit.Assert.assertTrue("'" + error29 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error29.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass30);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair31);
+        org.junit.Assert.assertNotNull(jomniBuilderArray33);
+        org.junit.Assert.assertNotNull(jomniBuilderSet34);
+        org.junit.Assert.assertNotNull(strMap35);
+        org.junit.Assert.assertNotNull(jomniBuilderArray37);
+        org.junit.Assert.assertNotNull(jomniBuilderSet38);
+        org.junit.Assert.assertNotNull(wildcardClass40);
+        org.junit.Assert.assertNotNull(mapperException41);
+        org.junit.Assert.assertNotNull(throwableArray43);
+        org.junit.Assert.assertNotNull(objArray45);
+        org.junit.Assert.assertEquals(java.util.Arrays.deepToString(objArray45), "[org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap]");
+        org.junit.Assert.assertEquals(java.util.Arrays.toString(objArray45), "[org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap]");
+        org.junit.Assert.assertNotNull(strArray46);
+    }
+
+    @Test
+    public void test221() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        org.jomni.JomniBuilder jomniBuilder4 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray5 = new org.jomni.JomniBuilder[] { jomniBuilder4 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet6 = org.jomni.util.Maps.setOf(jomniBuilderArray5);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair7 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, jomniBuilderSet6);
+        boolean boolean9 = strMapPair7.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper11 = jomniBuilder10.build();
+        boolean boolean12 = strMapPair7.equals((java.lang.Object) jomniMapper11);
+        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper14 = jomniBuilder13.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair16 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper14, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni18 = jomniMapper14.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder20 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper21 = jomniBuilder20.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair23 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper21, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni25 = jomniMapper21.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error27 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass28 = error27.getClass();
+        org.jomni.MapperException.Error error29 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass30 = error29.getClass();
+        java.lang.reflect.Method method31 = null;
+        java.lang.reflect.Method method32 = null;
+        org.jomni.PropInfo propInfo33 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass28, (java.lang.Class) wildcardClass30, method31, method32);
+        java.lang.reflect.Method method34 = propInfo33.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni35 = charSequenceOmni25.setAll((java.lang.Object) method34);
+        charSequenceOmni18.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni25);
+        java.util.Map map37 = charSequenceOmni18.asMap();
+        boolean boolean38 = strMapPair7.equals((java.lang.Object) charSequenceOmni18);
+        java.lang.Class class40 = charSequenceOmni18.getType("");
+        org.jomni.MapperException.Error error42 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass43 = error42.getClass();
+        org.jomni.MapperException.Error error44 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass45 = error44.getClass();
+        java.lang.reflect.Method method46 = null;
+        java.lang.reflect.Method method47 = null;
+        org.jomni.PropInfo propInfo48 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass43, (java.lang.Class) wildcardClass45, method46, method47);
+        java.lang.reflect.Method method49 = propInfo48.getWriteMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni50 = charSequenceOmni18.setAll((java.lang.Object) method49);
+        java.util.Set<java.lang.String> strSet51 = charSequenceOmni50.keySet();
+        org.junit.Assert.assertNotNull(jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderSet2);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(jomniBuilderArray5);
+        org.junit.Assert.assertNotNull(jomniBuilderSet6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(jomniMapper11);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(jomniMapper14);
+        org.junit.Assert.assertNotNull(charSequenceOmni18);
+        org.junit.Assert.assertNotNull(jomniMapper21);
+        org.junit.Assert.assertNotNull(charSequenceOmni25);
+        org.junit.Assert.assertTrue("'" + error27 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error27.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass28);
+        org.junit.Assert.assertTrue("'" + error29 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error29.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass30);
+        org.junit.Assert.assertNull(method34);
+        org.junit.Assert.assertNotNull(charSequenceOmni35);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
+        org.junit.Assert.assertNull(class40);
+        org.junit.Assert.assertTrue("'" + error42 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error42.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass43);
+        org.junit.Assert.assertTrue("'" + error44 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error44.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass45);
+        org.junit.Assert.assertNull(method49);
+        org.junit.Assert.assertNotNull(charSequenceOmni50);
+        org.junit.Assert.assertNotNull(strSet51);
+    }
+
+    @Test
+    public void test222() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        org.jomni.JomniBuilder jomniBuilder4 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray5 = new org.jomni.JomniBuilder[] { jomniBuilder4 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet6 = org.jomni.util.Maps.setOf(jomniBuilderArray5);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair7 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, jomniBuilderSet6);
+        boolean boolean9 = strMapPair7.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper11 = jomniBuilder10.build();
+        boolean boolean12 = strMapPair7.equals((java.lang.Object) jomniMapper11);
+        java.lang.String[] strArray19 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
+        org.jomni.JomniBuilder jomniBuilder20 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray21 = new org.jomni.JomniBuilder[] { jomniBuilder20 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet22 = org.jomni.util.Maps.setOf(jomniBuilderArray21);
+        java.util.Map<java.lang.String, java.lang.Object> strMap23 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray21);
+        java.util.Map<java.lang.String, java.lang.Object> strMap24 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray21);
+        java.util.Map<java.lang.String, java.lang.Object> strMap25 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray21);
+        java.util.Map map26 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray21);
+        org.jomni.util.Maps.NamesValues namesValues27 = new org.jomni.util.Maps.NamesValues(strArray19, (java.lang.Object[]) jomniBuilderArray21);
+        java.lang.String[] strArray28 = namesValues27.names;
+        boolean boolean29 = strMapPair7.equals((java.lang.Object) namesValues27);
+        java.lang.String str30 = strMapPair7.toString();
+        org.junit.Assert.assertNotNull(jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderSet2);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(jomniBuilderArray5);
+        org.junit.Assert.assertNotNull(jomniBuilderSet6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(jomniMapper11);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(strArray19);
+        org.junit.Assert.assertNotNull(jomniBuilderArray21);
+        org.junit.Assert.assertNotNull(jomniBuilderSet22);
+        org.junit.Assert.assertNotNull(strMap23);
+        org.junit.Assert.assertNotNull(strMap24);
+        org.junit.Assert.assertNotNull(strMap25);
+        org.junit.Assert.assertNotNull(map26);
+        org.junit.Assert.assertNotNull(strArray28);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+    }
+
+    @Test
+    public void test223() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test223");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray4 = null;
+        org.jomni.MapperException.Error error5 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass6 = error5.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair7 = org.jomni.util.Pair.newPair(jomniBuilderArray4, (java.lang.reflect.GenericDeclaration) wildcardClass6);
+        org.jomni.ClassInfo classInfo8 = jomniMapper1.getClassInfo((java.lang.Class) wildcardClass6);
+        org.jomni.JomniBuilder jomniBuilder9 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray10 = new org.jomni.JomniBuilder[] { jomniBuilder9 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet11 = org.jomni.util.Maps.setOf(jomniBuilderArray10);
+        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray10);
+        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray14 = new org.jomni.JomniBuilder[] { jomniBuilder13 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet15 = org.jomni.util.Maps.setOf(jomniBuilderArray14);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair16 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap12, jomniBuilderSet15);
+        boolean boolean18 = strMapPair16.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder19 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper20 = jomniBuilder19.build();
+        boolean boolean21 = strMapPair16.equals((java.lang.Object) jomniMapper20);
+        boolean boolean24 = classInfo8.setValue((java.lang.Object) boolean21, "", (java.lang.Object) '4');
+        java.util.Set<java.lang.String> strSet25 = classInfo8.getPropertyNames();
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertTrue("'" + error5 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error5.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair7);
+        org.junit.Assert.assertNotNull(classInfo8);
+        org.junit.Assert.assertNotNull(jomniBuilderArray10);
+        org.junit.Assert.assertNotNull(jomniBuilderSet11);
+        org.junit.Assert.assertNotNull(strMap12);
+        org.junit.Assert.assertNotNull(jomniBuilderArray14);
+        org.junit.Assert.assertNotNull(jomniBuilderSet15);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNotNull(jomniMapper20);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNotNull(strSet25);
+    }
+
+    @Test
+    public void test224() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test224");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray4 = null;
+        org.jomni.MapperException.Error error5 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass6 = error5.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair7 = org.jomni.util.Pair.newPair(jomniBuilderArray4, (java.lang.reflect.GenericDeclaration) wildcardClass6);
+        org.jomni.ClassInfo classInfo8 = jomniMapper1.getClassInfo((java.lang.Class) wildcardClass6);
+        org.jomni.JomniBuilder jomniBuilder9 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray10 = new org.jomni.JomniBuilder[] { jomniBuilder9 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet11 = org.jomni.util.Maps.setOf(jomniBuilderArray10);
+        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray10);
+        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray14 = new org.jomni.JomniBuilder[] { jomniBuilder13 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet15 = org.jomni.util.Maps.setOf(jomniBuilderArray14);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair16 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap12, jomniBuilderSet15);
+        java.lang.String str17 = strMapPair16.toString();
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet18 = strMapPair16.getB();
+        java.lang.Object obj20 = classInfo8.getValue((java.lang.Object) jomniBuilderSet18, "");
+        org.jomni.PropInfo propInfo22 = classInfo8.getPropInfo("hi!");
+        org.jomni.JomniBuilder jomniBuilder23 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper24 = jomniBuilder23.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap26 = jomniMapper24.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap27 = org.jomni.util.Maps.asFlatMap(strMap26);
+        org.jomni.JomniBuilder jomniBuilder28 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder29 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray30 = new org.jomni.JomniBuilder[] { jomniBuilder28, jomniBuilder29 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet31 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean32 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet31, jomniBuilderArray30);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair33 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap26, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet31);
+        org.jomni.JomniBuilder jomniBuilder34 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper35 = jomniBuilder34.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap37 = jomniMapper35.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap38 = org.jomni.util.Maps.asFlatMap(strMap37);
+        org.jomni.JomniBuilder jomniBuilder39 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder40 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray41 = new org.jomni.JomniBuilder[] { jomniBuilder39, jomniBuilder40 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet42 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean43 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet42, jomniBuilderArray41);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair44 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap37, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet42);
+        java.util.LinkedHashSet[] linkedHashSetArray46 = new java.util.LinkedHashSet[2];
+        @SuppressWarnings("unchecked")
+        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray47 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray46;
+        jomniBuilderSetArray47[0] = jomniBuilderSet31;
+        jomniBuilderSetArray47[1] = jomniBuilderSet42;
+        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet52 = org.jomni.util.Maps.setOf(jomniBuilderSetArray47);
+        java.util.Map map53 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray47);
+        java.lang.Object obj55 = classInfo8.getValue((java.lang.Object) jomniBuilderSetArray47, "");
+        org.jomni.JomniBuilder jomniBuilder56 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray57 = new org.jomni.JomniBuilder[] { jomniBuilder56 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet58 = org.jomni.util.Maps.setOf(jomniBuilderArray57);
+        java.util.Map<java.lang.String, java.lang.Object> strMap59 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray57);
+        org.jomni.JomniBuilder jomniBuilder60 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray61 = new org.jomni.JomniBuilder[] { jomniBuilder60 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet62 = org.jomni.util.Maps.setOf(jomniBuilderArray61);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair63 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap59, jomniBuilderSet62);
+        boolean boolean65 = strMapPair63.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder66 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper67 = jomniBuilder66.build();
+        boolean boolean68 = strMapPair63.equals((java.lang.Object) jomniMapper67);
+        java.util.Map<java.lang.String, java.lang.Object> strMap69 = strMapPair63.getA();
+        java.lang.String str70 = strMapPair63.toString();
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet71 = strMapPair63.getB();
+        java.lang.Object obj73 = classInfo8.getValue((java.lang.Object) strMapPair63, "org.jomni.MapperException: Cannot find resolver for sourceClass [Lorg.jomni.JomniBuilder; to targetClass [Lorg.jomni.JomniBuilder;");
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertTrue("'" + error5 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error5.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair7);
+        org.junit.Assert.assertNotNull(classInfo8);
+        org.junit.Assert.assertNotNull(jomniBuilderArray10);
+        org.junit.Assert.assertNotNull(jomniBuilderSet11);
+        org.junit.Assert.assertNotNull(strMap12);
+        org.junit.Assert.assertNotNull(jomniBuilderArray14);
+        org.junit.Assert.assertNotNull(jomniBuilderSet15);
+        org.junit.Assert.assertNotNull(jomniBuilderSet18);
+        org.junit.Assert.assertNull(obj20);
+        org.junit.Assert.assertNull(propInfo22);
+        org.junit.Assert.assertNotNull(jomniMapper24);
+        org.junit.Assert.assertNotNull(strMap26);
+        org.junit.Assert.assertNotNull(strMap27);
+        org.junit.Assert.assertNotNull(jomniBuilderArray30);
+        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + true + "'", boolean32 == true);
+        org.junit.Assert.assertNotNull(jomniMapper35);
+        org.junit.Assert.assertNotNull(strMap37);
+        org.junit.Assert.assertNotNull(strMap38);
+        org.junit.Assert.assertNotNull(jomniBuilderArray41);
+        org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
+        org.junit.Assert.assertNotNull(linkedHashSetArray46);
+        org.junit.Assert.assertNotNull(jomniBuilderSetArray47);
+        org.junit.Assert.assertNotNull(jomniBuilderSetSet52);
+        org.junit.Assert.assertNotNull(map53);
+        org.junit.Assert.assertNull(obj55);
+        org.junit.Assert.assertNotNull(jomniBuilderArray57);
+        org.junit.Assert.assertNotNull(jomniBuilderSet58);
+        org.junit.Assert.assertNotNull(strMap59);
+        org.junit.Assert.assertNotNull(jomniBuilderArray61);
+        org.junit.Assert.assertNotNull(jomniBuilderSet62);
+        org.junit.Assert.assertTrue("'" + boolean65 + "' != '" + false + "'", boolean65 == false);
+        org.junit.Assert.assertNotNull(jomniMapper67);
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + false + "'", boolean68 == false);
+        org.junit.Assert.assertNotNull(strMap69);
+        org.junit.Assert.assertNotNull(jomniBuilderSet71);
+        org.junit.Assert.assertNull(obj73);
+    }
+
+    @Test
+    public void test225() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
+        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
+        java.util.Map map24 = charSequenceOmni5.asMap();
+        java.lang.String[] strArray31 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
+        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap36 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map map37 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.util.Maps.NamesValues namesValues38 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni39 = charSequenceOmni5.setAll((java.lang.Object) namesValues38);
+        java.util.Map map40 = charSequenceOmni39.asMap();
+        java.util.Map<java.lang.String, java.lang.Object> strMap41 = org.jomni.util.Maps.asNestedMap((java.util.Map<java.lang.String, java.lang.Object>) map40);
+        java.util.Map<java.lang.String, java.lang.Object> strMap42 = org.jomni.util.Maps.asFlatMap(strMap41);
+        java.util.Map<java.lang.String, java.lang.Object> strMap43 = org.jomni.util.Maps.asFlatMap(strMap42);
+        java.lang.Object obj45 = org.jomni.util.Maps.nestedValue((java.util.Map) strMap42, "org.jomni.MapperException: Cannot find resolver for sourceClass [Lorg.jomni.JomniBuilder; to targetClass [Lorg.jomni.JomniBuilder;");
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(charSequenceOmni5);
+        org.junit.Assert.assertNotNull(jomniMapper8);
+        org.junit.Assert.assertNotNull(charSequenceOmni12);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNull(method21);
+        org.junit.Assert.assertNotNull(charSequenceOmni22);
+        org.junit.Assert.assertNotNull(map24);
+        org.junit.Assert.assertNotNull(strArray31);
+        org.junit.Assert.assertNotNull(jomniBuilderArray33);
+        org.junit.Assert.assertNotNull(jomniBuilderSet34);
+        org.junit.Assert.assertNotNull(strMap35);
+        org.junit.Assert.assertNotNull(strMap36);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertNotNull(charSequenceOmni39);
+        org.junit.Assert.assertNotNull(map40);
+        org.junit.Assert.assertNotNull(strMap41);
+        org.junit.Assert.assertNotNull(strMap42);
+        org.junit.Assert.assertNotNull(strMap43);
+        org.junit.Assert.assertNull(obj45);
+    }
+
+    @Test
+    public void test226() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap4 = org.jomni.util.Maps.asFlatMap(strMap3);
+        org.jomni.JomniBuilder jomniBuilder5 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder5, jomniBuilder6 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet8 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean9 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet8, jomniBuilderArray7);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair10 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet8);
+        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper12 = jomniBuilder11.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap14 = jomniMapper12.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.asFlatMap(strMap14);
+        org.jomni.JomniBuilder jomniBuilder16 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder17 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray18 = new org.jomni.JomniBuilder[] { jomniBuilder16, jomniBuilder17 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet19 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean20 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet19, jomniBuilderArray18);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair21 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap14, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet19);
+        java.util.LinkedHashSet[] linkedHashSetArray23 = new java.util.LinkedHashSet[2];
+        @SuppressWarnings("unchecked")
+        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray24 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray23;
+        jomniBuilderSetArray24[0] = jomniBuilderSet8;
+        jomniBuilderSetArray24[1] = jomniBuilderSet19;
+        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet29 = org.jomni.util.Maps.setOf(jomniBuilderSetArray24);
+        java.util.Map map30 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray24);
+        org.jomni.util.Maps.NamesValues namesValues31 = org.jomni.util.Maps.namesValuesOf(map30);
+        org.jomni.util.Maps.NamesValues namesValues32 = org.jomni.util.Maps.namesValuesOf(map30);
+        java.lang.String[] strArray33 = namesValues32.names;
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(strMap4);
+        org.junit.Assert.assertNotNull(jomniBuilderArray7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(jomniMapper12);
+        org.junit.Assert.assertNotNull(strMap14);
+        org.junit.Assert.assertNotNull(strMap15);
+        org.junit.Assert.assertNotNull(jomniBuilderArray18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertNotNull(linkedHashSetArray23);
+        org.junit.Assert.assertNotNull(jomniBuilderSetArray24);
+        org.junit.Assert.assertNotNull(jomniBuilderSetSet29);
+        org.junit.Assert.assertNotNull(map30);
+        org.junit.Assert.assertNotNull(namesValues31);
+        org.junit.Assert.assertNotNull(namesValues32);
+        org.junit.Assert.assertNotNull(strArray33);
+    }
+
+    @Test
+    public void test227() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        org.jomni.JomniBuilder jomniBuilder4 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray5 = new org.jomni.JomniBuilder[] { jomniBuilder4 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet6 = org.jomni.util.Maps.setOf(jomniBuilderArray5);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair7 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, jomniBuilderSet6);
+        boolean boolean9 = strMapPair7.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper11 = jomniBuilder10.build();
+        boolean boolean12 = strMapPair7.equals((java.lang.Object) jomniMapper11);
+        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper14 = jomniBuilder13.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair16 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper14, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni18 = jomniMapper14.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder20 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper21 = jomniBuilder20.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair23 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper21, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni25 = jomniMapper21.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error27 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass28 = error27.getClass();
+        org.jomni.MapperException.Error error29 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass30 = error29.getClass();
+        java.lang.reflect.Method method31 = null;
+        java.lang.reflect.Method method32 = null;
+        org.jomni.PropInfo propInfo33 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass28, (java.lang.Class) wildcardClass30, method31, method32);
+        java.lang.reflect.Method method34 = propInfo33.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni35 = charSequenceOmni25.setAll((java.lang.Object) method34);
+        charSequenceOmni18.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni25);
+        java.util.Map map37 = charSequenceOmni18.asMap();
+        boolean boolean38 = strMapPair7.equals((java.lang.Object) charSequenceOmni18);
+        org.jomni.JomniBuilder jomniBuilder39 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper40 = jomniBuilder39.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap42 = jomniMapper40.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap43 = org.jomni.util.Maps.asFlatMap(strMap42);
+        org.jomni.JomniBuilder jomniBuilder44 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder45 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray46 = new org.jomni.JomniBuilder[] { jomniBuilder44, jomniBuilder45 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet47 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean48 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet47, jomniBuilderArray46);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair49 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap42, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet47);
+        org.jomni.JomniBuilder jomniBuilder50 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper51 = jomniBuilder50.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap53 = jomniMapper51.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap54 = org.jomni.util.Maps.asFlatMap(strMap53);
+        org.jomni.JomniBuilder jomniBuilder55 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder56 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray57 = new org.jomni.JomniBuilder[] { jomniBuilder55, jomniBuilder56 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet58 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean59 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet58, jomniBuilderArray57);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair60 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap53, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet58);
+        java.util.LinkedHashSet[] linkedHashSetArray62 = new java.util.LinkedHashSet[2];
+        @SuppressWarnings("unchecked")
+        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray63 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray62;
+        jomniBuilderSetArray63[0] = jomniBuilderSet47;
+        jomniBuilderSetArray63[1] = jomniBuilderSet58;
+        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet68 = org.jomni.util.Maps.setOf(jomniBuilderSetArray63);
+        java.util.Map map69 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray63);
+        org.jomni.util.Maps.NamesValues namesValues70 = org.jomni.util.Maps.namesValuesOf(map69);
+        org.jomni.util.Maps.NamesValues namesValues71 = org.jomni.util.Maps.namesValuesOf(map69);
+        org.jomni.JomniBuilder jomniBuilder72 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper73 = jomniBuilder72.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap75 = jomniMapper73.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap76 = org.jomni.util.Maps.asFlatMap(strMap75);
+        org.jomni.JomniBuilder jomniBuilder77 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder78 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray79 = new org.jomni.JomniBuilder[] { jomniBuilder77, jomniBuilder78 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet80 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean81 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet80, jomniBuilderArray79);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair82 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap75, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet80);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair83 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>((java.util.Map<java.lang.String, java.lang.Object>) map69, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet80);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.util.AbstractCollection<org.jomni.JomniBuilder> jomniBuilderCollection84 = charSequenceOmni18.into((java.util.AbstractCollection<org.jomni.JomniBuilder>) jomniBuilderSet80);
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: java.lang.NoSuchFieldException: TYPE");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderSet2);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(jomniBuilderArray5);
+        org.junit.Assert.assertNotNull(jomniBuilderSet6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(jomniMapper11);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(jomniMapper14);
+        org.junit.Assert.assertNotNull(charSequenceOmni18);
+        org.junit.Assert.assertNotNull(jomniMapper21);
+        org.junit.Assert.assertNotNull(charSequenceOmni25);
+        org.junit.Assert.assertTrue("'" + error27 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error27.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass28);
+        org.junit.Assert.assertTrue("'" + error29 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error29.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass30);
+        org.junit.Assert.assertNull(method34);
+        org.junit.Assert.assertNotNull(charSequenceOmni35);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
+        org.junit.Assert.assertNotNull(jomniMapper40);
+        org.junit.Assert.assertNotNull(strMap42);
+        org.junit.Assert.assertNotNull(strMap43);
+        org.junit.Assert.assertNotNull(jomniBuilderArray46);
+        org.junit.Assert.assertTrue("'" + boolean48 + "' != '" + true + "'", boolean48 == true);
+        org.junit.Assert.assertNotNull(jomniMapper51);
+        org.junit.Assert.assertNotNull(strMap53);
+        org.junit.Assert.assertNotNull(strMap54);
+        org.junit.Assert.assertNotNull(jomniBuilderArray57);
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + true + "'", boolean59 == true);
+        org.junit.Assert.assertNotNull(linkedHashSetArray62);
+        org.junit.Assert.assertNotNull(jomniBuilderSetArray63);
+        org.junit.Assert.assertNotNull(jomniBuilderSetSet68);
+        org.junit.Assert.assertNotNull(map69);
+        org.junit.Assert.assertNotNull(namesValues70);
+        org.junit.Assert.assertNotNull(namesValues71);
+        org.junit.Assert.assertNotNull(jomniMapper73);
+        org.junit.Assert.assertNotNull(strMap75);
+        org.junit.Assert.assertNotNull(strMap76);
+        org.junit.Assert.assertNotNull(jomniBuilderArray79);
+        org.junit.Assert.assertTrue("'" + boolean81 + "' != '" + true + "'", boolean81 == true);
+    }
+
+    @Test
+    public void test228() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test228");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        java.util.Map map4 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap5 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        java.util.Map map6 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderSet2);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(map4);
+        org.junit.Assert.assertNotNull(strMap5);
+        org.junit.Assert.assertNotNull(map6);
+    }
+
+    @Test
+    public void test229() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test229");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
+        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
+        java.util.Map map24 = charSequenceOmni12.asMap();
+        org.jomni.JomniBuilder jomniBuilder25 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray26 = new org.jomni.JomniBuilder[] { jomniBuilder25 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet27 = org.jomni.util.Maps.setOf(jomniBuilderArray26);
+        java.util.Map<java.lang.String, java.lang.Object> strMap28 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray26);
+        org.jomni.JomniBuilder jomniBuilder29 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray30 = new org.jomni.JomniBuilder[] { jomniBuilder29 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet31 = org.jomni.util.Maps.setOf(jomniBuilderArray30);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair32 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap28, jomniBuilderSet31);
+        boolean boolean34 = strMapPair32.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder35 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper36 = jomniBuilder35.build();
+        boolean boolean37 = strMapPair32.equals((java.lang.Object) jomniMapper36);
+        java.util.Map<java.lang.String, java.lang.Object> strMap38 = strMapPair32.getA();
+        java.lang.String str39 = strMapPair32.toString();
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet40 = strMapPair32.getB();
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair41 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>((java.util.Map<java.lang.String, java.lang.Object>) map24, jomniBuilderSet40);
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(charSequenceOmni5);
+        org.junit.Assert.assertNotNull(jomniMapper8);
+        org.junit.Assert.assertNotNull(charSequenceOmni12);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNull(method21);
+        org.junit.Assert.assertNotNull(charSequenceOmni22);
+        org.junit.Assert.assertNotNull(map24);
+        org.junit.Assert.assertNotNull(jomniBuilderArray26);
+        org.junit.Assert.assertNotNull(jomniBuilderSet27);
+        org.junit.Assert.assertNotNull(strMap28);
+        org.junit.Assert.assertNotNull(jomniBuilderArray30);
+        org.junit.Assert.assertNotNull(jomniBuilderSet31);
+        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+        org.junit.Assert.assertNotNull(jomniMapper36);
+        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        org.junit.Assert.assertNotNull(strMap38);
+        org.junit.Assert.assertNotNull(jomniBuilderSet40);
+    }
+
+    @Test
+    public void test230() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test230");
+        java.lang.Class class1 = null;
+        org.jomni.JomniBuilder jomniBuilder2 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray3 = new org.jomni.JomniBuilder[] { jomniBuilder2 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet4 = org.jomni.util.Maps.setOf(jomniBuilderArray3);
+        java.util.Map<java.lang.String, java.lang.Object> strMap5 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray3);
+        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder6 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet8 = org.jomni.util.Maps.setOf(jomniBuilderArray7);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair9 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap5, jomniBuilderSet8);
+        java.lang.Class<?> wildcardClass10 = strMap5.getClass();
+        java.lang.reflect.Method method11 = null;
+        java.lang.reflect.Method method12 = null;
+        org.jomni.PropInfo propInfo13 = new org.jomni.PropInfo("", class1, (java.lang.Class) wildcardClass10, method11, method12);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str14 = propInfo13.toString();
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(jomniBuilderArray3);
+        org.junit.Assert.assertNotNull(jomniBuilderSet4);
+        org.junit.Assert.assertNotNull(strMap5);
+        org.junit.Assert.assertNotNull(jomniBuilderArray7);
+        org.junit.Assert.assertNotNull(jomniBuilderSet8);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+    @Test
+    public void test231() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test231");
+        java.lang.Class class1 = null;
+        java.lang.Class class2 = null;
+        java.lang.reflect.Method method3 = null;
+        java.lang.reflect.Method method4 = null;
+        org.jomni.PropInfo propInfo5 = new org.jomni.PropInfo("", class1, class2, method3, method4);
+        java.util.Optional<java.lang.Class> classOptional6 = propInfo5.getGenericType();
+        java.lang.reflect.Method method7 = propInfo5.getWriteMethod();
+        org.jomni.JomniBuilder[] jomniBuilderArray8 = null;
+        org.jomni.MapperException.Error error9 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass10 = error9.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair11 = org.jomni.util.Pair.newPair(jomniBuilderArray8, (java.lang.reflect.GenericDeclaration) wildcardClass10);
+        org.jomni.MapperException.Error error12 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass13 = error12.getClass();
+        org.jomni.MapperException mapperException14 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass10, (java.lang.Class) wildcardClass13);
+        org.jomni.JomniBuilder jomniBuilder15 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper16 = jomniBuilder15.build();
+        org.jomni.JomniBuilder[] jomniBuilderArray17 = new org.jomni.JomniBuilder[] { jomniBuilder15 };
+        java.util.HashSet<org.jomni.JomniBuilder> jomniBuilderSet18 = new java.util.HashSet<org.jomni.JomniBuilder>();
+        boolean boolean19 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet18, jomniBuilderArray17);
+        org.jomni.util.Pair<java.lang.reflect.GenericDeclaration, java.util.HashSet<org.jomni.JomniBuilder>> genericDeclarationPair20 = org.jomni.util.Pair.newPair((java.lang.reflect.GenericDeclaration) wildcardClass13, jomniBuilderSet18);
+        org.jomni.util.Pair<org.jomni.PropInfo, java.util.AbstractSet<org.jomni.JomniBuilder>> propInfoPair21 = org.jomni.util.Pair.newPair(propInfo5, (java.util.AbstractSet<org.jomni.JomniBuilder>) jomniBuilderSet18);
+        java.lang.String str22 = propInfo5.getName();
+        org.junit.Assert.assertNotNull(classOptional6);
+        org.junit.Assert.assertNull(method7);
+        org.junit.Assert.assertTrue("'" + error9 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error9.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair11);
+        org.junit.Assert.assertTrue("'" + error12 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error12.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass13);
+        org.junit.Assert.assertNotNull(mapperException14);
+        org.junit.Assert.assertNotNull(jomniMapper16);
+        org.junit.Assert.assertNotNull(jomniBuilderArray17);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
+        org.junit.Assert.assertNotNull(genericDeclarationPair20);
+        org.junit.Assert.assertNotNull(propInfoPair21);
+        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "" + "'", str22, "");
+    }
+
+    @Test
+    public void test232() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
+        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
+        java.util.Map map24 = charSequenceOmni5.asMap();
+        java.lang.String[] strArray31 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
+        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap36 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map map37 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.util.Maps.NamesValues namesValues38 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni39 = charSequenceOmni5.setAll((java.lang.Object) namesValues38);
+        org.jomni.MapperException.Error error41 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass42 = error41.getClass();
+        org.jomni.MapperException.Error error43 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass44 = error43.getClass();
+        java.lang.reflect.Method method45 = null;
+        java.lang.reflect.Method method46 = null;
+        org.jomni.PropInfo propInfo47 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass42, (java.lang.Class) wildcardClass44, method45, method46);
+        java.lang.reflect.Method method48 = propInfo47.getWriteMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni49 = charSequenceOmni39.setAll((java.lang.Object) method48);
+        java.lang.CharSequence charSequence50 = charSequenceOmni39.get();
+        java.lang.Object obj52 = charSequenceOmni39.get("hi!");
+        org.jomni.JomniBuilder jomniBuilder54 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray55 = new org.jomni.JomniBuilder[] { jomniBuilder54 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet56 = org.jomni.util.Maps.setOf(jomniBuilderArray55);
+        java.util.Map<java.lang.String, java.lang.Object> strMap57 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
+        java.util.Map<java.lang.String, java.lang.Object> strMap58 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
+        java.util.Map<java.lang.String, java.lang.Object> strMap59 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray55);
+        java.util.Map map60 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray55);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni61 = charSequenceOmni39.set("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) map60);
+        java.lang.Object obj63 = org.jomni.util.Maps.nestedValue(map60, "org.jomni.MapperException: Cannot find resolver for sourceClass [Lorg.jomni.JomniBuilder; to targetClass [Lorg.jomni.JomniBuilder;");
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(charSequenceOmni5);
+        org.junit.Assert.assertNotNull(jomniMapper8);
+        org.junit.Assert.assertNotNull(charSequenceOmni12);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNull(method21);
+        org.junit.Assert.assertNotNull(charSequenceOmni22);
+        org.junit.Assert.assertNotNull(map24);
+        org.junit.Assert.assertNotNull(strArray31);
+        org.junit.Assert.assertNotNull(jomniBuilderArray33);
+        org.junit.Assert.assertNotNull(jomniBuilderSet34);
+        org.junit.Assert.assertNotNull(strMap35);
+        org.junit.Assert.assertNotNull(strMap36);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertNotNull(charSequenceOmni39);
+        org.junit.Assert.assertTrue("'" + error41 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error41.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass42);
+        org.junit.Assert.assertTrue("'" + error43 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error43.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass44);
+        org.junit.Assert.assertNull(method48);
+        org.junit.Assert.assertNotNull(charSequenceOmni49);
+        org.junit.Assert.assertEquals("'" + charSequence50 + "' != '" + "" + "'", charSequence50, "");
+        org.junit.Assert.assertNull(obj52);
+        org.junit.Assert.assertNotNull(jomniBuilderArray55);
+        org.junit.Assert.assertNotNull(jomniBuilderSet56);
+        org.junit.Assert.assertNotNull(strMap57);
+        org.junit.Assert.assertNotNull(strMap58);
+        org.junit.Assert.assertNotNull(strMap59);
+        org.junit.Assert.assertNotNull(map60);
+        org.junit.Assert.assertNotNull(charSequenceOmni61);
+        org.junit.Assert.assertNull(obj63);
+    }
+
+    @Test
+    public void test233() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test233");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray1 = new org.jomni.JomniBuilder[] { jomniBuilder0 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet2 = org.jomni.util.Maps.setOf(jomniBuilderArray1);
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray1);
+        org.jomni.JomniBuilder jomniBuilder4 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray5 = new org.jomni.JomniBuilder[] { jomniBuilder4 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet6 = org.jomni.util.Maps.setOf(jomniBuilderArray5);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair7 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, jomniBuilderSet6);
+        boolean boolean9 = strMapPair7.equals((java.lang.Object) (byte) -1);
+        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper11 = jomniBuilder10.build();
+        boolean boolean12 = strMapPair7.equals((java.lang.Object) jomniMapper11);
+        org.jomni.JomniBuilder jomniBuilder13 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper14 = jomniBuilder13.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair16 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper14, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni18 = jomniMapper14.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder20 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper21 = jomniBuilder20.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair23 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper21, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni25 = jomniMapper21.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error27 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass28 = error27.getClass();
+        org.jomni.MapperException.Error error29 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass30 = error29.getClass();
+        java.lang.reflect.Method method31 = null;
+        java.lang.reflect.Method method32 = null;
+        org.jomni.PropInfo propInfo33 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass28, (java.lang.Class) wildcardClass30, method31, method32);
+        java.lang.reflect.Method method34 = propInfo33.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni35 = charSequenceOmni25.setAll((java.lang.Object) method34);
+        charSequenceOmni18.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni25);
+        java.util.Map map37 = charSequenceOmni18.asMap();
+        boolean boolean38 = strMapPair7.equals((java.lang.Object) charSequenceOmni18);
+        java.lang.Class class40 = charSequenceOmni18.getType("");
+        org.jomni.MapperException.Error error42 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass43 = error42.getClass();
+        org.jomni.MapperException.Error error44 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass45 = error44.getClass();
+        java.lang.reflect.Method method46 = null;
+        java.lang.reflect.Method method47 = null;
+        org.jomni.PropInfo propInfo48 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass43, (java.lang.Class) wildcardClass45, method46, method47);
+        java.lang.reflect.Method method49 = propInfo48.getWriteMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni50 = charSequenceOmni18.setAll((java.lang.Object) method49);
+        java.lang.CharSequence charSequence51 = charSequenceOmni50.get();
+        java.lang.Class class53 = charSequenceOmni50.getType("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni56 = charSequenceOmni50.set("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) 10.0d);
+        org.jomni.MapperException.Error error59 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass60 = error59.getClass();
+        org.jomni.MapperException.Error error61 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass62 = error61.getClass();
+        java.lang.reflect.Method method63 = null;
+        java.lang.reflect.Method method64 = null;
+        org.jomni.PropInfo propInfo65 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass60, (java.lang.Class) wildcardClass62, method63, method64);
+        java.lang.reflect.Method method66 = propInfo65.getWriteMethod();
+        java.lang.reflect.Method method67 = propInfo65.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni68 = charSequenceOmni50.set("hi!", (java.lang.Object) propInfo65);
+        org.junit.Assert.assertNotNull(jomniBuilderArray1);
+        org.junit.Assert.assertNotNull(jomniBuilderSet2);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(jomniBuilderArray5);
+        org.junit.Assert.assertNotNull(jomniBuilderSet6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(jomniMapper11);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(jomniMapper14);
+        org.junit.Assert.assertNotNull(charSequenceOmni18);
+        org.junit.Assert.assertNotNull(jomniMapper21);
+        org.junit.Assert.assertNotNull(charSequenceOmni25);
+        org.junit.Assert.assertTrue("'" + error27 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error27.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass28);
+        org.junit.Assert.assertTrue("'" + error29 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error29.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass30);
+        org.junit.Assert.assertNull(method34);
+        org.junit.Assert.assertNotNull(charSequenceOmni35);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + false + "'", boolean38 == false);
+        org.junit.Assert.assertNull(class40);
+        org.junit.Assert.assertTrue("'" + error42 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error42.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass43);
+        org.junit.Assert.assertTrue("'" + error44 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error44.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass45);
+        org.junit.Assert.assertNull(method49);
+        org.junit.Assert.assertNotNull(charSequenceOmni50);
+        org.junit.Assert.assertEquals("'" + charSequence51 + "' != '" + "" + "'", charSequence51, "");
+        org.junit.Assert.assertNull(class53);
+        org.junit.Assert.assertNotNull(charSequenceOmni56);
+        org.junit.Assert.assertTrue("'" + error59 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error59.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass60);
+        org.junit.Assert.assertTrue("'" + error61 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error61.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass62);
+        org.junit.Assert.assertNull(method66);
+        org.junit.Assert.assertNull(method67);
+        org.junit.Assert.assertNotNull(charSequenceOmni68);
+    }
+
+    @Test
+    public void test234() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test234");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
+        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
+        boolean boolean25 = charSequenceOmni5.containsKey("");
+        java.util.Set<java.lang.String> strSet26 = charSequenceOmni5.keySet();
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(charSequenceOmni5);
+        org.junit.Assert.assertNotNull(jomniMapper8);
+        org.junit.Assert.assertNotNull(charSequenceOmni12);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNull(method21);
+        org.junit.Assert.assertNotNull(charSequenceOmni22);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertNotNull(strSet26);
+    }
+
+    @Test
+    public void test235() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test235");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray4 = null;
+        org.jomni.MapperException.Error error5 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass6 = error5.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair7 = org.jomni.util.Pair.newPair(jomniBuilderArray4, (java.lang.reflect.GenericDeclaration) wildcardClass6);
+        org.jomni.ClassInfo classInfo8 = jomniMapper1.getClassInfo((java.lang.Class) wildcardClass6);
+        org.jomni.PropInfo propInfo10 = classInfo8.getPropInfo("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error");
+        java.lang.String[] strArray11 = null;
+        org.jomni.JomniBuilder jomniBuilder12 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray13 = new org.jomni.JomniBuilder[] { jomniBuilder12 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet14 = org.jomni.util.Maps.setOf(jomniBuilderArray13);
+        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray13);
+        java.util.Map map16 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray13);
+        java.util.Map map17 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray13);
+        org.jomni.util.Maps.NamesValues namesValues18 = new org.jomni.util.Maps.NamesValues(strArray11, (java.lang.Object[]) jomniBuilderArray13);
+        org.jomni.MapperException.Error error21 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass22 = error21.getClass();
+        org.jomni.MapperException.Error error23 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass24 = error23.getClass();
+        java.lang.reflect.Method method25 = null;
+        java.lang.reflect.Method method26 = null;
+        org.jomni.PropInfo propInfo27 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass22, (java.lang.Class) wildcardClass24, method25, method26);
+        org.jomni.ClassInfo classInfo28 = new org.jomni.ClassInfo((java.lang.Class) wildcardClass22);
+        java.util.Set<java.lang.String> strSet29 = classInfo28.getPropertyNames();
+        boolean boolean30 = classInfo8.setValue((java.lang.Object) jomniBuilderArray13, "", (java.lang.Object) strSet29);
+        java.lang.Class class31 = classInfo8.getObjectClass();
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertTrue("'" + error5 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error5.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair7);
+        org.junit.Assert.assertNotNull(classInfo8);
+        org.junit.Assert.assertNull(propInfo10);
+        org.junit.Assert.assertNotNull(jomniBuilderArray13);
+        org.junit.Assert.assertNotNull(jomniBuilderSet14);
+        org.junit.Assert.assertNotNull(strMap15);
+        org.junit.Assert.assertNotNull(map16);
+        org.junit.Assert.assertNotNull(map17);
+        org.junit.Assert.assertTrue("'" + error21 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error21.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass22);
+        org.junit.Assert.assertTrue("'" + error23 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error23.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass24);
+        org.junit.Assert.assertNotNull(strSet29);
+        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        org.junit.Assert.assertNotNull(class31);
+    }
+
+    @Test
+    public void test236() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+        java.lang.Class class1 = null;
+        java.lang.Class class2 = null;
+        java.lang.reflect.Method method3 = null;
+        java.lang.reflect.Method method4 = null;
+        org.jomni.PropInfo propInfo5 = new org.jomni.PropInfo("", class1, class2, method3, method4);
+        java.lang.String str6 = propInfo5.getName();
+        java.util.Optional<java.lang.Class> classOptional7 = propInfo5.getGenericType();
+        java.lang.reflect.Method method8 = propInfo5.getReadMethod();
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+        org.junit.Assert.assertNotNull(classOptional7);
+        org.junit.Assert.assertNull(method8);
+    }
+
+    @Test
+    public void test237() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test237");
+        org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass2 = error1.getClass();
+        org.jomni.MapperException.Error error3 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass4 = error3.getClass();
+        java.lang.reflect.Method method5 = null;
+        java.lang.reflect.Method method6 = null;
+        org.jomni.PropInfo propInfo7 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass2, (java.lang.Class) wildcardClass4, method5, method6);
+        org.jomni.ClassInfo classInfo8 = new org.jomni.ClassInfo((java.lang.Class) wildcardClass2);
+        java.util.Set<java.lang.String> strSet9 = classInfo8.getPropertyNames();
+        java.util.Set<java.lang.String> strSet10 = classInfo8.getPropertyNames();
+        org.junit.Assert.assertTrue("'" + error1 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error1.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass2);
+        org.junit.Assert.assertTrue("'" + error3 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error3.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertNotNull(strSet9);
+        org.junit.Assert.assertNotNull(strSet10);
+    }
+
+    @Test
+    public void test238() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test238");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        java.util.Map<java.lang.String, java.lang.Object> strMap5 = jomniMapper1.asMap((java.lang.Object) (short) 1);
+        org.jomni.Omni<java.lang.Number> numberOmni7 = jomniMapper1.omni((java.lang.Number) 0L);
+        org.jomni.MapperException.Error error9 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass10 = error9.getClass();
+        org.jomni.MapperException.Error error11 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass12 = error11.getClass();
+        java.lang.reflect.Method method13 = null;
+        java.lang.reflect.Method method14 = null;
+        org.jomni.PropInfo propInfo15 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass10, (java.lang.Class) wildcardClass12, method13, method14);
+        java.lang.reflect.Method method16 = propInfo15.getReadMethod();
+        java.util.Map<java.lang.String, java.lang.Object> strMap17 = jomniMapper1.asMap((java.lang.Object) propInfo15);
+        org.jomni.JomniBuilder jomniBuilder18 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper19 = jomniBuilder18.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap21 = jomniMapper19.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray22 = null;
+        org.jomni.MapperException.Error error23 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass24 = error23.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair25 = org.jomni.util.Pair.newPair(jomniBuilderArray22, (java.lang.reflect.GenericDeclaration) wildcardClass24);
+        org.jomni.ClassInfo classInfo26 = jomniMapper19.getClassInfo((java.lang.Class) wildcardClass24);
+        org.jomni.JomniBuilder jomniBuilder27 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray28 = new org.jomni.JomniBuilder[] { jomniBuilder27 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet29 = org.jomni.util.Maps.setOf(jomniBuilderArray28);
+        java.util.Map<java.lang.String, java.lang.Object> strMap30 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray28);
+        org.jomni.JomniBuilder jomniBuilder31 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray32 = new org.jomni.JomniBuilder[] { jomniBuilder31 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet33 = org.jomni.util.Maps.setOf(jomniBuilderArray32);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair34 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap30, jomniBuilderSet33);
+        java.lang.String str35 = strMapPair34.toString();
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet36 = strMapPair34.getB();
+        java.lang.Object obj38 = classInfo26.getValue((java.lang.Object) jomniBuilderSet36, "");
+        org.jomni.PropInfo propInfo40 = classInfo26.getPropInfo("hi!");
+        java.lang.Class class41 = classInfo26.getObjectClass();
+        java.util.Map<java.lang.String, java.lang.Object> strMap42 = jomniMapper1.asMap((java.lang.Object) class41);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni44 = jomniMapper1.omni((java.lang.CharSequence) "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error");
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap5);
+        org.junit.Assert.assertNotNull(numberOmni7);
+        org.junit.Assert.assertTrue("'" + error9 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error9.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertTrue("'" + error11 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error11.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass12);
+        org.junit.Assert.assertNull(method16);
+        org.junit.Assert.assertNotNull(strMap17);
+        org.junit.Assert.assertNotNull(jomniMapper19);
+        org.junit.Assert.assertNotNull(strMap21);
+        org.junit.Assert.assertTrue("'" + error23 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error23.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass24);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair25);
+        org.junit.Assert.assertNotNull(classInfo26);
+        org.junit.Assert.assertNotNull(jomniBuilderArray28);
+        org.junit.Assert.assertNotNull(jomniBuilderSet29);
+        org.junit.Assert.assertNotNull(strMap30);
+        org.junit.Assert.assertNotNull(jomniBuilderArray32);
+        org.junit.Assert.assertNotNull(jomniBuilderSet33);
+        org.junit.Assert.assertNotNull(jomniBuilderSet36);
+        org.junit.Assert.assertNull(obj38);
+        org.junit.Assert.assertNull(propInfo40);
+        org.junit.Assert.assertNotNull(class41);
+        org.junit.Assert.assertNotNull(strMap42);
+        org.junit.Assert.assertNotNull(charSequenceOmni44);
+    }
+
+    @Test
+    public void test239() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap4 = org.jomni.util.Maps.asFlatMap(strMap3);
+        org.jomni.JomniBuilder jomniBuilder5 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder6 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray7 = new org.jomni.JomniBuilder[] { jomniBuilder5, jomniBuilder6 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet8 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean9 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet8, jomniBuilderArray7);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair10 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap3, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet8);
+        org.jomni.JomniBuilder jomniBuilder11 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper12 = jomniBuilder11.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap14 = jomniMapper12.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap15 = org.jomni.util.Maps.asFlatMap(strMap14);
+        org.jomni.JomniBuilder jomniBuilder16 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder17 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray18 = new org.jomni.JomniBuilder[] { jomniBuilder16, jomniBuilder17 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet19 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean20 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet19, jomniBuilderArray18);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair21 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap14, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet19);
+        java.util.LinkedHashSet[] linkedHashSetArray23 = new java.util.LinkedHashSet[2];
+        @SuppressWarnings("unchecked")
+        java.util.LinkedHashSet<org.jomni.JomniBuilder>[] jomniBuilderSetArray24 = (java.util.LinkedHashSet<org.jomni.JomniBuilder>[]) linkedHashSetArray23;
+        jomniBuilderSetArray24[0] = jomniBuilderSet8;
+        jomniBuilderSetArray24[1] = jomniBuilderSet19;
+        java.util.Set<java.util.LinkedHashSet<org.jomni.JomniBuilder>> jomniBuilderSetSet29 = org.jomni.util.Maps.setOf(jomniBuilderSetArray24);
+        java.util.Map map30 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderSetArray24);
+        org.jomni.util.Maps.NamesValues namesValues31 = org.jomni.util.Maps.namesValuesOf(map30);
+        org.jomni.util.Maps.NamesValues namesValues32 = org.jomni.util.Maps.namesValuesOf(map30);
+        org.jomni.JomniBuilder jomniBuilder33 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper34 = jomniBuilder33.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap36 = jomniMapper34.asMap((java.lang.Object) 0L);
+        java.util.Map<java.lang.String, java.lang.Object> strMap37 = org.jomni.util.Maps.asFlatMap(strMap36);
+        org.jomni.JomniBuilder jomniBuilder38 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder jomniBuilder39 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray40 = new org.jomni.JomniBuilder[] { jomniBuilder38, jomniBuilder39 };
+        java.util.LinkedHashSet<org.jomni.JomniBuilder> jomniBuilderSet41 = new java.util.LinkedHashSet<org.jomni.JomniBuilder>();
+        boolean boolean42 = java.util.Collections.addAll((java.util.Collection<org.jomni.JomniBuilder>) jomniBuilderSet41, jomniBuilderArray40);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair43 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap36, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet41);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair44 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>((java.util.Map<java.lang.String, java.lang.Object>) map30, (java.util.Set<org.jomni.JomniBuilder>) jomniBuilderSet41);
+        org.jomni.JomniBuilder jomniBuilder45 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper46 = jomniBuilder45.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair48 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper46, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni50 = jomniMapper46.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder52 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper53 = jomniBuilder52.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair55 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper53, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni57 = jomniMapper53.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error59 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass60 = error59.getClass();
+        org.jomni.MapperException.Error error61 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass62 = error61.getClass();
+        java.lang.reflect.Method method63 = null;
+        java.lang.reflect.Method method64 = null;
+        org.jomni.PropInfo propInfo65 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass60, (java.lang.Class) wildcardClass62, method63, method64);
+        java.lang.reflect.Method method66 = propInfo65.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni67 = charSequenceOmni57.setAll((java.lang.Object) method66);
+        charSequenceOmni50.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni57);
+        java.util.Map map69 = charSequenceOmni50.asMap();
+        boolean boolean70 = strMapPair44.equals((java.lang.Object) map69);
+        java.util.Map<java.lang.String, java.lang.Object> strMap71 = strMapPair44.getA();
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertNotNull(strMap4);
+        org.junit.Assert.assertNotNull(jomniBuilderArray7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        org.junit.Assert.assertNotNull(jomniMapper12);
+        org.junit.Assert.assertNotNull(strMap14);
+        org.junit.Assert.assertNotNull(strMap15);
+        org.junit.Assert.assertNotNull(jomniBuilderArray18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
+        org.junit.Assert.assertNotNull(linkedHashSetArray23);
+        org.junit.Assert.assertNotNull(jomniBuilderSetArray24);
+        org.junit.Assert.assertNotNull(jomniBuilderSetSet29);
+        org.junit.Assert.assertNotNull(map30);
+        org.junit.Assert.assertNotNull(namesValues31);
+        org.junit.Assert.assertNotNull(namesValues32);
+        org.junit.Assert.assertNotNull(jomniMapper34);
+        org.junit.Assert.assertNotNull(strMap36);
+        org.junit.Assert.assertNotNull(strMap37);
+        org.junit.Assert.assertNotNull(jomniBuilderArray40);
+        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + true + "'", boolean42 == true);
+        org.junit.Assert.assertNotNull(jomniMapper46);
+        org.junit.Assert.assertNotNull(charSequenceOmni50);
+        org.junit.Assert.assertNotNull(jomniMapper53);
+        org.junit.Assert.assertNotNull(charSequenceOmni57);
+        org.junit.Assert.assertTrue("'" + error59 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error59.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass60);
+        org.junit.Assert.assertTrue("'" + error61 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error61.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass62);
+        org.junit.Assert.assertNull(method66);
+        org.junit.Assert.assertNotNull(charSequenceOmni67);
+        org.junit.Assert.assertNotNull(map69);
+        org.junit.Assert.assertTrue("'" + boolean70 + "' != '" + false + "'", boolean70 == false);
+        org.junit.Assert.assertNotNull(strMap71);
+    }
+
+    @Test
+    public void test240() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test240");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.JomniMapper jomniMapper2 = jomniBuilder0.build();
+        org.jomni.Omni<java.lang.Comparable<java.lang.String>> strComparableOmni4 = jomniMapper2.omni((java.lang.Comparable<java.lang.String>) "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error");
+        org.jomni.JomniBuilder[] jomniBuilderArray6 = null;
+        org.jomni.MapperException.Error error7 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass8 = error7.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair9 = org.jomni.util.Pair.newPair(jomniBuilderArray6, (java.lang.reflect.GenericDeclaration) wildcardClass8);
+        org.jomni.JomniBuilder jomniBuilder10 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray11 = new org.jomni.JomniBuilder[] { jomniBuilder10 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet12 = org.jomni.util.Maps.setOf(jomniBuilderArray11);
+        java.util.Map<java.lang.String, java.lang.Object> strMap13 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray11);
+        org.jomni.JomniBuilder jomniBuilder14 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray15 = new org.jomni.JomniBuilder[] { jomniBuilder14 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet16 = org.jomni.util.Maps.setOf(jomniBuilderArray15);
+        org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>> strMapPair17 = new org.jomni.util.Pair<java.util.Map<java.lang.String, java.lang.Object>, java.util.Set<org.jomni.JomniBuilder>>(strMap13, jomniBuilderSet16);
+        java.lang.Class<?> wildcardClass18 = strMap13.getClass();
+        org.jomni.MapperException mapperException19 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass8, (java.lang.Class) wildcardClass18);
+        org.jomni.JomniBuilder[] jomniBuilderArray20 = null;
+        org.jomni.MapperException.Error error21 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass22 = error21.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair23 = org.jomni.util.Pair.newPair(jomniBuilderArray20, (java.lang.reflect.GenericDeclaration) wildcardClass22);
+        org.jomni.MapperException.Error error24 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass25 = error24.getClass();
+        org.jomni.MapperException mapperException26 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass22, (java.lang.Class) wildcardClass25);
+        org.jomni.MapperException.Error error28 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass29 = error28.getClass();
+        org.jomni.MapperException.Error error30 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass31 = error30.getClass();
+        java.lang.reflect.Method method32 = null;
+        java.lang.reflect.Method method33 = null;
+        org.jomni.PropInfo propInfo34 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass29, (java.lang.Class) wildcardClass31, method32, method33);
+        org.jomni.MapperException mapperException35 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass25, (java.lang.Class) wildcardClass31);
+        java.lang.reflect.Method method36 = null;
+        java.lang.reflect.Method method37 = null;
+        org.jomni.PropInfo propInfo38 = new org.jomni.PropInfo("", (java.lang.Class) wildcardClass18, (java.lang.Class) wildcardClass25, method36, method37);
+        org.jomni.ClassInfo classInfo39 = jomniMapper2.getClassInfo((java.lang.Class) wildcardClass18);
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(jomniMapper2);
+        org.junit.Assert.assertNotNull(strComparableOmni4);
+        org.junit.Assert.assertTrue("'" + error7 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error7.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass8);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair9);
+        org.junit.Assert.assertNotNull(jomniBuilderArray11);
+        org.junit.Assert.assertNotNull(jomniBuilderSet12);
+        org.junit.Assert.assertNotNull(strMap13);
+        org.junit.Assert.assertNotNull(jomniBuilderArray15);
+        org.junit.Assert.assertNotNull(jomniBuilderSet16);
+        org.junit.Assert.assertNotNull(wildcardClass18);
+        org.junit.Assert.assertNotNull(mapperException19);
+        org.junit.Assert.assertTrue("'" + error21 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error21.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass22);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair23);
+        org.junit.Assert.assertTrue("'" + error24 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error24.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass25);
+        org.junit.Assert.assertNotNull(mapperException26);
+        org.junit.Assert.assertTrue("'" + error28 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error28.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass29);
+        org.junit.Assert.assertTrue("'" + error30 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error30.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass31);
+        org.junit.Assert.assertNotNull(mapperException35);
+        org.junit.Assert.assertNotNull(classInfo39);
+    }
+
+    @Test
+    public void test241() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test241");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        java.util.Map<java.lang.String, java.lang.Object> strMap3 = jomniMapper1.asMap((java.lang.Object) 0L);
+        org.jomni.JomniBuilder[] jomniBuilderArray4 = null;
+        org.jomni.MapperException.Error error5 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass6 = error5.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair7 = org.jomni.util.Pair.newPair(jomniBuilderArray4, (java.lang.reflect.GenericDeclaration) wildcardClass6);
+        org.jomni.ClassInfo classInfo8 = jomniMapper1.getClassInfo((java.lang.Class) wildcardClass6);
+        boolean boolean12 = classInfo8.setValue((java.lang.Object) 100.0d, "", (java.lang.Object) (-1.0d));
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.util.Optional<java.lang.Class> classOptional21 = propInfo20.getGenericType();
+        java.util.Optional<java.lang.Class> classOptional22 = propInfo20.getGenericType();
+        java.lang.Object obj24 = classInfo8.getValue((java.lang.Object) classOptional22, "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error");
+        java.util.Set<java.lang.String> strSet25 = classInfo8.getPropertyNames();
+        org.jomni.JomniBuilder jomniBuilder26 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper27 = jomniBuilder26.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair29 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper27, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni31 = jomniMapper27.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder33 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper34 = jomniBuilder33.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair36 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper34, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni38 = jomniMapper34.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error40 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass41 = error40.getClass();
+        org.jomni.MapperException.Error error42 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass43 = error42.getClass();
+        java.lang.reflect.Method method44 = null;
+        java.lang.reflect.Method method45 = null;
+        org.jomni.PropInfo propInfo46 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass41, (java.lang.Class) wildcardClass43, method44, method45);
+        java.lang.reflect.Method method47 = propInfo46.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni48 = charSequenceOmni38.setAll((java.lang.Object) method47);
+        charSequenceOmni31.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni38);
+        java.util.Map map50 = charSequenceOmni31.asMap();
+        java.lang.String[] strArray57 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
+        org.jomni.JomniBuilder jomniBuilder58 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray59 = new org.jomni.JomniBuilder[] { jomniBuilder58 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet60 = org.jomni.util.Maps.setOf(jomniBuilderArray59);
+        java.util.Map<java.lang.String, java.lang.Object> strMap61 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray59);
+        java.util.Map<java.lang.String, java.lang.Object> strMap62 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray59);
+        java.util.Map map63 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray59);
+        org.jomni.util.Maps.NamesValues namesValues64 = new org.jomni.util.Maps.NamesValues(strArray57, (java.lang.Object[]) jomniBuilderArray59);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni65 = charSequenceOmni31.setAll((java.lang.Object) namesValues64);
+        java.util.Map map66 = charSequenceOmni65.asMap();
+        boolean boolean68 = charSequenceOmni65.containsKey("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass java.util.HashMap");
+        java.lang.Object obj70 = classInfo8.getValue((java.lang.Object) charSequenceOmni65, "");
+        java.lang.Class class72 = charSequenceOmni65.getType("");
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(strMap3);
+        org.junit.Assert.assertTrue("'" + error5 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error5.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair7);
+        org.junit.Assert.assertNotNull(classInfo8);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNotNull(classOptional21);
+        org.junit.Assert.assertNotNull(classOptional22);
+        org.junit.Assert.assertNull(obj24);
+        org.junit.Assert.assertNotNull(strSet25);
+        org.junit.Assert.assertNotNull(jomniMapper27);
+        org.junit.Assert.assertNotNull(charSequenceOmni31);
+        org.junit.Assert.assertNotNull(jomniMapper34);
+        org.junit.Assert.assertNotNull(charSequenceOmni38);
+        org.junit.Assert.assertTrue("'" + error40 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error40.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass41);
+        org.junit.Assert.assertTrue("'" + error42 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error42.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass43);
+        org.junit.Assert.assertNull(method47);
+        org.junit.Assert.assertNotNull(charSequenceOmni48);
+        org.junit.Assert.assertNotNull(map50);
+        org.junit.Assert.assertNotNull(strArray57);
+        org.junit.Assert.assertNotNull(jomniBuilderArray59);
+        org.junit.Assert.assertNotNull(jomniBuilderSet60);
+        org.junit.Assert.assertNotNull(strMap61);
+        org.junit.Assert.assertNotNull(strMap62);
+        org.junit.Assert.assertNotNull(map63);
+        org.junit.Assert.assertNotNull(charSequenceOmni65);
+        org.junit.Assert.assertNotNull(map66);
+        org.junit.Assert.assertTrue("'" + boolean68 + "' != '" + false + "'", boolean68 == false);
+        org.junit.Assert.assertNull(obj70);
+        org.junit.Assert.assertNull(class72);
+    }
+
+    @Test
+    public void test242() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test242");
+        org.jomni.JomniBuilder[] jomniBuilderArray0 = null;
+        org.jomni.MapperException.Error error1 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass2 = error1.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair3 = org.jomni.util.Pair.newPair(jomniBuilderArray0, (java.lang.reflect.GenericDeclaration) wildcardClass2);
+        org.jomni.MapperException.Error error4 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass5 = error4.getClass();
+        org.jomni.MapperException mapperException6 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass2, (java.lang.Class) wildcardClass5);
+        org.jomni.MapperException.Error error8 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass9 = error8.getClass();
+        org.jomni.MapperException.Error error10 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass11 = error10.getClass();
+        java.lang.reflect.Method method12 = null;
+        java.lang.reflect.Method method13 = null;
+        org.jomni.PropInfo propInfo14 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass9, (java.lang.Class) wildcardClass11, method12, method13);
+        org.jomni.MapperException mapperException15 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass5, (java.lang.Class) wildcardClass11);
+        java.lang.Throwable[] throwableArray16 = mapperException15.getSuppressed();
+        java.lang.Throwable[] throwableArray17 = mapperException15.getSuppressed();
+        java.util.Map<java.lang.String, java.lang.Object> strMap18 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) throwableArray17);
+        org.junit.Assert.assertTrue("'" + error1 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error1.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass2);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair3);
+        org.junit.Assert.assertTrue("'" + error4 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error4.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertNotNull(mapperException6);
+        org.junit.Assert.assertTrue("'" + error8 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error8.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass9);
+        org.junit.Assert.assertTrue("'" + error10 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error10.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass11);
+        org.junit.Assert.assertNotNull(mapperException15);
+        org.junit.Assert.assertNotNull(throwableArray16);
+        org.junit.Assert.assertNotNull(throwableArray17);
+        org.junit.Assert.assertNotNull(strMap18);
+    }
+
+    @Test
+    public void test243() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+        org.jomni.JomniBuilder jomniBuilder0 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper1 = jomniBuilder0.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair3 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper1, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni5 = jomniMapper1.omni((java.lang.CharSequence) "");
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniMapper jomniMapper8 = jomniBuilder7.build();
+        org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>> jomniMapperPair10 = new org.jomni.util.Pair<org.jomni.JomniMapper, java.lang.Comparable<java.lang.String>>(jomniMapper8, (java.lang.Comparable<java.lang.String>) "");
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni12 = jomniMapper8.omni((java.lang.CharSequence) "");
+        org.jomni.MapperException.Error error14 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass15 = error14.getClass();
+        org.jomni.MapperException.Error error16 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass17 = error16.getClass();
+        java.lang.reflect.Method method18 = null;
+        java.lang.reflect.Method method19 = null;
+        org.jomni.PropInfo propInfo20 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass15, (java.lang.Class) wildcardClass17, method18, method19);
+        java.lang.reflect.Method method21 = propInfo20.getReadMethod();
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni22 = charSequenceOmni12.setAll((java.lang.Object) method21);
+        charSequenceOmni5.put("org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", (java.lang.Object) charSequenceOmni12);
+        java.util.Map map24 = charSequenceOmni5.asMap();
+        java.lang.String[] strArray31 = new java.lang.String[] { "", "hi!", "hi!", "hi!", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "" };
+        org.jomni.JomniBuilder jomniBuilder32 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray33 = new org.jomni.JomniBuilder[] { jomniBuilder32 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet34 = org.jomni.util.Maps.setOf(jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap35 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map<java.lang.String, java.lang.Object> strMap36 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray33);
+        java.util.Map map37 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray33);
+        org.jomni.util.Maps.NamesValues namesValues38 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray33);
+        java.lang.String[] strArray45 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
+        org.jomni.JomniBuilder jomniBuilder46 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray47 = new org.jomni.JomniBuilder[] { jomniBuilder46 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet48 = org.jomni.util.Maps.setOf(jomniBuilderArray47);
+        java.util.Map<java.lang.String, java.lang.Object> strMap49 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray47);
+        java.util.Map<java.lang.String, java.lang.Object> strMap50 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray47);
+        java.util.Map<java.lang.String, java.lang.Object> strMap51 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray47);
+        java.util.Map map52 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray47);
+        org.jomni.util.Maps.NamesValues namesValues53 = new org.jomni.util.Maps.NamesValues(strArray45, (java.lang.Object[]) jomniBuilderArray47);
+        org.jomni.util.Maps.NamesValues namesValues54 = new org.jomni.util.Maps.NamesValues(strArray31, (java.lang.Object[]) jomniBuilderArray47);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni55 = charSequenceOmni5.setAll((java.lang.Object) jomniBuilderArray47);
+        org.jomni.JomniBuilder[] jomniBuilderArray56 = null;
+        org.jomni.MapperException.Error error57 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass58 = error57.getClass();
+        org.jomni.util.Pair<org.jomni.JomniBuilder[], java.lang.reflect.GenericDeclaration> jomniBuilderArrayPair59 = org.jomni.util.Pair.newPair(jomniBuilderArray56, (java.lang.reflect.GenericDeclaration) wildcardClass58);
+        org.jomni.MapperException.Error error60 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass61 = error60.getClass();
+        org.jomni.MapperException mapperException62 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass58, (java.lang.Class) wildcardClass61);
+        org.jomni.MapperException.Error error64 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass65 = error64.getClass();
+        org.jomni.MapperException.Error error66 = org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER;
+        java.lang.Class<?> wildcardClass67 = error66.getClass();
+        java.lang.reflect.Method method68 = null;
+        java.lang.reflect.Method method69 = null;
+        org.jomni.PropInfo propInfo70 = new org.jomni.PropInfo("hi!", (java.lang.Class) wildcardClass65, (java.lang.Class) wildcardClass67, method68, method69);
+        org.jomni.MapperException mapperException71 = org.jomni.MapperException.noResolverFoundFor((java.lang.Class) wildcardClass61, (java.lang.Class) wildcardClass67);
+        java.lang.Throwable[] throwableArray72 = mapperException71.getSuppressed();
+        java.util.Map<java.lang.String, java.lang.Object> strMap73 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) throwableArray72);
+        java.util.Map<java.lang.String, java.lang.Object> strMap74 = org.jomni.util.Maps.asFlatMap(strMap73);
+        org.jomni.util.Maps.NamesValues namesValues75 = org.jomni.util.Maps.namesValuesOf((java.util.Map) strMap74);
+        org.jomni.Omni<java.lang.CharSequence> charSequenceOmni76 = charSequenceOmni55.setAll((java.lang.Object) strMap74);
+        org.junit.Assert.assertNotNull(jomniMapper1);
+        org.junit.Assert.assertNotNull(charSequenceOmni5);
+        org.junit.Assert.assertNotNull(jomniMapper8);
+        org.junit.Assert.assertNotNull(charSequenceOmni12);
+        org.junit.Assert.assertTrue("'" + error14 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error14.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass15);
+        org.junit.Assert.assertTrue("'" + error16 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error16.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+        org.junit.Assert.assertNull(method21);
+        org.junit.Assert.assertNotNull(charSequenceOmni22);
+        org.junit.Assert.assertNotNull(map24);
+        org.junit.Assert.assertNotNull(strArray31);
+        org.junit.Assert.assertNotNull(jomniBuilderArray33);
+        org.junit.Assert.assertNotNull(jomniBuilderSet34);
+        org.junit.Assert.assertNotNull(strMap35);
+        org.junit.Assert.assertNotNull(strMap36);
+        org.junit.Assert.assertNotNull(map37);
+        org.junit.Assert.assertNotNull(strArray45);
+        org.junit.Assert.assertNotNull(jomniBuilderArray47);
+        org.junit.Assert.assertNotNull(jomniBuilderSet48);
+        org.junit.Assert.assertNotNull(strMap49);
+        org.junit.Assert.assertNotNull(strMap50);
+        org.junit.Assert.assertNotNull(strMap51);
+        org.junit.Assert.assertNotNull(map52);
+        org.junit.Assert.assertNotNull(charSequenceOmni55);
+        org.junit.Assert.assertTrue("'" + error57 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error57.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass58);
+        org.junit.Assert.assertNotNull(jomniBuilderArrayPair59);
+        org.junit.Assert.assertTrue("'" + error60 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error60.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass61);
+        org.junit.Assert.assertNotNull(mapperException62);
+        org.junit.Assert.assertTrue("'" + error64 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error64.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass65);
+        org.junit.Assert.assertTrue("'" + error66 + "' != '" + org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER + "'", error66.equals(org.jomni.MapperException.Error.CANNOT_FIND_RESOLVER));
+        org.junit.Assert.assertNotNull(wildcardClass67);
+        org.junit.Assert.assertNotNull(mapperException71);
+        org.junit.Assert.assertNotNull(throwableArray72);
+        org.junit.Assert.assertNotNull(strMap73);
+        org.junit.Assert.assertNotNull(strMap74);
+        org.junit.Assert.assertNotNull(namesValues75);
+        org.junit.Assert.assertNotNull(charSequenceOmni76);
+    }
+
+    @Test
+    public void test244() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test244");
+        java.lang.Number number0 = null;
+        java.math.BigDecimal bigDecimal1 = org.jomni.ExtraConverters.toBigDecimal(number0);
+        org.junit.Assert.assertNull(bigDecimal1);
+    }
+
+    @Test
+    public void test245() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test245");
+        java.lang.String[] strArray6 = new java.lang.String[] { "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "org.jomni.MapperException: Cannot find resolver for sourceClass org.jomni.MapperException$Error to targetClass org.jomni.MapperException$Error", "hi!", "hi!", "hi!", "" };
+        org.jomni.JomniBuilder jomniBuilder7 = new org.jomni.JomniBuilder();
+        org.jomni.JomniBuilder[] jomniBuilderArray8 = new org.jomni.JomniBuilder[] { jomniBuilder7 };
+        java.util.Set<org.jomni.JomniBuilder> jomniBuilderSet9 = org.jomni.util.Maps.setOf(jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap10 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap11 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map<java.lang.String, java.lang.Object> strMap12 = org.jomni.util.Maps.propMapOf((java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map map13 = org.jomni.util.Maps.mapOf((java.lang.Object[]) jomniBuilderArray8);
+        org.jomni.util.Maps.NamesValues namesValues14 = new org.jomni.util.Maps.NamesValues(strArray6, (java.lang.Object[]) jomniBuilderArray8);
+        java.util.Map map15 = org.jomni.util.Maps.mapOf((java.lang.Object[]) strArray6);
+        org.jomni.util.Maps.NamesValues namesValues16 = org.jomni.util.Maps.namesValuesOf(map15);
+        org.junit.Assert.assertNotNull(strArray6);
+        org.junit.Assert.assertNotNull(jomniBuilderArray8);
+        org.junit.Assert.assertNotNull(jomniBuilderSet9);
+        org.junit.Assert.assertNotNull(strMap10);
+        org.junit.Assert.assertNotNull(strMap11);
+        org.junit.Assert.assertNotNull(strMap12);
+        org.junit.Assert.assertNotNull(map13);
+        org.junit.Assert.assertNotNull(map15);
+        org.junit.Assert.assertNotNull(namesValues16);
     }
 }
 

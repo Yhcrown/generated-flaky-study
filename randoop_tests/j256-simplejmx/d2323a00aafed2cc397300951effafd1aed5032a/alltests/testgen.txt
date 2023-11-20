@@ -1,4 +1,4 @@
-[TIME]: 0:00:31.711258
+[TIME]: 0:00:30.869014
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Will try to generate tests for 25 classes.
@@ -7,7 +7,7 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-10-31T23:50:28.749Z     21.2M used)> STOPPED
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T09:00:06.532Z     21.4M used)> STOPPED
 Error.  Unknown command.  Type 'help' for help: STOPPED
 > hi!
 Error.  Unknown command.  Type 'help' for help: hi!
@@ -33,8 +33,8 @@ Error.  Unknown command.  Type 'help' for help: 100
 Error.  Unknown command.  Type 'help' for help: STOPPED
 > hi!
 Error.  Unknown command.  Type 'help' for help: hi!
-2023-10-31 18:50:44.862:INFO:oejs.Server:jetty-8.2.0.v20160908
-2023-10-31 18:50:44.871:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:51067
+2023-11-20 03:00:22.014:INFO:oejs.Server:jetty-8.2.0.v20160908
+2023-11-20 03:00:22.022:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:62218
 > STOPPED
 Error.  Unknown command.  Type 'help' for help: STOPPED
 > hi!
@@ -43,20 +43,20 @@ Error.  Unknown command.  Type 'help' for help: hi!
 Error.  Unknown command.  Type 'help' for help: STOPPED
 > hi!
 Error.  Unknown command.  Type 'help' for help: hi!
-2023-10-31 18:50:45.267:INFO:oejs.Server:jetty-8.2.0.v20160908
-2023-10-31 18:50:45.267:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:51069
+2023-11-20 03:00:22.365:INFO:oejs.Server:jetty-8.2.0.v20160908
+2023-11-20 03:00:22.365:INFO:oejs.AbstractConnector:Started SocketConnector@0.0.0.0:62220
 > STOPPED
 Error.  Unknown command.  Type 'help' for help: STOPPED
 > hi!
 Error.  Unknown command.  Type 'help' for help: hi!
 
-Progress update: steps=833, test inputs generated=505, failing inputs=5      (2023-10-31T23:50:55.496Z     105M used)
+Progress update: steps=833, test inputs generated=505, failing inputs=5      (2023-11-20T09:00:32.565Z     88.3M used)
 Normal method executions: 34648
 Exceptional method executions: 111
 
-Average method execution time (normal termination):      0.0504
-Average method execution time (exceptional termination): 0.651
-Approximate memory usage 105M
+Average method execution time (normal termination):      0.0454
+Average method execution time (exceptional termination): 0.701
+Approximate memory usage 88.3M
 Explorer = ForwardGenerator(steps: 833, null steps: 328, num_sequences_generated: 505;
     allSequences: 505, regresson seqs: 495, error seqs: 5=5=5, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 5;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 51)

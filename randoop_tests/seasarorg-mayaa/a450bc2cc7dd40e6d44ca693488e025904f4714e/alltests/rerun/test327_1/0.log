@@ -1,0 +1,100 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ------------------< com.github.seasarorg.mayaa:mayaa >------------------
+[INFO] Building Mayaa 1.2.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.6:prepare-agent (default) @ mayaa ---
+[INFO] jacocoArgs set to -javaagent:/Users/yhcrown/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/Users/yhcrown/Documents/flaky_java_projects/seasarorg-mayaa/target/jacoco-output/jacoco-ut.exec
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-source (add-source) @ mayaa ---
+[INFO] Source directory: /Users/yhcrown/Documents/flaky_java_projects/seasarorg-mayaa/src-impl added.
+[INFO] 
+[INFO] --- templating:1.0.0:filter-sources (filter-src) @ mayaa ---
+[INFO] Coping files with filtering to temporary directory.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] No files needs to be copied to output directory. Up to date: /Users/yhcrown/Documents/flaky_java_projects/seasarorg-mayaa/target/generated-sources/java-templates
+[INFO] Source directory: /Users/yhcrown/Documents/flaky_java_projects/seasarorg-mayaa/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mayaa ---
+[INFO] Copying 0 resource from src-api to target/classes
+[INFO] Copying 59 resources from src-impl to target/classes
+[INFO] Copying 6 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mayaa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ mayaa ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mayaa ---
+[INFO] Copying 30 resources from src/test/java to target/test-classes
+[INFO] Copying 263 resources from src/test/resources to target/test-classes
+[INFO] Copying 2 resources from src/integration-test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ mayaa ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 97 source files with javac [debug target 1.7] to target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- surefire:3.0.0-M5:test (default-test) @ mayaa ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.jar
+Progress (1): 16/91 kBProgress (1): 33/91 kBProgress (1): 49/91 kBProgress (1): 66/91 kBProgress (1): 82/91 kBProgress (1): 91 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.jar (91 kB at 399 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.pom
+Progress (1): 8.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.pom (8.3 kB at 522 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M5/surefire-providers-3.0.0-M5.pom
+Progress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M5/surefire-providers-3.0.0-M5.pom (2.5 kB at 211 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.pom
+Progress (1): 8.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.pom (8.0 kB at 535 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.pom
+Progress (1): 2.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.pom (2.9 kB at 211 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.pom
+Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.pom (2.6 kB at 173 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.pom
+Progress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.pom (2.6 kB at 175 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.pom
+Progress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.pom (3.1 kB at 222 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+Progress (1): 5.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom (5.4 kB at 339 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+Progress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (2.4 kB at 170 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+Progress (1): 12 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 kB at 807 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+Progress (1): 1.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (1.6 kB at 120 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar
+Progress (1): 16/25 kBProgress (1): 25 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar (25 kB at 1.4 MB/s)
+Progress (1): 1.4/22 kBProgress (2): 1.4/22 kB | 1.4/40 kBProgress (2): 1.4/22 kB | 2.7/40 kBProgress (2): 2.7/22 kB | 2.7/40 kBProgress (2): 2.7/22 kB | 4.1/40 kBProgress (3): 2.7/22 kB | 4.1/40 kB | 1.4/16 kBProgress (3): 2.7/22 kB | 5.5/40 kB | 1.4/16 kBProgress (3): 4.1/22 kB | 5.5/40 kB | 1.4/16 kBProgress (3): 4.1/22 kB | 5.5/40 kB | 2.7/16 kBProgress (3): 5.5/22 kB | 5.5/40 kB | 2.7/16 kBProgress (3): 5.5/22 kB | 6.9/40 kB | 2.7/16 kBProgress (3): 5.5/22 kB | 6.9/40 kB | 4.1/16 kBProgress (3): 5.5/22 kB | 8.2/40 kB | 4.1/16 kBProgress (3): 5.5/22 kB | 8.2/40 kB | 5.5/16 kBProgress (3): 6.9/22 kB | 8.2/40 kB | 5.5/16 kBProgress (3): 6.9/22 kB | 8.2/40 kB | 6.9/16 kBProgress (3): 6.9/22 kB | 9.6/40 kB | 6.9/16 kBProgress (3): 6.9/22 kB | 9.6/40 kB | 8.2/16 kBProgress (3): 8.2/22 kB | 9.6/40 kB | 8.2/16 kBProgress (3): 8.2/22 kB | 9.6/40 kB | 9.6/16 kBProgress (3): 8.2/22 kB | 11/40 kB | 9.6/16 kB Progress (3): 8.2/22 kB | 11/40 kB | 11/16 kB Progress (3): 9.6/22 kB | 11/40 kB | 11/16 kBProgress (3): 9.6/22 kB | 11/40 kB | 12/16 kBProgress (3): 9.6/22 kB | 12/40 kB | 12/16 kBProgress (3): 9.6/22 kB | 12/40 kB | 14/16 kBProgress (3): 11/22 kB | 12/40 kB | 14/16 kB Progress (3): 11/22 kB | 12/40 kB | 15/16 kBProgress (3): 11/22 kB | 14/40 kB | 15/16 kBProgress (3): 11/22 kB | 14/40 kB | 16 kB   Progress (3): 12/22 kB | 14/40 kB | 16 kBProgress (3): 12/22 kB | 15/40 kB | 16 kBProgress (3): 14/22 kB | 15/40 kB | 16 kBProgress (3): 15/22 kB | 15/40 kB | 16 kBProgress (3): 15/22 kB | 16/40 kB | 16 kBProgress (3): 16/22 kB | 16/40 kB | 16 kBProgress (3): 16/22 kB | 18/40 kB | 16 kB                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar (16 kB at 291 kB/s)
+Progress (2): 16/22 kB | 19/40 kBProgress (2): 18/22 kB | 19/40 kBProgress (2): 19/22 kB | 19/40 kBProgress (2): 19/22 kB | 21/40 kBProgress (2): 21/22 kB | 21/40 kBProgress (2): 21/22 kB | 22/40 kBProgress (2): 22 kB | 22/40 kB   Progress (2): 22 kB | 23/40 kBProgress (2): 22 kB | 25/40 kBProgress (2): 22 kB | 26/40 kBProgress (2): 22 kB | 27/40 kBProgress (2): 22 kB | 29/40 kB                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.jar (22 kB at 392 kB/s)
+Progress (1): 30/40 kBProgress (1): 32/40 kBProgress (1): 33/40 kBProgress (1): 34/40 kBProgress (1): 36/40 kBProgress (1): 37/40 kBProgress (1): 38/40 kBProgress (1): 40 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.jar (40 kB at 649 kB/s)
+Progress (1): 1.4/12 kBProgress (1): 2.7/12 kBProgress (1): 4.1/12 kBProgress (1): 5.5/12 kBProgress (1): 6.9/12 kBProgress (1): 8.2/12 kBProgress (1): 9.6/12 kBProgress (1): 11/12 kB Progress (1): 12 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar (12 kB at 180 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.758 s
+[INFO] Finished at: 2023-11-20T03:30:31-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project mayaa: No tests were executed!  (Set -DfailIfNoTests=false to ignore this error.) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

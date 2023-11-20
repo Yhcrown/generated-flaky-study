@@ -492,7 +492,7 @@ public class TestGroup100Case0 {
         java.lang.Integer int7 = sockJsServletResponse3.cacheFor();
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse3.setHeader("", "cc90bf66-5961-4693-b141-fc94fdea3cdb");
+            sockJsServletResponse3.setHeader("", "b9dcbc6c-e66a-4859-85de-a72f4cdad117");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -537,7 +537,7 @@ public class TestGroup100Case0 {
         sockJsServletResponse3.cacheFor((java.lang.Integer) 1);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str10 = sockJsServletResponse3.getHeader("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
+            java.lang.String str10 = sockJsServletResponse3.getHeader("63271dc7-5174-48ba-8275-e00f4ff28b1f");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -550,7 +550,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test038");
         java.lang.String str0 = org.projectodd.sockjs.Utils.uuid();
-// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "0265a1ec-9de6-420c-91f3-dee4c9b56288" + "'", str0, "0265a1ec-9de6-420c-91f3-dee4c9b56288");
+// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "0dff3dc6-84f5-4ac9-9709-a05eca4edfaf" + "'", str0, "0dff3dc6-84f5-4ac9-9709-a05eca4edfaf");
     }
 
     @Test
@@ -613,7 +613,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest1 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest0);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str3 = sockJsServletRequest1.getCookie("562be256-042b-4385-b848-18fdfc3062ad");
+            java.lang.String str3 = sockJsServletRequest1.getCookie("29cbd81d-ab05-4d71-90e6-7819015ba4e2");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -633,14 +633,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = sockJsConnection1.write("0265a1ec-9de6-420c-91f3-dee4c9b56288");
+            boolean boolean10 = sockJsConnection1.write("0dff3dc6-84f5-4ac9-9709-a05eca4edfaf");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "156e8689-bb38-498a-a2ab-2e6e12657ee7" + "'", str6, "156e8689-bb38-498a-a2ab-2e6e12657ee7");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f5fc004e-82ed-40e3-9197-c7a2ca76f186" + "'", str6, "f5fc004e-82ed-40e3-9197-c7a2ca76f186");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "156e8689-bb38-498a-a2ab-2e6e12657ee7" + "'", str8, "156e8689-bb38-498a-a2ab-2e6e12657ee7");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "f5fc004e-82ed-40e3-9197-c7a2ca76f186" + "'", str8, "f5fc004e-82ed-40e3-9197-c7a2ca76f186");
     }
 
     @Test
@@ -758,14 +758,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            sockJsConnection1.end("cc90bf66-5961-4693-b141-fc94fdea3cdb");
+            sockJsConnection1.end("b9dcbc6c-e66a-4859-85de-a72f4cdad117");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "7d5c31f0-b88a-42b2-9323-1ea458de9b35" + "'", str6, "7d5c31f0-b88a-42b2-9323-1ea458de9b35");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "38c9b227-846d-45dc-8167-f9710df346af" + "'", str6, "38c9b227-846d-45dc-8167-f9710df346af");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "7d5c31f0-b88a-42b2-9323-1ea458de9b35" + "'", str8, "7d5c31f0-b88a-42b2-9323-1ea458de9b35");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "38c9b227-846d-45dc-8167-f9710df346af" + "'", str8, "38c9b227-846d-45dc-8167-f9710df346af");
     }
 
     @Test
@@ -905,8 +905,8 @@ public class TestGroup100Case0 {
     public void test060() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test060");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe\"" + "'", str1, "\"1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("63271dc7-5174-48ba-8275-e00f4ff28b1f");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"63271dc7-5174-48ba-8275-e00f4ff28b1f\"" + "'", str1, "\"63271dc7-5174-48ba-8275-e00f4ff28b1f\"");
     }
 
     @Test
@@ -974,7 +974,7 @@ public class TestGroup100Case0 {
     public void test063() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test063");
-        org.projectodd.sockjs.Session session1 = org.projectodd.sockjs.Session.bySessionId("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe");
+        org.projectodd.sockjs.Session session1 = org.projectodd.sockjs.Session.bySessionId("63271dc7-5174-48ba-8275-e00f4ff28b1f");
         org.junit.Assert.assertNull(session1);
     }
 
@@ -982,8 +982,8 @@ public class TestGroup100Case0 {
     public void test064() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test064");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.md5Hex("562be256-042b-4385-b848-18fdfc3062ad");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "546f310ca65138f89daa56a18aed0658" + "'", str1, "546f310ca65138f89daa56a18aed0658");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.md5Hex("29cbd81d-ab05-4d71-90e6-7819015ba4e2");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "45c5c7f62d06fed3323f980a739ffe91" + "'", str1, "45c5c7f62d06fed3323f980a739ffe91");
     }
 
     @Test
@@ -1042,7 +1042,7 @@ public class TestGroup100Case0 {
         java.lang.String str9 = options4.sockjsUrl;
         int int10 = options4.responseLimit;
         java.lang.String str11 = options4.sockjsUrl;
-        options4.baseUrl = "cc90bf66-5961-4693-b141-fc94fdea3cdb";
+        options4.baseUrl = "b9dcbc6c-e66a-4859-85de-a72f4cdad117";
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str9, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str11, "http://cdn.sockjs.org/sockjs-0.3.min.js");
@@ -1079,7 +1079,7 @@ public class TestGroup100Case0 {
         java.lang.String str2 = sockJsServletRequest1.session();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str4 = sockJsServletRequest1.getCookie("546f310ca65138f89daa56a18aed0658");
+            java.lang.String str4 = sockJsServletRequest1.getCookie("45c5c7f62d06fed3323f980a739ffe91");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1096,7 +1096,7 @@ public class TestGroup100Case0 {
         java.lang.String str2 = sockJsServletRequest1.session();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str4 = sockJsServletRequest1.getQueryParameter("546f310ca65138f89daa56a18aed0658");
+            java.lang.String str4 = sockJsServletRequest1.getQueryParameter("45c5c7f62d06fed3323f980a739ffe91");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1152,7 +1152,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "04a2c8e4-6cc0-4927-be4a-688619279c44" + "'", str7, "04a2c8e4-6cc0-4927-be4a-688619279c44");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "1ba90c2a-b8b0-4b4b-9c6c-e181e897a006" + "'", str7, "1ba90c2a-b8b0-4b4b-9c6c-e181e897a006");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + 200 + "'", int18 == 200);
     }
@@ -1167,7 +1167,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletResponse sockJsServletResponse3 = new org.projectodd.sockjs.servlet.SockJsServletResponse(httpServletResponse1, asyncContext2);
         org.projectodd.sockjs.SockJsServer.Options options4 = new org.projectodd.sockjs.SockJsServer.Options();
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver5 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
-        boolean boolean7 = xhrPollingReceiver5.doSendFrame("1f2d0367-affd-4bc4-9047-35ed487203f3");
+        boolean boolean7 = xhrPollingReceiver5.doSendFrame("3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
     }
 
@@ -1276,7 +1276,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction67 = websocketHandler66.rawWebsocket;
         org.projectodd.sockjs.Dispatcher dispatcher68 = new org.projectodd.sockjs.Dispatcher(dispatchFunction53, dispatchFunction62, dispatchFunction67);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray69 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction18, dispatchFunction31, dispatchFunction35, dispatchFunction62 };
-        dispatcher13.push("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
+        dispatcher13.push("63271dc7-5174-48ba-8275-e00f4ff28b1f", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
         javax.servlet.http.HttpServletRequest httpServletRequest71 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest72 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest71);
         javax.servlet.http.HttpServletResponse httpServletResponse73 = null;
@@ -1334,8 +1334,8 @@ public class TestGroup100Case0 {
     public void test079() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test079");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"" + "'", str1, "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("d3c27a3b-df3d-49b0-b43f-a93d6fde76b3");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"" + "'", str1, "\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"");
     }
 
     @Test
@@ -1389,7 +1389,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test083");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         javax.websocket.Session session5 = null;
         org.projectodd.sockjs.SockJsException sockJsException7 = new org.projectodd.sockjs.SockJsException("hi!");
         sockJsEndpoint4.onError(session5, (java.lang.Throwable) sockJsException7);
@@ -1402,7 +1402,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test084");
         org.projectodd.sockjs.DispatchException dispatchException2 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
-        dispatchException2.message = "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"";
+        dispatchException2.message = "\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"";
     }
 
     @Test
@@ -1546,7 +1546,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver20 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest15, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse18, options19);
         org.projectodd.sockjs.Session session21 = null;
         xhrPollingReceiver20.session = session21;
-        java.lang.String[] strArray28 = new java.lang.String[] { "cc90bf66-5961-4693-b141-fc94fdea3cdb", "9289dfd2-7a07-47e7-b902-844e36a12d2a", "org.projectodd.sockjs.SockJsException", "cc90bf66-5961-4693-b141-fc94fdea3cdb", "9289dfd2-7a07-47e7-b902-844e36a12d2a" };
+        java.lang.String[] strArray28 = new java.lang.String[] { "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "127d9d0a-f4bf-4c9b-849d-4fec59eb0f71", "org.projectodd.sockjs.SockJsException", "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "127d9d0a-f4bf-4c9b-849d-4fec59eb0f71" };
         java.util.ArrayList<java.lang.String> strList29 = new java.util.ArrayList<java.lang.String>();
         boolean boolean30 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList29, strArray28);
         xhrPollingReceiver20.doSendBulk((java.util.List<java.lang.String>) strList29);
@@ -1588,7 +1588,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse7, options15);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str22 = sockJsServletRequest1.getHeader("9289dfd2-7a07-47e7-b902-844e36a12d2a");
+            java.lang.String str22 = sockJsServletRequest1.getHeader("127d9d0a-f4bf-4c9b-849d-4fec59eb0f71");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1624,7 +1624,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options16);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str24 = sockJsServletRequest1.getHeader("99bb2ca2-b220-445b-a4ac-c77322095a71");
+            java.lang.String str24 = sockJsServletRequest1.getHeader("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1644,7 +1644,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.pathname = "hi!";
         java.lang.String str4 = sockJsConnection1.remoteAddress;
-        sockJsConnection1.emitData("\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
+        sockJsConnection1.emitData("\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"");
         org.junit.Assert.assertNull(str4);
     }
 
@@ -1744,7 +1744,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options18 = new org.projectodd.sockjs.SockJsServer.Options();
         int int19 = options18.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest14, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options18);
-        boolean boolean22 = eventSourceReceiver20.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        boolean boolean22 = eventSourceReceiver20.doSendFrame("b309409d-89d2-4d6e-a832-218c74ba5b9c");
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session23 = org.projectodd.sockjs.Transport.register((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, sockJsServer4, (org.projectodd.sockjs.GenericReceiver) eventSourceReceiver20);
@@ -1754,7 +1754,7 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertNull(dispatchFunction3);
-// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "66a164aa-f045-4f22-8d98-d12fadec67d2" + "'", str11, "66a164aa-f045-4f22-8d98-d12fadec67d2");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "b010214e-2e07-4772-9b26-54c118f754f4" + "'", str11, "b010214e-2e07-4772-9b26-54c118f754f4");
         org.junit.Assert.assertNull(str12);
         org.junit.Assert.assertTrue("'" + int19 + "' != '" + 25000 + "'", int19 == 25000);
         org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
@@ -1784,7 +1784,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.Dispatcher dispatcher17 = new org.projectodd.sockjs.Dispatcher(dispatchFunction2, dispatchFunction11, dispatchFunction16);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray22 = new org.projectodd.sockjs.DispatchFunction[] {};
         org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry23 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("hi!", "hi!", dispatchFunctionArray22);
-        dispatcher17.push("42393e10-600d-4023-8e90-2e0df2e16503", "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", dispatchFunctionArray22);
+        dispatcher17.push("325d0bee-caf7-47aa-a040-4e3ef5c9d7e0", "63271dc7-5174-48ba-8275-e00f4ff28b1f", dispatchFunctionArray22);
         org.junit.Assert.assertNotNull(dispatchFunction2);
         org.junit.Assert.assertNotNull(dispatchFunction5);
         org.junit.Assert.assertNotNull(dispatchFunction8);
@@ -1960,9 +1960,9 @@ public class TestGroup100Case0 {
         java.lang.String str6 = sockJsConnection1.id;
         java.lang.String str7 = sockJsConnection1.toString();
         java.lang.String str8 = sockJsConnection1.id;
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "dc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str6, "dc9978fd-25e8-4379-9ca9-e5909baefee9");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>" + "'", str7, "<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>");
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "dc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str8, "dc9978fd-25e8-4379-9ca9-e5909baefee9");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str6, "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "<SockJSConnection 64b92e6a-a976-49ab-8dc9-9cc5f226d9b1>" + "'", str7, "<SockJSConnection 64b92e6a-a976-49ab-8dc9-9cc5f226d9b1>");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str8, "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
     }
 
     @Test
@@ -1978,7 +1978,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver6 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse3.end("562be256-042b-4385-b848-18fdfc3062ad");
+            sockJsServletResponse3.end("29cbd81d-ab05-4d71-90e6-7819015ba4e2");
             org.junit.Assert.fail("Expected exception of type org.projectodd.sockjs.SockJsException; message: Error writing response:");
         } catch (org.projectodd.sockjs.SockJsException e) {
             // Expected exception.
@@ -2157,8 +2157,8 @@ public class TestGroup100Case0 {
         dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "\"hi!\"", dispatchFunctionArray45);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray51 = new org.projectodd.sockjs.DispatchFunction[] {};
         org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry52 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("hi!", "hi!", dispatchFunctionArray51);
-        dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "cc90bf66-5961-4693-b141-fc94fdea3cdb", dispatchFunctionArray51);
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry54 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>", "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>", dispatchFunctionArray51);
+        dispatcher15.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "b9dcbc6c-e66a-4859-85de-a72f4cdad117", dispatchFunctionArray51);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry54 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("<SockJSConnection 64b92e6a-a976-49ab-8dc9-9cc5f226d9b1>", "<SockJSConnection 325d0bee-caf7-47aa-a040-4e3ef5c9d7e0>", dispatchFunctionArray51);
         org.junit.Assert.assertNotNull(dispatchFunction4);
         org.junit.Assert.assertNotNull(dispatchFunction7);
         org.junit.Assert.assertNotNull(dispatchFunction10);
@@ -2200,7 +2200,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "b75c8de0-71cd-432f-8f45-4de164f08d98" + "'", str7, "b75c8de0-71cd-432f-8f45-4de164f08d98");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ba4d4e12-8ecd-4122-96ea-9111e31cbf1b" + "'", str7, "ba4d4e12-8ecd-4122-96ea-9111e31cbf1b");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -2210,7 +2210,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test117");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler5 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
         org.projectodd.sockjs.AppHandler appHandler6 = new org.projectodd.sockjs.AppHandler(sockJsServer0);
     }
@@ -2375,8 +2375,8 @@ public class TestGroup100Case0 {
     public void test127() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test127");
-        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("2df7967b-c163-40e4-9df1-d5dcf52a6339", "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
-        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "2df7967b-c163-40e4-9df1-d5dcf52a6339" + "'", str2, "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("b309409d-89d2-4d6e-a832-218c74ba5b9c", "\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"");
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "b309409d-89d2-4d6e-a832-218c74ba5b9c" + "'", str2, "b309409d-89d2-4d6e-a832-218c74ba5b9c");
     }
 
     @Test
@@ -2385,7 +2385,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test128");
         org.projectodd.sockjs.SockJsException sockJsException2 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException3 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException2);
-        org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException("\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"", (java.lang.Throwable) sockJsException2);
+        org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException("\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"", (java.lang.Throwable) sockJsException2);
     }
 
     @Test
@@ -2506,10 +2506,10 @@ public class TestGroup100Case0 {
         sockJsConnection1.prefix = "\"\"";
         sockJsConnection1.url = "\"\\\"\\\"\"";
         java.lang.String str6 = sockJsConnection1.id;
-        sockJsConnection1.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection1.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         org.projectodd.sockjs.SockJsConnection.OnCloseHandler onCloseHandler9 = null;
         sockJsConnection1.onClose(onCloseHandler9);
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f6091292-7c6e-4d5b-9828-40d53b360c32" + "'", str6, "f6091292-7c6e-4d5b-9828-40d53b360c32");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "37ac3634-8cd4-4bba-a4f8-267eda290b3e" + "'", str6, "37ac3634-8cd4-4bba-a4f8-267eda290b3e");
     }
 
     @Test
@@ -2542,7 +2542,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         org.projectodd.sockjs.SockJsServer sockJsServer17 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler18 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer17);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "325d0bee-caf7-47aa-a040-4e3ef5c9d7e0");
         javax.websocket.Session session22 = null;
         org.projectodd.sockjs.SockJsException sockJsException24 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException25 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException24);
@@ -2586,7 +2586,7 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertTrue("'" + int14 + "' != '" + 25000 + "'", int14 == 25000);
-// flaky:         org.junit.Assert.assertEquals("'" + str35 + "' != '" + "d71bb72c-d7c7-4960-8ae5-c9a2f6758d03" + "'", str35, "d71bb72c-d7c7-4960-8ae5-c9a2f6758d03");
+// flaky:         org.junit.Assert.assertEquals("'" + str35 + "' != '" + "e8973f89-8e9d-4bc9-acea-962b28264ad4" + "'", str35, "e8973f89-8e9d-4bc9-acea-962b28264ad4");
         org.junit.Assert.assertNull(str36);
         org.junit.Assert.assertNull(str41);
         org.junit.Assert.assertTrue("'" + int53 + "' != '" + 25000 + "'", int53 == 25000);
@@ -2632,7 +2632,7 @@ public class TestGroup100Case0 {
         dispatchEntry3.method = "org.projectodd.sockjs.SockJsException";
         java.lang.String[] strArray7 = null;
         dispatchEntry3.groups = strArray7;
-        dispatchEntry3.method = "2df7967b-c163-40e4-9df1-d5dcf52a6339";
+        dispatchEntry3.method = "b309409d-89d2-4d6e-a832-218c74ba5b9c";
         java.lang.Class<?> wildcardClass11 = dispatchEntry3.getClass();
         org.junit.Assert.assertNotNull(dispatchFunctionArray2);
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi!" + "'", str4, "hi!");
@@ -2643,8 +2643,8 @@ public class TestGroup100Case0 {
     public void test136() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test136");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("546f310ca65138f89daa56a18aed0658");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"546f310ca65138f89daa56a18aed0658\"" + "'", str1, "\"546f310ca65138f89daa56a18aed0658\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.jsonStringify("45c5c7f62d06fed3323f980a739ffe91");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"45c5c7f62d06fed3323f980a739ffe91\"" + "'", str1, "\"45c5c7f62d06fed3323f980a739ffe91\"");
     }
 
     @Test
@@ -2692,7 +2692,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test138");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        sockJsConnection1.remoteAddress = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         java.lang.String str4 = sockJsConnection1.pathname;
         org.junit.Assert.assertNull(str4);
     }
@@ -2708,7 +2708,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsException sockJsException6 = new org.projectodd.sockjs.SockJsException("", (java.lang.Throwable) sockJsException5);
         sockJsServletRequest1.onError((java.lang.Throwable) sockJsException5);
         sockJsServletRequest1.onAllDataRead();
-        sockJsServletRequest1.addMatch("http://cdn.sockjs.org/sockjs-0.3.min.js", "0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
+        sockJsServletRequest1.addMatch("http://cdn.sockjs.org/sockjs-0.3.min.js", "d3c27a3b-df3d-49b0-b43f-a93d6fde76b3");
         org.junit.Assert.assertNull(str2);
     }
 
@@ -2800,7 +2800,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction67 = websocketHandler66.rawWebsocket;
         org.projectodd.sockjs.Dispatcher dispatcher68 = new org.projectodd.sockjs.Dispatcher(dispatchFunction53, dispatchFunction62, dispatchFunction67);
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray69 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction18, dispatchFunction31, dispatchFunction35, dispatchFunction62 };
-        dispatcher13.push("1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
+        dispatcher13.push("63271dc7-5174-48ba-8275-e00f4ff28b1f", "org.projectodd.sockjs.SockJsException", dispatchFunctionArray69);
         javax.websocket.Session session71 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap74 = null;
         org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest75 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session71, "\"hi!\"", "c[1,\"\"]", strMap74);
@@ -2927,11 +2927,11 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "45c5c7f62d06fed3323f980a739ffe91");
         org.projectodd.sockjs.SockJsServer sockJsServer27 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer27.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint31 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer27, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint34 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer27, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint31 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer27, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint34 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer27, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         javax.websocket.Session session35 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -3025,7 +3025,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "42bf3332-f6d0-494a-aaf3-4db4e4ba355e" + "'", str7, "42bf3332-f6d0-494a-aaf3-4db4e4ba355e");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "7ed59039-7c7e-4a7c-9fa2-441727ad9b01" + "'", str7, "7ed59039-7c7e-4a7c-9fa2-441727ad9b01");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNull(str12);
         org.junit.Assert.assertNull(dispatchFunction13);
@@ -3109,9 +3109,9 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "93e0457b-336a-43e3-9320-2b902f01d485" + "'", str6, "93e0457b-336a-43e3-9320-2b902f01d485");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "79c3ccc0-4a6d-4adb-ac85-ead6ca1938d8" + "'", str6, "79c3ccc0-4a6d-4adb-ac85-ead6ca1938d8");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "93e0457b-336a-43e3-9320-2b902f01d485" + "'", str8, "93e0457b-336a-43e3-9320-2b902f01d485");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "79c3ccc0-4a6d-4adb-ac85-ead6ca1938d8" + "'", str8, "79c3ccc0-4a6d-4adb-ac85-ead6ca1938d8");
         org.junit.Assert.assertNotNull(strMap10);
     }
 
@@ -3119,7 +3119,7 @@ public class TestGroup100Case0 {
     public void test151() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test151");
-        org.projectodd.sockjs.SockJsException sockJsException1 = new org.projectodd.sockjs.SockJsException("\"546f310ca65138f89daa56a18aed0658\"");
+        org.projectodd.sockjs.SockJsException sockJsException1 = new org.projectodd.sockjs.SockJsException("\"45c5c7f62d06fed3323f980a739ffe91\"");
     }
 
     @Test
@@ -3128,7 +3128,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test152");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint4 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "99bb2ca2-b220-445b-a4ac-c77322095a71", "0464b5a2-eb61-4f8e-9f54-8ee3f17275f1");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint4 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "e1fee1fb-09c9-49c7-81a8-3ab8e171187f", "d3c27a3b-df3d-49b0-b43f-a93d6fde76b3");
     }
 
     @Test
@@ -3149,7 +3149,7 @@ public class TestGroup100Case0 {
         sockJsConnection12.prefix = "\"\"";
         sockJsServer0.emitConnection(sockJsConnection12);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler16 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c780d6ce-cb5b-433b-9a0c-69eb41f555dd" + "'", str7, "c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "47824d13-64b4-498f-90f0-7f3909405d42" + "'", str7, "47824d13-64b4-498f-90f0-7f3909405d42");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -3191,7 +3191,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test155");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         int int6 = sockJsWebsocketRequest4.getRemotePort();
         org.junit.Assert.assertNull(nextFilter5);
@@ -3206,7 +3206,7 @@ public class TestGroup100Case0 {
         int int1 = options0.heartbeatDelay;
         boolean boolean2 = options0.jsessionid;
         java.lang.String str3 = options0.baseUrl;
-        options0.baseUrl = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
+        options0.baseUrl = "<SockJSConnection 325d0bee-caf7-47aa-a040-4e3ef5c9d7e0>";
         options0.jsessionid = false;
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 25000 + "'", int1 == 25000);
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
@@ -3236,7 +3236,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str18 = sockJsServletRequest1.getCookie("<SockJSConnection dc9978fd-25e8-4379-9ca9-e5909baefee9>");
+            java.lang.String str18 = sockJsServletRequest1.getCookie("<SockJSConnection 64b92e6a-a976-49ab-8dc9-9cc5f226d9b1>");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -3365,7 +3365,7 @@ public class TestGroup100Case0 {
         websocketHandler70.rawWebsocket = dispatchFunction74;
         appHandler67.disabledTransport = dispatchFunction74;
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray77 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction4, dispatchFunction18, dispatchFunction37, dispatchFunction50, dispatchFunction64, dispatchFunction74 };
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry78 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("99bb2ca2-b220-445b-a4ac-c77322095a71", "\"\\\"\\\"\"", dispatchFunctionArray77);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry78 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("e1fee1fb-09c9-49c7-81a8-3ab8e171187f", "\"\\\"\\\"\"", dispatchFunctionArray77);
         java.lang.String str79 = dispatchEntry78.method;
         org.junit.Assert.assertNotNull(dispatchFunction4);
         org.junit.Assert.assertNotNull(dispatchFunction7);
@@ -3391,7 +3391,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(dispatchFunction71);
         org.junit.Assert.assertNotNull(dispatchFunction74);
         org.junit.Assert.assertNotNull(dispatchFunctionArray77);
-        org.junit.Assert.assertEquals("'" + str79 + "' != '" + "99bb2ca2-b220-445b-a4ac-c77322095a71" + "'", str79, "99bb2ca2-b220-445b-a4ac-c77322095a71");
+        org.junit.Assert.assertEquals("'" + str79 + "' != '" + "e1fee1fb-09c9-49c7-81a8-3ab8e171187f" + "'", str79, "e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
     }
 
     @Test
@@ -3423,7 +3423,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -3445,10 +3445,10 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("\"546f310ca65138f89daa56a18aed0658\"");
+            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("\"45c5c7f62d06fed3323f980a739ffe91\"");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -3469,7 +3469,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test161");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "325d0bee-caf7-47aa-a040-4e3ef5c9d7e0");
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler5 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
     }
 
@@ -3597,7 +3597,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         sockJsServlet0.setServer(sockJsServer1);
         // The following exception was thrown during execution in test generation
         try {
@@ -3673,7 +3673,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "45c5c7f62d06fed3323f980a739ffe91");
         // The following exception was thrown during execution in test generation
         try {
             java.lang.String str27 = sockJsServletRequest1.getMethod();
@@ -3697,8 +3697,8 @@ public class TestGroup100Case0 {
     public void test171() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test171");
-        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("7030d516-c9fc-4b3e-a24b-c4d736555f2d", "");
-        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "7030d516-c9fc-4b3e-a24b-c4d736555f2d" + "'", str2, "7030d516-c9fc-4b3e-a24b-c4d736555f2d");
+        java.lang.String str2 = org.projectodd.sockjs.Utils.escapeSelected("51c8742e-ccc2-4ab2-97e5-9a1ecdf36478", "");
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "51c8742e-ccc2-4ab2-97e5-9a1ecdf36478" + "'", str2, "51c8742e-ccc2-4ab2-97e5-9a1ecdf36478");
     }
 
     @Test
@@ -3795,8 +3795,8 @@ public class TestGroup100Case0 {
         websocketHandler86.rawWebsocket = dispatchFunction90;
         appHandler83.disabledTransport = dispatchFunction90;
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray93 = new org.projectodd.sockjs.DispatchFunction[] { dispatchFunction20, dispatchFunction34, dispatchFunction53, dispatchFunction66, dispatchFunction80, dispatchFunction90 };
-        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry94 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("99bb2ca2-b220-445b-a4ac-c77322095a71", "\"\\\"\\\"\"", dispatchFunctionArray93);
-        dispatcher13.push("\"hi!\"", "562be256-042b-4385-b848-18fdfc3062ad", dispatchFunctionArray93);
+        org.projectodd.sockjs.Dispatcher.DispatchEntry dispatchEntry94 = new org.projectodd.sockjs.Dispatcher.DispatchEntry("e1fee1fb-09c9-49c7-81a8-3ab8e171187f", "\"\\\"\\\"\"", dispatchFunctionArray93);
+        dispatcher13.push("\"hi!\"", "29cbd81d-ab05-4d71-90e6-7819015ba4e2", dispatchFunctionArray93);
         org.junit.Assert.assertNotNull(dispatchFunction2);
         org.junit.Assert.assertNotNull(dispatchFunction5);
         org.junit.Assert.assertNotNull(dispatchFunction8);
@@ -3869,7 +3869,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test174");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "325d0bee-caf7-47aa-a040-4e3ef5c9d7e0");
         javax.websocket.Session session5 = null;
         javax.websocket.EndpointConfig endpointConfig6 = null;
         // The following exception was thrown during execution in test generation
@@ -3976,14 +3976,14 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = sockJsConnection1.write("c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
+            boolean boolean10 = sockJsConnection1.write("47824d13-64b4-498f-90f0-7f3909405d42");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "4e47451f-ae74-4816-ab2d-dcaf258ab277" + "'", str6, "4e47451f-ae74-4816-ab2d-dcaf258ab277");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "984edfcd-523c-449d-8121-f2174c5c11e8" + "'", str6, "984edfcd-523c-449d-8121-f2174c5c11e8");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "4e47451f-ae74-4816-ab2d-dcaf258ab277" + "'", str8, "4e47451f-ae74-4816-ab2d-dcaf258ab277");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "984edfcd-523c-449d-8121-f2174c5c11e8" + "'", str8, "984edfcd-523c-449d-8121-f2174c5c11e8");
     }
 
     @Test
@@ -4060,7 +4060,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.ResponseReceiver responseReceiver16 = new org.projectodd.sockjs.ResponseReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse6, options13);
         org.projectodd.sockjs.SockJsServer sockJsServer17 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler18 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer17);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint21 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer17, "\"hi!\"", "325d0bee-caf7-47aa-a040-4e3ef5c9d7e0");
         javax.websocket.Session session22 = null;
         org.projectodd.sockjs.SockJsException sockJsException24 = new org.projectodd.sockjs.SockJsException("hi!");
         org.projectodd.sockjs.SockJsException sockJsException25 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException24);
@@ -4083,8 +4083,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test183");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         javax.websocket.Session session8 = null;
         java.lang.Throwable throwable9 = null;
         rawWebsocketEndpoint7.onError(session8, throwable9);
@@ -4206,10 +4206,10 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         sockJsConnection2.remotePort = (short) 10;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "eb3aba54-425c-4866-9648-b27c1de06974" + "'", str7, "eb3aba54-425c-4866-9648-b27c1de06974");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "27036ee9-d378-444d-92a2-34f035d07fd1" + "'", str7, "27036ee9-d378-444d-92a2-34f035d07fd1");
     }
 
     @Test
@@ -4281,7 +4281,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -4303,7 +4303,7 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         int int59 = sockJsWebsocketRequest4.getRemotePort();
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 200 + "'", int20 == 200);
@@ -4323,7 +4323,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         sockJsServlet0.setServer(sockJsServer1);
         // The following exception was thrown during execution in test generation
         try {
@@ -4365,7 +4365,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str2 = sockJsServlet0.getInitParameter("2df7967b-c163-40e4-9df1-d5dcf52a6339");
+            java.lang.String str2 = sockJsServlet0.getInitParameter("b309409d-89d2-4d6e-a832-218c74ba5b9c");
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: ServletConfig has not been initialized");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
@@ -4411,7 +4411,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.XhrPollingReceiver xhrPollingReceiver5 = new org.projectodd.sockjs.XhrPollingReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
         org.projectodd.sockjs.Session session6 = null;
         xhrPollingReceiver5.session = session6;
-        boolean boolean9 = xhrPollingReceiver5.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        boolean boolean9 = xhrPollingReceiver5.doSendFrame("b309409d-89d2-4d6e-a832-218c74ba5b9c");
         org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
     }
 
@@ -4552,7 +4552,7 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection2.remoteAddress;
         sockJsServer0.emitConnection(sockJsConnection2);
         java.lang.String str10 = sockJsConnection2.remoteAddress;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "fd484e31-0854-4cd0-9a14-f7e9c04236f1" + "'", str7, "fd484e31-0854-4cd0-9a14-f7e9c04236f1");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "dec98010-45c2-43ba-a00d-1102e6af745d" + "'", str7, "dec98010-45c2-43ba-a00d-1102e6af745d");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNull(str10);
     }
@@ -4584,8 +4584,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test203");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.projectodd.sockjs.SockJsServer.Options options8 = sockJsServer0.options;
         org.junit.Assert.assertNotNull(options8);
     }
@@ -4601,10 +4601,10 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options4 = new org.projectodd.sockjs.SockJsServer.Options();
         int int5 = options4.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver6 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest0, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse3, options4);
-        boolean boolean8 = eventSourceReceiver6.doSendFrame("2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        boolean boolean8 = eventSourceReceiver6.doSendFrame("b309409d-89d2-4d6e-a832-218c74ba5b9c");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = eventSourceReceiver6.doSendFrame("c780d6ce-cb5b-433b-9a0c-69eb41f555dd");
+            boolean boolean10 = eventSourceReceiver6.doSendFrame("47824d13-64b4-498f-90f0-7f3909405d42");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -4619,7 +4619,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test205");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         java.lang.String str5 = sockJsWebsocketRequest4.getPrefix();
         org.projectodd.sockjs.SockJsServer sockJsServer6 = new org.projectodd.sockjs.SockJsServer();
         javax.websocket.Session session7 = null;
@@ -4630,7 +4630,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str5, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str5, "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
     }
 
     @Test
@@ -4639,7 +4639,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test206");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.HtmlfileHandler htmlfileHandler1 = new org.projectodd.sockjs.HtmlfileHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "42393e10-600d-4023-8e90-2e0df2e16503");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "\"hi!\"", "325d0bee-caf7-47aa-a040-4e3ef5c9d7e0");
         javax.servlet.http.HttpServletRequest httpServletRequest5 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest6 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest5);
         java.lang.String str7 = sockJsServletRequest6.session();
@@ -4648,7 +4648,7 @@ public class TestGroup100Case0 {
         sockJsServletRequest6.onEnd(onEndHandler9);
         javax.websocket.Session session11 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap14 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest15 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session11, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap14);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest15 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session11, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap14);
         java.lang.String str16 = sockJsWebsocketRequest15.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest17 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse18 = null;
@@ -4674,7 +4674,7 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertNull(dispatchFunction8);
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str16, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
+        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str16, "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
         org.junit.Assert.assertTrue("'" + int23 + "' != '" + 200 + "'", int23 == 200);
     }
 
@@ -4684,7 +4684,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test207");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         // The following exception was thrown during execution in test generation
         try {
@@ -4736,8 +4736,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
-        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "45c5c7f62d06fed3323f980a739ffe91");
+        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "3ab7963e-8fca-4430-8d3d-57d50376f624");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException29);
         org.projectodd.sockjs.DispatchException dispatchException33 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException33);
@@ -4768,7 +4768,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test211");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         org.projectodd.sockjs.SockJsServer sockJsServer5 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session6 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection7 = new org.projectodd.sockjs.SockJsConnection(session6);
@@ -4791,7 +4791,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "c0b67cb2-5b41-4eb0-a642-0be186babb22" + "'", str12, "c0b67cb2-5b41-4eb0-a642-0be186babb22");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "29b728ff-b0ab-41e9-9275-5353f8274683" + "'", str12, "29b728ff-b0ab-41e9-9275-5353f8274683");
         org.junit.Assert.assertNull(str13);
     }
 
@@ -4835,7 +4835,7 @@ public class TestGroup100Case0 {
         dispatchEntry3.method = "org.projectodd.sockjs.SockJsException";
         java.lang.String[] strArray7 = null;
         dispatchEntry3.groups = strArray7;
-        dispatchEntry3.method = "2df7967b-c163-40e4-9df1-d5dcf52a6339";
+        dispatchEntry3.method = "b309409d-89d2-4d6e-a832-218c74ba5b9c";
         org.projectodd.sockjs.DispatchFunction[] dispatchFunctionArray11 = dispatchEntry3.functions;
         org.junit.Assert.assertNotNull(dispatchFunctionArray2);
         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "hi!" + "'", str4, "hi!");
@@ -4849,7 +4849,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         sockJsServlet0.setServer(sockJsServer1);
         org.projectodd.sockjs.SockJsServer sockJsServer7 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session8 = null;
@@ -4867,7 +4867,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "c7c8063c-0a1c-4886-bdb9-3cc3e216bafb" + "'", str14, "c7c8063c-0a1c-4886-bdb9-3cc3e216bafb");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "14074747-ea2f-4c4a-8f6f-9907c67eb3fa" + "'", str14, "14074747-ea2f-4c4a-8f6f-9907c67eb3fa");
         org.junit.Assert.assertNull(str15);
     }
 
@@ -4884,7 +4884,7 @@ public class TestGroup100Case0 {
         boolean boolean7 = xhrPollingReceiver5.doSendFrame("\"\"");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean9 = xhrPollingReceiver5.doSendFrame("7030d516-c9fc-4b3e-a24b-c4d736555f2d");
+            boolean boolean9 = xhrPollingReceiver5.doSendFrame("51c8742e-ccc2-4ab2-97e5-9a1ecdf36478");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -4921,7 +4921,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -4943,9 +4943,9 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         java.lang.String str59 = sockJsWebsocketRequest4.getContentType();
-        java.lang.String str61 = sockJsWebsocketRequest4.getCookie("7030d516-c9fc-4b3e-a24b-c4d736555f2d");
+        java.lang.String str61 = sockJsWebsocketRequest4.getCookie("51c8742e-ccc2-4ab2-97e5-9a1ecdf36478");
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertTrue("'" + int20 + "' != '" + 200 + "'", int20 == 200);
         org.junit.Assert.assertNull(str34);
@@ -4964,8 +4964,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test218");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.projectodd.sockjs.SockJsRequest sockJsRequest8 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse9 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest10 = null;
@@ -4977,7 +4977,7 @@ public class TestGroup100Case0 {
         java.lang.String str17 = options12.sockjsUrl;
         int int18 = options12.responseLimit;
         java.lang.String str19 = options12.sockjsUrl;
-        options12.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        options12.sockjsUrl = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         sockJsServer0.options = options12;
         org.projectodd.sockjs.SockJsServer sockJsServer23 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session24 = null;
@@ -4998,7 +4998,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals("'" + str17 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str17, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str19, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "e9cbdfff-25c5-4384-9b52-64cfa602c655" + "'", str30, "e9cbdfff-25c5-4384-9b52-64cfa602c655");
+// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "c63a9d6d-c3a8-48e5-9229-eac01b6d06a2" + "'", str30, "c63a9d6d-c3a8-48e5-9229-eac01b6d06a2");
         org.junit.Assert.assertNull(str31);
         org.junit.Assert.assertNull(str39);
     }
@@ -5023,7 +5023,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler16 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
         org.projectodd.sockjs.DispatchFunction dispatchFunction17 = eventsourceHandler16.eventsource;
         org.projectodd.sockjs.DispatchFunction dispatchFunction18 = eventsourceHandler16.eventsource;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "4df1bf63-6d12-4300-b19f-35389611d1da" + "'", str7, "4df1bf63-6d12-4300-b19f-35389611d1da");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "a3b4cb67-ccca-42d5-9d35-47332076d4d1" + "'", str7, "a3b4cb67-ccca-42d5-9d35-47332076d4d1");
         org.junit.Assert.assertNull(str8);
         org.junit.Assert.assertNotNull(dispatchFunction17);
         org.junit.Assert.assertNotNull(dispatchFunction18);
@@ -5039,10 +5039,10 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
-        sockJsConnection2.emitData("de9a8da6-580d-432b-bbe5-42d5a97c653f");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "96c4603c-3098-4810-bbe2-2f8d3d821aca" + "'", str7, "96c4603c-3098-4810-bbe2-2f8d3d821aca");
+        sockJsConnection2.emitData("4f977148-37b0-4342-89d1-5abfe8419ca4");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "39756cef-f4f3-4504-948b-74773ddbf064" + "'", str7, "39756cef-f4f3-4504-948b-74773ddbf064");
     }
 
     @Test
@@ -5190,7 +5190,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.prefix = "\"\"";
         java.lang.String str4 = sockJsConnection1.toString();
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "<SockJSConnection 2581f79a-8ce7-4075-aede-791f8359e2ae>" + "'", str4, "<SockJSConnection 2581f79a-8ce7-4075-aede-791f8359e2ae>");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "<SockJSConnection 270619cd-5631-4bdb-b551-6a1eed52172e>" + "'", str4, "<SockJSConnection 270619cd-5631-4bdb-b551-6a1eed52172e>");
     }
 
     @Test
@@ -5266,7 +5266,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test229");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        sockJsConnection1.remoteAddress = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         java.lang.String str4 = sockJsConnection1.prefix;
         org.junit.Assert.assertNull(str4);
     }
@@ -5280,7 +5280,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsException sockJsException4 = new org.projectodd.sockjs.SockJsException((java.lang.Throwable) sockJsException3);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServlet0.log("cc90bf66-5961-4693-b141-fc94fdea3cdb", (java.lang.Throwable) sockJsException3);
+            sockJsServlet0.log("b9dcbc6c-e66a-4859-85de-a72f4cdad117", (java.lang.Throwable) sockJsException3);
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: ServletConfig has not been initialized");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
@@ -5314,11 +5314,11 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test232");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         java.lang.String str6 = sockJsWebsocketRequest4.getPrefix();
         org.junit.Assert.assertNull(nextFilter5);
-        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str6, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str6, "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
     }
 
     @Test
@@ -5331,12 +5331,12 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer.Options options12 = sockJsServer0.options;
         options12.responseLimit = 100;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c843a36f-67a3-4198-9024-291640dd99b7" + "'", str7, "c843a36f-67a3-4198-9024-291640dd99b7");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c60fd7bd-b986-47b4-8108-c472819a4228" + "'", str7, "c60fd7bd-b986-47b4-8108-c472819a4228");
         org.junit.Assert.assertNotNull(options12);
     }
 
@@ -5567,7 +5567,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver21 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse9, options18);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str23 = sockJsServletRequest1.getQueryParameter("03547ec1-506f-4c73-a4d0-a9eae9f95fdd");
+            java.lang.String str23 = sockJsServletRequest1.getQueryParameter("67548571-522d-4935-80ae-c24937f24372");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -5800,7 +5800,7 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "0199325e-1796-4db3-9302-2930e18bea9d" + "'", str7, "0199325e-1796-4db3-9302-2930e18bea9d");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "0c97cb2a-a5d0-4d6f-adfe-82b383d5ce19" + "'", str7, "0c97cb2a-a5d0-4d6f-adfe-82b383d5ce19");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -5810,12 +5810,12 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test246");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         org.projectodd.sockjs.NextFilter nextFilter5 = sockJsWebsocketRequest4.nextFilter;
         org.projectodd.sockjs.SockJsServer sockJsServer6 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer6.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint10 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer6, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint13 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer6, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint10 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer6, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint13 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer6, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.projectodd.sockjs.SockJsRequest sockJsRequest14 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse15 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest16 = null;
@@ -5827,7 +5827,7 @@ public class TestGroup100Case0 {
         java.lang.String str23 = options18.sockjsUrl;
         int int24 = options18.responseLimit;
         java.lang.String str25 = options18.sockjsUrl;
-        options18.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        options18.sockjsUrl = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         sockJsServer6.options = options18;
         org.projectodd.sockjs.SockJsRequest sockJsRequest29 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse30 = null;
@@ -5836,7 +5836,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsServer.Options options33 = new org.projectodd.sockjs.SockJsServer.Options();
         int int34 = options33.heartbeatDelay;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver35 = new org.projectodd.sockjs.EventSourceReceiver(sockJsRequest29, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse32, options33);
-        boolean boolean37 = eventSourceReceiver35.doSendFrame("f6091292-7c6e-4d5b-9828-40d53b360c32");
+        boolean boolean37 = eventSourceReceiver35.doSendFrame("37ac3634-8cd4-4bba-a4f8-267eda290b3e");
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Session session38 = org.projectodd.sockjs.Transport.registerNoSession((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, sockJsServer6, (org.projectodd.sockjs.GenericReceiver) eventSourceReceiver35);
@@ -5865,7 +5865,7 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection2.remoteAddress;
         sockJsServer0.emitConnection(sockJsConnection2);
         sockJsServer0.init();
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9447fbf5-abee-45cd-ae27-de993b58c47b" + "'", str7, "9447fbf5-abee-45cd-ae27-de993b58c47b");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "d07a1d04-681b-4809-9359-21ca89385b90" + "'", str7, "d07a1d04-681b-4809-9359-21ca89385b90");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -5942,8 +5942,8 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver21 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest18, sockJsResponse19, options20);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver22 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest16, sockJsResponse17, options20);
         options20.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "546f310ca65138f89daa56a18aed0658");
-        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver26 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse12, options20, "45c5c7f62d06fed3323f980a739ffe91");
+        org.projectodd.sockjs.DispatchException dispatchException29 = new org.projectodd.sockjs.DispatchException(0, "3ab7963e-8fca-4430-8d3d-57d50376f624");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException29);
         org.projectodd.sockjs.DispatchException dispatchException33 = new org.projectodd.sockjs.DispatchException(10, "\"\"");
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException33);
@@ -5961,7 +5961,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test251");
         javax.websocket.Session session0 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap3 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap3);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest4 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session0, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap3);
         java.lang.String str5 = sockJsWebsocketRequest4.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest6 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse7 = null;
@@ -5979,7 +5979,7 @@ public class TestGroup100Case0 {
         options17.jsessionid = false;
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver21 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse9, options17);
         java.lang.Integer int22 = sockJsServletResponse9.cacheFor();
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str5, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str5, "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
         org.junit.Assert.assertTrue("'" + int12 + "' != '" + 200 + "'", int12 == 200);
         org.junit.Assert.assertNull(int22);
     }
@@ -6023,11 +6023,11 @@ public class TestGroup100Case0 {
         java.lang.String str18 = sockJsConnection14.pathname;
         java.lang.String str19 = sockJsConnection14.toString();
         sockJsServer0.emitConnection(sockJsConnection14);
-        sockJsConnection14.url = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
-// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "df0498b0-c170-472f-8b59-6f3ca4705612" + "'", str9, "df0498b0-c170-472f-8b59-6f3ca4705612");
+        sockJsConnection14.url = "<SockJSConnection 325d0bee-caf7-47aa-a040-4e3ef5c9d7e0>";
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "34e8876a-cf04-4cf7-8bda-1656969da7b3" + "'", str9, "34e8876a-cf04-4cf7-8bda-1656969da7b3");
         org.junit.Assert.assertNull(str10);
         org.junit.Assert.assertNull(str18);
-// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>" + "'", str19, "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>");
+// flaky:         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "<SockJSConnection 4a85a4b4-5924-4ac7-847c-febef76b01e9>" + "'", str19, "<SockJSConnection 4a85a4b4-5924-4ac7-847c-febef76b01e9>");
     }
 
     @Test
@@ -6059,7 +6059,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -6081,10 +6081,10 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("3591a922-3c4d-478c-8558-f5359b3ef3f4");
+            java.lang.String str60 = sockJsWebsocketRequest4.getHeader("7e8ac891-f731-4ea9-a4e8-9844b7eb3d52");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -6141,7 +6141,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -6163,7 +6163,7 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         org.projectodd.sockjs.DispatchFunction dispatchFunction59 = sockJsWebsocketRequest4.lastFunction;
         // The following exception was thrown during execution in test generation
         try {
@@ -6187,8 +6187,8 @@ public class TestGroup100Case0 {
     public void test257() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test257");
-        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("96c4603c-3098-4810-bbe2-2f8d3d821aca");
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"" + "'", str1, "\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"");
+        java.lang.String str1 = org.projectodd.sockjs.Utils.quote("39756cef-f4f3-4504-948b-74773ddbf064");
+        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "\"39756cef-f4f3-4504-948b-74773ddbf064\"" + "'", str1, "\"39756cef-f4f3-4504-948b-74773ddbf064\"");
     }
 
     @Test
@@ -6237,9 +6237,9 @@ public class TestGroup100Case0 {
         sockJsConnection9.emitClose();
         java.util.Map<java.lang.String, java.lang.String> strMap18 = sockJsConnection9.headers;
         sockJsConnection1.headers = strMap18;
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "cf9e4030-02de-4018-8679-b18bb23bcabc" + "'", str14, "cf9e4030-02de-4018-8679-b18bb23bcabc");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "7b395ddf-ef40-4cb0-9c91-4624726e139a" + "'", str14, "7b395ddf-ef40-4cb0-9c91-4624726e139a");
         org.junit.Assert.assertNull(str15);
-// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "cf9e4030-02de-4018-8679-b18bb23bcabc" + "'", str16, "cf9e4030-02de-4018-8679-b18bb23bcabc");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "7b395ddf-ef40-4cb0-9c91-4624726e139a" + "'", str16, "7b395ddf-ef40-4cb0-9c91-4624726e139a");
         org.junit.Assert.assertNotNull(strMap18);
     }
 
@@ -6270,7 +6270,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test262");
         org.projectodd.sockjs.Session session0 = null;
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
-        sockJsConnection1.remoteAddress = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        sockJsConnection1.remoteAddress = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         // The following exception was thrown during execution in test generation
         try {
             org.projectodd.sockjs.Transport.READY_STATE rEADY_STATE4 = sockJsConnection1.getReadyState();
@@ -6295,7 +6295,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.SockJsConnection sockJsConnection1 = new org.projectodd.sockjs.SockJsConnection(session0);
         sockJsConnection1.pathname = "hi!";
         sockJsConnection1.emitClose();
-        sockJsConnection1.id = "711201c2-086b-4341-8148-1f2bff1799c8";
+        sockJsConnection1.id = "fb5841bb-8127-4cb1-a3e0-b7ff4a96a7fc";
     }
 
     @Test
@@ -6308,11 +6308,11 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.DispatchFunction dispatchFunction12 = chunkingHandler11.infoOptions;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "2c1f18bc-eb67-4e1d-8ff2-de2f99870128" + "'", str7, "2c1f18bc-eb67-4e1d-8ff2-de2f99870128");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "2c0bfe18-0a34-4cb7-acfb-3a5e3abfb794" + "'", str7, "2c0bfe18-0a34-4cb7-acfb-3a5e3abfb794");
         org.junit.Assert.assertNotNull(dispatchFunction12);
     }
 
@@ -6326,13 +6326,13 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer.Options options12 = sockJsServer0.options;
         org.projectodd.sockjs.XhrHandler xhrHandler13 = new org.projectodd.sockjs.XhrHandler(sockJsServer0);
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint16 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "", "<SockJSConnection 6ca30529-291d-475e-a09b-78d6ff14a8a9>");
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "c985b2e3-92ea-4a8a-8c7a-51c45a743bec" + "'", str7, "c985b2e3-92ea-4a8a-8c7a-51c45a743bec");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint16 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "", "<SockJSConnection 4a85a4b4-5924-4ac7-847c-febef76b01e9>");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "091cb72b-eb00-4d06-bd78-924a297ca004" + "'", str7, "091cb72b-eb00-4d06-bd78-924a297ca004");
         org.junit.Assert.assertNotNull(options12);
     }
 
@@ -6350,7 +6350,7 @@ public class TestGroup100Case0 {
         boolean boolean8 = eventSourceReceiver6.doSendFrame("\"9d4568c009d203ab10e33ea9953a0264\"");
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean10 = eventSourceReceiver6.doSendFrame("1f2d0367-affd-4bc4-9047-35ed487203f3");
+            boolean boolean10 = eventSourceReceiver6.doSendFrame("3ab7963e-8fca-4430-8d3d-57d50376f624");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -6500,7 +6500,7 @@ public class TestGroup100Case0 {
         dispatcher67.push("http://cdn.sockjs.org/sockjs-0.3.min.js", "\"hi!\"", dispatchFunctionArray97);
         // The following exception was thrown during execution in test generation
         try {
-            dispatcher13.push("4df1bf63-6d12-4300-b19f-35389611d1da", strArray53, dispatchFunctionArray97);
+            dispatcher13.push("a3b4cb67-ccca-42d5-9d35-47332076d4d1", strArray53, dispatchFunctionArray97);
             org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 0");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
@@ -6580,12 +6580,12 @@ public class TestGroup100Case0 {
         sockJsServer0.emitConnection(sockJsConnection12);
         // The following exception was thrown during execution in test generation
         try {
-            boolean boolean18 = sockJsConnection12.close((int) (short) 10, "3724d827-52f3-42c3-b48e-fb3c2b6c47aa");
+            boolean boolean18 = sockJsConnection12.close((int) (short) 10, "f7924490-db75-43b3-9539-21d620010744");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6cb217ac-494e-4c4a-b588-1c04055903ae" + "'", str7, "6cb217ac-494e-4c4a-b588-1c04055903ae");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "f26b1463-94a4-4890-aadb-71f5d7792a30" + "'", str7, "f26b1463-94a4-4890-aadb-71f5d7792a30");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -6595,7 +6595,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test272");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         javax.websocket.Session session5 = null;
         org.projectodd.sockjs.SockJsException sockJsException7 = new org.projectodd.sockjs.SockJsException("hi!");
         sockJsEndpoint4.onError(session5, (java.lang.Throwable) sockJsException7);
@@ -6657,11 +6657,11 @@ public class TestGroup100Case0 {
         sockJsConnection47.prefix = "\"\"";
         sockJsConnection47.url = "\"\\\"\\\"\"";
         java.lang.String str52 = sockJsConnection47.id;
-        sockJsConnection47.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection47.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer45.emitConnection(sockJsConnection47);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler56 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer45);
         org.projectodd.sockjs.SockJsServer.Options options57 = sockJsServer45.options;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver59 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse30, options57, "\"0464b5a2-eb61-4f8e-9f54-8ee3f17275f1\"");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver59 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse30, options57, "\"d3c27a3b-df3d-49b0-b43f-a93d6fde76b3\"");
         int int60 = sockJsServletResponse30.statusCode();
         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
         org.junit.Assert.assertTrue("'" + int9 + "' != '" + 200 + "'", int9 == 200);
@@ -6672,7 +6672,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int32 + "' != '" + 200 + "'", int32 == 200);
         org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
         org.junit.Assert.assertEquals("'" + str43 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str43, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str52 + "' != '" + "714b1f9d-4865-45b6-8fae-8dedc0faf59c" + "'", str52, "714b1f9d-4865-45b6-8fae-8dedc0faf59c");
+// flaky:         org.junit.Assert.assertEquals("'" + str52 + "' != '" + "5c25b3ba-1dcc-4fca-92a4-4c1baeec2403" + "'", str52, "5c25b3ba-1dcc-4fca-92a4-4c1baeec2403");
         org.junit.Assert.assertNotNull(options57);
         org.junit.Assert.assertTrue("'" + int60 + "' != '" + 200 + "'", int60 == 200);
     }
@@ -6735,9 +6735,9 @@ public class TestGroup100Case0 {
         java.lang.String str8 = sockJsConnection1.id;
         sockJsConnection1.pathname = "\"hi!\"";
         java.lang.String str11 = sockJsConnection1.url;
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "f5a2f1e7-4785-43a9-874e-ef06f55748eb" + "'", str6, "f5a2f1e7-4785-43a9-874e-ef06f55748eb");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "7b506d62-43fb-4ada-9b3d-0dc87fbe01d7" + "'", str6, "7b506d62-43fb-4ada-9b3d-0dc87fbe01d7");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "f5a2f1e7-4785-43a9-874e-ef06f55748eb" + "'", str8, "f5a2f1e7-4785-43a9-874e-ef06f55748eb");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "7b506d62-43fb-4ada-9b3d-0dc87fbe01d7" + "'", str8, "7b506d62-43fb-4ada-9b3d-0dc87fbe01d7");
         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "\"\\\"\\\"\"" + "'", str11, "\"\\\"\\\"\"");
     }
 
@@ -6760,7 +6760,7 @@ public class TestGroup100Case0 {
         sockJsServer0.emitConnection(sockJsConnection12);
         org.projectodd.sockjs.EventsourceHandler eventsourceHandler16 = new org.projectodd.sockjs.EventsourceHandler(sockJsServer0);
         org.projectodd.sockjs.WebsocketHandler websocketHandler17 = new org.projectodd.sockjs.WebsocketHandler(sockJsServer0);
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "92fdbffc-5023-4faf-8cd5-d1e3723de8db" + "'", str7, "92fdbffc-5023-4faf-8cd5-d1e3723de8db");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "51800139-2acc-4bbe-8533-b07993ef8f1c" + "'", str7, "51800139-2acc-4bbe-8533-b07993ef8f1c");
         org.junit.Assert.assertNull(str8);
     }
 
@@ -6815,8 +6815,8 @@ public class TestGroup100Case0 {
         websocketHandler1.sockjsWebsocket = dispatchFunction9;
         org.projectodd.sockjs.SockJsServer sockJsServer11 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer11.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint15 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer11, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint18 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer11, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint15 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer11, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint18 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer11, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.projectodd.sockjs.SockJsRequest sockJsRequest19 = null;
         org.projectodd.sockjs.SockJsResponse sockJsResponse20 = null;
         org.projectodd.sockjs.SockJsRequest sockJsRequest21 = null;
@@ -6828,7 +6828,7 @@ public class TestGroup100Case0 {
         java.lang.String str28 = options23.sockjsUrl;
         int int29 = options23.responseLimit;
         java.lang.String str30 = options23.sockjsUrl;
-        options23.sockjsUrl = "1f2d0367-affd-4bc4-9047-35ed487203f3";
+        options23.sockjsUrl = "3ab7963e-8fca-4430-8d3d-57d50376f624";
         sockJsServer11.options = options23;
         org.projectodd.sockjs.SockJsServer sockJsServer34 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session35 = null;
@@ -6854,7 +6854,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals("'" + str28 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str28, "http://cdn.sockjs.org/sockjs-0.3.min.js");
         org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "http://cdn.sockjs.org/sockjs-0.3.min.js" + "'", str30, "http://cdn.sockjs.org/sockjs-0.3.min.js");
-// flaky:         org.junit.Assert.assertEquals("'" + str41 + "' != '" + "b88cbd8d-43d4-43ad-9f4d-db4193cd0069" + "'", str41, "b88cbd8d-43d4-43ad-9f4d-db4193cd0069");
+// flaky:         org.junit.Assert.assertEquals("'" + str41 + "' != '" + "ec53e3c4-0d81-404a-96c6-14b3117d903a" + "'", str41, "ec53e3c4-0d81-404a-96c6-14b3117d903a");
         org.junit.Assert.assertNull(str42);
         org.junit.Assert.assertNull(str50);
         org.junit.Assert.assertNotNull(dispatchFunction53);
@@ -6900,8 +6900,8 @@ public class TestGroup100Case0 {
         int int1 = options0.heartbeatDelay;
         boolean boolean2 = options0.jsessionid;
         java.lang.String str3 = options0.baseUrl;
-        options0.baseUrl = "<SockJSConnection 42393e10-600d-4023-8e90-2e0df2e16503>";
-        options0.sockjsUrl = "c843a36f-67a3-4198-9024-291640dd99b7";
+        options0.baseUrl = "<SockJSConnection 325d0bee-caf7-47aa-a040-4e3ef5c9d7e0>";
+        options0.sockjsUrl = "c60fd7bd-b986-47b4-8108-c472819a4228";
         org.junit.Assert.assertTrue("'" + int1 + "' != '" + 25000 + "'", int1 == 25000);
         org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
         org.junit.Assert.assertNull(str3);
@@ -6917,7 +6917,7 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet11 = new org.projectodd.sockjs.servlet.SockJsServlet(sockJsServer0);
         javax.servlet.ServletRequest servletRequest12 = null;
@@ -6929,7 +6929,7 @@ public class TestGroup100Case0 {
         } catch (javax.servlet.ServletException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "33f77f7c-12d3-4eb0-8be5-91ad41e52fc8" + "'", str7, "33f77f7c-12d3-4eb0-8be5-91ad41e52fc8");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3aa2e89a-2dac-4d1e-9e2b-31de6d36aa84" + "'", str7, "3aa2e89a-2dac-4d1e-9e2b-31de6d36aa84");
     }
 
     @Test
@@ -6953,9 +6953,9 @@ public class TestGroup100Case0 {
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "2fbd983b-8cc5-45fe-9b85-463c12e4f520" + "'", str6, "2fbd983b-8cc5-45fe-9b85-463c12e4f520");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "0764eef3-d91e-4af2-bad0-ce440b065a25" + "'", str6, "0764eef3-d91e-4af2-bad0-ce440b065a25");
         org.junit.Assert.assertNull(str7);
-// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2fbd983b-8cc5-45fe-9b85-463c12e4f520" + "'", str8, "2fbd983b-8cc5-45fe-9b85-463c12e4f520");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "0764eef3-d91e-4af2-bad0-ce440b065a25" + "'", str8, "0764eef3-d91e-4af2-bad0-ce440b065a25");
         org.junit.Assert.assertNotNull(strMap10);
     }
 
@@ -6985,7 +6985,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver20 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse7, options15);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str22 = sockJsServletRequest1.getCookie("\"96c4603c-3098-4810-bbe2-2f8d3d821aca\"");
+            java.lang.String str22 = sockJsServletRequest1.getCookie("\"39756cef-f4f3-4504-948b-74773ddbf064\"");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -7004,7 +7004,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServletResponse sockJsServletResponse2 = new org.projectodd.sockjs.servlet.SockJsServletResponse(httpServletResponse0, asyncContext1);
         // The following exception was thrown during execution in test generation
         try {
-            sockJsServletResponse2.setHeader("cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9", "GET");
+            sockJsServletResponse2.setHeader("b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1", "GET");
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -7037,7 +7037,7 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.Session session12 = null;
@@ -7053,7 +7053,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.IframeHandler iframeHandler24 = new org.projectodd.sockjs.IframeHandler(sockJsServer23);
         org.projectodd.sockjs.DispatchFunction dispatchFunction25 = iframeHandler24.iframe;
         xhrHandler22.xhrPoll = dispatchFunction25;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "99a9e8ed-27b0-4262-8d1a-f24044825acc" + "'", str7, "99a9e8ed-27b0-4262-8d1a-f24044825acc");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "125d73c0-ad06-4654-923a-fc10f1643271" + "'", str7, "125d73c0-ad06-4654-923a-fc10f1643271");
         org.junit.Assert.assertNull(str16);
         org.junit.Assert.assertEquals("'" + str19 + "' != '" + "\"\"" + "'", str19, "\"\"");
         org.junit.Assert.assertNotNull(dispatchFunction25);
@@ -7068,7 +7068,7 @@ public class TestGroup100Case0 {
         sockJsConnection1.pathname = "hi!";
         sockJsConnection1.emitClose();
         java.lang.String str5 = sockJsConnection1.url;
-        sockJsConnection1.emitData("0970ee06-4d6c-485d-a9a1-adc25df78a3f");
+        sockJsConnection1.emitData("933ecfb1-a145-4644-ab9b-4f066870d6b7");
         org.junit.Assert.assertNull(str5);
     }
 
@@ -7082,10 +7082,10 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.DispatchFunction dispatchFunction3 = sockJsServletRequest1.lastFunction;
         org.projectodd.sockjs.SockJsServer sockJsServer4 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer4.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint8 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer4, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint11 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer4, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint8 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer4, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint11 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer4, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         javax.websocket.Session session12 = null;
-        org.projectodd.sockjs.DispatchException dispatchException15 = new org.projectodd.sockjs.DispatchException(0, "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.DispatchException dispatchException15 = new org.projectodd.sockjs.DispatchException(0, "3ab7963e-8fca-4430-8d3d-57d50376f624");
         int int16 = dispatchException15.status;
         rawWebsocketEndpoint11.onError(session12, (java.lang.Throwable) dispatchException15);
         sockJsServletRequest1.onError((java.lang.Throwable) dispatchException15);
@@ -7162,9 +7162,9 @@ public class TestGroup100Case0 {
         sockJsConnection1.onClose(onCloseHandler20);
         org.junit.Assert.assertNull(str4);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "\"\"" + "'", str7, "\"\"");
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "16afa01d-c1b2-4656-a80e-2a15a4b27d84" + "'", str14, "16afa01d-c1b2-4656-a80e-2a15a4b27d84");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "f853fa7c-bac5-4a4c-a769-33ee6d036370" + "'", str14, "f853fa7c-bac5-4a4c-a769-33ee6d036370");
         org.junit.Assert.assertNull(str15);
-// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "16afa01d-c1b2-4656-a80e-2a15a4b27d84" + "'", str16, "16afa01d-c1b2-4656-a80e-2a15a4b27d84");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "f853fa7c-bac5-4a4c-a769-33ee6d036370" + "'", str16, "f853fa7c-bac5-4a4c-a769-33ee6d036370");
         org.junit.Assert.assertNotNull(strMap18);
     }
 
@@ -7178,14 +7178,14 @@ public class TestGroup100Case0 {
         sockJsConnection2.prefix = "\"\"";
         sockJsConnection2.url = "\"\\\"\\\"\"";
         java.lang.String str7 = sockJsConnection2.id;
-        sockJsConnection2.pathname = "1d0d2f8b-f3b3-4b9b-b058-7275f6f659fe";
+        sockJsConnection2.pathname = "63271dc7-5174-48ba-8275-e00f4ff28b1f";
         sockJsServer0.emitConnection(sockJsConnection2);
         org.projectodd.sockjs.ChunkingHandler chunkingHandler11 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer sockJsServer12 = null;
         org.projectodd.sockjs.ChunkingHandler chunkingHandler13 = new org.projectodd.sockjs.ChunkingHandler(sockJsServer12);
         org.projectodd.sockjs.DispatchFunction dispatchFunction14 = chunkingHandler13.info;
         chunkingHandler11.info = dispatchFunction14;
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "a23a9e5d-1704-421f-a2f0-be895e0aa814" + "'", str7, "a23a9e5d-1704-421f-a2f0-be895e0aa814");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "1d3b79dc-ac00-4ae3-843f-546b708eee0c" + "'", str7, "1d3b79dc-ac00-4ae3-843f-546b708eee0c");
         org.junit.Assert.assertNotNull(dispatchFunction14);
     }
 
@@ -7218,7 +7218,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver26 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest23, sockJsResponse24, options25);
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver27 = new org.projectodd.sockjs.HtmlFileReceiver(sockJsRequest21, sockJsResponse22, options25);
         options25.responseLimit = (byte) -1;
-        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "546f310ca65138f89daa56a18aed0658");
+        org.projectodd.sockjs.JsonpReceiver jsonpReceiver31 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest6, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options25, "45c5c7f62d06fed3323f980a739ffe91");
         javax.servlet.http.HttpServletRequest httpServletRequest32 = null;
         org.projectodd.sockjs.servlet.SockJsServletRequest sockJsServletRequest33 = new org.projectodd.sockjs.servlet.SockJsServletRequest(httpServletRequest32);
         java.lang.String str34 = sockJsServletRequest33.session();
@@ -7240,7 +7240,7 @@ public class TestGroup100Case0 {
         options48.jsessionid = false;
         org.projectodd.sockjs.HtmlFileReceiver htmlFileReceiver54 = new org.projectodd.sockjs.HtmlFileReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest33, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse44, options48);
         org.projectodd.sockjs.JsonpReceiver jsonpReceiver56 = new org.projectodd.sockjs.JsonpReceiver((org.projectodd.sockjs.SockJsRequest) sockJsWebsocketRequest4, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse17, options48, "");
-        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("99bb2ca2-b220-445b-a4ac-c77322095a71");
+        java.lang.String str58 = sockJsWebsocketRequest4.getCookie("e1fee1fb-09c9-49c7-81a8-3ab8e171187f");
         org.projectodd.sockjs.DispatchFunction dispatchFunction59 = sockJsWebsocketRequest4.lastFunction;
         java.lang.String str60 = sockJsWebsocketRequest4.getRemoteAddr();
         org.junit.Assert.assertNull(str7);
@@ -7268,7 +7268,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.NextFilter nextFilter8 = sockJsServletRequest1.nextFilter;
         javax.websocket.Session session9 = null;
         java.util.Map<java.lang.String, java.util.List<java.lang.String>> strMap12 = null;
-        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest13 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session9, "cc90bf66-5961-4693-b141-fc94fdea3cdb", "dc9978fd-25e8-4379-9ca9-e5909baefee9", strMap12);
+        org.projectodd.sockjs.servlet.SockJsWebsocketRequest sockJsWebsocketRequest13 = new org.projectodd.sockjs.servlet.SockJsWebsocketRequest(session9, "b9dcbc6c-e66a-4859-85de-a72f4cdad117", "64b92e6a-a976-49ab-8dc9-9cc5f226d9b1", strMap12);
         java.lang.String str14 = sockJsWebsocketRequest13.getPrefix();
         org.projectodd.sockjs.SockJsRequest sockJsRequest15 = null;
         javax.servlet.http.HttpServletResponse httpServletResponse16 = null;
@@ -7298,7 +7298,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.EventSourceReceiver eventSourceReceiver41 = new org.projectodd.sockjs.EventSourceReceiver((org.projectodd.sockjs.SockJsRequest) sockJsServletRequest1, (org.projectodd.sockjs.SockJsResponse) sockJsServletResponse18, options40);
         org.junit.Assert.assertNull(str2);
         org.junit.Assert.assertNull(nextFilter8);
-        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9" + "'", str14, "cc90bf66-5961-4693-b141-fc94fdea3cdbdc9978fd-25e8-4379-9ca9-e5909baefee9");
+        org.junit.Assert.assertEquals("'" + str14 + "' != '" + "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1" + "'", str14, "b9dcbc6c-e66a-4859-85de-a72f4cdad11764b92e6a-a976-49ab-8dc9-9cc5f226d9b1");
         org.junit.Assert.assertTrue("'" + int21 + "' != '" + 200 + "'", int21 == 200);
         org.junit.Assert.assertNotNull(options40);
     }
@@ -7309,8 +7309,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test297");
         org.projectodd.sockjs.SockJsServer sockJsServer0 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer0.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
-        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "1f2d0367-affd-4bc4-9047-35ed487203f3");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint4 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer0, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
+        org.projectodd.sockjs.servlet.RawWebsocketEndpoint rawWebsocketEndpoint7 = new org.projectodd.sockjs.servlet.RawWebsocketEndpoint(sockJsServer0, "c[1,\"\"]", "3ab7963e-8fca-4430-8d3d-57d50376f624");
         org.projectodd.sockjs.WebHandler webHandler8 = new org.projectodd.sockjs.WebHandler(sockJsServer0);
         org.projectodd.sockjs.SockJsServer sockJsServer9 = null;
         org.projectodd.sockjs.WebsocketHandler websocketHandler10 = new org.projectodd.sockjs.WebsocketHandler(sockJsServer9);
@@ -7373,7 +7373,7 @@ public class TestGroup100Case0 {
         org.projectodd.sockjs.servlet.SockJsServlet sockJsServlet0 = new org.projectodd.sockjs.servlet.SockJsServlet();
         org.projectodd.sockjs.SockJsServer sockJsServer1 = new org.projectodd.sockjs.SockJsServer();
         sockJsServer1.init();
-        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "1f2d0367-affd-4bc4-9047-35ed487203f3", "2df7967b-c163-40e4-9df1-d5dcf52a6339");
+        org.projectodd.sockjs.servlet.SockJsEndpoint sockJsEndpoint5 = new org.projectodd.sockjs.servlet.SockJsEndpoint(sockJsServer1, "3ab7963e-8fca-4430-8d3d-57d50376f624", "b309409d-89d2-4d6e-a832-218c74ba5b9c");
         sockJsServlet0.setServer(sockJsServer1);
         org.projectodd.sockjs.SockJsServer sockJsServer7 = new org.projectodd.sockjs.SockJsServer();
         org.projectodd.sockjs.Session session8 = null;
@@ -7385,7 +7385,7 @@ public class TestGroup100Case0 {
         sockJsServer7.emitConnection(sockJsConnection9);
         sockJsServlet0.setServer(sockJsServer7);
         org.projectodd.sockjs.SockJsServer sockJsServer18 = sockJsServlet0.getServer();
-// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "bcfe847e-f34a-4f13-a0c4-b7b3adb6a7ac" + "'", str14, "bcfe847e-f34a-4f13-a0c4-b7b3adb6a7ac");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "d21b91c9-cda2-43db-93dc-b2d454d4b71b" + "'", str14, "d21b91c9-cda2-43db-93dc-b2d454d4b71b");
         org.junit.Assert.assertNull(str15);
         org.junit.Assert.assertNotNull(sockJsServer18);
     }

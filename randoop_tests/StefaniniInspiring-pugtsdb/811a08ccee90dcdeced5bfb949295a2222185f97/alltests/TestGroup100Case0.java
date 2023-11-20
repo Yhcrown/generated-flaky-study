@@ -37,7 +37,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             com.inspiring.pugtsdb.PugTSDBOverRocks pugTSDBOverRocks1 = new com.inspiring.pugtsdb.PugTSDBOverRocks("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.UnsatisfiedLinkError; message: /private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni1741952881072863166.jnilib: dlopen(/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni1741952881072863166.jnilib, 0x0001): tried: '/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni1741952881072863166.jnilib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni1741952881072863166.jnilib' (no such file), '/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni1741952881072863166.jnilib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))");
+            org.junit.Assert.fail("Expected exception of type java.lang.UnsatisfiedLinkError; message: /private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni765986192297211983.jnilib: dlopen(/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni765986192297211983.jnilib, 0x0001): tried: '/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni765986192297211983.jnilib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64')), '/System/Volumes/Preboot/Cryptexes/OS/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni765986192297211983.jnilib' (no such file), '/private/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/librocksdbjni765986192297211983.jnilib' (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))");
         } catch (java.lang.UnsatisfiedLinkError e) {
             // Expected exception.
         }
@@ -76,7 +76,7 @@ public class TestGroup100Case0 {
         long long4 = interval3.getUntilTime();
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
-// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1690154967698L + "'", long4 == 1690154967698L);
+// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1691829528911L + "'", long4 == 1691829528911L);
     }
 
     @Test
@@ -409,7 +409,7 @@ public class TestGroup100Case0 {
     public void test032() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test032");
-        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastMonths(1690154967698L);
+        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastMonths(1691829528911L);
         org.junit.Assert.assertNotNull(builder1);
     }
 
@@ -781,8 +781,8 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.h2.PointH2Repository pointH2Repository4 = new com.inspiring.pugtsdb.repository.h2.PointH2Repository(pugConnectionSupplier0, (com.inspiring.pugtsdb.repository.TagRepository) tagH2Repository2);
         // The following exception was thrown during execution in test generation
         try {
-            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.AbstractCollection<java.lang.Double>>> doubleCollectionMetricPointsList8 = pointH2Repository4.selectRawMetricsPointsByNameBetweenTimestamp("100", (long) '4', 1690154967698L);
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric 100 points between 52 and 1690154967698 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"name\" = ?                  AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
+            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.AbstractCollection<java.lang.Double>>> doubleCollectionMetricPointsList8 = pointH2Repository4.selectRawMetricsPointsByNameBetweenTimestamp("100", (long) '4', 1691829528911L);
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric 100 points between 52 and 1691829528911 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"name\" = ?                  AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
         } catch (com.inspiring.pugtsdb.sql.PugSQLException e) {
             // Expected exception.
         }
@@ -819,8 +819,8 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.h2.PointH2Repository pointH2Repository4 = new com.inspiring.pugtsdb.repository.h2.PointH2Repository(pugConnectionSupplier0, (com.inspiring.pugtsdb.repository.TagRepository) tagH2Repository2);
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryRollUpEventMetricPoints8 = pointH2Repository4.selectRawMetricPointsByIdBetweenTimestamp("Aggregation{name='max'}", 0L, 1435820429039L);
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Aggregation{name='max'} points between 0 and 1435820429039 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
+            com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryRollUpEventMetricPoints8 = pointH2Repository4.selectRawMetricPointsByIdBetweenTimestamp("Aggregation{name='max'}", 0L, 1437494990209L);
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Aggregation{name='max'} points between 0 and 1437494990209 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
         } catch (com.inspiring.pugtsdb.sql.PugSQLException e) {
             // Expected exception.
         }
@@ -976,7 +976,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test073");
         com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastDays((long) 10);
-        com.inspiring.pugtsdb.time.Interval interval3 = builder1.fromMinutesAgo(1435820429039L);
+        com.inspiring.pugtsdb.time.Interval interval3 = builder1.fromMinutesAgo(1437494990209L);
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
     }
@@ -998,7 +998,7 @@ public class TestGroup100Case0 {
         java.lang.String str4 = interval3.toString();
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
-// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Interval{fromTime=1672491509360, untilTime=1698788969360}" + "'", str4, "Interval{fromTime=1672491509360, untilTime=1698788969360}");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Interval{fromTime=1674166070495, untilTime=1700463530495}" + "'", str4, "Interval{fromTime=1674166070495, untilTime=1700463530495}");
     }
 
     @Test
@@ -1109,8 +1109,8 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test083");
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId1 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.from("Interval{fromTime=1672491509360, untilTime=1698788969360}");
-            org.junit.Assert.fail("Expected exception of type java.lang.NumberFormatException; message: For input string: \"Time=1672491509360, untilTime=1698788969360}\"");
+            com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId1 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.from("Interval{fromTime=1674166070495, untilTime=1700463530495}");
+            org.junit.Assert.fail("Expected exception of type java.lang.NumberFormatException; message: For input string: \"Time=1674166070495, untilTime=1700463530495}\"");
         } catch (java.lang.NumberFormatException e) {
             // Expected exception.
         }
@@ -1142,7 +1142,7 @@ public class TestGroup100Case0 {
         java.util.Map<java.lang.String, java.lang.String> strMap14 = null;
         // The following exception was thrown during execution in test generation
         try {
-            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.TagRepository>> tagRepositoryMetricPointsList16 = pointH2Repository5.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity10, strMap14, (int) ' ');
+            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.TagRepository>> tagRepositoryMetricPointsList16 = pointH2Repository5.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity10, strMap14, (int) ' ');
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1334,7 +1334,7 @@ public class TestGroup100Case0 {
     public void test094() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test094");
-        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastDays(1690154967698L);
+        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastDays(1691829528911L);
         org.junit.Assert.assertNotNull(builder1);
     }
 
@@ -1445,7 +1445,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent13 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity10, granularity11, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList12);
         // The following exception was thrown during execution in test generation
         try {
-            pointH2Repository5.deletePointsByNameAndAggregationBeforeTime("Aggregation{name='or'}", "Aggregation{name='or'}", granularity11, 1690154967698L);
+            pointH2Repository5.deletePointsByNameAndAggregationBeforeTime("Aggregation{name='or'}", "Aggregation{name='or'}", granularity11, 1691829528911L);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -1533,8 +1533,8 @@ public class TestGroup100Case0 {
         long long5 = interval3.getFromTime();
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
-// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1435820430292L + "'", long4 == 1435820430292L);
-// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1435820430292L + "'", long5 == 1435820430292L);
+// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1437494991460L + "'", long4 == 1437494991460L);
+// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1437494991460L + "'", long5 == 1437494991460L);
     }
 
     @Test
@@ -1692,7 +1692,7 @@ public class TestGroup100Case0 {
     public void test117() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test117");
-        java.util.regex.Pattern pattern1 = com.inspiring.pugtsdb.util.GlobPattern.compile("Interval{fromTime=1672491509360, untilTime=1698788969360}");
+        java.util.regex.Pattern pattern1 = com.inspiring.pugtsdb.util.GlobPattern.compile("Interval{fromTime=1674166070495, untilTime=1700463530495}");
         org.junit.Assert.assertNotNull(pattern1);
         org.junit.Assert.assertEquals(pattern1.toString(), "\\QInterval\\E(.*)");
     }
@@ -1923,7 +1923,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
         org.junit.Assert.assertNotNull(interval4);
-// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1694302170624L + "'", long5 == 1694302170624L);
+// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1695976731791L + "'", long5 == 1695976731791L);
     }
 
     @Test
@@ -2063,13 +2063,13 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastMonths((long) (byte) 100);
         com.inspiring.pugtsdb.time.Interval interval2 = builder1.fromNow();
         com.inspiring.pugtsdb.time.Interval interval4 = builder1.fromMonthsAgo((long) ' ');
-        com.inspiring.pugtsdb.time.Interval interval6 = builder1.fromSecondsAgo(1690154967698L);
+        com.inspiring.pugtsdb.time.Interval interval6 = builder1.fromSecondsAgo(1691829528911L);
         java.lang.String str7 = interval6.toString();
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval2);
         org.junit.Assert.assertNotNull(interval4);
         org.junit.Assert.assertNotNull(interval6);
-// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}" + "'", str7, "Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}" + "'", str7, "Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}");
     }
 
     @Test
@@ -2189,7 +2189,7 @@ public class TestGroup100Case0 {
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>> doubleAggregationMetricPointsList26 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationRollUpEvent27 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "max", granularity18, granularity25, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>) doubleAggregationMetricPointsList26);
         java.util.Map<java.lang.String, java.lang.String> strMap28 = null;
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList30 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity18, strMap28, (int) (byte) 10);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList30 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity18, strMap28, (int) (byte) 10);
         com.inspiring.pugtsdb.time.Granularity granularity34 = com.inspiring.pugtsdb.time.Granularity.ONE_YEAR;
         com.inspiring.pugtsdb.time.Granularity granularity35 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList36 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
@@ -2206,8 +2206,8 @@ public class TestGroup100Case0 {
         java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.concurrent.ScheduledExecutorService>> scheduledExecutorServiceMetricPointsList57 = pointRocksRepository45.selectLastMetricsPointsByNameAndAggregationAndTags("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "'sum'}", granularity54, strMap55, (int) (short) 1);
         // The following exception was thrown during execution in test generation
         try {
-            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.DoubleMaxAggregation>> doubleMaxAggregationMetricPointsList60 = pointRocksRepository1.selectMetricsPointsByNameAndAggregationBetweenTimestamp("Interval{fromTime=1672491509360, untilTime=1698788969360}", "Tag{name='Aggregation{name', value=''sum'}'}", granularity54, (-1L), (long) (short) 1);
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.exception.PugException; message: Cannot select metrics by name Interval{fromTime=1672491509360, untilTime=1698788969360}");
+            java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.DoubleMaxAggregation>> doubleMaxAggregationMetricPointsList60 = pointRocksRepository1.selectMetricsPointsByNameAndAggregationBetweenTimestamp("Interval{fromTime=1674166070495, untilTime=1700463530495}", "Tag{name='Aggregation{name', value=''sum'}'}", granularity54, (-1L), (long) (short) 1);
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.exception.PugException; message: Cannot select metrics by name Interval{fromTime=1674166070495, untilTime=1700463530495}");
         } catch (com.inspiring.pugtsdb.exception.PugException e) {
             // Expected exception.
         }
@@ -2247,7 +2247,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Granularity granularity6 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList7 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent8 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity5, granularity6, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList7);
-        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints11 = pointRocksRepository1.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity5, (long) 1325048386, 1694302170624L);
+        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints11 = pointRocksRepository1.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity5, (long) 1325048386, 1695976731791L);
         com.inspiring.pugtsdb.metric.Metric<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationMetric12 = null;
         com.inspiring.pugtsdb.bean.Point<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationPoint13 = null;
         com.inspiring.pugtsdb.bean.MetricPoint<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationMetricPoint14 = new com.inspiring.pugtsdb.bean.MetricPoint<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>(doubleAggregationMetric12, doubleAggregationPoint13);
@@ -2271,7 +2271,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test146");
         com.inspiring.pugtsdb.repository.rocks.RocksRepositories rocksRepositories0 = null;
         java.time.temporal.ChronoUnit chronoUnit2 = null;
-        com.inspiring.pugtsdb.time.Retention retention3 = com.inspiring.pugtsdb.time.Retention.of(1690154967698L, chronoUnit2);
+        com.inspiring.pugtsdb.time.Retention retention3 = com.inspiring.pugtsdb.time.Retention.of(1691829528911L, chronoUnit2);
         java.util.function.Supplier<com.inspiring.pugtsdb.sql.PugConnection> pugConnectionSupplier4 = null;
         com.inspiring.pugtsdb.repository.h2.H2Repositories h2Repositories5 = new com.inspiring.pugtsdb.repository.h2.H2Repositories(pugConnectionSupplier4);
         com.inspiring.pugtsdb.repository.PointRepository pointRepository6 = h2Repositories5.getPointRepository();
@@ -2304,8 +2304,8 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.h2.PointH2Repository pointH2Repository4 = new com.inspiring.pugtsdb.repository.h2.PointH2Repository(pugConnectionSupplier0, (com.inspiring.pugtsdb.repository.TagRepository) tagH2Repository2);
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.bean.MetricPoints<byte[]> byteArrayMetricPoints8 = pointH2Repository4.selectRawMetricPointsByIdBetweenTimestamp("Interval{fromTime=1672491509360, untilTime=1698788969360}", (long) (byte) 100, (-1L));
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Interval{fromTime=1672491509360, untilTime=1698788969360} points between 100 and -1 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
+            com.inspiring.pugtsdb.bean.MetricPoints<byte[]> byteArrayMetricPoints8 = pointH2Repository4.selectRawMetricPointsByIdBetweenTimestamp("Interval{fromTime=1674166070495, untilTime=1700463530495}", (long) (byte) 100, (-1L));
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Interval{fromTime=1674166070495, untilTime=1700463530495} points between 100 and -1 with statement  SELECT metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"value\"                      FROM   metric                               INNER JOIN point                            ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"timestamp\" >= ?             AND    point.\"timestamp\" < ?              ORDER BY metric.\"id\",                              point.\"timestamp\"               ");
         } catch (com.inspiring.pugtsdb.sql.PugSQLException e) {
             // Expected exception.
         }
@@ -2437,8 +2437,8 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.h2.MetricH2Repository metricH2Repository1 = new com.inspiring.pugtsdb.repository.h2.MetricH2Repository((com.inspiring.pugtsdb.repository.TagRepository) tagH2Repository0);
         // The following exception was thrown during execution in test generation
         try {
-            java.util.List<com.inspiring.pugtsdb.metric.Metric<java.lang.Object>> objMetricList3 = metricH2Repository1.selectMetricsByName("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}");
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metrics by name Interval{fromTime=-1688719147327133, untilTime=-1688456172727133} with statement  SELECT \"id\",              \"name\",            \"type\"      FROM   metric        WHERE  \"name\" = ? ");
+            java.util.List<com.inspiring.pugtsdb.metric.Metric<java.lang.Object>> objMetricList3 = metricH2Repository1.selectMetricsByName("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}");
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metrics by name Interval{fromTime=-1690392033978951, untilTime=-1690129059378951} with statement  SELECT \"id\",              \"name\",            \"type\"      FROM   metric        WHERE  \"name\" = ? ");
         } catch (com.inspiring.pugtsdb.sql.PugSQLException e) {
             // Expected exception.
         }
@@ -2618,8 +2618,8 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationRollUpEvent25 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "max", granularity16, granularity23, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>) doubleAggregationMetricPointsList24);
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.bean.MetricPoints<java.sql.Wrapper> wrapperMetricPoints27 = pointH2Repository5.selectLastMetricPointsByIdAndAggregation("Point{timestamp=32, value=[0.0, 10.0]}", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity23, (int) 'a');
-            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Point{timestamp=32, value=[0.0, 10.0]} last 97 points aggregated as Interval{fromTime=1672491509360, untilTime=1698788969360} with granularity 1mo and statement  SELECT TOP ?                                       metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"aggregation\",                      point.\"value\"                      FROM   metric                               INNER JOIN point_1mo AS point                ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"aggregation\" = ?            ORDER BY metric.\"id\",                              point.\"timestamp\" DESC          ");
+            com.inspiring.pugtsdb.bean.MetricPoints<java.sql.Wrapper> wrapperMetricPoints27 = pointH2Repository5.selectLastMetricPointsByIdAndAggregation("Point{timestamp=32, value=[0.0, 10.0]}", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity23, (int) 'a');
+            org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.sql.PugSQLException; message: Cannot select metric Point{timestamp=32, value=[0.0, 10.0]} last 97 points aggregated as Interval{fromTime=1674166070495, untilTime=1700463530495} with granularity 1mo and statement  SELECT TOP ?                                       metric.\"id\",                              metric.\"name\",                            metric.\"type\",                            point.\"timestamp\",                        point.\"aggregation\",                      point.\"value\"                      FROM   metric                               INNER JOIN point_1mo AS point                ON     metric.\"id\" = point.\"metric_id\"  AND    metric.\"id\" = ?                    AND    point.\"aggregation\" = ?            ORDER BY metric.\"id\",                              point.\"timestamp\" DESC          ");
         } catch (com.inspiring.pugtsdb.sql.PugSQLException e) {
             // Expected exception.
         }
@@ -2659,7 +2659,7 @@ public class TestGroup100Case0 {
         boolean boolean36 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList35, tagArray34);
         java.util.Map<java.lang.String, java.lang.String> strMap37 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList35);
         com.inspiring.pugtsdb.metric.LongMetric longMetric38 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap37);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList40 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity20, strMap37, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList40 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity20, strMap37, 1);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository43 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.repository.rocks.PointRocksRepository pointRocksRepository44 = new com.inspiring.pugtsdb.repository.rocks.PointRocksRepository(metricRocksRepository43);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository45 = pointRocksRepository44.getMetricRepository();
@@ -2831,7 +2831,7 @@ public class TestGroup100Case0 {
         boolean boolean42 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList41, tagArray40);
         java.util.Map<java.lang.String, java.lang.String> strMap43 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList41);
         com.inspiring.pugtsdb.metric.LongMetric longMetric44 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap43);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList46 = pointRocksRepository7.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity26, strMap43, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList46 = pointRocksRepository7.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity26, strMap43, 1);
         // The following exception was thrown during execution in test generation
         try {
             java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>> doubleAggregationMetricPointsList49 = pointH2Repository4.selectRawMetricsPointsByNameAndTagsBetweenTimestamp("max", strMap43, 0L, (long) (short) 10);
@@ -2903,14 +2903,14 @@ public class TestGroup100Case0 {
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>> doubleAggregationMetricPointsList49 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationRollUpEvent50 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "max", granularity41, granularity48, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>) doubleAggregationMetricPointsList49);
         java.util.Map<java.lang.String, java.lang.String> strMap51 = null;
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList53 = pointRocksRepository24.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity41, strMap51, (int) (byte) 10);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList53 = pointRocksRepository24.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity41, strMap51, (int) (byte) 10);
         com.inspiring.pugtsdb.time.Granularity granularity57 = com.inspiring.pugtsdb.time.Granularity.ONE_YEAR;
         com.inspiring.pugtsdb.time.Granularity granularity58 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList59 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent60 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity57, granularity58, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList59);
         com.inspiring.pugtsdb.time.Granularity granularity61 = h2RepositoryRollUpEvent60.getTargetGranularity();
         com.inspiring.pugtsdb.bean.MetricPoints<java.time.temporal.TemporalAmount> temporalAmountMetricPoints64 = pointRocksRepository24.selectMetricPointsByIdBetweenTimestamp("Tag{name='Aggregation{name', value=''sum'}'}", granularity61, (long) (short) 10, (long) (short) 1);
-        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.util.GlobPattern> globPatternMetricPoints66 = pointRocksRepository9.selectLastMetricPointsByIdAndAggregation("Interval{fromTime=1672491509360, untilTime=1698788969360}", "hi!", granularity61, (int) ' ');
+        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.util.GlobPattern> globPatternMetricPoints66 = pointRocksRepository9.selectLastMetricPointsByIdAndAggregation("Interval{fromTime=1674166070495, untilTime=1700463530495}", "hi!", granularity61, (int) ' ');
         // The following exception was thrown during execution in test generation
         try {
             java.lang.Long long67 = pointH2Repository5.selectMaxPointTimestampByNameAndAggregation("hi!", "100", granularity61);
@@ -3008,7 +3008,7 @@ public class TestGroup100Case0 {
         long long4 = interval3.getFromTime();
         org.junit.Assert.assertNotNull(builder1);
         org.junit.Assert.assertNotNull(interval3);
-// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1672491512541L + "'", long4 == 1672491512541L);
+// flaky:         org.junit.Assert.assertTrue("'" + long4 + "' != '" + 1674166073724L + "'", long4 == 1674166073724L);
     }
 
     @Test
@@ -3034,7 +3034,7 @@ public class TestGroup100Case0 {
         java.time.temporal.ChronoUnit chronoUnit3 = null;
         com.inspiring.pugtsdb.time.Retention retention4 = new com.inspiring.pugtsdb.time.Retention((long) 100, chronoUnit3);
         java.time.temporal.ChronoUnit chronoUnit6 = null;
-        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1690154967698L, chronoUnit6);
+        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1691829528911L, chronoUnit6);
         com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger scheduledPointPurger8 = new com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger((com.inspiring.pugtsdb.repository.Repositories) h2Repositories1, retention4, retention7);
         java.time.temporal.Temporal temporal9 = null;
         // The following exception was thrown during execution in test generation
@@ -3146,7 +3146,7 @@ public class TestGroup100Case0 {
         java.lang.String str7 = dummySqlConnection0.nativeSQL("hi!");
         java.lang.String str8 = dummySqlConnection0.getSchema();
         dummySqlConnection0.setTransactionIsolation((int) (byte) 0);
-        java.lang.String str12 = dummySqlConnection0.getClientInfo("Interval{fromTime=1672491509360, untilTime=1698788969360}");
+        java.lang.String str12 = dummySqlConnection0.getClientInfo("Interval{fromTime=1674166070495, untilTime=1700463530495}");
         org.junit.Assert.assertNull(clob3);
         org.junit.Assert.assertNull(str7);
         org.junit.Assert.assertNull(str8);
@@ -3157,7 +3157,7 @@ public class TestGroup100Case0 {
     public void test188() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test188");
-        com.inspiring.pugtsdb.time.Interval interval2 = new com.inspiring.pugtsdb.time.Interval((long) (short) 0, 717910215145L);
+        com.inspiring.pugtsdb.time.Interval interval2 = new com.inspiring.pugtsdb.time.Interval((long) (short) 0, 718747495729L);
     }
 
     @Test
@@ -3242,7 +3242,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository2 = pointRocksRepository1.getMetricRepository();
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.time.Interval> intervalMetricPoints6 = pointRocksRepository1.selectRawMetricPointsByIdBetweenTimestamp("Aggregation{name='or'}", (long) (short) -1, 1690154967698L);
+            com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.time.Interval> intervalMetricPoints6 = pointRocksRepository1.selectRawMetricPointsByIdBetweenTimestamp("Aggregation{name='or'}", (long) (short) -1, 1691829528911L);
             org.junit.Assert.fail("Expected exception of type com.inspiring.pugtsdb.exception.PugNotImplementedException; message: selectRawMetricPointsByIdBetweenTimestamp(int metricId, long fromInclusiveTimestamp, long toExclusiveTimestamp)");
         } catch (com.inspiring.pugtsdb.exception.PugNotImplementedException e) {
             // Expected exception.
@@ -3293,7 +3293,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Granularity granularity6 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList7 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent8 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity5, granularity6, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList7);
-        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints11 = pointRocksRepository1.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity5, (long) 1325048386, 1694302170624L);
+        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints11 = pointRocksRepository1.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity5, (long) 1325048386, 1695976731791L);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository13 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.repository.rocks.PointRocksRepository pointRocksRepository14 = new com.inspiring.pugtsdb.repository.rocks.PointRocksRepository(metricRocksRepository13);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository15 = pointRocksRepository14.getMetricRepository();
@@ -3378,7 +3378,7 @@ public class TestGroup100Case0 {
         boolean boolean36 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList35, tagArray34);
         java.util.Map<java.lang.String, java.lang.String> strMap37 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList35);
         com.inspiring.pugtsdb.metric.LongMetric longMetric38 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap37);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList40 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity20, strMap37, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList40 = pointRocksRepository1.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity20, strMap37, 1);
         com.inspiring.pugtsdb.metric.Metric<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationMetric41 = null;
         com.inspiring.pugtsdb.bean.Point<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationPoint42 = null;
         com.inspiring.pugtsdb.bean.MetricPoint<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationMetricPoint43 = new com.inspiring.pugtsdb.bean.MetricPoint<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>(doubleAggregationMetric41, doubleAggregationPoint42);
@@ -3425,7 +3425,7 @@ public class TestGroup100Case0 {
         java.time.temporal.ChronoUnit chronoUnit3 = null;
         com.inspiring.pugtsdb.time.Retention retention4 = new com.inspiring.pugtsdb.time.Retention((long) 100, chronoUnit3);
         java.time.temporal.ChronoUnit chronoUnit6 = null;
-        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1690154967698L, chronoUnit6);
+        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1691829528911L, chronoUnit6);
         com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger scheduledPointPurger8 = new com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger((com.inspiring.pugtsdb.repository.Repositories) h2Repositories1, retention4, retention7);
         java.time.temporal.Temporal temporal9 = null;
         // The following exception was thrown during execution in test generation
@@ -3652,7 +3652,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test216");
         com.inspiring.pugtsdb.rollup.aggregation.StringMaxAggregation stringMaxAggregation0 = new com.inspiring.pugtsdb.rollup.aggregation.StringMaxAggregation();
-        java.lang.String[] strArray8 = new java.lang.String[] { "Point{timestamp=32, value=[0.0, 10.0]}", "sum", "MetricPoint{metric=null, point=null}", "Aggregation{name='max'}", "Interval{fromTime=1672491509360, untilTime=1698788969360}", "Aggregation{name='max'}", "Aggregation{name='or'}" };
+        java.lang.String[] strArray8 = new java.lang.String[] { "Point{timestamp=32, value=[0.0, 10.0]}", "sum", "MetricPoint{metric=null, point=null}", "Aggregation{name='max'}", "Interval{fromTime=1674166070495, untilTime=1700463530495}", "Aggregation{name='max'}", "Aggregation{name='or'}" };
         java.util.ArrayList<java.lang.String> strList9 = new java.util.ArrayList<java.lang.String>();
         boolean boolean10 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList9, strArray8);
         java.lang.String str11 = stringMaxAggregation0.aggregate((java.util.List<java.lang.String>) strList9);
@@ -3695,7 +3695,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.h2.PointH2Repository pointH2Repository4 = new com.inspiring.pugtsdb.repository.h2.PointH2Repository(pugConnectionSupplier0, (com.inspiring.pugtsdb.repository.TagRepository) tagH2Repository2);
         // The following exception was thrown during execution in test generation
         try {
-            pointH2Repository4.deleteRawPointsByNameBeforeTime("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}", (long) '4');
+            pointH2Repository4.deleteRawPointsByNameBeforeTime("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}", (long) '4');
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -3754,7 +3754,7 @@ public class TestGroup100Case0 {
         boolean boolean60 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList59, tagArray58);
         java.util.Map<java.lang.String, java.lang.String> strMap61 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList59);
         com.inspiring.pugtsdb.metric.LongMetric longMetric62 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap61);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList64 = pointRocksRepository25.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity44, strMap61, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList64 = pointRocksRepository25.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity44, strMap61, 1);
         java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Iterable<java.lang.Double>>> doubleIterableMetricPointsList66 = pointRocksRepository1.selectLastMetricsPointsByNameAndTags("Tag{name='Aggregation{name', value=''sum'}'}", granularity18, strMap61, (int) (byte) 1);
         // The following exception was thrown during execution in test generation
         try {
@@ -3914,8 +3914,8 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test229");
         java.lang.Throwable throwable2 = null;
-        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException3 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}", throwable2);
-        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException4 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=1672491509360, untilTime=1698788969360}", throwable2);
+        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException3 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}", throwable2);
+        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException4 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=1674166070495, untilTime=1700463530495}", throwable2);
     }
 
     @Test
@@ -3948,14 +3948,14 @@ public class TestGroup100Case0 {
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>> doubleAggregationMetricPointsList41 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationRollUpEvent42 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "max", granularity33, granularity40, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>) doubleAggregationMetricPointsList41);
         java.util.Map<java.lang.String, java.lang.String> strMap43 = null;
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList45 = pointRocksRepository16.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity33, strMap43, (int) (byte) 10);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList45 = pointRocksRepository16.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity33, strMap43, (int) (byte) 10);
         com.inspiring.pugtsdb.time.Granularity granularity49 = com.inspiring.pugtsdb.time.Granularity.ONE_YEAR;
         com.inspiring.pugtsdb.time.Granularity granularity50 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList51 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent52 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity49, granularity50, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList51);
         com.inspiring.pugtsdb.time.Granularity granularity53 = h2RepositoryRollUpEvent52.getTargetGranularity();
         com.inspiring.pugtsdb.bean.MetricPoints<java.time.temporal.TemporalAmount> temporalAmountMetricPoints56 = pointRocksRepository16.selectMetricPointsByIdBetweenTimestamp("Tag{name='Aggregation{name', value=''sum'}'}", granularity53, (long) (short) 10, (long) (short) 1);
-        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.util.GlobPattern> globPatternMetricPoints58 = pointRocksRepository1.selectLastMetricPointsByIdAndAggregation("Interval{fromTime=1672491509360, untilTime=1698788969360}", "hi!", granularity53, (int) ' ');
+        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.util.GlobPattern> globPatternMetricPoints58 = pointRocksRepository1.selectLastMetricPointsByIdAndAggregation("Interval{fromTime=1674166070495, untilTime=1700463530495}", "hi!", granularity53, (int) ' ');
         // The following exception was thrown during execution in test generation
         try {
             com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.MetricRepository> metricRepositoryMetricPoints62 = pointRocksRepository1.selectRawMetricPointsByIdBetweenTimestamp("Aggregation{name='max'}", 0L, (long) (byte) 0);
@@ -4014,7 +4014,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test233");
         java.lang.Throwable throwable1 = null;
-        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException2 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}", throwable1);
+        com.inspiring.pugtsdb.sql.PugSQLException pugSQLException2 = new com.inspiring.pugtsdb.sql.PugSQLException("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}", throwable1);
         com.inspiring.pugtsdb.exception.PugIllegalArgumentException pugIllegalArgumentException4 = new com.inspiring.pugtsdb.exception.PugIllegalArgumentException("hi!");
         pugSQLException2.addSuppressed((java.lang.Throwable) pugIllegalArgumentException4);
     }
@@ -4178,7 +4178,7 @@ public class TestGroup100Case0 {
         dummySqlConnection0.setClientInfo(properties3);
         java.lang.String str6 = dummySqlConnection0.nativeSQL("sum");
         java.sql.Clob clob7 = dummySqlConnection0.createClob();
-        java.sql.CallableStatement callableStatement11 = dummySqlConnection0.prepareCall("Interval{fromTime=1672491509360, untilTime=1698788969360}", (int) ' ', (-1));
+        java.sql.CallableStatement callableStatement11 = dummySqlConnection0.prepareCall("Interval{fromTime=1674166070495, untilTime=1700463530495}", (int) ' ', (-1));
         org.junit.Assert.assertNull(str6);
         org.junit.Assert.assertNull(clob7);
         org.junit.Assert.assertNull(callableStatement11);
@@ -4360,7 +4360,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository0 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.repository.rocks.PointRocksRepository pointRocksRepository1 = new com.inspiring.pugtsdb.repository.rocks.PointRocksRepository(metricRocksRepository0);
         java.util.Map<java.lang.String, java.lang.String> strMap3 = null;
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.RandomAccess>> randomAccessMetricPointsList6 = pointRocksRepository1.selectRawMetricsPointsByNameAndTagsBetweenTimestamp("Aggregation{name='sum'}", strMap3, (long) (byte) 10, 1435820429039L);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.RandomAccess>> randomAccessMetricPointsList6 = pointRocksRepository1.selectRawMetricsPointsByNameAndTagsBetweenTimestamp("Aggregation{name='sum'}", strMap3, (long) (byte) 10, 1437494990209L);
         // The following exception was thrown during execution in test generation
         try {
             com.inspiring.pugtsdb.bean.MetricPoints<java.util.AbstractCollection<java.lang.Double>> doubleCollectionMetricPoints10 = pointRocksRepository1.selectRawMetricPointsByIdBetweenTimestamp("100", (long) '#', (long) 100);
@@ -4480,7 +4480,7 @@ public class TestGroup100Case0 {
         boolean boolean61 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList60, tagArray59);
         java.util.Map<java.lang.String, java.lang.String> strMap62 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList60);
         com.inspiring.pugtsdb.metric.LongMetric longMetric63 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap62);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList65 = pointRocksRepository26.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity45, strMap62, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList65 = pointRocksRepository26.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity45, strMap62, 1);
         java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Iterable<java.lang.Double>>> doubleIterableMetricPointsList67 = pointRocksRepository2.selectLastMetricsPointsByNameAndTags("Tag{name='Aggregation{name', value=''sum'}'}", granularity19, strMap62, (int) (byte) 1);
         com.inspiring.pugtsdb.metric.DoubleMetric doubleMetric68 = new com.inspiring.pugtsdb.metric.DoubleMetric("Tag{name='Aggregation{name', value=''sum'}'}", strMap62);
         java.lang.String str69 = doubleMetric68.toString();
@@ -4558,7 +4558,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Granularity granularity7 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList8 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository> h2RepositoryRollUpEvent9 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.repository.h2.H2Repository>("Aggregation{name='or'}", "max", granularity6, granularity7, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>) h2RepositoryMetricPointsList8);
-        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints12 = pointRocksRepository2.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity6, (long) 1325048386, 1694302170624L);
+        com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.TagH2Repository> tagH2RepositoryMetricPoints12 = pointRocksRepository2.selectMetricPointsByIdBetweenTimestamp("Aggregation{name='avg'}", granularity6, (long) 1325048386, 1695976731791L);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository14 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.repository.rocks.PointRocksRepository pointRocksRepository15 = new com.inspiring.pugtsdb.repository.rocks.PointRocksRepository(metricRocksRepository14);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository16 = pointRocksRepository15.getMetricRepository();
@@ -4678,7 +4678,7 @@ public class TestGroup100Case0 {
         boolean boolean60 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList59, tagArray58);
         java.util.Map<java.lang.String, java.lang.String> strMap61 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList59);
         com.inspiring.pugtsdb.metric.LongMetric longMetric62 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap61);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList64 = pointRocksRepository25.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity44, strMap61, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList64 = pointRocksRepository25.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity44, strMap61, 1);
         java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Iterable<java.lang.Double>>> doubleIterableMetricPointsList66 = pointRocksRepository1.selectLastMetricsPointsByNameAndTags("Tag{name='Aggregation{name', value=''sum'}'}", granularity18, strMap61, (int) (byte) 1);
         java.util.List<java.lang.String> strList67 = com.inspiring.pugtsdb.bean.Tag.fromMapToStringList(strMap61);
         org.junit.Assert.assertNotNull(metricRocksRepository2);
@@ -4739,7 +4739,7 @@ public class TestGroup100Case0 {
         java.time.temporal.ChronoUnit chronoUnit4 = null;
         com.inspiring.pugtsdb.time.Retention retention5 = new com.inspiring.pugtsdb.time.Retention((long) 100, chronoUnit4);
         java.time.temporal.ChronoUnit chronoUnit7 = null;
-        com.inspiring.pugtsdb.time.Retention retention8 = com.inspiring.pugtsdb.time.Retention.of(1690154967698L, chronoUnit7);
+        com.inspiring.pugtsdb.time.Retention retention8 = com.inspiring.pugtsdb.time.Retention.of(1691829528911L, chronoUnit7);
         com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger scheduledPointPurger9 = new com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger((com.inspiring.pugtsdb.repository.Repositories) h2Repositories2, retention5, retention8);
         scheduledThreadPool0.execute((java.lang.Runnable) scheduledPointPurger9);
         boolean boolean11 = scheduledThreadPool0.isShutdown();
@@ -4873,7 +4873,7 @@ public class TestGroup100Case0 {
     public void test274() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test274");
-        com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId2 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.of("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}", (java.lang.Long) 4617315517961601024L);
+        com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId2 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.of("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}", (java.lang.Long) 4617315517961601024L);
         org.junit.Assert.assertNotNull(pointId2);
     }
 
@@ -4884,7 +4884,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository0 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.metric.Metric<com.inspiring.pugtsdb.rollup.aggregation.StringMaxAggregation> stringMaxAggregationMetric2 = metricRocksRepository0.selectMetricById("Point{timestamp=32, value=[0.0, 10.0]}");
         com.inspiring.pugtsdb.sql.PugConnection pugConnection3 = metricRocksRepository0.getConnection();
-        pugConnection3.setSchema("Interval{fromTime=1672491509360, untilTime=1698788969360}");
+        pugConnection3.setSchema("Interval{fromTime=1674166070495, untilTime=1700463530495}");
         java.sql.Blob blob6 = pugConnection3.createBlob();
         java.sql.Statement statement7 = pugConnection3.createStatement();
         com.inspiring.pugtsdb.rollup.schedule.ScheduledThreadPool scheduledThreadPool8 = new com.inspiring.pugtsdb.rollup.schedule.ScheduledThreadPool();
@@ -4964,7 +4964,7 @@ public class TestGroup100Case0 {
     public void test279() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test279");
-        com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId2 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.of("Aggregation{name='or'}", (java.lang.Long) 1435820430292L);
+        com.inspiring.pugtsdb.repository.rocks.bean.PointId pointId2 = com.inspiring.pugtsdb.repository.rocks.bean.PointId.of("Aggregation{name='or'}", (java.lang.Long) 1437494991460L);
         org.junit.Assert.assertNotNull(pointId2);
     }
 
@@ -5048,7 +5048,7 @@ public class TestGroup100Case0 {
         java.time.temporal.ChronoUnit chronoUnit3 = null;
         com.inspiring.pugtsdb.time.Retention retention4 = new com.inspiring.pugtsdb.time.Retention((long) 100, chronoUnit3);
         java.time.temporal.ChronoUnit chronoUnit6 = null;
-        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1690154967698L, chronoUnit6);
+        com.inspiring.pugtsdb.time.Retention retention7 = com.inspiring.pugtsdb.time.Retention.of(1691829528911L, chronoUnit6);
         com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger scheduledPointPurger8 = new com.inspiring.pugtsdb.rollup.schedule.ScheduledPointPurger((com.inspiring.pugtsdb.repository.Repositories) h2Repositories1, retention4, retention7);
         long long9 = retention4.getValue();
         java.util.List<java.time.temporal.TemporalUnit> temporalUnitList10 = retention4.getUnits();
@@ -5196,7 +5196,7 @@ public class TestGroup100Case0 {
     public void test294() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test294");
-        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastDays(717910215145L);
+        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastDays(718747495729L);
         org.junit.Assert.assertNotNull(builder1);
     }
 
@@ -5373,7 +5373,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Granularity granularity5 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>> wildcardClassMetricPoints7 = pointRocksRepository1.selectLastMetricPointsByIdAndAggregation("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "", granularity5, 1);
         com.inspiring.pugtsdb.sql.PugConnection pugConnection8 = pointRocksRepository1.getConnection();
-        java.sql.CallableStatement callableStatement10 = pugConnection8.prepareCall("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}");
+        java.sql.CallableStatement callableStatement10 = pugConnection8.prepareCall("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}");
         org.junit.Assert.assertNotNull(metricRocksRepository2);
         org.junit.Assert.assertTrue("'" + granularity5 + "' != '" + com.inspiring.pugtsdb.time.Granularity.ONE_MONTH + "'", granularity5.equals(com.inspiring.pugtsdb.time.Granularity.ONE_MONTH));
         org.junit.Assert.assertNull(wildcardClassMetricPoints7);
@@ -5415,7 +5415,7 @@ public class TestGroup100Case0 {
         boolean boolean44 = java.util.Collections.addAll((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList43, tagArray42);
         java.util.Map<java.lang.String, java.lang.String> strMap45 = com.inspiring.pugtsdb.bean.Tag.toMap((java.util.Collection<com.inspiring.pugtsdb.bean.Tag>) tagList43);
         com.inspiring.pugtsdb.metric.LongMetric longMetric46 = new com.inspiring.pugtsdb.metric.LongMetric("Aggregation{name='sum'}", strMap45);
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList48 = pointRocksRepository9.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity28, strMap45, 1);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.util.ArrayList<java.lang.Double>>> doubleListMetricPointsList48 = pointRocksRepository9.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity28, strMap45, 1);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository52 = new com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository();
         com.inspiring.pugtsdb.repository.rocks.PointRocksRepository pointRocksRepository53 = new com.inspiring.pugtsdb.repository.rocks.PointRocksRepository(metricRocksRepository52);
         com.inspiring.pugtsdb.repository.rocks.MetricRocksRepository metricRocksRepository54 = pointRocksRepository53.getMetricRepository();
@@ -5435,10 +5435,10 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Granularity granularity79 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>> wildcardClassMetricPoints81 = pointRocksRepository75.selectLastMetricPointsByIdAndAggregation("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "", granularity79, 1);
         long long82 = granularity79.getValue();
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.AutoCloseable>> autoCloseableMetricPointsList84 = pointRocksRepository9.selectLastMetricsPointsByNameAndAggregation("Interval{fromTime=-1688719147327133, untilTime=-1688456172727133}", "100", granularity79, 2);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.AutoCloseable>> autoCloseableMetricPointsList84 = pointRocksRepository9.selectLastMetricsPointsByNameAndAggregation("Interval{fromTime=-1690392033978951, untilTime=-1690129059378951}", "100", granularity79, 2);
         // The following exception was thrown during execution in test generation
         try {
-            pointH2Repository5.deletePointsByNameAndAggregationBeforeTime("Aggregation{name='sum'}", "'sum'}", granularity79, 1435820429039L);
+            pointH2Repository5.deletePointsByNameAndAggregationBeforeTime("Aggregation{name='sum'}", "'sum'}", granularity79, 1437494990209L);
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
@@ -5618,7 +5618,7 @@ public class TestGroup100Case0 {
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>> doubleAggregationMetricPointsList43 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>();
         com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>> doubleAggregationRollUpEvent44 = new com.inspiring.pugtsdb.rollup.listen.RollUpEvent<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>("com.inspiring.pugtsdb.exception.PugException: Aggregation{name='sum'}", "max", granularity35, granularity42, (java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.rollup.aggregation.Aggregation<java.lang.Double>>>) doubleAggregationMetricPointsList43);
         java.util.Map<java.lang.String, java.lang.String> strMap45 = null;
-        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList47 = pointRocksRepository18.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1672491509360, untilTime=1698788969360}", granularity35, strMap45, (int) (byte) 10);
+        java.util.List<com.inspiring.pugtsdb.bean.MetricPoints<java.lang.Class<?>>> wildcardClassMetricPointsList47 = pointRocksRepository18.selectLastMetricsPointsByNameAndAggregationAndTags("", "Interval{fromTime=1674166070495, untilTime=1700463530495}", granularity35, strMap45, (int) (byte) 10);
         com.inspiring.pugtsdb.time.Granularity granularity51 = com.inspiring.pugtsdb.time.Granularity.ONE_YEAR;
         com.inspiring.pugtsdb.time.Granularity granularity52 = com.inspiring.pugtsdb.time.Granularity.ONE_MONTH;
         java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>> h2RepositoryMetricPointsList53 = new java.util.ArrayList<com.inspiring.pugtsdb.bean.MetricPoints<com.inspiring.pugtsdb.repository.h2.H2Repository>>();
@@ -5690,7 +5690,7 @@ public class TestGroup100Case0 {
     public void test312() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test312");
-        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.until(1690154967698L);
+        com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.until(1691829528911L);
         // The following exception was thrown during execution in test generation
         try {
             com.inspiring.pugtsdb.time.Interval interval3 = builder1.fromHoursAgo(4617315517961601024L);
@@ -5735,7 +5735,7 @@ public class TestGroup100Case0 {
         com.inspiring.pugtsdb.time.Interval.Builder builder1 = com.inspiring.pugtsdb.time.Interval.ofLastMonths((long) (byte) 10);
         // The following exception was thrown during execution in test generation
         try {
-            com.inspiring.pugtsdb.time.Interval interval3 = builder1.fromWeeksAgo(1694302170624L);
+            com.inspiring.pugtsdb.time.Interval interval3 = builder1.fromWeeksAgo(1695976731791L);
             org.junit.Assert.fail("Expected exception of type java.time.DateTimeException; message: Instant exceeds minimum or maximum instant");
         } catch (java.time.DateTimeException e) {
             // Expected exception.

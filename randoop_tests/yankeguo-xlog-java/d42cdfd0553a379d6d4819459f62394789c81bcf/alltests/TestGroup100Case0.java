@@ -348,7 +348,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test041");
         java.lang.String str0 = net.landzero.xlog.utils.Hex.randomHex16();
-// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "2b91ee34d8daadf5" + "'", str0, "2b91ee34d8daadf5");
+// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "f9d53dd29cb697a5" + "'", str0, "f9d53dd29cb697a5");
     }
 
     @Test
@@ -615,7 +615,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test068");
         java.lang.String str0 = net.landzero.xlog.utils.Dates.yesterday_yyyyMMdd();
-        org.junit.Assert.assertEquals("'" + str0 + "' != '" + "20231030" + "'", str0, "20231030");
+        org.junit.Assert.assertEquals("'" + str0 + "' != '" + "20231119" + "'", str0, "20231119");
     }
 
     @Test
@@ -699,7 +699,7 @@ public class TestGroup100Case0 {
         long long5 = trackEvent2.getDuration();
         java.lang.String str6 = trackEvent2.getMethod();
         org.junit.Assert.assertNotNull(trackEvent2);
-// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1L + "'", long5 == 1L);
         org.junit.Assert.assertNull(str6);
     }
 
@@ -810,7 +810,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNull(strList1);
         org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
         org.junit.Assert.assertNotNull(date3);
-// flaky:         org.junit.Assert.assertEquals(date3.toString(), "Mon Oct 30 18:23:47 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date3.toString(), "Sun Nov 19 02:33:18 CST 2023");
     }
 
     @Test
@@ -821,7 +821,7 @@ public class TestGroup100Case0 {
         java.lang.String str1 = accessEvent0.getHeaderUserToken();
         accessEvent0.setMethod("FORM");
         long long4 = accessEvent0.getDuration();
-        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "2b91ee34d8daadf5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
+        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "f9d53dd29cb697a5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
         java.util.ArrayList<java.lang.String> strList24 = new java.util.ArrayList<java.lang.String>();
         boolean boolean25 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList24, strArray23);
         accessEvent0.setParams(strList24);
@@ -1720,7 +1720,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "x-perf" + "'", str2, "x-perf");
         org.junit.Assert.assertNull(str3);
         org.junit.Assert.assertNotNull(date4);
-// flaky:         org.junit.Assert.assertEquals(date4.toString(), "Mon Oct 30 18:23:48 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date4.toString(), "Sun Nov 19 02:33:19 CST 2023");
     }
 
     @Test
@@ -1926,7 +1926,7 @@ public class TestGroup100Case0 {
         xPerfEvent4.setProject("ff");
         org.junit.Assert.assertNotNull(xPerfEvent4);
         org.junit.Assert.assertNotNull(date5);
-// flaky:         org.junit.Assert.assertEquals(date5.toString(), "Tue Oct 31 18:23:48 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date5.toString(), "Mon Nov 20 02:33:20 CST 2023");
     }
 
     @Test
@@ -2091,7 +2091,7 @@ public class TestGroup100Case0 {
         java.lang.String str7 = xPerfEvent4.getMethodName();
         org.junit.Assert.assertNotNull(xPerfEvent4);
         org.junit.Assert.assertNotNull(date5);
-// flaky:         org.junit.Assert.assertEquals(date5.toString(), "Tue Oct 31 18:23:49 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date5.toString(), "Mon Nov 20 02:33:20 CST 2023");
         org.junit.Assert.assertNull(str6);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "FORM" + "'", str7, "FORM");
     }
@@ -2121,7 +2121,7 @@ public class TestGroup100Case0 {
         java.lang.String str1 = accessEvent0.getHeaderUserToken();
         accessEvent0.setMethod("FORM");
         long long4 = accessEvent0.getDuration();
-        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "2b91ee34d8daadf5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
+        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "f9d53dd29cb697a5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
         java.util.ArrayList<java.lang.String> strList24 = new java.util.ArrayList<java.lang.String>();
         boolean boolean25 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList24, strArray23);
         accessEvent0.setParams(strList24);
@@ -2186,7 +2186,7 @@ public class TestGroup100Case0 {
         java.lang.String str8 = accessEvent7.getHeaderUserToken();
         accessEvent7.setMethod("FORM");
         long long11 = accessEvent7.getDuration();
-        java.lang.String[] strArray30 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "2b91ee34d8daadf5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
+        java.lang.String[] strArray30 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "f9d53dd29cb697a5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
         java.util.ArrayList<java.lang.String> strList31 = new java.util.ArrayList<java.lang.String>();
         boolean boolean32 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList31, strArray30);
         accessEvent7.setParams(strList31);
@@ -2263,7 +2263,7 @@ public class TestGroup100Case0 {
         xLogRedisAppender0.setName(" K[]");
         xLogRedisAppender0.start();
         xLogRedisAppender0.clearAllFilters();
-        xLogRedisAppender0.setName("2b91ee34d8daadf5");
+        xLogRedisAppender0.setName("f9d53dd29cb697a5");
     }
 
     @Test
@@ -2368,7 +2368,7 @@ public class TestGroup100Case0 {
         trackEvent2.setMethod("000000000000000a");
         java.lang.String str8 = trackEvent2.getSqlDigest();
         org.junit.Assert.assertNotNull(trackEvent2);
-// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+// flaky:         org.junit.Assert.assertTrue("'" + long5 + "' != '" + 1L + "'", long5 == 1L);
         org.junit.Assert.assertNull(str8);
     }
 
@@ -2383,7 +2383,7 @@ public class TestGroup100Case0 {
         java.lang.String str5 = xPerfEvent0.getMethodName();
         java.lang.String str6 = xPerfEvent0.getPath();
         java.lang.String str7 = xPerfEvent0.getClassName();
-        xPerfEvent0.setMethodName("20231030");
+        xPerfEvent0.setMethodName("20231119");
         org.junit.Assert.assertNull(str1);
         org.junit.Assert.assertNull(strList2);
         org.junit.Assert.assertNull(str5);
@@ -2997,7 +2997,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "x-access" + "'", str8, "x-access");
         org.junit.Assert.assertNotNull(date9);
-// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Mon Oct 30 18:23:49 CDT 2023");
+// flaky:         org.junit.Assert.assertEquals(date9.toString(), "Sun Nov 19 02:33:20 CST 2023");
     }
 
     @Test
@@ -3037,7 +3037,7 @@ public class TestGroup100Case0 {
     public void test252() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test252");
-        net.landzero.xlog.utils.SignalFileChecker signalFileChecker1 = new net.landzero.xlog.utils.SignalFileChecker("20231030");
+        net.landzero.xlog.utils.SignalFileChecker signalFileChecker1 = new net.landzero.xlog.utils.SignalFileChecker("20231119");
     }
 
     @Test
@@ -3272,7 +3272,7 @@ public class TestGroup100Case0 {
         java.lang.String str1 = accessEvent0.getHeaderUserToken();
         accessEvent0.setMethod("FORM");
         java.lang.String str4 = accessEvent0.topic();
-        java.lang.String[] strArray45 = new java.lang.String[] { "_json_", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "0", "0000000000000064", "FORM", "x-mybatis-track", "_json_", "invoke", "100", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "0", "100", "BASIC", "336d5ebc5436534e61d16e63ddfca327", "xlog.Event", "null", "null", "0000000000000064", "_%d{yyyy/MM/dd_HH:mm:ss.SSS}_%msg%n_crid_0_crid_FORM_DIGEST_FORM_-1_", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "ff", "20231030", "2b91ee34d8daadf5", "_%d{yyyy/MM/dd_HH:mm:ss.SSS}_%msg%n_crid_0_crid_FORM_DIGEST_FORM_-1_", "0000000000000064", "invoke", "hi!", "100", "K[]", "", "plain", "_json_", "DIGEST", "FORM", "-", "DIGEST", "03c37111e264eee423ada395dd6474aa", "plain", "x-mybatis-track", "1" };
+        java.lang.String[] strArray45 = new java.lang.String[] { "_json_", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "0", "0000000000000064", "FORM", "x-mybatis-track", "_json_", "invoke", "100", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "0", "100", "BASIC", "336d5ebc5436534e61d16e63ddfca327", "xlog.Event", "null", "null", "0000000000000064", "_%d{yyyy/MM/dd_HH:mm:ss.SSS}_%msg%n_crid_0_crid_FORM_DIGEST_FORM_-1_", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "ff", "20231119", "f9d53dd29cb697a5", "_%d{yyyy/MM/dd_HH:mm:ss.SSS}_%msg%n_crid_0_crid_FORM_DIGEST_FORM_-1_", "0000000000000064", "invoke", "hi!", "100", "K[]", "", "plain", "_json_", "DIGEST", "FORM", "-", "DIGEST", "03c37111e264eee423ada395dd6474aa", "plain", "x-mybatis-track", "1" };
         java.util.ArrayList<java.lang.String> strList46 = new java.util.ArrayList<java.lang.String>();
         boolean boolean47 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList46, strArray45);
         accessEvent0.setHeaderAppInfo(strList46);
@@ -3300,7 +3300,7 @@ public class TestGroup100Case0 {
         java.lang.String str1 = accessEvent0.getHeaderUserToken();
         accessEvent0.setMethod("FORM");
         long long4 = accessEvent0.getDuration();
-        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "2b91ee34d8daadf5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
+        java.lang.String[] strArray23 = new java.lang.String[] { "hi!", "BASIC", "x-access", "x-access", "0", "DIGEST", "true", "crid", "plain", "sun.reflect.DelegatingMethodAccessorImpl", "1", "1", "f9d53dd29cb697a5", "[%d{yyyy/MM/dd HH:mm:ss.SSS}] %X{cridMark} [%thread] %-5level %logger{35} - %msg%n", "-1", "true", "-1", "json" };
         java.util.ArrayList<java.lang.String> strList24 = new java.util.ArrayList<java.lang.String>();
         boolean boolean25 = java.util.Collections.addAll((java.util.Collection<java.lang.String>) strList24, strArray23);
         accessEvent0.setParams(strList24);
@@ -3630,7 +3630,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test293");
         net.landzero.xlog.perf.XPerfEvent xPerfEvent0 = new net.landzero.xlog.perf.XPerfEvent();
         java.lang.String str1 = xPerfEvent0.getTopic();
-        xPerfEvent0.setClassName("20231030");
+        xPerfEvent0.setClassName("20231119");
         java.util.Date date4 = xPerfEvent0.getTimestamp();
         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "x-perf" + "'", str1, "x-perf");
         org.junit.Assert.assertNull(date4);

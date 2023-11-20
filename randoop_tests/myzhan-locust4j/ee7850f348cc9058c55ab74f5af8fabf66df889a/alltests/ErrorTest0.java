@@ -79,7 +79,7 @@ public class ErrorTest0 {
         statsEntry2.setMinResponseTime(0L);
         statsEntry2.setTotalContentLength((long) '#');
         long long7 = statsEntry2.getTotalContentLength();
-        statsEntry2.setMinResponseTime((long) (byte) 1);
+        statsEntry2.setMinResponseTime((long) ' ');
         java.lang.String str10 = statsEntry2.getName();
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
         statsEntry2.logTimeOfRequest();
@@ -103,7 +103,7 @@ public class ErrorTest0 {
         statsEntry2.setMinResponseTime(0L);
         long long5 = statsEntry2.getStartTime();
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
-        statsEntry2.logResponseTime(1698795361L);
+        statsEntry2.logResponseTime(1700469898L);
     }
 
     @Test
@@ -121,20 +121,20 @@ public class ErrorTest0 {
         if (debug)
             System.out.format("%n%s%n", "ErrorTest0.test11");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
-        statsEntry2.setLastRequestTimestamp((long) (short) -1);
+        statsEntry2.setLastRequestTimestamp((long) (short) 1);
         statsEntry2.setNumRequests((long) 100);
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
-        statsEntry2.logError("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        statsEntry2.logError("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
     }
 
     @Test
     public void test12() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "ErrorTest0.test12");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "bcb1c32f385de115abd9c3efda4468d0");
         statsEntry2.setMaxResponseTime((long) (-1));
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
-        statsEntry2.logResponseTime(1698795329L);
+        statsEntry2.logResponseTime(1700469865L);
     }
 
     @Test

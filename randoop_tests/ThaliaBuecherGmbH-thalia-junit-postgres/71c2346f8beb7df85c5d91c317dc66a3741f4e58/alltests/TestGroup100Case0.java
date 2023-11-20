@@ -91,7 +91,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test07");
         int int0 = de.thalia.junit.postgres.PostgresEmbedder.freePortNumber();
-// flaky:         org.junit.Assert.assertTrue("'" + int0 + "' != '" + 64680 + "'", int0 == 64680);
+// flaky:         org.junit.Assert.assertTrue("'" + int0 + "' != '" + 59839 + "'", int0 == 59839);
     }
 
     @Test

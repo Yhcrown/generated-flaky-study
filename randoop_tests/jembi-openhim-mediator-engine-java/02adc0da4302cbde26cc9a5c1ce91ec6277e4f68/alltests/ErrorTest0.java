@@ -91,7 +91,7 @@ public class ErrorTest0 {
         mediatorConfig0.setRootTimeout((java.lang.Integer) 10);
         mediatorConfig0.setCoreHost("https");
         // during test generation this statement threw an exception of type java.lang.NullPointerException in error
-        java.lang.String str6 = mediatorConfig0.getProperty("{\"response\":{\"headers\":{},\"timestamp\":\"2023-10-31T18:53:24.488-0500\"},\"orchestrations\":[],\"properties\":{}}");
+        java.lang.String str6 = mediatorConfig0.getProperty("{\"response\":{\"headers\":{},\"timestamp\":\"2023-11-20T03:09:59.407-0600\"},\"orchestrations\":[],\"properties\":{}}");
     }
 
     @Test

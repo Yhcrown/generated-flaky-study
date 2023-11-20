@@ -2963,7 +2963,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(time32);
         org.junit.Assert.assertNotNull(time33);
         org.junit.Assert.assertNotNull(time34);
-        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-28299900) + "'", int35 == (-28299900));
+        org.junit.Assert.assertTrue("'" + int35 + "' != '" + (-28327860) + "'", int35 == (-28327860));
     }
 
     @Test
@@ -2980,7 +2980,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test145");
         com.github.swiftech.swifttime.Time time0 = new com.github.swiftech.swifttime.Time();
         int int1 = time0.getMonth();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 10 + "'", int1 == 10);
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 11 + "'", int1 == 11);
     }
 
     @Test
@@ -3168,7 +3168,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test152");
         java.util.Calendar calendar0 = java.util.Calendar.getInstance();
         org.junit.Assert.assertNotNull(calendar0);
-// flaky:         org.junit.Assert.assertEquals(calendar0.toString(), "java.util.GregorianCalendar[time=1698796569430,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"America/Chicago\",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2023,MONTH=9,WEEK_OF_YEAR=44,WEEK_OF_MONTH=5,DAY_OF_MONTH=31,DAY_OF_YEAR=304,DAY_OF_WEEK=3,DAY_OF_WEEK_IN_MONTH=5,AM_PM=1,HOUR=6,HOUR_OF_DAY=18,MINUTE=56,SECOND=9,MILLISECOND=430,ZONE_OFFSET=-21600000,DST_OFFSET=3600000]");
+// flaky:         org.junit.Assert.assertEquals(calendar0.toString(), "java.util.GregorianCalendar[time=1700471593451,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id=\"America/Chicago\",offset=-21600000,dstSavings=3600000,useDaylight=true,transitions=235,lastRule=java.util.SimpleTimeZone[id=America/Chicago,offset=-21600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2023,MONTH=10,WEEK_OF_YEAR=47,WEEK_OF_MONTH=4,DAY_OF_MONTH=20,DAY_OF_YEAR=324,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=3,AM_PM=0,HOUR=3,HOUR_OF_DAY=3,MINUTE=13,SECOND=13,MILLISECOND=451,ZONE_OFFSET=-21600000,DST_OFFSET=0]");
     }
 
     @Test
@@ -3794,7 +3794,7 @@ public class TestGroup100Case0 {
         com.github.swiftech.swifttime.Time time6 = time1.increaseDate();
         com.github.swiftech.swifttime.Time time8 = time1.increaseDates((int) '#');
         time1.setTime(0, 23504, 4);
-        time1.set((-28299900), (-35), (int) (byte) 10, 2, 12);
+        time1.set((-28327860), (-35), (int) (byte) 10, 2, 12);
         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
         org.junit.Assert.assertNotNull(time6);
         org.junit.Assert.assertNotNull(time8);
@@ -4986,7 +4986,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int78 + "' != '" + (-1047359301) + "'", int78 == (-1047359301));
         org.junit.Assert.assertNotNull(time80);
         org.junit.Assert.assertNotNull(time82);
-        org.junit.Assert.assertTrue("'" + int83 + "' != '" + 1554638524 + "'", int83 == 1554638524);
+        org.junit.Assert.assertTrue("'" + int83 + "' != '" + 1554610564 + "'", int83 == 1554610564);
     }
 
     @Test
@@ -5064,7 +5064,7 @@ public class TestGroup100Case0 {
     public void test225() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test225");
-        com.github.swiftech.swifttime.Time time6 = new com.github.swiftech.swifttime.Time((-28299900), 8, (-28299900), 14, 12, 43639973);
+        com.github.swiftech.swifttime.Time time6 = new com.github.swiftech.swifttime.Time((-28327860), 8, (-28327860), 14, 12, 43639973);
     }
 
     @Test
@@ -6683,7 +6683,7 @@ public class TestGroup100Case0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean13 = time1.isSet(604800);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: null");
+            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: 604800");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }

@@ -1,4 +1,4 @@
-[TIME]: 0:00:26.521191
+[TIME]: 0:00:24.945297
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 Cannot instantiate non-accessible class com.daveayan.fuzzyavenger.providers.akka.Message_AL2_to_AL1 specified via --testclass or --classlist.
 Cannot instantiate non-accessible class com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0 specified via --testclass or --classlist.
@@ -10,27 +10,41 @@ Explorer = ForwardGenerator(steps: 0, null steps: 0, num_sequences_generated: 0;
     allSequences: 0, regresson seqs: 0, error seqs: 0=0=0, invalid seqs: 0, subsumed_sequences: 0, num_failed_output_test: 0;
     sideEffectFreeMethods: 1115, runtimePrimitivesSeen: 38)
 
-Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-01T00:00:19.547Z     47.2M used)[INFO] [10/31/2023 19:00:28.731] [fuzzy-avenger-1698796828723-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796828723/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796828723/deadLetters] to Actor[akka://fuzzy-avenger-1698796828723/user/shutdownCommandListener#2115837307] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:29.105] [fuzzy-avenger-1698796829104-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796829104/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796829104/deadLetters] to Actor[akka://fuzzy-avenger-1698796829104/user/shutdownCommandListener#-795426340] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:29.189] [fuzzy-avenger-1698796829184-akka.actor.default-dispatcher-6] [akka://fuzzy-avenger-1698796829184/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796829184/deadLetters] to Actor[akka://fuzzy-avenger-1698796829184/user/shutdownCommandListener#-1977932408] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+Progress update: steps=1, test inputs generated=0, failing inputs=0      (2023-11-20T09:17:35.432Z     47.2M used)[INFO] [11/20/2023 03:17:43.601] [fuzzy-avenger-1700471863596-akka.actor.default-dispatcher-5] [akka://fuzzy-avenger-1700471863596/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471863596/deadLetters] to Actor[akka://fuzzy-avenger-1700471863596/user/shutdownCommandListener#-149395871] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [11/20/2023 03:17:43.912] [fuzzy-avenger-1700471863911-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1700471863911/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471863911/deadLetters] to Actor[akka://fuzzy-avenger-1700471863911/user/shutdownCommandListener#1808879964] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [11/20/2023 03:17:44.039] [fuzzy-avenger-1700471864033-akka.actor.default-dispatcher-5] [akka://fuzzy-avenger-1700471864033/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471864033/deadLetters] to Actor[akka://fuzzy-avenger-1700471864033/user/shutdownCommandListener#180888414] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
 
-Progress update: steps=1000, test inputs generated=317, failing inputs=2      (2023-11-01T00:00:30.414Z     378M used)[INFO] [10/31/2023 19:00:35.275] [fuzzy-avenger-1698796835260-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796835260/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835260/deadLetters] to Actor[akka://fuzzy-avenger-1698796835260/user/shutdownCommandListener#2015950381] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:35.508] [fuzzy-avenger-1698796835506-akka.actor.default-dispatcher-3] [akka://fuzzy-avenger-1698796835506/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835506/deadLetters] to Actor[akka://fuzzy-avenger-1698796835506/user/shutdownCommandListener#763436339] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:35.650] [fuzzy-avenger-1698796835642-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796835642/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796835642/deadLetters] to Actor[akka://fuzzy-avenger-1698796835642/user/shutdownCommandListener#-1873049605] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:40.177] [fuzzy-avenger-1698796840162-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1698796840162/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796840162/deadLetters] to Actor[akka://fuzzy-avenger-1698796840162/user/shutdownCommandListener#2121982058] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:41.057] [fuzzy-avenger-1698796841052-akka.actor.default-dispatcher-6] [akka://fuzzy-avenger-1698796841052/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796841052/deadLetters] to Actor[akka://fuzzy-avenger-1698796841052/user/shutdownCommandListener#1412528160] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-[INFO] [10/31/2023 19:00:42.125] [fuzzy-avenger-1698796842107-akka.actor.default-dispatcher-4] [akka://fuzzy-avenger-1698796842107/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1698796842107/deadLetters] to Actor[akka://fuzzy-avenger-1698796842107/user/shutdownCommandListener#719672309] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-createAndClassifySequences threw an exception
+Progress update: steps=1000, test inputs generated=317, failing inputs=2      (2023-11-20T09:17:45.130Z     389M used)[INFO] [11/20/2023 03:17:49.800] [fuzzy-avenger-1700471869798-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1700471869798/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471869798/deadLetters] to Actor[akka://fuzzy-avenger-1700471869798/user/shutdownCommandListener#1370725751] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [11/20/2023 03:17:50.416] [fuzzy-avenger-1700471870413-akka.actor.default-dispatcher-7] [akka://fuzzy-avenger-1700471870413/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471870413/deadLetters] to Actor[akka://fuzzy-avenger-1700471870413/user/shutdownCommandListener#21761372] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[INFO] [11/20/2023 03:17:54.647] [fuzzy-avenger-1700471874644-akka.actor.default-dispatcher-2] [akka://fuzzy-avenger-1700471874644/user/shutdownCommandListener] Message [com.daveayan.fuzzyavenger.providers.akka.Message_AL1_to_AL0] from Actor[akka://fuzzy-avenger-1700471874644/deadLetters] to Actor[akka://fuzzy-avenger-1700471874644/user/shutdownCommandListener#102117878] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[ERROR] [11/20/2023 03:17:58.165] [fuzzy-avenger-1700471878154-akka.actor.default-dispatcher-7] [ActorSystem(fuzzy-avenger-1700471878154)] Uncaught error from thread [fuzzy-avenger-1700471878154-akka.actor.default-dispatcher-7] shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:719)
+	at scala.concurrent.forkjoin.ForkJoinPool.tryAddWorker(ForkJoinPool.java:1672)
+	at scala.concurrent.forkjoin.ForkJoinPool.signalWork(ForkJoinPool.java:1966)
+	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2037)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+Uncaught error from thread [fuzzy-avenger-1700471878154-akka.actor.default-dispatcher-7] shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[fuzzy-avenger-1700471878154]
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:719)
+	at scala.concurrent.forkjoin.ForkJoinPool.tryAddWorker(ForkJoinPool.java:1672)
+	at scala.concurrent.forkjoin.ForkJoinPool.signalWork(ForkJoinPool.java:1966)createAndClassifySequences threw an exception
 java.lang.OutOfMemoryError: unable to create new native thread
 	at java.lang.Thread.start0(Native Method)
 	at java.lang.Thread.start(Thread.java:719)
 	at randoop.util.ReflectionExecutor.executeReflectionCodeThreaded(ReflectionExecutor.java:131)
 	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:88)
-	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
-	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
-	at randoop.sequence.Statement.execute(Statement.java:163)
-	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.contract.ObjectContractUtils.execute(ObjectContractUtils.java:26)
+	at randoop.contract.ObjectContract.checkContract(ObjectContract.java:112)
+	at randoop.test.ContractCheckingGenerator.checkContracts(ContractCheckingGenerator.java:167)
+	at randoop.test.ContractCheckingGenerator.generateTestChecks(ContractCheckingGenerator.java:93)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:41)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:37)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:343)
 	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
 	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
 	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
@@ -45,11 +59,13 @@ java.lang.OutOfMemoryError: unable to create new native thread
 	at java.lang.Thread.start(Thread.java:719)
 	at randoop.util.ReflectionExecutor.executeReflectionCodeThreaded(ReflectionExecutor.java:131)
 	at randoop.util.ReflectionExecutor.executeReflectionCode(ReflectionExecutor.java:88)
-	at randoop.operation.ConstructorCall.execute(ConstructorCall.java:180)
-	at randoop.operation.TypedOperation.execute(TypedOperation.java:310)
-	at randoop.sequence.Statement.execute(Statement.java:163)
-	at randoop.sequence.ExecutableSequence.executeStatement(ExecutableSequence.java:416)
-	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:308)
+	at randoop.contract.ObjectContractUtils.execute(ObjectContractUtils.java:26)
+	at randoop.contract.ObjectContract.checkContract(ObjectContract.java:112)
+	at randoop.test.ContractCheckingGenerator.checkContracts(ContractCheckingGenerator.java:167)
+	at randoop.test.ContractCheckingGenerator.generateTestChecks(ContractCheckingGenerator.java:93)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:41)
+	at randoop.test.ExtendGenerator.generateTestChecks(ExtendGenerator.java:37)
+	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:343)
 	at randoop.sequence.ExecutableSequence.execute(ExecutableSequence.java:237)
 	at randoop.generation.ForwardGenerator.step(ForwardGenerator.java:237)
 	at randoop.generation.AbstractGenerator.createAndClassifySequences(AbstractGenerator.java:321)
@@ -79,3 +95,7 @@ akka.actor.ActorRef actorRef16 = akkaExecutionProvider6.shutdownCommandListener;
 akkaExecutionProvider0.shutdownCommandListener = actorRef16;
 com.daveayan.fuzzyavenger.Lists lists18 = com.daveayan.fuzzyavenger.Lists.initialize((com.daveayan.fuzzyavenger.ExecutionProvider)akkaExecutionProvider0);
 lists18.shutdown();
+
+	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2037)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)

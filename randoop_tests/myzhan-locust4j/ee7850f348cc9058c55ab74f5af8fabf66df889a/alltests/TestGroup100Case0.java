@@ -60,7 +60,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test006");
         long long0 = com.github.myzhan.locust4j.utils.Utils.currentTimeInSeconds();
-// flaky:         org.junit.Assert.assertTrue("'" + long0 + "' != '" + 1698795329L + "'", long0 == 1698795329L);
+// flaky:         org.junit.Assert.assertTrue("'" + long0 + "' != '" + 1700469865L + "'", long0 == 1700469865L);
     }
 
     @Test
@@ -124,7 +124,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test012");
         long long0 = com.github.myzhan.locust4j.utils.Utils.now();
-// flaky:         org.junit.Assert.assertTrue("'" + long0 + "' != '" + 1698795329485L + "'", long0 == 1698795329485L);
+// flaky:         org.junit.Assert.assertTrue("'" + long0 + "' != '" + 1700469866049L + "'", long0 == 1700469866049L);
     }
 
     @Test
@@ -197,7 +197,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test019");
         java.util.concurrent.TimeUnit timeUnit3 = null;
         java.util.concurrent.TimeUnit timeUnit5 = null;
-        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 1, (long) (short) 0, (-1L), timeUnit3, 0L, timeUnit5);
+        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter(100L, (long) '4', (long) '4', timeUnit3, (long) 1, timeUnit5);
         // The following exception was thrown during execution in test generation
         try {
             rampUpRateLimiter6.stop();
@@ -221,7 +221,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test021");
         com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
         java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue1 = stats0.getMessageToRunnerQueue();
-        stats0.logRequest("hi!", "", (long) (byte) 1, 1698795334L);
+        stats0.logRequest("hi!", "", (long) (byte) 1, 1700469866L);
         org.junit.Assert.assertNotNull(stats0);
         org.junit.Assert.assertNotNull(strMapQueue1);
     }
@@ -232,7 +232,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test022");
         java.util.concurrent.TimeUnit timeUnit3 = null;
         java.util.concurrent.TimeUnit timeUnit5 = null;
-        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 1, (long) (short) 0, (-1L), timeUnit3, 0L, timeUnit5);
+        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter(100L, (long) '4', (long) '4', timeUnit3, (long) 1, timeUnit5);
         // The following exception was thrown during execution in test generation
         try {
             rampUpRateLimiter6.start();
@@ -315,7 +315,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test027");
         java.lang.String str0 = com.github.myzhan.locust4j.utils.Utils.getNodeID();
-// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff" + "'", str0, "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+// flaky:         org.junit.Assert.assertEquals("'" + str0 + "' != '" + "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055" + "'", str0, "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
     }
 
     @Test
@@ -329,7 +329,7 @@ public class TestGroup100Case0 {
         long long7 = statsEntry2.getNumFailures();
         java.lang.Class<?> wildcardClass8 = statsEntry2.getClass();
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795335L + "'", long6 == 1698795335L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469871L + "'", long6 == 1700469871L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertNotNull(wildcardClass8);
     }
@@ -344,13 +344,13 @@ public class TestGroup100Case0 {
         long long6 = statsEntry2.getLastRequestTimestamp();
         long long7 = statsEntry2.getNumFailures();
         java.lang.String str8 = statsEntry2.getName();
-        statsEntry2.setTotalResponseTime((long) (-1));
+        statsEntry2.setTotalResponseTime((long) '#');
         long long11 = statsEntry2.getTotalResponseTime();
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795335L + "'", long6 == 1698795335L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469871L + "'", long6 == 1700469871L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
-        org.junit.Assert.assertTrue("'" + long11 + "' != '" + (-1L) + "'", long11 == (-1L));
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 35L + "'", long11 == 35L);
     }
 
     @Test
@@ -443,7 +443,7 @@ public class TestGroup100Case0 {
     public void test037() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test037");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
     }
 
     @Test
@@ -487,10 +487,10 @@ public class TestGroup100Case0 {
         long long6 = statsEntry2.getLastRequestTimestamp();
         long long7 = statsEntry2.getNumFailures();
         java.lang.String str8 = statsEntry2.getName();
-        statsEntry2.setTotalResponseTime((long) (-1));
+        statsEntry2.setTotalResponseTime((long) '#');
         java.util.Map<java.lang.String, java.lang.Object> strMap11 = statsEntry2.serialize();
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795340L + "'", long6 == 1698795340L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469877L + "'", long6 == 1700469877L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(strMap11);
@@ -632,7 +632,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int14 + "' != '" + 1 + "'", int14 == 1);
         org.junit.Assert.assertNotNull(abstractTaskArray23);
         org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
-// flaky:         org.junit.Assert.assertEquals("'" + str27 + "' != '" + "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227" + "'", str27, "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
+// flaky:         org.junit.Assert.assertEquals("'" + str27 + "' != '" + "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6" + "'", str27, "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
     }
 
     @Test
@@ -654,7 +654,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test053");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
         java.lang.String str1 = requestFailure0.getRequestType();
-        requestFailure0.setName("1f6ad32470fbedfde2015353f7b36b5c");
+        requestFailure0.setName("bcb1c32f385de115abd9c3efda4468d0");
         org.junit.Assert.assertNull(str1);
     }
 
@@ -754,7 +754,7 @@ public class TestGroup100Case0 {
         weighingTaskSet13.addTask((com.github.myzhan.locust4j.AbstractTask) weighingTaskSet16);
         com.github.myzhan.locust4j.AbstractTask[] abstractTaskArray18 = new com.github.myzhan.locust4j.AbstractTask[] { weighingTaskSet16 };
         locust0.dryRun(abstractTaskArray18);
-        locust0.recordFailure("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "hi!", (long) ' ', "hi!");
+        locust0.recordFailure("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "hi!", (long) ' ', "hi!");
         org.junit.Assert.assertNotNull(locust0);
         org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
         org.junit.Assert.assertNotNull(abstractTaskArray18);
@@ -799,7 +799,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test059");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         java.lang.String str3 = requestFailure0.getError();
         org.junit.Assert.assertNull(str3);
     }
@@ -820,10 +820,10 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test061");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         requestFailure0.setError("Hengchens-MBP.attlocal.net");
         java.lang.String str5 = requestFailure0.getRequestType();
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff" + "'", str5, "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055" + "'", str5, "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
     }
 
     @Test
@@ -886,7 +886,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(abstractTaskArray23);
         org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
         org.junit.Assert.assertNotNull(strMap29);
-// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98" + "'", str30, "Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98");
+// flaky:         org.junit.Assert.assertEquals("'" + str30 + "' != '" + "Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d" + "'", str30, "Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d");
     }
 
     @Test
@@ -955,7 +955,7 @@ public class TestGroup100Case0 {
         long long7 = statsEntry2.getNumFailures();
         java.util.Map<java.lang.String, java.lang.Object> strMap8 = statsEntry2.serialize();
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795361L + "'", long6 == 1698795361L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469898L + "'", long6 == 1700469898L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertNotNull(strMap8);
     }
@@ -1015,7 +1015,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
         locust0.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust0.setMasterPort((int) (short) -1);
-        locust0.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust0.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         locust0.stop();
         org.junit.Assert.assertNotNull(locust0);
     }
@@ -1031,7 +1031,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust10 = com.github.myzhan.locust4j.Locust.getInstance();
         locust10.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust10.setMasterPort((int) (short) -1);
-        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         boolean boolean23 = locust10.isVerbose();
         com.github.myzhan.locust4j.Locust locust24 = com.github.myzhan.locust4j.Locust.getInstance();
         locust24.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
@@ -1085,7 +1085,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + int14 + "' != '" + 1 + "'", int14 == 1);
         org.junit.Assert.assertNotNull(abstractTaskArray23);
         org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
-// flaky:         org.junit.Assert.assertEquals("'" + str31 + "' != '" + "Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf" + "'", str31, "Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf");
+// flaky:         org.junit.Assert.assertEquals("'" + str31 + "' != '" + "Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa" + "'", str31, "Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa");
     }
 
     @Test
@@ -1094,7 +1094,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test078");
         com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
         java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue1 = stats0.getMessageToRunnerQueue();
-        stats0.logRequest("Hengchens-MBP.attlocal.net", "", (long) '#', 1698795361L);
+        stats0.logRequest("Hengchens-MBP.attlocal.net", "", (long) '#', 1700469898L);
         stats0.start();
         org.junit.Assert.assertNotNull(stats0);
         org.junit.Assert.assertNotNull(strMapQueue1);
@@ -1163,7 +1163,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         java.util.Map<java.lang.String, java.lang.Object> strMap3 = statsEntry2.getStrippedReport();
         statsEntry2.logError("hi!");
-        statsEntry2.setMethod("1f6ad32470fbedfde2015353f7b36b5c-Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
+        statsEntry2.setMethod("bcb1c32f385de115abd9c3efda4468d0-Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
         org.junit.Assert.assertNotNull(strMap3);
     }
 
@@ -1206,7 +1206,7 @@ public class TestGroup100Case0 {
         locust0.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust0.setMasterPort(0);
         locust0.setVerbose(false);
-        locust0.recordSuccess("Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf", "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227", (long) (short) 0, (long) 1);
+        locust0.recordSuccess("Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa", "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6", (long) (short) 0, (long) 1);
         org.junit.Assert.assertNotNull(locust0);
     }
 
@@ -1214,7 +1214,7 @@ public class TestGroup100Case0 {
     public void test087() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test087");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227", "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6", "bcb1c32f385de115abd9c3efda4468d0");
     }
 
     @Test
@@ -1242,9 +1242,9 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test090");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         requestFailure0.setError("Hengchens-MBP.attlocal.net");
-        requestFailure0.setError("1f6ad32470fbedfde2015353f7b36b5c-Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
+        requestFailure0.setError("bcb1c32f385de115abd9c3efda4468d0-Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
     }
 
     @Test
@@ -1264,7 +1264,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test092");
         com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
         java.lang.String str1 = requestSuccess0.getName();
-        requestSuccess0.setContentLength(1698795329L);
+        requestSuccess0.setContentLength(1700469865L);
         java.lang.String str4 = requestSuccess0.getRequestType();
         requestSuccess0.setContentLength((long) 0);
         org.junit.Assert.assertNull(str1);
@@ -1275,8 +1275,8 @@ public class TestGroup100Case0 {
     public void test093() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test093");
-        java.lang.String str2 = com.github.myzhan.locust4j.utils.Utils.getSystemEnvWithDefault("1f6ad32470fbedfde2015353f7b36b5c-Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}", "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
-        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227" + "'", str2, "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
+        java.lang.String str2 = com.github.myzhan.locust4j.utils.Utils.getSystemEnvWithDefault("bcb1c32f385de115abd9c3efda4468d0-Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}", "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6" + "'", str2, "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
     }
 
     @Test
@@ -1313,7 +1313,7 @@ public class TestGroup100Case0 {
         statsEntry3.setLastRequestTimestamp((long) (short) 0);
         java.lang.String str8 = statsEntry3.getMethod();
         java.util.Map<java.lang.String, java.lang.Object> strMap9 = statsEntry3.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227", strMap9, 0, "Hengchens-MBP.attlocal.net");
+        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6", strMap9, 0, "Hengchens-MBP.attlocal.net");
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(strMap9);
     }
@@ -1355,7 +1355,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test099");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry3 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         java.util.Map<java.lang.String, java.lang.Object> strMap4 = statsEntry3.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message7 = new com.github.myzhan.locust4j.message.Message("1f6ad32470fbedfde2015353f7b36b5c", strMap4, 10, "Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf");
+        com.github.myzhan.locust4j.message.Message message7 = new com.github.myzhan.locust4j.message.Message("bcb1c32f385de115abd9c3efda4468d0", strMap4, 10, "Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa");
         org.junit.Assert.assertNotNull(strMap4);
     }
 
@@ -1365,9 +1365,9 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test100");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry1 = new com.github.myzhan.locust4j.stats.StatsEntry("hi!");
         statsEntry1.setNumFailures(1L);
-        statsEntry1.setMaxResponseTime(1698795334L);
+        statsEntry1.setMaxResponseTime(1700469866L);
         long long6 = statsEntry1.getMaxResponseTime();
-        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795334L + "'", long6 == 1698795334L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469866L + "'", long6 == 1700469866L);
     }
 
     @Test
@@ -1380,8 +1380,8 @@ public class TestGroup100Case0 {
         java.lang.String str7 = statsEntry2.getMethod();
         statsEntry2.reset();
         statsEntry2.setMaxResponseTime(0L);
-        statsEntry2.setNumRequests(1698795335L);
-        statsEntry2.setMethod("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        statsEntry2.setNumRequests(1700469871L);
+        statsEntry2.setMethod("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
     }
 
@@ -1411,7 +1411,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test104");
         java.util.concurrent.TimeUnit timeUnit3 = null;
         java.util.concurrent.TimeUnit timeUnit5 = null;
-        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 10, (long) (-1), 1698795335L, timeUnit3, 10L, timeUnit5);
+        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 10, (long) (-1), 1700469871L, timeUnit3, 10L, timeUnit5);
         boolean boolean7 = rampUpRateLimiter6.isStopped();
         boolean boolean8 = rampUpRateLimiter6.isStopped();
         // The following exception was thrown during execution in test generation
@@ -1434,7 +1434,7 @@ public class TestGroup100Case0 {
         statsEntry3.setLastRequestTimestamp((long) (short) 0);
         java.lang.String str8 = statsEntry3.getMethod();
         java.util.Map<java.lang.String, java.lang.Object> strMap9 = statsEntry3.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", strMap9, 0, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", strMap9, 0, "bcb1c32f385de115abd9c3efda4468d0");
         byte[] byteArray13 = message12.getBytes();
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(strMap9);
@@ -1447,7 +1447,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test106");
         com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
         java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue1 = stats0.getMessageToRunnerQueue();
-        stats0.logRequest("Hengchens-MBP.attlocal.net", "hi!", 1698795329485L, (long) 10);
+        stats0.logRequest("Hengchens-MBP.attlocal.net", "hi!", 1700469866049L, (long) 10);
         stats0.stop();
         stats0.wakeMeUp();
         org.junit.Assert.assertNotNull(stats0);
@@ -1474,12 +1474,12 @@ public class TestGroup100Case0 {
     public void test108() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test108");
-        java.lang.String[] strArray6 = new java.lang.String[] { "", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "" };
+        java.lang.String[] strArray6 = new java.lang.String[] { "", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "" };
         java.lang.String str7 = com.github.myzhan.locust4j.utils.Utils.md5(strArray6);
         java.lang.String str8 = com.github.myzhan.locust4j.utils.Utils.md5(strArray6);
         org.junit.Assert.assertNotNull(strArray6);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "1f6ad32470fbedfde2015353f7b36b5c" + "'", str7, "1f6ad32470fbedfde2015353f7b36b5c");
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "1f6ad32470fbedfde2015353f7b36b5c" + "'", str8, "1f6ad32470fbedfde2015353f7b36b5c");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "bcb1c32f385de115abd9c3efda4468d0" + "'", str7, "bcb1c32f385de115abd9c3efda4468d0");
+        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "bcb1c32f385de115abd9c3efda4468d0" + "'", str8, "bcb1c32f385de115abd9c3efda4468d0");
     }
 
     @Test
@@ -1623,7 +1623,7 @@ public class TestGroup100Case0 {
         runner0.setTasks((java.util.List<com.github.myzhan.locust4j.AbstractTask>) abstractTaskList24);
         com.github.myzhan.locust4j.rpc.Client client27 = null;
         runner0.setRPCClient(client27);
-        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient32 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient32 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "bcb1c32f385de115abd9c3efda4468d0");
         zeromqClient32.close();
         runner0.setRPCClient((com.github.myzhan.locust4j.rpc.Client) zeromqClient32);
         org.junit.Assert.assertTrue("'" + int10 + "' != '" + 1 + "'", int10 == 1);
@@ -1672,7 +1672,7 @@ public class TestGroup100Case0 {
         statsEntry3.setLastRequestTimestamp((long) (short) 0);
         java.lang.String str8 = statsEntry3.getMethod();
         java.util.Map<java.lang.String, java.lang.Object> strMap9 = statsEntry3.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98", strMap9, (int) (byte) 0, "{}");
+        com.github.myzhan.locust4j.message.Message message12 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d", strMap9, (int) (byte) 0, "{}");
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(strMap9);
     }
@@ -1710,9 +1710,9 @@ public class TestGroup100Case0 {
     public void test121() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test121");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "bcb1c32f385de115abd9c3efda4468d0");
         statsEntry2.setMaxResponseTime((long) (-1));
-        statsEntry2.setName("Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf");
+        statsEntry2.setName("Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa");
     }
 
     @Test
@@ -1723,7 +1723,7 @@ public class TestGroup100Case0 {
         statsEntry2.setMinResponseTime(0L);
         statsEntry2.setTotalContentLength((long) '#');
         long long7 = statsEntry2.getTotalContentLength();
-        statsEntry2.setMinResponseTime((long) (byte) 1);
+        statsEntry2.setMinResponseTime((long) ' ');
         java.util.Map<java.lang.String, java.lang.Object> strMap10 = statsEntry2.getStrippedReport();
         java.util.Map<java.lang.String, java.lang.Object> strMap11 = statsEntry2.serialize();
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
@@ -1735,7 +1735,7 @@ public class TestGroup100Case0 {
     public void test123() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test123");
-        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient3 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient3 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "bcb1c32f385de115abd9c3efda4468d0");
         zeromqClient3.close();
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry8 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry8.setMinResponseTime(0L);
@@ -1789,7 +1789,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertNotNull(abstractTaskArray23);
         org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
         org.junit.Assert.assertNotNull(strMap29);
-// flaky:         org.junit.Assert.assertEquals("'" + str32 + "' != '" + "Hengchens-MBP.attlocal.net_2f2f6326153bae5e1a82cfcacf4aac1e" + "'", str32, "Hengchens-MBP.attlocal.net_2f2f6326153bae5e1a82cfcacf4aac1e");
+// flaky:         org.junit.Assert.assertEquals("'" + str32 + "' != '" + "Hengchens-MBP.attlocal.net_b940cee87fb658aeefc4e20796d4f0c1" + "'", str32, "Hengchens-MBP.attlocal.net_b940cee87fb658aeefc4e20796d4f0c1");
     }
 
     @Test
@@ -1885,7 +1885,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test132");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
-        statsEntry2.setLastRequestTimestamp((long) (short) -1);
+        statsEntry2.setLastRequestTimestamp((long) (short) 1);
         statsEntry2.setNumRequests((long) 100);
         java.lang.String str7 = statsEntry2.getName();
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
@@ -1969,7 +1969,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.AbstractTask[] abstractTaskArray18 = new com.github.myzhan.locust4j.AbstractTask[] { weighingTaskSet16 };
         locust0.dryRun(abstractTaskArray18);
         locust0.stop();
-        java.lang.Object obj22 = locust0.getRemoteParam("Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
+        java.lang.Object obj22 = locust0.getRemoteParam("Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
         org.junit.Assert.assertNotNull(locust0);
         org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
         org.junit.Assert.assertNotNull(abstractTaskArray18);
@@ -1999,7 +1999,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test138");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry1 = new com.github.myzhan.locust4j.stats.StatsEntry("hi!");
         long long2 = statsEntry1.getLastRequestTimestamp();
-        statsEntry1.setMethod("Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98");
+        statsEntry1.setMethod("Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d");
         org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
     }
 
@@ -2007,7 +2007,7 @@ public class TestGroup100Case0 {
     public void test139() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test139");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("1f6ad32470fbedfde2015353f7b36b5c", "Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("bcb1c32f385de115abd9c3efda4468d0", "Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d");
     }
 
     @Test
@@ -2020,10 +2020,10 @@ public class TestGroup100Case0 {
         long long6 = statsEntry2.getLastRequestTimestamp();
         long long7 = statsEntry2.getNumFailures();
         java.lang.String str8 = statsEntry2.getName();
-        statsEntry2.setTotalResponseTime((long) (-1));
+        statsEntry2.setTotalResponseTime((long) '#');
         java.util.Map<java.lang.String, java.lang.Object> strMap11 = statsEntry2.getStrippedReport();
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795367L + "'", long6 == 1698795367L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469904L + "'", long6 == 1700469904L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(strMap11);
@@ -2040,7 +2040,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust10 = com.github.myzhan.locust4j.Locust.getInstance();
         locust10.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust10.setMasterPort((int) (short) -1);
-        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         boolean boolean23 = locust10.isVerbose();
         com.github.myzhan.locust4j.Locust locust24 = com.github.myzhan.locust4j.Locust.getInstance();
         locust24.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
@@ -2054,7 +2054,7 @@ public class TestGroup100Case0 {
         locust24.dryRun(abstractTaskArray42);
         locust10.dryRun(abstractTaskArray42);
         locust0.dryRun(abstractTaskArray42);
-        locust0.recordFailure("", "hi!", 100L, "Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98");
+        locust0.recordFailure("", "hi!", 100L, "Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d");
         com.github.myzhan.locust4j.Locust locust51 = com.github.myzhan.locust4j.Locust.getInstance();
         locust51.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust51.setMasterPort(0);
@@ -2093,10 +2093,10 @@ public class TestGroup100Case0 {
         java.lang.String str7 = statsEntry2.getMethod();
         statsEntry2.reset();
         statsEntry2.setMaxResponseTime(0L);
-        statsEntry2.setNumRequests(1698795335L);
+        statsEntry2.setNumRequests(1700469871L);
         long long13 = statsEntry2.getNumRequests();
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "" + "'", str7, "");
-        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 1698795335L + "'", long13 == 1698795335L);
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 1700469871L + "'", long13 == 1700469871L);
     }
 
     @Test
@@ -2121,7 +2121,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust10 = com.github.myzhan.locust4j.Locust.getInstance();
         locust10.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust10.setMasterPort((int) (short) -1);
-        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         boolean boolean23 = locust10.isVerbose();
         com.github.myzhan.locust4j.Locust locust24 = com.github.myzhan.locust4j.Locust.getInstance();
         locust24.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
@@ -2135,8 +2135,8 @@ public class TestGroup100Case0 {
         locust24.dryRun(abstractTaskArray42);
         locust10.dryRun(abstractTaskArray42);
         locust0.dryRun(abstractTaskArray42);
-        locust0.recordFailure("", "hi!", 100L, "Hengchens-MBP.attlocal.net_4cb1a2630de37c793d0f93600c055d98");
-        locust0.setMaxRPS(1698795361L);
+        locust0.recordFailure("", "hi!", 100L, "Hengchens-MBP.attlocal.net_4af26e3d62052f72b6fcabb7e77c556d");
+        locust0.setMaxRPS(1700469898L);
         org.junit.Assert.assertNotNull(locust0);
         org.junit.Assert.assertNotNull(locust10);
         org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
@@ -2176,9 +2176,9 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
         locust0.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust0.setMasterPort((int) (short) -1);
-        locust0.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust0.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         boolean boolean13 = locust0.isVerbose();
-        java.lang.Object obj15 = locust0.getRemoteParam("Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
+        java.lang.Object obj15 = locust0.getRemoteParam("Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
         locust0.setMasterPort((int) (short) 1);
         org.junit.Assert.assertNotNull(locust0);
         org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
@@ -2189,14 +2189,14 @@ public class TestGroup100Case0 {
     public void test147() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test147");
-        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient3 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient3 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "bcb1c32f385de115abd9c3efda4468d0");
         zeromqClient3.close();
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry8 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry8.setMinResponseTime(0L);
         statsEntry8.setLastRequestTimestamp((long) (short) 0);
         java.lang.String str13 = statsEntry8.getMethod();
         java.util.Map<java.lang.String, java.lang.Object> strMap14 = statsEntry8.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message17 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", strMap14, 0, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.message.Message message17 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", strMap14, 0, "bcb1c32f385de115abd9c3efda4468d0");
         // The following exception was thrown during execution in test generation
         try {
             zeromqClient3.send(message17);
@@ -2213,7 +2213,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test148");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         java.lang.String str3 = requestFailure0.getName();
         org.junit.Assert.assertNull(str3);
     }
@@ -2272,7 +2272,7 @@ public class TestGroup100Case0 {
         stats0.logRequest("", "", (long) 'a', (long) (byte) -1);
         java.util.Queue<com.github.myzhan.locust4j.stats.RequestFailure> requestFailureQueue6 = stats0.getReportFailureQueue();
         java.util.Queue<java.lang.Boolean> booleanQueue7 = stats0.getClearStatsQueue();
-        stats0.logError("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227", "Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf");
+        stats0.logError("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6", "Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa");
         stats0.wakeMeUp();
         org.junit.Assert.assertNotNull(stats0);
         org.junit.Assert.assertNotNull(requestFailureQueue6);
@@ -2288,7 +2288,7 @@ public class TestGroup100Case0 {
         statsEntry2.setTotalContentLength((long) '#');
         long long7 = statsEntry2.getTotalContentLength();
         long long8 = statsEntry2.getLastRequestTimestamp();
-        statsEntry2.setMinResponseTime((long) (short) 0);
+        statsEntry2.setMinResponseTime((long) (byte) 0);
         com.github.myzhan.locust4j.message.LongIntMap longIntMap11 = statsEntry2.getNumReqsPerSec();
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
         org.junit.Assert.assertTrue("'" + long8 + "' != '" + 0L + "'", long8 == 0L);
@@ -2350,6 +2350,28 @@ public class TestGroup100Case0 {
     public void test159() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test159");
+        com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
+        locust0.setVerbose(true);
+        org.junit.Assert.assertNotNull(locust0);
+    }
+
+    @Test
+    public void test160() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+        com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
+        long long1 = requestSuccess0.getResponseTime();
+        long long2 = requestSuccess0.getContentLength();
+        java.lang.String str3 = requestSuccess0.getRequestType();
+        org.junit.Assert.assertTrue("'" + long1 + "' != '" + 0L + "'", long1 == 0L);
+        org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
+        org.junit.Assert.assertNull(str3);
+    }
+
+    @Test
+    public void test161() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
         com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
         stats0.logRequest("", "", (long) 'a', (long) (byte) -1);
         java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue6 = stats0.getMessageToRunnerQueue();
@@ -2360,9 +2382,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test160() throws Throwable {
+    public void test162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test160");
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry2.setMinResponseTime(0L);
         statsEntry2.setTotalContentLength((long) '#');
@@ -2371,27 +2393,27 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test161() throws Throwable {
+    public void test163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+            System.out.format("%n%s%n", "TestGroup100Case0.test163");
         com.github.myzhan.locust4j.ratelimit.StableRateLimiter stableRateLimiter1 = new com.github.myzhan.locust4j.ratelimit.StableRateLimiter((long) (-1));
     }
 
     @Test
-    public void test162() throws Throwable {
+    public void test164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
         requestFailure0.setName("");
-        requestFailure0.setName("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
-        requestFailure0.setName("Hengchens-MBP.attlocal.net_7d1564785ce4a97d77025101bfb71227");
+        requestFailure0.setName("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
+        requestFailure0.setName("Hengchens-MBP.attlocal.net_cb30a40375e116ee3da0095060de1fc6");
         requestFailure0.setRequestType("");
     }
 
     @Test
-    public void test163() throws Throwable {
+    public void test165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test163");
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
         com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
         locust0.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust0.setMasterPort(0);
@@ -2399,7 +2421,7 @@ public class TestGroup100Case0 {
         com.github.myzhan.locust4j.Locust locust10 = com.github.myzhan.locust4j.Locust.getInstance();
         locust10.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
         locust10.setMasterPort((int) (short) -1);
-        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", (long) '#', (-1L));
+        locust10.recordSuccess("hi!", "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", (long) '#', (-1L));
         boolean boolean23 = locust10.isVerbose();
         com.github.myzhan.locust4j.Locust locust24 = com.github.myzhan.locust4j.Locust.getInstance();
         locust24.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
@@ -2423,16 +2445,16 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertNotNull(locust0);
         org.junit.Assert.assertNotNull(locust10);
-// flaky:         org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
         org.junit.Assert.assertNotNull(locust24);
         org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
         org.junit.Assert.assertNotNull(abstractTaskArray42);
     }
 
     @Test
-    public void test164() throws Throwable {
+    public void test166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+            System.out.format("%n%s%n", "TestGroup100Case0.test166");
         com.github.myzhan.locust4j.taskset.WeighingTaskSet weighingTaskSet2 = new com.github.myzhan.locust4j.taskset.WeighingTaskSet("", (int) (short) 1);
         com.github.myzhan.locust4j.taskset.WeighingTaskSet weighingTaskSet5 = new com.github.myzhan.locust4j.taskset.WeighingTaskSet("", (int) (short) 1);
         weighingTaskSet2.addTask((com.github.myzhan.locust4j.AbstractTask) weighingTaskSet5);
@@ -2443,25 +2465,25 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test165() throws Throwable {
+    public void test167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         requestFailure0.setError("Hengchens-MBP.attlocal.net");
         java.lang.String str5 = requestFailure0.getName();
         org.junit.Assert.assertNull(str5);
     }
 
     @Test
-    public void test166() throws Throwable {
+    public void test168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test166");
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry2.setMinResponseTime(0L);
         statsEntry2.setTotalContentLength((long) '#');
         long long7 = statsEntry2.getTotalContentLength();
-        statsEntry2.setMinResponseTime((long) (byte) 1);
+        statsEntry2.setMinResponseTime((long) ' ');
         java.lang.String str10 = statsEntry2.getName();
         java.lang.String str11 = statsEntry2.getName();
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
@@ -2470,9 +2492,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test167() throws Throwable {
+    public void test169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
         com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
         requestSuccess0.setResponseTime((long) (short) 1);
         long long3 = requestSuccess0.getContentLength();
@@ -2480,31 +2502,31 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test168() throws Throwable {
+    public void test170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
         com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
         java.lang.String str1 = requestSuccess0.getRequestType();
         org.junit.Assert.assertNull(str1);
     }
 
     @Test
-    public void test169() throws Throwable {
+    public void test171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
         requestFailure0.setName("");
         java.lang.String str3 = requestFailure0.getRequestType();
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa");
         java.lang.String str6 = requestFailure0.getError();
         org.junit.Assert.assertNull(str3);
         org.junit.Assert.assertNull(str6);
     }
 
     @Test
-    public void test170() throws Throwable {
+    public void test172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
         com.github.myzhan.locust4j.runtime.Runner runner0 = new com.github.myzhan.locust4j.runtime.Runner();
         com.github.myzhan.locust4j.rpc.Client client1 = null;
         runner0.setRPCClient(client1);
@@ -2546,9 +2568,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test171() throws Throwable {
+    public void test173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+            System.out.format("%n%s%n", "TestGroup100Case0.test173");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry2.setMinResponseTime(0L);
         java.util.Map<java.lang.String, java.lang.Object> strMap5 = statsEntry2.getStrippedReport();
@@ -2557,35 +2579,35 @@ public class TestGroup100Case0 {
         java.lang.String str8 = statsEntry2.getName();
         statsEntry2.setMaxResponseTime((long) (short) 100);
         org.junit.Assert.assertNotNull(strMap5);
-// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1698795378L + "'", long6 == 1698795378L);
+// flaky:         org.junit.Assert.assertTrue("'" + long6 + "' != '" + 1700469915L + "'", long6 == 1700469915L);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
-    }
-
-    @Test
-    public void test172() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test172");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry1 = new com.github.myzhan.locust4j.stats.StatsEntry("");
-        statsEntry1.setLastRequestTimestamp(1698795361L);
-    }
-
-    @Test
-    public void test173() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test173");
-        com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
-        java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue1 = stats0.getMessageToRunnerQueue();
-        stats0.logRequest("Hengchens-MBP.attlocal.net", "", (long) '#', 1698795361L);
-        stats0.clearAll();
-        org.junit.Assert.assertNotNull(stats0);
-        org.junit.Assert.assertNotNull(strMapQueue1);
     }
 
     @Test
     public void test174() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test174");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry1 = new com.github.myzhan.locust4j.stats.StatsEntry("");
+        statsEntry1.setLastRequestTimestamp(1700469898L);
+    }
+
+    @Test
+    public void test175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+        com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
+        java.util.concurrent.BlockingQueue<java.util.Map<java.lang.String, java.lang.Object>> strMapQueue1 = stats0.getMessageToRunnerQueue();
+        stats0.logRequest("Hengchens-MBP.attlocal.net", "", (long) '#', 1700469898L);
+        stats0.clearAll();
+        org.junit.Assert.assertNotNull(stats0);
+        org.junit.Assert.assertNotNull(strMapQueue1);
+    }
+
+    @Test
+    public void test176() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry1 = new com.github.myzhan.locust4j.stats.StatsEntry("hi!");
         long long2 = statsEntry1.getStartTime();
         com.github.myzhan.locust4j.message.LongIntMap longIntMap3 = statsEntry1.getNumReqsPerSec();
@@ -2594,12 +2616,12 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test175() throws Throwable {
+    public void test177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test175");
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
         java.util.concurrent.TimeUnit timeUnit3 = null;
         java.util.concurrent.TimeUnit timeUnit5 = null;
-        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 10, (long) (-1), 1698795335L, timeUnit3, 10L, timeUnit5);
+        com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter rampUpRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.RampUpRateLimiter((long) (byte) 10, (long) (-1), 1700469871L, timeUnit3, 10L, timeUnit5);
         boolean boolean7 = rampUpRateLimiter6.isStopped();
         boolean boolean8 = rampUpRateLimiter6.isStopped();
         org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
@@ -2607,9 +2629,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test176() throws Throwable {
+    public void test178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
         java.util.concurrent.TimeUnit timeUnit2 = null;
         com.github.myzhan.locust4j.ratelimit.StableRateLimiter stableRateLimiter3 = new com.github.myzhan.locust4j.ratelimit.StableRateLimiter(1L, (long) (short) 1, timeUnit2);
         stableRateLimiter3.run();
@@ -2623,36 +2645,36 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test177() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test177");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
-        statsEntry2.setMinResponseTime(0L);
-        statsEntry2.setTotalContentLength((long) '#');
-        statsEntry2.setTotalContentLength((long) 1);
-        statsEntry2.setTotalContentLength((long) (short) -1);
-    }
-
-    @Test
-    public void test178() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test178");
-        com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
-        java.lang.String str1 = requestSuccess0.getName();
-        requestSuccess0.setContentLength(1698795329L);
-        requestSuccess0.setContentLength((long) '#');
-        org.junit.Assert.assertNull(str1);
-    }
-
-    @Test
     public void test179() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test179");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry2.setMinResponseTime(0L);
         statsEntry2.setTotalContentLength((long) '#');
+        statsEntry2.setTotalContentLength(1700469866L);
+        statsEntry2.setTotalContentLength((long) (short) -1);
+    }
+
+    @Test
+    public void test180() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+        com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
+        java.lang.String str1 = requestSuccess0.getName();
+        requestSuccess0.setContentLength(1700469865L);
+        requestSuccess0.setContentLength((long) '#');
+        org.junit.Assert.assertNull(str1);
+    }
+
+    @Test
+    public void test181() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
+        statsEntry2.setMinResponseTime(0L);
+        statsEntry2.setTotalContentLength((long) '#');
         long long7 = statsEntry2.getTotalContentLength();
-        statsEntry2.setMinResponseTime((long) (byte) 1);
+        statsEntry2.setMinResponseTime((long) ' ');
         java.lang.String str10 = statsEntry2.getName();
         statsEntry2.setNumFailures((long) 10);
         org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
@@ -2660,33 +2682,33 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test180() throws Throwable {
+    public void test182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test180");
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry3 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry3.setMinResponseTime(0L);
         statsEntry3.setTotalContentLength((long) '#');
         long long8 = statsEntry3.getTotalContentLength();
-        statsEntry3.setMinResponseTime((long) (byte) 1);
+        statsEntry3.setMinResponseTime((long) ' ');
         java.util.Map<java.lang.String, java.lang.Object> strMap11 = statsEntry3.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message14 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_0e082ff260df27e91bc8e214b2491cdf", strMap11, (-1), "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        com.github.myzhan.locust4j.message.Message message14 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_25090039ecec0617d4a04a6de56ed7fa", strMap11, (-1), "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
         org.junit.Assert.assertTrue("'" + long8 + "' != '" + 35L + "'", long8 == 35L);
         org.junit.Assert.assertNotNull(strMap11);
     }
 
     @Test
-    public void test181() throws Throwable {
+    public void test183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test181");
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
         com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
         requestFailure0.setName("");
-        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_2f2f6326153bae5e1a82cfcacf4aac1e");
+        requestFailure0.setRequestType("Hengchens-MBP.attlocal.net_b940cee87fb658aeefc4e20796d4f0c1");
     }
 
     @Test
-    public void test182() throws Throwable {
+    public void test184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+            System.out.format("%n%s%n", "TestGroup100Case0.test184");
         com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
         long long1 = requestSuccess0.getResponseTime();
         requestSuccess0.setContentLength((long) (short) -1);
@@ -2695,20 +2717,27 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test183() throws Throwable {
+    public void test185() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test183");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", "1f6ad32470fbedfde2015353f7b36b5c");
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", "bcb1c32f385de115abd9c3efda4468d0");
         statsEntry2.setMaxResponseTime((long) (-1));
         statsEntry2.setTotalResponseTime((long) (byte) 100);
         java.lang.String str7 = statsEntry2.getName();
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff" + "'", str7, "Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff");
+        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055" + "'", str7, "Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055");
     }
 
     @Test
-    public void test184() throws Throwable {
+    public void test186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test184");
+            System.out.format("%n%s%n", "TestGroup100Case0.test186");
+        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("bcb1c32f385de115abd9c3efda4468d0", "");
+    }
+
+    @Test
+    public void test187() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test187");
         com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
         stats0.start();
         stats0.wakeMeUp();
@@ -2721,9 +2750,9 @@ public class TestGroup100Case0 {
     }
 
     @Test
-    public void test185() throws Throwable {
+    public void test188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+            System.out.format("%n%s%n", "TestGroup100Case0.test188");
         com.github.myzhan.locust4j.runtime.Runner runner0 = new com.github.myzhan.locust4j.runtime.Runner();
         com.github.myzhan.locust4j.runtime.Runner runner1 = new com.github.myzhan.locust4j.runtime.Runner();
         com.github.myzhan.locust4j.rpc.Client client2 = null;
@@ -2752,13 +2781,13 @@ public class TestGroup100Case0 {
         boolean boolean43 = java.util.Collections.addAll((java.util.Collection<com.github.myzhan.locust4j.AbstractTask>) abstractTaskList42, abstractTaskArray41);
         runner1.setTasks((java.util.List<com.github.myzhan.locust4j.AbstractTask>) abstractTaskList42);
         runner0.setTasks((java.util.List<com.github.myzhan.locust4j.AbstractTask>) abstractTaskList42);
-        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient49 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.rpc.ZeromqClient zeromqClient49 = new com.github.myzhan.locust4j.rpc.ZeromqClient("Hengchens-MBP.attlocal.net", (int) (short) 1, "bcb1c32f385de115abd9c3efda4468d0");
         com.github.myzhan.locust4j.stats.StatsEntry statsEntry53 = new com.github.myzhan.locust4j.stats.StatsEntry("", "");
         statsEntry53.setMinResponseTime(0L);
         statsEntry53.setLastRequestTimestamp((long) (short) 0);
         java.lang.String str58 = statsEntry53.getMethod();
         java.util.Map<java.lang.String, java.lang.Object> strMap59 = statsEntry53.getStrippedReport();
-        com.github.myzhan.locust4j.message.Message message62 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff", strMap59, 0, "1f6ad32470fbedfde2015353f7b36b5c");
+        com.github.myzhan.locust4j.message.Message message62 = new com.github.myzhan.locust4j.message.Message("Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055", strMap59, 0, "bcb1c32f385de115abd9c3efda4468d0");
         java.lang.String str63 = message62.toString();
         byte[] byteArray64 = message62.getBytes();
         zeromqClient49.send(message62);
@@ -2773,106 +2802,7 @@ public class TestGroup100Case0 {
         org.junit.Assert.assertTrue("'" + boolean43 + "' != '" + true + "'", boolean43 == true);
         org.junit.Assert.assertEquals("'" + str58 + "' != '" + "" + "'", str58, "");
         org.junit.Assert.assertNotNull(strMap59);
-        org.junit.Assert.assertEquals("'" + str63 + "' != '" + "1f6ad32470fbedfde2015353f7b36b5c-Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}" + "'", str63, "1f6ad32470fbedfde2015353f7b36b5c-Hengchens-MBP.attlocal.net_a1fcdcbb743445894896776421d599ff-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
+        org.junit.Assert.assertEquals("'" + str63 + "' != '" + "bcb1c32f385de115abd9c3efda4468d0-Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}" + "'", str63, "bcb1c32f385de115abd9c3efda4468d0-Hengchens-MBP.attlocal.net_356a323fbdf190ed485423b672f5c055-{num_fail_per_sec=null, last_request_timestamp=0, max_response_time=0, method=, num_reqs_per_sec=null, num_requests=0, num_failures=0, min_response_time=0, start_time=0, total_content_length=0, total_response_time=0, response_times=null, name=, num_none_requests=0}");
         org.junit.Assert.assertNotNull(byteArray64);
-    }
-
-    @Test
-    public void test186() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test186");
-        com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
-        locust0.setVerbose(true);
-        java.util.concurrent.TimeUnit timeUnit5 = null;
-        com.github.myzhan.locust4j.ratelimit.StableRateLimiter stableRateLimiter6 = new com.github.myzhan.locust4j.ratelimit.StableRateLimiter((long) 0, (long) (byte) 100, timeUnit5);
-        locust0.setRateLimiter((com.github.myzhan.locust4j.ratelimit.AbstractRateLimiter) stableRateLimiter6);
-        org.junit.Assert.assertNotNull(locust0);
-    }
-
-    @Test
-    public void test187() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test187");
-        byte[] byteArray0 = null;
-        // The following exception was thrown during execution in test generation
-        try {
-            com.github.myzhan.locust4j.message.Message message1 = new com.github.myzhan.locust4j.message.Message(byteArray0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
-        } catch (java.lang.NullPointerException e) {
-            // Expected exception.
-        }
-    }
-
-    @Test
-    public void test188() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test188");
-        com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
-        locust0.recordFailure("", "hi!", (-1L), "");
-        com.github.myzhan.locust4j.ratelimit.AbstractRateLimiter abstractRateLimiter6 = locust0.getRateLimiter();
-        org.junit.Assert.assertNotNull(locust0);
-        org.junit.Assert.assertNotNull(abstractRateLimiter6);
-    }
-
-    @Test
-    public void test189() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test189");
-        com.github.myzhan.locust4j.stats.RequestFailure requestFailure0 = new com.github.myzhan.locust4j.stats.RequestFailure();
-        requestFailure0.setName("");
-        java.lang.String str3 = requestFailure0.getError();
-        org.junit.Assert.assertNull(str3);
-    }
-
-    @Test
-    public void test190() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test190");
-        com.github.myzhan.locust4j.Locust locust0 = com.github.myzhan.locust4j.Locust.getInstance();
-        locust0.recordFailure("hi!", "hi!", (long) (short) -1, "hi!");
-        locust0.setMasterPort(0);
-        locust0.setMaxRPS((long) (short) 0);
-        locust0.setMasterHost("");
-        locust0.setMaxRPS(35L);
-        locust0.setMasterHost("");
-        boolean boolean16 = locust0.isRateLimitEnabled();
-        org.junit.Assert.assertNotNull(locust0);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + true + "'", boolean16 == true);
-    }
-
-    @Test
-    public void test191() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test191");
-        com.github.myzhan.locust4j.stats.RequestSuccess requestSuccess0 = new com.github.myzhan.locust4j.stats.RequestSuccess();
-        long long1 = requestSuccess0.getResponseTime();
-        long long2 = requestSuccess0.getContentLength();
-        java.lang.String str3 = requestSuccess0.getRequestType();
-        java.lang.String str4 = requestSuccess0.getRequestType();
-        org.junit.Assert.assertTrue("'" + long1 + "' != '" + 0L + "'", long1 == 0L);
-        org.junit.Assert.assertTrue("'" + long2 + "' != '" + 0L + "'", long2 == 0L);
-        org.junit.Assert.assertNull(str3);
-        org.junit.Assert.assertNull(str4);
-    }
-
-    @Test
-    public void test192() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test192");
-        com.github.myzhan.locust4j.stats.StatsEntry statsEntry2 = new com.github.myzhan.locust4j.stats.StatsEntry("1f6ad32470fbedfde2015353f7b36b5c", "");
-        long long3 = statsEntry2.getNumRequests();
-        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
-    }
-
-    @Test
-    public void test193() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "TestGroup100Case0.test193");
-        com.github.myzhan.locust4j.stats.Stats stats0 = com.github.myzhan.locust4j.stats.Stats.getInstance();
-        stats0.start();
-        stats0.wakeMeUp();
-        stats0.stop();
-        stats0.wakeMeUp();
-        org.junit.Assert.assertNotNull(stats0);
     }
 }

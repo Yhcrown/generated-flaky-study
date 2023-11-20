@@ -616,7 +616,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test051");
         java.io.File file1 = null;
         java.lang.String str2 = com.mxw.crypto.SecretStorageUtils.generateFullNewWalletFile("cin", file1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json" + "'", str2, "UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json" + "'", str2, "UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
     }
 
     @Test
@@ -1188,7 +1188,7 @@ public class TestGroup100Case0 {
         com.mxw.Wallet wallet0 = com.mxw.Wallet.createNewWallet();
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str2 = wallet0.computeSharedSecret("UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+            java.lang.String str2 = wallet0.computeSharedSecret("UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid public or private key");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
@@ -1516,7 +1516,7 @@ public class TestGroup100Case0 {
         java.lang.String str2 = wallet0.getPrivateKey();
         org.junit.Assert.assertNotNull(wallet0);
         org.junit.Assert.assertNull(provider1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d" + "'", str2, "0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9" + "'", str2, "0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9");
     }
 
     @Test
@@ -1839,7 +1839,7 @@ public class TestGroup100Case0 {
         com.mxw.protocol.request.BlockTag blockTag3 = null;
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str4 = jsonRpcProvider1.getKycAddress("0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d", blockTag3);
+            java.lang.String str4 = jsonRpcProvider1.getKycAddress("0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9", blockTag3);
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Expected URL scheme 'http' or 'https' but no colon was found");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
@@ -1862,7 +1862,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test136");
         java.math.BigInteger bigInteger2 = null;
-        com.mxw.protocol.request.messages.builder.BankSendBuilder bankSendBuilder3 = new com.mxw.protocol.request.messages.builder.BankSendBuilder("0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d", "Mcin", bigInteger2);
+        com.mxw.protocol.request.messages.builder.BankSendBuilder bankSendBuilder3 = new com.mxw.protocol.request.messages.builder.BankSendBuilder("0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9", "Mcin", bigInteger2);
     }
 
     @Test
@@ -2010,7 +2010,7 @@ public class TestGroup100Case0 {
         }
         org.junit.Assert.assertNotNull(wallet0);
         org.junit.Assert.assertNull(provider1);
-// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "{\"address\":\"mxw1hkvwyeemhn8qmwrsaycp2qrggqu9utdygc290d\",\"id\":\"6afe199a-a9c0-47bd-9638-d47aa85414dc\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"8f60bf6217ecc1b673f563917a6d4073f842859c66ef395551dbe52b24425da1\",\"cipherparams\":{\"iv\":\"aa5f4d0862987ade7b1f36b55355e276\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"596dd4fe53722ac812b87fa2d4688fbb6337b252b6a38dd7397aa511d2843b92\"},\"mac\":\"bc9e00c3c70321033da45c618ca7286212b2dc797384a460069939d35c30c2d3\"}}" + "'", str3, "{\"address\":\"mxw1hkvwyeemhn8qmwrsaycp2qrggqu9utdygc290d\",\"id\":\"6afe199a-a9c0-47bd-9638-d47aa85414dc\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"8f60bf6217ecc1b673f563917a6d4073f842859c66ef395551dbe52b24425da1\",\"cipherparams\":{\"iv\":\"aa5f4d0862987ade7b1f36b55355e276\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"596dd4fe53722ac812b87fa2d4688fbb6337b252b6a38dd7397aa511d2843b92\"},\"mac\":\"bc9e00c3c70321033da45c618ca7286212b2dc797384a460069939d35c30c2d3\"}}");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "{\"address\":\"mxw18mfndv7kur3csup8vf60kly0dqqnmlrq0qpwh0\",\"id\":\"24f9db58-02a1-46ad-b174-050894f61bc3\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"f657ed922313c2767ca26831363056bafc823e487c39092fc2ccfb4210c94f68\",\"cipherparams\":{\"iv\":\"59062e491f87b5b7cfd9b3351238f4e8\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"298d5dddd6340fb86934cff6290bebfb7d46aca0b687c8ace8db0bd09d735baa\"},\"mac\":\"de7619e140145978c33e7b018e52a22b4bf303ab653c3bb35deefe7131e5773d\"}}" + "'", str3, "{\"address\":\"mxw18mfndv7kur3csup8vf60kly0dqqnmlrq0qpwh0\",\"id\":\"24f9db58-02a1-46ad-b174-050894f61bc3\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"f657ed922313c2767ca26831363056bafc823e487c39092fc2ccfb4210c94f68\",\"cipherparams\":{\"iv\":\"59062e491f87b5b7cfd9b3351238f4e8\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"298d5dddd6340fb86934cff6290bebfb7d46aca0b687c8ace8db0bd09d735baa\"},\"mac\":\"de7619e140145978c33e7b018e52a22b4bf303ab653c3bb35deefe7131e5773d\"}}");
     }
 
     @Test
@@ -2027,7 +2027,7 @@ public class TestGroup100Case0 {
         com.mxw.providers.JsonRpcProvider jsonRpcProvider1 = new com.mxw.providers.JsonRpcProvider("/Users/yhcrown/Library/mxw");
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.Boolean boolean3 = jsonRpcProvider1.isWhiteListed("{\"address\":\"mxw1j4pgkzj9w9069psj7ms3k0777fv4cyg8fw6neq\",\"id\":\"fa84958d-99c6-4495-9570-223269edd817\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"a9fbd5def7d5b36bc46d520cd59b6867e66f13f852c21740d9da859b3bb117de\",\"cipherparams\":{\"iv\":\"34d6c1d205e408c2b9fb7872536d6e60\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"b1ad59ea64418bfa36d217953564a07203d604b1f12acdc90c9d82ceae3921cc\"},\"mac\":\"63f9f9ac4d50487879f685cfe77c2e47cffe3607effce9ec779b0e5e7e8ce12a\"}}");
+            java.lang.Boolean boolean3 = jsonRpcProvider1.isWhiteListed("{\"address\":\"mxw17lq778e0g3g5lhhjqe0urz6ad8ys82278ykc9x\",\"id\":\"d58076a1-06d0-49ea-9503-cc0a9ad3c5bb\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"bc34fcf79b61062e1d2e8641c8f338e94415f9f7822a4c087c5d0331b66b2719\",\"cipherparams\":{\"iv\":\"7bcdaf6d540d1784c1d49db34af6bb9b\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"db5dee3a95ba3656d538f1d696cb7c2ed6a1234713ef5ee952a0611f519b1e55\"},\"mac\":\"764e1e7741fa02179b33618691a7646b6edd9d00e1ad729e57095de48ce0de74\"}}");
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Expected URL scheme 'http' or 'https' but no colon was found");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
@@ -2048,7 +2048,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test150");
         com.mxw.protocol.response.NodeInfo.Other other2 = new com.mxw.protocol.response.NodeInfo.Other("0xbcdd273721bc9afe130ba8895dcec9dd6ff2a0e170365dfb320e26ea0bceec67", "Tcin");
-        other2.setRpcAddress("0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d");
+        other2.setRpcAddress("0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9");
     }
 
     @Test
@@ -2181,7 +2181,7 @@ public class TestGroup100Case0 {
     public void test158() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test158");
-        boolean boolean1 = com.mxw.utils.Numeric.containsHexPrefix("0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d");
+        boolean boolean1 = com.mxw.utils.Numeric.containsHexPrefix("0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9");
         org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + true + "'", boolean1 == true);
     }
 
@@ -2372,7 +2372,7 @@ public class TestGroup100Case0 {
         com.mxw.Wallet wallet0 = com.mxw.Wallet.createNewWallet();
         java.lang.String str1 = wallet0.getPublicKey();
         org.junit.Assert.assertNotNull(wallet0);
-// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "0x034848d4770612501e13ce0e8f4f354ea0289394c9c249f837760ccdd53ec05a3d" + "'", str1, "0x034848d4770612501e13ce0e8f4f354ea0289394c9c249f837760ccdd53ec05a3d");
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "0x03fca673aef7ac30a998a60428e304e2c8f3150a11bd5e0894b100fdd9cb70d962" + "'", str1, "0x03fca673aef7ac30a998a60428e304e2c8f3150a11bd5e0894b100fdd9cb70d962");
     }
 
     @Test
@@ -2415,7 +2415,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test173");
         java.io.File file1 = null;
         java.lang.String str2 = com.mxw.crypto.SecretStorageUtils.generateFullNewWalletFile("/Users/yhcrown/Library/mxw", file1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-10-31T23-40-05.740000000Z--mxw1jld58vjsqa4m73jm4u7du9mszcygqrwpalhhxk.json" + "'", str2, "UTC--2023-10-31T23-40-05.740000000Z--mxw1jld58vjsqa4m73jm4u7du9mszcygqrwpalhhxk.json");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-11-20T08-49-02.529000000Z--mxw1h58d98wvy6lq5hcyxf8jl7ahmdw5hgrdjxym4z.json" + "'", str2, "UTC--2023-11-20T08-49-02.529000000Z--mxw1h58d98wvy6lq5hcyxf8jl7ahmdw5hgrdjxym4z.json");
     }
 
     @Test
@@ -2694,8 +2694,8 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test196");
         java.io.File file1 = null;
-        java.lang.String str2 = com.mxw.crypto.SecretStorageUtils.generateNewWalletFile("UTC--2023-10-31T23-40-05.740000000Z--mxw1jld58vjsqa4m73jm4u7du9mszcygqrwpalhhxk.json", file1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-10-31T23-40-06.591000000Z--mxw12ldyka6g70u22zlk4p0vrdu4ph8udyw0g7kx56.json" + "'", str2, "UTC--2023-10-31T23-40-06.591000000Z--mxw12ldyka6g70u22zlk4p0vrdu4ph8udyw0g7kx56.json");
+        java.lang.String str2 = com.mxw.crypto.SecretStorageUtils.generateNewWalletFile("UTC--2023-11-20T08-49-02.529000000Z--mxw1h58d98wvy6lq5hcyxf8jl7ahmdw5hgrdjxym4z.json", file1);
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-11-20T08-49-03.335000000Z--mxw1u23mtrhsjank5f2p53fh90grthz9hkfhnag3gs.json" + "'", str2, "UTC--2023-11-20T08-49-03.335000000Z--mxw1u23mtrhsjank5f2p53fh90grthz9hkfhnag3gs.json");
     }
 
     @Test
@@ -2842,7 +2842,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test206");
         com.mxw.protocol.response.nonFungibleToken.NFTokenEndorse nFTokenEndorse3 = new com.mxw.protocol.response.nonFungibleToken.NFTokenEndorse("0x0c100010000210", "status", "0x6aed34e6bddff5e1d872b5d7d5698a7b73abd6f3b33402732edc73ab9ffb9c70");
-        nFTokenEndorse3.setFrom("UTC--2023-10-31T23-40-06.591000000Z--mxw12ldyka6g70u22zlk4p0vrdu4ph8udyw0g7kx56.json");
+        nFTokenEndorse3.setFrom("UTC--2023-11-20T08-49-03.335000000Z--mxw1u23mtrhsjank5f2p53fh90grthz9hkfhnag3gs.json");
     }
 
     @Test
@@ -3210,7 +3210,7 @@ public class TestGroup100Case0 {
     public void test239() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test239");
-        com.mxw.protocol.response.nonFungibleToken.NFTokenCreate nFTokenCreate6 = new com.mxw.protocol.response.nonFungibleToken.NFTokenCreate("UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json", "Tcin", "", "com.mxw.exceptions.AddressFormatException", "mintNonFungibleItem", "mintNonFungibleItem");
+        com.mxw.protocol.response.nonFungibleToken.NFTokenCreate nFTokenCreate6 = new com.mxw.protocol.response.nonFungibleToken.NFTokenCreate("UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json", "Tcin", "", "com.mxw.exceptions.AddressFormatException", "mintNonFungibleItem", "mintNonFungibleItem");
     }
 
     @Test
@@ -3292,7 +3292,7 @@ public class TestGroup100Case0 {
     public void test245() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test245");
-        com.mxw.protocol.response.nonFungibleToken.NFTokenAcceptOwnership nFTokenAcceptOwnership2 = new com.mxw.protocol.response.nonFungibleToken.NFTokenAcceptOwnership("success", "UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+        com.mxw.protocol.response.nonFungibleToken.NFTokenAcceptOwnership nFTokenAcceptOwnership2 = new com.mxw.protocol.response.nonFungibleToken.NFTokenAcceptOwnership("success", "UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
         java.lang.String str3 = nFTokenAcceptOwnership2.getSymbol();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "success" + "'", str3, "success");
     }
@@ -3357,7 +3357,7 @@ public class TestGroup100Case0 {
         com.mxw.protocol.request.BlockTagName blockTagName5 = com.mxw.protocol.request.BlockTagName.LATEST;
         // The following exception was thrown during execution in test generation
         try {
-            com.mxw.protocol.response.AccountState accountState6 = jsonRpcProvider3.getAccountState("{\"address\":\"mxw1j4pgkzj9w9069psj7ms3k0777fv4cyg8fw6neq\",\"id\":\"fa84958d-99c6-4495-9570-223269edd817\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"a9fbd5def7d5b36bc46d520cd59b6867e66f13f852c21740d9da859b3bb117de\",\"cipherparams\":{\"iv\":\"34d6c1d205e408c2b9fb7872536d6e60\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"b1ad59ea64418bfa36d217953564a07203d604b1f12acdc90c9d82ceae3921cc\"},\"mac\":\"63f9f9ac4d50487879f685cfe77c2e47cffe3607effce9ec779b0e5e7e8ce12a\"}}", (com.mxw.protocol.request.BlockTag) blockTagName5);
+            com.mxw.protocol.response.AccountState accountState6 = jsonRpcProvider3.getAccountState("{\"address\":\"mxw17lq778e0g3g5lhhjqe0urz6ad8ys82278ykc9x\",\"id\":\"d58076a1-06d0-49ea-9503-cc0a9ad3c5bb\",\"version\":3,\"crypto\":{\"cipher\":\"aes-256-ctr\",\"ciphertext\":\"bc34fcf79b61062e1d2e8641c8f338e94415f9f7822a4c087c5d0331b66b2719\",\"cipherparams\":{\"iv\":\"7bcdaf6d540d1784c1d49db34af6bb9b\"},\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":48,\"n\":131072,\"p\":1,\"r\":8,\"salt\":\"db5dee3a95ba3656d538f1d696cb7c2ed6a1234713ef5ee952a0611f519b1e55\"},\"mac\":\"764e1e7741fa02179b33618691a7646b6edd9d00e1ad729e57095de48ce0de74\"}}", (com.mxw.protocol.request.BlockTag) blockTagName5);
             org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Expected URL scheme 'http' or 'https' but no colon was found");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
@@ -3481,7 +3481,7 @@ public class TestGroup100Case0 {
         byte[] byteArray26 = com.mxw.utils.Bytes.concat(byteArray12, byteArray18);
         byte[] byteArray27 = com.mxw.utils.Bytes.concat(byteArray6, byteArray12);
         com.mxw.crypto.ECKeyPair eCKeyPair28 = com.mxw.crypto.ECKeyPair.create(byteArray12);
-        eCKeyPair28.setPublicKeyType("UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+        eCKeyPair28.setPublicKeyType("UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
         // The following exception was thrown during execution in test generation
         try {
             com.mxw.crypto.WalletFile walletFile33 = com.mxw.crypto.SecretStorage.create("mintNonFungibleItem", eCKeyPair28, 40, (-2147483648));
@@ -4620,7 +4620,7 @@ public class TestGroup100Case0 {
         byte[] byteArray41 = com.mxw.utils.Bytes.concat(byteArray6, byteArray40);
         // The following exception was thrown during execution in test generation
         try {
-            java.lang.String str42 = com.mxw.crypto.Bech32.encode("UTC--2023-10-31T23-40-06.591000000Z--mxw12ldyka6g70u22zlk4p0vrdu4ph8udyw0g7kx56.json", byteArray40);
+            java.lang.String str42 = com.mxw.crypto.Bech32.encode("UTC--2023-11-20T08-49-03.335000000Z--mxw1u23mtrhsjank5f2p53fh90grthz9hkfhnag3gs.json", byteArray40);
             org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: Human-readable part is too long");
         } catch (java.lang.RuntimeException e) {
             // Expected exception.
@@ -4712,7 +4712,7 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test315");
         com.mxw.protocol.response.InnerResponse innerResponse3 = new com.mxw.protocol.response.InnerResponse(0, "", "0x60fe5838f73ce5b575d899c37e74daecd80a24c72b6916934e7dbf36860c4ad0");
-        innerResponse3.setCodespace("UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+        innerResponse3.setCodespace("UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
     }
 
     @Test
@@ -4820,7 +4820,7 @@ public class TestGroup100Case0 {
         eCKeyPair27.setPrivateKey("4");
         // The following exception was thrown during execution in test generation
         try {
-            eCKeyPair27.setCompressedPublicKey("UTC--2023-10-31T23-40-02.652000000Z--mxw12dkqkafxypp928waa826279r2ucl9tw9dzmmrs.json");
+            eCKeyPair27.setCompressedPublicKey("UTC--2023-11-20T08-48-59.513000000Z--mxw17e5rj6p4leexgv2mtla989ve9njhmf3sevxpev.json");
             org.junit.Assert.fail("Expected exception of type java.lang.NumberFormatException; message: Illegal embedded sign character");
         } catch (java.lang.NumberFormatException e) {
             // Expected exception.
@@ -4971,7 +4971,7 @@ public class TestGroup100Case0 {
         java.math.BigInteger bigInteger46 = com.mxw.utils.Numeric.toBigInt(byteArray43);
         transactionRequest30.setSequence(bigInteger46);
         java.math.BigInteger bigInteger48 = transactionRequest30.getSequence();
-        com.mxw.protocol.response.TransactionPayload transactionPayload49 = new com.mxw.protocol.response.TransactionPayload(bigInteger20, "0.1", transactionFee25, "0xde71dd2df6ffd45bf46e40b6c1b214e2bae9e204381b37d9c0953228cc97a80d", (java.util.List<com.mxw.protocol.response.TransactionMessage>) transactionMessageList28, bigInteger48);
+        com.mxw.protocol.response.TransactionPayload transactionPayload49 = new com.mxw.protocol.response.TransactionPayload(bigInteger20, "0.1", transactionFee25, "0x3f735f375f246cce0cdfc278e746452e28f6bf175d2e8b3b929b0ae58d6acca9", (java.util.List<com.mxw.protocol.response.TransactionMessage>) transactionMessageList28, bigInteger48);
         org.junit.Assert.assertNull(transactionValue3);
         org.junit.Assert.assertNull(str4);
         org.junit.Assert.assertNotNull(byteArray9);
@@ -5123,7 +5123,7 @@ public class TestGroup100Case0 {
             System.out.format("%n%s%n", "TestGroup100Case0.test340");
         java.io.File file1 = null;
         java.lang.String str2 = com.mxw.crypto.SecretStorageUtils.generateNewWalletFile("latest", file1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-10-31T23-40-10.922000000Z--mxw1puhd288we4g0d6g3u2aeetj3acyszny7lx9x54.json" + "'", str2, "UTC--2023-10-31T23-40-10.922000000Z--mxw1puhd288we4g0d6g3u2aeetj3acyszny7lx9x54.json");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "UTC--2023-11-20T08-49-07.574000000Z--mxw1dpfktr6ssrz9awdr8f3q3q5dzpyjpa2sg0upum.json" + "'", str2, "UTC--2023-11-20T08-49-07.574000000Z--mxw1dpfktr6ssrz9awdr8f3q3q5dzpyjpa2sg0upum.json");
     }
 
     @Test

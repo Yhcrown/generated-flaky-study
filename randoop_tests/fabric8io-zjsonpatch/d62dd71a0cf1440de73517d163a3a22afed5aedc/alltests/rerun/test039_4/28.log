@@ -1,0 +1,77 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.fabric8:zjsonpatch:bundle:0.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 390, column 19
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------------< io.fabric8:zjsonpatch >------------------------
+[INFO] Building zjsonpatch 0.3-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- enforcer:1.3.1:enforce (enforce-maven) @ zjsonpatch ---
+[INFO] 
+[INFO] --- enforcer:1.3.1:enforce (enforce-versions) @ zjsonpatch ---
+[INFO] 
+[INFO] --- buildnumber:1.3:create-timestamp (get-build-timestamp) @ zjsonpatch ---
+[INFO] 
+[INFO] --- buildnumber:1.3:create (get-scm-revision) @ zjsonpatch ---
+[INFO] Executing: /bin/sh -c cd /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch && git rev-parse --verify HEAD
+[INFO] Working directory: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch
+[INFO] Storing buildNumber: d62dd71a0cf1440de73517d163a3a22afed5aedc at timestamp: 1700478431263
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch && git rev-parse --verify HEAD
+[INFO] Working directory: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ zjsonpatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.2:compile (default-compile) @ zjsonpatch ---
+[WARNING]  Parameter 'compilerArguments' is deprecated: use {@link #compilerArgs} instead.
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ zjsonpatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- compiler:3.2:testCompile (default-testCompile) @ zjsonpatch ---
+[WARNING]  Parameter 'compilerArguments' is deprecated: use {@link #compilerArgs} instead.
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/test-classes
+[WARNING] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/io/fabric8/zjsonpatch/TestDataGenerator.java:[49,23] put(java.lang.String,com.fasterxml.jackson.databind.JsonNode) in com.fasterxml.jackson.databind.node.ObjectNode has been deprecated
+[WARNING] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/io/fabric8/zjsonpatch/TestDataGenerator.java:[51,23] put(java.lang.String,com.fasterxml.jackson.databind.JsonNode) in com.fasterxml.jackson.databind.node.ObjectNode has been deprecated
+[INFO] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java uses unchecked or unsafe operations.
+[INFO] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:2.17:test (default-test) @ zjsonpatch ---
+[INFO] Surefire report directory: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.892 s
+[INFO] Finished at: 2023-11-20T05:07:13-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project zjsonpatch: No tests were executed!  (Set -DfailIfNoTests=false to ignore this error.) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

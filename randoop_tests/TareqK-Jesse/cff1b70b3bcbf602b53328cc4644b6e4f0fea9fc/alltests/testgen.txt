@@ -1,4 +1,4 @@
-[TIME]: 0:00:02.017657
+[TIME]: 0:00:01.917508
 Randoop for Java version "4.3.2, local changes, branch master, commit df17bc8, 2023-01-08".
 
 Illegal value "me.kisoft.jesse.package-info" in /tmp/classes.txt, should be a class name in the format of Class.GetName()
