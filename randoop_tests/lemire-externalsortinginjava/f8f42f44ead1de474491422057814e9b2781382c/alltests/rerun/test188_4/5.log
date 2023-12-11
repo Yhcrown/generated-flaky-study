@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----< com.google.code.externalsortinginjava:externalsortinginjava >-----
+[INFO] Building externalsortinginjava 0.6.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-cli) @ externalsortinginjava ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec <<< FAILURE! - in flaky.FlakyTest
+test188_4(flaky.FlakyTest)  Time elapsed: 0.078 sec  <<< FAILURE!
+java.lang.AssertionError: '170' != '168'
+	at flaky.FlakyTest.test188_4(FlakyTest.java:28741)
+
+
+Results :
+
+Failed tests: 
+  FlakyTest.test188_4:28741 '170' != '168'
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.273 s
+[INFO] Finished at: 2023-11-22T18:23:16-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-cli) on project externalsortinginjava: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/lemire-externalsortinginjava/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

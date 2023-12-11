@@ -1,0 +1,241 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.kestreldigital.conjuror:conjuror >----------------
+[INFO] Building com.kestreldigital.conjuror.conjuror 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ conjuror ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ conjuror ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ conjuror ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ conjuror ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 4 source files with javac [debug target 1.8] to target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62805,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62808,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62809,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62810,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62811,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62812,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62813,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62814,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62816,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62817,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62819,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62821,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62822,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62825,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62828,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62829,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62830,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62831,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62832,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62833,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62834,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62836,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62838,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62839,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62841,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62842,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62845,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62848,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62849,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62850,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62851,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62852,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62853,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62854,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62856,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62859,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62860,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62861,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62862,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62865,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62868,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62869,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62870,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62871,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62872,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62873,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62874,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62875,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62876,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62879,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62881,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62882,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62885,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62888,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62889,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62890,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62891,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62892,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62893,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62894,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62896,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62897,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62899,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62901,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62902,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62905,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62908,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62909,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62910,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62911,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62912,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62913,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62914,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62916,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62918,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62919,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62921,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62922,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62925,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62928,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62929,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62930,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62931,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62932,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62933,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62934,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62936,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62939,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62940,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62941,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62942,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62945,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62948,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62949,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62950,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62951,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62952,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62953,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62954,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62955,10] class, interface, or enum expected
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.030 s
+[INFO] Finished at: 2023-12-09T19:00:49-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project conjuror: Compilation failure: Compilation failure: 
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62805,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62808,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62809,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62810,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62811,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62812,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62813,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62814,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62816,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62817,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62819,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62821,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62822,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62825,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62828,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62829,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62830,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62831,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62832,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62833,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62834,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62836,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62838,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62839,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62841,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62842,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62845,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62848,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62849,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62850,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62851,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62852,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62853,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62854,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62856,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62859,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62860,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62861,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62862,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62865,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62868,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62869,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62870,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62871,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62872,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62873,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62874,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62875,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62876,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62879,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62881,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62882,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62885,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62888,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62889,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62890,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62891,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62892,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62893,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62894,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62896,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62897,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62899,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62901,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62902,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62905,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62908,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62909,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62910,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62911,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62912,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62913,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62914,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62916,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62918,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62919,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62921,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62922,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62925,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62928,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62929,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62930,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62931,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62932,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62933,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62934,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62936,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62939,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62940,10] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62941,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62942,5] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62945,12] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62948,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62949,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62950,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62951,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62952,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62953,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62954,9] class, interface, or enum expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/kestreldigital-data-conjuror/src/test/java/flaky/FlakyTest.java:[62955,10] class, interface, or enum expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

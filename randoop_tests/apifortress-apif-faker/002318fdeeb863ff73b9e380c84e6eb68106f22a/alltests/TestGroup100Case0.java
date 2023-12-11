@@ -4537,3 +4537,28 @@ public class TestGroup100Case0 {
 // flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
     }
 }
+
+@Test
+public void test01(){
+    Some functions ...
+    //flaky: flaky line1;
+    //flaky: flaky line2;
+}
+
+
+
+@Test
+public void test01_1(){
+    Some functions ...
+    flaky line1;
+    //flaky: flaky line2;
+}
+
+
+
+@Test
+public void test01_2(){
+    Some functions ...
+    //flaky: flaky line1;
+    flaky line2;
+}

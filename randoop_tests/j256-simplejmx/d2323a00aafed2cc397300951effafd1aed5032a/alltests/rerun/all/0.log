@@ -1,0 +1,46 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.j256.simplejmx:simplejmx >--------------------
+[INFO] Building Simple JMX 1.20-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.0-beta-1:enforce (enforce-maven) @ simplejmx ---
+[INFO] 
+[INFO] --- jacoco:0.8.6:prepare-agent (default) @ simplejmx ---
+[INFO] argLine set to -javaagent:/Users/yhcrown/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/Users/yhcrown/Documents/flaky_java_projects/j256-simplejmx/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ simplejmx ---
+[INFO] skip non existing resourceDirectory /Users/yhcrown/Documents/flaky_java_projects/j256-simplejmx/src/main/resources
+[INFO] 
+[INFO] --- compiler:2.5.1:compile (default-compile) @ simplejmx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ simplejmx ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:2.5.1:testCompile (default-testCompile) @ simplejmx ---
+[INFO] Compiling 1 source file to /Users/yhcrown/Documents/flaky_java_projects/j256-simplejmx/target/test-classes
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-test) @ simplejmx ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in flaky.FlakyTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco:0.8.6:report (report) @ simplejmx ---
+[INFO] Loading execution data file /Users/yhcrown/Documents/flaky_java_projects/j256-simplejmx/target/jacoco.exec
+[INFO] Analyzed bundle 'Simple JMX' with 33 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.342 s
+[INFO] Finished at: 2023-12-09T19:01:03-06:00
+[INFO] ------------------------------------------------------------------------

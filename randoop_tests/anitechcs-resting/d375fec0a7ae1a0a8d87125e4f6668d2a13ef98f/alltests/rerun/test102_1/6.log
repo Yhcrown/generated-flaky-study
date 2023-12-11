@@ -1,72 +1,18 @@
 [INFO] Scanning for projects...
-[INFO] 
-[INFO] -----------------------< com.anitechcs:resting >------------------------
-[INFO] Building resting 0.0.1
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ resting ---
-[INFO] Copying 3 resources from src/main/resources to target/classes
-[INFO] 
-[INFO] --- compiler:3.11.0:compile (default-compile) @ resting ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ resting ---
-[INFO] Copying 1 resource from src/test/resources to target/test-classes
-[INFO] 
-[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ resting ---
-[INFO] Changes detected - recompiling the module! :source
-[INFO] Compiling 2 source files with javac [debug target 1.8] to target/test-classes
-[INFO] -------------------------------------------------------------
-[ERROR] COMPILATION ERROR : 
-[INFO] -------------------------------------------------------------
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[132,2] reached end of file while parsing
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[38,12] 'try' without 'catch', 'finally' or resource declarations
-[INFO] 17 errors 
-[INFO] -------------------------------------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (1): 1.4/14 kBProgress (2): 1.4/14 kB | 1.4/21 kBProgress (2): 2.7/14 kB | 1.4/21 kBProgress (2): 2.7/14 kB | 2.7/21 kBProgress (2): 4.1/14 kB | 2.7/21 kBProgress (2): 4.1/14 kB | 4.1/21 kBProgress (2): 5.5/14 kB | 4.1/21 kBProgress (2): 5.5/14 kB | 5.5/21 kBProgress (2): 6.9/14 kB | 5.5/21 kBProgress (2): 6.9/14 kB | 6.9/21 kBProgress (2): 8.2/14 kB | 6.9/21 kBProgress (2): 8.2/14 kB | 8.2/21 kBProgress (2): 9.6/14 kB | 8.2/21 kBProgress (2): 9.6/14 kB | 9.6/21 kBProgress (2): 11/14 kB | 9.6/21 kB Progress (2): 11/14 kB | 11/21 kB Progress (2): 12/14 kB | 11/21 kBProgress (2): 12/14 kB | 12/21 kBProgress (2): 14/14 kB | 12/21 kBProgress (2): 14/14 kB | 14/21 kBProgress (2): 14 kB | 14/21 kB   Progress (2): 14 kB | 15/21 kBProgress (2): 14 kB | 16/21 kBProgress (2): 14 kB | 17/21 kBProgress (2): 14 kB | 19/21 kBProgress (2): 14 kB | 20/21 kBProgress (2): 14 kB | 21 kB                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 71 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 103 kB/s)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.505 s
-[INFO] Finished at: 2023-11-20T03:36:53-06:00
+[INFO] Total time:  0.532 s
+[INFO] Finished at: 2023-11-21T15:22:55-06:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project resting: Compilation failure: Compilation failure: 
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[43,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[73,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,5] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,12] illegal start of expression
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,26] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,36] not a statement
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[103,45] ';' expected
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[132,2] reached end of file while parsing
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/anitechcs-resting/src/test/java/flaky/FlakyTests.java:[38,12] 'try' without 'catch', 'finally' or resource declarations
-[ERROR] -> [Help 1]
+[ERROR] No plugin found for prefix 'surfire' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/yhcrown/.m2/repository), central (https://repo.maven.apache.org/maven2)] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoPluginFoundForPrefixException

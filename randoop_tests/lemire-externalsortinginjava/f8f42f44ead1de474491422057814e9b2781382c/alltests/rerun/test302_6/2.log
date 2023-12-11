@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----< com.google.code.externalsortinginjava:externalsortinginjava >-----
+[INFO] Building externalsortinginjava 0.6.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-cli) @ externalsortinginjava ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec <<< FAILURE! - in flaky.FlakyTest
+test302_6(flaky.FlakyTest)  Time elapsed: 0.084 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...0000gn/T/sortInBatch[259730243597460112]flatfile> but was:<...0000gn/T/sortInBatch[6220747598904784261]flatfile>
+	at flaky.FlakyTest.test302_6(FlakyTest.java:46922)
+
+
+Results :
+
+Failed tests: 
+  FlakyTest.test302_6:46922 expected:<...0000gn/T/sortInBatch[259730243597460112]flatfile> but was:<...0000gn/T/sortInBatch[6220747598904784261]flatfile>
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.292 s
+[INFO] Finished at: 2023-11-23T00:26:18-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-cli) on project externalsortinginjava: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/lemire-externalsortinginjava/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

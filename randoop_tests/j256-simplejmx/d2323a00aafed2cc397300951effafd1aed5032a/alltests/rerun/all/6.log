@@ -1,0 +1,25 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.j256.simplejmx:simplejmx >--------------------
+[INFO] Building Simple JMX 1.20-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-cli) @ simplejmx ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in flaky.FlakyTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.204 s
+[INFO] Finished at: 2023-12-09T19:01:16-06:00
+[INFO] ------------------------------------------------------------------------

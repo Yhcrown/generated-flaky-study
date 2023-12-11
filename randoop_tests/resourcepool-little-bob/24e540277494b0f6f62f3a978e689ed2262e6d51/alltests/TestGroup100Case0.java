@@ -3136,8 +3136,9 @@ public class TestGroup100Case0 {
         if (debug)
             System.out.format("%n%s%n", "TestGroup100Case0.test112");
         io.resourcepool.model.Language language1 = null;
-        java.lang.String str2 = null; // flaky: io.resourcepool.util.NicknameCreator.fromFirstName("en", language1);
-// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "en61" + "'", str2, "en61");
+        java.lang.String str2 = null;
+        // flaky: io.resourcepool.util.NicknameCreator.fromFirstName("en", language1);
+        // flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "en61" + "'", str2, "en61");
     }
 
     @Test

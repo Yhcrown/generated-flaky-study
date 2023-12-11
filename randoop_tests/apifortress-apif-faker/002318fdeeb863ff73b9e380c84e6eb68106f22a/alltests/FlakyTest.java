@@ -1,0 +1,8249 @@
+package flaky; 
+
+import org.junit.FixMethodOrder;
+
+import org.junit.Test;
+
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
+public class FlakyTest{
+    public static boolean debug = false;
+
+	@Test
+    public void test026_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.invalidSSN();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bouvet Island (Bouvetoya)" + "'", str1, "Bouvet Island (Bouvetoya)");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East" + "'", str2, "East");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "907545+0322" + "'", str3, "907545+0322");
+    }
+	@Test
+    public void test026_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bouvet Island (Bouvetoya)" + "'", str1, "Bouvet Island (Bouvetoya)");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East" + "'", str2, "East");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "907545+0322" + "'", str3, "907545+0322");
+    }
+	@Test
+    public void test026_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test026");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bouvet Island (Bouvetoya)" + "'", str1, "Bouvet Island (Bouvetoya)");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East" + "'", str2, "East");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "907545+0322" + "'", str3, "907545+0322");
+    }
+	@Test
+    public void test029_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        int int5 = f0.integer(0);
+        java.lang.String str6 = f0.domainName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Somalia" + "'", str1, "Somalia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "14.60" + "'", str3, "14.60");
+// flaky:         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 14 + "'", int5 == 14);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "balistreri.co" + "'", str6, "balistreri.co");
+    }
+	@Test
+    public void test029_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        int int5 = f0.integer(0);
+        java.lang.String str6 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Somalia" + "'", str1, "Somalia");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "14.60" + "'", str3, "14.60");
+// flaky:         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 14 + "'", int5 == 14);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "balistreri.co" + "'", str6, "balistreri.co");
+    }
+	@Test
+    public void test029_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        int int5 = f0.integer(0);
+        java.lang.String str6 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Somalia" + "'", str1, "Somalia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "14.60" + "'", str3, "14.60");
+// flaky:         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 14 + "'", int5 == 14);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "balistreri.co" + "'", str6, "balistreri.co");
+    }
+	@Test
+    public void test029_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        int int5 = f0.integer(0);
+        java.lang.String str6 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Somalia" + "'", str1, "Somalia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "14.60" + "'", str3, "14.60");
+         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 14 + "'", int5 == 14);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "balistreri.co" + "'", str6, "balistreri.co");
+    }
+	@Test
+    public void test029_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test029");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        int int5 = f0.integer(0);
+        java.lang.String str6 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Somalia" + "'", str1, "Somalia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "14.60" + "'", str3, "14.60");
+// flaky:         org.junit.Assert.assertTrue("'" + int5 + "' != '" + 14 + "'", int5 == 14);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "balistreri.co" + "'", str6, "balistreri.co");
+    }
+	@Test
+    public void test030_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.fullAddress();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Congo" + "'", str1, "Congo");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Africa/Cairo" + "'", str2, "Africa/Cairo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fahey.co" + "'", str6, "fahey.co");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727" + "'", str7, "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727");
+    }
+	@Test
+    public void test030_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.fullAddress();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Congo" + "'", str1, "Congo");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Africa/Cairo" + "'", str2, "Africa/Cairo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fahey.co" + "'", str6, "fahey.co");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727" + "'", str7, "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727");
+    }
+	@Test
+    public void test030_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.fullAddress();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Congo" + "'", str1, "Congo");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Africa/Cairo" + "'", str2, "Africa/Cairo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fahey.co" + "'", str6, "fahey.co");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727" + "'", str7, "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727");
+    }
+	@Test
+    public void test030_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test030");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.fullAddress();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Congo" + "'", str1, "Congo");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Africa/Cairo" + "'", str2, "Africa/Cairo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fahey.co" + "'", str6, "fahey.co");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727" + "'", str7, "3133 Gabrielle Throughway, South Rickymouth, MD 23293-9727");
+    }
+	@Test
+    public void test031_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test031");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str5 = f0.password(7, (-1), true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "5e3f54ca-a79b-405b-b8a5-095a9b38a273" + "'", str1, "5e3f54ca-a79b-405b-b8a5-095a9b38a273");
+    }
+	@Test
+    public void test032_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test032");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        com.apifortress.apiffaker.F f3 = new com.apifortress.apiffaker.F();
+        java.lang.String str4 = f3.country();
+        java.lang.String str5 = f3.timeZone();
+        int int8 = f3.integer((int) (short) 10, (int) (short) 10);
+        java.lang.Object obj9 = util1.fillModel((java.lang.Object) int8);
+        org.junit.Assert.assertNotNull(f2);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Ethiopia" + "'", str4, "Ethiopia");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Europe/Bratislava" + "'", str5, "Europe/Bratislava");
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 10 + "'", int8 == 10);
+        org.junit.Assert.assertNull(obj9);
+    }
+	@Test
+    public void test032_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test032");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        com.apifortress.apiffaker.F f3 = new com.apifortress.apiffaker.F();
+        java.lang.String str4 = f3.country();
+        java.lang.String str5 = f3.timeZone();
+        int int8 = f3.integer((int) (short) 10, (int) (short) 10);
+        java.lang.Object obj9 = util1.fillModel((java.lang.Object) int8);
+        org.junit.Assert.assertNotNull(f2);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Ethiopia" + "'", str4, "Ethiopia");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Europe/Bratislava" + "'", str5, "Europe/Bratislava");
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 10 + "'", int8 == 10);
+        org.junit.Assert.assertNull(obj9);
+    }
+	@Test
+    public void test034_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test034");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        java.lang.String str3 = f2.currencyCode();
+        java.lang.String str4 = f2.profession();
+        org.junit.Assert.assertNotNull(f2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "ZAR" + "'", str3, "ZAR");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "gardener" + "'", str4, "gardener");
+    }
+	@Test
+    public void test034_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test034");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        java.lang.String str3 = f2.currencyCode();
+        java.lang.String str4 = f2.profession();
+        org.junit.Assert.assertNotNull(f2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "ZAR" + "'", str3, "ZAR");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "gardener" + "'", str4, "gardener");
+    }
+	@Test
+    public void test037_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test037");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str2 = f0.fullName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "240803-3567" + "'", str1, "240803-3567");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Ron Schaden" + "'", str2, "Ron Schaden");
+    }
+	@Test
+    public void test037_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test037");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str2 = f0.fullName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "240803-3567" + "'", str1, "240803-3567");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Ron Schaden" + "'", str2, "Ron Schaden");
+    }
+	@Test
+    public void test038_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test038");
+         com.apifortress.apiffaker.Main.stressTest(7, (int) (byte) 10);
+    }
+	@Test
+    public void test039_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test039");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.price();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Aluminum" + "'", str3, "Aluminum");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "46.81" + "'", str4, "46.81");
+    }
+	@Test
+    public void test039_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test039");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.price();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Aluminum" + "'", str3, "Aluminum");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "46.81" + "'", str4, "46.81");
+    }
+	@Test
+    public void test042_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test042");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.ipV4Cidr();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = internet2.password(100, (int) (short) 0, true, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/business/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/business/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "140.84.140.165/10" + "'", str8, "140.84.140.165/10");
+    }
+	@Test
+    public void test042_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test042");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.ipV4Cidr();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = internet2.password(100, (int) (short) 0, true, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/business/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/business/CFA Franc BEAC");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "140.84.140.165/10" + "'", str8, "140.84.140.165/10");
+    }
+	@Test
+    public void test043_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test043");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Oak Aged Yeti Imperial Stout" + "'", str4, "Oak Aged Yeti Imperial Stout");
+    }
+	@Test
+    public void test048_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.uuid();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Taiwan" + "'", str1, "Taiwan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East Caribbean Dollar" + "'", str2, "East Caribbean Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "0893c693-6b02-4151-b25a-2cfab03efe1d" + "'", str4, "0893c693-6b02-4151-b25a-2cfab03efe1d");
+    }
+	@Test
+    public void test048_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.uuid();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Taiwan" + "'", str1, "Taiwan");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East Caribbean Dollar" + "'", str2, "East Caribbean Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "0893c693-6b02-4151-b25a-2cfab03efe1d" + "'", str4, "0893c693-6b02-4151-b25a-2cfab03efe1d");
+    }
+	@Test
+    public void test048_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.uuid();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Taiwan" + "'", str1, "Taiwan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East Caribbean Dollar" + "'", str2, "East Caribbean Dollar");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "0893c693-6b02-4151-b25a-2cfab03efe1d" + "'", str4, "0893c693-6b02-4151-b25a-2cfab03efe1d");
+    }
+	@Test
+    public void test048_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test048");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.uuid();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Taiwan" + "'", str1, "Taiwan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "East Caribbean Dollar" + "'", str2, "East Caribbean Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "0893c693-6b02-4151-b25a-2cfab03efe1d" + "'", str4, "0893c693-6b02-4151-b25a-2cfab03efe1d");
+    }
+	@Test
+    public void test049_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test049");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        java.lang.String str3 = weather2.temperatureFahrenheit();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "43\260F" + "'", str3, "43\260F");
+    }
+	@Test
+    public void test050_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.validID();
+        java.lang.String str8 = f0.firstName();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = f0.password((int) (short) 10, (int) (byte) 1, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Albania" + "'", str1, "Albania");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "koelpin.biz" + "'", str6, "koelpin.biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "338-70-0388" + "'", str7, "338-70-0388");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Sang" + "'", str8, "Sang");
+    }
+	@Test
+    public void test050_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.validID();
+        java.lang.String str8 = f0.firstName();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = f0.password((int) (short) 10, (int) (byte) 1, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Albania" + "'", str1, "Albania");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "koelpin.biz" + "'", str6, "koelpin.biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "338-70-0388" + "'", str7, "338-70-0388");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Sang" + "'", str8, "Sang");
+    }
+	@Test
+    public void test050_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.validID();
+        java.lang.String str8 = f0.firstName();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = f0.password((int) (short) 10, (int) (byte) 1, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Albania" + "'", str1, "Albania");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "koelpin.biz" + "'", str6, "koelpin.biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "338-70-0388" + "'", str7, "338-70-0388");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Sang" + "'", str8, "Sang");
+    }
+	@Test
+    public void test050_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.validID();
+        java.lang.String str8 = f0.firstName();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = f0.password((int) (short) 10, (int) (byte) 1, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Albania" + "'", str1, "Albania");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "koelpin.biz" + "'", str6, "koelpin.biz");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "338-70-0388" + "'", str7, "338-70-0388");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Sang" + "'", str8, "Sang");
+    }
+	@Test
+    public void test050_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test050");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.domainName();
+        java.lang.String str7 = f0.validID();
+        java.lang.String str8 = f0.firstName();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str13 = f0.password((int) (short) 10, (int) (byte) 1, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Albania" + "'", str1, "Albania");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "koelpin.biz" + "'", str6, "koelpin.biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "338-70-0388" + "'", str7, "338-70-0388");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Sang" + "'", str8, "Sang");
+    }
+	@Test
+    public void test051_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        java.lang.String str3 = cat2.name();
+        java.lang.String str4 = cat2.name();
+        java.lang.String str5 = cat2.breed();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Max" + "'", str3, "Max");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lucy" + "'", str4, "Lucy");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Arabian Mau" + "'", str5, "Arabian Mau");
+    }
+	@Test
+    public void test051_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        java.lang.String str3 = cat2.name();
+        java.lang.String str4 = cat2.name();
+        java.lang.String str5 = cat2.breed();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Max" + "'", str3, "Max");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lucy" + "'", str4, "Lucy");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Arabian Mau" + "'", str5, "Arabian Mau");
+    }
+	@Test
+    public void test051_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test051");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        java.lang.String str3 = cat2.name();
+        java.lang.String str4 = cat2.name();
+        java.lang.String str5 = cat2.breed();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Max" + "'", str3, "Max");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lucy" + "'", str4, "Lucy");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Arabian Mau" + "'", str5, "Arabian Mau");
+    }
+	@Test
+    public void test052_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test052");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Medical medical3 = faker1.medical();
+        com.github.javafaker.GameOfThrones gameOfThrones4 = faker1.gameOfThrones();
+        java.lang.String str5 = gameOfThrones4.dragon();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(medical3);
+        org.junit.Assert.assertNotNull(gameOfThrones4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Meraxes" + "'", str5, "Meraxes");
+    }
+	@Test
+    public void test053_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = f0.password(100, 14, false, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Vladivostok" + "'", str2, "Asia/Vladivostok");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "81.37" + "'", str3, "81.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "CFP Franc" + "'", str4, "CFP Franc");
+    }
+	@Test
+    public void test053_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = f0.password(100, 14, false, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Vladivostok" + "'", str2, "Asia/Vladivostok");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "81.37" + "'", str3, "81.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "CFP Franc" + "'", str4, "CFP Franc");
+    }
+	@Test
+    public void test053_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = f0.password(100, 14, false, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Vladivostok" + "'", str2, "Asia/Vladivostok");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "81.37" + "'", str3, "81.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "CFP Franc" + "'", str4, "CFP Franc");
+    }
+	@Test
+    public void test053_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test053");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = f0.password(100, 14, false, true);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Vladivostok" + "'", str2, "Asia/Vladivostok");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "81.37" + "'", str3, "81.37");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "CFP Franc" + "'", str4, "CFP Franc");
+    }
+	@Test
+    public void test054_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        double double12 = f0.decimal((long) 485, (long) 580);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Gibraltar" + "'", str1, "Gibraltar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "S" + "'", str5, "S");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.elva-leannon.biz" + "'", str6, "www.elva-leannon.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[71, 23, 48, 19, 50, 38, 23, 71, 61, 50]");
+// flaky:         org.junit.Assert.assertTrue("'" + double12 + "' != '" + 558.63d + "'", double12 == 558.63d);
+    }
+	@Test
+    public void test054_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        double double12 = f0.decimal((long) 485, (long) 580);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Gibraltar" + "'", str1, "Gibraltar");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "S" + "'", str5, "S");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.elva-leannon.biz" + "'", str6, "www.elva-leannon.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[71, 23, 48, 19, 50, 38, 23, 71, 61, 50]");
+// flaky:         org.junit.Assert.assertTrue("'" + double12 + "' != '" + 558.63d + "'", double12 == 558.63d);
+    }
+	@Test
+    public void test054_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        double double12 = f0.decimal((long) 485, (long) 580);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Gibraltar" + "'", str1, "Gibraltar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "S" + "'", str5, "S");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.elva-leannon.biz" + "'", str6, "www.elva-leannon.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[71, 23, 48, 19, 50, 38, 23, 71, 61, 50]");
+// flaky:         org.junit.Assert.assertTrue("'" + double12 + "' != '" + 558.63d + "'", double12 == 558.63d);
+    }
+	@Test
+    public void test054_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        double double12 = f0.decimal((long) 485, (long) 580);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Gibraltar" + "'", str1, "Gibraltar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "S" + "'", str5, "S");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.elva-leannon.biz" + "'", str6, "www.elva-leannon.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[71, 23, 48, 19, 50, 38, 23, 71, 61, 50]");
+// flaky:         org.junit.Assert.assertTrue("'" + double12 + "' != '" + 558.63d + "'", double12 == 558.63d);
+    }
+	@Test
+    public void test054_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test054");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        double double12 = f0.decimal((long) 485, (long) 580);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Gibraltar" + "'", str1, "Gibraltar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "S" + "'", str5, "S");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.elva-leannon.biz" + "'", str6, "www.elva-leannon.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[71, 23, 48, 19, 50, 38, 23, 71, 61, 50]");
+         org.junit.Assert.assertTrue("'" + double12 + "' != '" + 558.63d + "'", double12 == 558.63d);
+    }
+	@Test
+    public void test056_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str5 = f0.password(6, (int) (short) 10);
+        java.lang.String str10 = f0.password((int) (short) -1, 4, true, false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "No universal currency" + "'", str2, "No universal currency");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ohwvtgo" + "'", str5, "ohwvtgo");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "lWb" + "'", str10, "lWb");
+    }
+	@Test
+    public void test056_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str5 = f0.password(6, (int) (short) 10);
+        java.lang.String str10 = f0.password((int) (short) -1, 4, true, false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "No universal currency" + "'", str2, "No universal currency");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ohwvtgo" + "'", str5, "ohwvtgo");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "lWb" + "'", str10, "lWb");
+    }
+	@Test
+    public void test056_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str5 = f0.password(6, (int) (short) 10);
+        java.lang.String str10 = f0.password((int) (short) -1, 4, true, false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "No universal currency" + "'", str2, "No universal currency");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ohwvtgo" + "'", str5, "ohwvtgo");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "lWb" + "'", str10, "lWb");
+    }
+	@Test
+    public void test056_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test056");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str5 = f0.password(6, (int) (short) 10);
+        java.lang.String str10 = f0.password((int) (short) -1, 4, true, false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "No universal currency" + "'", str2, "No universal currency");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ohwvtgo" + "'", str5, "ohwvtgo");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "lWb" + "'", str10, "lWb");
+    }
+	@Test
+    public void test058_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test058");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Medical medical3 = faker1.medical();
+        com.github.javafaker.GameOfThrones gameOfThrones4 = faker1.gameOfThrones();
+        com.github.javafaker.Robin robin5 = faker1.robin();
+        java.lang.String str6 = robin5.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(medical3);
+        org.junit.Assert.assertNotNull(gameOfThrones4);
+        org.junit.Assert.assertNotNull(robin5);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Holy Hallelujah" + "'", str6, "Holy Hallelujah");
+    }
+	@Test
+    public void test059_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.streetSuffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Awesome Linen Computer" + "'", str1, "Awesome Linen Computer");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Extension" + "'", str2, "Extension");
+    }
+	@Test
+    public void test059_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test059");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.streetSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Awesome Linen Computer" + "'", str1, "Awesome Linen Computer");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Extension" + "'", str2, "Extension");
+    }
+	@Test
+    public void test060_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbnGroup();
+        java.lang.String str6 = code4.isbnGs1();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0" + "'", str5, "0");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "978" + "'", str6, "978");
+    }
+	@Test
+    public void test060_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test060");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbnGroup();
+        java.lang.String str6 = code4.isbnGs1();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0" + "'", str5, "0");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "978" + "'", str6, "978");
+    }
+	@Test
+    public void test061_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.userAgentAny();
+        java.lang.String str4 = internet2.image();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" + "'", str3, "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "http://lorempixel.com/640/350/city/" + "'", str4, "http://lorempixel.com/640/350/city/");
+    }
+	@Test
+    public void test061_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test061");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.userAgentAny();
+        java.lang.String str4 = internet2.image();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" + "'", str3, "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "http://lorempixel.com/640/350/city/" + "'", str4, "http://lorempixel.com/640/350/city/");
+    }
+	@Test
+    public void test062_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        int[] intArray16 = f7.integerList(0);
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Guam" + "'", str8, "Guam");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Port_Moresby" + "'", str9, "Pacific/Port_Moresby");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 42 + "'", int13 == 42);
+        org.junit.Assert.assertNotNull(intArray16);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[87, 43, 76, 42, 97, 58, 90, 29, 12, 16]");
+    }
+	@Test
+    public void test062_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        int[] intArray16 = f7.integerList(0);
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Guam" + "'", str8, "Guam");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Port_Moresby" + "'", str9, "Pacific/Port_Moresby");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 42 + "'", int13 == 42);
+        org.junit.Assert.assertNotNull(intArray16);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[87, 43, 76, 42, 97, 58, 90, 29, 12, 16]");
+    }
+	@Test
+    public void test062_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        int[] intArray16 = f7.integerList(0);
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Guam" + "'", str8, "Guam");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Port_Moresby" + "'", str9, "Pacific/Port_Moresby");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 42 + "'", int13 == 42);
+        org.junit.Assert.assertNotNull(intArray16);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[87, 43, 76, 42, 97, 58, 90, 29, 12, 16]");
+    }
+	@Test
+    public void test062_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test062");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        int[] intArray16 = f7.integerList(0);
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Guam" + "'", str8, "Guam");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Port_Moresby" + "'", str9, "Pacific/Port_Moresby");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 42 + "'", int13 == 42);
+        org.junit.Assert.assertNotNull(intArray16);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray16), "[87, 43, 76, 42, 97, 58, 90, 29, 12, 16]");
+    }
+	@Test
+    public void test063_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str7 = f0.password((int) (short) -1, (int) ' ', false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Wallis and Futuna" + "'", str1, "Wallis and Futuna");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Falkland Islands Pound" + "'", str2, "Falkland Islands Pound");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "aulwqwwzpeybknaeplwsjyego" + "'", str7, "aulwqwwzpeybknaeplwsjyego");
+    }
+	@Test
+    public void test063_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str7 = f0.password((int) (short) -1, (int) ' ', false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Wallis and Futuna" + "'", str1, "Wallis and Futuna");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Falkland Islands Pound" + "'", str2, "Falkland Islands Pound");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "aulwqwwzpeybknaeplwsjyego" + "'", str7, "aulwqwwzpeybknaeplwsjyego");
+    }
+	@Test
+    public void test063_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str7 = f0.password((int) (short) -1, (int) ' ', false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Wallis and Futuna" + "'", str1, "Wallis and Futuna");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Falkland Islands Pound" + "'", str2, "Falkland Islands Pound");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "aulwqwwzpeybknaeplwsjyego" + "'", str7, "aulwqwwzpeybknaeplwsjyego");
+    }
+	@Test
+    public void test063_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test063");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str7 = f0.password((int) (short) -1, (int) ' ', false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Wallis and Futuna" + "'", str1, "Wallis and Futuna");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Falkland Islands Pound" + "'", str2, "Falkland Islands Pound");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "aulwqwwzpeybknaeplwsjyego" + "'", str7, "aulwqwwzpeybknaeplwsjyego");
+    }
+	@Test
+    public void test064_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.age();
+        java.lang.String str4 = dog2.gender();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "young" + "'", str3, "young");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "female" + "'", str4, "female");
+    }
+	@Test
+    public void test064_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test064");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.age();
+        java.lang.String str4 = dog2.gender();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "young" + "'", str3, "young");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "female" + "'", str4, "female");
+    }
+	@Test
+    public void test065_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        java.lang.String str4 = f0.suffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bangladesh" + "'", str1, "Bangladesh");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Port" + "'", str2, "Port");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "864-504-2261" + "'", str3, "864-504-2261");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "and Sons" + "'", str4, "and Sons");
+    }
+	@Test
+    public void test065_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        java.lang.String str4 = f0.suffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bangladesh" + "'", str1, "Bangladesh");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Port" + "'", str2, "Port");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "864-504-2261" + "'", str3, "864-504-2261");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "and Sons" + "'", str4, "and Sons");
+    }
+	@Test
+    public void test065_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        java.lang.String str4 = f0.suffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bangladesh" + "'", str1, "Bangladesh");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Port" + "'", str2, "Port");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "864-504-2261" + "'", str3, "864-504-2261");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "and Sons" + "'", str4, "and Sons");
+    }
+	@Test
+    public void test065_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test065");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        java.lang.String str4 = f0.suffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Bangladesh" + "'", str1, "Bangladesh");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Port" + "'", str2, "Port");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "864-504-2261" + "'", str3, "864-504-2261");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "and Sons" + "'", str4, "and Sons");
+    }
+	@Test
+    public void test066_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.suffix();
+        java.lang.String str16 = f7.countryCodeSL();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Saint Kitts and Nevis" + "'", str8, "Saint Kitts and Nevis");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Midway" + "'", str9, "Pacific/Midway");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 61 + "'", int13 == 61);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "LLC" + "'", str15, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "my" + "'", str16, "my");
+    }
+	@Test
+    public void test066_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.suffix();
+        java.lang.String str16 = f7.countryCodeSL();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Saint Kitts and Nevis" + "'", str8, "Saint Kitts and Nevis");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Midway" + "'", str9, "Pacific/Midway");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 61 + "'", int13 == 61);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "LLC" + "'", str15, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "my" + "'", str16, "my");
+    }
+	@Test
+    public void test066_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.suffix();
+        java.lang.String str16 = f7.countryCodeSL();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Saint Kitts and Nevis" + "'", str8, "Saint Kitts and Nevis");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Midway" + "'", str9, "Pacific/Midway");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 61 + "'", int13 == 61);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "LLC" + "'", str15, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "my" + "'", str16, "my");
+    }
+	@Test
+    public void test066_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.suffix();
+        java.lang.String str16 = f7.countryCodeSL();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Saint Kitts and Nevis" + "'", str8, "Saint Kitts and Nevis");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Midway" + "'", str9, "Pacific/Midway");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 61 + "'", int13 == 61);
+         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "LLC" + "'", str15, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "my" + "'", str16, "my");
+    }
+	@Test
+    public void test066_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test066");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.suffix();
+        java.lang.String str16 = f7.countryCodeSL();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Saint Kitts and Nevis" + "'", str8, "Saint Kitts and Nevis");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Midway" + "'", str9, "Pacific/Midway");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 61 + "'", int13 == 61);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "LLC" + "'", str15, "LLC");
+         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "my" + "'", str16, "my");
+    }
+	@Test
+    public void test067_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test067");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Artist artist2 = faker1.artist();
+        java.lang.String str3 = artist2.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(artist2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Rembrandt" + "'", str3, "Rembrandt");
+    }
+	@Test
+    public void test068_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test068");
+         com.apifortress.apiffaker.Main.stressTest((int) (byte) 0, 6);
+    }
+	@Test
+    public void test069_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test069");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.ipV6Cidr();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "75d5:3ec0:74d0:81b7:c4f5:6e76:c7e5:611a/114" + "'", str3, "75d5:3ec0:74d0:81b7:c4f5:6e76:c7e5:611a/114");
+    }
+	@Test
+    public void test070_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test070");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Medical medical3 = faker1.medical();
+        com.github.javafaker.GameOfThrones gameOfThrones4 = faker1.gameOfThrones();
+        java.lang.String str5 = gameOfThrones4.city();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(medical3);
+        org.junit.Assert.assertNotNull(gameOfThrones4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "White Harbor" + "'", str5, "White Harbor");
+    }
+	@Test
+    public void test071_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        int[] intArray3 = f0.integerList();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "38afde45-e40c-42a5-9f87-3cec06be1db2" + "'", str1, "38afde45-e40c-42a5-9f87-3cec06be1db2");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 23.14d + "'", double2 == 23.14d);
+        org.junit.Assert.assertNotNull(intArray3);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray3), "[70, 77, 87, 9, 30, 46, 66, 83, 73, 31]");
+    }
+	@Test
+    public void test071_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        int[] intArray3 = f0.integerList();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "38afde45-e40c-42a5-9f87-3cec06be1db2" + "'", str1, "38afde45-e40c-42a5-9f87-3cec06be1db2");
+         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 23.14d + "'", double2 == 23.14d);
+        org.junit.Assert.assertNotNull(intArray3);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray3), "[70, 77, 87, 9, 30, 46, 66, 83, 73, 31]");
+    }
+	@Test
+    public void test071_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test071");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        int[] intArray3 = f0.integerList();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "38afde45-e40c-42a5-9f87-3cec06be1db2" + "'", str1, "38afde45-e40c-42a5-9f87-3cec06be1db2");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 23.14d + "'", double2 == 23.14d);
+        org.junit.Assert.assertNotNull(intArray3);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray3), "[70, 77, 87, 9, 30, 46, 66, 83, 73, 31]");
+    }
+	@Test
+    public void test073_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test073");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        java.lang.String str4 = avatar3.image();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "https://s3.amazonaws.com/uifaces/faces/twitter/megdraws/128.jpg" + "'", str4, "https://s3.amazonaws.com/uifaces/faces/twitter/megdraws/128.jpg");
+    }
+	@Test
+    public void test075_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.lastName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "f3062a9b-2350-4fa1-92d4-68ad65d0747f" + "'", str1, "f3062a9b-2350-4fa1-92d4-68ad65d0747f");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 42.85d + "'", double2 == 42.85d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Medhurst" + "'", str3, "Medhurst");
+    }
+	@Test
+    public void test075_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.lastName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "f3062a9b-2350-4fa1-92d4-68ad65d0747f" + "'", str1, "f3062a9b-2350-4fa1-92d4-68ad65d0747f");
+         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 42.85d + "'", double2 == 42.85d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Medhurst" + "'", str3, "Medhurst");
+    }
+	@Test
+    public void test075_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test075");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.lastName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "f3062a9b-2350-4fa1-92d4-68ad65d0747f" + "'", str1, "f3062a9b-2350-4fa1-92d4-68ad65d0747f");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 42.85d + "'", double2 == 42.85d);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Medhurst" + "'", str3, "Medhurst");
+    }
+	@Test
+    public void test076_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.Util util8 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f9 = util8.getFaker();
+        boolean boolean10 = f9.getTemplateStyle();
+        boolean boolean11 = f9.getTemplateStyle();
+        util1.setFaker(f9);
+        java.lang.Object obj14 = util1.newNode("rimxwebrurba");
+        com.apifortress.apiffaker.Util util16 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f17 = null;
+        util16.setFaker(f17);
+        java.lang.Object obj20 = util16.setLocale("hi!");
+        com.apifortress.apiffaker.F f21 = util16.getFaker();
+        com.apifortress.apiffaker.Util util23 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f24 = util23.getFaker();
+        boolean boolean25 = f24.getTemplateStyle();
+        boolean boolean26 = f24.getTemplateStyle();
+        util16.setFaker(f24);
+        util1.setFaker(f24);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj30 = util1.fillModel("I");
+            org.junit.Assert.fail("Expected exception of type groovy.json.JsonException; message: Unable to determine the current character, it is not a string, number, array, or object??The current character read is 'I' with an int value of 73?Unable to determine the current character, it is not a string, number, array, or object?line number 1?index number 0?I?^");
+        } catch (groovy.json.JsonException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+        org.junit.Assert.assertNotNull(f9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(obj14);
+         org.junit.Assert.assertEquals(obj14.toString(), "[url_0, ${url}]");
+// flaky:         org.junit.Assert.assertEquals(java.lang.String.valueOf(obj14), "[url_0, ${url}]");
+// flaky:         org.junit.Assert.assertEquals(java.util.Objects.toString(obj14), "[url_0, ${url}]");
+        org.junit.Assert.assertEquals("'" + obj20 + "' != '" + true + "'", obj20, true);
+        org.junit.Assert.assertNotNull(f21);
+        org.junit.Assert.assertNotNull(f24);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+    }
+	@Test
+    public void test076_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.Util util8 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f9 = util8.getFaker();
+        boolean boolean10 = f9.getTemplateStyle();
+        boolean boolean11 = f9.getTemplateStyle();
+        util1.setFaker(f9);
+        java.lang.Object obj14 = util1.newNode("rimxwebrurba");
+        com.apifortress.apiffaker.Util util16 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f17 = null;
+        util16.setFaker(f17);
+        java.lang.Object obj20 = util16.setLocale("hi!");
+        com.apifortress.apiffaker.F f21 = util16.getFaker();
+        com.apifortress.apiffaker.Util util23 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f24 = util23.getFaker();
+        boolean boolean25 = f24.getTemplateStyle();
+        boolean boolean26 = f24.getTemplateStyle();
+        util16.setFaker(f24);
+        util1.setFaker(f24);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj30 = util1.fillModel("I");
+            org.junit.Assert.fail("Expected exception of type groovy.json.JsonException; message: Unable to determine the current character, it is not a string, number, array, or object??The current character read is 'I' with an int value of 73?Unable to determine the current character, it is not a string, number, array, or object?line number 1?index number 0?I?^");
+        } catch (groovy.json.JsonException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+        org.junit.Assert.assertNotNull(f9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(obj14);
+// flaky:         org.junit.Assert.assertEquals(obj14.toString(), "[url_0, ${url}]");
+         org.junit.Assert.assertEquals(java.lang.String.valueOf(obj14), "[url_0, ${url}]");
+// flaky:         org.junit.Assert.assertEquals(java.util.Objects.toString(obj14), "[url_0, ${url}]");
+        org.junit.Assert.assertEquals("'" + obj20 + "' != '" + true + "'", obj20, true);
+        org.junit.Assert.assertNotNull(f21);
+        org.junit.Assert.assertNotNull(f24);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+    }
+	@Test
+    public void test076_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test076");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.Util util8 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f9 = util8.getFaker();
+        boolean boolean10 = f9.getTemplateStyle();
+        boolean boolean11 = f9.getTemplateStyle();
+        util1.setFaker(f9);
+        java.lang.Object obj14 = util1.newNode("rimxwebrurba");
+        com.apifortress.apiffaker.Util util16 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f17 = null;
+        util16.setFaker(f17);
+        java.lang.Object obj20 = util16.setLocale("hi!");
+        com.apifortress.apiffaker.F f21 = util16.getFaker();
+        com.apifortress.apiffaker.Util util23 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f24 = util23.getFaker();
+        boolean boolean25 = f24.getTemplateStyle();
+        boolean boolean26 = f24.getTemplateStyle();
+        util16.setFaker(f24);
+        util1.setFaker(f24);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.Object obj30 = util1.fillModel("I");
+            org.junit.Assert.fail("Expected exception of type groovy.json.JsonException; message: Unable to determine the current character, it is not a string, number, array, or object??The current character read is 'I' with an int value of 73?Unable to determine the current character, it is not a string, number, array, or object?line number 1?index number 0?I?^");
+        } catch (groovy.json.JsonException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+        org.junit.Assert.assertNotNull(f9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        org.junit.Assert.assertNotNull(obj14);
+// flaky:         org.junit.Assert.assertEquals(obj14.toString(), "[url_0, ${url}]");
+// flaky:         org.junit.Assert.assertEquals(java.lang.String.valueOf(obj14), "[url_0, ${url}]");
+         org.junit.Assert.assertEquals(java.util.Objects.toString(obj14), "[url_0, ${url}]");
+        org.junit.Assert.assertEquals("'" + obj20 + "' != '" + true + "'", obj20, true);
+        org.junit.Assert.assertNotNull(f21);
+        org.junit.Assert.assertNotNull(f24);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+    }
+	@Test
+    public void test078_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test078");
+         com.apifortress.apiffaker.Main.stressTest(14, 0);
+    }
+	@Test
+    public void test079_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str6 = internet2.password((int) (byte) -1, (int) '4');
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "188.213.9.81" + "'", str3, "188.213.9.81");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "7l486363apx797dmpmr66vvhwrlnmgnaxyx" + "'", str6, "7l486363apx797dmpmr66vvhwrlnmgnaxyx");
+    }
+	@Test
+    public void test079_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test079");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str6 = internet2.password((int) (byte) -1, (int) '4');
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "188.213.9.81" + "'", str3, "188.213.9.81");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "7l486363apx797dmpmr66vvhwrlnmgnaxyx" + "'", str6, "7l486363apx797dmpmr66vvhwrlnmgnaxyx");
+    }
+	@Test
+    public void test080_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test080");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.Util util8 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f9 = util8.getFaker();
+        boolean boolean10 = f9.getTemplateStyle();
+        boolean boolean11 = f9.getTemplateStyle();
+        util1.setFaker(f9);
+        java.lang.String str13 = f9.password();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+        org.junit.Assert.assertNotNull(f9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "djaddobqo" + "'", str13, "djaddobqo");
+    }
+	@Test
+    public void test081_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test081");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        java.lang.String str7 = friends6.location();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Marcel's" + "'", str7, "Marcel's");
+    }
+	@Test
+    public void test082_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test082");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        boolean boolean4 = f2.getTemplateStyle();
+        java.lang.String str5 = f2.country();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Mauritania" + "'", str5, "Mauritania");
+    }
+	@Test
+    public void test084_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        java.lang.String str2 = f0.suffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "156b62fe-ee17-4f13-a360-db4f8a4a9c5c" + "'", str1, "156b62fe-ee17-4f13-a360-db4f8a4a9c5c");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Group" + "'", str2, "Group");
+    }
+	@Test
+    public void test084_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test084");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        java.lang.String str2 = f0.suffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "156b62fe-ee17-4f13-a360-db4f8a4a9c5c" + "'", str1, "156b62fe-ee17-4f13-a360-db4f8a4a9c5c");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Group" + "'", str2, "Group");
+    }
+	@Test
+    public void test085_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.country();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "149489-4060" + "'", str1, "149489-4060");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "LHpMC8z27tK43Nk8W9k" + "'", str7, "LHpMC8z27tK43Nk8W9k");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wallis and Futuna" + "'", str8, "Wallis and Futuna");
+    }
+	@Test
+    public void test085_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.country();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "149489-4060" + "'", str1, "149489-4060");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "LHpMC8z27tK43Nk8W9k" + "'", str7, "LHpMC8z27tK43Nk8W9k");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wallis and Futuna" + "'", str8, "Wallis and Futuna");
+    }
+	@Test
+    public void test085_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test085");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.country();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "149489-4060" + "'", str1, "149489-4060");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "LHpMC8z27tK43Nk8W9k" + "'", str7, "LHpMC8z27tK43Nk8W9k");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wallis and Futuna" + "'", str8, "Wallis and Futuna");
+    }
+	@Test
+    public void test086_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn10();
+        java.lang.String str6 = code4.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "1135636761" + "'", str5, "1135636761");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "04293903" + "'", str6, "04293903");
+    }
+	@Test
+    public void test086_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test086");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn10();
+        java.lang.String str6 = code4.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "1135636761" + "'", str5, "1135636761");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "04293903" + "'", str6, "04293903");
+    }
+	@Test
+    public void test087_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Sterling" + "'", str4, "Sterling");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Chimay Grande R\351serve" + "'", str5, "Chimay Grande R\351serve");
+    }
+	@Test
+    public void test087_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test087");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Sterling" + "'", str4, "Sterling");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Chimay Grande R\351serve" + "'", str5, "Chimay Grande R\351serve");
+    }
+	@Test
+    public void test089_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        f0.setTemplateStyle(true);
+        java.lang.String str10 = f0.domainSuffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "786442+5792" + "'", str1, "786442+5792");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "r0XTYF4cbW16zK461PBGSc9YEyW0j6V" + "'", str7, "r0XTYF4cbW16zK461PBGSc9YEyW0j6V");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test089_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        f0.setTemplateStyle(true);
+        java.lang.String str10 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "786442+5792" + "'", str1, "786442+5792");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "r0XTYF4cbW16zK461PBGSc9YEyW0j6V" + "'", str7, "r0XTYF4cbW16zK461PBGSc9YEyW0j6V");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test089_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test089");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        f0.setTemplateStyle(true);
+        java.lang.String str10 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "786442+5792" + "'", str1, "786442+5792");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "r0XTYF4cbW16zK461PBGSc9YEyW0j6V" + "'", str7, "r0XTYF4cbW16zK461PBGSc9YEyW0j6V");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test090_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test090");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        java.lang.String str5 = faker1.regexify("Sweden");
+        com.github.javafaker.RockBand rockBand6 = faker1.rockBand();
+        java.lang.String str7 = rockBand6.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Sweden" + "'", str5, "Sweden");
+        org.junit.Assert.assertNotNull(rockBand6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Kansas" + "'", str7, "Kansas");
+    }
+	@Test
+    public void test091_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.ipV4Cidr();
+        java.lang.String str9 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "174.162.192.249/15" + "'", str8, "174.162.192.249/15");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "26.98.84.247" + "'", str9, "26.98.84.247");
+    }
+	@Test
+    public void test091_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.ipV4Cidr();
+        java.lang.String str9 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "174.162.192.249/15" + "'", str8, "174.162.192.249/15");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "26.98.84.247" + "'", str9, "26.98.84.247");
+    }
+	@Test
+    public void test091_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test091");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.ipV4Cidr();
+        java.lang.String str9 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "174.162.192.249/15" + "'", str8, "174.162.192.249/15");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "26.98.84.247" + "'", str9, "26.98.84.247");
+    }
+	@Test
+    public void test092_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test092");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Zelda zelda4 = faker1.zelda();
+        java.lang.String str5 = zelda4.character();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(zelda4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Agahnim" + "'", str5, "Agahnim");
+    }
+	@Test
+    public void test095_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test095");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.isbnGs1();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "978" + "'", str3, "978");
+    }
+	@Test
+    public void test096_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test096");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Job job4 = faker1.job();
+        java.lang.String str5 = job4.position();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(job4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Technician" + "'", str5, "Technician");
+    }
+	@Test
+    public void test097_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test097");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        java.lang.String str6 = faker1.bothify("Mexico");
+        com.github.javafaker.RickAndMorty rickAndMorty7 = faker1.rickAndMorty();
+        java.lang.String str8 = rickAndMorty7.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mexico" + "'", str6, "Mexico");
+        org.junit.Assert.assertNotNull(rickAndMorty7);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Pluto's a planet." + "'", str8, "Pluto's a planet.");
+    }
+	@Test
+    public void test098_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str4 = f0.password(0, 749);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "791104+0512" + "'", str1, "791104+0512");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "foukeycamutejzteuuhwxqhimywhuszvtehspdpuewqifuqtbasqxjrqmectnkpzvhmxlevkgqaujyftlbldbjsqfhxuckpmuxukxanabixweixiecngecscmykhjhzlsotzaixnrwknvochatlakrtyrrmjvsantkuhpbhgillaqdcrhqqtvmhnskegomagyxodkczhxovapbdgljmwdqudkvwiualazrypgevfeljvyrbqlswkeldmhfdtejyvccfayqgsjnrbprcsohlnuewdvfwvvwbocabiajiqitettatnynexzazxxrwmqqvcbvdvnldcvvyenhcxrigtdaintoqblczplktyuhtgzcozwhvsflnyyzjqditlxmfbambmbpmtlmocqliad" + "'", str4, "foukeycamutejzteuuhwxqhimywhuszvtehspdpuewqifuqtbasqxjrqmectnkpzvhmxlevkgqaujyftlbldbjsqfhxuckpmuxukxanabixweixiecngecscmykhjhzlsotzaixnrwknvochatlakrtyrrmjvsantkuhpbhgillaqdcrhqqtvmhnskegomagyxodkczhxovapbdgljmwdqudkvwiualazrypgevfeljvyrbqlswkeldmhfdtejyvccfayqgsjnrbprcsohlnuewdvfwvvwbocabiajiqitettatnynexzazxxrwmqqvcbvdvnldcvvyenhcxrigtdaintoqblczplktyuhtgzcozwhvsflnyyzjqditlxmfbambmbpmtlmocqliad");
+    }
+	@Test
+    public void test098_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test098");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str4 = f0.password(0, 749);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "791104+0512" + "'", str1, "791104+0512");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "foukeycamutejzteuuhwxqhimywhuszvtehspdpuewqifuqtbasqxjrqmectnkpzvhmxlevkgqaujyftlbldbjsqfhxuckpmuxukxanabixweixiecngecscmykhjhzlsotzaixnrwknvochatlakrtyrrmjvsantkuhpbhgillaqdcrhqqtvmhnskegomagyxodkczhxovapbdgljmwdqudkvwiualazrypgevfeljvyrbqlswkeldmhfdtejyvccfayqgsjnrbprcsohlnuewdvfwvvwbocabiajiqitettatnynexzazxxrwmqqvcbvdvnldcvvyenhcxrigtdaintoqblczplktyuhtgzcozwhvsflnyyzjqditlxmfbambmbpmtlmocqliad" + "'", str4, "foukeycamutejzteuuhwxqhimywhuszvtehspdpuewqifuqtbasqxjrqmectnkpzvhmxlevkgqaujyftlbldbjsqfhxuckpmuxukxanabixweixiecngecscmykhjhzlsotzaixnrwknvochatlakrtyrrmjvsantkuhpbhgillaqdcrhqqtvmhnskegomagyxodkczhxovapbdgljmwdqudkvwiualazrypgevfeljvyrbqlswkeldmhfdtejyvccfayqgsjnrbprcsohlnuewdvfwvvwbocabiajiqitettatnynexzazxxrwmqqvcbvdvnldcvvyenhcxrigtdaintoqblczplktyuhtgzcozwhvsflnyyzjqditlxmfbambmbpmtlmocqliad");
+    }
+	@Test
+    public void test101_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.style();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Tahoma" + "'", str4, "Tahoma");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Merican Ale" + "'", str5, "Merican Ale");
+    }
+	@Test
+    public void test101_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test101");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.style();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Tahoma" + "'", str4, "Tahoma");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Merican Ale" + "'", str5, "Merican Ale");
+    }
+	@Test
+    public void test103_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test103");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Zelda zelda4 = faker1.zelda();
+        java.lang.String str5 = zelda4.game();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(zelda4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Phantom Hourglass" + "'", str5, "Phantom Hourglass");
+    }
+	@Test
+    public void test104_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        java.lang.String str3 = cat2.name();
+        java.lang.String str4 = cat2.registry();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Jasper" + "'", str3, "Jasper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Felis Britannica" + "'", str4, "Felis Britannica");
+    }
+	@Test
+    public void test104_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test104");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        java.lang.String str3 = cat2.name();
+        java.lang.String str4 = cat2.registry();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Jasper" + "'", str3, "Jasper");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Felis Britannica" + "'", str4, "Felis Britannica");
+    }
+	@Test
+    public void test106_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str14 = internet2.image((java.lang.Integer) 14, (java.lang.Integer) 7, (java.lang.Boolean) false, "130.245.158.111");
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/food/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/food/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "37:9a:c4:78:87:55" + "'", str8, "37:9a:c4:78:87:55");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "info" + "'", str9, "info");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "http://lorempixel.com/14/7/transport/130.245.158.111" + "'", str14, "http://lorempixel.com/14/7/transport/130.245.158.111");
+    }
+	@Test
+    public void test106_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str14 = internet2.image((java.lang.Integer) 14, (java.lang.Integer) 7, (java.lang.Boolean) false, "130.245.158.111");
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/food/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/food/CFA Franc BEAC");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "37:9a:c4:78:87:55" + "'", str8, "37:9a:c4:78:87:55");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "info" + "'", str9, "info");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "http://lorempixel.com/14/7/transport/130.245.158.111" + "'", str14, "http://lorempixel.com/14/7/transport/130.245.158.111");
+    }
+	@Test
+    public void test106_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str14 = internet2.image((java.lang.Integer) 14, (java.lang.Integer) 7, (java.lang.Boolean) false, "130.245.158.111");
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/food/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/food/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "37:9a:c4:78:87:55" + "'", str8, "37:9a:c4:78:87:55");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "info" + "'", str9, "info");
+// flaky:         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "http://lorempixel.com/14/7/transport/130.245.158.111" + "'", str14, "http://lorempixel.com/14/7/transport/130.245.158.111");
+    }
+	@Test
+    public void test106_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test106");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str14 = internet2.image((java.lang.Integer) 14, (java.lang.Integer) 7, (java.lang.Boolean) false, "130.245.158.111");
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/food/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/food/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "37:9a:c4:78:87:55" + "'", str8, "37:9a:c4:78:87:55");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "info" + "'", str9, "info");
+         org.junit.Assert.assertEquals("'" + str14 + "' != '" + "http://lorempixel.com/14/7/transport/130.245.158.111" + "'", str14, "http://lorempixel.com/14/7/transport/130.245.158.111");
+    }
+	@Test
+    public void test108_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.city();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "OverwhelmingWinning214324" + "'", str4, "OverwhelmingWinning214324");
+// flaky:         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 46.23d + "'", double7 == 46.23d);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cherryborough" + "'", str8, "Cherryborough");
+    }
+	@Test
+    public void test108_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.city();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "OverwhelmingWinning214324" + "'", str4, "OverwhelmingWinning214324");
+         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 46.23d + "'", double7 == 46.23d);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cherryborough" + "'", str8, "Cherryborough");
+    }
+	@Test
+    public void test108_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test108");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.city();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "OverwhelmingWinning214324" + "'", str4, "OverwhelmingWinning214324");
+// flaky:         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 46.23d + "'", double7 == 46.23d);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cherryborough" + "'", str8, "Cherryborough");
+    }
+	@Test
+    public void test109_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.citySuffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "946460+3546" + "'", str1, "946460+3546");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge" + "'", str7, "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "mouth" + "'", str8, "mouth");
+    }
+	@Test
+    public void test109_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "946460+3546" + "'", str1, "946460+3546");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge" + "'", str7, "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "mouth" + "'", str8, "mouth");
+    }
+	@Test
+    public void test109_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test109");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.invalidSSN();
+        java.lang.String str7 = f0.password((-1), (int) '4', true, false, true);
+        java.lang.String str8 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "946460+3546" + "'", str1, "946460+3546");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge" + "'", str7, "ZU8QMK65558w6Ps1455Siw9wC8wpRV015lPLK6cRQYuR7Y3gge");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "mouth" + "'", str8, "mouth");
+    }
+	@Test
+    public void test110_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.productName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Israel" + "'", str1, "Israel");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "q" + "'", str5, "q");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mediocre Silk Pants" + "'", str6, "Mediocre Silk Pants");
+    }
+	@Test
+    public void test110_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.productName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Israel" + "'", str1, "Israel");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "q" + "'", str5, "q");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mediocre Silk Pants" + "'", str6, "Mediocre Silk Pants");
+    }
+	@Test
+    public void test110_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test110");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.productName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Israel" + "'", str1, "Israel");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "q" + "'", str5, "q");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mediocre Silk Pants" + "'", str6, "Mediocre Silk Pants");
+    }
+	@Test
+    public void test111_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test111");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        java.lang.String str5 = commerce3.promotionCode(61);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "UnbelievableRebate6344289188895168673683070079611216415125537867073880404673830" + "'", str5, "UnbelievableRebate6344289188895168673683070079611216415125537867073880404673830");
+    }
+	@Test
+    public void test112_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test112");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        f2.setTemplateStyle(true);
+        java.lang.String str6 = f2.creditCardNumber();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1228-1221-1221-1431" + "'", str6, "1228-1221-1221-1431");
+    }
+	@Test
+    public void test113_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test113");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        com.github.javafaker.Shakespeare shakespeare4 = faker1.shakespeare();
+        java.lang.String str5 = shakespeare4.asYouLikeItQuote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+        org.junit.Assert.assertNotNull(shakespeare4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Can one desire too much of a good thing?." + "'", str5, "Can one desire too much of a good thing?.");
+    }
+	@Test
+    public void test114_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "6165347333458" + "'", str3, "6165347333458");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "45334702" + "'", str4, "45334702");
+    }
+	@Test
+    public void test114_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test114");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "6165347333458" + "'", str3, "6165347333458");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "45334702" + "'", str4, "45334702");
+    }
+	@Test
+    public void test115_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test115");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        boolean boolean4 = f2.getTemplateStyle();
+        java.lang.String str5 = f2.promotionCode();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OverwhelmingDiscount191482" + "'", str5, "OverwhelmingDiscount191482");
+    }
+	@Test
+    public void test117_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test117");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        java.lang.String str5 = faker1.regexify("Sweden");
+        com.github.javafaker.RockBand rockBand6 = faker1.rockBand();
+        com.github.javafaker.Weather weather7 = faker1.weather();
+        java.lang.String str8 = weather7.temperatureCelsius();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Sweden" + "'", str5, "Sweden");
+        org.junit.Assert.assertNotNull(rockBand6);
+        org.junit.Assert.assertNotNull(weather7);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "-29\260C" + "'", str8, "-29\260C");
+    }
+	@Test
+    public void test118_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test118");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        java.lang.String str4 = stock3.nyseSymbol();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ACV" + "'", str4, "ACV");
+    }
+	@Test
+    public void test119_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str9 = commerce2.productName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Granite" + "'", str3, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "5.60" + "'", str6, "5.60");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Jewelry" + "'", str7, "Jewelry");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Grocery" + "'", str8, "Grocery");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Incredible Aluminum Knife" + "'", str9, "Incredible Aluminum Knife");
+    }
+	@Test
+    public void test119_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str9 = commerce2.productName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Granite" + "'", str3, "Granite");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "5.60" + "'", str6, "5.60");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Jewelry" + "'", str7, "Jewelry");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Grocery" + "'", str8, "Grocery");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Incredible Aluminum Knife" + "'", str9, "Incredible Aluminum Knife");
+    }
+	@Test
+    public void test119_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str9 = commerce2.productName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Granite" + "'", str3, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "5.60" + "'", str6, "5.60");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Jewelry" + "'", str7, "Jewelry");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Grocery" + "'", str8, "Grocery");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Incredible Aluminum Knife" + "'", str9, "Incredible Aluminum Knife");
+    }
+	@Test
+    public void test119_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str9 = commerce2.productName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Granite" + "'", str3, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "5.60" + "'", str6, "5.60");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Jewelry" + "'", str7, "Jewelry");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Grocery" + "'", str8, "Grocery");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Incredible Aluminum Knife" + "'", str9, "Incredible Aluminum Knife");
+    }
+	@Test
+    public void test119_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test119");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str9 = commerce2.productName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Granite" + "'", str3, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "5.60" + "'", str6, "5.60");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Jewelry" + "'", str7, "Jewelry");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Grocery" + "'", str8, "Grocery");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Incredible Aluminum Knife" + "'", str9, "Incredible Aluminum Knife");
+    }
+	@Test
+    public void test120_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str8 = address4.zipCodeByState("Pacific/Pago_Pago");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.Pacific/Pago_Pago resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ND" + "'", str5, "ND");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gutmannfurt" + "'", str6, "Gutmannfurt");
+    }
+	@Test
+    public void test120_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test120");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str8 = address4.zipCodeByState("Pacific/Pago_Pago");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.Pacific/Pago_Pago resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ND" + "'", str5, "ND");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gutmannfurt" + "'", str6, "Gutmannfurt");
+    }
+	@Test
+    public void test121_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        boolean boolean10 = f0.getTemplateStyle();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Swaziland" + "'", str1, "Swaziland");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "a" + "'", str5, "a");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.zane-prosacco.biz" + "'", str6, "www.zane-prosacco.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[46, 74, 13, 63, 44, 10, 24, 22, 40, 19]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+	@Test
+    public void test121_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        boolean boolean10 = f0.getTemplateStyle();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Swaziland" + "'", str1, "Swaziland");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "a" + "'", str5, "a");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.zane-prosacco.biz" + "'", str6, "www.zane-prosacco.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[46, 74, 13, 63, 44, 10, 24, 22, 40, 19]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+	@Test
+    public void test121_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        boolean boolean10 = f0.getTemplateStyle();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Swaziland" + "'", str1, "Swaziland");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "a" + "'", str5, "a");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.zane-prosacco.biz" + "'", str6, "www.zane-prosacco.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[46, 74, 13, 63, 44, 10, 24, 22, 40, 19]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+	@Test
+    public void test121_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test121");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        int[] intArray9 = f0.integerList((int) 'a', 10);
+        boolean boolean10 = f0.getTemplateStyle();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Swaziland" + "'", str1, "Swaziland");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "a" + "'", str5, "a");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.zane-prosacco.biz" + "'", str6, "www.zane-prosacco.biz");
+        org.junit.Assert.assertNotNull(intArray9);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[46, 74, 13, 63, 44, 10, 24, 22, 40, 19]");
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+	@Test
+    public void test124_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test124");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.yeast();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "1275 - Thames Valley Ale" + "'", str4, "1275 - Thames Valley Ale");
+    }
+	@Test
+    public void test125_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_6() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+// flaky:         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test125_7() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test125");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        int int6 = f0.streetAddressNumber();
+        java.lang.String str7 = f0.password();
+        java.lang.String str9 = f0.streetAddress((java.lang.Boolean) false);
+        java.lang.String str10 = f0.productName();
+        double double14 = f0.decimal((long) 374, (long) 894, (int) '#');
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Niger" + "'", str1, "Niger");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int6 + "' != '" + 827 + "'", int6 == 827);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "xrngoovdp" + "'", str7, "xrngoovdp");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "9372 Micah Green" + "'", str9, "9372 Micah Green");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Practical Wooden Knife" + "'", str10, "Practical Wooden Knife");
+         org.junit.Assert.assertTrue("'" + double14 + "' != '" + 786.2125890748266d + "'", double14 == 786.2125890748266d);
+    }
+	@Test
+    public void test127_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        java.lang.String str5 = color4.hex();
+        java.lang.String str6 = color4.name();
+        java.lang.String str7 = color4.hex();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "#771F6E" + "'", str5, "#771F6E");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "blue" + "'", str6, "blue");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "#8305E6" + "'", str7, "#8305E6");
+    }
+	@Test
+    public void test127_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        java.lang.String str5 = color4.hex();
+        java.lang.String str6 = color4.name();
+        java.lang.String str7 = color4.hex();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "#771F6E" + "'", str5, "#771F6E");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "blue" + "'", str6, "blue");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "#8305E6" + "'", str7, "#8305E6");
+    }
+	@Test
+    public void test127_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test127");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        java.lang.String str5 = color4.hex();
+        java.lang.String str6 = color4.name();
+        java.lang.String str7 = color4.hex();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "#771F6E" + "'", str5, "#771F6E");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "blue" + "'", str6, "blue");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "#8305E6" + "'", str7, "#8305E6");
+    }
+	@Test
+    public void test128_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.emailAddress();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str10 = internet2.password(580, 61, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "43.207.235.231" + "'", str3, "43.207.235.231");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "9a0a:64fe:e957:bf3f:4467:8cf2:ab3e:d945/95" + "'", str4, "9a0a:64fe:e957:bf3f:4467:8cf2:ab3e:d945/95");
+    }
+	@Test
+    public void test128_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test128");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.emailAddress();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str10 = internet2.password(580, 61, true, false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "43.207.235.231" + "'", str3, "43.207.235.231");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "9a0a:64fe:e957:bf3f:4467:8cf2:ab3e:d945/95" + "'", str4, "9a0a:64fe:e957:bf3f:4467:8cf2:ab3e:d945/95");
+    }
+	@Test
+    public void test129_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test129");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Stock stock5 = faker1.stock();
+        com.github.javafaker.Hipster hipster6 = faker1.hipster();
+        java.lang.String str7 = hipster6.word();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(stock5);
+        org.junit.Assert.assertNotNull(hipster6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "williamsburg" + "'", str7, "williamsburg");
+    }
+	@Test
+    public void test133_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.invalidSSN();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Mediocre Copper Bottle" + "'", str1, "Mediocre Copper Bottle");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "719762-3047" + "'", str2, "719762-3047");
+    }
+	@Test
+    public void test133_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test133");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Mediocre Copper Bottle" + "'", str1, "Mediocre Copper Bottle");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "719762-3047" + "'", str2, "719762-3047");
+    }
+	@Test
+    public void test135_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str10 = commerce2.promotionCode((int) (short) 1);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "8.76" + "'", str6, "8.76");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Electronics" + "'", str7, "Electronics");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Books & Movies" + "'", str8, "Books & Movies");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "BreathtakingBenefit5" + "'", str10, "BreathtakingBenefit5");
+    }
+	@Test
+    public void test135_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str10 = commerce2.promotionCode((int) (short) 1);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "8.76" + "'", str6, "8.76");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Electronics" + "'", str7, "Electronics");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Books & Movies" + "'", str8, "Books & Movies");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "BreathtakingBenefit5" + "'", str10, "BreathtakingBenefit5");
+    }
+	@Test
+    public void test135_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str10 = commerce2.promotionCode((int) (short) 1);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "8.76" + "'", str6, "8.76");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Electronics" + "'", str7, "Electronics");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Books & Movies" + "'", str8, "Books & Movies");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "BreathtakingBenefit5" + "'", str10, "BreathtakingBenefit5");
+    }
+	@Test
+    public void test135_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str10 = commerce2.promotionCode((int) (short) 1);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "8.76" + "'", str6, "8.76");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Electronics" + "'", str7, "Electronics");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Books & Movies" + "'", str8, "Books & Movies");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "BreathtakingBenefit5" + "'", str10, "BreathtakingBenefit5");
+    }
+	@Test
+    public void test135_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test135");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.department();
+        java.lang.String str10 = commerce2.promotionCode((int) (short) 1);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "8.76" + "'", str6, "8.76");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Electronics" + "'", str7, "Electronics");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Books & Movies" + "'", str8, "Books & Movies");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "BreathtakingBenefit5" + "'", str10, "BreathtakingBenefit5");
+    }
+	@Test
+    public void test136_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.url();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Panama" + "'", str1, "Panama");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Atlantic/Azores" + "'", str2, "Atlantic/Azores");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.azucena-turner.co" + "'", str6, "www.azucena-turner.co");
+    }
+	@Test
+    public void test136_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.url();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Panama" + "'", str1, "Panama");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Atlantic/Azores" + "'", str2, "Atlantic/Azores");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.azucena-turner.co" + "'", str6, "www.azucena-turner.co");
+    }
+	@Test
+    public void test136_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test136");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.url();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Panama" + "'", str1, "Panama");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Atlantic/Azores" + "'", str2, "Atlantic/Azores");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.azucena-turner.co" + "'", str6, "www.azucena-turner.co");
+    }
+	@Test
+    public void test138_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.department();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Copper" + "'", str3, "Copper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lightweight Leather Watch" + "'", str4, "Lightweight Leather Watch");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0.79" + "'", str5, "0.79");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Games, Outdoors & Shoes" + "'", str6, "Games, Outdoors & Shoes");
+    }
+	@Test
+    public void test138_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.department();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Copper" + "'", str3, "Copper");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lightweight Leather Watch" + "'", str4, "Lightweight Leather Watch");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0.79" + "'", str5, "0.79");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Games, Outdoors & Shoes" + "'", str6, "Games, Outdoors & Shoes");
+    }
+	@Test
+    public void test138_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.department();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Copper" + "'", str3, "Copper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lightweight Leather Watch" + "'", str4, "Lightweight Leather Watch");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0.79" + "'", str5, "0.79");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Games, Outdoors & Shoes" + "'", str6, "Games, Outdoors & Shoes");
+    }
+	@Test
+    public void test138_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test138");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.department();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Copper" + "'", str3, "Copper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lightweight Leather Watch" + "'", str4, "Lightweight Leather Watch");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0.79" + "'", str5, "0.79");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Games, Outdoors & Shoes" + "'", str6, "Games, Outdoors & Shoes");
+    }
+	@Test
+    public void test139_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test139_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test139_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test139_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test139_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test139_6() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test139");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        int[] intArray10 = f0.integerList();
+        java.lang.String str11 = f0.domainName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Tunisia" + "'", str1, "Tunisia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Australia/Brisbane" + "'", str2, "Australia/Brisbane");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "USD" + "'", str6, "USD");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 8.2435779242899E11d + "'", double9 == 8.2435779242899E11d);
+        org.junit.Assert.assertNotNull(intArray10);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray10), "[7, 28, 63, 83, 52, 42, 41, 7, 52, 31]");
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "gibson.co" + "'", str11, "gibson.co");
+    }
+	@Test
+    public void test140_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.hero();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Artemis" + "'", str4, "Artemis");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Atalanta" + "'", str5, "Atalanta");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Chrysippus" + "'", str6, "Chrysippus");
+    }
+	@Test
+    public void test140_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.hero();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Artemis" + "'", str4, "Artemis");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Atalanta" + "'", str5, "Atalanta");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Chrysippus" + "'", str6, "Chrysippus");
+    }
+	@Test
+    public void test140_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test140");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.hero();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Artemis" + "'", str4, "Artemis");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Atalanta" + "'", str5, "Atalanta");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Chrysippus" + "'", str6, "Chrysippus");
+    }
+	@Test
+    public void test142_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.god();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Athena" + "'", str4, "Athena");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Hades" + "'", str5, "Hades");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Atalanta" + "'", str6, "Atalanta");
+    }
+	@Test
+    public void test142_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.god();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Athena" + "'", str4, "Athena");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Hades" + "'", str5, "Hades");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Atalanta" + "'", str6, "Atalanta");
+    }
+	@Test
+    public void test142_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test142");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Ancient ancient3 = faker1.ancient();
+        java.lang.String str4 = ancient3.god();
+        java.lang.String str5 = ancient3.god();
+        java.lang.String str6 = ancient3.hero();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(ancient3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Athena" + "'", str4, "Athena");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Hades" + "'", str5, "Hades");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Atalanta" + "'", str6, "Atalanta");
+    }
+	@Test
+    public void test143_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Finance finance3 = faker1.finance();
+        java.lang.String str4 = finance3.iban();
+        java.lang.String str5 = finance3.bic();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(finance3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "IE41VSRK86102980873063" + "'", str4, "IE41VSRK86102980873063");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "NHVVVY16" + "'", str5, "NHVVVY16");
+    }
+	@Test
+    public void test143_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test143");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Finance finance3 = faker1.finance();
+        java.lang.String str4 = finance3.iban();
+        java.lang.String str5 = finance3.bic();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(finance3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "IE41VSRK86102980873063" + "'", str4, "IE41VSRK86102980873063");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "NHVVVY16" + "'", str5, "NHVVVY16");
+    }
+	@Test
+    public void test144_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test144_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test144_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test144_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test144_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test144_6() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test144");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        java.lang.String str4 = f0.currency();
+        java.lang.String str5 = f0.fullAddress();
+        java.lang.String str6 = f0.domainSuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Azerbaijan" + "'", str1, "Azerbaijan");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Pacific/Pago_Pago" + "'", str2, "Pacific/Pago_Pago");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "48.07" + "'", str3, "48.07");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Canadian Dollar" + "'", str4, "Canadian Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "66015 Jay Tunnel, Lakinville, MS 92915" + "'", str5, "66015 Jay Tunnel, Lakinville, MS 92915");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "com" + "'", str6, "com");
+    }
+	@Test
+    public void test145_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "201.153.118.42" + "'", str3, "201.153.118.42");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91" + "'", str4, "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "45.210.228.74" + "'", str5, "45.210.228.74");
+    }
+	@Test
+    public void test145_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "201.153.118.42" + "'", str3, "201.153.118.42");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91" + "'", str4, "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "45.210.228.74" + "'", str5, "45.210.228.74");
+    }
+	@Test
+    public void test145_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test145");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "201.153.118.42" + "'", str3, "201.153.118.42");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91" + "'", str4, "c575:d4a3:5464:7f9e:1dee:274d:0bdb:9748/91");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "45.210.228.74" + "'", str5, "45.210.228.74");
+    }
+	@Test
+    public void test146_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str11 = lorem6.sentence((-1), 5);
+        java.lang.String str12 = lorem6.characters();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'e' + "'", char8 == 'e');
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "." + "'", str11, ".");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku" + "'", str12, "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku");
+    }
+	@Test
+    public void test146_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str11 = lorem6.sentence((-1), 5);
+        java.lang.String str12 = lorem6.characters();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'e' + "'", char8 == 'e');
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "." + "'", str11, ".");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku" + "'", str12, "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku");
+    }
+	@Test
+    public void test146_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test146");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str11 = lorem6.sentence((-1), 5);
+        java.lang.String str12 = lorem6.characters();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'e' + "'", char8 == 'e');
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "." + "'", str11, ".");
+         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku" + "'", str12, "whdnrecz7pb3tj5q8dqon40quowplkebjwsupvbx59nme1hxqhtrfzk4hiwyhio4e9g7cox0ia1uegpacbkuvvh44wichvf57m2sh1h6s63y3cwnos3ca966m3s6lvgg8xj4nm3l84nr3prmvh2y45vl598cax6jio1kyalnpkbnlapp5l5m56dbv8szfmuw0d9avx0xxv9eqo751c0bypjvl7aegtnkwbgydpjfu7zftqlitajeuyu4ymdmhku");
+    }
+	@Test
+    public void test148_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        int[] intArray9 = f0.integerList(3);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Zimbabwe" + "'", str1, "Zimbabwe");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tashkent" + "'", str2, "Asia/Tashkent");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mrs. Cherlyn Harber" + "'", str6, "Mrs. Cherlyn Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Lake Adachester" + "'", str7, "Lake Adachester");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[78, 49, 73, 3, 86, 17, 28, 27, 91, 69]");
+    }
+	@Test
+    public void test148_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        int[] intArray9 = f0.integerList(3);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Zimbabwe" + "'", str1, "Zimbabwe");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tashkent" + "'", str2, "Asia/Tashkent");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mrs. Cherlyn Harber" + "'", str6, "Mrs. Cherlyn Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Lake Adachester" + "'", str7, "Lake Adachester");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[78, 49, 73, 3, 86, 17, 28, 27, 91, 69]");
+    }
+	@Test
+    public void test148_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        int[] intArray9 = f0.integerList(3);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Zimbabwe" + "'", str1, "Zimbabwe");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tashkent" + "'", str2, "Asia/Tashkent");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mrs. Cherlyn Harber" + "'", str6, "Mrs. Cherlyn Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Lake Adachester" + "'", str7, "Lake Adachester");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[78, 49, 73, 3, 86, 17, 28, 27, 91, 69]");
+    }
+	@Test
+    public void test148_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        int[] intArray9 = f0.integerList(3);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Zimbabwe" + "'", str1, "Zimbabwe");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tashkent" + "'", str2, "Asia/Tashkent");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mrs. Cherlyn Harber" + "'", str6, "Mrs. Cherlyn Harber");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Lake Adachester" + "'", str7, "Lake Adachester");
+        org.junit.Assert.assertNotNull(intArray9);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[78, 49, 73, 3, 86, 17, 28, 27, 91, 69]");
+    }
+	@Test
+    public void test148_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test148");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        int[] intArray9 = f0.integerList(3);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Zimbabwe" + "'", str1, "Zimbabwe");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tashkent" + "'", str2, "Asia/Tashkent");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mrs. Cherlyn Harber" + "'", str6, "Mrs. Cherlyn Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Lake Adachester" + "'", str7, "Lake Adachester");
+        org.junit.Assert.assertNotNull(intArray9);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray9), "[78, 49, 73, 3, 86, 17, 28, 27, 91, 69]");
+    }
+	@Test
+    public void test149_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Medical medical3 = faker1.medical();
+        java.lang.String str4 = medical3.medicineName();
+        java.lang.String str5 = medical3.medicineName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(medical3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "QUININE ARSENATE" + "'", str4, "QUININE ARSENATE");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "LABURNUM ANAGYROIDES FLOWERING TOP" + "'", str5, "LABURNUM ANAGYROIDES FLOWERING TOP");
+    }
+	@Test
+    public void test149_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test149");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Medical medical3 = faker1.medical();
+        java.lang.String str4 = medical3.medicineName();
+        java.lang.String str5 = medical3.medicineName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(medical3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "QUININE ARSENATE" + "'", str4, "QUININE ARSENATE");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "LABURNUM ANAGYROIDES FLOWERING TOP" + "'", str5, "LABURNUM ANAGYROIDES FLOWERING TOP");
+    }
+	@Test
+    public void test150_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str6 = f0.password((int) (short) 0, (int) (short) 1, true, false);
+        java.lang.String str7 = f0.suffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "930320-4540" + "'", str1, "930320-4540");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Group" + "'", str7, "Group");
+    }
+	@Test
+    public void test150_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test150");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.validSSN();
+        java.lang.String str6 = f0.password((int) (short) 0, (int) (short) 1, true, false);
+        java.lang.String str7 = f0.suffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "930320-4540" + "'", str1, "930320-4540");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "" + "'", str6, "");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Group" + "'", str7, "Group");
+    }
+	@Test
+    public void test151_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.currencyCode();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "e" + "'", str5, "e");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "XCD" + "'", str9, "XCD");
+    }
+	@Test
+    public void test151_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.currencyCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "e" + "'", str5, "e");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "XCD" + "'", str9, "XCD");
+    }
+	@Test
+    public void test151_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test151");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.currencyCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Kyrgyz Republic" + "'", str1, "Kyrgyz Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "e" + "'", str5, "e");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "XCD" + "'", str9, "XCD");
+    }
+	@Test
+    public void test152_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str16 = internet2.password((int) 'e', (int) 'a', false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.167.185.165" + "'", str3, "108.167.185.165");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115" + "'", str4, "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "172.22.132.77" + "'", str5, "172.22.132.77");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fugit_molestiae" + "'", str6, "fugit_molestiae");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+    }
+	@Test
+    public void test152_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str16 = internet2.password((int) 'e', (int) 'a', false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.167.185.165" + "'", str3, "108.167.185.165");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115" + "'", str4, "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "172.22.132.77" + "'", str5, "172.22.132.77");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fugit_molestiae" + "'", str6, "fugit_molestiae");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+    }
+	@Test
+    public void test152_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str16 = internet2.password((int) 'e', (int) 'a', false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.167.185.165" + "'", str3, "108.167.185.165");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115" + "'", str4, "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "172.22.132.77" + "'", str5, "172.22.132.77");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fugit_molestiae" + "'", str6, "fugit_molestiae");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+    }
+	@Test
+    public void test152_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test152");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str16 = internet2.password((int) 'e', (int) 'a', false);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.167.185.165" + "'", str3, "108.167.185.165");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115" + "'", str4, "bd29:19a2:c484:b36b:0d80:d92e:0994:6bb6/115");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "172.22.132.77" + "'", str5, "172.22.132.77");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "fugit_molestiae" + "'", str6, "fugit_molestiae");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+    }
+	@Test
+    public void test153_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.emailAddress();
+        java.lang.String str4 = f0.domainWord();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Czech Republic" + "'", str1, "Czech Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Chihuahua" + "'", str2, "America/Chihuahua");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "conn" + "'", str4, "conn");
+    }
+	@Test
+    public void test153_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.emailAddress();
+        java.lang.String str4 = f0.domainWord();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Czech Republic" + "'", str1, "Czech Republic");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Chihuahua" + "'", str2, "America/Chihuahua");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "conn" + "'", str4, "conn");
+    }
+	@Test
+    public void test153_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test153");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.emailAddress();
+        java.lang.String str4 = f0.domainWord();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Czech Republic" + "'", str1, "Czech Republic");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Chihuahua" + "'", str2, "America/Chihuahua");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "conn" + "'", str4, "conn");
+    }
+	@Test
+    public void test155_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.yeast();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Horizon" + "'", str4, "Horizon");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "3724 - Belgian Saison" + "'", str5, "3724 - Belgian Saison");
+    }
+	@Test
+    public void test155_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test155");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        java.lang.String str4 = beer3.hop();
+        java.lang.String str5 = beer3.yeast();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Horizon" + "'", str4, "Horizon");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "3724 - Belgian Saison" + "'", str5, "3724 - Belgian Saison");
+    }
+	@Test
+    public void test156_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.promotionCode();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovenia" + "'", str1, "Slovenia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "US Dollar" + "'", str2, "US Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "BreathtakingBenefit133767" + "'", str4, "BreathtakingBenefit133767");
+    }
+	@Test
+    public void test156_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.promotionCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovenia" + "'", str1, "Slovenia");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "US Dollar" + "'", str2, "US Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "BreathtakingBenefit133767" + "'", str4, "BreathtakingBenefit133767");
+    }
+	@Test
+    public void test156_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.promotionCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovenia" + "'", str1, "Slovenia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "US Dollar" + "'", str2, "US Dollar");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "BreathtakingBenefit133767" + "'", str4, "BreathtakingBenefit133767");
+    }
+	@Test
+    public void test156_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test156");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.promotionCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovenia" + "'", str1, "Slovenia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "US Dollar" + "'", str2, "US Dollar");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "LLC" + "'", str3, "LLC");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "BreathtakingBenefit133767" + "'", str4, "BreathtakingBenefit133767");
+    }
+	@Test
+    public void test157_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        com.apifortress.apiffaker.F f6 = new com.apifortress.apiffaker.F();
+        java.lang.String str7 = f6.country();
+        java.lang.String str8 = f6.currency();
+        java.lang.String str11 = f6.password(6, (int) (short) 10);
+        util1.manipulateNode((int) (byte) 1, (java.lang.Object) "XCD", (java.lang.Object) 6, (java.lang.Object) "543502-2318", (int) (byte) -1);
+        com.apifortress.apiffaker.F f15 = util1.getFaker();
+        java.lang.Object obj17 = util1.setLocale("e");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "British Indian Ocean Territory (Chagos Archipelago)" + "'", str7, "British Indian Ocean Territory (Chagos Archipelago)");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Rand" + "'", str8, "Rand");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "umlrmas" + "'", str11, "umlrmas");
+        org.junit.Assert.assertNull(f15);
+        org.junit.Assert.assertEquals("'" + obj17 + "' != '" + true + "'", obj17, true);
+    }
+	@Test
+    public void test157_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        com.apifortress.apiffaker.F f6 = new com.apifortress.apiffaker.F();
+        java.lang.String str7 = f6.country();
+        java.lang.String str8 = f6.currency();
+        java.lang.String str11 = f6.password(6, (int) (short) 10);
+        util1.manipulateNode((int) (byte) 1, (java.lang.Object) "XCD", (java.lang.Object) 6, (java.lang.Object) "543502-2318", (int) (byte) -1);
+        com.apifortress.apiffaker.F f15 = util1.getFaker();
+        java.lang.Object obj17 = util1.setLocale("e");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "British Indian Ocean Territory (Chagos Archipelago)" + "'", str7, "British Indian Ocean Territory (Chagos Archipelago)");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Rand" + "'", str8, "Rand");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "umlrmas" + "'", str11, "umlrmas");
+        org.junit.Assert.assertNull(f15);
+        org.junit.Assert.assertEquals("'" + obj17 + "' != '" + true + "'", obj17, true);
+    }
+	@Test
+    public void test157_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test157");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        com.apifortress.apiffaker.F f6 = new com.apifortress.apiffaker.F();
+        java.lang.String str7 = f6.country();
+        java.lang.String str8 = f6.currency();
+        java.lang.String str11 = f6.password(6, (int) (short) 10);
+        util1.manipulateNode((int) (byte) 1, (java.lang.Object) "XCD", (java.lang.Object) 6, (java.lang.Object) "543502-2318", (int) (byte) -1);
+        com.apifortress.apiffaker.F f15 = util1.getFaker();
+        java.lang.Object obj17 = util1.setLocale("e");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "British Indian Ocean Territory (Chagos Archipelago)" + "'", str7, "British Indian Ocean Territory (Chagos Archipelago)");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Rand" + "'", str8, "Rand");
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "umlrmas" + "'", str11, "umlrmas");
+        org.junit.Assert.assertNull(f15);
+        org.junit.Assert.assertEquals("'" + obj17 + "' != '" + true + "'", obj17, true);
+    }
+	@Test
+    public void test158_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test158");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        f2.setTemplateStyle(true);
+        java.lang.String str6 = f2.creditCardType();
+        java.lang.Object obj9 = f2.collection(485, (java.lang.Object) "26.157.128.68");
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "discover" + "'", str6, "discover");
+        org.junit.Assert.assertNotNull(obj9);
+    }
+	@Test
+    public void test161_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.cityPrefix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Macedonia" + "'", str1, "Macedonia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Dalasi" + "'", str2, "Dalasi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "New" + "'", str4, "New");
+    }
+	@Test
+    public void test161_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.cityPrefix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Macedonia" + "'", str1, "Macedonia");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Dalasi" + "'", str2, "Dalasi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "New" + "'", str4, "New");
+    }
+	@Test
+    public void test161_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.cityPrefix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Macedonia" + "'", str1, "Macedonia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Dalasi" + "'", str2, "Dalasi");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "New" + "'", str4, "New");
+    }
+	@Test
+    public void test161_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test161");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.currency();
+        java.lang.String str3 = f0.suffix();
+        java.lang.String str4 = f0.cityPrefix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Macedonia" + "'", str1, "Macedonia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Dalasi" + "'", str2, "Dalasi");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Inc" + "'", str3, "Inc");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "New" + "'", str4, "New");
+    }
+	@Test
+    public void test162_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        java.lang.String str13 = internet2.emailAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.23.194.204" + "'", str3, "108.23.194.204");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27" + "'", str4, "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "169.254.196.37" + "'", str5, "169.254.196.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "deserunt_ipsa" + "'", str6, "deserunt_ipsa");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+// flaky:         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "angelique.okon@yahoo.com" + "'", str13, "angelique.okon@yahoo.com");
+    }
+	@Test
+    public void test162_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        java.lang.String str13 = internet2.emailAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.23.194.204" + "'", str3, "108.23.194.204");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27" + "'", str4, "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "169.254.196.37" + "'", str5, "169.254.196.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "deserunt_ipsa" + "'", str6, "deserunt_ipsa");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+// flaky:         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "angelique.okon@yahoo.com" + "'", str13, "angelique.okon@yahoo.com");
+    }
+	@Test
+    public void test162_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        java.lang.String str13 = internet2.emailAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.23.194.204" + "'", str3, "108.23.194.204");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27" + "'", str4, "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "169.254.196.37" + "'", str5, "169.254.196.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "deserunt_ipsa" + "'", str6, "deserunt_ipsa");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+// flaky:         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "angelique.okon@yahoo.com" + "'", str13, "angelique.okon@yahoo.com");
+    }
+	@Test
+    public void test162_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        java.lang.String str13 = internet2.emailAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.23.194.204" + "'", str3, "108.23.194.204");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27" + "'", str4, "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "169.254.196.37" + "'", str5, "169.254.196.37");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "deserunt_ipsa" + "'", str6, "deserunt_ipsa");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+// flaky:         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "angelique.okon@yahoo.com" + "'", str13, "angelique.okon@yahoo.com");
+    }
+	@Test
+    public void test162_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test162");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str4 = internet2.ipV6Cidr();
+        java.lang.String str5 = internet2.privateIpV4Address();
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str12 = internet2.password((int) (byte) 0, (int) (byte) 1, false, false, false);
+        java.lang.String str13 = internet2.emailAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "108.23.194.204" + "'", str3, "108.23.194.204");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27" + "'", str4, "ae70:9ce4:072b:b3a2:3b80:3a6f:2d5a:7736/27");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "169.254.196.37" + "'", str5, "169.254.196.37");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "deserunt_ipsa" + "'", str6, "deserunt_ipsa");
+        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "" + "'", str12, "");
+         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "angelique.okon@yahoo.com" + "'", str13, "angelique.okon@yahoo.com");
+    }
+	@Test
+    public void test164_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.timeZone();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Germany" + "'", str8, "Germany");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Apia" + "'", str9, "Pacific/Apia");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 949 + "'", int13 == 949);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "America/New_York" + "'", str15, "America/New_York");
+    }
+	@Test
+    public void test164_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.timeZone();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Germany" + "'", str8, "Germany");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Apia" + "'", str9, "Pacific/Apia");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 949 + "'", int13 == 949);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "America/New_York" + "'", str15, "America/New_York");
+    }
+	@Test
+    public void test164_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.timeZone();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Germany" + "'", str8, "Germany");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Apia" + "'", str9, "Pacific/Apia");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 949 + "'", int13 == 949);
+// flaky:         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "America/New_York" + "'", str15, "America/New_York");
+    }
+	@Test
+    public void test164_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test164");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.F f7 = new com.apifortress.apiffaker.F();
+        java.lang.String str8 = f7.country();
+        java.lang.String str9 = f7.timeZone();
+        int int12 = f7.integer((int) (short) 10, (int) (short) 10);
+        int int13 = f7.streetAddressNumber();
+        util1.setFaker(f7);
+        java.lang.String str15 = f7.timeZone();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Germany" + "'", str8, "Germany");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Pacific/Apia" + "'", str9, "Pacific/Apia");
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 10 + "'", int12 == 10);
+// flaky:         org.junit.Assert.assertTrue("'" + int13 + "' != '" + 949 + "'", int13 == 949);
+         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "America/New_York" + "'", str15, "America/New_York");
+    }
+	@Test
+    public void test165_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test165");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Currency currency6 = new com.github.javafaker.Currency(faker1);
+        com.github.javafaker.Food food7 = faker1.food();
+        java.lang.String str8 = food7.spice();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(food7);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Mace Ground" + "'", str8, "Mace Ground");
+    }
+	@Test
+    public void test167_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test167");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.domainWord();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "grimes" + "'", str3, "grimes");
+    }
+	@Test
+    public void test168_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.timeZone();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Iceland" + "'", str1, "Iceland");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Nga Sanford" + "'", str6, "Nga Sanford");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+    }
+	@Test
+    public void test168_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.timeZone();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Iceland" + "'", str1, "Iceland");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Nga Sanford" + "'", str6, "Nga Sanford");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+    }
+	@Test
+    public void test168_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.timeZone();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Iceland" + "'", str1, "Iceland");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Nga Sanford" + "'", str6, "Nga Sanford");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+    }
+	@Test
+    public void test168_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test168");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.timeZone();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Iceland" + "'", str1, "Iceland");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Karachi" + "'", str2, "Asia/Karachi");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Nga Sanford" + "'", str6, "Nga Sanford");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+    }
+	@Test
+    public void test169_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        com.github.javafaker.Shakespeare shakespeare4 = faker1.shakespeare();
+        java.lang.String str5 = shakespeare4.kingRichardIIIQuote();
+        java.lang.String str6 = shakespeare4.asYouLikeItQuote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+        org.junit.Assert.assertNotNull(shakespeare4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "So wise so young, they say, do never live long." + "'", str5, "So wise so young, they say, do never live long.");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "The fool doth think he is wise, but the wise man knows himself to be a fool." + "'", str6, "The fool doth think he is wise, but the wise man knows himself to be a fool.");
+    }
+	@Test
+    public void test169_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test169");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Beer beer3 = faker1.beer();
+        com.github.javafaker.Shakespeare shakespeare4 = faker1.shakespeare();
+        java.lang.String str5 = shakespeare4.kingRichardIIIQuote();
+        java.lang.String str6 = shakespeare4.asYouLikeItQuote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(beer3);
+        org.junit.Assert.assertNotNull(shakespeare4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "So wise so young, they say, do never live long." + "'", str5, "So wise so young, they say, do never live long.");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "The fool doth think he is wise, but the wise man knows himself to be a fool." + "'", str6, "The fool doth think he is wise, but the wise man knows himself to be a fool.");
+    }
+	@Test
+    public void test170_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Currency currency6 = new com.github.javafaker.Currency(faker1);
+        com.github.javafaker.Food food7 = faker1.food();
+        java.lang.String str8 = food7.ingredient();
+        java.lang.String str9 = food7.ingredient();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(food7);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Eggplant" + "'", str8, "Eggplant");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Beef" + "'", str9, "Beef");
+    }
+	@Test
+    public void test170_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test170");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Currency currency6 = new com.github.javafaker.Currency(faker1);
+        com.github.javafaker.Food food7 = faker1.food();
+        java.lang.String str8 = food7.ingredient();
+        java.lang.String str9 = food7.ingredient();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(food7);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Eggplant" + "'", str8, "Eggplant");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Beef" + "'", str9, "Beef");
+    }
+	@Test
+    public void test171_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        java.lang.String str8 = f0.invalidSSN();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "South Africa" + "'", str1, "South Africa");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mr. Joaquina Ernser" + "'", str6, "Mr. Joaquina Ernser");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "North Solshire" + "'", str7, "North Solshire");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "905192-2047" + "'", str8, "905192-2047");
+    }
+	@Test
+    public void test171_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        java.lang.String str8 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "South Africa" + "'", str1, "South Africa");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mr. Joaquina Ernser" + "'", str6, "Mr. Joaquina Ernser");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "North Solshire" + "'", str7, "North Solshire");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "905192-2047" + "'", str8, "905192-2047");
+    }
+	@Test
+    public void test171_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        java.lang.String str8 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "South Africa" + "'", str1, "South Africa");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mr. Joaquina Ernser" + "'", str6, "Mr. Joaquina Ernser");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "North Solshire" + "'", str7, "North Solshire");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "905192-2047" + "'", str8, "905192-2047");
+    }
+	@Test
+    public void test171_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        java.lang.String str8 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "South Africa" + "'", str1, "South Africa");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mr. Joaquina Ernser" + "'", str6, "Mr. Joaquina Ernser");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "North Solshire" + "'", str7, "North Solshire");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "905192-2047" + "'", str8, "905192-2047");
+    }
+	@Test
+    public void test171_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test171");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.fullName();
+        java.lang.String str7 = f0.cityName();
+        java.lang.String str8 = f0.invalidSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "South Africa" + "'", str1, "South Africa");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Los_Angeles" + "'", str2, "America/Los_Angeles");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Mr. Joaquina Ernser" + "'", str6, "Mr. Joaquina Ernser");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "North Solshire" + "'", str7, "North Solshire");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "905192-2047" + "'", str8, "905192-2047");
+    }
+	@Test
+    public void test172_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str9 = lorem6.word();
+        java.lang.String str12 = lorem6.sentence((int) (short) 0, (int) (short) 100);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str15 = lorem6.characters(14, (int) (short) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'h' + "'", char8 == 'h');
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "voluptatem" + "'", str9, "voluptatem");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos." + "'", str12, "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos.");
+    }
+	@Test
+    public void test172_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str9 = lorem6.word();
+        java.lang.String str12 = lorem6.sentence((int) (short) 0, (int) (short) 100);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str15 = lorem6.characters(14, (int) (short) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'h' + "'", char8 == 'h');
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "voluptatem" + "'", str9, "voluptatem");
+// flaky:         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos." + "'", str12, "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos.");
+    }
+	@Test
+    public void test172_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test172");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str9 = lorem6.word();
+        java.lang.String str12 = lorem6.sentence((int) (short) 0, (int) (short) 100);
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str15 = lorem6.characters(14, (int) (short) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'h' + "'", char8 == 'h');
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "voluptatem" + "'", str9, "voluptatem");
+         org.junit.Assert.assertEquals("'" + str12 + "' != '" + "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos." + "'", str12, "Dolorem deleniti nostrum reiciendis eum rerum non illo nihil expedita maiores officiis id sunt quos dolorem enim deserunt quas occaecati vero facilis voluptas facilis veniam explicabo eos.");
+    }
+	@Test
+    public void test176_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.util.List<java.lang.String> strList9 = lorem6.paragraphs(14);
+        java.lang.String str11 = lorem6.fixedString((int) 'v');
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "f419elkozr9kozw93db4fq3rgmhk1luftmehfrjjsoipgozoodanz19x2hecym79akxwzj555yg1aqfnyfdmub1suz71n0iqenotfsjh9yx8zj7ld4y654fvtetnhhgrd75gxitwq8gynrsf8wbhv4eqwkue73lvug610intyv1gx8mptv6dwo7m2uc6aywfrdt4x7wtnwlgdc8mi8h4lf5n68yo50vm6cttn593zk6bra3f0g8wqtt84dsa8br" + "'", str7, "f419elkozr9kozw93db4fq3rgmhk1luftmehfrjjsoipgozoodanz19x2hecym79akxwzj555yg1aqfnyfdmub1suz71n0iqenotfsjh9yx8zj7ld4y654fvtetnhhgrd75gxitwq8gynrsf8wbhv4eqwkue73lvug610intyv1gx8mptv6dwo7m2uc6aywfrdt4x7wtnwlgdc8mi8h4lf5n68yo50vm6cttn593zk6bra3f0g8wqtt84dsa8br");
+        org.junit.Assert.assertNotNull(strList9);
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "Ut tenetur eos amet nobis.Non aut qui aut hic aperiam aut.Inventore corporis quis quaerat quam modi.Id voluptatem quam" + "'", str11, "Ut tenetur eos amet nobis.Non aut qui aut hic aperiam aut.Inventore corporis quis quaerat quam modi.Id voluptatem quam");
+    }
+	@Test
+    public void test176_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test176");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.util.List<java.lang.String> strList9 = lorem6.paragraphs(14);
+        java.lang.String str11 = lorem6.fixedString((int) 'v');
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "f419elkozr9kozw93db4fq3rgmhk1luftmehfrjjsoipgozoodanz19x2hecym79akxwzj555yg1aqfnyfdmub1suz71n0iqenotfsjh9yx8zj7ld4y654fvtetnhhgrd75gxitwq8gynrsf8wbhv4eqwkue73lvug610intyv1gx8mptv6dwo7m2uc6aywfrdt4x7wtnwlgdc8mi8h4lf5n68yo50vm6cttn593zk6bra3f0g8wqtt84dsa8br" + "'", str7, "f419elkozr9kozw93db4fq3rgmhk1luftmehfrjjsoipgozoodanz19x2hecym79akxwzj555yg1aqfnyfdmub1suz71n0iqenotfsjh9yx8zj7ld4y654fvtetnhhgrd75gxitwq8gynrsf8wbhv4eqwkue73lvug610intyv1gx8mptv6dwo7m2uc6aywfrdt4x7wtnwlgdc8mi8h4lf5n68yo50vm6cttn593zk6bra3f0g8wqtt84dsa8br");
+        org.junit.Assert.assertNotNull(strList9);
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "Ut tenetur eos amet nobis.Non aut qui aut hic aperiam aut.Inventore corporis quis quaerat quam modi.Id voluptatem quam" + "'", str11, "Ut tenetur eos amet nobis.Non aut qui aut hic aperiam aut.Inventore corporis quis quaerat quam modi.Id voluptatem quam");
+    }
+	@Test
+    public void test177_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.Country country4 = faker1.country();
+        java.lang.String str5 = country4.countryCode2();
+        java.lang.String str6 = country4.countryCode3();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(country4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "lr" + "'", str5, "lr");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "lka" + "'", str6, "lka");
+    }
+	@Test
+    public void test177_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test177");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.Country country4 = faker1.country();
+        java.lang.String str5 = country4.countryCode2();
+        java.lang.String str6 = country4.countryCode3();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(country4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "lr" + "'", str5, "lr");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "lka" + "'", str6, "lka");
+    }
+	@Test
+    public void test178_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test178");
+         com.apifortress.apiffaker.Main.stressTest((int) (byte) -1, 894);
+    }
+	@Test
+    public void test179_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test179");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        com.github.javafaker.Robin robin4 = faker1.robin();
+        com.github.javafaker.Job job5 = faker1.job();
+        java.lang.String str6 = job5.seniority();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+        org.junit.Assert.assertNotNull(robin4);
+        org.junit.Assert.assertNotNull(job5);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Corporate" + "'", str6, "Corporate");
+    }
+	@Test
+    public void test182_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.University university4 = faker1.university();
+        java.lang.String str5 = university4.prefix();
+        java.lang.String str6 = university4.suffix();
+        java.lang.String str7 = university4.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(university4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Southern" + "'", str5, "Southern");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "College" + "'", str6, "College");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Northern Corkery" + "'", str7, "Northern Corkery");
+    }
+	@Test
+    public void test182_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.University university4 = faker1.university();
+        java.lang.String str5 = university4.prefix();
+        java.lang.String str6 = university4.suffix();
+        java.lang.String str7 = university4.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(university4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Southern" + "'", str5, "Southern");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "College" + "'", str6, "College");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Northern Corkery" + "'", str7, "Northern Corkery");
+    }
+	@Test
+    public void test182_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test182");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.University university4 = faker1.university();
+        java.lang.String str5 = university4.prefix();
+        java.lang.String str6 = university4.suffix();
+        java.lang.String str7 = university4.name();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(university4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Southern" + "'", str5, "Southern");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "College" + "'", str6, "College");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Northern Corkery" + "'", str7, "Northern Corkery");
+    }
+	@Test
+    public void test183_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test183");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        java.lang.String str3 = weather2.temperatureCelsius();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str6 = weather2.temperatureCelsius((int) (short) 100, (int) '#');
+            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: bound must be positive");
+        } catch (java.lang.IllegalArgumentException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "-10\260C" + "'", str3, "-10\260C");
+    }
+	@Test
+    public void test185_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal((long) 6, (long) 'e', (int) (byte) 0);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Netherlands Antilles" + "'", str1, "Netherlands Antilles");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Skopje" + "'", str2, "Europe/Skopje");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "38.86" + "'", str3, "38.86");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 77.0d + "'", double9 == 77.0d);
+    }
+	@Test
+    public void test185_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal((long) 6, (long) 'e', (int) (byte) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Netherlands Antilles" + "'", str1, "Netherlands Antilles");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Skopje" + "'", str2, "Europe/Skopje");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "38.86" + "'", str3, "38.86");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 77.0d + "'", double9 == 77.0d);
+    }
+	@Test
+    public void test185_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal((long) 6, (long) 'e', (int) (byte) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Netherlands Antilles" + "'", str1, "Netherlands Antilles");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Skopje" + "'", str2, "Europe/Skopje");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "38.86" + "'", str3, "38.86");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 77.0d + "'", double9 == 77.0d);
+    }
+	@Test
+    public void test185_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test185");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal((long) 6, (long) 'e', (int) (byte) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Netherlands Antilles" + "'", str1, "Netherlands Antilles");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Skopje" + "'", str2, "Europe/Skopje");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "38.86" + "'", str3, "38.86");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 77.0d + "'", double9 == 77.0d);
+    }
+	@Test
+    public void test187_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test187");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "9790972260960" + "'", str5, "9790972260960");
+    }
+	@Test
+    public void test189_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test189");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str11 = lorem6.sentence((-1), 5);
+        java.lang.String str15 = lorem6.characters((int) (byte) -1, false, false);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'm' + "'", char8 == 'm');
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "Odit tenetur dolor." + "'", str11, "Odit tenetur dolor.");
+        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "" + "'", str15, "");
+    }
+	@Test
+    public void test189_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test189");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        char char8 = lorem6.character(false);
+        java.lang.String str11 = lorem6.sentence((-1), 5);
+        java.lang.String str15 = lorem6.characters((int) (byte) -1, false, false);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertTrue("'" + char8 + "' != '" + 'm' + "'", char8 == 'm');
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "Odit tenetur dolor." + "'", str11, "Odit tenetur dolor.");
+        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "" + "'", str15, "");
+    }
+	@Test
+    public void test190_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.url();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "First-ClassPromotion397485" + "'", str4, "First-ClassPromotion397485");
+// flaky:         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 30.3d + "'", double7 == 30.3d);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "www.alene-lynch.info" + "'", str8, "www.alene-lynch.info");
+    }
+	@Test
+    public void test190_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.url();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "First-ClassPromotion397485" + "'", str4, "First-ClassPromotion397485");
+         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 30.3d + "'", double7 == 30.3d);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "www.alene-lynch.info" + "'", str8, "www.alene-lynch.info");
+    }
+	@Test
+    public void test190_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test190");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.promotionCode();
+        double double7 = f2.decimal((long) 10, (long) (byte) 100);
+        java.lang.String str8 = f2.url();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "First-ClassPromotion397485" + "'", str4, "First-ClassPromotion397485");
+// flaky:         org.junit.Assert.assertTrue("'" + double7 + "' != '" + 30.3d + "'", double7 == 30.3d);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "www.alene-lynch.info" + "'", str8, "www.alene-lynch.info");
+    }
+	@Test
+    public void test192_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        java.lang.String str7 = friends6.character();
+        java.lang.String str8 = friends6.quote();
+        java.lang.String str9 = friends6.location();
+        java.lang.String str10 = friends6.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Chloe" + "'", str7, "Chloe");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "\u2019re gonna love it!" + "'", str8, "\u2019re gonna love it!");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Central Perk" + "'", str9, "Central Perk");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "\u2019\u2019s divorced." + "'", str10, "\u2019\u2019s divorced.");
+    }
+	@Test
+    public void test192_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        java.lang.String str7 = friends6.character();
+        java.lang.String str8 = friends6.quote();
+        java.lang.String str9 = friends6.location();
+        java.lang.String str10 = friends6.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Chloe" + "'", str7, "Chloe");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "\u2019re gonna love it!" + "'", str8, "\u2019re gonna love it!");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Central Perk" + "'", str9, "Central Perk");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "\u2019\u2019s divorced." + "'", str10, "\u2019\u2019s divorced.");
+    }
+	@Test
+    public void test192_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        java.lang.String str7 = friends6.character();
+        java.lang.String str8 = friends6.quote();
+        java.lang.String str9 = friends6.location();
+        java.lang.String str10 = friends6.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Chloe" + "'", str7, "Chloe");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "\u2019re gonna love it!" + "'", str8, "\u2019re gonna love it!");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Central Perk" + "'", str9, "Central Perk");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "\u2019\u2019s divorced." + "'", str10, "\u2019\u2019s divorced.");
+    }
+	@Test
+    public void test192_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test192");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        java.lang.String str7 = friends6.character();
+        java.lang.String str8 = friends6.quote();
+        java.lang.String str9 = friends6.location();
+        java.lang.String str10 = friends6.quote();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Chloe" + "'", str7, "Chloe");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "\u2019re gonna love it!" + "'", str8, "\u2019re gonna love it!");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Central Perk" + "'", str9, "Central Perk");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "\u2019\u2019s divorced." + "'", str10, "\u2019\u2019s divorced.");
+    }
+	@Test
+    public void test193_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        java.lang.String str5 = commerce3.promotionCode(894);
+        java.lang.String str6 = commerce3.productName();
+        java.lang.String str7 = commerce3.material();
+        java.lang.String str8 = commerce3.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071" + "'", str5, "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gorgeous Paper Table" + "'", str6, "Gorgeous Paper Table");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Cotton" + "'", str7, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "ivory" + "'", str8, "ivory");
+    }
+	@Test
+    public void test193_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        java.lang.String str5 = commerce3.promotionCode(894);
+        java.lang.String str6 = commerce3.productName();
+        java.lang.String str7 = commerce3.material();
+        java.lang.String str8 = commerce3.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071" + "'", str5, "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gorgeous Paper Table" + "'", str6, "Gorgeous Paper Table");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Cotton" + "'", str7, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "ivory" + "'", str8, "ivory");
+    }
+	@Test
+    public void test193_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        java.lang.String str5 = commerce3.promotionCode(894);
+        java.lang.String str6 = commerce3.productName();
+        java.lang.String str7 = commerce3.material();
+        java.lang.String str8 = commerce3.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071" + "'", str5, "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gorgeous Paper Table" + "'", str6, "Gorgeous Paper Table");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Cotton" + "'", str7, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "ivory" + "'", str8, "ivory");
+    }
+	@Test
+    public void test193_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test193");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        java.lang.String str5 = commerce3.promotionCode(894);
+        java.lang.String str6 = commerce3.productName();
+        java.lang.String str7 = commerce3.material();
+        java.lang.String str8 = commerce3.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071" + "'", str5, "OverwhelmingPromotion500703783374110781030218744041126657003758916217746774578390787014588247361850149555880346940888156737956125707871054048605531565537636554361344146523041503269110487582529248840775573374576448242239361428375696873223541824360378236885108076542774425881058166315328694703607939161677222810842021673090244647408514055194484258995828662500058341832805368283722252822750464400448474159280868208100646461083108253004436189324156105688645140617558557862658663828266951833584124881056542975797302145780676562039651716504821728356430847014179602025480470709320951973622381246551448821369004106953868307412118062160644276321752244763641366253726844204320142602722162030756166161535262124675270365561414923650257307764002156617625364808726206915449441549004445981475418325726327769588643070028100510707571150659773122283758820380660597518976932971638680268849606641392246312375131231516453654632855870071");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Gorgeous Paper Table" + "'", str6, "Gorgeous Paper Table");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Cotton" + "'", str7, "Cotton");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "ivory" + "'", str8, "ivory");
+    }
+	@Test
+    public void test194_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.material();
+        java.lang.String str11 = commerce2.price(46.23d, 0.0d);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1.05" + "'", str6, "1.05");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Baby & Home" + "'", str7, "Baby & Home");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wool" + "'", str8, "Wool");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "20.45" + "'", str11, "20.45");
+    }
+	@Test
+    public void test194_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.material();
+        java.lang.String str11 = commerce2.price(46.23d, 0.0d);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1.05" + "'", str6, "1.05");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Baby & Home" + "'", str7, "Baby & Home");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wool" + "'", str8, "Wool");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "20.45" + "'", str11, "20.45");
+    }
+	@Test
+    public void test194_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.material();
+        java.lang.String str11 = commerce2.price(46.23d, 0.0d);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1.05" + "'", str6, "1.05");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Baby & Home" + "'", str7, "Baby & Home");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wool" + "'", str8, "Wool");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "20.45" + "'", str11, "20.45");
+    }
+	@Test
+    public void test194_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.material();
+        java.lang.String str11 = commerce2.price(46.23d, 0.0d);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1.05" + "'", str6, "1.05");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Baby & Home" + "'", str7, "Baby & Home");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wool" + "'", str8, "Wool");
+// flaky:         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "20.45" + "'", str11, "20.45");
+    }
+	@Test
+    public void test194_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test194");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str6 = commerce2.price((double) (-1.0f), 10.0d);
+        java.lang.String str7 = commerce2.department();
+        java.lang.String str8 = commerce2.material();
+        java.lang.String str11 = commerce2.price(46.23d, 0.0d);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cotton" + "'", str3, "Cotton");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "1.05" + "'", str6, "1.05");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Baby & Home" + "'", str7, "Baby & Home");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Wool" + "'", str8, "Wool");
+         org.junit.Assert.assertEquals("'" + str11 + "' != '" + "20.45" + "'", str11, "20.45");
+    }
+	@Test
+    public void test195_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test195");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.coatLength();
+        java.lang.String str4 = dog2.size();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "wire" + "'", str3, "wire");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "medium" + "'", str4, "medium");
+    }
+	@Test
+    public void test195_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test195");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.coatLength();
+        java.lang.String str4 = dog2.size();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "wire" + "'", str3, "wire");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "medium" + "'", str4, "medium");
+    }
+	@Test
+    public void test196_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test196");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.url();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "www.dick-schmitt.io" + "'", str3, "www.dick-schmitt.io");
+    }
+	@Test
+    public void test197_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test197");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f2 = util1.getFaker();
+        boolean boolean3 = f2.getTemplateStyle();
+        java.lang.String str4 = f2.firstName();
+        org.junit.Assert.assertNotNull(f2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + true + "'", boolean3 == true);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Lelah" + "'", str4, "Lelah");
+    }
+	@Test
+    public void test198_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test198");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.Country country4 = faker1.country();
+        java.lang.String str5 = country4.countryCode3();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(country4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ner" + "'", str5, "ner");
+    }
+	@Test
+    public void test199_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test199");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.secondaryAddress();
+        java.lang.String str6 = address4.buildingNumber();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Apt. 178" + "'", str5, "Apt. 178");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "3519" + "'", str6, "3519");
+    }
+	@Test
+    public void test199_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test199");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.secondaryAddress();
+        java.lang.String str6 = address4.buildingNumber();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Apt. 178" + "'", str5, "Apt. 178");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "3519" + "'", str6, "3519");
+    }
+	@Test
+    public void test202_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test202");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Artist artist2 = faker1.artist();
+        com.github.javafaker.HowIMetYourMother howIMetYourMother3 = faker1.howIMetYourMother();
+        java.lang.String str4 = howIMetYourMother3.highFive();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(artist2);
+        org.junit.Assert.assertNotNull(howIMetYourMother3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Arthritis Five" + "'", str4, "Arthritis Five");
+    }
+	@Test
+    public void test203_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.material();
+        java.lang.String str5 = commerce2.promotionCode();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Granite" + "'", str4, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MarvelousReward634811" + "'", str5, "MarvelousReward634811");
+    }
+	@Test
+    public void test203_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.material();
+        java.lang.String str5 = commerce2.promotionCode();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Granite" + "'", str4, "Granite");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MarvelousReward634811" + "'", str5, "MarvelousReward634811");
+    }
+	@Test
+    public void test203_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test203");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.material();
+        java.lang.String str5 = commerce2.promotionCode();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Granite" + "'", str4, "Granite");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MarvelousReward634811" + "'", str5, "MarvelousReward634811");
+    }
+	@Test
+    public void test204_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test204");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.age();
+        java.lang.String str4 = dog2.coatLength();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "adult" + "'", str3, "adult");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "curly" + "'", str4, "curly");
+    }
+	@Test
+    public void test204_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test204");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.age();
+        java.lang.String str4 = dog2.coatLength();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "adult" + "'", str3, "adult");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "curly" + "'", str4, "curly");
+    }
+	@Test
+    public void test205_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test205");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str7 = address4.zipCodeByState("Hades");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.Hades resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "RI" + "'", str5, "RI");
+    }
+	@Test
+    public void test206_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test206_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test206_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test206_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test206_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test206_6() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test206");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.zipCode();
+        java.lang.String str10 = address4.streetSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "MN" + "'", str5, "MN");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Kerryville" + "'", str6, "Kerryville");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Moscow" + "'", str7, "Europe/Moscow");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "South" + "'", str8, "South");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "25596-8848" + "'", str9, "25596-8848");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Forks" + "'", str10, "Forks");
+    }
+	@Test
+    public void test207_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test207");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.Country country4 = faker1.country();
+        java.lang.String str5 = country4.flag();
+        java.lang.String str6 = country4.currencyCode();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(country4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "http://flags.fmcdn.net/data/flags/w580/bb.png" + "'", str5, "http://flags.fmcdn.net/data/flags/w580/bb.png");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "EUR" + "'", str6, "EUR");
+    }
+	@Test
+    public void test207_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test207");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        com.github.javafaker.Country country4 = faker1.country();
+        java.lang.String str5 = country4.flag();
+        java.lang.String str6 = country4.currencyCode();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+        org.junit.Assert.assertNotNull(country4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "http://flags.fmcdn.net/data/flags/w580/bb.png" + "'", str5, "http://flags.fmcdn.net/data/flags/w580/bb.png");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "EUR" + "'", str6, "EUR");
+    }
+	@Test
+    public void test208_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test208");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        com.github.javafaker.HitchhikersGuideToTheGalaxy hitchhikersGuideToTheGalaxy1 = faker0.hitchhikersGuideToTheGalaxy();
+        java.lang.String str2 = hitchhikersGuideToTheGalaxy1.location();
+        java.lang.String str3 = hitchhikersGuideToTheGalaxy1.character();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertNotNull(hitchhikersGuideToTheGalaxy1);
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Cathedral of Chalesm" + "'", str2, "Cathedral of Chalesm");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Pizpot Gargravarr" + "'", str3, "Pizpot Gargravarr");
+    }
+	@Test
+    public void test208_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test208");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        com.github.javafaker.HitchhikersGuideToTheGalaxy hitchhikersGuideToTheGalaxy1 = faker0.hitchhikersGuideToTheGalaxy();
+        java.lang.String str2 = hitchhikersGuideToTheGalaxy1.location();
+        java.lang.String str3 = hitchhikersGuideToTheGalaxy1.character();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertNotNull(hitchhikersGuideToTheGalaxy1);
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Cathedral of Chalesm" + "'", str2, "Cathedral of Chalesm");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Pizpot Gargravarr" + "'", str3, "Pizpot Gargravarr");
+    }
+	@Test
+    public void test210_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test210");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        com.github.javafaker.Esports esports7 = faker1.esports();
+        java.lang.String str8 = esports7.player();
+        java.lang.String str9 = esports7.team();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+        org.junit.Assert.assertNotNull(esports7);
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "shroud" + "'", str8, "shroud");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "EnVyUs" + "'", str9, "EnVyUs");
+    }
+	@Test
+    public void test210_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test210");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Color color4 = faker1.color();
+        com.github.javafaker.Beer beer5 = faker1.beer();
+        com.github.javafaker.Friends friends6 = faker1.friends();
+        com.github.javafaker.Esports esports7 = faker1.esports();
+        java.lang.String str8 = esports7.player();
+        java.lang.String str9 = esports7.team();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(color4);
+        org.junit.Assert.assertNotNull(beer5);
+        org.junit.Assert.assertNotNull(friends6);
+        org.junit.Assert.assertNotNull(esports7);
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "shroud" + "'", str8, "shroud");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "EnVyUs" + "'", str9, "EnVyUs");
+    }
+	@Test
+    public void test211_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.isbnGs1();
+        java.lang.String str5 = code2.isbn13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "7958510757484" + "'", str3, "7958510757484");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "978" + "'", str4, "978");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "9790414646291" + "'", str5, "9790414646291");
+    }
+	@Test
+    public void test211_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.isbnGs1();
+        java.lang.String str5 = code2.isbn13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "7958510757484" + "'", str3, "7958510757484");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "978" + "'", str4, "978");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "9790414646291" + "'", str5, "9790414646291");
+    }
+	@Test
+    public void test211_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test211");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.isbnGs1();
+        java.lang.String str5 = code2.isbn13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "7958510757484" + "'", str3, "7958510757484");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "978" + "'", str4, "978");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "9790414646291" + "'", str5, "9790414646291");
+    }
+	@Test
+    public void test213_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test213");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbnGs1();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "978" + "'", str5, "978");
+    }
+	@Test
+    public void test215_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test215");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        java.lang.String str3 = weather2.temperatureCelsius();
+        java.lang.String str4 = weather2.description();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "-24\260C" + "'", str3, "-24\260C");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Cloudy periods" + "'", str4, "Cloudy periods");
+    }
+	@Test
+    public void test215_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test215");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        java.lang.String str3 = weather2.temperatureCelsius();
+        java.lang.String str4 = weather2.description();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "-24\260C" + "'", str3, "-24\260C");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Cloudy periods" + "'", str4, "Cloudy periods");
+    }
+	@Test
+    public void test216_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test216");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Job job4 = faker1.job();
+        java.lang.String str5 = job4.seniority();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(job4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Future" + "'", str5, "Future");
+    }
+	@Test
+    public void test217_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        java.lang.String str10 = f0.capital();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "United Kingdom" + "'", str1, "United Kingdom");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Vienna" + "'", str2, "Europe/Vienna");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "CUC" + "'", str6, "CUC");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.69078990272327E12d + "'", double9 == 1.69078990272327E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Tunis" + "'", str10, "Tunis");
+    }
+	@Test
+    public void test217_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        java.lang.String str10 = f0.capital();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "United Kingdom" + "'", str1, "United Kingdom");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Vienna" + "'", str2, "Europe/Vienna");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "CUC" + "'", str6, "CUC");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.69078990272327E12d + "'", double9 == 1.69078990272327E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Tunis" + "'", str10, "Tunis");
+    }
+	@Test
+    public void test217_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        java.lang.String str10 = f0.capital();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "United Kingdom" + "'", str1, "United Kingdom");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Vienna" + "'", str2, "Europe/Vienna");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "CUC" + "'", str6, "CUC");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.69078990272327E12d + "'", double9 == 1.69078990272327E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Tunis" + "'", str10, "Tunis");
+    }
+	@Test
+    public void test217_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        java.lang.String str10 = f0.capital();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "United Kingdom" + "'", str1, "United Kingdom");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Vienna" + "'", str2, "Europe/Vienna");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "CUC" + "'", str6, "CUC");
+         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.69078990272327E12d + "'", double9 == 1.69078990272327E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Tunis" + "'", str10, "Tunis");
+    }
+	@Test
+    public void test217_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test217");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.currencyCode();
+        double double9 = f0.decimal((long) (short) 100, 1700470093997L);
+        java.lang.String str10 = f0.capital();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "United Kingdom" + "'", str1, "United Kingdom");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Vienna" + "'", str2, "Europe/Vienna");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "CUC" + "'", str6, "CUC");
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.69078990272327E12d + "'", double9 == 1.69078990272327E12d);
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Tunis" + "'", str10, "Tunis");
+    }
+	@Test
+    public void test218_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        int[] intArray7 = f0.integerList(42, (int) (short) 0);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "b414b923-8648-4dae-84cc-55f4f6c59324" + "'", str1, "b414b923-8648-4dae-84cc-55f4f6c59324");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 27.92d + "'", double2 == 27.92d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Skyway" + "'", str3, "Skyway");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41155" + "'", str4, "41155");
+        org.junit.Assert.assertNotNull(intArray7);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[17, 39, 6, 3, 2, 33, 34, 35, 36, 37]");
+    }
+	@Test
+    public void test218_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        int[] intArray7 = f0.integerList(42, (int) (short) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "b414b923-8648-4dae-84cc-55f4f6c59324" + "'", str1, "b414b923-8648-4dae-84cc-55f4f6c59324");
+         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 27.92d + "'", double2 == 27.92d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Skyway" + "'", str3, "Skyway");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41155" + "'", str4, "41155");
+        org.junit.Assert.assertNotNull(intArray7);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[17, 39, 6, 3, 2, 33, 34, 35, 36, 37]");
+    }
+	@Test
+    public void test218_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        int[] intArray7 = f0.integerList(42, (int) (short) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "b414b923-8648-4dae-84cc-55f4f6c59324" + "'", str1, "b414b923-8648-4dae-84cc-55f4f6c59324");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 27.92d + "'", double2 == 27.92d);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Skyway" + "'", str3, "Skyway");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41155" + "'", str4, "41155");
+        org.junit.Assert.assertNotNull(intArray7);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[17, 39, 6, 3, 2, 33, 34, 35, 36, 37]");
+    }
+	@Test
+    public void test218_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        int[] intArray7 = f0.integerList(42, (int) (short) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "b414b923-8648-4dae-84cc-55f4f6c59324" + "'", str1, "b414b923-8648-4dae-84cc-55f4f6c59324");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 27.92d + "'", double2 == 27.92d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Skyway" + "'", str3, "Skyway");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41155" + "'", str4, "41155");
+        org.junit.Assert.assertNotNull(intArray7);
+// flaky:         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[17, 39, 6, 3, 2, 33, 34, 35, 36, 37]");
+    }
+	@Test
+    public void test218_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test218");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        int[] intArray7 = f0.integerList(42, (int) (short) 0);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "b414b923-8648-4dae-84cc-55f4f6c59324" + "'", str1, "b414b923-8648-4dae-84cc-55f4f6c59324");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 27.92d + "'", double2 == 27.92d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Skyway" + "'", str3, "Skyway");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41155" + "'", str4, "41155");
+        org.junit.Assert.assertNotNull(intArray7);
+         org.junit.Assert.assertEquals(java.util.Arrays.toString(intArray7), "[17, 39, 6, 3, 2, 33, 34, 35, 36, 37]");
+    }
+	@Test
+    public void test220_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        java.lang.String str10 = lorem6.paragraph();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun" + "'", str7, "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Aspernatur dolorem saepe." + "'", str9, "Aspernatur dolorem saepe.");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta." + "'", str10, "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta.");
+    }
+	@Test
+    public void test220_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        java.lang.String str10 = lorem6.paragraph();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun" + "'", str7, "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Aspernatur dolorem saepe." + "'", str9, "Aspernatur dolorem saepe.");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta." + "'", str10, "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta.");
+    }
+	@Test
+    public void test220_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test220");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        java.lang.String str10 = lorem6.paragraph();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun" + "'", str7, "ps87d0h82won7yxhaq1mncsyxfm0nvy10efbrtfmu64wiied9bjpsfftgg99ftad7rpfs676cjxmdytm6l2n2b1iqr91uxmkoj68ca0h043wwynwfkr7ageh9kskrz6jxm6kklbi2t4gonngmr8gj24vbihaubsp3rmkjkvya6x1k0628nr0l290hi4j0ihzb7dkehegvzfzt1sdx032h7dznox7x304jmvl4a2uyj1a2rc9hqjm259ctogioun");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Aspernatur dolorem saepe." + "'", str9, "Aspernatur dolorem saepe.");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta." + "'", str10, "Dolor sed corrupti corporis voluptatum minima voluptas. Modi iure vero perspiciatis aperiam. Non porro ea et accusantium sed iure. Quibusdam ratione ut architecto rerum voluptatem et. Aliquam tenetur voluptas ut laborum iste dicta.");
+    }
+	@Test
+    public void test221_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        java.lang.String str5 = f0.firstName();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "850f2d4d-d337-43c6-9028-12df4ec37ef7" + "'", str1, "850f2d4d-d337-43c6-9028-12df4ec37ef7");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 4.49d + "'", double2 == 4.49d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Fords" + "'", str3, "Fords");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "02997" + "'", str4, "02997");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Quinn" + "'", str5, "Quinn");
+    }
+	@Test
+    public void test221_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        java.lang.String str5 = f0.firstName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "850f2d4d-d337-43c6-9028-12df4ec37ef7" + "'", str1, "850f2d4d-d337-43c6-9028-12df4ec37ef7");
+         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 4.49d + "'", double2 == 4.49d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Fords" + "'", str3, "Fords");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "02997" + "'", str4, "02997");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Quinn" + "'", str5, "Quinn");
+    }
+	@Test
+    public void test221_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        java.lang.String str5 = f0.firstName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "850f2d4d-d337-43c6-9028-12df4ec37ef7" + "'", str1, "850f2d4d-d337-43c6-9028-12df4ec37ef7");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 4.49d + "'", double2 == 4.49d);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Fords" + "'", str3, "Fords");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "02997" + "'", str4, "02997");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Quinn" + "'", str5, "Quinn");
+    }
+	@Test
+    public void test221_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        java.lang.String str5 = f0.firstName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "850f2d4d-d337-43c6-9028-12df4ec37ef7" + "'", str1, "850f2d4d-d337-43c6-9028-12df4ec37ef7");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 4.49d + "'", double2 == 4.49d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Fords" + "'", str3, "Fords");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "02997" + "'", str4, "02997");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Quinn" + "'", str5, "Quinn");
+    }
+	@Test
+    public void test221_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test221");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.uuid();
+        double double2 = f0.decimal();
+        java.lang.String str3 = f0.streetSuffix();
+        java.lang.String str4 = f0.buildingNumber();
+        java.lang.String str5 = f0.firstName();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "850f2d4d-d337-43c6-9028-12df4ec37ef7" + "'", str1, "850f2d4d-d337-43c6-9028-12df4ec37ef7");
+// flaky:         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 4.49d + "'", double2 == 4.49d);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Fords" + "'", str3, "Fords");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "02997" + "'", str4, "02997");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Quinn" + "'", str5, "Quinn");
+    }
+	@Test
+    public void test222_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal(1700470093997L, (long) 4, (int) '9');
+        java.lang.String str10 = f0.citySuffix();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Lisbon" + "'", str2, "Europe/Lisbon");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "96.54" + "'", str3, "96.54");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.4754956935686045E12d + "'", double9 == 1.4754956935686045E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "land" + "'", str10, "land");
+    }
+	@Test
+    public void test222_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal(1700470093997L, (long) 4, (int) '9');
+        java.lang.String str10 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Lisbon" + "'", str2, "Europe/Lisbon");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "96.54" + "'", str3, "96.54");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.4754956935686045E12d + "'", double9 == 1.4754956935686045E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "land" + "'", str10, "land");
+    }
+	@Test
+    public void test222_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal(1700470093997L, (long) 4, (int) '9');
+        java.lang.String str10 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Lisbon" + "'", str2, "Europe/Lisbon");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "96.54" + "'", str3, "96.54");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.4754956935686045E12d + "'", double9 == 1.4754956935686045E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "land" + "'", str10, "land");
+    }
+	@Test
+    public void test222_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal(1700470093997L, (long) 4, (int) '9');
+        java.lang.String str10 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Lisbon" + "'", str2, "Europe/Lisbon");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "96.54" + "'", str3, "96.54");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.4754956935686045E12d + "'", double9 == 1.4754956935686045E12d);
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "land" + "'", str10, "land");
+    }
+	@Test
+    public void test222_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test222");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        java.lang.String str3 = f0.price();
+        double double5 = f0.decimal(100L);
+        double double9 = f0.decimal(1700470093997L, (long) 4, (int) '9');
+        java.lang.String str10 = f0.citySuffix();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Malawi" + "'", str1, "Malawi");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Europe/Lisbon" + "'", str2, "Europe/Lisbon");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "96.54" + "'", str3, "96.54");
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 100.0d + "'", double5 == 100.0d);
+// flaky:         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 1.4754956935686045E12d + "'", double9 == 1.4754956935686045E12d);
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "land" + "'", str10, "land");
+    }
+	@Test
+    public void test223_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test223");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Pokemon pokemon3 = faker1.pokemon();
+        java.lang.String str4 = pokemon3.location();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(pokemon3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Nuvema Town" + "'", str4, "Nuvema Town");
+    }
+	@Test
+    public void test224_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test224");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        java.lang.String str2 = faker0.bothify("Asia/Tokyo");
+        com.github.javafaker.LeagueOfLegends leagueOfLegends3 = faker0.leagueOfLegends();
+        java.lang.String str4 = leagueOfLegends3.masteries();
+        java.lang.String str5 = leagueOfLegends3.masteries();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertNotNull(leagueOfLegends3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Sorcery" + "'", str4, "Sorcery");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Runic Affinity" + "'", str5, "Runic Affinity");
+    }
+	@Test
+    public void test224_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test224");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        java.lang.String str2 = faker0.bothify("Asia/Tokyo");
+        com.github.javafaker.LeagueOfLegends leagueOfLegends3 = faker0.leagueOfLegends();
+        java.lang.String str4 = leagueOfLegends3.masteries();
+        java.lang.String str5 = leagueOfLegends3.masteries();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertNotNull(leagueOfLegends3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Sorcery" + "'", str4, "Sorcery");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Runic Affinity" + "'", str5, "Runic Affinity");
+    }
+	@Test
+    public void test225_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        char char10 = lorem6.character();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y" + "'", str7, "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Perferendis officia nemo ut voluptatum." + "'", str9, "Perferendis officia nemo ut voluptatum.");
+// flaky:         org.junit.Assert.assertTrue("'" + char10 + "' != '" + 'a' + "'", char10 == 'a');
+    }
+	@Test
+    public void test225_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        char char10 = lorem6.character();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y" + "'", str7, "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Perferendis officia nemo ut voluptatum." + "'", str9, "Perferendis officia nemo ut voluptatum.");
+// flaky:         org.junit.Assert.assertTrue("'" + char10 + "' != '" + 'a' + "'", char10 == 'a');
+    }
+	@Test
+    public void test225_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test225");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Currency currency5 = faker1.currency();
+        com.github.javafaker.Lorem lorem6 = faker1.lorem();
+        java.lang.String str7 = lorem6.characters();
+        java.lang.String str9 = lorem6.sentence(0);
+        char char10 = lorem6.character();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(currency5);
+        org.junit.Assert.assertNotNull(lorem6);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y" + "'", str7, "6nh3286ntcl6878tlrfggmlvpmdhxwamyrcmiryh42odzbxvhqfrgzw7sfl3ktn73ydujshoo2a73dz2rm71zdhu62426yfs3o2o4fwjltu7tr693ohgrm36ffxpg91kcm2n1wnej55y1ztid3kunjfw3205ig23k0hpcbtlfhl4xmlhdn57pw5degptr0m9hc8vu334n2tcco2w857sl1pg1ppe85tzudukxitrwzlrkikxct29ce6hykjws3y");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Perferendis officia nemo ut voluptatum." + "'", str9, "Perferendis officia nemo ut voluptatum.");
+         org.junit.Assert.assertTrue("'" + char10 + "' != '" + 'a' + "'", char10 == 'a');
+    }
+	@Test
+    public void test226_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.longitude();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OK" + "'", str5, "OK");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Feestchester" + "'", str6, "Feestchester");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Kiev" + "'", str7, "Europe/Kiev");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Lake" + "'", str8, "Lake");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "82.230831" + "'", str9, "82.230831");
+    }
+	@Test
+    public void test226_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.longitude();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OK" + "'", str5, "OK");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Feestchester" + "'", str6, "Feestchester");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Kiev" + "'", str7, "Europe/Kiev");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Lake" + "'", str8, "Lake");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "82.230831" + "'", str9, "82.230831");
+    }
+	@Test
+    public void test226_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.longitude();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OK" + "'", str5, "OK");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Feestchester" + "'", str6, "Feestchester");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Kiev" + "'", str7, "Europe/Kiev");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Lake" + "'", str8, "Lake");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "82.230831" + "'", str9, "82.230831");
+    }
+	@Test
+    public void test226_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.longitude();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OK" + "'", str5, "OK");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Feestchester" + "'", str6, "Feestchester");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Kiev" + "'", str7, "Europe/Kiev");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Lake" + "'", str8, "Lake");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "82.230831" + "'", str9, "82.230831");
+    }
+	@Test
+    public void test226_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test226");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.city();
+        java.lang.String str7 = address4.timeZone();
+        java.lang.String str8 = address4.cityPrefix();
+        java.lang.String str9 = address4.longitude();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "OK" + "'", str5, "OK");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Feestchester" + "'", str6, "Feestchester");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Europe/Kiev" + "'", str7, "Europe/Kiev");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Lake" + "'", str8, "Lake");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "82.230831" + "'", str9, "82.230831");
+    }
+	@Test
+    public void test227_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str8 = address4.zipCodeByState("Marble");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.Marble resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "FL" + "'", str5, "FL");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Stravenue" + "'", str6, "Stravenue");
+    }
+	@Test
+    public void test227_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test227");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str8 = address4.zipCodeByState("Marble");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.Marble resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "FL" + "'", str5, "FL");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Stravenue" + "'", str6, "Stravenue");
+    }
+	@Test
+    public void test230_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test230");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Artist artist2 = faker1.artist();
+        com.github.javafaker.HowIMetYourMother howIMetYourMother3 = faker1.howIMetYourMother();
+        java.lang.String str4 = howIMetYourMother3.catchPhrase();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(artist2);
+        org.junit.Assert.assertNotNull(howIMetYourMother3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Suit Up" + "'", str4, "Suit Up");
+    }
+	@Test
+    public void test231_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test231");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        java.lang.String str2 = faker0.bothify("Asia/Tokyo");
+        com.github.javafaker.LeagueOfLegends leagueOfLegends3 = faker0.leagueOfLegends();
+        java.lang.String str4 = leagueOfLegends3.location();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Asia/Tokyo" + "'", str2, "Asia/Tokyo");
+        org.junit.Assert.assertNotNull(leagueOfLegends3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Zaun" + "'", str4, "Zaun");
+    }
+	@Test
+    public void test232_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.sound();
+        java.lang.String str5 = dog2.memePhrase();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Dingo" + "'", str3, "Dingo");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "woof woof" + "'", str4, "woof woof");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "blep" + "'", str5, "blep");
+    }
+	@Test
+    public void test232_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.sound();
+        java.lang.String str5 = dog2.memePhrase();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Dingo" + "'", str3, "Dingo");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "woof woof" + "'", str4, "woof woof");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "blep" + "'", str5, "blep");
+    }
+	@Test
+    public void test232_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test232");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.sound();
+        java.lang.String str5 = dog2.memePhrase();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Dingo" + "'", str3, "Dingo");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "woof woof" + "'", str4, "woof woof");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "blep" + "'", str5, "blep");
+    }
+	@Test
+    public void test233_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test233");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetAddressNumber();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "CO" + "'", str5, "CO");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "147" + "'", str6, "147");
+    }
+	@Test
+    public void test233_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test233");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetAddressNumber();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "CO" + "'", str5, "CO");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "147" + "'", str6, "147");
+    }
+	@Test
+    public void test234_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test234");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Esports esports3 = faker1.esports();
+        java.lang.String str4 = esports3.league();
+        java.lang.String str5 = esports3.event();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(esports3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ESL" + "'", str4, "ESL");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "League All Stars" + "'", str5, "League All Stars");
+    }
+	@Test
+    public void test234_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test234");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Esports esports3 = faker1.esports();
+        java.lang.String str4 = esports3.league();
+        java.lang.String str5 = esports3.event();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(esports3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "ESL" + "'", str4, "ESL");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "League All Stars" + "'", str5, "League All Stars");
+    }
+	@Test
+    public void test236_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        com.github.javafaker.Robin robin4 = faker1.robin();
+        com.github.javafaker.Book book5 = faker1.book();
+        java.lang.String str6 = book5.publisher();
+        java.lang.String str7 = book5.author();
+        java.lang.String str8 = book5.publisher();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+        org.junit.Assert.assertNotNull(robin4);
+        org.junit.Assert.assertNotNull(book5);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Andr\351 Deutsch" + "'", str6, "Andr\351 Deutsch");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Miss Chong Harber" + "'", str7, "Miss Chong Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cengage Learning" + "'", str8, "Cengage Learning");
+    }
+	@Test
+    public void test236_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        com.github.javafaker.Robin robin4 = faker1.robin();
+        com.github.javafaker.Book book5 = faker1.book();
+        java.lang.String str6 = book5.publisher();
+        java.lang.String str7 = book5.author();
+        java.lang.String str8 = book5.publisher();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+        org.junit.Assert.assertNotNull(robin4);
+        org.junit.Assert.assertNotNull(book5);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Andr\351 Deutsch" + "'", str6, "Andr\351 Deutsch");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Miss Chong Harber" + "'", str7, "Miss Chong Harber");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cengage Learning" + "'", str8, "Cengage Learning");
+    }
+	@Test
+    public void test236_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test236");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Cat cat2 = faker1.cat();
+        com.github.javafaker.Commerce commerce3 = faker1.commerce();
+        com.github.javafaker.Robin robin4 = faker1.robin();
+        com.github.javafaker.Book book5 = faker1.book();
+        java.lang.String str6 = book5.publisher();
+        java.lang.String str7 = book5.author();
+        java.lang.String str8 = book5.publisher();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(cat2);
+        org.junit.Assert.assertNotNull(commerce3);
+        org.junit.Assert.assertNotNull(robin4);
+        org.junit.Assert.assertNotNull(book5);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Andr\351 Deutsch" + "'", str6, "Andr\351 Deutsch");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Miss Chong Harber" + "'", str7, "Miss Chong Harber");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Cengage Learning" + "'", str8, "Cengage Learning");
+    }
+	@Test
+    public void test238_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test238");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        com.github.javafaker.Bool bool3 = faker1.bool();
+        boolean boolean4 = bool3.bool();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+        org.junit.Assert.assertNotNull(bool3);
+         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
+    }
+	@Test
+    public void test239_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.memePhrase();
+        java.lang.String str5 = dog2.size();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cardigan Corgi" + "'", str3, "Cardigan Corgi");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "heck no pal" + "'", str4, "heck no pal");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "medium" + "'", str5, "medium");
+    }
+	@Test
+    public void test239_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.memePhrase();
+        java.lang.String str5 = dog2.size();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cardigan Corgi" + "'", str3, "Cardigan Corgi");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "heck no pal" + "'", str4, "heck no pal");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "medium" + "'", str5, "medium");
+    }
+	@Test
+    public void test239_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test239");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Dog dog2 = faker1.dog();
+        java.lang.String str3 = dog2.breed();
+        java.lang.String str4 = dog2.memePhrase();
+        java.lang.String str5 = dog2.size();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(dog2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Cardigan Corgi" + "'", str3, "Cardigan Corgi");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "heck no pal" + "'", str4, "heck no pal");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "medium" + "'", str5, "medium");
+    }
+	@Test
+    public void test242_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test242");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str4 = faker1.bothify("41.72");
+        com.github.javafaker.Number number5 = faker1.number();
+        double double9 = number5.randomDouble((int) (short) 1, (int) (byte) -1, (int) (short) 10);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "41.72" + "'", str4, "41.72");
+        org.junit.Assert.assertNotNull(number5);
+         org.junit.Assert.assertTrue("'" + double9 + "' != '" + 4.5d + "'", double9 == 4.5d);
+    }
+	@Test
+    public void test243_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.streetName();
+        java.lang.String str10 = f0.validSSN();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovakia (Slovak Republic)" + "'", str1, "Slovakia (Slovak Republic)");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "P" + "'", str5, "P");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Kerluke Unions" + "'", str9, "Kerluke Unions");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "751216-8688" + "'", str10, "751216-8688");
+    }
+	@Test
+    public void test243_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.streetName();
+        java.lang.String str10 = f0.validSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovakia (Slovak Republic)" + "'", str1, "Slovakia (Slovak Republic)");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "P" + "'", str5, "P");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Kerluke Unions" + "'", str9, "Kerluke Unions");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "751216-8688" + "'", str10, "751216-8688");
+    }
+	@Test
+    public void test243_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.streetName();
+        java.lang.String str10 = f0.validSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovakia (Slovak Republic)" + "'", str1, "Slovakia (Slovak Republic)");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "P" + "'", str5, "P");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Kerluke Unions" + "'", str9, "Kerluke Unions");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "751216-8688" + "'", str10, "751216-8688");
+    }
+	@Test
+    public void test243_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test243");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.Object obj8 = f0.collection((int) (byte) 1, (java.lang.Object) "I");
+        java.lang.String str9 = f0.streetName();
+        java.lang.String str10 = f0.validSSN();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Slovakia (Slovak Republic)" + "'", str1, "Slovakia (Slovak Republic)");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "P" + "'", str5, "P");
+        org.junit.Assert.assertEquals("'" + obj8 + "' != '" + "Data generator 'I' does not exist in extension F" + "'", obj8, "Data generator 'I' does not exist in extension F");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Kerluke Unions" + "'", str9, "Kerluke Unions");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "751216-8688" + "'", str10, "751216-8688");
+    }
+	@Test
+    public void test245_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test245");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Zelda zelda4 = faker1.zelda();
+        com.github.javafaker.Hipster hipster5 = faker1.hipster();
+        java.lang.String str6 = hipster5.word();
+        java.lang.String str7 = hipster5.word();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(zelda4);
+        org.junit.Assert.assertNotNull(hipster5);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "truffaut" + "'", str6, "truffaut");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "tote bag" + "'", str7, "tote bag");
+    }
+	@Test
+    public void test245_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test245");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Weather weather2 = faker1.weather();
+        com.github.javafaker.Stock stock3 = faker1.stock();
+        com.github.javafaker.Zelda zelda4 = faker1.zelda();
+        com.github.javafaker.Hipster hipster5 = faker1.hipster();
+        java.lang.String str6 = hipster5.word();
+        java.lang.String str7 = hipster5.word();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(weather2);
+        org.junit.Assert.assertNotNull(stock3);
+        org.junit.Assert.assertNotNull(zelda4);
+        org.junit.Assert.assertNotNull(hipster5);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "truffaut" + "'", str6, "truffaut");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "tote bag" + "'", str7, "tote bag");
+    }
+	@Test
+    public void test246_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test246");
+        com.github.javafaker.idnumbers.EnIdNumber enIdNumber0 = new com.github.javafaker.idnumbers.EnIdNumber();
+        java.util.Random random1 = null;
+        com.github.javafaker.Faker faker2 = com.github.javafaker.Faker.instance(random1);
+        com.github.javafaker.Commerce commerce3 = faker2.commerce();
+        com.github.javafaker.Beer beer4 = faker2.beer();
+        java.lang.String str5 = enIdNumber0.getValidSsn(faker2);
+        org.junit.Assert.assertNotNull(faker2);
+        org.junit.Assert.assertNotNull(commerce3);
+        org.junit.Assert.assertNotNull(beer4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "810-72-6286" + "'", str5, "810-72-6286");
+    }
+	@Test
+    public void test248_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test248");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        java.lang.String str4 = internet3.macAddress();
+        java.lang.String str5 = internet3.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "7f:a3:41:45:ff:69" + "'", str4, "7f:a3:41:45:ff:69");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "158.98.249.125" + "'", str5, "158.98.249.125");
+    }
+	@Test
+    public void test248_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test248");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.Internet internet3 = faker1.internet();
+        java.lang.String str4 = internet3.macAddress();
+        java.lang.String str5 = internet3.ipV4Address();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(internet3);
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "7f:a3:41:45:ff:69" + "'", str4, "7f:a3:41:45:ff:69");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "158.98.249.125" + "'", str5, "158.98.249.125");
+    }
+	@Test
+    public void test250_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Heavy Duty Aluminum Bottle" + "'", str4, "Heavy Duty Aluminum Bottle");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "96.02" + "'", str5, "96.02");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "silver" + "'", str6, "silver");
+    }
+	@Test
+    public void test250_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Heavy Duty Aluminum Bottle" + "'", str4, "Heavy Duty Aluminum Bottle");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "96.02" + "'", str5, "96.02");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "silver" + "'", str6, "silver");
+    }
+	@Test
+    public void test250_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Heavy Duty Aluminum Bottle" + "'", str4, "Heavy Duty Aluminum Bottle");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "96.02" + "'", str5, "96.02");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "silver" + "'", str6, "silver");
+    }
+	@Test
+    public void test250_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test250");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Commerce commerce2 = faker1.commerce();
+        java.lang.String str3 = commerce2.material();
+        java.lang.String str4 = commerce2.productName();
+        java.lang.String str5 = commerce2.price();
+        java.lang.String str6 = commerce2.color();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(commerce2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Paper" + "'", str3, "Paper");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Heavy Duty Aluminum Bottle" + "'", str4, "Heavy Duty Aluminum Bottle");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "96.02" + "'", str5, "96.02");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "silver" + "'", str6, "silver");
+    }
+	@Test
+    public void test252_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test252");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetPrefix();
+        java.lang.String str7 = address4.latitude();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = address4.zipCodeByState("37:9a:c4:78:87:55");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.37:9a:c4:78:87:55 resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ID" + "'", str5, "ID");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "xx" + "'", str6, "xx");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "-40.914956" + "'", str7, "-40.914956");
+    }
+	@Test
+    public void test252_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test252");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetPrefix();
+        java.lang.String str7 = address4.latitude();
+        // The following exception was thrown during execution in test generation
+        try {
+            java.lang.String str9 = address4.zipCodeByState("37:9a:c4:78:87:55");
+            org.junit.Assert.fail("Expected exception of type java.lang.RuntimeException; message: address.postcode_by_state.37:9a:c4:78:87:55 resulted in null expression");
+        } catch (java.lang.RuntimeException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "ID" + "'", str5, "ID");
+        org.junit.Assert.assertEquals("'" + str6 + "' != '" + "xx" + "'", str6, "xx");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "-40.914956" + "'", str7, "-40.914956");
+    }
+	@Test
+    public void test254_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test254");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbnGroup();
+        java.lang.String str6 = code4.ean13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0" + "'", str5, "0");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "4365709666237" + "'", str6, "4365709666237");
+    }
+	@Test
+    public void test254_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test254");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbnGroup();
+        java.lang.String str6 = code4.ean13();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "0" + "'", str5, "0");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "4365709666237" + "'", str6, "4365709666237");
+    }
+	@Test
+    public void test256_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test256");
+        com.apifortress.apiffaker.Util util1 = new com.apifortress.apiffaker.Util("");
+        com.apifortress.apiffaker.F f2 = null;
+        util1.setFaker(f2);
+        java.lang.Object obj5 = util1.setLocale("hi!");
+        com.apifortress.apiffaker.F f6 = util1.getFaker();
+        com.apifortress.apiffaker.Util util8 = new com.apifortress.apiffaker.Util("hi!");
+        com.apifortress.apiffaker.F f9 = util8.getFaker();
+        boolean boolean10 = f9.getTemplateStyle();
+        boolean boolean11 = f9.getTemplateStyle();
+        util1.setFaker(f9);
+        java.lang.String str13 = f9.creditCardNumber();
+        org.junit.Assert.assertEquals("'" + obj5 + "' != '" + true + "'", obj5, true);
+        org.junit.Assert.assertNotNull(f6);
+        org.junit.Assert.assertNotNull(f9);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+         org.junit.Assert.assertEquals("'" + str13 + "' != '" + "1234-2121-1221-1211" + "'", str13, "1234-2121-1221-1211");
+    }
+	@Test
+    public void test257_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.lastName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "TX" + "'", str5, "TX");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Knoll" + "'", str6, "Knoll");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Padberg" + "'", str7, "Padberg");
+    }
+	@Test
+    public void test257_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.lastName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "TX" + "'", str5, "TX");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Knoll" + "'", str6, "Knoll");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Padberg" + "'", str7, "Padberg");
+    }
+	@Test
+    public void test257_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test257");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.lastName();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "TX" + "'", str5, "TX");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Knoll" + "'", str6, "Knoll");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Padberg" + "'", str7, "Padberg");
+    }
+	@Test
+    public void test259_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.firstName();
+        java.lang.String str3 = f0.citySuffix();
+        java.lang.String str4 = f0.currency();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Heavy Duty Wooden Knife" + "'", str1, "Heavy Duty Wooden Knife");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Luann" + "'", str2, "Luann");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "haven" + "'", str3, "haven");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Brunei Dollar" + "'", str4, "Brunei Dollar");
+    }
+	@Test
+    public void test259_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.firstName();
+        java.lang.String str3 = f0.citySuffix();
+        java.lang.String str4 = f0.currency();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Heavy Duty Wooden Knife" + "'", str1, "Heavy Duty Wooden Knife");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Luann" + "'", str2, "Luann");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "haven" + "'", str3, "haven");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Brunei Dollar" + "'", str4, "Brunei Dollar");
+    }
+	@Test
+    public void test259_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.firstName();
+        java.lang.String str3 = f0.citySuffix();
+        java.lang.String str4 = f0.currency();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Heavy Duty Wooden Knife" + "'", str1, "Heavy Duty Wooden Knife");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Luann" + "'", str2, "Luann");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "haven" + "'", str3, "haven");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Brunei Dollar" + "'", str4, "Brunei Dollar");
+    }
+	@Test
+    public void test259_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test259");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.productName();
+        java.lang.String str2 = f0.firstName();
+        java.lang.String str3 = f0.citySuffix();
+        java.lang.String str4 = f0.currency();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Heavy Duty Wooden Knife" + "'", str1, "Heavy Duty Wooden Knife");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Luann" + "'", str2, "Luann");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "haven" + "'", str3, "haven");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Brunei Dollar" + "'", str4, "Brunei Dollar");
+    }
+	@Test
+    public void test261_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.stateAbbr();
+        java.lang.String str8 = address4.streetAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "UT" + "'", str5, "UT");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Crossroad" + "'", str6, "Crossroad");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "WV" + "'", str7, "WV");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "1047 Leonel Plains" + "'", str8, "1047 Leonel Plains");
+    }
+	@Test
+    public void test261_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.stateAbbr();
+        java.lang.String str8 = address4.streetAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "UT" + "'", str5, "UT");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Crossroad" + "'", str6, "Crossroad");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "WV" + "'", str7, "WV");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "1047 Leonel Plains" + "'", str8, "1047 Leonel Plains");
+    }
+	@Test
+    public void test261_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.stateAbbr();
+        java.lang.String str8 = address4.streetAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "UT" + "'", str5, "UT");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Crossroad" + "'", str6, "Crossroad");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "WV" + "'", str7, "WV");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "1047 Leonel Plains" + "'", str8, "1047 Leonel Plains");
+    }
+	@Test
+    public void test261_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test261");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        com.github.javafaker.Address address4 = faker1.address();
+        java.lang.String str5 = address4.stateAbbr();
+        java.lang.String str6 = address4.streetSuffix();
+        java.lang.String str7 = address4.stateAbbr();
+        java.lang.String str8 = address4.streetAddress();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertNotNull(address4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "UT" + "'", str5, "UT");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Crossroad" + "'", str6, "Crossroad");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "WV" + "'", str7, "WV");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "1047 Leonel Plains" + "'", str8, "1047 Leonel Plains");
+    }
+	@Test
+    public void test262_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test262");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn10();
+        java.lang.String str7 = code4.isbn13(false);
+        java.lang.String str8 = code4.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "1107620252" + "'", str5, "1107620252");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9791910989653" + "'", str7, "9791910989653");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "51378752" + "'", str8, "51378752");
+    }
+	@Test
+    public void test262_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test262");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn10();
+        java.lang.String str7 = code4.isbn13(false);
+        java.lang.String str8 = code4.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "1107620252" + "'", str5, "1107620252");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9791910989653" + "'", str7, "9791910989653");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "51378752" + "'", str8, "51378752");
+    }
+	@Test
+    public void test262_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test262");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        java.lang.String str5 = code4.isbn10();
+        java.lang.String str7 = code4.isbn13(false);
+        java.lang.String str8 = code4.gtin8();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "1107620252" + "'", str5, "1107620252");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "9791910989653" + "'", str7, "9791910989653");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "51378752" + "'", str8, "51378752");
+    }
+	@Test
+    public void test265_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test265");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str5 = internet2.emailAddress("Asia/Karachi");
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str7 = internet2.ipV4Cidr();
+        java.lang.String str8 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "56.159.227.117" + "'", str3, "56.159.227.117");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "et_alias" + "'", str6, "et_alias");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "245.133.139.141/20" + "'", str7, "245.133.139.141/20");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "biz" + "'", str8, "biz");
+    }
+	@Test
+    public void test265_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test265");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str5 = internet2.emailAddress("Asia/Karachi");
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str7 = internet2.ipV4Cidr();
+        java.lang.String str8 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "56.159.227.117" + "'", str3, "56.159.227.117");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "et_alias" + "'", str6, "et_alias");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "245.133.139.141/20" + "'", str7, "245.133.139.141/20");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "biz" + "'", str8, "biz");
+    }
+	@Test
+    public void test265_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test265");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str5 = internet2.emailAddress("Asia/Karachi");
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str7 = internet2.ipV4Cidr();
+        java.lang.String str8 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "56.159.227.117" + "'", str3, "56.159.227.117");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "et_alias" + "'", str6, "et_alias");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "245.133.139.141/20" + "'", str7, "245.133.139.141/20");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "biz" + "'", str8, "biz");
+    }
+	@Test
+    public void test265_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test265");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str3 = internet2.publicIpV4Address();
+        java.lang.String str5 = internet2.emailAddress("Asia/Karachi");
+        java.lang.String str6 = internet2.slug();
+        java.lang.String str7 = internet2.ipV4Cidr();
+        java.lang.String str8 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "56.159.227.117" + "'", str3, "56.159.227.117");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "et_alias" + "'", str6, "et_alias");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "245.133.139.141/20" + "'", str7, "245.133.139.141/20");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "biz" + "'", str8, "biz");
+    }
+	@Test
+    public void test268_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        java.lang.String str7 = f0.invalidID();
+        boolean boolean8 = f0.bool();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Saudi Arabia" + "'", str1, "Saudi Arabia");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "i" + "'", str5, "i");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.nerissa-wyman.com" + "'", str6, "www.nerissa-wyman.com");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "000-51-4366" + "'", str7, "000-51-4366");
+// flaky:         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+	@Test
+    public void test268_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        java.lang.String str7 = f0.invalidID();
+        boolean boolean8 = f0.bool();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Saudi Arabia" + "'", str1, "Saudi Arabia");
+         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "i" + "'", str5, "i");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.nerissa-wyman.com" + "'", str6, "www.nerissa-wyman.com");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "000-51-4366" + "'", str7, "000-51-4366");
+// flaky:         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+	@Test
+    public void test268_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        java.lang.String str7 = f0.invalidID();
+        boolean boolean8 = f0.bool();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Saudi Arabia" + "'", str1, "Saudi Arabia");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "i" + "'", str5, "i");
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.nerissa-wyman.com" + "'", str6, "www.nerissa-wyman.com");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "000-51-4366" + "'", str7, "000-51-4366");
+// flaky:         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+	@Test
+    public void test268_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        java.lang.String str7 = f0.invalidID();
+        boolean boolean8 = f0.bool();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Saudi Arabia" + "'", str1, "Saudi Arabia");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "i" + "'", str5, "i");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.nerissa-wyman.com" + "'", str6, "www.nerissa-wyman.com");
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "000-51-4366" + "'", str7, "000-51-4366");
+// flaky:         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+	@Test
+    public void test268_5() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test268");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str5 = f0.password(1, 1, true);
+        java.lang.String str6 = f0.url();
+        java.lang.String str7 = f0.invalidID();
+        boolean boolean8 = f0.bool();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Saudi Arabia" + "'", str1, "Saudi Arabia");
+// flaky:         org.junit.Assert.assertEquals("'" + str5 + "' != '" + "i" + "'", str5, "i");
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "www.nerissa-wyman.com" + "'", str6, "www.nerissa-wyman.com");
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "000-51-4366" + "'", str7, "000-51-4366");
+         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+	@Test
+    public void test269_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test269");
+        java.util.Random random0 = null;
+        com.github.javafaker.service.RandomService randomService1 = new com.github.javafaker.service.RandomService(random0);
+        double double2 = randomService1.nextDouble();
+         org.junit.Assert.assertTrue("'" + double2 + "' != '" + 0.9115751420481853d + "'", double2 == 0.9115751420481853d);
+    }
+	@Test
+    public void test270_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test270");
+        com.github.javafaker.Faker faker0 = com.github.javafaker.Faker.instance();
+        com.github.javafaker.HitchhikersGuideToTheGalaxy hitchhikersGuideToTheGalaxy1 = faker0.hitchhikersGuideToTheGalaxy();
+        java.lang.String str2 = hitchhikersGuideToTheGalaxy1.starship();
+        org.junit.Assert.assertNotNull(faker0);
+        org.junit.Assert.assertNotNull(hitchhikersGuideToTheGalaxy1);
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "Vogon Constructor Fleet" + "'", str2, "Vogon Constructor Fleet");
+    }
+	@Test
+    public void test271_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test271");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str10 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2e:1c:81:69:12:e1" + "'", str8, "2e:1c:81:69:12:e1");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "biz" + "'", str9, "biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test271_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test271");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str10 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2e:1c:81:69:12:e1" + "'", str8, "2e:1c:81:69:12:e1");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "biz" + "'", str9, "biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test271_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test271");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str10 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2e:1c:81:69:12:e1" + "'", str8, "2e:1c:81:69:12:e1");
+         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "biz" + "'", str9, "biz");
+// flaky:         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test271_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test271");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        java.lang.String str7 = internet2.image((java.lang.Integer) 749, (java.lang.Integer) 6, (java.lang.Boolean) false, "CFA Franc BEAC");
+        java.lang.String str8 = internet2.macAddress();
+        java.lang.String str9 = internet2.domainSuffix();
+        java.lang.String str10 = internet2.domainSuffix();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+// flaky:         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "http://lorempixel.com/749/6/technics/CFA Franc BEAC" + "'", str7, "http://lorempixel.com/749/6/technics/CFA Franc BEAC");
+// flaky:         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "2e:1c:81:69:12:e1" + "'", str8, "2e:1c:81:69:12:e1");
+// flaky:         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "biz" + "'", str9, "biz");
+         org.junit.Assert.assertEquals("'" + str10 + "' != '" + "org" + "'", str10, "org");
+    }
+	@Test
+    public void test273_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test273");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Internet internet2 = faker1.internet();
+        com.github.javafaker.DragonBall dragonBall3 = faker1.dragonBall();
+        java.lang.String str5 = faker1.regexify("Sweden");
+        com.github.javafaker.RockBand rockBand6 = faker1.rockBand();
+        com.github.javafaker.DateAndTime dateAndTime7 = faker1.date();
+        java.util.Date date10 = dateAndTime7.birthday((int) (byte) 0, 6);
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(internet2);
+        org.junit.Assert.assertNotNull(dragonBall3);
+        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "Sweden" + "'", str5, "Sweden");
+        org.junit.Assert.assertNotNull(rockBand6);
+        org.junit.Assert.assertNotNull(dateAndTime7);
+        org.junit.Assert.assertNotNull(date10);
+         org.junit.Assert.assertEquals(date10.toString(), "Mon Mar 04 11:25:58 CST 2019");
+    }
+	@Test
+    public void test274_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test274");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        com.github.javafaker.Avatar avatar3 = faker1.avatar();
+        com.github.javafaker.Code code4 = faker1.code();
+        com.github.javafaker.Ancient ancient5 = faker1.ancient();
+        java.lang.String str6 = ancient5.god();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+        org.junit.Assert.assertNotNull(avatar3);
+        org.junit.Assert.assertNotNull(code4);
+        org.junit.Assert.assertNotNull(ancient5);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "Dionysus" + "'", str6, "Dionysus");
+    }
+	@Test
+    public void test275_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test275");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.asin();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "5536721898114" + "'", str3, "5536721898114");
+// flaky:         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "B0006YBTS2" + "'", str4, "B0006YBTS2");
+    }
+	@Test
+    public void test275_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test275");
+        java.util.Random random0 = null;
+        com.github.javafaker.Faker faker1 = com.github.javafaker.Faker.instance(random0);
+        com.github.javafaker.Code code2 = faker1.code();
+        java.lang.String str3 = code2.ean13();
+        java.lang.String str4 = code2.asin();
+        org.junit.Assert.assertNotNull(faker1);
+        org.junit.Assert.assertNotNull(code2);
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "5536721898114" + "'", str3, "5536721898114");
+         org.junit.Assert.assertEquals("'" + str4 + "' != '" + "B0006YBTS2" + "'", str4, "B0006YBTS2");
+    }
+	@Test
+    public void test276_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test276");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.zipCode();
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Serbia" + "'", str1, "Serbia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Mexico_City" + "'", str2, "America/Mexico_City");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "61610" + "'", str6, "61610");
+    }
+	@Test
+    public void test276_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test276");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.zipCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Serbia" + "'", str1, "Serbia");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Mexico_City" + "'", str2, "America/Mexico_City");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "61610" + "'", str6, "61610");
+    }
+	@Test
+    public void test276_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test276");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.timeZone();
+        int int5 = f0.integer((int) (short) 10, (int) (short) 10);
+        java.lang.String str6 = f0.zipCode();
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Serbia" + "'", str1, "Serbia");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "America/Mexico_City" + "'", str2, "America/Mexico_City");
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 10 + "'", int5 == 10);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "61610" + "'", str6, "61610");
+    }
+	@Test
+    public void test277_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_1() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_2() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_3() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+// flaky:         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+	@Test
+    public void test277_4() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "TestGroup100Case0.test277");
+        com.apifortress.apiffaker.F f0 = new com.apifortress.apiffaker.F();
+        java.lang.String str1 = f0.country();
+        java.lang.String str2 = f0.cityPrefix();
+        java.lang.String str3 = f0.mobile();
+        boolean boolean4 = f0.isTemplateStyle();
+        java.lang.String str6 = f0.streetAddress((java.lang.Boolean) false);
+// flaky:         org.junit.Assert.assertEquals("'" + str1 + "' != '" + "Uganda" + "'", str1, "Uganda");
+// flaky:         org.junit.Assert.assertEquals("'" + str2 + "' != '" + "North" + "'", str2, "North");
+// flaky:         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "(750) 756-1607" + "'", str3, "(750) 756-1607");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+         org.junit.Assert.assertEquals("'" + str6 + "' != '" + "850 Rippin Squares" + "'", str6, "850 Rippin Squares");
+    }
+}
+}

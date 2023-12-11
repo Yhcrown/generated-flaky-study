@@ -22,7 +22,7 @@
 [INFO] --- buildnumber:1.3:create (get-scm-revision) @ zjsonpatch ---
 [INFO] Executing: /bin/sh -c cd /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch && git rev-parse --verify HEAD
 [INFO] Working directory: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch
-[INFO] Storing buildNumber: d62dd71a0cf1440de73517d163a3a22afed5aedc at timestamp: 1700513836669
+[INFO] Storing buildNumber: d62dd71a0cf1440de73517d163a3a22afed5aedc at timestamp: 1700794289074
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -45,10 +45,10 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] --- compiler:3.2:testCompile (default-testCompile) @ zjsonpatch ---
 [WARNING]  Parameter 'compilerArguments' is deprecated: use {@link #compilerArgs} instead.
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 14 source files to /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/test-classes
+[INFO] Compiling 15 source files to /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/test-classes
 [WARNING] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/io/fabric8/zjsonpatch/TestDataGenerator.java:[49,23] put(java.lang.String,com.fasterxml.jackson.databind.JsonNode) in com.fasterxml.jackson.databind.node.ObjectNode has been deprecated
 [WARNING] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/io/fabric8/zjsonpatch/TestDataGenerator.java:[51,23] put(java.lang.String,com.fasterxml.jackson.databind.JsonNode) in com.fasterxml.jackson.databind.node.ObjectNode has been deprecated
-[INFO] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java uses unchecked or unsafe operations.
+[INFO] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java: Some input files use unchecked or unsafe operations.
 [INFO] /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/src/test/java/flaky/FlakyTests.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- surefire:2.17:test (default-test) @ zjsonpatch ---
@@ -57,18 +57,32 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec <<< FAILURE! - in flaky.FlakyTest
+test110_5(flaky.FlakyTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: '917142466' != '1912404625'
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at flaky.FlakyTest.test110_5(FlakyTest.java:7962)
+
 
 Results :
 
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+Failed tests: 
+  FlakyTest.test110_5:7962 '917142466' != '1912404625'
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.781 s
-[INFO] Finished at: 2023-11-20T14:57:18-06:00
+[INFO] Total time:  3.677 s
+[INFO] Finished at: 2023-11-23T20:51:32-06:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project zjsonpatch: No tests were executed!  (Set -DfailIfNoTests=false to ignore this error.) -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project zjsonpatch: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.

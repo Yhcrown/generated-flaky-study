@@ -1,0 +1,53 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.fabric8:zjsonpatch:bundle:0.3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 390, column 19
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------------< io.fabric8:zjsonpatch >------------------------
+[INFO] Building zjsonpatch 0.3-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- surefire:2.17:test (default-cli) @ zjsonpatch ---
+[INFO] Surefire report directory: /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec <<< FAILURE! - in flaky.FlakyTest
+test275_4(flaky.FlakyTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: '292938459' != '911849850'
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at flaky.FlakyTest.test275_4(FlakyTest.java:36706)
+
+
+Results :
+
+Failed tests: 
+  FlakyTest.test275_4:36706 '292938459' != '911849850'
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.858 s
+[INFO] Finished at: 2023-11-25T17:45:14-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-cli) on project zjsonpatch: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/fabric8io-zjsonpatch/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,48 @@
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/3.2.1/coveralls-maven-plugin-3.2.1.pom
+Progress (1): 1.4/10 kBProgress (1): 2.7/10 kBProgress (1): 4.1/10 kBProgress (1): 5.5/10 kBProgress (1): 6.9/10 kBProgress (1): 8.2/10 kBProgress (1): 9.6/10 kBProgress (1): 10 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/3.2.1/coveralls-maven-plugin-3.2.1.pom (10 kB at 32 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom
+Progress (1): 1.4/14 kBProgress (1): 2.7/14 kBProgress (1): 4.1/14 kBProgress (1): 5.5/14 kBProgress (1): 6.9/14 kBProgress (1): 8.2/14 kBProgress (1): 9.6/14 kBProgress (1): 11/14 kB Progress (1): 12/14 kBProgress (1): 14/14 kBProgress (1): 14 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom (14 kB at 242 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/3.2.1/coveralls-maven-plugin-3.2.1.jar
+Progress (1): 16/79 kBProgress (1): 33/79 kBProgress (1): 49/79 kBProgress (1): 66/79 kBProgress (1): 79 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/3.2.1/coveralls-maven-plugin-3.2.1.jar (79 kB at 786 kB/s)
+[INFO] 
+[INFO] ----< com.google.code.externalsortinginjava:externalsortinginjava >-----
+[INFO] Building externalsortinginjava 0.6.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-cli) @ externalsortinginjava ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec <<< FAILURE! - in flaky.FlakyTest
+test027_1(flaky.FlakyTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: '3814549456' != '3806830096'
+	at flaky.FlakyTest.test027_1(FlakyTest.java:19)
+
+
+Results :
+
+Failed tests: 
+  FlakyTest.test027_1:19 '3814549456' != '3806830096'
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.804 s
+[INFO] Finished at: 2023-11-22T07:49:05-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-cli) on project externalsortinginjava: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/lemire-externalsortinginjava/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

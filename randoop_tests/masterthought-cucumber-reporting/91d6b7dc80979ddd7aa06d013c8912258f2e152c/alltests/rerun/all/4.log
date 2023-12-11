@@ -1,0 +1,44 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< net.masterthought:cucumber-reporting >----------------
+[INFO] Building cucumber-reporting 5.7.3-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.18.1:test (default-cli) @ cucumber-reporting ---
+[INFO] Surefire report directory: /Users/yhcrown/Documents/flaky_java_projects/masterthought-cucumber-reporting/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec <<< FAILURE! - in flaky.FlakyTest
+test014_1(flaky.FlakyTest)  Time elapsed: 0.017 sec  <<< FAILURE!
+org.junit.ComparisonFailure: '09 Dec 2023, 19:08' != '20 Nov 2023, 03:00' expected:<[09 Dec 2023, 19:08]> but was:<[20 Nov 2023, 03:00]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at flaky.FlakyTest.test014_1(FlakyTest.java:19)
+
+
+Results :
+
+Failed tests: 
+  FlakyTest.test014_1:19 '09 Dec 2023, 19:08' != '20 Nov 2023, 03:00' expected:<[09 Dec 2023, 19:08]> but was:<[20 Nov 2023, 03:00]>
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.712 s
+[INFO] Finished at: 2023-12-09T19:08:58-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-cli) on project cucumber-reporting: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/masterthought-cucumber-reporting/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

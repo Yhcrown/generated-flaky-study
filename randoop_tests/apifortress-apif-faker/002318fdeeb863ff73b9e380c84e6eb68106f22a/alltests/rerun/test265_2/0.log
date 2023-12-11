@@ -1,0 +1,261 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ---------------------< com.apifortress:apif-faker >---------------------
+[INFO] Building Apif Faker 1.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- gplus:1.5:addSources (default) @ apif-faker ---
+[INFO] 
+[INFO] --- gplus:1.5:addTestSources (default) @ apif-faker ---
+[INFO] 
+[INFO] --- gplus:1.5:generateStubs (default) @ apif-faker ---
+[INFO] Using Groovy 2.3.11 to perform generateStubs.
+[INFO] Generated 3 stubs.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ apif-faker ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 198 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ apif-faker ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gplus:1.5:compile (default) @ apif-faker ---
+[INFO] Using Groovy 2.3.11 to perform compile.
+[INFO] Compiled 21 files.
+[INFO] 
+[INFO] --- gplus:1.5:removeStubs (default) @ apif-faker ---
+[INFO] 
+[INFO] --- gplus:1.5:testGenerateStubs (default) @ apif-faker ---
+[INFO] No sources specified for stub generation.  Skipping.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ apif-faker ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ apif-faker ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 86 source files to /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1505,58] unclosed string literal
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1506,9] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1506,14] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,12] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,45] ';' expected
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.791 s
+[INFO] Finished at: 2023-11-23T19:21:11-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.3:testCompile (default-testCompile) on project apif-faker: Compilation failure: Compilation failure: 
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1505,58] unclosed string literal
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1506,9] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1506,14] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,12] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1507,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1513,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1527,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1541,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1563,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1583,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1597,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1607,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1617,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1629,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1641,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1653,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1671,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1689,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1705,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1721,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1734,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1747,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1760,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1778,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1794,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1810,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1826,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1842,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1854,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1870,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1890,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1900,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1910,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1926,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1942,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/apifortress-apif-faker/src/test/java/flaky/FlakyTest.java:[1958,45] ';' expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

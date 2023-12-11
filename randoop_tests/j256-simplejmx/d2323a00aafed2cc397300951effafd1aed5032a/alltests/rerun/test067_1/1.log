@@ -1,0 +1,33 @@
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4/maven-assembly-plugin-2.4.pom
+Progress (1): 1.4/17 kBProgress (1): 2.7/17 kBProgress (1): 4.1/17 kBProgress (1): 5.5/17 kBProgress (1): 6.9/17 kBProgress (1): 8.2/17 kBProgress (1): 9.6/17 kBProgress (1): 11/17 kB Progress (1): 12/17 kBProgress (1): 14/17 kBProgress (1): 15/17 kBProgress (1): 16/17 kBProgress (1): 17 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4/maven-assembly-plugin-2.4.pom (17 kB at 73 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4/maven-assembly-plugin-2.4.jar
+Progress (1): 16/226 kBProgress (1): 33/226 kBProgress (1): 49/226 kBProgress (1): 66/226 kBProgress (1): 82/226 kBProgress (1): 98/226 kBProgress (1): 115/226 kBProgress (1): 131/226 kBProgress (1): 147/226 kBProgress (1): 164/226 kBProgress (1): 180/226 kBProgress (1): 197/226 kBProgress (1): 213/226 kBProgress (1): 226 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4/maven-assembly-plugin-2.4.jar (226 kB at 3.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-eclipse-plugin/2.9/maven-eclipse-plugin-2.9.pom
+Progress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-eclipse-plugin/2.9/maven-eclipse-plugin-2.9.pom (15 kB at 559 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-eclipse-plugin/2.9/maven-eclipse-plugin-2.9.jar
+Progress (1): 16/218 kBProgress (1): 33/218 kBProgress (1): 49/218 kBProgress (1): 66/218 kBProgress (1): 82/218 kBProgress (1): 98/218 kBProgress (1): 115/218 kBProgress (1): 131/218 kBProgress (1): 147/218 kBProgress (1): 164/218 kBProgress (1): 180/218 kBProgress (1): 197/218 kBProgress (1): 213/218 kBProgress (1): 218 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-eclipse-plugin/2.9/maven-eclipse-plugin-2.9.jar (218 kB at 2.4 MB/s)
+[INFO] 
+[INFO] --------------------< com.j256.simplejmx:simplejmx >--------------------
+[INFO] Building Simple JMX 1.20-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-cli) @ simplejmx ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running flaky.FlakyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in flaky.FlakyTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.759 s
+[INFO] Finished at: 2023-11-22T02:23:31-06:00
+[INFO] ------------------------------------------------------------------------

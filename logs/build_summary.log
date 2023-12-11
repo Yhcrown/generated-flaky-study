@@ -1,5 +1,5 @@
 OpenHFT-JLBH, BUILD FAILURE
-[ERROR] Failed to execute goal on project jlbh: Could not resolve dependencies for project net.openhft:jlbh:jar:1.23ea1-SNAPSHOT: Failed to collect dependencies at net.openhft:affinity:jar:3.23ea1: Failed to read artifact descriptor for net.openhft:affinity:jar:3.23ea1: The following artifacts could not be resolved: net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT (absent): net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/staging during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of sonatype-nexus-staging has elapsed or updates are forced -> [Help 1]
+[ERROR] Failed to execute goal on project jlbh: Could not resolve dependencies for project net.openhft:jlbh:jar:1.23ea1-SNAPSHOT: Failed to collect dependencies at net.openhft:affinity:jar:3.23ea1: Failed to read artifact descriptor for net.openhft:affinity:jar:3.23ea1: The following artifacts could not be resolved: net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT (absent): Could not find artifact net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT in sonatype-nexus-staging (https://oss.sonatype.org/content/repositories/staging) -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
@@ -60,21 +60,21 @@ mitoma-ponto, BUILD FAILURE
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
 vlingo-vlingo-lattice, BUILD FAILURE
-[ERROR] Failed to execute goal on project xoom-lattice: Could not resolve dependencies for project io.vlingo.xoom:xoom-lattice:jar:1.11.1-SNAPSHOT: The following artifacts could not be resolved: io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-actors:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-streams:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-cluster:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-symbio:jar:1.11.1-SNAPSHOT (absent): io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/snapshots/ during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of ossrh-snapshots has elapsed or updates are forced -> [Help 1]
+[ERROR] Failed to execute goal on project xoom-lattice: Could not resolve dependencies for project io.vlingo.xoom:xoom-lattice:jar:1.11.1-SNAPSHOT: The following artifacts could not be resolved: io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-actors:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-streams:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-cluster:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-symbio:jar:1.11.1-SNAPSHOT (absent): Could not find artifact io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT in ossrh-snapshots (https://oss.sonatype.org/content/repositories/snapshots/) -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! -- in net.engio.lab.ExecutionContextTest
+[ERROR] Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.028 s <<< FAILURE! -- in net.engio.lab.ExecutionContextTest
 [ERROR] net.engio.lab.ExecutionContextTest.testChildAccess -- Time elapsed: 0.002 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testGetMatching -- Time elapsed: 0 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.001 s <<< FAILURE!
-[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 34.33 s <<< FAILURE! -- in net.engio.lab.AllTests
-[ERROR] net.engio.lab.ExecutionContextTest.testChildAccess -- Time elapsed: 0.004 s <<< FAILURE!
 [ERROR] net.engio.lab.ExecutionContextTest.testGetMatching -- Time elapsed: 0.001 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.005 s <<< FAILURE!
+[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.001 s <<< FAILURE!
+[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 35.27 s <<< FAILURE! -- in net.engio.lab.AllTests
+[ERROR] net.engio.lab.ExecutionContextTest.testChildAccess -- Time elapsed: 0.002 s <<< FAILURE!
+[ERROR] net.engio.lab.ExecutionContextTest.testGetMatching -- Time elapsed: 0.001 s <<< FAILURE!
+[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.003 s <<< FAILURE!
 [ERROR] Failures: 
 [ERROR] net.engio.lab.ExecutionContextTest.testChildAccess
 [ERROR]   Run 1: ExecutionContextTest.testChildAccess:85->assertBindindsExist:43->UnitTest.assertEquals:58 expected:<Object1> but was:<null>

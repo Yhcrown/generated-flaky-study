@@ -1,0 +1,243 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] 
+[INFO] ---------------------< io.resourcepool:little-bob >---------------------
+[INFO] Building Little Bob 1.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ little-bob ---
+[INFO] Copying 6 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ little-bob ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ little-bob ---
+[INFO] skip non existing resourceDirectory /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ little-bob ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/target/test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1916,65] unclosed string literal
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,10] type annotations are not supported in -source 1.6
+  (use -source 8 or higher to enable type annotations)
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,9] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,14] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,12] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5123,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5123,36] not a statement
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.930 s
+[INFO] Finished at: 2023-11-22T03:10:22-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project little-bob: Compilation failure: Compilation failure: 
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1916,65] unclosed string literal
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,10] type annotations are not supported in -source 1.6
+[ERROR]   (use -source 8 or higher to enable type annotations)
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,9] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1917,14] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,12] illegal start of expression
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[1918,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2091,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2264,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2437,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2610,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2695,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2780,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2788,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2796,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[2927,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3058,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3189,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3320,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3451,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3537,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3623,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3645,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3749,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3853,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[3968,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4083,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4143,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4203,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4278,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4353,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4477,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4601,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4734,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4867,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[4940,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,36] not a statement
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5013,45] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5123,26] ';' expected
+[ERROR] /Users/yhcrown/Documents/flaky_java_projects/resourcepool-little-bob/src/test/java/flaky/FlakyTest.java:[5123,36] not a statement
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
