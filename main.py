@@ -9,15 +9,30 @@ import re
 import csv
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
-PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
+# PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
+PROJECTS_DIRECTORY = "/shared-data/generated-flaky/projects/"
 CURRENT_DIRECTORY = os.getcwd()
-RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
-TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
+# RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
+RANDOOP_GENERATED_DIRECTORY = "/shared-data/generated-flaky/randoop_tests/"
+# TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
+
+
+WORKSPACE='/workspace/generated-flaky-study/'
+
+TOOLS_DIRECTORY = "/shared-data/common-jar/"
+
 RANDOOP_JAR = TOOLS_DIRECTORY + 'randoop-all-4.3.2.jar'
 GUAVA_JAR = TOOLS_DIRECTORY + 'guava-32.1.3-jre.jar'
 HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-1.3.jar'
 JUNIT_JAR = TOOLS_DIRECTORY + 'junit-4.13.2.jar'
-SUMMARY_LOG = CURRENT_DIRECTORY + '/logs/'
+# SUMMARY_LOG = CURRENT_DIRECTORY + '/logs/'
+SUMMARY_LOG = '/shared-data/generated-flaky/logs/'
+
+# MVN_LOC = "/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn"
+MVN_LOC = "/workspace/apache-maven-3.9.6/bin/mvn"
+
+# JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+JAVA_HOME = "/workspace/jdk8u392-b08/"
 
 RERUN_TIMES = 10
 
@@ -43,13 +58,14 @@ total_flaky_num = 0
 
 def read_dataset():
     path = "./dataset.csv"
+    path = WORKSPACE+"/dataset.csv"
     df = pd.read_csv(path)
     developer_NOD_projects = df['Project_Name'].loc[df['flaky'] == 'NOD'].loc[df['language'] == 'Java'].loc[
         df['test_type'] == 'developer-written'].unique()
     cols_to_keep = ['Project_Name', 'Project_URL', 'Project_Hash']
     developer_NOD_info = pd.DataFrame(
         df[df['Project_Name'].isin(developer_NOD_projects)][cols_to_keep].drop_duplicates())
-    developer_NOD_info.to_csv('./developer_NOD_projects_info.csv')
+    developer_NOD_info.to_csv(WORKSPACE+'/developer_NOD_projects_info.csv')
     print(developer_NOD_info)
     test_info = df.loc[df['flaky'] == 'NOD'].loc[
         df['language'] == 'Java'].loc[df['test_type'] == 'developer-written']
@@ -89,9 +105,9 @@ def build_project(target_dir):
     build_log = target_dir + '/build.log'
     start_time = time.time()
     print('Building client ... ' + str(datetime.datetime.now()))
-    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
+    os.environ['JAVA_HOME'] = JAVA_HOME
     subprocess.run(
-        '/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn  install -DskipTests -Ddetector.detector_type=random-class-method -Ddt.randomize.rounds=10 -Ddt.detector.original_order.all_must_pass=false -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip -Dlicense.skip=true -am  ',
+        MVN_LOC + ' install -DskipTests -Ddetector.detector_type=random-class-method -Ddt.randomize.rounds=10 -Ddt.detector.original_order.all_must_pass=false -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip -Dlicense.skip=true -am  ',
         shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, build_log)
@@ -106,8 +122,8 @@ def run_randoop(project, target_dir):
     os.mkdir('/tmp/jars')
 
     start_time = time.time()
-
-    subprocess.run('/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn  dependency:copy-dependencies',
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    subprocess.run(MVN_LOC+ ' dependency:copy-dependencies',
                    shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
     for dir, subdir, files in os.walk(target_dir):
         if "dependency" in subdir:
@@ -117,15 +133,15 @@ def run_randoop(project, target_dir):
     os.chdir(target_dir)
 
     ## Linux platform
-    # concat_class_path = '$(find ' + target_dir + ' -name \"classes\" -type d | paste -sd :)'
-    # concat_class_path += ':$(find ' + target_dir + ' -name \"test-classes\" -type d | paste -sd :)'
-    # concat_class_path += ':$(find /tmp/jars -name \"*.jar\" -type f | paste -sd :):'
-
+    concat_class_path = '$(find ' + target_dir + ' -name \"classes\" -type d | paste -sd :)'
+    concat_class_path += ':$(find ' + target_dir + ' -name \"test-classes\" -type d | paste -sd :)'
+    concat_class_path += ':$(find /tmp/jars -name \"*.jar\" -type f | paste -sd :):'
+    # print(concat_class_path)
     ## Mac os platform
 
-    concat_class_path = '$(find ' + target_dir + ' -name "classes" -type d | xargs echo | tr \' \' \':\')'
-    concat_class_path += ':$(find ' + target_dir + ' -name "test-classes" -type d | xargs echo | tr \' \' \':\')'
-    concat_class_path += ':$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr \' \' \':\'):'
+    # concat_class_path = '$(find ' + target_dir + ' -name "classes" -type d | xargs echo | tr \' \' \':\')'
+    # concat_class_path += ':$(find ' + target_dir + ' -name "test-classes" -type d | xargs echo | tr \' \' \':\')'
+    # concat_class_path += ':$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr \' \' \':\'):'
 
     generated_dir = RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash'] + '/alltests/'
     if not os.path.exists(generated_dir):
@@ -135,7 +151,7 @@ def run_randoop(project, target_dir):
     test_method_max_size = 100
     class_list_file = '/tmp/classes.txt'
     all_classes = []
-    print(target_dir)
+    # print(target_dir)
     for dir_path, subpaths, files in os.walk(target_dir):
         for f in files:
 
@@ -143,7 +159,7 @@ def run_randoop(project, target_dir):
                 clz = (dir_path + '/' + f.split('.')[0]).split('/classes/')[-1].replace('/', '.')
                 if clz not in all_classes:
                     all_classes.append(clz)
-    print(all_classes)
+    # print(all_classes)
 
     with open(class_list_file, 'w') as fw:
         for clz in all_classes:
@@ -157,8 +173,8 @@ def run_randoop(project, target_dir):
     concat_class_path += HAMCREST_JAR + ':'
     concat_class_path += GUAVA_JAR
 
-    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
-    randoop_cmd = 'java -ea -classpath ' + concat_class_path + \
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    randoop_cmd = JAVA_HOME+'/bin/java -ea -classpath ' + concat_class_path + \
                   ' randoop.main.Main gentests' \
                   + ' --classlist=' + class_list_file \
                   + ' --output-limit=' + str(test_method_num_limit) \
@@ -259,7 +275,6 @@ def find_flaky():
                                 flaky_projects.add(dir.split('/')[-3])
                             log.write(line)
     pattern = r'@Test.*?// flaky:.*?(?=@Test|\Z)'
-
 
     global total_flaky_num
     global total_test_num
@@ -378,8 +393,8 @@ def copy_and_run():
         #     for i in range(1, 10):
         #         subprocess.run(cmd2, shell=True, stdout=open(log_dir + test + '/' + str(i) + '.log', 'w+'),
         #                        stderr=subprocess.STDOUT, timeout=90)
-        cmd = '/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn -Dtest=FlakyTest test '
-        cmd2 = '/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn -Dtest=FlakyTest surefire:test'
+        cmd = MVN_LOC+ ' -Dtest=FlakyTest test '
+        cmd2 = MVN_LOC+ ' -Dtest=FlakyTest surefire:test'
         print(os.getcwd(), cmd)
         if not os.path.exists(log_dir + '/all'):
             os.mkdir(log_dir + '/all')
@@ -467,14 +482,14 @@ def make_flaky_table():
 
 
 if __name__ == '__main__':
-    os.environ['JAVA_HOME'] = '/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home'
-    os.environ['MAVEN_HOME'] = '/Users/yhcrown/Documents/tools/apache-maven-3.9.5'
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    os.environ['MAVEN_HOME'] = MVN_LOC
     projects_info = read_dataset()
     # os.environ['PATH'] += os.pathsep+'/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/bin'+os.pathsep+'/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin'
     # print(os.environ['PATH'])
 
     os.system('mvn -v')
-    subprocess.run("/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn -v", executable='/bin/zsh', shell=True,
+    subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
                    stderr=subprocess.STDOUT, timeout=90)
     if not os.path.exists(PROJECTS_DIRECTORY):
         os.mkdir(PROJECTS_DIRECTORY)
@@ -499,7 +514,7 @@ if __name__ == '__main__':
         os.chdir(PROJECTS_DIRECTORY + project_name)
         # print(os.getcwd())
     find_flaky()
-    # copy_and_run()
+    copy_and_run()
     collect_flaky()
     statistic_flaky()
     make_flaky_table()
@@ -526,4 +541,3 @@ if __name__ == '__main__':
     print("only randoop:", len(flaky_projects - evosuite_flaky_projects), flaky_projects - evosuite_flaky_projects)
     print(len(flaky_projects.intersection(evosuite_flaky_projects)),
           flaky_projects.intersection(evosuite_flaky_projects))
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
