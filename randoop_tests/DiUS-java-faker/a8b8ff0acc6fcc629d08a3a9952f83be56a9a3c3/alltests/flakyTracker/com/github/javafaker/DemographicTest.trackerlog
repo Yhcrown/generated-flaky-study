@@ -1,0 +1,11 @@
+JUnit version 4.12
+.sex may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.race may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.educationalAttainment may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.demonym may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.maritalStatus may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+
+Time: 10.642
+
+OK (5 tests)
+

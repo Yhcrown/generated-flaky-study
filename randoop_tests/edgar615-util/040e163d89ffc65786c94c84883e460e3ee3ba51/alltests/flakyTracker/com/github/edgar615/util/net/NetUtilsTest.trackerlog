@@ -1,0 +1,14 @@
+JUnit version 4.11
+.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+A078176A0D71
+192.168.1.17
+11111111
+0100010001
+273
+
+Time: 1.119
+
+OK (1 test)
+

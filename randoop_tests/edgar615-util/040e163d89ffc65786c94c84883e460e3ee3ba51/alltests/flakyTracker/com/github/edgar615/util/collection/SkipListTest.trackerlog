@@ -1,0 +1,7 @@
+JUnit version 4.11
+.1000
+1000
+testAdd may be flaky: FlakyTaintLabel{type=RANDOM, cause='java/util/Random.<init>', file='com/github/edgar615/util/collection/LinkedSkipList', line=54, label=12}
+testAdd may be flaky: FlakyTaintLabel{type=RANDOM, cause='java/util/concurrent/ThreadLocalRandom.nextInt', file='com/github/edgar615/util/base/Randoms', line=56, label=15}
+testAdd may be flaky: FlakyTaintLabel{type=RANDOM, cause='java/util/Random.<init>', file='com/github/edgar615/util/collection/SkipListTest', line=48, label=0}
+Command '/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack/bin/java -javaagent:/Users/yhcrown/Documents/GitHub/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/Users/yhcrown/Documents/GitHub/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /Users/yhcrown/Documents/flaky_java_projects/edgar615-util -name "classes" -type d | xargs echo | tr ' ' ':'):$(find /Users/yhcrown/Documents/flaky_java_projects/edgar615-util -name "test-classes" -type d | xargs echo | tr ' ' ':'):$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr ' ' ':'):/Users/yhcrown/Documents/tools/randoop-all-4.3.2.jar:/Users/yhcrown/Documents/tools/junit-4.13.2.jar:/Users/yhcrown/Documents/tools/hamcrest-core-1.3.jar:/Users/yhcrown/Documents/tools/guava-32.1.3-jre.jar org.junit.runner.JUnitCore com.github.edgar615.util.collection.SkipListTest' timed out after 179.99995708302595 seconds

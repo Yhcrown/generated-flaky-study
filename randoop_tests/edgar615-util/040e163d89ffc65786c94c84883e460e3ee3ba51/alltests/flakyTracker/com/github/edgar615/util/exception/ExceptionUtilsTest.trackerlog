@@ -1,0 +1,8 @@
+JUnit version 4.11
+.java.lang.NullPointerException
+.java.lang.IllegalArgumentException: java.lang.NullPointerException: foo
+
+Time: 1.266
+
+OK (2 tests)
+

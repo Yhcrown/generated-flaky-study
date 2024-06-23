@@ -1,0 +1,12 @@
+JUnit version 4.12
+.book may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.house may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.quote may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.spell may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.character may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.location may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+
+Time: 10.696
+
+OK (6 tests)
+

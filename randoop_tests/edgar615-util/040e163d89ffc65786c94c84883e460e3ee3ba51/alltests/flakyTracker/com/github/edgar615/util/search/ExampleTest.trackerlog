@@ -1,0 +1,16 @@
+JUnit version 4.11
+.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+.Example{criteria=Criteria{criteria=[]}, fields=[], orderBy=[foo, -bar]}
+.[Criterion{field=foo, op=EQ, value=bar, secondValue=null}, Criterion{field=type, op=IN, value=[1, 2, 3], secondValue=null}, Criterion{field=subType, op=NOT_IN, value=[1, 2, 3], secondValue=null}, Criterion{field=stars, op=GT, value=10, secondValue=null}, Criterion{field=created_on, op=GE, value=13435454, secondValue=null}, Criterion{field=deleted_on, op=LT, value=13435454, secondValue=null}, Criterion{field=applyNum, op=LE, value=100, secondValue=null}, Criterion{field=availableNum, op=GE, value=100, secondValue=null}, Criterion{field=addOn, op=BETWEEN, value=1, secondValue=10}, Criterion{field=username, op=SW, value=edgar, secondValue=null}, Criterion{field=fullname, op=EW, value=edgar, secondValue=null}, Criterion{field=login_name, op=CN, value=edgar, secondValue=null}, Criterion{field=foo, op=NE, value=bar2, secondValue=null}, Criterion{field=stars, op=LE, value=100, secondValue=null}, Criterion{field=created_on, op=LT, value=23435454, secondValue=null}, Criterion{field=deleted_on, op=GE, value=23435454, secondValue=null}, Criterion{field=applyNum, op=GT, value=200, secondValue=null}, Criterion{field=availableNum, op=LT, value=200, secondValue=null}, Criterion{field=addOn, op=LT, value=20, secondValue=null}, Criterion{field=addOn, op=GT, value=30, secondValue=null}]
+.[foo,  , :bar,  , foo:,  , bar2]
+[foo :bar , foo: bar2]
+[foo=bar, foo=bar2]
+.Example{criteria=Criteria{criteria=[Criterion{field=foo, op=EQ, value=bar, secondValue=null}, Criterion{field=addOn, op=BETWEEN, value=1, secondValue=10}, Criterion{field=foo, op=NE, value=bar2, secondValue=null}, Criterion{field=addOn, op=LT, value=20, secondValue=null}, Criterion{field=addOn, op=GT, value=30, secondValue=null}]}, fields=[addOn], orderBy=[foo]}
+.Example{criteria=Criteria{criteria=[Criterion{field=foo, op=EQ, value=bar, secondValue=null}, Criterion{field=foo, op=NE, value=bar2, secondValue=null}]}, fields=[], orderBy=[]}
+
+Time: 3.06
+
+OK (6 tests)
+

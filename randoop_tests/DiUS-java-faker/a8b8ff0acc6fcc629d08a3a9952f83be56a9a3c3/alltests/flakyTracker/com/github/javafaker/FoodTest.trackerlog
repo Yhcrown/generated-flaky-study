@@ -1,0 +1,13 @@
+JUnit version 4.12
+.measurement may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.ingredient may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.dish may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.fruit may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.spice may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.sushi may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.vegetable may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+
+Time: 12.412
+
+OK (7 tests)
+

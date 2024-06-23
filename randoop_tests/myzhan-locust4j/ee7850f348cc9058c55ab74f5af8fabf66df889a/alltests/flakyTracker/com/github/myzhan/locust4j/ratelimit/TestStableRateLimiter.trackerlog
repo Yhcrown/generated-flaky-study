@@ -1,0 +1,22 @@
+JUnit version 4.13.1
+.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+E
+Time: 0.546
+There was 1 failure:
+1) TestAcquire(com.github.myzhan.locust4j.ratelimit.TestStableRateLimiter)
+java.lang.AssertionError
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Error.<init>(Error.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:49)
+	at org.junit.Assert.fail$$PHOSPHORTAGGED(Assert.java:87)
+	at org.junit.Assert.assertTrue$$PHOSPHORTAGGED(Assert.java:42)
+	at org.junit.Assert.assertTrue$$PHOSPHORTAGGED(Assert.java:53)
+	at com.github.myzhan.locust4j.ratelimit.TestStableRateLimiter.TestAcquire$$PHOSPHORTAGGED(TestStableRateLimiter.java:24)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

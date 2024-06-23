@@ -1,0 +1,35 @@
+JUnit version 4.11
+.E
+Time: 0.054
+There was 1 failure:
+1) initializationError(FlakyTests)
+java.lang.Exception: No runnable methods
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at org.junit.runners.BlockJUnit4ClassRunner.validateInstanceMethods$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:169)
+	at org.junit.runners.BlockJUnit4ClassRunner.collectInitializationErrors$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:104)
+	at org.junit.runners.ParentRunner.validate$$PHOSPHORTAGGED(ParentRunner.java:355)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:57)
+	at org.junit.internal.builders.JUnit4Builder.runnerForClass$$PHOSPHORTAGGED(JUnit4Builder.java:10)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass$$PHOSPHORTAGGED(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runner.Computer.getRunner$$PHOSPHORTAGGED(Computer.java:40)
+	at org.junit.runner.Computer$1.runnerForClass$$PHOSPHORTAGGED(Computer.java:31)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:101)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:87)
+	at org.junit.runners.Suite.<init>(Suite.java:80)
+	at org.junit.runner.Computer.getSuite$$PHOSPHORTAGGED(Computer.java:28)
+	at org.junit.runner.Request.classes$$PHOSPHORTAGGED(Request.java:75)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:96)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:47)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:40)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

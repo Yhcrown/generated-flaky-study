@@ -1,0 +1,30 @@
+JUnit version 4.13.1
+.-----------MD2------------
+E
+Time: 6.691
+There was 1 failure:
+1) test1(tool.encryptionAndDecryption.TestMessageDigest)
+java.lang.VerifyError: (class: org/bouncycastle/jcajce/provider/drbg/DRBG, method: generateNonceIVPersonalizationString$$PHOSPHORTAGGED signature: (Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;) Attempt to split long or double on the stack
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.bouncycastle.jcajce.provider.drbg.DRBG$Mappings.configure$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.loadAlgorithms$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.setup$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.access$000$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider$1.run$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged$$PHOSPHORTAGGED(AccessController.java)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.<init>(Unknown Source)
+	at lich.tool.encryptionAndDecryption.core.Base.<clinit>(Base.java:42)
+	at tool.encryptionAndDecryption.TestMessageDigest.test$$PHOSPHORTAGGED(TestMessageDigest.java:32)
+	at tool.encryptionAndDecryption.TestMessageDigest.test1$$PHOSPHORTAGGED(TestMessageDigest.java:15)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

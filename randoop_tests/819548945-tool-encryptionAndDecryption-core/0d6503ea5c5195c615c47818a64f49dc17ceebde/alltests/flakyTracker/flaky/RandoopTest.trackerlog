@@ -1,0 +1,2708 @@
+JUnit version 4.13.1
+.....E.E.......E....E.E...E.E.....E...E...E..E.E......E.E..E..E......E...E.E.E.E...E....E.E..E..E.....E..E.E..E......E.E.E...E.E.........E...E..E.E.E.E...E..E..E....E....E.......E..E...E.....E..E..E.E..E...E...E.E...E.E...........E.E.E.E..E.E.E......E....E.E.E.E....E.E..E.E.E..E.E.......E.E.E...E..E.E.E.E...E.E....E.E.E..E...E....E...E.E...E.E.E.E.E.E.E..E..E.E...E..E..E.E.E.E..E.E..E..E....E...E.E.E.........E..E...E...E...E.E.E.E.E.E.E....E..E.E...E..E..E..E..E..E.E..E...E..E..E..E.E.E....E.E...E..E....E.E.E.E..E..E.E.E.E.E.E.E..E.E.E....E.E..E.E.E..E.E.E..E.E...E.E....E....E.E..E.E.E
+Time: 6.168
+There were 185 failures:
+1) test005(flaky.RandoopTest)
+java.lang.VerifyError: (class: org/bouncycastle/jcajce/provider/drbg/DRBG, method: generateDefaultPersonalizationString$$PHOSPHORTAGGED signature: (Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;) Attempt to split long or double on the stack
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.bouncycastle.jcajce.provider.drbg.DRBG$Mappings.configure$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.loadAlgorithms$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.setup$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.access$000$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider$1.run$$PHOSPHORTAGGED(Unknown Source)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessController.doPrivileged$$PHOSPHORTAGGED(AccessController.java)
+	at org.bouncycastle.jce.provider.BouncyCastleProvider.<init>(Unknown Source)
+	at lich.tool.encryptionAndDecryption.core.Base.<clinit>(Base.java:42)
+	at flaky.RandoopTest.test005$$PHOSPHORTAGGED(RandoopTest.java:100)
+2) test006(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test006$$PHOSPHORTAGGED(RandoopTest.java:136)
+3) test013(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test013$$PHOSPHORTAGGED(RandoopTest.java:260)
+4) test017(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test017$$PHOSPHORTAGGED(RandoopTest.java:334)
+5) test018(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test018$$PHOSPHORTAGGED(RandoopTest.java:374)
+6) test021(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test021$$PHOSPHORTAGGED(RandoopTest.java:450)
+7) test022(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test022$$PHOSPHORTAGGED(RandoopTest.java:484)
+8) test027(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test027$$PHOSPHORTAGGED(RandoopTest.java:570)
+9) test030(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test030$$PHOSPHORTAGGED(RandoopTest.java:642)
+10) test033(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test033$$PHOSPHORTAGGED(RandoopTest.java:714)
+11) test035(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test035$$PHOSPHORTAGGED(RandoopTest.java:758)
+12) test036(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test036$$PHOSPHORTAGGED(RandoopTest.java:780)
+13) test042(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test042$$PHOSPHORTAGGED(RandoopTest.java:874)
+14) test043(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test043$$PHOSPHORTAGGED(RandoopTest.java:916)
+15) test045(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test045$$PHOSPHORTAGGED(RandoopTest.java:966)
+16) test047(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test047$$PHOSPHORTAGGED(RandoopTest.java:1008)
+17) test053(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test053$$PHOSPHORTAGGED(RandoopTest.java:1108)
+18) test056(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test056$$PHOSPHORTAGGED(RandoopTest.java:1158)
+19) test057(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test057$$PHOSPHORTAGGED(RandoopTest.java:1202)
+20) test058(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test058$$PHOSPHORTAGGED(RandoopTest.java:1236)
+21) test059(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test059$$PHOSPHORTAGGED(RandoopTest.java:1278)
+22) test062(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test062$$PHOSPHORTAGGED(RandoopTest.java:1354)
+23) test066(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test066$$PHOSPHORTAGGED(RandoopTest.java:1446)
+24) test067(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test067$$PHOSPHORTAGGED(RandoopTest.java:1472)
+25) test069(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test069$$PHOSPHORTAGGED(RandoopTest.java:1522)
+26) test071(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test071$$PHOSPHORTAGGED(RandoopTest.java:1588)
+27) test076(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test076$$PHOSPHORTAGGED(RandoopTest.java:1668)
+28) test078(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test078$$PHOSPHORTAGGED(RandoopTest.java:1716)
+29) test079(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test079$$PHOSPHORTAGGED(RandoopTest.java:1758)
+30) test081(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test081$$PHOSPHORTAGGED(RandoopTest.java:1812)
+31) test087(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test087$$PHOSPHORTAGGED(RandoopTest.java:1908)
+32) test088(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test088$$PHOSPHORTAGGED(RandoopTest.java:1944)
+33) test089(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test089$$PHOSPHORTAGGED(RandoopTest.java:1992)
+34) test092(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test092$$PHOSPHORTAGGED(RandoopTest.java:2064)
+35) test093(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test093$$PHOSPHORTAGGED(RandoopTest.java:2088)
+36) test102(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test102$$PHOSPHORTAGGED(RandoopTest.java:2260)
+37) test105(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test105$$PHOSPHORTAGGED(RandoopTest.java:2338)
+38) test107(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test107$$PHOSPHORTAGGED(RandoopTest.java:2378)
+39) test108(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test108$$PHOSPHORTAGGED(RandoopTest.java:2420)
+40) test109(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test109$$PHOSPHORTAGGED(RandoopTest.java:2462)
+41) test110(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test110$$PHOSPHORTAGGED(RandoopTest.java:2654)
+42) test113(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test113$$PHOSPHORTAGGED(RandoopTest.java:2736)
+43) test115(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test115$$PHOSPHORTAGGED(RandoopTest.java:2772)
+44) test117(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test117$$PHOSPHORTAGGED(RandoopTest.java:2820)
+45) test121(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test121$$PHOSPHORTAGGED(RandoopTest.java:2914)
+46) test125(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test125$$PHOSPHORTAGGED(RandoopTest.java:3008)
+47) test132(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test132$$PHOSPHORTAGGED(RandoopTest.java:3156)
+48) test134(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test134$$PHOSPHORTAGGED(RandoopTest.java:3208)
+49) test137(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test137$$PHOSPHORTAGGED(RandoopTest.java:3292)
+50) test142(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test142$$PHOSPHORTAGGED(RandoopTest.java:3380)
+51) test144(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test144$$PHOSPHORTAGGED(RandoopTest.java:3432)
+52) test146(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test146$$PHOSPHORTAGGED(RandoopTest.java:3506)
+53) test147(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test147$$PHOSPHORTAGGED(RandoopTest.java:3546)
+54) test149(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test149$$PHOSPHORTAGGED(RandoopTest.java:3614)
+55) test152(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test152$$PHOSPHORTAGGED(RandoopTest.java:3682)
+56) test155(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test155$$PHOSPHORTAGGED(RandoopTest.java:3732)
+57) test156(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test156$$PHOSPHORTAGGED(RandoopTest.java:3766)
+58) test159(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test159$$PHOSPHORTAGGED(RandoopTest.java:3818)
+59) test160(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test160$$PHOSPHORTAGGED(RandoopTest.java:3892)
+60) test171(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test171$$PHOSPHORTAGGED(RandoopTest.java:4080)
+61) test172(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test172$$PHOSPHORTAGGED(RandoopTest.java:4140)
+62) test173(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test173$$PHOSPHORTAGGED(RandoopTest.java:4178)
+63) test174(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test174$$PHOSPHORTAGGED(RandoopTest.java:4242)
+64) test176(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test176$$PHOSPHORTAGGED(RandoopTest.java:4362)
+65) test177(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test177$$PHOSPHORTAGGED(RandoopTest.java:4412)
+66) test178(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test178$$PHOSPHORTAGGED(RandoopTest.java:4468)
+67) test184(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test184$$PHOSPHORTAGGED(RandoopTest.java:4566)
+68) test188(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test188$$PHOSPHORTAGGED(RandoopTest.java:4668)
+69) test189(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test189$$PHOSPHORTAGGED(RandoopTest.java:4714)
+70) test190(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test190$$PHOSPHORTAGGED(RandoopTest.java:4730)
+71) test191(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test191$$PHOSPHORTAGGED(RandoopTest.java:4776)
+72) test195(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.asymmetric.PrivateKeyTool
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test195$$PHOSPHORTAGGED(RandoopTest.java:5000)
+73) test196(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test196$$PHOSPHORTAGGED(RandoopTest.java:5030)
+74) test198(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test198$$PHOSPHORTAGGED(RandoopTest.java:5072)
+75) test199(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test199$$PHOSPHORTAGGED(RandoopTest.java:5152)
+76) test200(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test200$$PHOSPHORTAGGED(RandoopTest.java:5184)
+77) test202(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test202$$PHOSPHORTAGGED(RandoopTest.java:5252)
+78) test203(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test203$$PHOSPHORTAGGED(RandoopTest.java:5288)
+79) test210(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test210$$PHOSPHORTAGGED(RandoopTest.java:5494)
+80) test211(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test211$$PHOSPHORTAGGED(RandoopTest.java:5610)
+81) test212(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test212$$PHOSPHORTAGGED(RandoopTest.java:5648)
+82) test215(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test215$$PHOSPHORTAGGED(RandoopTest.java:5972)
+83) test217(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test217$$PHOSPHORTAGGED(RandoopTest.java:6042)
+84) test218(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test218$$PHOSPHORTAGGED(RandoopTest.java:6084)
+85) test219(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test219$$PHOSPHORTAGGED(RandoopTest.java:6112)
+86) test220(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test220$$PHOSPHORTAGGED(RandoopTest.java:6172)
+87) test223(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test223$$PHOSPHORTAGGED(RandoopTest.java:6234)
+88) test224(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test224$$PHOSPHORTAGGED(RandoopTest.java:6274)
+89) test228(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test228$$PHOSPHORTAGGED(RandoopTest.java:6400)
+90) test229(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test229$$PHOSPHORTAGGED(RandoopTest.java:6444)
+91) test230(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test230$$PHOSPHORTAGGED(RandoopTest.java:6602)
+92) test232(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test232$$PHOSPHORTAGGED(RandoopTest.java:6642)
+93) test235(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test235$$PHOSPHORTAGGED(RandoopTest.java:6830)
+94) test239(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test239$$PHOSPHORTAGGED(RandoopTest.java:6932)
+95) test242(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test242$$PHOSPHORTAGGED(RandoopTest.java:7006)
+96) test243(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test243$$PHOSPHORTAGGED(RandoopTest.java:7130)
+97) test246(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test246$$PHOSPHORTAGGED(RandoopTest.java:7338)
+98) test247(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test247$$PHOSPHORTAGGED(RandoopTest.java:7544)
+99) test248(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test248$$PHOSPHORTAGGED(RandoopTest.java:7580)
+100) test249(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test249$$PHOSPHORTAGGED(RandoopTest.java:7636)
+101) test250(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test250$$PHOSPHORTAGGED(RandoopTest.java:7666)
+102) test251(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test251$$PHOSPHORTAGGED(RandoopTest.java:7718)
+103) test252(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test252$$PHOSPHORTAGGED(RandoopTest.java:7742)
+104) test254(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test254$$PHOSPHORTAGGED(RandoopTest.java:7846)
+105) test256(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test256$$PHOSPHORTAGGED(RandoopTest.java:7916)
+106) test257(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test257$$PHOSPHORTAGGED(RandoopTest.java:7972)
+107) test260(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test260$$PHOSPHORTAGGED(RandoopTest.java:8206)
+108) test262(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test262$$PHOSPHORTAGGED(RandoopTest.java:8260)
+109) test264(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test264$$PHOSPHORTAGGED(RandoopTest.java:8314)
+110) test265(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test265$$PHOSPHORTAGGED(RandoopTest.java:8372)
+111) test266(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test266$$PHOSPHORTAGGED(RandoopTest.java:8542)
+112) test267(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test267$$PHOSPHORTAGGED(RandoopTest.java:8746)
+113) test269(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test269$$PHOSPHORTAGGED(RandoopTest.java:8792)
+114) test270(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test270$$PHOSPHORTAGGED(RandoopTest.java:8870)
+115) test272(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test272$$PHOSPHORTAGGED(RandoopTest.java:8952)
+116) test274(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test274$$PHOSPHORTAGGED(RandoopTest.java:9008)
+117) test278(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test278$$PHOSPHORTAGGED(RandoopTest.java:9112)
+118) test281(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test281$$PHOSPHORTAGGED(RandoopTest.java:9180)
+119) test282(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test282$$PHOSPHORTAGGED(RandoopTest.java:9208)
+120) test283(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test283$$PHOSPHORTAGGED(RandoopTest.java:9256)
+121) test292(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test292$$PHOSPHORTAGGED(RandoopTest.java:9418)
+122) test294(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test294$$PHOSPHORTAGGED(RandoopTest.java:9470)
+123) test297(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test297$$PHOSPHORTAGGED(RandoopTest.java:9562)
+124) test300(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test300$$PHOSPHORTAGGED(RandoopTest.java:9824)
+125) test303(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test303$$PHOSPHORTAGGED(RandoopTest.java:9932)
+126) test304(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test304$$PHOSPHORTAGGED(RandoopTest.java:10106)
+127) test305(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test305$$PHOSPHORTAGGED(RandoopTest.java:10132)
+128) test306(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test306$$PHOSPHORTAGGED(RandoopTest.java:10378)
+129) test307(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test307$$PHOSPHORTAGGED(RandoopTest.java:10414)
+130) test308(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test308$$PHOSPHORTAGGED(RandoopTest.java:10520)
+131) test309(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test309$$PHOSPHORTAGGED(RandoopTest.java:10544)
+132) test313(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test313$$PHOSPHORTAGGED(RandoopTest.java:10638)
+133) test315(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test315$$PHOSPHORTAGGED(RandoopTest.java:10790)
+134) test316(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test316$$PHOSPHORTAGGED(RandoopTest.java:11012)
+135) test319(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test319$$PHOSPHORTAGGED(RandoopTest.java:11106)
+136) test321(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test321$$PHOSPHORTAGGED(RandoopTest.java:11208)
+137) test323(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test323$$PHOSPHORTAGGED(RandoopTest.java:11248)
+138) test325(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test325$$PHOSPHORTAGGED(RandoopTest.java:11294)
+139) test327(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test327$$PHOSPHORTAGGED(RandoopTest.java:11406)
+140) test329(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test329$$PHOSPHORTAGGED(RandoopTest.java:11440)
+141) test330(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test330$$PHOSPHORTAGGED(RandoopTest.java:11484)
+142) test332(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test332$$PHOSPHORTAGGED(RandoopTest.java:11534)
+143) test335(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test335$$PHOSPHORTAGGED(RandoopTest.java:11610)
+144) test337(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test337$$PHOSPHORTAGGED(RandoopTest.java:11696)
+145) test339(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test339$$PHOSPHORTAGGED(RandoopTest.java:11734)
+146) test341(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test341$$PHOSPHORTAGGED(RandoopTest.java:11836)
+147) test342(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test342$$PHOSPHORTAGGED(RandoopTest.java:11862)
+148) test343(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test343$$PHOSPHORTAGGED(RandoopTest.java:11886)
+149) test347(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test347$$PHOSPHORTAGGED(RandoopTest.java:12014)
+150) test348(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test348$$PHOSPHORTAGGED(RandoopTest.java:12032)
+151) test351(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test351$$PHOSPHORTAGGED(RandoopTest.java:12094)
+152) test353(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test353$$PHOSPHORTAGGED(RandoopTest.java:12162)
+153) test357(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test357$$PHOSPHORTAGGED(RandoopTest.java:12266)
+154) test358(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test358$$PHOSPHORTAGGED(RandoopTest.java:12306)
+155) test359(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test359$$PHOSPHORTAGGED(RandoopTest.java:12394)
+156) test360(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test360$$PHOSPHORTAGGED(RandoopTest.java:12418)
+157) test362(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test362$$PHOSPHORTAGGED(RandoopTest.java:12472)
+158) test364(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test364$$PHOSPHORTAGGED(RandoopTest.java:12546)
+159) test365(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test365$$PHOSPHORTAGGED(RandoopTest.java:12654)
+160) test366(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test366$$PHOSPHORTAGGED(RandoopTest.java:12670)
+161) test367(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test367$$PHOSPHORTAGGED(RandoopTest.java:12730)
+162) test368(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test368$$PHOSPHORTAGGED(RandoopTest.java:12772)
+163) test369(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test369$$PHOSPHORTAGGED(RandoopTest.java:12806)
+164) test370(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test370$$PHOSPHORTAGGED(RandoopTest.java:12840)
+165) test372(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test372$$PHOSPHORTAGGED(RandoopTest.java:12886)
+166) test373(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test373$$PHOSPHORTAGGED(RandoopTest.java:12906)
+167) test374(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test374$$PHOSPHORTAGGED(RandoopTest.java:12966)
+168) test378(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test378$$PHOSPHORTAGGED(RandoopTest.java:13078)
+169) test379(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test379$$PHOSPHORTAGGED(RandoopTest.java:13176)
+170) test381(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test381$$PHOSPHORTAGGED(RandoopTest.java:13264)
+171) test382(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test382$$PHOSPHORTAGGED(RandoopTest.java:13302)
+172) test383(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test383$$PHOSPHORTAGGED(RandoopTest.java:13332)
+173) test385(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test385$$PHOSPHORTAGGED(RandoopTest.java:13640)
+174) test386(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test386$$PHOSPHORTAGGED(RandoopTest.java:13676)
+175) test387(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test387$$PHOSPHORTAGGED(RandoopTest.java:13828)
+176) test389(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test389$$PHOSPHORTAGGED(RandoopTest.java:14070)
+177) test390(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test390$$PHOSPHORTAGGED(RandoopTest.java:14098)
+178) test393(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test393$$PHOSPHORTAGGED(RandoopTest.java:14196)
+179) test394(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test394$$PHOSPHORTAGGED(RandoopTest.java:14210)
+180) test398(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test398$$PHOSPHORTAGGED(RandoopTest.java:14346)
+181) test402(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test402$$PHOSPHORTAGGED(RandoopTest.java:14482)
+182) test403(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test403$$PHOSPHORTAGGED(RandoopTest.java:14526)
+183) test405(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: lich.tool.encryptionAndDecryption.core.Base
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.RandoopTest.test405$$PHOSPHORTAGGED(RandoopTest.java:14644)
+184) test406(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test406$$PHOSPHORTAGGED(RandoopTest.java:14782)
+185) test407(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Date;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @127: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @127
+    flags: { }
+    locals: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Date', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'lich/tool/encryptionAndDecryption/asymmetric/OtherObj/PublicKeyInfo', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 143a 0919 09b6 001a bb00 1c59
+    0x0000010: b700 1e3a 0abb 0020 59b7 0021 3a0b 2a2b
+    0x0000020: 57b7 0022 2a2b 1909 190b 3a0c 190c b800
+    0x0000030: 2859 b400 2c5d 58b4 0030 bb00 3219 09b6
+    0x0000040: 0036 5c12 3719 09b6 0036 1239 1909 b600
+    0x0000050: 3612 3a19 09b6 0036 123b 1909 b600 3612
+    0x0000060: 7019 09b6 0036 1909 b600 40c0 0014 b700
+    0x0000070: 4319 0bb8 0049 59b4 002c 5d58 b400 305f
+    0x0000080: c000 4b5f 1909 190a 013a 0c3a 0d19 0d19
+    0x0000090: 0cb8 0051 59b4 0054 c000 4d5f b400 5519
+    0x00000a0: 09b6 0036 b800 5b5e 5857 5b5f b500 5eb5
+    0x00000b0: 0060 2a2b 2c2d 1909 b600 36b8 005b 5e58
+    0x00000c0: 575b 5fb5 0073 b500 752a 2b19 0419 0519
+    0x00000d0: 09b6 0036 b800 5b5e 5857 5b5f b500 78b5
+    0x00000e0: 007a 2a2b 1906 1907 1909 b600 36b8 005b
+    0x00000f0: 5e58 575b 5fb5 007d b500 7fb1          
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test407$$PHOSPHORTAGGED(RandoopTest.java:14816)
+
+FAILURES!!!
+Tests run: 407,  Failures: 185
+

@@ -1,0 +1,239 @@
+JUnit version 4.13.1
+.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+E.E.E.E.E.E.E.E.E
+Time: 0.58
+There were 9 failures:
+1) TestGetRemoteParam(com.github.myzhan.locust4j.TestLocust)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.Locust.<init>(Locust.java:30)
+	at com.github.myzhan.locust4j.Locust.<init>(Locust.java:26)
+	at com.github.myzhan.locust4j.Locust$InstanceHolder.<clinit>(Locust.java:312)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at com.github.myzhan.locust4j.TestLocust.TestGetRemoteParam$$PHOSPHORTAGGED(TestLocust.java:194)
+2) TestDefaultRateLimiter(com.github.myzhan.locust4j.TestLocust)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at com.github.myzhan.locust4j.TestLocust.TestDefaultRateLimiter$$PHOSPHORTAGGED(TestLocust.java:64)
+3) TestOnStartAndOnStopCalledOnTaskLoop(com.github.myzhan.locust4j.TestLocust)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at com.github.myzhan.locust4j.TestLocust$TestRunner.<init>(TestLocust.java:87)
+	at com.github.myzhan.locust4j.TestLocust.TestOnStartAndOnStopCalledOnTaskLoop$$PHOSPHORTAGGED(TestLocust.java:137)
+4) TestRecordSuccess(com.github.myzhan.locust4j.TestLocust)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at com.github.myzhan.locust4j.TestLocust.TestRecordSuccess$$PHOSPHORTAGGED(TestLocust.java:173)
+5) WhenExecuteThrowExceptionOnStartAndOnStopCalled(com.github.myzhan.locust4j.TestLocust)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at com.github.myzhan.locust4j.TestLocust$TestRunner.<init>(TestLocust.java:87)
+	at com.github.myzhan.locust4j.TestLocust.WhenExecuteThrowExceptionOnStartAndOnStopCalled$$PHOSPHORTAGGED(TestLocust.java:100)
+6) TestDryRun(com.github.myzhan.locust4j.TestLocust)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at com.github.myzhan.locust4j.TestLocust.TestDryRun$$PHOSPHORTAGGED(TestLocust.java:76)
+7) WhenOnStartThrowExceptionOnStopNotCalled(com.github.myzhan.locust4j.TestLocust)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at com.github.myzhan.locust4j.TestLocust$TestRunner.<init>(TestLocust.java:87)
+	at com.github.myzhan.locust4j.TestLocust.WhenOnStartThrowExceptionOnStopNotCalled$$PHOSPHORTAGGED(TestLocust.java:122)
+8) TestRecordFailure(com.github.myzhan.locust4j.TestLocust)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.Stats.<init>(Stats.java:59)
+	at com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder.<clinit>(Stats.java:241)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at com.github.myzhan.locust4j.TestLocust.TestRecordFailure$$PHOSPHORTAGGED(TestLocust.java:183)
+9) TestOnStartAndOnStop(com.github.myzhan.locust4j.TestLocust)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at com.github.myzhan.locust4j.TestLocust.TestOnStartAndOnStop$$PHOSPHORTAGGED(TestLocust.java:149)
+
+FAILURES!!!
+Tests run: 9,  Failures: 9
+

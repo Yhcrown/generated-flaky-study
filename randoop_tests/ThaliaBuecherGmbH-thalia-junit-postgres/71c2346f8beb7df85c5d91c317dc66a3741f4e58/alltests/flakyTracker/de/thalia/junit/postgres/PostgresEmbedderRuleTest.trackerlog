@@ -1,0 +1,99 @@
+JUnit version 4.12
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+.E
+Time: 1.509
+There was 1 failure:
+1) testRule(de.thalia.junit.postgres.PostgresEmbedderRuleTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    de/flapdoodle/embed/process/store/Downloader.downloadSpeed$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Ljava/lang/String;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @124: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @124
+    flags: { }
+    locals: { 'de/flapdoodle/embed/process/store/Downloader', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', null, 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1908 c000 183a 0b19 0bb6 001e 013a 0cbb
+    0x0000010: 0072 59b7 0073 3a0d bb00 7559 b700 763a
+    0x0000020: 0e19 0b19 0e3a 0f19 0fb8 00f5 59b4 00f8
+    0x0000030: 5d58 b400 f9bb 00fb 190b b600 305c 12fc
+    0x0000040: 190b b600 3012 fe19 0bb6 0030 12ff 190b
+    0x0000050: b600 3013 01cc 190b b600 3013 01cc 190b
+    0x0000060: b600 3019 0bb6 0034 c000 18b7 0104 190e
+    0x0000070: b801 0a59 b400 f85d 58b4 00f9 5fc0 010c
+    0x0000080: 5f20 1904 3a10 5d58 1910 b800 843a 1065
+    0x0000090: 1910 1401 cd19 0bb6 0030 3a10 5d58 1910
+    0x00000a0: b800 843a 106d 1910 190b b600 30b8 0084
+    0x00000b0: 3a14 3712 1612 1914 0919 0bb6 0030 3a10
+    0x00000c0: 5d58 1910 b800 843a 1094 1910 5919 0b5f
+    0x00000d0: 190c 0406 b600 bf3a 0c57 1914 190b b600
+    0x00000e0: 30b8 0084 3a14 9a00 150a 190b b600 3019
+    0x00000f0: 0bb6 0030 b800 843a 1437 1219 0b19 0cb6
+    0x0000100: 0135 1605 1907 1612 1914 1401 cf19 0bb6
+    0x0000110: 0030 3a10 5d58 1910 b800 843a 1069 1910
+    0x0000120: 3a10 5d58 1910 b800 843a 106d 1910 190b
+    0x0000130: b600 30b8 0084 3a17 3715 bb00 2c19 0bb6
+    0x0000140: 0030 5c19 0bb6 0034 c000 18b7 0036 1301
+    0x0000150: b619 0bb6 0030 190b 1909 013a 0f3a 1819
+    0x0000160: 1819 0fb6 0051 59b4 0042 c000 2c5f b400
+    0x0000170: 4716 1519 1719 0b19 0901 3a0f 3a18 1918
+    0x0000180: 190f b600 df59 b400 42c0 002c 5fb4 0047
+    0x0000190: 1301 d219 0bb6 0030 190b 1909 013a 0f3a
+    0x00001a0: 1819 1819 0fb6 0051 59b4 0042 c000 2c5f
+    0x00001b0: b400 4719 0b19 0901 3a0f 3a18 1918 190f
+    0x00001c0: b600 5c59 b400 42c0 004d 5fb4 0047 190b
+    0x00001d0: b600 30b8 0084 190b 190c b601 3519 095f
+    0x00001e0: b500 4719 095f b500 4219 0919 0b19 0cb6
+    0x00001f0: 0135 190b b600 5fb0 190b 190c b601 3519
+    0x0000200: 0bb6 005f bf                           
+  Exception Handler Table:
+    bci [15, 504] => handler: 504
+  Stackmap Table:
+    full_frame(@251,{Object[#2],Object[#128],Long,Object[#128],Long,Object[#128],Object[#26],Object[#62],Top,Object[#24],Object[#235],Object[#114],Object[#117],Top,Top,Top,Long,Object[#128]},{})
+    full_frame(@504,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#24],Object[#235]},{Object[#108]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at de.flapdoodle.embed.process.store.PostgresArtifactStoreBuilder.defaults$$PHOSPHORTAGGED(PostgresArtifactStoreBuilder.java:15)
+	at ru.yandex.qatools.embed.postgresql.config.RuntimeConfigBuilder.defaults$$PHOSPHORTAGGED(RuntimeConfigBuilder.java:19)
+	at ru.yandex.qatools.embed.postgresql.EmbeddedPostgres.cachedRuntimeConfig$$PHOSPHORTAGGED(EmbeddedPostgres.java:117)
+	at de.thalia.junit.postgres.PostgresEmbedder$PerTestPostgresInstance.<init>(PostgresEmbedder.java:88)
+	at de.thalia.junit.postgres.PostgresEmbedder.<init>(PostgresEmbedder.java:141)
+	at de.thalia.junit.postgres.PostgresEmbedderRule$1.evaluate$$PHOSPHORTAGGED(PostgresEmbedderRule.java:85)
+	at org.junit.rules.RunRules.evaluate$$PHOSPHORTAGGED(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

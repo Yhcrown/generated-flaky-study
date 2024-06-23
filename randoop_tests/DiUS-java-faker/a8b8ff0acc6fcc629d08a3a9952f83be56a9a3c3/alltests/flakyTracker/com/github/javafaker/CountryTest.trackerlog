@@ -1,0 +1,13 @@
+JUnit version 4.12
+.testCode2 may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testCode3 may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testFlag may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testName may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testCapital may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testCurrency may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.testCurrencyCode may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+
+Time: 15.369
+
+OK (7 tests)
+

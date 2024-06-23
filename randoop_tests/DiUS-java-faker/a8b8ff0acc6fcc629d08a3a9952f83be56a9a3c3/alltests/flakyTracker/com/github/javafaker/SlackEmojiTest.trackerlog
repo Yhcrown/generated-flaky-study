@@ -1,0 +1,15 @@
+JUnit version 4.12
+.celebration may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.activity may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.custom may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.food_and_drink may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.nature may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.people may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.travel_and_places may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.emoji may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+.objects_and_symbols may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
+
+Time: 13.258
+
+OK (9 tests)
+

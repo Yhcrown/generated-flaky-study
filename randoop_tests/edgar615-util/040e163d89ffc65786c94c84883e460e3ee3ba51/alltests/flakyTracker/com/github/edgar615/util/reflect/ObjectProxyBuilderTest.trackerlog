@@ -1,0 +1,25 @@
+JUnit version 4.11
+.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1
+hello
+.com.sun.proxy.$Proxy3
+com.github.edgar615.util.reflect.MyServiceImpl
+add
+edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags@2f95ce11
+..com.sun.proxy.$Proxy2
+com.github.edgar615.util.reflect.MyServiceImpl
+say
+edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags@15ec3c0c
+hello
+com.sun.proxy.$Proxy2
+com.github.edgar615.util.reflect.MyServiceImpl
+say
+edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags@323b5264
+foo
+
+Time: 0.609
+
+OK (4 tests)
+

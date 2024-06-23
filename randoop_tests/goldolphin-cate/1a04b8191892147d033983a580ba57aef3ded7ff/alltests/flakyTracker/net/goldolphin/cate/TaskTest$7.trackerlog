@@ -1,0 +1,11 @@
+JUnit version 4.11
+.Run: state=null, cont=net.goldolphin.cate.TaskWithInitState$1@8942ece, subCont=net.goldolphin.cate.Environment@3a89226e, scheduler=net.goldolphin.cate.TaskTest$DebugScheduler@15254569
+Run: state=2, cont=net.goldolphin.cate.Func1Task$1@6b0270e9, subCont=net.goldolphin.cate.Environment@3a89226e, scheduler=net.goldolphin.cate.TaskTest$DebugScheduler@15254569
+Run: state=4, cont=net.goldolphin.cate.WhenAllTask$1@1f69c425, subCont=net.goldolphin.cate.Environment@3a89226e, scheduler=net.goldolphin.cate.TaskTest$DebugScheduler@15254569
+40
+50
+
+Time: 0.54
+
+OK (1 test)
+

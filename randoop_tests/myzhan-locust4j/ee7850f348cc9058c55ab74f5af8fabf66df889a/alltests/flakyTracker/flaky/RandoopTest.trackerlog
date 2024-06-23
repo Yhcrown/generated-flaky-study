@@ -1,0 +1,2504 @@
+JUnit version 4.13.1
+.E.E..E.E.E.E.SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+E.E.E..E.....E.E...E....E.E.E.E.E.E.E..E.E.E....E.E..E.E...E.E....E.E...E.E........E.E.E.E..E.E..E.E..E.E.E.E..E.E.E..E..E.....E..E.E..E.E..E..E....E.E..E...E.....E.E.E.E.E..E.E.E..E....E...E..E.E.E...E.E.E..E..E.E...E...E......E..E....E.......E.E..E.......E.....E.E
+Time: 1.693
+There were 92 failures:
+1) test001(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test001$$PHOSPHORTAGGED(RandoopTest.java:34)
+2) test002(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test002$$PHOSPHORTAGGED(RandoopTest.java:60)
+3) test004(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test004$$PHOSPHORTAGGED(RandoopTest.java:92)
+4) test005(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test005$$PHOSPHORTAGGED(RandoopTest.java:108)
+5) test006(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test006$$PHOSPHORTAGGED(RandoopTest.java:124)
+6) test007(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test007$$PHOSPHORTAGGED(RandoopTest.java:140)
+7) test008(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.Locust.<init>(Locust.java:30)
+	at com.github.myzhan.locust4j.Locust.<init>(Locust.java:26)
+	at com.github.myzhan.locust4j.Locust$InstanceHolder.<clinit>(Locust.java:312)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test008$$PHOSPHORTAGGED(RandoopTest.java:154)
+8) test009(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test009$$PHOSPHORTAGGED(RandoopTest.java:178)
+9) test010(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test010$$PHOSPHORTAGGED(RandoopTest.java:200)
+10) test012(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test012$$PHOSPHORTAGGED(RandoopTest.java:252)
+11) test017(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test017$$PHOSPHORTAGGED(RandoopTest.java:348)
+12) test018(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test018$$PHOSPHORTAGGED(RandoopTest.java:374)
+13) test021(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.Stats.<init>(Stats.java:59)
+	at com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder.<clinit>(Stats.java:241)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test021$$PHOSPHORTAGGED(RandoopTest.java:444)
+14) test025(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test025$$PHOSPHORTAGGED(RandoopTest.java:566)
+15) test026(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test026$$PHOSPHORTAGGED(RandoopTest.java:592)
+16) test027(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test027$$PHOSPHORTAGGED(RandoopTest.java:634)
+17) test028(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test028$$PHOSPHORTAGGED(RandoopTest.java:654)
+18) test029(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test029$$PHOSPHORTAGGED(RandoopTest.java:686)
+19) test030(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test030$$PHOSPHORTAGGED(RandoopTest.java:726)
+20) test031(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test031$$PHOSPHORTAGGED(RandoopTest.java:760)
+21) test033(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test033$$PHOSPHORTAGGED(RandoopTest.java:808)
+22) test034(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test034$$PHOSPHORTAGGED(RandoopTest.java:830)
+23) test035(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test035$$PHOSPHORTAGGED(RandoopTest.java:856)
+24) test039(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test039$$PHOSPHORTAGGED(RandoopTest.java:942)
+25) test040(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test040$$PHOSPHORTAGGED(RandoopTest.java:972)
+26) test042(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test042$$PHOSPHORTAGGED(RandoopTest.java:1028)
+27) test043(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test043$$PHOSPHORTAGGED(RandoopTest.java:1046)
+28) test046(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test046$$PHOSPHORTAGGED(RandoopTest.java:1108)
+29) test047(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test047$$PHOSPHORTAGGED(RandoopTest.java:1134)
+30) test051(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test051$$PHOSPHORTAGGED(RandoopTest.java:1226)
+31) test052(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test052$$PHOSPHORTAGGED(RandoopTest.java:1284)
+32) test055(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test055$$PHOSPHORTAGGED(RandoopTest.java:1354)
+33) test056(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test056$$PHOSPHORTAGGED(RandoopTest.java:1494)
+34) test064(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.Stats.<init>(Stats.java:59)
+	at flaky.RandoopTest.test064$$PHOSPHORTAGGED(RandoopTest.java:1710)
+35) test065(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test065$$PHOSPHORTAGGED(RandoopTest.java:1726)
+36) test066(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test066$$PHOSPHORTAGGED(RandoopTest.java:1796)
+37) test067(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test067$$PHOSPHORTAGGED(RandoopTest.java:1832)
+38) test069(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test069$$PHOSPHORTAGGED(RandoopTest.java:1882)
+39) test070(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test070$$PHOSPHORTAGGED(RandoopTest.java:1906)
+40) test072(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test072$$PHOSPHORTAGGED(RandoopTest.java:1960)
+41) test073(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/msgpack/core/buffer/MessageBuffer.getBytes$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @128: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @128
+    flags: { }
+    locals: { 'org/msgpack/core/buffer/MessageBuffer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyByteArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190a c000 283a 0b19 0bb6 002e bb01 0659
+    0x0000010: b701 073a 0cbb 011b 59b7 011c 3a0d b200
+    0x0000020: dbb2 00f8 2a2b 5f59 b401 0d5b 57b4 010b
+    0x0000030: b800 4c2a 2b5f 59b4 00fa 5e58 b400 fdb8
+    0x0000040: 004c 1c2d 5f85 5d58 3a0e 5d58 190e b800
+    0x0000050: 4c3a 0e61 190e 1904 1905 b201 0fb2 0112
+    0x0000060: 1506 1907 3a10 5f19 10b8 004c 5b57 605f
+    0x0000070: 5f85 5d58 1508 1909 5f85 5d58 190b 5f57
+    0x0000080: b801 ac19 0bb6 0064 b119 0bb6 0064 bf  
+  Exception Handler Table:
+    bci [12, 137] => handler: 137
+  Stackmap Table:
+    full_frame(@137,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#40]},{Object[#102]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:47)
+	at org.msgpack.core.buffer.ArrayBufferInput.<init>(ArrayBufferInput.java:42)
+	at org.msgpack.core.MessagePack$UnpackerConfig.newUnpacker$$PHOSPHORTAGGED(MessagePack.java:621)
+	at org.msgpack.core.MessagePack.newDefaultUnpacker$$PHOSPHORTAGGED(MessagePack.java:294)
+	at com.github.myzhan.locust4j.message.Message.<init>(Message.java:32)
+	at flaky.RandoopTest.test073$$PHOSPHORTAGGED(RandoopTest.java:1982)
+42) test075(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test075$$PHOSPHORTAGGED(RandoopTest.java:2030)
+43) test076(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test076$$PHOSPHORTAGGED(RandoopTest.java:2054)
+44) test077(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test077$$PHOSPHORTAGGED(RandoopTest.java:2124)
+45) test078(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test078$$PHOSPHORTAGGED(RandoopTest.java:2190)
+46) test080(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test080$$PHOSPHORTAGGED(RandoopTest.java:2242)
+47) test081(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test081$$PHOSPHORTAGGED(RandoopTest.java:2286)
+48) test082(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test082$$PHOSPHORTAGGED(RandoopTest.java:2328)
+49) test084(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test084$$PHOSPHORTAGGED(RandoopTest.java:2368)
+50) test086(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test086$$PHOSPHORTAGGED(RandoopTest.java:2410)
+51) test091(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test091$$PHOSPHORTAGGED(RandoopTest.java:2516)
+52) test093(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test093$$PHOSPHORTAGGED(RandoopTest.java:2556)
+53) test094(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test094$$PHOSPHORTAGGED(RandoopTest.java:2572)
+54) test096(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test096$$PHOSPHORTAGGED(RandoopTest.java:2630)
+55) test097(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test097$$PHOSPHORTAGGED(RandoopTest.java:2650)
+56) test099(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test099$$PHOSPHORTAGGED(RandoopTest.java:2714)
+57) test101(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test101$$PHOSPHORTAGGED(RandoopTest.java:2762)
+58) test105(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test105$$PHOSPHORTAGGED(RandoopTest.java:2872)
+59) test106(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test106$$PHOSPHORTAGGED(RandoopTest.java:2896)
+60) test108(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test108$$PHOSPHORTAGGED(RandoopTest.java:2956)
+61) test111(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test111$$PHOSPHORTAGGED(RandoopTest.java:3042)
+62) test116(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test116$$PHOSPHORTAGGED(RandoopTest.java:3214)
+63) test117(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test117$$PHOSPHORTAGGED(RandoopTest.java:3278)
+64) test118(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.RandoopTest.test118$$PHOSPHORTAGGED(RandoopTest.java:3324)
+65) test119(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test119$$PHOSPHORTAGGED(RandoopTest.java:3348)
+66) test120(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test120$$PHOSPHORTAGGED(RandoopTest.java:3368)
+67) test122(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test122$$PHOSPHORTAGGED(RandoopTest.java:3454)
+68) test123(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    zmq/ZMQ.startStopwatch$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 00d9 4d2c b600 df2c 2b4e 2db8 034c
+    0x0000010: 59b4 0278 5d58 b402 79bb 034e 2cb6 00f1
+    0x0000020: 5c12 152c b600 f113 0350 2cb6 00f1 1303
+    0x0000030: 512c b600 f113 0352 2cb6 00f1 1283 2cb6
+    0x0000040: 00f1 2cb6 00f5 c000 d9b7 0355 2bb8 035b
+    0x0000050: 59b4 0278 5d58 b402 795f c003 5d5f 2b5f
+    0x0000060: b502 792b 5b57 b502 782b 2cb6 0103 b02c
+    0x0000070: b601 03bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#217]},{Object[#261]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.zeromq.ZMQ.<clinit>(ZMQ.java:234)
+	at com.github.myzhan.locust4j.rpc.ZeromqClient.<init>(ZeromqClient.java:22)
+	at flaky.RandoopTest.test123$$PHOSPHORTAGGED(RandoopTest.java:3476)
+69) test124(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test124$$PHOSPHORTAGGED(RandoopTest.java:3528)
+70) test126(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test126$$PHOSPHORTAGGED(RandoopTest.java:3620)
+71) test130(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test130$$PHOSPHORTAGGED(RandoopTest.java:3724)
+72) test133(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test133$$PHOSPHORTAGGED(RandoopTest.java:3796)
+73) test135(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test135$$PHOSPHORTAGGED(RandoopTest.java:3890)
+74) test136(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test136$$PHOSPHORTAGGED(RandoopTest.java:3922)
+75) test137(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test137$$PHOSPHORTAGGED(RandoopTest.java:3974)
+76) test140(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test140$$PHOSPHORTAGGED(RandoopTest.java:4038)
+77) test141(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test141$$PHOSPHORTAGGED(RandoopTest.java:4072)
+78) test142(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at flaky.RandoopTest.test142$$PHOSPHORTAGGED(RandoopTest.java:4188)
+79) test144(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test144$$PHOSPHORTAGGED(RandoopTest.java:4234)
+80) test146(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test146$$PHOSPHORTAGGED(RandoopTest.java:4352)
+81) test147(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class org.zeromq.ZMQ
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.rpc.ZeromqClient.<init>(ZeromqClient.java:22)
+	at flaky.RandoopTest.test147$$PHOSPHORTAGGED(RandoopTest.java:4384)
+82) test150(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test150$$PHOSPHORTAGGED(RandoopTest.java:4470)
+83) test153(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test153$$PHOSPHORTAGGED(RandoopTest.java:4542)
+84) test159(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test159$$PHOSPHORTAGGED(RandoopTest.java:4706)
+85) test161(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test161$$PHOSPHORTAGGED(RandoopTest.java:4750)
+86) test165(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.Locust$InstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.Locust.getInstance$$PHOSPHORTAGGED(Locust.java:49)
+	at flaky.RandoopTest.test165$$PHOSPHORTAGGED(RandoopTest.java:4834)
+87) test172(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test172$$PHOSPHORTAGGED(RandoopTest.java:5060)
+88) test173(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test173$$PHOSPHORTAGGED(RandoopTest.java:5152)
+89) test175(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test175$$PHOSPHORTAGGED(RandoopTest.java:5198)
+90) test182(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.stats.StatsEntry.reset$$PHOSPHORTAGGED(StatsEntry.java:37)
+	at com.github.myzhan.locust4j.stats.StatsEntry.getStrippedReport$$PHOSPHORTAGGED(StatsEntry.java:122)
+	at flaky.RandoopTest.test182$$PHOSPHORTAGGED(RandoopTest.java:5386)
+91) test187(flaky.RandoopTest)
+java.lang.NoClassDefFoundError: Could not initialize class com.github.myzhan.locust4j.stats.Stats$StatsInstanceHolder
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at com.github.myzhan.locust4j.stats.Stats.getInstance$$PHOSPHORTAGGED(Stats.java:63)
+	at flaky.RandoopTest.test187$$PHOSPHORTAGGED(RandoopTest.java:5482)
+92) test188(flaky.RandoopTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/github/myzhan/locust4j/utils/Utils.now$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @89: swap
+  Reason:
+    Type long_2nd (current frame, stack[1]) is not assignable to category1 type
+  Current Frame:
+    bci: @89
+    flags: { }
+    locals: { 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2ac0 000e 4d2c b600 142c 2b4e 2db8 0172
+    0x0000010: 59b4 0102 5d58 b401 03bb 00de 2cb6 0031
+    0x0000020: 5c12 df2c b600 3113 0174 2cb6 0031 12e2
+    0x0000030: 2cb6 0031 1301 752c b600 3113 0176 2cb6
+    0x0000040: 0031 2cb6 0075 c000 0eb7 00e7 2bb8 017a
+    0x0000050: 59b4 0102 5d58 b401 035f c001 7c5f 2b5f
+    0x0000060: b501 032b 5b57 b501 022b 2cb6 0098 b02c
+    0x0000070: b600 98bf                              
+  Exception Handler Table:
+    bci [9, 111] => handler: 111
+  Stackmap Table:
+    full_frame(@111,{Top,Top,Object[#14]},{Object[#210]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at com.github.myzhan.locust4j.runtime.Runner.<init>(Runner.java:96)
+	at flaky.RandoopTest.test188$$PHOSPHORTAGGED(RandoopTest.java:5512)
+
+FAILURES!!!
+Tests run: 188,  Failures: 92
+

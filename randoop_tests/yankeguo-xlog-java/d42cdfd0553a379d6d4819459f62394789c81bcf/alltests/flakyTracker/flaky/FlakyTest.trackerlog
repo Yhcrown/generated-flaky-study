@@ -1,0 +1,1063 @@
+JUnit version 4.12
+.test041_1 may be flaky: FlakyTaintLabel{type=RANDOM, cause='net/landzero/xlog/utils/Hex.random', file='net/landzero/xlog/utils/Hex', line=91, label=3}
+E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
+Time: 0.936
+There were 19 failures:
+1) test041_1(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'b94fb204418690ac' != 'f9d53dd29cb697a5' expected:<[b94fb204418690ac]> but was:<[f9d53dd29cb697a5]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test041_1$$PHOSPHORTAGGED(FlakyTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+2) test078_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    ch/qos/logback/core/ContextBase.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @107: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @107
+    flags: { }
+    locals: { 'ch/qos/logback/core/ContextBase', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'ch/qos/logback/core/ContextBase', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2cc0 0026 4e2d b600 2cbb 002e 59b7 0030
+    0x0000010: 3a04 2a2b 57b7 0031 2a2b 2d19 043a 0519
+    0x0000020: 05b8 0037 59b4 003a 5d58 b400 3ebb 0040
+    0x0000030: 2db6 0044 5c12 452d b600 4412 472d b600
+    0x0000040: 4412 482d b600 4412 492d b600 4412 4a2d
+    0x0000050: b600 442d b600 4ec0 0026 b700 5119 04b8
+    0x0000060: 0057 59b4 003a 5d58 b400 3e5f c000 595f
+    0x0000070: 2db6 0044 b800 5f3a 055e 5857 5b5b 57b5
+    0x0000080: 0061 1905 b500 642a 2bbb 0066 2db6 0044
+    0x0000090: 5c2d b600 4ec0 0026 b700 682d b600 44b8
+    0x00000a0: 005f 5e58 575b 5fb5 006b b500 6d2a 2bbb
+    0x00000b0: 006f 2db6 0044 5c2d b600 4ec0 0026 b700
+    0x00000c0: 702d b600 44b8 005f 5e58 575b 5fb5 0073
+    0x00000d0: b500 752a 2bbb 006f 2db6 0044 5c2d b600
+    0x00000e0: 4ec0 0026 b700 702d b600 44b8 005f 5e58
+    0x00000f0: 575b 5fb5 0078 b500 7a2a 2bbb 007c 2db6
+    0x0000100: 0044 5c2d b600 4ec0 0026 b700 7d2d b600
+    0x0000110: 44b8 005f 5e58 575b 5fb5 0080 b500 822a
+    0x0000120: 2bbb 0084 2db6 0044 5c04 2db6 0044 2db6
+    0x0000130: 004e c000 26b7 0087 2db6 0044 b800 5f5e
+    0x0000140: 5857 5b5f b500 8ab5 008c 2a2b 2db6 008f
+    0x0000150: b1                                     
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.slf4j.impl.StaticLoggerBinder.<init>(StaticLoggerBinder.java:59)
+	at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:50)
+	at org.slf4j.LoggerFactory.bind$$PHOSPHORTAGGED(LoggerFactory.java:150)
+	at org.slf4j.LoggerFactory.performInitialization$$PHOSPHORTAGGED(LoggerFactory.java:124)
+	at org.slf4j.LoggerFactory.getILoggerFactory$$PHOSPHORTAGGED(LoggerFactory.java:412)
+	at org.slf4j.LoggerFactory.getLogger$$PHOSPHORTAGGED(LoggerFactory.java:357)
+	at org.slf4j.LoggerFactory.getLogger$$PHOSPHORTAGGED(LoggerFactory.java:383)
+	at net.landzero.xlog.XLog.<clinit>(XLog.java:42)
+	at flaky.FlakyTest.test078_1$$PHOSPHORTAGGED(FlakyTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+3) test085_1(flaky.FlakyTest)
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.lang.ClassCastException.<init>(ClassCastException.java:58)
+	at java.lang.ClassCastException.<init>(ClassCastException.java)
+	at sun.util.resources.OpenListResourceBundle.loadLookup$$PHOSPHORTAGGED(OpenListResourceBundle.java:137)
+	at sun.util.resources.OpenListResourceBundle.loadLookupTablesIfNecessary$$PHOSPHORTAGGED(OpenListResourceBundle.java:128)
+	at sun.util.resources.OpenListResourceBundle.handleKeySet$$PHOSPHORTAGGED(OpenListResourceBundle.java:96)
+	at java.util.ResourceBundle.containsKey$$PHOSPHORTAGGED(ResourceBundle.java:1824)
+	at sun.util.locale.provider.LocaleResources.getTimeZoneNames$$PHOSPHORTAGGED(LocaleResources.java:263)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayNameArray$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:124)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayName$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:99)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:240)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:198)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:184)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObjectImpl$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:281)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObject$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:265)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayNamesImpl$$PHOSPHORTAGGED(TimeZoneNameUtility.java:166)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:137)
+	at java.util.TimeZone.getDisplayName$$PHOSPHORTAGGED(TimeZone.java:400)
+	at java.util.Date.toString$$PHOSPHORTAGGED(Date.java:1045)
+	at flaky.FlakyTest.test085_1$$PHOSPHORTAGGED(FlakyTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+4) test101_1(flaky.FlakyTest)
+org.junit.ComparisonFailure: '<init>' != 'invoke' expected:<[<init>]> but was:<[invoke]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test101_1$$PHOSPHORTAGGED(FlakyTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+5) test101_2(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'java.lang.Exception' != 'sun.reflect.DelegatingMethodAccessorImpl' expected:<[java.lang.Exception]> but was:<[sun.reflect.DelegatingMethodAccessorImpl]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test101_2$$PHOSPHORTAGGED(FlakyTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+6) test101_3(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'java.lang.Exception' != 'sun.reflect.DelegatingMethodAccessorImpl' expected:<[java.lang.Exception]> but was:<[sun.reflect.DelegatingMethodAccessorImpl]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test101_3$$PHOSPHORTAGGED(FlakyTest.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+7) test104_1(flaky.FlakyTest)
+org.junit.ComparisonFailure: '<init>' != 'invoke' expected:<[<init>]> but was:<[invoke]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test104_1$$PHOSPHORTAGGED(FlakyTest.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+8) test104_2(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'java.lang.Exception' != 'sun.reflect.DelegatingMethodAccessorImpl' expected:<[java.lang.Exception]> but was:<[sun.reflect.DelegatingMethodAccessorImpl]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test104_2$$PHOSPHORTAGGED(FlakyTest.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+9) test104_3(flaky.FlakyTest)
+org.junit.ComparisonFailure: '<init>' != 'invoke' expected:<[<init>]> but was:<[invoke]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test104_3$$PHOSPHORTAGGED(FlakyTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+10) test135_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/perf/XPerfEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @159: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @159
+    flags: { }
+    locals: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1906 c000 183a 0719 07b6 001e bb00 2059
+    0x0000010: b700 223a 082a 2b57 b700 232a 2bbb 0025
+    0x0000020: 1907 b600 295c 1907 b600 2dc0 0018 b700
+    0x0000030: 3019 07b6 0029 b800 365e 5857 5b5f b500
+    0x0000040: 3ab5 003c 2a2b 1907 1908 3a09 1909 b800
+    0x0000050: 4259 b400 455d 58b4 0048 bb00 4a19 07b6
+    0x0000060: 0029 5c12 4b19 07b6 0029 124d 1907 b600
+    0x0000070: 2912 4e19 07b6 0029 124f 1907 b600 2912
+    0x0000080: 5019 07b6 0029 1907 b600 2dc0 0018 b700
+    0x0000090: 5319 08b8 0059 59b4 0045 5d58 b400 485f
+    0x00000a0: c000 5b5f 1907 b600 29b8 0036 3a09 5e58
+    0x00000b0: 575b 5b57 b500 5d19 09b5 0060 2a2b 5f59
+    0x00000c0: b400 3c5b 57b4 003a b800 362c 2d19 07b6
+    0x00000d0: 0064 2a2b 5f59 b400 3c5b 57b4 003a b800
+    0x00000e0: 3619 0419 0519 07b6 0067 b1            
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test135_1$$PHOSPHORTAGGED(FlakyTest.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+11) test156_1(flaky.FlakyTest)
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.lang.ClassCastException.<init>(ClassCastException.java:58)
+	at java.lang.ClassCastException.<init>(ClassCastException.java)
+	at sun.util.resources.OpenListResourceBundle.loadLookup$$PHOSPHORTAGGED(OpenListResourceBundle.java:137)
+	at sun.util.resources.OpenListResourceBundle.loadLookupTablesIfNecessary$$PHOSPHORTAGGED(OpenListResourceBundle.java:128)
+	at sun.util.resources.OpenListResourceBundle.handleKeySet$$PHOSPHORTAGGED(OpenListResourceBundle.java:96)
+	at java.util.ResourceBundle.containsKey$$PHOSPHORTAGGED(ResourceBundle.java:1824)
+	at sun.util.locale.provider.LocaleResources.getTimeZoneNames$$PHOSPHORTAGGED(LocaleResources.java:263)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayNameArray$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:124)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayName$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:99)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:240)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:198)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:184)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObjectImpl$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:281)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObject$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:265)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayNamesImpl$$PHOSPHORTAGGED(TimeZoneNameUtility.java:166)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:137)
+	at java.util.TimeZone.getDisplayName$$PHOSPHORTAGGED(TimeZone.java:400)
+	at java.util.Date.toString$$PHOSPHORTAGGED(Date.java:1045)
+	at flaky.FlakyTest.test156_1$$PHOSPHORTAGGED(FlakyTest.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+12) test173_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/perf/XPerfEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @159: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @159
+    flags: { }
+    locals: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1906 c000 183a 0719 07b6 001e bb00 2059
+    0x0000010: b700 223a 082a 2b57 b700 232a 2bbb 0025
+    0x0000020: 1907 b600 295c 1907 b600 2dc0 0018 b700
+    0x0000030: 3019 07b6 0029 b800 365e 5857 5b5f b500
+    0x0000040: 3ab5 003c 2a2b 1907 1908 3a09 1909 b800
+    0x0000050: 4259 b400 455d 58b4 0048 bb00 4a19 07b6
+    0x0000060: 0029 5c12 4b19 07b6 0029 124d 1907 b600
+    0x0000070: 2912 4e19 07b6 0029 124f 1907 b600 2912
+    0x0000080: 5019 07b6 0029 1907 b600 2dc0 0018 b700
+    0x0000090: 5319 08b8 0059 59b4 0045 5d58 b400 485f
+    0x00000a0: c000 5b5f 1907 b600 29b8 0036 3a09 5e58
+    0x00000b0: 575b 5b57 b500 5d19 09b5 0060 2a2b 5f59
+    0x00000c0: b400 3c5b 57b4 003a b800 362c 2d19 07b6
+    0x00000d0: 0064 2a2b 5f59 b400 3c5b 57b4 003a b800
+    0x00000e0: 3619 0419 0519 07b6 0067 b1            
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test173_1$$PHOSPHORTAGGED(FlakyTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+13) test185_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/perf/XPerfEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @159: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @159
+    flags: { }
+    locals: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1906 c000 183a 0719 07b6 001e bb00 2059
+    0x0000010: b700 223a 082a 2b57 b700 232a 2bbb 0025
+    0x0000020: 1907 b600 295c 1907 b600 2dc0 0018 b700
+    0x0000030: 3019 07b6 0029 b800 365e 5857 5b5f b500
+    0x0000040: 3ab5 003c 2a2b 1907 1908 3a09 1909 b800
+    0x0000050: 4259 b400 455d 58b4 0048 bb00 4a19 07b6
+    0x0000060: 0029 5c12 4b19 07b6 0029 124d 1907 b600
+    0x0000070: 2912 4e19 07b6 0029 124f 1907 b600 2912
+    0x0000080: 5019 07b6 0029 1907 b600 2dc0 0018 b700
+    0x0000090: 5319 08b8 0059 59b4 0045 5d58 b400 485f
+    0x00000a0: c000 5b5f 1907 b600 29b8 0036 3a09 5e58
+    0x00000b0: 575b 5b57 b500 5d19 09b5 0060 2a2b 5f59
+    0x00000c0: b400 3c5b 57b4 003a b800 362c 2d19 07b6
+    0x00000d0: 0064 2a2b 5f59 b400 3c5b 57b4 003a b800
+    0x00000e0: 3619 0419 0519 07b6 0067 b1            
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test185_1$$PHOSPHORTAGGED(FlakyTest.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+14) test205_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/mybatis/TrackEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @145: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @145
+    flags: { }
+    locals: { 'net/landzero/xlog/mybatis/TrackEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/mybatis/TrackEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2cc0 0015 4e2d b600 1bbb 001d 59b7 001f
+    0x0000010: 3a04 2a2b 57b7 0020 2a2b bb00 222d b600
+    0x0000020: 265c 2db6 002a c000 15b7 002c 2db6 0026
+    0x0000030: b800 325e 5857 5b5f b500 36b5 0038 2a2b
+    0x0000040: 2d19 043a 0519 05b8 003e 59b4 0041 5d58
+    0x0000050: b400 44bb 0046 2db6 0026 5c12 472d b600
+    0x0000060: 2612 492d b600 2612 4a2d b600 2612 4b2d
+    0x0000070: b600 2612 4c2d b600 262d b600 2ac0 0015
+    0x0000080: b700 4f19 04b8 0055 59b4 0041 5d58 b400
+    0x0000090: 445f c000 575f 2db6 0026 b800 323a 055e
+    0x00000a0: 5857 5b5b 57b5 0059 1905 b500 5cb1     
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test205_1$$PHOSPHORTAGGED(FlakyTest.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+15) test217_1(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'java.lang.Exception' != 'sun.reflect.DelegatingMethodAccessorImpl' expected:<[java.lang.Exception]> but was:<[sun.reflect.DelegatingMethodAccessorImpl]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test217_1$$PHOSPHORTAGGED(FlakyTest.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+16) test217_2(flaky.FlakyTest)
+org.junit.ComparisonFailure: 'java.lang.Exception' != 'sun.reflect.DelegatingMethodAccessorImpl' expected:<[java.lang.Exception]> but was:<[sun.reflect.DelegatingMethodAccessorImpl]>
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at org.junit.ComparisonFailure.<init>(ComparisonFailure.java:37)
+	at org.junit.Assert.assertEquals$$PHOSPHORTAGGED(Assert.java:115)
+	at flaky.FlakyTest.test217_2$$PHOSPHORTAGGED(FlakyTest.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+17) test223_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/mybatis/TrackEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @145: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @145
+    flags: { }
+    locals: { 'net/landzero/xlog/mybatis/TrackEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/mybatis/TrackEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 2cc0 0015 4e2d b600 1bbb 001d 59b7 001f
+    0x0000010: 3a04 2a2b 57b7 0020 2a2b bb00 222d b600
+    0x0000020: 265c 2db6 002a c000 15b7 002c 2db6 0026
+    0x0000030: b800 325e 5857 5b5f b500 36b5 0038 2a2b
+    0x0000040: 2d19 043a 0519 05b8 003e 59b4 0041 5d58
+    0x0000050: b400 44bb 0046 2db6 0026 5c12 472d b600
+    0x0000060: 2612 492d b600 2612 4a2d b600 2612 4b2d
+    0x0000070: b600 2612 4c2d b600 262d b600 2ac0 0015
+    0x0000080: b700 4f19 04b8 0055 59b4 0041 5d58 b400
+    0x0000090: 445f c000 575f 2db6 0026 b800 323a 055e
+    0x00000a0: 5857 5b5b 57b5 0059 1905 b500 5cb1     
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test223_1$$PHOSPHORTAGGED(FlakyTest.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+18) test249_1(flaky.FlakyTest)
+java.lang.NoClassDefFoundError: Could not initialize class net.landzero.xlog.XLog
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
+	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at flaky.FlakyTest.test249_1$$PHOSPHORTAGGED(FlakyTest.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+19) test262_1(flaky.FlakyTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    net/landzero/xlog/perf/XPerfEventBuilder.<init>(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @159: swap
+  Reason:
+    Type long_2nd (current frame, stack[3]) is not assignable to category1 type
+  Current Frame:
+    bci: @159
+    flags: { }
+    locals: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'net/landzero/xlog/perf/XPerfEventBuilder', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: 1906 c000 183a 0719 07b6 001e bb00 2059
+    0x0000010: b700 223a 082a 2b57 b700 232a 2bbb 0025
+    0x0000020: 1907 b600 295c 1907 b600 2dc0 0018 b700
+    0x0000030: 3019 07b6 0029 b800 365e 5857 5b5f b500
+    0x0000040: 3ab5 003c 2a2b 1907 1908 3a09 1909 b800
+    0x0000050: 4259 b400 455d 58b4 0048 bb00 4a19 07b6
+    0x0000060: 0029 5c12 4b19 07b6 0029 124d 1907 b600
+    0x0000070: 2912 4e19 07b6 0029 124f 1907 b600 2912
+    0x0000080: 5019 07b6 0029 1907 b600 2dc0 0018 b700
+    0x0000090: 5319 08b8 0059 59b4 0045 5d58 b400 485f
+    0x00000a0: c000 5b5f 1907 b600 29b8 0036 3a09 5e58
+    0x00000b0: 575b 5b57 b500 5d19 09b5 0060 2a2b 5f59
+    0x00000c0: b400 3c5b 57b4 003a b800 362c 2d19 07b6
+    0x00000d0: 0064 2a2b 5f59 b400 3c5b 57b4 003a b800
+    0x00000e0: 3619 0419 0519 07b6 0067 b1            
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at flaky.FlakyTest.test262_1$$PHOSPHORTAGGED(FlakyTest.java:250)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 19,  Failures: 19
+
