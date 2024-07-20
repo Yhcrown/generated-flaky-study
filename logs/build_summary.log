@@ -1,103 +1,11 @@
-OpenHFT-JLBH, BUILD FAILURE
-[ERROR] Failed to execute goal on project jlbh: Could not resolve dependencies for project net.openhft:jlbh:jar:1.23ea1-SNAPSHOT: Failed to collect dependencies at net.openhft:affinity:jar:3.23ea1: Failed to read artifact descriptor for net.openhft:affinity:jar:3.23ea1: The following artifacts could not be resolved: net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT (absent): Could not find artifact net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT in sonatype-nexus-staging (https://oss.sonatype.org/content/repositories/staging) -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] COMPILATION ERROR : 
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlPartials.java:[28,20] incompatible types: org.xmlet.htmlapifaster.Element cannot be converted to htmlflow.HtmlView
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlTables.java:[99,21] cannot find symbol
-fmcarvalho-HtmlFlow, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile) on project htmlflow: Compilation failure: Compilation failure: 
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlPartials.java:[28,20] incompatible types: org.xmlet.htmlapifaster.Element cannot be converted to htmlflow.HtmlView
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlTables.java:[99,21] cannot find symbol
-[ERROR]   symbol:   method div()
-[ERROR]   location: interface org.xmlet.htmlapifaster.Element
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-aoindustries-ao-fluent-html-any, BUILD FAILURE
-[ERROR] Failed to execute goal org.sonatype.ossindex.maven:ossindex-maven-plugin:3.2.0:audit (audit-dependencies) on project ao-fluent-html-any: Detected 1 vulnerable components:
-[ERROR]   org.apache.bcel:bcel:jar:6.5.0:test; https://ossindex.sonatype.org/component/pkg:maven/org.apache.bcel/bcel@6.5.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1
-[ERROR]     * [CVE-2022-42920] CWE-787: Out-of-bounds Write (9.8); https://ossindex.sonatype.org/vulnerability/CVE-2022-42920?component-type=maven&component-name=org.apache.bcel%2Fbcel&utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1
-[ERROR] 
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-daveayan-fuzzy-avenger, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-antrun-plugin:3.1.0:run (compile) on project fuzzyavenger: You are using 'tasks' which has been removed from the maven-antrun-plugin. Please use 'target' and refer to the >>Major Version Upgrade to version 3.0.0<< on the plugin site. -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-mitoma-ponto, BUILD FAILURE
-[ERROR] Failed to execute goal on project ponto: Could not resolve dependencies for project in.tombo:ponto:jar:1.1.1-SNAPSHOT: Failed to collect dependencies at org.seasar.aptina:aptina-unit:jar:1.0.0: Failed to read artifact descriptor for org.seasar.aptina:aptina-unit:jar:1.0.0: The following artifacts could not be resolved: org.seasar.aptina:aptina-unit:pom:1.0.0 (absent): Could not transfer artifact org.seasar.aptina:aptina-unit:pom:1.0.0 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [maven.seasar.org (http://maven.seasar.org/maven2, default, releases+snapshots)] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] We have duplicated artifacts attached.
-819548945-tool-encryptionAndDecryption-core, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-source-plugin:3.3.0:jar-no-fork (snapshot) on project tool.encryptionAndDecryption.core: Presumably you have configured maven-source-plugn to execute twice times in your build. You have to configure a classifier for at least on of them. -> [Help 1]
+lemire-externalsortinginjava, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:1.6:sign (sign-artifacts) on project externalsortinginjava: Exit code: 2 -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
-vlingo-vlingo-lattice, BUILD FAILURE
-[ERROR] Failed to execute goal on project xoom-lattice: Could not resolve dependencies for project io.vlingo.xoom:xoom-lattice:jar:1.11.1-SNAPSHOT: The following artifacts could not be resolved: io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-actors:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-streams:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-cluster:jar:1.11.1-SNAPSHOT (absent), io.vlingo.xoom:xoom-symbio:jar:1.11.1-SNAPSHOT (absent): Could not find artifact io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT in ossrh-snapshots (https://oss.sonatype.org/content/repositories/snapshots/) -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.028 s <<< FAILURE! -- in net.engio.lab.ExecutionContextTest
-[ERROR] net.engio.lab.ExecutionContextTest.testChildAccess -- Time elapsed: 0.002 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testGetMatching -- Time elapsed: 0.001 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.001 s <<< FAILURE!
-[ERROR] Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 35.27 s <<< FAILURE! -- in net.engio.lab.AllTests
-[ERROR] net.engio.lab.ExecutionContextTest.testChildAccess -- Time elapsed: 0.002 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testGetMatching -- Time elapsed: 0.001 s <<< FAILURE!
-[ERROR] net.engio.lab.ExecutionContextTest.testExecutions -- Time elapsed: 0.003 s <<< FAILURE!
-[ERROR] Failures: 
-[ERROR] net.engio.lab.ExecutionContextTest.testChildAccess
-[ERROR]   Run 1: ExecutionContextTest.testChildAccess:85->assertBindindsExist:43->UnitTest.assertEquals:58 expected:<Object1> but was:<null>
-[ERROR]   Run 2: ExecutionContextTest.testChildAccess:85->assertBindindsExist:43->UnitTest.assertEquals:58 expected:<Object1> but was:<null>
-[ERROR] net.engio.lab.ExecutionContextTest.testExecutions
-[ERROR]   Run 1: ExecutionContextTest.testExecutions:147->UnitTest.assertEquals:58 expected:<9> but was:<0>
-[ERROR]   Run 2: ExecutionContextTest.testExecutions:147->UnitTest.assertEquals:58 expected:<9> but was:<0>
-[ERROR] net.engio.lab.ExecutionContextTest.testGetMatching
-[ERROR]   Run 1: ExecutionContextTest.testGetMatching:112->UnitTest.assertEquals:58 expected:<3> but was:<0>
-[ERROR]   Run 2: ExecutionContextTest.testGetMatching:112->UnitTest.assertEquals:58 expected:<3> but was:<0>
-[ERROR] Tests run: 17, Failures: 3, Errors: 0, Skipped: 0
-bennidi-lab, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project lab: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /Users/yhcrown/Documents/flaky_java_projects/bennidi-lab/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
 braully-bopepo, BUILD FAILURE
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project bpp-cobranca: Fatal error compiling: invalid target release: 11 -> [Help 1]
 [ERROR] 
@@ -106,38 +14,1472 @@ braully-bopepo, BUILD FAILURE
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+vlingo-vlingo-lattice, BUILD FAILURE
+[ERROR] Failed to execute goal on project xoom-lattice: Could not resolve dependencies for project io.vlingo.xoom:xoom-lattice:jar:1.11.1-SNAPSHOT: The following artifacts could not be resolved: io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT, io.vlingo.xoom:xoom-actors:jar:1.11.1-SNAPSHOT, io.vlingo.xoom:xoom-streams:jar:1.11.1-SNAPSHOT, io.vlingo.xoom:xoom-cluster:jar:1.11.1-SNAPSHOT, io.vlingo.xoom:xoom-symbio:jar:1.11.1-SNAPSHOT: Could not find artifact io.vlingo.xoom:xoom-common:jar:1.11.1-SNAPSHOT in ossrh-snapshots (https://oss.sonatype.org/content/repositories/snapshots/) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] We have duplicated artifacts attached.
+819548945-tool-encryptionAndDecryption-core, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-source-plugin:3.3.1:jar-no-fork (snapshot) on project tool.encryptionAndDecryption.core: Presumably you have configured maven-source-plugin to execute twice in your build. You have to configure a classifier for at least one of them. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+MidCoard-MiraiQQ, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project focess-qq: Fatal error compiling: invalid target release: 10 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1326,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1329,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1330,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1331,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1332,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1333,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1334,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1335,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1336,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1337,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1338,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1339,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1340,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1341,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1342,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1343,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1344,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1345,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1346,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1347,4] error: class, interface, or enum expected
+projectodd-sockjs-servlet, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile) on project sockjs-servlet: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1326,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1329,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1330,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1331,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1332,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1333,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1334,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1335,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1336,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1337,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1338,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1339,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1340,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1341,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1342,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1343,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1344,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1345,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1346,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/projectodd-sockjs-servlet/src/test/java/flaky/FlakyTest.java:[1347,4] error: class, interface, or enum expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[3,17] package org.junit does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[5,17] package org.junit does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[5,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[14,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[50,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[88,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[123,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[140,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[176,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[193,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[214,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[235,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[257,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[298,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[316,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[333,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[379,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[424,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[469,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[514,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[534,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[554,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[574,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[594,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[638,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[666,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[694,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[712,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[733,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[754,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[772,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[792,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[812,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[829,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[846,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[891,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[927,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[948,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[969,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[998,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1023,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1041,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1064,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1087,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1110,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1135,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1160,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1215,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1270,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1306,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1351,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1374,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1397,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1420,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1446,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1475,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1504,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1533,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1572,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1611,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1650,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1695,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1740,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1789,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1810,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1831,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1855,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1879,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1903,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1954,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2005,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2017,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2076,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2135,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2194,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2253,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2297,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2333,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2372,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2413,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2454,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2495,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2534,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2577,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2620,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2719,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2818,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2841,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2864,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2887,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2913,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2939,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2965,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2991,10] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[3029,10] cannot find symbol
+TareqK-Jesse, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project jesse: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[3,17] package org.junit does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[5,17] package org.junit does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[5,17] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[14,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[50,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[88,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[123,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[140,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[176,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[193,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[214,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[235,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[257,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[298,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[316,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[333,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[379,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[424,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[469,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[514,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[534,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[554,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[574,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[594,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[638,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[666,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[694,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[712,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[733,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[754,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[772,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[792,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[812,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[829,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[846,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[891,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[927,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[948,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[969,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[998,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1023,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1041,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1064,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1087,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1110,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1135,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1160,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1215,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1270,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1306,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1351,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1374,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1397,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1420,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1446,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1475,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1504,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1533,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1572,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1611,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1650,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1695,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1740,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1789,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1810,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1831,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1855,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1879,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1903,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[1954,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2005,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2017,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2076,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2135,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2194,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2253,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2297,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2333,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2372,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2413,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2454,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2495,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2534,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2577,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2620,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2719,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2818,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2841,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2864,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2887,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2913,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2939,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2965,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[2991,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] /shared-data/generated-flaky/projects/TareqK-Jesse/src/test/java/flaky/FlakyTest.java:[3029,10] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.FlakyTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,26] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,40] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/validator/impl/StringValidator.java:[105,60] cannot find symbol
+RestExpress-Syntaxe, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Syntaxe: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,26] cannot find symbol
+[ERROR]   symbol:   method forRemoval()
+[ERROR]   location: @interface java.lang.Deprecated
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,40] cannot find symbol
+[ERROR]   symbol:   method since()
+[ERROR]   location: @interface java.lang.Deprecated
+[ERROR] /shared-data/generated-flaky/projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/validator/impl/StringValidator.java:[105,60] cannot find symbol
+[ERROR]   symbol:   method isBlank()
+[ERROR]   location: class java.lang.String
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[5,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[5,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[20,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[36,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[52,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[68,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[84,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[100,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[116,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[132,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[148,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[164,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[180,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[196,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[228,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[244,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[260,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[276,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[292,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[324,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[340,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[366,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[382,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[398,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[422,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[464,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[480,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[512,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[528,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[546,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[562,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[604,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[620,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[636,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[652,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[684,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[700,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[716,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[748,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[764,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[790,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[806,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[856,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[872,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[886,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[906,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[922,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[954,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[970,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[986,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1002,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1018,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1034,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1064,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1080,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1096,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1112,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1162,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1178,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1214,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1246,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1262,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1294,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1324,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1340,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1372,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1404,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1420,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1452,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1470,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1486,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1510,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1526,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1542,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1558,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1590,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1604,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1636,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1666,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1684,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1714,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1746,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1776,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1792,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1808,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1826,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1842,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1858,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1874,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1894,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1910,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1926,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1942,6] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1974,6] cannot find symbol
+daniel-frak-dummy4j, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project dummy4j: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[5,17] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[5,17] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[7,25] package org.junit.runners does not exist
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[20,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[36,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[52,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[68,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[84,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[100,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[116,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[132,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[148,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[164,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[180,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[196,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[228,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[244,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[260,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[276,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[292,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[324,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[340,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[366,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[382,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[398,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[422,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[464,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[480,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[512,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[528,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[546,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[562,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[604,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[620,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[636,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[652,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[684,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[700,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[716,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[748,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[764,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[790,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[806,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[856,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[872,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[886,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[906,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[922,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[954,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[970,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[986,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1002,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1018,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1034,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1064,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1080,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1096,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1112,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1162,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1178,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1214,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1246,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1262,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1294,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1324,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1340,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1372,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1404,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1420,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1452,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1470,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1486,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1510,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1526,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1542,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1558,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1590,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1604,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1636,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1666,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1684,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1714,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1746,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1776,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1792,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1808,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1826,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1842,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1858,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1874,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1894,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1910,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1926,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1942,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] /shared-data/generated-flaky/projects/daniel-frak-dummy4j/src/test/java/flaky/RandoopTest.java:[1974,6] cannot find symbol
+[ERROR]   symbol:   class Test
+[ERROR]   location: class flaky.RandoopTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+fluent-fluent-logger-java, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project fluent-logger: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/fluent-fluent-logger-java/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,60] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,61] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,62] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,63] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,69] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,70] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,71] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,72] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,73] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,74] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,75] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,76] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,77] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,78] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,79] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,80] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,81] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,82] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,83] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,84] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,89] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,90] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,91] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,92] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,93] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,94] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,95] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,96] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,102] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,103] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,104] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,105] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,106] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,107] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,108] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,109] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,110] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,111] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,112] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,113] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,114] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,115] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,116] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[32,117] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,59] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,60] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,61] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,62] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,63] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,64] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,70] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,71] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,72] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,73] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,74] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,75] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,76] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,77] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,78] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,79] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,80] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,81] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,86] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,87] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,88] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,89] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,95] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,96] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,97] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,98] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,99] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,100] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,101] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,102] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,103] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/integration/UkLocalDirectivesTest.java:[33,104] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[19,92] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[19,93] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[24,95] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[24,96] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[30,102] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[30,103] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[37,105] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/WeatherTest.java:[37,106] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/SpaceTest.java:[72,89] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/SpaceTest.java:[72,90] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/SpaceTest.java:[72,91] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,86] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,87] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,88] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,89] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,90] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[12,91] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[22,74] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[22,75] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[22,76] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[32,83] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/BeerTest.java:[32,84] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/InternetTest.java:[75,62] unmappable character for encoding ASCII
+[ERROR] /shared-data/generated-flaky/projects/apifortress-apif-faker/src/test/java/com/github/javafaker/InternetTest.java:[75,63] unmappable character for encoding ASCII
+goldolphin-cate, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:1.5:sign (sign-artifacts) on project cate: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+mitoma-ponto, BUILD FAILURE
+[ERROR] Failed to execute goal on project ponto: Could not resolve dependencies for project in.tombo:ponto:jar:1.1.1-SNAPSHOT: Failed to collect dependencies at org.seasar.aptina:aptina-unit:jar:1.0.0: Failed to read artifact descriptor for org.seasar.aptina:aptina-unit:jar:1.0.0: Could not transfer artifact org.seasar.aptina:aptina-unit:pom:1.0.0 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [maven.seasar.org (http://maven.seasar.org/maven2, default, releases+snapshots)] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+bennidi-lab, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project lab: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/bennidi-lab/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+WesleyOne-qy-weixin-robot-spring-boot-starter, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:3.0.1:sign (gpg) on project qy-weixin-robot-spring-boot-starter: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+j256-simplemetrics, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:1.6:sign (sign-artifacts) on project simplemetrics: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+michaelmosmann-embedmongo-flapdoodle-de, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project de.flapdoodle.embedmongo: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/michaelmosmann-embedmongo-flapdoodle-de/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+j256-simplejmx, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:1.6:sign (sign-artifacts) on project simplejmx: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+rolfl-MicroBench, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:3.2.4:sign (sign-artifacts) on project ubench: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.maven.doxia:doxia-skin-model:pom:2.0.0-M3
+[ERROR] Unsigned artifact is listed with key in keys map: org.openrewrite:rewrite-java-11:jar:7.31.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.sonatype.ossindex:ossindex-service-client:pom:1.8.1
+[ERROR] Unsigned artifact is listed with key in keys map: com.aoapps:ao-javadoc-offline:pom:3.2.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.maven.plugins:maven-project-info-reports-plugin:pom:3.4.1
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.maven.scm:maven-scm-provider-svn-commons:pom:1.12.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.groovy:groovy-groovydoc:pom:4.0.4
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.maven.scm:maven-scm-api:pom:1.12.0
+[ERROR] Unsigned artifact is listed with key in keys map: io.micrometer:micrometer-registry-prometheus:pom:1.9.2
+[ERROR] Unsigned artifact is listed with key in keys map: io.micrometer.prometheus:prometheus-rsocket-client:pom:1.5.0
+[ERROR] Unsigned artifact is listed with key in keys map: com.vladsch.flexmark:flexmark-profile-pegdown:jar:0.50.50
+[ERROR] Unsigned artifact is listed with key in keys map: io.projectreactor.netty:reactor-netty-http:jar:1.0.23
+[ERROR] Unsigned artifact is listed with key in keys map: org.openrewrite:rewrite-java-11:pom:7.31.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.sonatype.ossindex:ossindex-service-client:jar:1.8.1
+[ERROR] Unsigned artifact is listed with key in keys map: com.aoapps:ao-checkstyle-config:jar:1.1.0
+[ERROR] Unsigned artifact is listed with key in keys map: com.vladsch.flexmark:flexmark-ext-emoji:jar:0.50.50
+[ERROR] Unsigned artifact is listed with key in keys map: com.aoapps:ao-javadoc-offline:jar:3.2.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.apache.maven.plugins:maven-remote-resources-plugin:maven-plugin:3.0.0
+[ERROR] Unsigned artifact is listed with key in keys map: org.openrewrite.maven:rewrite-maven-plugin:maven-plugin:4.35.1
+[ERROR] All servers from list was failed
+aoindustries-ao-fluent-html-any, BUILD FAILURE
+[ERROR] Failed to execute goal org.simplify4u.plugins:pgpverify-maven-plugin:1.16.0:check (pgpverify-check) on project ao-fluent-html-any: Execution pgpverify-check of goal org.simplify4u.plugins:pgpverify-maven-plugin:1.16.0:check failed: Failed to process signature for artifact org.apache.maven.surefire:surefire-extensions-spi:pom:3.0.0-M7: Connect to pgp.mit.edu:443 [pgp.mit.edu/96.7.49.64] failed: connect timed out for: https://pgp.mit.edu/pks/lookup?op=get&options=mr&search=0xF254B35617DC255D9344BCFA873A8E86B4372146 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlTables.java:[99,21] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlPartials.java:[28,20] incompatible types: org.xmlet.htmlapifaster.Element cannot be converted to htmlflow.HtmlView
+fmcarvalho-HtmlFlow, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project htmlflow: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlTables.java:[99,21] cannot find symbol
+[ERROR]   symbol:   method div()
+[ERROR]   location: interface org.xmlet.htmlapifaster.Element
+[ERROR] /shared-data/generated-flaky/projects/fmcarvalho-HtmlFlow/src/test/java/htmlflow/test/views/HtmlPartials.java:[28,20] incompatible types: org.xmlet.htmlapifaster.Element cannot be converted to htmlflow.HtmlView
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14445,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14448,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14449,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14450,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14451,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14452,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14453,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14454,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14455,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14456,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14457,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14458,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14459,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14460,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14461,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14462,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14463,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14464,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14466,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14468,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14469,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14473,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14474,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14475,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14476,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14477,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14478,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14479,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14481,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14482,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14483,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14485,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14487,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14488,4] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14491,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14494,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14495,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14496,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14497,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14498,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14499,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14500,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14501,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14502,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14503,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14504,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14505,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14506,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14507,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14508,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14509,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14510,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14512,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14514,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14515,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14519,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14520,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14521,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14522,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14523,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14524,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14525,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14527,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14529,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14530,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14531,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14533,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14534,4] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14537,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14540,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14541,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14542,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14543,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14544,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14545,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14546,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14547,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14548,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14549,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14550,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14551,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14552,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14553,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14554,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14555,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14556,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14558,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14560,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14561,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14565,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14566,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14567,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14568,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14569,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14570,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14571,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14573,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14575,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14577,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14578,0] error: class, interface, or enum expected
+testinfected-time, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile) on project time: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14445,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14448,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14449,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14450,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14451,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14452,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14453,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14454,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14455,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14456,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14457,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14458,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14459,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14460,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14461,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14462,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14463,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14464,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14466,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14468,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14469,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14473,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14474,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14475,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14476,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14477,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14478,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14479,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14481,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14482,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14483,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14485,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14487,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14488,4] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14491,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14494,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14495,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14496,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14497,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14498,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14499,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14500,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14501,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14502,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14503,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14504,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14505,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14506,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14507,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14508,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14509,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14510,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14512,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14514,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14515,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14519,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14520,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14521,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14522,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14523,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14524,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14525,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14527,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14529,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14530,0] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14531,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14533,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14534,4] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14537,11] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14540,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14541,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14542,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14543,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14544,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14545,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14546,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14547,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14548,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14549,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14550,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14551,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14552,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14553,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14554,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14555,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14556,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14558,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14560,12] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14561,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14565,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14566,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14567,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14568,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14569,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14570,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14571,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14573,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14575,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14577,8] error: class, interface, or enum expected
+[ERROR] /shared-data/generated-flaky/projects/testinfected-time/src/test/java/flaky/FlakyTest.java:[14578,0] error: class, interface, or enum expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] COMPILATION ERROR : 
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/FlakyTest.java:[3,16] error: cannot find symbol
+[ERROR]  package org.junit
+[ERROR]  package org.junit.runners
+[ERROR]  class FixMethodOrder
+[ERROR]  package org.junit
+[ERROR]  package org.junit.runners
+BriteSnow-jomni, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile) on project jomni: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/FlakyTest.java:[3,16] error: cannot find symbol
+[ERROR]  package org.junit
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/FlakyTest.java:[7,24] error: cannot find symbol
+[ERROR]  package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/FlakyTest.java:[9,1] error: cannot find symbol
+[ERROR]  class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/RandoopTest.java:[3,16] error: cannot find symbol
+[ERROR]  package org.junit
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/RandoopTest.java:[7,24] error: cannot find symbol
+[ERROR]  package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/RandoopTest.java:[11,1] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+OpenHFT-JLBH, BUILD FAILURE
+[ERROR] Failed to execute goal on project jlbh: Could not resolve dependencies for project net.openhft:jlbh:jar:1.23ea1-SNAPSHOT: Failed to collect dependencies at net.openhft:affinity:jar:3.23ea1: Failed to read artifact descriptor for net.openhft:affinity:jar:3.23ea1: Could not find artifact net.openhft:third-party-bom:pom:3.22.4-SNAPSHOT in sonatype-nexus-staging (https://oss.sonatype.org/content/repositories/staging) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
 julman99-gson-fire, BUILD FAILURE
 [ERROR] Failed to execute goal biz.aQute.bnd:bnd-maven-plugin:7.0.0:bnd-process (default) on project gson-fire: Execution default of goal biz.aQute.bnd:bnd-maven-plugin:7.0.0:bnd-process failed: Unable to load the mojo 'bnd-process' in the plugin 'biz.aQute.bnd:bnd-maven-plugin:7.0.0' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: aQute/bnd/maven/plugin/BndMavenPlugin has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 52.0
 [ERROR] -----------------------------------------------------
 [ERROR] realm =    plugin>biz.aQute.bnd:bnd-maven-plugin:7.0.0
 [ERROR] strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
-[ERROR] urls[0] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/bnd-maven-plugin/7.0.0/bnd-maven-plugin-7.0.0.jar
-[ERROR] urls[1] = file:/Users/yhcrown/.m2/repository/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar
-[ERROR] urls[2] = file:/Users/yhcrown/.m2/repository/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
-[ERROR] urls[3] = file:/Users/yhcrown/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
-[ERROR] urls[4] = file:/Users/yhcrown/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
-[ERROR] urls[5] = file:/Users/yhcrown/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
-[ERROR] urls[6] = file:/Users/yhcrown/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
-[ERROR] urls[7] = file:/Users/yhcrown/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
-[ERROR] urls[8] = file:/Users/yhcrown/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
-[ERROR] urls[9] = file:/Users/yhcrown/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
-[ERROR] urls[10] = file:/Users/yhcrown/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar
-[ERROR] urls[11] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/biz.aQute.bnd.maven/7.0.0/biz.aQute.bnd.maven-7.0.0.jar
-[ERROR] urls[12] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.dto/1.0.0/org.osgi.dto-1.0.0.jar
-[ERROR] urls[13] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.resource/1.0.0/org.osgi.resource-1.0.0.jar
-[ERROR] urls[14] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.framework/1.8.0/org.osgi.framework-1.8.0.jar
-[ERROR] urls[15] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.service.repository/1.1.0/org.osgi.service.repository-1.1.0.jar
-[ERROR] urls[16] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.util.function/1.2.0/org.osgi.util.function-1.2.0.jar
-[ERROR] urls[17] = file:/Users/yhcrown/.m2/repository/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1.jar
-[ERROR] urls[18] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.util.promise/1.2.0/org.osgi.util.promise-1.2.0.jar
-[ERROR] urls[19] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/biz.aQute.bnd.util/7.0.0/biz.aQute.bnd.util-7.0.0.jar
-[ERROR] urls[20] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/biz.aQute.resolve/7.0.0/biz.aQute.resolve-7.0.0.jar
-[ERROR] urls[21] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.service.resolver/1.1.1/org.osgi.service.resolver-1.1.1.jar
-[ERROR] urls[22] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/biz.aQute.repository/7.0.0/biz.aQute.repository-7.0.0.jar
-[ERROR] urls[23] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.service.coordinator/1.0.2/org.osgi.service.coordinator-1.0.2.jar
-[ERROR] urls[24] = file:/Users/yhcrown/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/7.0.0/biz.aQute.bndlib-7.0.0.jar
-[ERROR] urls[25] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.util.tracker/1.5.4/org.osgi.util.tracker-1.5.4.jar
-[ERROR] urls[26] = file:/Users/yhcrown/.m2/repository/org/osgi/org.osgi.service.log/1.3.0/org.osgi.service.log-1.3.0.jar
+[ERROR] urls[0] = file:/root/.m2/repository/biz/aQute/bnd/bnd-maven-plugin/7.0.0/bnd-maven-plugin-7.0.0.jar
+[ERROR] urls[1] = file:/root/.m2/repository/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar
+[ERROR] urls[2] = file:/root/.m2/repository/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[ERROR] urls[3] = file:/root/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[ERROR] urls[4] = file:/root/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[ERROR] urls[5] = file:/root/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+[ERROR] urls[6] = file:/root/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[ERROR] urls[7] = file:/root/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[ERROR] urls[8] = file:/root/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[ERROR] urls[9] = file:/root/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
+[ERROR] urls[10] = file:/root/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar
+[ERROR] urls[11] = file:/root/.m2/repository/biz/aQute/bnd/biz.aQute.bnd.maven/7.0.0/biz.aQute.bnd.maven-7.0.0.jar
+[ERROR] urls[12] = file:/root/.m2/repository/org/osgi/org.osgi.dto/1.0.0/org.osgi.dto-1.0.0.jar
+[ERROR] urls[13] = file:/root/.m2/repository/org/osgi/org.osgi.resource/1.0.0/org.osgi.resource-1.0.0.jar
+[ERROR] urls[14] = file:/root/.m2/repository/org/osgi/org.osgi.framework/1.8.0/org.osgi.framework-1.8.0.jar
+[ERROR] urls[15] = file:/root/.m2/repository/org/osgi/org.osgi.service.repository/1.1.0/org.osgi.service.repository-1.1.0.jar
+[ERROR] urls[16] = file:/root/.m2/repository/org/osgi/org.osgi.util.function/1.2.0/org.osgi.util.function-1.2.0.jar
+[ERROR] urls[17] = file:/root/.m2/repository/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1.jar
+[ERROR] urls[18] = file:/root/.m2/repository/org/osgi/org.osgi.util.promise/1.2.0/org.osgi.util.promise-1.2.0.jar
+[ERROR] urls[19] = file:/root/.m2/repository/biz/aQute/bnd/biz.aQute.bnd.util/7.0.0/biz.aQute.bnd.util-7.0.0.jar
+[ERROR] urls[20] = file:/root/.m2/repository/biz/aQute/bnd/biz.aQute.resolve/7.0.0/biz.aQute.resolve-7.0.0.jar
+[ERROR] urls[21] = file:/root/.m2/repository/org/osgi/org.osgi.service.resolver/1.1.1/org.osgi.service.resolver-1.1.1.jar
+[ERROR] urls[22] = file:/root/.m2/repository/biz/aQute/bnd/biz.aQute.repository/7.0.0/biz.aQute.repository-7.0.0.jar
+[ERROR] urls[23] = file:/root/.m2/repository/org/osgi/org.osgi.service.coordinator/1.0.2/org.osgi.service.coordinator-1.0.2.jar
+[ERROR] urls[24] = file:/root/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/7.0.0/biz.aQute.bndlib-7.0.0.jar
+[ERROR] urls[25] = file:/root/.m2/repository/org/osgi/org.osgi.util.tracker/1.5.4/org.osgi.util.tracker-1.5.4.jar
+[ERROR] urls[26] = file:/root/.m2/repository/org/osgi/org.osgi.service.log/1.3.0/org.osgi.service.log-1.3.0.jar
 [ERROR] Number of foreign imports: 1
 [ERROR] import: Entry[import  from realm ClassRealm[project>io.gsonfire:gson-fire:1.8.5, parent: ClassRealm[maven.api, parent: null]]]
 [ERROR] 
@@ -150,29 +1492,31 @@ julman99-gson-fire, BUILD FAILURE
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
-MidCoard-MiraiQQ, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project focess-qq: Fatal error compiling: invalid target release: 10 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
 [ERROR] COMPILATION ERROR : 
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,26] cannot find symbol
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,40] cannot find symbol
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/validator/impl/StringValidator.java:[105,60] cannot find symbol
-RestExpress-Syntaxe, BUILD FAILURE
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Syntaxe: Compilation failure: Compilation failure: 
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,26] cannot find symbol
-[ERROR]   symbol:   method forRemoval()
-[ERROR]   location: @interface java.lang.Deprecated
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/annotation/RegexValidation.java:[26,40] cannot find symbol
-[ERROR]   symbol:   method since()
-[ERROR]   location: @interface java.lang.Deprecated
-[ERROR] /Users/yhcrown/Documents/flaky_java_projects/RestExpress-Syntaxe/src/java/com/strategicgains/syntaxe/validator/impl/StringValidator.java:[105,60] cannot find symbol
-[ERROR]   symbol:   method isBlank()
-[ERROR]   location: class java.lang.String
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+DataONEorg-d1-cn-common, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile) on project d1_cn_common: Compilation failure: Compilation failure: 
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/FlakyTest.java:[9,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[3,17] cannot find symbol
+[ERROR]   symbol:   class FixMethodOrder
+[ERROR]   location: package org.junit
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[7,25] cannot find symbol
+[ERROR]   symbol:   class MethodSorters
+[ERROR]   location: package org.junit.runners
+[ERROR] /shared-data/generated-flaky/projects/DataONEorg-d1-cn-common/src/test/java/flaky/RandoopTest.java:[11,2] cannot find symbol
+[ERROR]   symbol: class FixMethodOrder
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
@@ -180,3 +1524,100 @@ RestExpress-Syntaxe, BUILD FAILURE
 [ERROR] 
 [ERROR] For more information about the errors and possible solutions, please read the following articles:
 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+stoyanr-Evictor, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-javadoc-plugin:2.9.1:jar (attach-javadocs) on project evictor: MavenReportException: Error while creating archive: 
+[ERROR] Exit code: 1 - /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:60: warning: nested tag not allowed: <tt>
+[ERROR]      * @return the previous value associated with <tt>key</tt>, or <tt>null</tt>
+[ERROR]                                                   ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:60: warning: nested tag not allowed: <tt>
+[ERROR]      * @return the previous value associated with <tt>key</tt>, or <tt>null</tt>
+[ERROR]                                                                    ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:61: warning: nested tag not allowed: <tt>
+[ERROR]      *         if there was no mapping for <tt>key</tt>. (A <tt>null</tt> return
+[ERROR]                                            ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:61: warning: nested tag not allowed: <tt>
+[ERROR]      *         if there was no mapping for <tt>key</tt>. (A <tt>null</tt> return
+[ERROR]                                                             ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:63: warning: nested tag not allowed: <tt>
+[ERROR]      *         <tt>null</tt> with <tt>key</tt>, if the implementation supports
+[ERROR]                ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:63: warning: nested tag not allowed: <tt>
+[ERROR]      *         <tt>null</tt> with <tt>key</tt>, if the implementation supports
+[ERROR]                                   ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:64: warning: nested tag not allowed: <tt>
+[ERROR]      *         <tt>null</tt> values.)
+[ERROR]                ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:67: warning: nested tag not allowed: <tt>
+[ERROR]      *             if the <tt>put</tt> operation is not supported by this map
+[ERROR]                           ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:58: error: element not closed: tt
+[ERROR]      *            equivalent to <tt>put(key, value).
+[ERROR]                                 ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:110: warning: nested tag not allowed: <tt>
+[ERROR]      * @return the previous value associated with the specified key, or <tt>null</tt>
+[ERROR]                                                                         ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:111: warning: nested tag not allowed: <tt>
+[ERROR]      *         if there was no mapping for the key. (A <tt>null</tt> return can
+[ERROR]                                                        ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:112: warning: nested tag not allowed: <tt>
+[ERROR]      *         also indicate that the map previously associated <tt>null</tt>
+[ERROR]                                                                 ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:116: warning: nested tag not allowed: <tt>
+[ERROR]      *             if the <tt>put</tt> operation is not supported by this map
+[ERROR]                           ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:108: error: element not closed: tt
+[ERROR]      *            <tt>putIfAbsent(key, value).
+[ERROR]                   ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:158: warning: nested tag not allowed: <tt>
+[ERROR]      * @return the previous value associated with the specified key, or <tt>null</tt>
+[ERROR]                                                                         ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:159: warning: nested tag not allowed: <tt>
+[ERROR]      *         if there was no mapping for the key. (A <tt>null</tt> return can
+[ERROR]                                                        ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:160: warning: nested tag not allowed: <tt>
+[ERROR]      *         also indicate that the map previously associated <tt>null</tt>
+[ERROR]                                                                 ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:164: warning: nested tag not allowed: <tt>
+[ERROR]      *             if the <tt>put</tt> operation is not supported by this map
+[ERROR]                           ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:156: error: element not closed: tt
+[ERROR]      *            is equivalent to <tt>replace(key, value).
+[ERROR]                                    ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:211: warning: nested tag not allowed: <tt>
+[ERROR]      * @return <tt>true</tt> if the value was replaced
+[ERROR]                ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:214: warning: nested tag not allowed: <tt>
+[ERROR]      *             if the <tt>put</tt> operation is not supported by this map
+[ERROR]                           ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/ConcurrentMapWithTimedEviction.java:209: error: element not closed: tt
+[ERROR]      *            <tt>put(key, oldValue, newValue).
+[ERROR]                   ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/scheduler/AbstractQueueEvictionScheduler.java:105: warning: no @return
+[ERROR]     protected boolean hasScheduledEvictions() {
+[ERROR]                       ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/scheduler/AbstractQueueEvictionScheduler.java:113: warning: no @return
+[ERROR]     protected long getNextEvictionTime() {
+[ERROR]                    ^
+[ERROR] /shared-data/generated-flaky/projects/stoyanr-Evictor/src/main/java/com/stoyanr/evictor/scheduler/AbstractQueueEvictionScheduler.java:56: error: reference not found
+[ERROR]      * @throws NullPointerExceptin
+[ERROR]        ^
+[ERROR] 
+[ERROR] Command line was: /shared-data/jdk8u412-b08/jre/../bin/javadoc @options @packages
+[ERROR] 
+[ERROR] Refer to the generated Javadoc files in '/shared-data/generated-flaky/projects/stoyanr-Evictor/target/apidocs' dir.
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+seasarorg-mayaa, BUILD FAILURE
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-gpg-plugin:1.5:sign (sign-artifacts) on project mayaa: Exit code: 2 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
