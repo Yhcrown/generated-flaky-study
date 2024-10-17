@@ -1,0 +1,16 @@
+Building client ... 2024-08-12 19:44:04.285075
+/shared-data/jdk8u422-b05//bin/javac -cp $(find /shared-data/generated-flaky/projects/BriteSnow-jomni -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/BriteSnow-jomni -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar /shared-data/generated-flaky/projects/BriteSnow-jomni/src/test/java/flaky/FlakyTest.java
+/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/BriteSnow-jomni -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/BriteSnow-jomni -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore flaky.FlakyTest
+randoop len 0
+tracker len 0
+random num 0
+time num 0
+true positive: 0 
+--------------------
+ []
+false positive:? 0 
+--------------------
+ []
+false negative: 0 
+--------------------
+ []

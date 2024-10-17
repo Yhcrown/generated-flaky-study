@@ -1,0 +1,114 @@
+/workspace/generated-flaky-study/main.py:76: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(path)
+                              Project_Name  ...                              Project_Hash
+279                     yankeguo-xlog-java  ...  d42cdfd0553a379d6d4819459f62394789c81bcf
+5528             projectodd-sockjs-servlet  ...  bd7a20c086564938bede250c5e66d4ff6e4dda87
+8643                        braully-bopepo  ...  a983958a5ab80a1aee62fa97bbc971b31ac0045f
+9793                          TareqK-Jesse  ...  cff1b70b3bcbf602b53328cc4644b6e4f0fea9fc
+10748                      goldolphin-cate  ...  1a04b8191892147d033983a580ba57aef3ded7ff
+...                                    ...  ...                                       ...
+707603                  lecogiteur-csvbang  ...  1ad2382cd3e78996dfa8ffd34b8e0f86cf3fb26a
+713086  Aleks-Ya-ascii2native-maven-plugin  ...  e2aafc11e5775744b6384eaf2bb5743fb9ed812b
+731932             resourcepool-little-bob  ...  24e540277494b0f6f62f3a978e689ed2262e6d51
+732990                showcodes-cn-promise  ...  c85107ba7e0bf542c1e6ec2146ddedf0227aa9ee
+733067                maroodb-simple-event  ...  98b0071c3cbcc330a46a34c07ef65d496f0a46c1
+
+[105 rows x 3 columns]
+698
+['evosuite_Default' 'evosuite_NoFlakinessSuppression' 'developer-written'
+ 'generated']
+['not flaky' 'NOD' 'OD']
+['yankeguo-xlog-java' 'projectodd-sockjs-servlet' 'braully-bopepo'
+ 'TareqK-Jesse' 'goldolphin-cate' 'mortonl-pojo-unit'
+ '3redronin-mu-server' 'kestreldigital-data-conjuror'
+ 'ThaliaBuecherGmbH-thalia-junit-postgres'
+ 'tomtom-international-premium-sp-blob' 'DataONEorg-d1-cn-common'
+ 'binfalse-XMLUtils' 'PhantomThief-zknotify-cache'
+ 'lightstep-lightstep-metrics-java' 'immregistries-mqe-hl7-util'
+ 'criteo-criteo-java-marketing-sdk' 'StefaniniInspiring-pugtsdb'
+ 'XeroAPI-Xero-Java' 'huchengming-In-Memory-Counter'
+ 'carlosthe19916-sunat-web-services' 'armills-chromecast-java-api-v2'
+ 'bizo-asperatus' 'edwardcapriolo-teknek-core' 'ox-it-canvas-api'
+ 'Dschinghis-Kahn-worker' 'stepio-jgforms'
+ 'mbknor-dropwizard-activemq-bundle' 'geronimo-iia-event-bus'
+ '819548945-tool-encryptionAndDecryption-core'
+ 'Dschinghis-Kahn-objectstore' 'daniel-frak-dummy4j' 'myzhan-locust4j'
+ 'dungba88-promise4j' 'alipay-sofa-common-tools' 'testinfected-time'
+ 'lndbrg-java-async-process' 'zzq0324-feature-flag'
+ 'apifortress-apif-faker' 'configrd-configrd-core' 'maxonrow-mxw-sdk-java'
+ 'rolfl-MicroBench' 'fabric8io-zjsonpatch' 'stoyanr-Evictor'
+ 'fluent-fluent-logger-java' 'mattunderscorechampion-rated-executor'
+ 'edgar615-util' 'julman99-gson-fire' 'MidCoard-MiraiQQ' 'seasarorg-mayaa'
+ 'itsajskid-jrgen' 'axel-n-limiter-sliding-window'
+ 'aoindustries-ao-fluent-html-any' 'algorythmist-JFApi'
+ 'zencoder-castlabs-java-api' 'j256-simplejmx' 'vivimice-bgzf-randreader'
+ 'masterthought-cucumber-reporting' 'DiUS-java-faker' 'OpenHFT-JLBH'
+ 'Arnauld-gutenberg' 'obazoud-metrics-spring-batch' 'bennidi-lab'
+ 'josueeduardo-stream-client' 'jembi-openhim-mediator-engine-java'
+ 'reactiverse-consul-cluster-manager' 'vlingo-vlingo-lattice'
+ 'amlinv-javaScheduler' 'bitpay-java-bitpay-light-client'
+ 'j256-simplemetrics' 'aliyun-aliyun-log-flink-connector'
+ 'ArcadiaConsulting-jboss-logging-gelf' 'swiftech-swifttime'
+ 'BriteSnow-jomni' 'graphaware-reco' 'adandris-adaptive-streams'
+ 'clouway-cuse' 'krka-mockachino' 'RestExpress-Syntaxe' 'dhh1128-jcircuit'
+ 'zach-m-tectonica-kvs' 'daveayan-fuzzy-avenger' 'mitoma-ponto'
+ 'mcheely-requirejs-maven-plugin' 'komamitsu-android-logger-bridge'
+ 'ivanceras-keywordSQL' 'raoxunrong-WebAcc'
+ 'albertoirurueta-irurueta-geometry'
+ 'albertoirurueta-irurueta-navigation-inertial-extra' 'anitechcs-resting'
+ 'sevensource-magnolia-responsive-dam' 'spullara-java-future-jdk8'
+ 'Canadensys-canadensys-core' 'lemire-externalsortinginjava'
+ 'vkostyukov-la4j' 'gizwits-openapi-sdk-java'
+ 'michaelmosmann-embedmongo-flapdoodle-de'
+ 'albertoirurueta-irurueta-navigation-indoor' 'fmcarvalho-HtmlFlow'
+ 'edwardcapriolo-gossip' 'WesleyOne-qy-weixin-robot-spring-boot-starter'
+ 'lecogiteur-csvbang' 'Aleks-Ya-ascii2native-maven-plugin'
+ 'resourcepool-little-bob' 'showcodes-cn-promise' 'maroodb-simple-event'] 105
+evosuite: 111
+Building client ... 2024-08-06 05:05:28.391921
+Building client ... 2024-08-06 05:05:41.676291
+Building client ... 2024-08-06 05:05:53.565635
+Building client ... 2024-08-06 05:06:04.462597
+Building client ... 2024-08-06 05:06:13.230635
+Building client ... 2024-08-06 05:06:21.466646
+Building client ... 2024-08-06 05:15:07.113892
+Building client ... 2024-08-06 05:22:17.452625
+DiUS-java-faker Command '/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore com.github.javafaker.DateAndTimeTest' timed out after 119.99996149900107 seconds
+DiUS-java-faker Command '/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore com.github.javafaker.InternetTest' timed out after 119.99998935400072 seconds
+DiUS-java-faker Command '/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore com.github.javafaker.DiseaseTest' timed out after 119.99998771800165 seconds
+DiUS-java-faker Command '/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/DiUS-java-faker -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore com.github.javafaker.integration.FakerIT' timed out after 119.99998285000038 seconds
+Building client ... 2024-08-06 05:54:49.264485
+Building client ... 2024-08-06 05:54:53.688570
+Building client ... 2024-08-06 06:00:26.041615
+Building client ... 2024-08-06 06:02:34.107146
+Building client ... 2024-08-06 06:02:51.667905
+Building client ... 2024-08-06 06:03:20.562848
+Building client ... 2024-08-06 06:04:41.649971
+Building client ... 2024-08-06 06:15:08.822391
+Building client ... 2024-08-06 06:15:50.993756
+spullara-java-future-jdk8 Command '/shared-data/jdk-inst-controltrack//bin/java -javaagent:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar -Xbootclasspath/a:/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar  -cp $(find /shared-data/generated-flaky/projects/spullara-java-future-jdk8 -name "classes" -type d | paste -sd :):$(find /shared-data/generated-flaky/projects/spullara-java-future-jdk8 -name "test-classes" -type d | paste -sd :):$(find /tmp/jars -name "*.jar" -type f | paste -sd :):/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar org.junit.runner.JUnitCore spullara.BenchmarkTest' timed out after 119.99998860199776 seconds
+            Project Name                                       sha  ... Line Label
+0       rolfl-MicroBench  f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce  ...  116     1
+1       rolfl-MicroBench  f2bfa92dacd7ea0d6b8eae4d4fe2975139d317ce  ...  119     2
+2     yankeguo-xlog-java  d42cdfd0553a379d6d4819459f62394789c81bcf  ...   26     0
+3     yankeguo-xlog-java  d42cdfd0553a379d6d4819459f62394789c81bcf  ...   10     1
+4     yankeguo-xlog-java  d42cdfd0553a379d6d4819459f62394789c81bcf  ...   13     0
+...                  ...                                       ...  ...  ...   ...
+3122       edgar615-util  040e163d89ffc65786c94c84883e460e3ee3ba51  ...   41     8
+3123       edgar615-util  040e163d89ffc65786c94c84883e460e3ee3ba51  ...   42     9
+3124       edgar615-util  040e163d89ffc65786c94c84883e460e3ee3ba51  ...   42     9
+3125       edgar615-util  040e163d89ffc65786c94c84883e460e3ee3ba51  ...   41     8
+3126       edgar615-util  040e163d89ffc65786c94c84883e460e3ee3ba51  ...   56     2
+
+[3127 rows x 8 columns]
+randoop len 0
+tracker len 113
+true positive: 0 
+--------------------
+ set()
+false positive:? 113 
+--------------------
+ {'kestreldigital-data-conjuror#test057', 'kestreldigital-data-conjuror#test129', 'kestreldigital-data-conjuror#test013', 'kestreldigital-data-conjuror#test112', 'huchengming-In-Memory-Counter#test175', 'huchengming-In-Memory-Counter#test262', 'kestreldigital-data-conjuror#test077', 'huchengming-In-Memory-Counter#test235', 'kestreldigital-data-conjuror#test066', 'kestreldigital-data-conjuror#test040', 'kestreldigital-data-conjuror#test204', 'huchengming-In-Memory-Counter#test179', 'huchengming-In-Memory-Counter#test274', 'kestreldigital-data-conjuror#test019', 'kestreldigital-data-conjuror#test101', 'kestreldigital-data-conjuror#test167', 'kestreldigital-data-conjuror#test138', 'kestreldigital-data-conjuror#test203', 'kestreldigital-data-conjuror#test051', 'kestreldigital-data-conjuror#test185', 'kestreldigital-data-conjuror#test075', 'huchengming-In-Memory-Counter#test078', 'huchengming-In-Memory-Counter#test164', 'kestreldigital-data-conjuror#test056', 'kestreldigital-data-conjuror#test042', 'kestreldigital-data-conjuror#test119', 'kestreldigital-data-conjuror#test196', 'kestreldigital-data-conjuror#test113', 'kestreldigital-data-conjuror#test049', 'kestreldigital-data-conjuror#test141', 'huchengming-In-Memory-Counter#test213', 'huchengming-In-Memory-Counter#test064', 'kestreldigital-data-conjuror#test020', 'kestreldigital-data-conjuror#test184', 'huchengming-In-Memory-Counter#test062', 'kestreldigital-data-conjuror#test190', 'kestreldigital-data-conjuror#test038', 'kestreldigital-data-conjuror#test036', 'kestreldigital-data-conjuror#test116', 'huchengming-In-Memory-Counter#test024', 'huchengming-In-Memory-Counter#test174', 'kestreldigital-data-conjuror#test041', 'kestreldigital-data-conjuror#test161', 'kestreldigital-data-conjuror#test003', 'kestreldigital-data-conjuror#test096', 'kestreldigital-data-conjuror#test145', 'kestreldigital-data-conjuror#test180', 'huchengming-In-Memory-Counter#test051', 'huchengming-In-Memory-Counter#test186', 'kestreldigital-data-conjuror#test009', 'huchengming-In-Memory-Counter#test015', 'kestreldigital-data-conjuror#test118', 'kestreldigital-data-conjuror#test137', 'kestreldigital-data-conjuror#test043', 'kestreldigital-data-conjuror#test058', 'kestreldigital-data-conjuror#test071', 'kestreldigital-data-conjuror#test149', 'kestreldigital-data-conjuror#test086', 'kestreldigital-data-conjuror#test048', 'kestreldigital-data-conjuror#test084', 'huchengming-In-Memory-Counter#test039', 'kestreldigital-data-conjuror#test018', 'kestreldigital-data-conjuror#test127', 'kestreldigital-data-conjuror#test031', 'kestreldigital-data-conjuror#test207', 'kestreldigital-data-conjuror#test025', 'kestreldigital-data-conjuror#test063', 'huchengming-In-Memory-Counter#test030', 'kestreldigital-data-conjuror#test202', 'huchengming-In-Memory-Counter#test021', 'huchengming-In-Memory-Counter#test056', 'huchengming-In-Memory-Counter#test042', 'huchengming-In-Memory-Counter#test227', 'huchengming-In-Memory-Counter#test228', 'kestreldigital-data-conjuror#test198', 'kestreldigital-data-conjuror#test060', 'huchengming-In-Memory-Counter#test221', 'kestreldigital-data-conjuror#test092', 'kestreldigital-data-conjuror#test103', 'huchengming-In-Memory-Counter#test210', 'huchengming-In-Memory-Counter#test209', 'huchengming-In-Memory-Counter#test145', 'huchengming-In-Memory-Counter#test080', 'huchengming-In-Memory-Counter#test082', 'kestreldigital-data-conjuror#test027', 'huchengming-In-Memory-Counter#test014', 'huchengming-In-Memory-Counter#test019', 'kestreldigital-data-conjuror#test197', 'huchengming-In-Memory-Counter#test141', 'kestreldigital-data-conjuror#test069', 'huchengming-In-Memory-Counter#test018', 'kestreldigital-data-conjuror#test052', 'huchengming-In-Memory-Counter#test068', 'kestreldigital-data-conjuror#test110', 'kestreldigital-data-conjuror#test130', 'kestreldigital-data-conjuror#test124', 'kestreldigital-data-conjuror#test032', 'kestreldigital-data-conjuror#test186', 'huchengming-In-Memory-Counter#test113', 'kestreldigital-data-conjuror#test099', 'kestreldigital-data-conjuror#test053', 'huchengming-In-Memory-Counter#test095', 'huchengming-In-Memory-Counter#test240', 'huchengming-In-Memory-Counter#test153', 'kestreldigital-data-conjuror#test210', 'huchengming-In-Memory-Counter#test134', 'huchengming-In-Memory-Counter#test236', 'huchengming-In-Memory-Counter#test244', 'huchengming-In-Memory-Counter#test102', 'huchengming-In-Memory-Counter#test225', 'huchengming-In-Memory-Counter#test129', 'kestreldigital-data-conjuror#test016', 'kestreldigital-data-conjuror#test172'}
+false negative: 0 
+--------------------
+ set()

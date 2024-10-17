@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: io.vertx.ConsulClusterManagerTestSuite
+-------------------------------------------------------------------------------
+Tests run: 338, Failures: 0, Errors: 4, Skipped: 1, Time elapsed: 498 sec <<< FAILURE! - in io.vertx.ConsulClusterManagerTestSuite
+syncMapOperation(io.vertx.spi.cluster.consul.impl.ConsulSyncMapTest)  Time elapsed: 30.064 sec  <<< ERROR!
+com.pszymczyk.consul.EmbeddedConsulException: Could not start Consul process in 30 seconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter.abnormalTerminate(ConsulWaiter.groovy:76)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter.awaitUntilConsulStarted(ConsulWaiter.groovy:34)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter$awaitUntilConsulStarted.call(Unknown Source)
+	at com.pszymczyk.consul.ConsulStarter.start(ConsulStarter.groovy:158)
+	at io.vertx.spi.cluster.consul.ConsulAgent.start(ConsulAgent.java:39)
+	at io.vertx.spi.cluster.consul.ConsulCluster.init(ConsulCluster.java:35)
+	at io.vertx.spi.cluster.consul.impl.ConsulSyncMapTest.setUp(ConsulSyncMapTest.java:44)
+
+syncMapOperation(io.vertx.spi.cluster.consul.impl.ConsulSyncMapTest)  Time elapsed: 30.064 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.vertx.spi.cluster.consul.impl.ConsulSyncMapTest.destroySessionId(ConsulSyncMapTest.java:118)
+	at io.vertx.spi.cluster.consul.impl.ConsulSyncMapTest.tearDown(ConsulSyncMapTest.java:90)
+
+io.vertx.spi.cluster.consul.impl.ConsumerRoundRobinTest  Time elapsed: 30.064 sec  <<< ERROR!
+io.vertx.core.VertxException: Cluster has been already started!
+	at io.vertx.spi.cluster.consul.ConsulCluster.init(ConsulCluster.java:37)
+	at io.vertx.spi.cluster.consul.impl.ConsumerRoundRobinTest.startConsulCluster(ConsumerRoundRobinTest.java:45)
+
+io.vertx.spi.cluster.consul.impl.ConsumerRoundRobinTest  Time elapsed: 30.064 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.vertx.spi.cluster.consul.ConsulAgent.stop(ConsulAgent.java:45)
+	at io.vertx.spi.cluster.consul.ConsulCluster.shutDown(ConsulCluster.java:43)
+	at io.vertx.spi.cluster.consul.impl.ConsumerRoundRobinTest.shutDownConsulCluster(ConsumerRoundRobinTest.java:50)
+

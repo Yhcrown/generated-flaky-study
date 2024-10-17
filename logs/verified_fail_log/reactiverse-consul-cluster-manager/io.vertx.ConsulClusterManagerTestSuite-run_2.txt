@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: io.vertx.ConsulClusterManagerTestSuite
+-------------------------------------------------------------------------------
+Tests run: 258, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 419.876 sec <<< FAILURE! - in io.vertx.ConsulClusterManagerTestSuite
+io.vertx.core.eventbus.ConsulCpClusteredEventBusTest  Time elapsed: 31.612 sec  <<< ERROR!
+com.pszymczyk.consul.EmbeddedConsulException: Could not start Consul process in 30 seconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter.abnormalTerminate(ConsulWaiter.groovy:76)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter.awaitUntilConsulStarted(ConsulWaiter.groovy:34)
+	at com.pszymczyk.consul.infrastructure.ConsulWaiter$awaitUntilConsulStarted.call(Unknown Source)
+	at com.pszymczyk.consul.ConsulStarter.start(ConsulStarter.groovy:158)
+	at io.vertx.spi.cluster.consul.ConsulAgent.start(ConsulAgent.java:39)
+	at io.vertx.spi.cluster.consul.ConsulCluster.init(ConsulCluster.java:35)
+	at io.vertx.core.eventbus.ConsulCpClusteredEventBusTest.startConsulCluster(ConsulCpClusteredEventBusTest.java:37)
+
+io.vertx.core.eventbus.ConsulCpClusteredEventBusTest  Time elapsed: 31.613 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.vertx.spi.cluster.consul.ConsulAgent.stop(ConsulAgent.java:45)
+	at io.vertx.spi.cluster.consul.ConsulCluster.shutDown(ConsulCluster.java:43)
+	at io.vertx.core.eventbus.ConsulCpClusteredEventBusTest.shutDownConsulCluster(ConsulCpClusteredEventBusTest.java:42)
+
