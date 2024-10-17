@@ -1,7 +1,0 @@
-JUnit version 4.12
-.quote may be flaky: FlakyTaintLabel{type=RANDOM, cause='com/github/javafaker/service/RandomService.SHARED_RANDOM', file='com/github/javafaker/service/RandomService', line=76, label=7}
-
-Time: 11.471
-
-OK (1 test)
-
