@@ -7,6 +7,10 @@ import time
 import logging
 import re
 import csv
+import xml.etree.ElementTree as ET
+from collections import defaultdict
+
+
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
 # PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
@@ -17,25 +21,25 @@ RANDOOP_GENERATED_DIRECTORY = "/shared-data/generated-flaky/randoop_tests/"
 
 
 
-# WORKSPACE='/workspace/generated-flaky-study/'
-WORKSPACE= os.getcwd()
-WORKSPACE="/shared-data/generated-flaky-study/"
+WORKSPACE='/workspace/generated-flaky-study/'
+# WORKSPACE= os.getcwd()
+# WORKSPACE="/shared-data/generated-flaky-study/"
 
 # TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
-TOOLS_DIRECTORY = "/shared-data/tools/"
+TOOLS_DIRECTORY = "/shared-data/common-jar/"
 
 RANDOOP_JAR = TOOLS_DIRECTORY + 'randoop-all-4.3.3.jar'
-GUAVA_JAR = TOOLS_DIRECTORY + 'guava-33.2.1-jre.jar'
+GUAVA_JAR = TOOLS_DIRECTORY + 'guava-33.0.0-jre.jar'
 HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-2.2.jar'
 JUNIT_JAR = TOOLS_DIRECTORY + 'junit-4.13.2.jar'
-SUMMARY_LOG = '/shared-data/generated-flaky-study/' + '/logs/'
+SUMMARY_LOG = WORKSPACE + '/logs/'
 # SUMMARY_LOG = '/shared-data/generated-flaky/logs/'
 
 # MVN_LOC = "/Users/yhcrown/Documents/tools/apache-maven-3.8.8/bin/mvn"
-MVN_LOC = "/shared-data/apache-maven-3.8.8/bin/mvn"
+MVN_LOC = "/workspace/apache-maven-3.8.8/bin/mvn"
 
 # JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
-JAVA_HOME = "/shared-data/jdk8u412-b08/"
+JAVA_HOME = "/shared-data/jdk8u422-b05/"
 
 # INSTRUMENTED_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst/"
 INSTRUMENTED_JAVA_HOME = "/shared-data/jdk-inst/"
@@ -44,6 +48,8 @@ FLAKYTRACKER_JAR = "/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-
 # CONTROL_TRACK_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack"
 CONTROL_TRACK_JAVA_HOME = "/shared-data/jdk-inst-controltrack/"
 
+
+generated_dataset_labeled_flaky_test = set()
 
 RERUN_TIMES = 10
 
@@ -64,6 +70,8 @@ initial_flaky_test = dict()
 randoop_flaky_test = set()
 tracker_flaky_test = set()
 tracker_randoop_flaky_test = set()
+tracker_flaky_tests_except_randoop =  set()
+
 
 error_case_num = 0
 
@@ -80,23 +88,26 @@ def read_dataset():
     developer_NOD_info = pd.DataFrame(
         df[df['Project_Name'].isin(developer_NOD_projects)][cols_to_keep].drop_duplicates())
     developer_NOD_info.to_csv(WORKSPACE+'/developer_NOD_projects_info.csv')
-    print(developer_NOD_info)
+    # print(developer_NOD_info)
     test_info = df.loc[df['flaky'] == 'NOD'].loc[
         df['language'] == 'Java'].loc[df['test_type'] == 'developer-written']
     test_info =  test_info[test_info['Project_Name'].isin(developer_NOD_projects)]
-    print(len(test_info))
-    print(df[
-              'test_type'].unique())  ## ['evosuite_Default' 'evosuite_NoFlakinessSuppression' 'developer-written' 'generated']
-    print(df['flaky'].unique())  ## not flaky, NOD,  OD
-    print(developer_NOD_projects, len(developer_NOD_projects))  ## 105, same as paper
+    # print(len(test_info))
+    # print(df['test_type'].unique())  ## ['evosuite_Default' 'evosuite_NoFlakinessSuppression' 'developer-written' 'generated']
+    # print(df['flaky'].unique())  ## not flaky, NOD,  OD
+    # print(developer_NOD_projects, len(developer_NOD_projects))  ## 105, same as paper
     evo = df['Project_Name'].loc[df['flaky'] == 'NOD'].loc[df['language'] == 'Java'].loc[
         df['test_type'] == 'evosuite_Default'].unique()
     for p in evo:
         if p in developer_NOD_projects:
             evosuite_flaky_projects.add(p)
-    print("evosuite:", len(df['Project_Name'].loc[df['flaky'] == 'NOD'].loc[df['language'] == 'Java'].loc[
-                               df['test_type'] == 'evosuite_NoFlakinessSuppression'].unique()))
-    return developer_NOD_info
+    # print("evosuite:", len(df['Project_Name'].loc[df['flaky'] == 'NOD'].loc[df['language'] == 'Java'].loc[
+    #                            df['test_type'] == 'evosuite_NoFlakinessSuppression'].unique()))
+    
+    filtered_df = df[(df['language'] == 'Java') & (df['test_type'] == 'developer-written') & (df['flaky'] == 'NOD')]
+    print(filtered_df)
+
+    return developer_NOD_info, filtered_df
 
 
 def download_project(project, target_dir):
@@ -121,7 +132,7 @@ def build_project(target_dir):
     print('Building client ... ' + str(datetime.datetime.now()))
     os.environ['JAVA_HOME'] = JAVA_HOME
     subprocess.run(
-        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip -Dlicense.skip=true -am  ',
+        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true -am  ',
         shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, build_log)
@@ -188,6 +199,7 @@ def run_randoop(project, target_dir):
     concat_class_path += GUAVA_JAR
 
     os.environ['JAVA_HOME'] = JAVA_HOME
+    os.environ['PATH'] = f"{JAVA_HOME}/bin:{os.environ['PATH']}"
     randoop_cmd = JAVA_HOME+'/bin/java -ea -classpath ' + concat_class_path + \
                   ' randoop.main.Main gentests' \
                   + ' --classlist=' + class_list_file \
@@ -276,6 +288,7 @@ def run_flaky_tracker(project, target_dir):
     concat_class_path += GUAVA_JAR
 
     # os.environ['JAVA_HOME'] = JAVA_HOME
+    test_dir = target_dir + '/src/test/java/flaky'
 
     for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY+project['Project_Name']):
         for file in files:
@@ -286,6 +299,8 @@ def run_flaky_tracker(project, target_dir):
                     new_lines = []
                     new_lines.append("package flaky; \n")
                     for line in original_lines:
+                        if "import org.junit.FixMethodOrder;" in line  or "import org.junit.runners.MethodSorters;" in line or "@FixMethodOrder(MethodSorters.NAME_ASCENDING)" in line:
+                            continue
                         if line.startswith("public class"):
                             new_lines.append("public class RandoopTest{")
                         else:
@@ -294,45 +309,48 @@ def run_flaky_tracker(project, target_dir):
                     new_class = "\n".join(new_lines)
                 with open(dir + '/RandoopTest.java', 'w+') as f:
                     f.write(new_class)
-
+                if not os.path.exists(test_dir):
+                    os.mkdir(test_dir)
                 shutil.copy(dir+ '/RandoopTest.java', target_dir+'/src/test/java/flaky/RandoopTest.java')
             if file == 'FlakyTest.java':
+                if not os.path.exists(test_dir):
+                    os.mkdir(test_dir)
                 shutil.copy(dir+ '/FlakyTest.java', target_dir+'/src/test/java/flaky/FlakyTest.java')
 
-    build_log = target_dir + '/build.log'
+    build_log = target_dir + '/buildFlaky.log'
     # start_time = time.time()
-    print('Building client ... ' + str(datetime.datetime.now()))
     os.environ['JAVA_HOME'] = JAVA_HOME
     # os.environ['MAVEN_OPT'] = "-Xbootclasspath/a:" + FLAKYTRACKER_JAR + " -javaagent:"+FLAKYTRACKER_JAR
     os.chdir(target_dir)
     # subprocess.run(MVN_LOC+ ' -version', executable='/bin/zsh', shell=True, stdout=subprocess.STDOUT, stderr=subprocess.STDOUT)
-    # subprocess.run(INSTRUMENTED_JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java', executable='/bin/zsh', shell=True,
-    #                stderr=subprocess.STDOUT, timeout=90)
-
+    # subprocess.run(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java', executable='/bin/zsh', shell=True,
+    #                stderr=subprocess.STDOUT, timeout=90, stdout=open(build_log, 'w'))
+    # print(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java')
     subprocess.run(
-        MVN_LOC + ' install -DskipTests',
+        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true ',
         shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     if os.path.exists(generated_dir+'/flakyTracker/'):
         shutil.rmtree(generated_dir+'/flakyTracker/')
     #find all test-classes
     for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
         for file in files:
-            if file.endswith(".class"):
+            if file.endswith(".class"):   #change here to '.class' to make it run all classes
                 class_name = os.path.join(dir, file)
                 class_name = class_name.replace(target_dir+'/target/test-classes/','').replace('/', '.').replace('\\', '.').replace('.class', '')
                 # print(class_name)
                 flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+class_name
-                # print(flaky_tracker_cmd)
+
                 # flaky_tracker_dir =
 
                 flaky_tracker_log = generated_dir + '/flakyTracker/' + class_name.replace('.','/')+'.trackerlog'
                 flaky_tracker_dir = '/'.join(flaky_tracker_log.split('/')[0:len(flaky_tracker_log.split('/'))-1])
                 # os.path.dirname(flaky_tracker_log)
+                print(flaky_tracker_log)
                 if not os.path.exists(flaky_tracker_dir):
                     os.makedirs(flaky_tracker_dir)
                 try:
                     subprocess.run(flaky_tracker_cmd, shell=True, stdout=open(flaky_tracker_log, 'w'),
-                                   stderr=subprocess.STDOUT, timeout=120)
+                                   stderr=subprocess.STDOUT, timeout=600)
                 except subprocess.TimeoutExpired as e:
                     with open(flaky_tracker_log, "a+") as f:
                         f.write(str(e))
@@ -342,6 +360,14 @@ def run_flaky_tracker(project, target_dir):
                 # break
 
 tracker_data = []
+random_num = 0
+time_num = 0
+
+tracker_data_set = set()
+
+# 创建新元素的哈希标识
+
+
 def parseTrackerLog(log_path):
     for dir, subpath, files in os.walk(log_path):
         for file in files:
@@ -351,31 +377,55 @@ def parseTrackerLog(log_path):
                 info = subdir.split('/')
                 project_name = info[0]
                 hash = info[1]
+                class_name = os.path.join(dir, file)
+                class_name = class_name.split("/flakyTracker/")[1].replace('/', '.').replace('\\', '.').replace('.trackerlog', '')
+                # class_name = class_name.replace(target_dir+'/target/test-classes/','')
+   
+                generated_dir = RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash'] + '/alltests/'
+   
                 if os.path.exists(dir+file):
                     shutil
                 with open(dir+'/'+file,"r+") as f:
                     lines = f.readlines()
                     pattern = re.compile(
-                        r'(\S+)\s+may be flaky:\s+FlakyTaintLabel{type=(\S+),\s+cause=(\S+),\s+file=(\S+),\s+line=(-?\d+),\s+label=(\d+)}')
+                        r'FlakyTracker Log: (\S+)\s+may be flaky:\s+FlakyTaintLabel{type=(\S+),\s+cause=(\S+),\s+file=(\S+),\s+line=(-?\d+),\s+label=(\d+)}')
                     matches = pattern.findall('\n'.join(lines))
-                    randoop_test_pattern = r'^test\d+$'
+                    randoop_test_pattern = r'^test\d+(_\d+)$'
                     for match in matches:
                         test_name, flaky_type, cause, file, line, label = match
                         test_name = re.sub(r'^[\.E]+', '', test_name)  ## old version
-                        if re.match(randoop_test_pattern, test_name): ## is randoop test
+                        if 'flaky.FlakyTest' in class_name or 'flaky.RandoopTest' in class_name: ## is randoop test
                             tracker_randoop_flaky_test.add(project_name+'#'+test_name)
-                        tracker_flaky_test.add(project_name+'#'+test_name)
+                        else:
+                            tracker_flaky_tests_except_randoop.add(project_name+'#'+class_name+'#'+test_name)
+                            
+                            
+                        global random_num
+                        global time_num
+                        if project_name+'#'+test_name not in tracker_flaky_test:
+                            if 'RANDOM' in flaky_type:
+                                random_num = random_num + 1
+                            if 'TIME' in flaky_type:
+                                time_num = time_num + 1
+                            tracker_flaky_test.add(project_name+'#'+test_name)
 
-                        tracker_data.append({
-                            'Project Name':project_name,
-                            'sha':hash,
-                            'Test Name': test_name,
-                            'Type': flaky_type,
-                            'Cause': cause,
-                            'File': file,
-                            'Line': int(line),
-                            'Label': int(label)
-                        })
+                        new_entry_hash = (project_name, hash, test_name, flaky_type, cause, file, int(line), int(label))
+
+                        if  ('flaky.FlakyTest' in class_name or 'flaky.RandoopTest' in class_name): ## is randoop test
+                            continue
+                        if new_entry_hash not in tracker_data_set:
+                            tracker_data.append({
+                                'Project Name': project_name,
+                                'sha': hash,
+                                'Test Name': test_name,
+                                'Type': flaky_type,
+                                'Cause': cause,
+                                'File': file,
+                                'Line': int(line),
+                                'Label': int(label)
+                            })
+                            # 同时将哈希标识添加到集合中 
+                            tracker_data_set.add(new_entry_hash)
 
     df = pd.DataFrame(tracker_data)
     print(df)
@@ -505,8 +555,7 @@ def find_flaky():
                                 # flaky_tests_per_project[project].append(last_test)
 
 
-    uncomment_tests()
-    # generate_new_testclass()
+
 
 
 def uncomment_tests():
@@ -525,7 +574,7 @@ def uncomment_tests():
                 test_name = re.search(r'public void\s+(\w+)\s*\(', test_code).group(1)
                 modified_test_name = f"{test_name}_{i + 1}"
 
-                randoop_flaky_test.add(flaky_project+'#'+test_name)
+                randoop_flaky_test.add(flaky_project+'#'+modified_test_name)
 
                 modified_test_code = re.sub(r'public void\s+' + test_name + r'\s*\(',
                                             'public void ' + modified_test_name + '(',
@@ -544,8 +593,9 @@ def generate_new_testclass():
                         new_lines = []
                         new_lines.append("package flaky; \n")
                         for line in original_lines:
-                            if line.startswith("import") or line.startswith(
-                                    "@Fix") or "public static boolean debug = false;" in line:
+                            if "import org.junit.FixMethodOrder;" in line  or "import org.junit.runners.MethodSorters;" in line or "@FixMethodOrder(MethodSorters.NAME_ASCENDING)" in line:
+                                continue
+                            if line.startswith("import") or "public static boolean debug = false;" in line:
                                 new_lines.append(line)
                             elif line.startswith("public class"):
                                 new_lines.append("public class FlakyTest{")
@@ -578,29 +628,14 @@ def copy_and_run():
                 if os.path.exists(test_dir+'FlakyTests.java'):
                     os.remove(test_dir+'/FlakyTests.java')
                 shutil.copy(dir + '/FlakyTest.java', test_dir + '/FlakyTest.java')
-        #         with open(dir + '/FlakyTest.java', 'r+') as f:
-        #             java_code = f.read()
-        #             pattern = r'public void (.*?)\(\)'
-        #             matches = re.findall(pattern, java_code)
-        #         break
-        # for test in matches:
-        #     cmd = '/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn -Dtest=FlakyTest#' + test + " test "
-        #     cmd2 = '/Users/yhcrown/Documents/tools/apache-maven-3.9.5/bin/mvn -Dtest=FlakyTest#' + test + " surefire:test "
-        #     print(os.getcwd(), cmd)
-        #     if not os.path.exists(log_dir + test):
-        #         os.mkdir(log_dir + test)
-        #     subprocess.run(cmd, shell=True, stdout=open(log_dir + test + '/' + '0.log', 'w+'),
-        #                    stderr=subprocess.STDOUT, timeout=90)
-        #     for i in range(1, 10):
-        #         subprocess.run(cmd2, shell=True, stdout=open(log_dir + test + '/' + str(i) + '.log', 'w+'),
-        #                        stderr=subprocess.STDOUT, timeout=90)
-        cmd = MVN_LOC+ ' -Dtest=FlakyTest test '
-        cmd2 = MVN_LOC+ ' -Dtest=FlakyTest surefire:test'
-        print(os.getcwd(), cmd)
-        if not os.path.exists(log_dir + '/all'):
-            os.mkdir(log_dir + '/all')
-        subprocess.run(cmd, shell=True, stdout=open(log_dir + '/all/' + '0.log', 'w+'),
-                       stderr=subprocess.STDOUT, timeout=90)
+
+        # cmd = MVN_LOC+ ' -Dtest=FlakyTest test '
+        # cmd2 = MVN_LOC+ ' -Dtest=FlakyTest surefire:test'
+        # print(os.getcwd(), cmd)
+        # if not os.path.exists(log_dir + '/all'):
+        #     os.mkdir(log_dir + '/all')
+        # subprocess.run(cmd, shell=True, stdout=open(log_dir + '/all/' + '0.log', 'w+'),
+        #                stderr=subprocess.STDOUT, timeout=90)
         # for i in range(1, RERUN_TIMES):
         #     subprocess.run(cmd2, shell=True, stdout=open(log_dir + '/all/' + str(i) + '.log', 'w+'),
         #                    stderr=subprocess.STDOUT, timeout=90)
@@ -681,67 +716,234 @@ def make_flaky_table():
             writer.writerow([project.replace('-','/',1),str(project_to_sha[project])[0:7],normal_test_num_per_project[project],len(fp)])
 
 
+verified_flaky_tests = defaultdict(lambda: defaultdict(int))
+verified_tests_set = set()
+# Function to run Maven test command
+def run_maven_test(project_dir, test_class, report_dir):
+    os.chdir(project_dir)
+    
+    command = f"{MVN_LOC} -Dtest={test_class} -Dsurefire.reportNameSuffix={report_dir} test"
+    command = f"{MVN_LOC} -Dsurefire.reportNameSuffix={report_dir} test"
+    result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return result.returncode
+
+
+
+
+fail_runs = []
+
+# Function to parse Surefire reports and check for flaky tests
+def check_flaky_tests(project, test_class, report_dir, runs = 10):
+
+    for root, _, files in os.walk(report_dir):
+        for file in files:
+            if file.endswith(".xml") and test_class in file:
+                file_path = os.path.join(root, file)
+                tree = ET.parse(file_path)
+                xml_root = tree.getroot()
+
+                for testcase in xml_root.findall('testcase'):
+                    name = testcase.get('name')
+                    name = project + '#' + test_class + '#' + name
+                    if testcase.find('failure') is not None or testcase.find('error') is not None:
+                        randoop_test_pattern = r'^test\d+(_\d+)$'
+                        if 'RandoopTest' in test_class or 'FlakyTest' in test_class:
+                            verified_flaky_tests[project][name] = 0 
+                            # print(testcase.get('name'))
+                        else:
+                            verified_flaky_tests[project][name] += 1
+                            fail_runs.append(file)
+    print(fail_runs)
+    return {test: count for test, count in verified_flaky_tests[project].items() if count > 1 and count < runs}
+
+# Main function to run the test class multiple times and check for flakiness
+def main_check(test_class, project, runs=10 ):
+
+    project_dir = PROJECTS_DIRECTORY + project
+    base_report_dir= project_dir + "/target/surefire-reports/"
+
+    for i in range(runs):
+        run_dir = f"run_{i+1}"
+        # report_dir = os.path.join(base_report_dir, run_dir)
+        # os.makedirs(report_dir, exist_ok=True)
+
+        print(f"Running test {i+1}/{runs} of project {project} ...")
+        # result_code = run_maven_test(project_dir, test_class, run_dir)
+
+        if result_code != 0:
+            print(f"Test run {i+1} failed with return code {result_code}")
+            fail_runs.add(run_dir)
+    verified_flaky_tests = check_flaky_tests(project, test_class, base_report_dir)
+
+    if verified_flaky_tests:
+        print("Flaky tests found:")
+
+        for test, count in verified_flaky_tests.items():
+            verified_tests_set.add(test)
+            print(f"Test {test} failed {count} times")
+    else:
+        print("No flaky tests found.")
+
+
+
+def check_randoop_flaky():
+    test_class = "flaky.FlakyTest"
+    for flaky_project in flaky_projects:
+        main_check(test_class, project = flaky_project)
+
+
+def check_all_flaky(project_name):
+    target_dir =  PROJECTS_DIRECTORY + project_name
+    for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
+        for file in files:
+            if file.endswith(".class"):   #change here to '.class' to make it run all classes
+                class_name = os.path.join(dir, file)
+                class_name = class_name.replace(target_dir+'/target/test-classes/','').replace('/', '.').replace('\\', '.').replace('.class', '')
+                print("start rerun {project}, {class_name}")
+                main_check(class_name, project = project_name)
+
+def check_all_flaky_by_single_run(project_name):
+    main_check("haha", project = project_name)
+    
+    
+def find_verified_flaky(project_name):
+    # global fail_runs
+    fail_runs.clear()
+    fail_log_dir = SUMMARY_LOG+'/verified_fail_log/'
+
+
+    target_dir =  PROJECTS_DIRECTORY + project_name
+    for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
+        for file in files:
+            if file.endswith(".class"):   #change here to '.class' to make it run all classes
+                class_name = os.path.join(dir, file)
+                class_name = class_name.replace(target_dir+'/target/test-classes/','').replace('/', '.').replace('\\', '.').replace('.class', '')
+                base_report_dir= target_dir + "/target/surefire-reports/"
+                verified_flaky_tests = check_flaky_tests(project_name, class_name, base_report_dir)
+                if verified_flaky_tests:
+                    if not os.path.exists(fail_log_dir+'/'+project_name):
+                        os.mkdir(fail_log_dir +'/'+project_name)
+                    print(fail_runs)
+                    for run in fail_runs:
+                        print(base_report_dir+"/" + run.replace('.xml','.txt'))
+                        shutil.copy(base_report_dir+"/" + run.replace('.xml','.txt').replace('TEST-','') , fail_log_dir +project_name+'/')
+                    for test, count in verified_flaky_tests.items():
+                        verified_tests_set.add(test)
+
+    
+analyzed_projects = set()
+
 
 if __name__ == '__main__':
-    # os.environ['JAVA_HOME'] = JAVA_HOME
-    # os.environ['MAVEN_HOME'] = MVN_LOC
-    projects_info = read_dataset()
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    os.environ['MAVEN_HOME'] = MVN_LOC
+    projects_info, filtered_df= read_dataset()
     # os.environ['PATH'] += JAVA_HOME+'/bin/'
     # # print(os.environ['PATH'])
 
     # # os.system('mvn -v')
-    # subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
-    #                stderr=subprocess.STDOUT, timeout=90)
+    subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
+                   stderr=subprocess.STDOUT, timeout=90)
     # test_project = 'yankeguo-xlog-java'
-    # # if not os.path.exists(PROJECTS_DIRECTORY):
-    # #     os.mkdir(PROJECTS_DIRECTORY)
+    # if not os.path.exists(PROJECTS_DIRECTORY):
+    #     os.mkdir(PROJECTS_DIRECTORY)
+    temp_test_project_list = {'kestreldigital-data-conjuror','DiUS-java-faker','lemire-externalsortinginjava'}
+    temp_test_project_list = {'kestreldigital-data-conjuror'}
+ 
     for index, project in projects_info.iterrows():
         project_name = project['Project_Name']
 
         target_dir = PROJECTS_DIRECTORY + project_name
-        # if not os.path.exists(target_dir):
-        #     download_project(project, target_dir)
-        # if not os.path.exists(target_dir + '/build.log'):
-        #     build_project(target_dir)
-        # else:
-        #     shutil.copy(target_dir + '/build.log',
-        #                 RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project[
-        #                     'Project_Hash'] + '/alltests/build.log')
-        # if os.path.exists(RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash']+'/alltests/FlakyTest.java'):
-            # if project_name != 'StefaniniInspiring-pugtsdb':
-                #  if not os.path.exists(RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash']+'/alltests/flakyTracker'):
-            # if project_name == test_project:
-                    # print(project_name)
+    #     if not os.path.exists(target_dir):
+    #         download_project(project, target_dir)
+    #     if not os.path.exists(target_dir + '/build.log'):
+        # build_project(target_dir)
+    #     else:
+    #         shutil.copy(target_dir + '/build.log',
+    #                     RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project[
+    #                         'Project_Hash'] + '/alltests/build.log')
 
-                    # run_flaky_tracker(project, PROJECTS_DIRECTORY + project_name)
-                # print(project_name)
-
-
-        # print(os.listdir(target_dir))
+    #     # print(os.listdir(target_dir))
         # if "edwardcapriolo-teknek-core" == project_name or "mbknor-dropwizard-activemq-bundle" == project_name:
         #     continue
       
         # run_randoop(project,target_dir)
-        
-        # search_error_cause()
-        # break
-        # os.chdir(PROJECTS_DIRECTORY + project_name)
-        # print(os.getcwd())
+
+
+    #     # search_error_cause()
+    #     # break
+    #     # os.chdir(PROJECTS_DIRECTORY + project_name)
+    #     # print(os.getcwd())
+    # search_error_cause()
     find_flaky()
+    # print('sadasdkasds')
+    # print(flaky_projects)
+    # uncomment_tests()
+    # generate_new_testclass()
     # copy_and_run()
     # collect_flaky()
     # statistic_flaky()
+
     # make_flaky_table()
+    # target_project = 'BriteSnow-jomni'
+    # for project_name in temp_test_project_list:
+    fail_log_dir = SUMMARY_LOG+'/verified_fail_log/'
+    # if not os.path.exists(fail_log_dir):
+    #     os.mkdir(fail_log_dir)
+    
+    
+    # turcate = False
+    # for index, project in projects_info.iterrows():
+    #     project_name = project['Project_Name']
+    #     # if os.path.exists(RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash']+'/alltests/FlakyTest.java'):
+    #     if project_name != 'StefaniniInspiring-pugtsdb':
+    #         print(project_name)
+    #         if project_name == 'mitoma-ponto':
+    #             turcate = True
+    #             break
+    #             #  if not os.path.exists(RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash']+'/alltests/flakyTracker'):
+    #         # if project_name == test_project:
+    # #     #     #         print(project_name)
+    #         if not turcate:
+    #             for dir, subpath, files in os.walk(RANDOOP_GENERATED_DIRECTORY + project['Project_Name'] + '/' + project['Project_Hash']+'/alltests/flakyTracker'):
+                
+    #                 for file in files:
+    #                       #see if flakytracker can run something
+    #                     if file.endswith('.trackerlog'):
+    #                         analyzed_projects.add(project_name)
+    #                         break
+    #         #     run_flaky_tracker(project, PROJECTS_DIRECTORY + project_name)
+    #             # check_all_flaky_by_single_run(project_name)
+    #             if project_name in analyzed_projects:
+    #                 find_verified_flaky(project_name)
     parseTrackerLog(RANDOOP_GENERATED_DIRECTORY)
-    print('randoop len' ,len(randoop_flaky_test))
-    print('tracker len' ,len(tracker_randoop_flaky_test))
-    print('true positive:',len(randoop_flaky_test.intersection(tracker_randoop_flaky_test)),'\n--------------------\n', randoop_flaky_test.intersection(tracker_randoop_flaky_test))
-    print('false positive:?', len(tracker_randoop_flaky_test-randoop_flaky_test),'\n--------------------\n',tracker_randoop_flaky_test-randoop_flaky_test)
-    print('false negative:',len(randoop_flaky_test-tracker_randoop_flaky_test),'\n--------------------\n',randoop_flaky_test-tracker_randoop_flaky_test)
+    # check_randoop_flaky()
+    # print(verified_flaky_tests)
+    # print(analyzed_projects)
+    for idx, test in filtered_df.iterrows():
+        if test['Project_Name'] in analyzed_projects:
+            flaky_name = test['Project_Name'] + '#' + test['Test_class'] + '#' + test ['Test_name']
+            generated_dataset_labeled_flaky_test.add(flaky_name)
+    # print('randoop len' ,len(randoop_flaky_test))
+    # print('tracker len' ,len(tracker_randoop_flaky_test))
+    # print('verified len', len(verified_tests_set))
+    # print('random num', random_num)
+    # print('time num', time_num)
+    # print('true positive:',len(randoop_flaky_test.intersection(tracker_randoop_flaky_test)),'\n--------------------\n', sorted(randoop_flaky_test.intersection(tracker_randoop_flaky_test)))
+    # print('false positive:?', len(tracker_randoop_flaky_test-randoop_flaky_test),'\n--------------------\n',sorted(tracker_randoop_flaky_test-randoop_flaky_test))
+    # print('false negative:',len(randoop_flaky_test-tracker_randoop_flaky_test),'\n--------------------\n',sorted(randoop_flaky_test-tracker_randoop_flaky_test))
+    print("ground truth", len(verified_tests_set),verified_tests_set)
+    print('true positive:',len(verified_tests_set.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(verified_tests_set.intersection(tracker_flaky_tests_except_randoop)))
+    print('false positive:?', len(tracker_flaky_tests_except_randoop-verified_tests_set),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-verified_tests_set))
+    print('false negative:',len(verified_tests_set-tracker_flaky_tests_except_randoop),'\n--------------------\n',sorted(verified_tests_set-tracker_flaky_tests_except_randoop))
 
+    print("true positive labeled",len(generated_dataset_labeled_flaky_test.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(generated_dataset_labeled_flaky_test.intersection(tracker_flaky_tests_except_randoop)))
+    print("false positive labeled", len(tracker_flaky_tests_except_randoop - generated_dataset_labeled_flaky_test ),'\n--------------------\n', sorted(tracker_flaky_tests_except_randoop - generated_dataset_labeled_flaky_test ))
+    print("false nagative labeled",len(generated_dataset_labeled_flaky_test - tracker_flaky_tests_except_randoop),'\n--------------------\n', sorted(generated_dataset_labeled_flaky_test - tracker_flaky_tests_except_randoop))
+    
+    # print(flaky_projects)
 
-
-    search_build_error()
+    # search_build_error()
     # search_error_cause()
     # print(generate_fails.intersection(build_fails))
     # print("total",total_test_num)
