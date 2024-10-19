@@ -225,9 +225,11 @@ def run_randoop(project, target_dir):
     insertTimeInLog(start_time, end_time, test_gen_log)
     os.chdir(cwd)
 
-def run_flaky_tracker(project, target_dir):
+def run_flaky_tracker(project, target_dir, module = None):
     cwd = os.getcwd()
     os.chdir(target_dir)
+    if module:
+        os.chdir(target_dir + '/' + module)
     if os.path.isdir('/tmp/jars'):
         shutil.rmtree('/tmp/jars')
     os.mkdir('/tmp/jars')
