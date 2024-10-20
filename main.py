@@ -48,6 +48,7 @@ FLAKYTRACKER_JAR = "/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-
 # CONTROL_TRACK_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack"
 CONTROL_TRACK_JAVA_HOME = "/shared-data/jdk-inst-controltrack/"
 
+IDOFT_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/idoft/"
 
 generated_dataset_labeled_flaky_test = set()
 
@@ -225,9 +226,117 @@ def run_randoop(project, target_dir):
     insertTimeInLog(start_time, end_time, test_gen_log)
     os.chdir(cwd)
 
+
+
+def run_flaky_tracker_on_one_test(Test):
+    target_dir = PROJECTS_DIRECTORY + '/' + Test['Project_Name']
+    os.chdir(target_dir)
+    if Test['Module'] != '.':
+        target_dir = target_dir + '/' + Test['Module']
+    commit = Test['Project_Hash']
+    subprocess.run('git checkout ' + commit, shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
+    if os.path.isdir('/tmp/jars'):
+        shutil.rmtree('/tmp/jars')
+    os.mkdir('/tmp/jars')
+    start_time = time.time()
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    subprocess.run(MVN_LOC+ ' dependency:copy-dependencies',
+                   shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
+    for dir, subdir, files in os.walk(target_dir):
+        if "dependency" in subdir:
+            for file in os.listdir(dir + "/dependency"):
+                if file.endswith(".jar"):
+                    shutil.copy(dir + "/dependency/" + file, "/tmp/jars")
+    os.chdir(target_dir)
+
+    ## Linux platform
+    concat_class_path = '$(find ' + target_dir + ' -name \"classes\" -type d | paste -sd :)'
+    concat_class_path += ':$(find ' + target_dir + ' -name \"test-classes\" -type d | paste -sd :)'
+    concat_class_path += ':$(find /tmp/jars -name \"*.jar\" -type f | paste -sd :):'
+    # print(concat_class_path)
+    ## Mac os platform
+
+    # concat_class_path = '$(find ' + target_dir + ' -name "classes" -type d | xargs echo | tr \' \' \':\')'
+    # concat_class_path += ':$(find ' + target_dir + ' -name "test-classes" -type d | xargs echo | tr \' \' \':\')'
+    # concat_class_path += ':$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr \' \' \':\'):'
+
+
+
+    generated_dir = IDOFT_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
+
+
+
+    if not os.path.exists(generated_dir):
+        os.makedirs(generated_dir)
+    class_list_file = '/tmp/classes.txt'
+    all_classes = []
+
+    for dir_path, subpaths, files in os.walk(target_dir):
+        for f in files:
+
+            if f.endswith('.class') and ('/classes/' in dir_path or '/test-classes/' in dir_path):
+                clz = (dir_path + '/' + f.split('.')[0]).split('/classes/')[-1].replace('/', '.')
+                if clz not in all_classes:
+                    all_classes.append(clz)
+
+    with open(class_list_file, 'w') as fw:
+        for clz in all_classes:
+            if '$' in clz:
+                clz = clz.split('$')[0]
+            fw.write(clz + '\n')
+
+    concat_class_path += RANDOOP_JAR + ':'
+    concat_class_path += JUNIT_JAR + ':'
+    concat_class_path += HAMCREST_JAR + ':'
+    concat_class_path += GUAVA_JAR
+
+    # os.environ['JAVA_HOME'] = JAVA_HOME
+
+    build_log = target_dir + '/buildFlaky.log'
+    # start_time = time.time()
+    os.environ['JAVA_HOME'] = JAVA_HOME
+    # os.environ['MAVEN_OPT'] = "-Xbootclasspath/a:" + FLAKYTRACKER_JAR + " -javaagent:"+FLAKYTRACKER_JAR
+    os.chdir(target_dir)
+    # subprocess.run(MVN_LOC+ ' -version', executable='/bin/zsh', shell=True, stdout=subprocess.STDOUT, stderr=subprocess.STDOUT)
+    # subprocess.run(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java', executable='/bin/zsh', shell=True,
+    #                stderr=subprocess.STDOUT, timeout=90, stdout=open(build_log, 'w'))
+    # print(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java')
+    subprocess.run(
+        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true ',
+        shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
+    if os.path.exists(generated_dir+'/flakyTracker/'):
+        shutil.rmtree(generated_dir+'/flakyTracker/')
+    #find all test-classes
+
+    target_testclass = Test['testname'].split('.')[:-1]
+    for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
+        for file in files:
+            if target_testclass in file:   #change here to '.class' to make it run all classes
+                class_name = target_testclass
+                flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+class_name
+
+                flaky_tracker_log = generated_dir + '/flakyTracker/' + class_name.replace('.','/')+'.trackerlog'
+                flaky_tracker_dir = '/'.join(flaky_tracker_log.split('/')[0:len(flaky_tracker_log.split('/'))-1])
+                # os.path.dirname(flaky_tracker_log)
+                print(flaky_tracker_log)
+                if not os.path.exists(flaky_tracker_dir):
+                    os.makedirs(flaky_tracker_dir)
+                try:
+                    subprocess.run(flaky_tracker_cmd, shell=True, stdout=open(flaky_tracker_log, 'w'),
+                                   stderr=subprocess.STDOUT, timeout=600)
+                except subprocess.TimeoutExpired as e:
+                    with open(flaky_tracker_log, "a+") as f:
+                        f.write(str(e))
+                    print(Test['Project_Name'], e)
+
+
 def run_flaky_tracker(project, target_dir, module = None):
     cwd = os.getcwd()
     os.chdir(target_dir)
+
+    commit = project['Project_Hash']
+    subprocess.run('git checkout ' + commit, shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
+
     if module:
         os.chdir(target_dir + '/' + module)
     if os.path.isdir('/tmp/jars'):
@@ -836,26 +945,71 @@ def find_verified_flaky(project_name):
 analyzed_projects = set()
 
 
+def read_idoft():
+    path = './pr-data.csv'
+    df = pd.read_csv(path)
+    need_process_projects = df[['Project URL', 'SHA Detected']].loc[
+        (df['Category'] == 'UD') |
+        (df['Category'] == 'NOD') |
+        # (df['Category'] == 'NIO') |
+        (df['Category'] == 'OSD')
+        ].drop_duplicates()
+    need_process_projects = need_process_projects.rename(columns={'SHA Detected': 'Project_Hash','Project URL':'Project_URL'})
+    need_process_projects['Project_Name'] = need_process_projects['Project_URL'].apply(lambda x : x.split('/')[-1])
+    # print(need_process_projects)
+    return need_process_projects, get_tests_to_focus(df)
+
+def get_tests_to_focus(df):
+    need_process_projects = df[['Project URL', 'SHA Detected','Module Path', 'Fully-Qualified Test Name (packageName.ClassName.methodName)']].loc[
+        (df['Category'] == 'UD') |
+        (df['Category'] == 'NOD') |
+        # (df['Category'] == 'NIO') |
+        (df['Category'] == 'OSD')]
+    need_process_projects = need_process_projects.rename(columns = {'SHA Detected': 'Project_Hash','Project URL':'Project_URL','Module Path':'Module', 'Fully-Qualified Test Name (packageName.ClassName.methodName)':'testname'})
+    need_process_projects['Project_Name'] = need_process_projects['Project_URL'].apply(lambda x: x.split('/')[-1])
+    need_process_projects = need_process_projects.drop(columns = ['Project_URL'])
+    print(need_process_projects)
+    return need_process_projects
+
+
+def test_idoft():
+    idoft_projects, idoft_tests = read_idoft()
+    for index, project in idoft_projects.iterrows():
+        project_name = project['Project_Name']
+
+        target_dir = PROJECTS_DIRECTORY + project_name
+        if not os.path.exists(target_dir):
+            download_project(project, target_dir)
+        # if not os.path.exists(target_dir + '/build.log'):
+            build_project(target_dir)
+    for Test in idoft_tests.iterrows():
+        run_flaky_tracker_on_one_test(Test)
+
 if __name__ == '__main__':
     os.environ['JAVA_HOME'] = JAVA_HOME
     os.environ['MAVEN_HOME'] = MVN_LOC
     projects_info, filtered_df= read_dataset()
+
+
+
+
     # os.environ['PATH'] += JAVA_HOME+'/bin/'
     # # print(os.environ['PATH'])
 
     # # os.system('mvn -v')
     subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
                    stderr=subprocess.STDOUT, timeout=90)
+    test_idoft()
     # test_project = 'yankeguo-xlog-java'
     # if not os.path.exists(PROJECTS_DIRECTORY):
     #     os.mkdir(PROJECTS_DIRECTORY)
     temp_test_project_list = {'kestreldigital-data-conjuror','DiUS-java-faker','lemire-externalsortinginjava'}
     temp_test_project_list = {'kestreldigital-data-conjuror'}
  
-    for index, project in projects_info.iterrows():
-        project_name = project['Project_Name']
+    # for index, project in projects_info.iterrows():
+        # project_name = project['Project_Name']
 
-        target_dir = PROJECTS_DIRECTORY + project_name
+        # target_dir = PROJECTS_DIRECTORY + project_name
     #     if not os.path.exists(target_dir):
     #         download_project(project, target_dir)
     #     if not os.path.exists(target_dir + '/build.log'):
