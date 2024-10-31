@@ -50,6 +50,7 @@ CONTROL_TRACK_JAVA_HOME = "/shared-data/jdk-inst-controltrack/"
 
 IDOFT_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/idoft_normal/"
 
+FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/flakeflagger/"
 generated_dataset_labeled_flaky_test = set()
 
 RERUN_TIMES = 10
@@ -269,7 +270,7 @@ def run_flaky_tracker_on_one_test(Test):
 
 
 
-    generated_dir = IDOFT_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
+    generated_dir = FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
 
 
 
@@ -321,8 +322,8 @@ def run_flaky_tracker_on_one_test(Test):
     for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
         for file in files:
             if class_name in file:   #change here to '.class' to make it run all classes
-                flaky_tracker_cmd = INSTRUMENTED_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
-                flaky_tracker_cmd = JAVA_HOME + "/bin/java " +" -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
+                flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
+                # flaky_tracker_cmd = JAVA_HOME + "/bin/java " +" -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
                 flaky_tracker_log = generated_dir + '/flakyTracker/' + target_testclass.replace('.','/')+'.trackerlog'
                 flaky_tracker_dir = '/'.join(flaky_tracker_log.split('/')[0:len(flaky_tracker_log.split('/'))-1])
                 # os.path.dirname(flaky_tracker_log)
@@ -1002,7 +1003,53 @@ def test_idoft():
     print('false positive:?', len(tracker_flaky_tests_except_randoop-idoft_flaky_tests),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-idoft_flaky_tests))
     print('UD true positive:?', len(idoft_ud_tests.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(idoft_ud_tests.intersection(tracker_flaky_tests_except_randoop)))
     
-       
+flakeflagger_project_to_sha = {}
+def read_flakeflagger():
+    path = './Project_Info.csv'
+    df = pd.read_csv(path)
+    need_process_projects = df.rename(columns={'SHA': 'Project_Hash','URL':'Project_URL'})
+    need_process_projects['Project_Name'] = need_process_projects['Project_URL'].apply(lambda x: "-".join(x.split('/')[-2:]))
+    for index, project in need_process_projects.iterrows():
+        flakeflagger_project_to_sha[project['Project_Name']] = project['Project_Hash']
+    return need_process_projects
+def flakeflagger_flaky_tests():
+    path = './test_results.csv'
+    df = pd.read_csv(path)
+    flaky_tests = df[["Project","Test"]].loc[df["IsFlaky"]==1]
+    flaky_tests = flaky_tests.rename(columns={'Project':'Project_Name','Test':'testname'})
+    flaky_tests["Project_Hash"] = flaky_tests['Project_Name'].apply(lambda x:flakeflagger_project_to_sha[x])
+    # print(flaky_tests)
+    return flaky_tests
+
+def test_flakeflagger():
+    flakeflagger_projects  = read_idoft()
+    flakeflagger_tests = flakeflagger_flaky_tests()
+    for index, project in flakeflagger_projects.iterrows():
+        project_name = project['Project_Name']
+        # if project_name == 'aletheia':
+        #     continue
+        target_dir = PROJECTS_DIRECTORY + project_name
+        if not os.path.exists(target_dir):
+            download_project(project, target_dir)
+            # if not os.path.exists(target_dir + '/build.log'):
+            build_project(target_dir)
+
+    for index, Test in flakeflagger_tests.iterrows():
+        # if Test['Project_Name'] == 'aletheia':
+        #     continue
+        # idoft_flaky_tests.add(Test["Project_Name"]+'#'+Test["testname"])
+        if Test['Category'] == 'UD':
+            idoft_ud_tests.add(Test["Project_Name"]+'#'+Test["testname"])
+        target_testclass = ".".join(Test['testname'].split('.')[:-1])
+        # print(Test['testname'])
+        generated_dir = FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
+        flaky_tracker_log = generated_dir + '/flakyTracker/' + target_testclass.replace('.','/')+'.trackerlog'
+        if os.path.exists(flaky_tracker_log):
+            print(f"already analyzed {target_testclass}")
+            continue
+        # if Test['Project_Name'] + '#' + target_testclass not in idoft_tested_class:
+        #     print(Test['testname'].split('.')[-2])
+        run_flaky_tracker_on_one_test(Test)
 
 if __name__ == '__main__':
     os.environ['JAVA_HOME'] = JAVA_HOME
