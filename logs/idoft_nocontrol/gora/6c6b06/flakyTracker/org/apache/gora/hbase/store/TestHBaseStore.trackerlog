@@ -1,0 +1,77 @@
+JUnit version 4.10
+Exception in thread "main" java.util.ServiceConfigurationError: org.apache.hadoop.fs.FileSystem: Provider org.apache.hadoop.hdfs.web.HftpFileSystem could not be instantiated
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Error.<init>(Error.java:88)
+	at java.util.ServiceConfigurationError.<init>(ServiceConfigurationError.java:84)
+	at java.util.ServiceLoader.fail$$PHOSPHORTAGGED(ServiceLoader.java:232)
+	at java.util.ServiceLoader.access$100$$PHOSPHORTAGGED(ServiceLoader.java:185)
+	at java.util.ServiceLoader$LazyIterator.nextService$$PHOSPHORTAGGED(ServiceLoader.java:384)
+	at java.util.ServiceLoader$LazyIterator.next$$PHOSPHORTAGGED(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next$$PHOSPHORTAGGED(ServiceLoader.java:480)
+	at org.apache.hadoop.fs.FileSystem.loadFileSystems(FileSystem.java:2558)
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass$$PHOSPHORTAGGED(FileSystem.java:2569)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem$$PHOSPHORTAGGED(FileSystem.java:2586)
+	at org.apache.hadoop.fs.FileSystem.access$200$$PHOSPHORTAGGED(FileSystem.java:89)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal$$PHOSPHORTAGGED(FileSystem.java:2625)
+	at org.apache.hadoop.fs.FileSystem$Cache.get$$PHOSPHORTAGGED(FileSystem.java:2607)
+	at org.apache.hadoop.fs.FileSystem.get$$PHOSPHORTAGGED(FileSystem.java:368)
+	at org.apache.hadoop.fs.FileSystem.get$$PHOSPHORTAGGED(FileSystem.java:167)
+	at org.apache.hadoop.hbase.fs.HFileSystem.<init>(HFileSystem.java:85)
+	at org.apache.hadoop.hbase.fs.HFileSystem.get$$PHOSPHORTAGGED(HFileSystem.java:465)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.getTestFileSystem$$PHOSPHORTAGGED(HBaseTestingUtility.java:2941)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.getNewDataTestDirOnTestFS$$PHOSPHORTAGGED(HBaseTestingUtility.java:558)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.setupDataTestDirOnTestFS$$PHOSPHORTAGGED(HBaseTestingUtility.java:547)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.getDataTestDirOnTestFS$$PHOSPHORTAGGED(HBaseTestingUtility.java:520)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.getDataTestDirOnTestFS$$PHOSPHORTAGGED(HBaseTestingUtility.java:534)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.createDirsAndSetProperties$$PHOSPHORTAGGED(HBaseTestingUtility.java:702)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:654)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:637)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:976)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:856)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:838)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:820)
+	at org.apache.gora.hbase.util.HBaseClusterSingleton.<init>(HBaseClusterSingleton.java:96)
+	at org.apache.gora.hbase.util.HBaseClusterSingleton.build$$PHOSPHORTAGGED(HBaseClusterSingleton.java:57)
+	at org.apache.gora.hbase.GoraHBaseTestDriver.<clinit>(GoraHBaseTestDriver.java:36)
+	at org.apache.gora.hbase.store.TestHBaseStore.<clinit>(TestHBaseStore.java:73)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.forName$$PHOSPHORTAGGED(Class.java:264)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:89)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: java.lang.VerifyError: Operand stack underflow
+Exception Details:
+  Location:
+    org/apache/hadoop/hdfs/web/HftpFileSystem.openConnection(Ljava/lang/String;Ljava/lang/String;)Ljava/net/HttpURLConnection; @60: invokestatic
+  Reason:
+    Attempt to pop empty stack.
+  Current Frame:
+    bci: @60
+    flags: { }
+    locals: { 'org/apache/hadoop/hdfs/web/HftpFileSystem', 'java/lang/String', 'java/lang/String', 'java/net/URL', 'java/net/HttpURLConnection' }
+    stack: { 'edu/utexas/ece/flakytracker/agent/FlakyTaintLabel' }
+  Bytecode:
+    0x0000000: 2a2c b600 514d 2a2b 2cb6 0052 4e2a b400
+    0x0000010: 222d b600 53c0 0054 3a04 1904 1255 b600
+    0x0000020: 5619 04b6 0057 bb02 6f59 1302 7013 0272
+    0x0000030: 1302 7313 0274 1302 75b7 0278 b802 7ec0
+    0x0000040: 0280 1904 b0                           
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.getDeclaredConstructors0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredConstructors$$PHOSPHORTAGGED(Class.java:2671)
+	at java.lang.Class.getConstructor0$$PHOSPHORTAGGED(Class.java:3075)
+	at java.lang.Class.newInstance$$PHOSPHORTAGGED(Class.java:412)
+	at java.util.ServiceLoader$LazyIterator.nextService$$PHOSPHORTAGGED(ServiceLoader.java:380)
+	... 35 more

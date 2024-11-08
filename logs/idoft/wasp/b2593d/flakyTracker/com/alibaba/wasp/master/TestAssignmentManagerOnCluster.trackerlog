@@ -1,0 +1,95 @@
+JUnit version 4.10
+24/10/21 06:41:05 INFO wasp.WaspTestingUtility: Starting up minicluster with 1 master(s) and 3 fserver(s) 
+24/10/21 06:41:05 INFO hbase.HBaseTestingUtility: Starting up minicluster with 1 master(s) and 3 regionserver(s) and 3 datanode(s)
+24/10/21 06:41:09 INFO util.GSet: VM type       = 64-bit
+24/10/21 06:41:09 INFO util.GSet: 2% max memory = 141.27 MB
+24/10/21 06:41:09 INFO util.GSet: capacity      = 2^24 = 16777216 entries
+24/10/21 06:41:09 INFO util.GSet: recommended=16777216, actual=16777216
+24/10/21 06:41:13 INFO namenode.FSNamesystem: fsOwner=root
+24/10/21 06:41:13 INFO namenode.FSNamesystem: supergroup=supergroup
+24/10/21 06:41:13 INFO namenode.FSNamesystem: isPermissionEnabled=true
+24/10/21 06:41:14 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+24/10/21 06:41:14 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+24/10/21 06:41:14 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+24/10/21 06:41:15 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/21 06:41:15 INFO wasp.WaspTestingUtility: Shutting down mini wasp cluster
+24/10/21 06:41:15 INFO hbase.HBaseTestingUtility: Shutting down minicluster
+24/10/21 06:41:16 INFO hbase.HBaseTestingUtility: Minicluster is down
+24/10/21 06:41:16 INFO wasp.WaspTestingUtility: Minicluster is down
+E
+Time: 11.498
+There was 1 failure:
+1) com.alibaba.wasp.master.TestAssignmentManagerOnCluster
+java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.lang.ClassCastException.<init>(ClassCastException.java:58)
+	at java.lang.ClassCastException.<init>(ClassCastException.java)
+	at sun.util.resources.OpenListResourceBundle.loadLookup$$PHOSPHORTAGGED(OpenListResourceBundle.java:137)
+	at sun.util.resources.OpenListResourceBundle.loadLookupTablesIfNecessary$$PHOSPHORTAGGED(OpenListResourceBundle.java:128)
+	at sun.util.resources.OpenListResourceBundle.handleKeySet$$PHOSPHORTAGGED(OpenListResourceBundle.java:96)
+	at java.util.ResourceBundle.containsKey$$PHOSPHORTAGGED(ResourceBundle.java:1824)
+	at sun.util.locale.provider.LocaleResources.getTimeZoneNames$$PHOSPHORTAGGED(LocaleResources.java:263)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayNameArray$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:124)
+	at sun.util.locale.provider.TimeZoneNameProviderImpl.getDisplayName$$PHOSPHORTAGGED(TimeZoneNameProviderImpl.java:99)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:240)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:198)
+	at sun.util.locale.provider.TimeZoneNameUtility$TimeZoneNameGetter.getObject$$PHOSPHORTAGGED(TimeZoneNameUtility.java:184)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObjectImpl$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:281)
+	at sun.util.locale.provider.LocaleServiceProviderPool.getLocalizedObject$$PHOSPHORTAGGED(LocaleServiceProviderPool.java:265)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayNamesImpl$$PHOSPHORTAGGED(TimeZoneNameUtility.java:166)
+	at sun.util.locale.provider.TimeZoneNameUtility.retrieveDisplayName$$PHOSPHORTAGGED(TimeZoneNameUtility.java:137)
+	at java.util.TimeZone.getDisplayName$$PHOSPHORTAGGED(TimeZone.java:400)
+	at java.util.Date.toString$$PHOSPHORTAGGED(Date.java:1045)
+	at java.util.Properties.store0$$PHOSPHORTAGGED(Properties.java:829)
+	at java.util.Properties.store$$PHOSPHORTAGGED(Properties.java:818)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.write$$PHOSPHORTAGGED(Storage.java:260)
+	at org.apache.hadoop.hdfs.server.common.Storage$StorageDirectory.write$$PHOSPHORTAGGED(Storage.java:245)
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.saveCurrent$$PHOSPHORTAGGED(FSImage.java:1161)
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.format$$PHOSPHORTAGGED(FSImage.java:1323)
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.format$$PHOSPHORTAGGED(FSImage.java:1339)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.format$$PHOSPHORTAGGED(NameNode.java:1164)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.format$$PHOSPHORTAGGED(NameNode.java:184)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.<init>(MiniDFSCluster.java:267)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:451)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:619)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:575)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster$$PHOSPHORTAGGED(WaspTestingUtility.java:172)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster$$PHOSPHORTAGGED(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.master.TestAssignmentManagerOnCluster.setUpBeforeClass$$PHOSPHORTAGGED(TestAssignmentManagerOnCluster.java:53)
+	at com.alibaba.wasp.master.TestAssignmentManagerOnCluster.setUpBeforeClass(TestAssignmentManagerOnCluster.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate$$PHOSPHORTAGGED(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+

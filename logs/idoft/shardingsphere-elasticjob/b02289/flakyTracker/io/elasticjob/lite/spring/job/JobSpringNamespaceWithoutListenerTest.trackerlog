@@ -1,0 +1,104 @@
+JUnit version 4.12
+.E
+Time: 0.017
+There was 1 failure:
+1) initializationError(io.elasticjob.lite.spring.job.JobSpringNamespaceWithoutListenerTest)
+java.lang.IllegalStateException: Could not load TestContextBootstrapper [null]. Specify @BootstrapWith's 'value' attribute or make the default bootstrapper class available.
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Exception.<init>(Exception.java:84)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:80)
+	at java.lang.IllegalStateException.<init>(IllegalStateException.java:75)
+	at org.springframework.test.context.BootstrapUtils.resolveTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:143)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:105)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager$$PHOSPHORTAGGED(SpringJUnit4ClassRunner.java:152)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:143)
+	at org.springframework.test.context.junit4.SpringRunner.<init>(SpringRunner.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:0)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(DelegatingConstructorAccessorImpl.java:45)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:0)
+	at java.lang.reflect.Constructor.newInstance$$PHOSPHORTAGGED(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner$$PHOSPHORTAGGED(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass$$PHOSPHORTAGGED(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass$$PHOSPHORTAGGED(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runner.Computer.getRunner$$PHOSPHORTAGGED(Computer.java:40)
+	at org.junit.runner.Computer$1.runnerForClass$$PHOSPHORTAGGED(Computer.java:31)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:101)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:87)
+	at org.junit.runners.Suite.<init>(Suite.java:81)
+	at org.junit.runner.Computer.getSuite$$PHOSPHORTAGGED(Computer.java:28)
+	at org.junit.runner.Request.classes$$PHOSPHORTAGGED(Request.java:75)
+	at org.junit.runner.JUnitCommandLineParseResult.createRequest$$PHOSPHORTAGGED(JUnitCommandLineParseResult.java:118)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 342
+Exception Details:
+  Location:
+    org/springframework/core/annotation/AnnotatedElementUtils.postProcessAndSynthesizeAggregatedResults$$PHOSPHORTAGGED(Ljava/lang/reflect/AnnotatedElement;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/Class;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/List;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Ljava/util/Set;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @342: aload
+  Reason:
+    Type top (current frame, locals[19]) is not assignable to 'java/lang/Object' (stack map, locals[19])
+  Current Frame:
+    bci: @140
+    flags: { }
+    locals: { 'java/lang/reflect/AnnotatedElement', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/List', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', 'java/util/LinkedHashSet', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, 'java/util/Iterator', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @342
+    flags: { }
+    locals: { 'java/lang/reflect/AnnotatedElement', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/List', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', 'java/util/LinkedHashSet', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, top, 'java/util/Iterator', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 1906 c000 273a 0919 09b6 002d 013a 0abb
+    0x0000010: 008f 59b7 0090 3a0b bb00 a219 09b6 003d
+    0x0000020: 5c19 09b6 0041 c000 27b7 00a4 1909 b600
+    0x0000030: 3db8 009a 3a0d 3a0c 1904 1905 1909 1907
+    0x0000040: 013a 0f3a 1019 1019 0fb9 01f5 0500 59b4
+    0x0000050: 004d c001 f75f b400 4919 09b6 003d b800
+    0x0000060: 9a3a 123a 1119 1119 1219 0919 0b3a 0f19
+    0x0000070: 0fb9 01fa 0400 59b4 00ba 5fb4 00bb 5919
+    0x0000080: 095f 190a 0406 b600 943a 0a57 9900 ca19
+    0x0000090: 1119 1219 0919 0701 3a0f 3a10 1910 190f
+    0x00000a0: b901 fe05 0059 b400 4dc0 0004 5fb4 0049
+    0x00000b0: 5fc0 011b 5f19 09b6 003d b800 9a3a 163a
+    0x00000c0: 0e2a 2b19 0e19 1603 1909 b600 3d03 1909
+    0x00000d0: b600 3d19 09b8 0129 190c 190d 190e 1916
+    0x00000e0: 2c2d 2a2b 1909 b600 3db8 009a 3a17 3a13
+    0x00000f0: 1909 b600 3db8 009a 3a18 3a14 1909 b600
+    0x0000100: 3db8 009a 3a19 3a15 1915 1919 5fc0 013a
+    0x0000110: 5f19 1419 1819 1319 1719 0919 0701 3a0f
+    0x0000120: 3a10 1910 190f b801 3d59 b400 4dc0 006f
+    0x0000130: 5fb4 0049 5e58 5fc0 0074 5f5e 5819 0919
+    0x0000140: 0b3a 0f19 0fb9 01a0 0600 59b4 00ba 5fb4
+    0x0000150: 00bb 58a7 ff12 1909 190a b600 9e19 0c19
+    0x0000160: 0d19 09b6 003d b800 9a19 0919 0ab6 009e
+    0x0000170: 1907 5fb5 0049 1907 5fb5 004d 1907 1909
+    0x0000180: 190a b600 9e19 09b6 0050 b019 0919 0ab6
+    0x0000190: 009e 1909 b600 50bf                    
+  Exception Handler Table:
+    bci [15, 395] => handler: 395
+  Stackmap Table:
+    full_frame(@101,{Object[#105],Object[#150],Object[#169],Object[#150],Object[#334],Object[#150],Object[#41],Object[#70],Top,Object[#39],Object[#160],Object[#143],Object[#162],Object[#150],Top,Top,Top,Object[#503],Object[#150]},{})
+    full_frame(@342,{Object[#105],Object[#150],Object[#169],Object[#150],Object[#334],Object[#150],Object[#41],Object[#70],Top,Object[#39],Object[#160],Object[#143],Object[#162],Object[#150],Top,Top,Top,Object[#503],Object[#150],Object[#4],Object[#4],Object[#4],Top,Object[#150],Object[#150],Object[#150]},{})
+    full_frame(@395,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#39],Object[#160]},{Object[#90]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.springframework.test.context.BootstrapUtils.resolveExplicitTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:150)
+	at org.springframework.test.context.BootstrapUtils.resolveTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:126)
+	... 27 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

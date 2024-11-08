@@ -1,0 +1,128 @@
+JUnit version 4.12
+.E
+Time: 0.029
+There was 1 failure:
+1) initializationError(io.elasticjob.lite.spring.job.JobSpringNamespaceWithEventTraceRdbTest)
+java.lang.IllegalStateException: Could not load TestContextBootstrapper [null]. Specify @BootstrapWith's 'value' attribute or make the default bootstrapper class available.
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Exception.<init>(Exception.java:84)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:80)
+	at java.lang.IllegalStateException.<init>(IllegalStateException.java:75)
+	at org.springframework.test.context.BootstrapUtils.resolveTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:143)
+	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:105)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager$$PHOSPHORTAGGED(SpringJUnit4ClassRunner.java:152)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:143)
+	at org.springframework.test.context.junit4.SpringRunner.<init>(SpringRunner.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:0)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(DelegatingConstructorAccessorImpl.java:45)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:0)
+	at java.lang.reflect.Constructor.newInstance$$PHOSPHORTAGGED(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner$$PHOSPHORTAGGED(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass$$PHOSPHORTAGGED(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass$$PHOSPHORTAGGED(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runner.Computer.getRunner$$PHOSPHORTAGGED(Computer.java:40)
+	at org.junit.runner.Computer$1.runnerForClass$$PHOSPHORTAGGED(Computer.java:31)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass$$PHOSPHORTAGGED(RunnerBuilder.java:59)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:101)
+	at org.junit.runners.model.RunnerBuilder.runners$$PHOSPHORTAGGED(RunnerBuilder.java:87)
+	at org.junit.runners.Suite.<init>(Suite.java:81)
+	at org.junit.runner.Computer.getSuite$$PHOSPHORTAGGED(Computer.java:28)
+	at org.junit.runner.Request.classes$$PHOSPHORTAGGED(Request.java:75)
+	at org.junit.runner.JUnitCommandLineParseResult.createRequest$$PHOSPHORTAGGED(JUnitCommandLineParseResult.java:118)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 667
+Exception Details:
+  Location:
+    org/springframework/core/annotation/AnnotatedElementUtils.searchOnInterfaces$$PHOSPHORTAGGED(Ljava/lang/reflect/Method;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/Class;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/Class;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/springframework/core/annotation/AnnotatedElementUtils$Processor;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/util/Set;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;[Ljava/lang/Class;Ljava/lang/Object;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @667: aconst_null
+  Reason:
+    Type top (current frame, locals[32]) is not assignable to 'java/lang/Object' (stack map, locals[32])
+  Current Frame:
+    bci: @124
+    flags: { }
+    locals: { 'java/lang/reflect/Method', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/springframework/core/annotation/AnnotatedElementUtils$Processor', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Set', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, top, integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer, integer }
+  Stackmap Frame:
+    bci: @667
+    flags: { }
+    locals: { 'java/lang/reflect/Method', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Class', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/springframework/core/annotation/AnnotatedElementUtils$Processor', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/util/Set', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, top, integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', integer, 'java/lang/Object', 'java/lang/Object', top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 1910 c000 273a 1419 14b6 002d 013a 15bb
+    0x0000010: 008f 59b7 0090 3a16 190e 190f 1914 b600
+    0x0000020: 3db8 009a 3a18 3a17 1917 1918 5c57 b601
+    0x0000030: ba5b 57b6 01c0 1914 b600 3db8 009a 3a1d
+    0x0000040: 361c 0319 14b6 003d 1914 b600 3db8 009a
+    0x0000050: 3a1f 361e 151e 191f 151c 191d 5d58 b800
+    0x0000060: 9a59 1914 5f19 1504 1007 b600 943a 1557
+    0x0000070: 191f 1914 b600 3db8 009a 3a1f a202 1f19
+    0x0000080: 1719 1815 1e19 1f3a 2736 283a 2919 2915
+    0x0000090: 2819 2719 11b6 01c4 59b4 004d c000 a95f
+    0x00000a0: b400 4919 295f b800 9a19 14b6 003d b800
+    0x00000b0: 9a3a 2a3a 1b19 1b19 2a19 1419 163a 2719
+    0x00000c0: 27b8 02d2 59b4 00ba 5fb4 00bb 5919 145f
+    0x00000d0: 1915 0610 07b6 0094 3a15 5719 1f19 14b6
+    0x00000e0: 003d b800 9a3a 1f99 01a2 191b 192a 2a2b
+    0x00000f0: 1914 1911 013a 273a 283a 293a 2bb8 0261
+    0x0000100: 192b 1929 1928 1927 3a27 3a28 1928 1927
+    0x0000110: b602 7059 b400 4dc0 00d6 5fb4 0049 2a2b
+    0x0000120: 1914 1911 013a 273a 283a 293a 2bb8 0261
+    0x0000130: 192b 1929 1928 1927 3a27 3a28 1928 1927
+    0x0000140: b602 7359 b400 4dc0 01a6 5fb4 0049 1914
+    0x0000150: 1911 0101 5757 5f57 0101 b802 d559 b400
+    0x0000160: 4dc0 0255 5fb4 0049 1914 b600 3db8 009a
+    0x0000170: 3a2c 3a19 1919 192c 2c2d 1904 1905 1906
+    0x0000180: 1907 1908 1909 190a 190b 150c 190d 1914
+    0x0000190: b600 3db8 009a 3a2d 3624 1914 b600 3db8
+    0x00001a0: 009a 3a2e 3a25 1914 b600 3db8 009a 3a2f
+    0x00001b0: 3a26 1914 b600 3db8 009a 3a30 3a20 1914
+    0x00001c0: b600 3db8 009a 3a31 3a21 1914 b600 3db8
+    0x00001d0: 009a 3a32 3a22 1914 b600 3db8 009a 3a33
+    0x00001e0: 3a23 1923 1933 5fc0 0069 5f19 2219 3219
+    0x00001f0: 2119 3119 2019 3019 2619 2f19 2519 2e15
+    0x0000200: 2419 2d19 1419 1101 3a27 3a28 1928 1927
+    0x0000210: b802 4659 b400 4dc0 0004 5fb4 0049 1914
+    0x0000220: b600 3db8 009a 3a34 3a1a 191a 1934 5919
+    0x0000230: 145f 1915 0710 07b6 0094 3a15 57c6 0038
+    0x0000240: 191a 1934 1914 1915 b600 9e19 14b6 003d
+    0x0000250: b800 9a19 1419 15b6 009e 1911 5fb5 0049
+    0x0000260: 1911 5fb5 004d 1911 1914 1915 b600 9e19
+    0x0000270: 14b6 0050 b0a7 0014 1914 b600 3d19 14b6
+    0x0000280: 003d b800 9a3a 2c3a 1919 1f19 14b6 003d
+    0x0000290: b800 9a3a 1f84 1e01 a7fd bc01 1914 b600
+    0x00002a0: 3d19 1419 15b6 009e 1914 b600 3db8 009a
+    0x00002b0: 1914 1915 b600 9e19 115f b500 4919 115f
+    0x00002c0: b500 4d19 1119 1419 15b6 009e 1914 b600
+    0x00002d0: 50b0 1914 1915 b600 9e19 14b6 0050 bf  
+  Exception Handler Table:
+    bci [234, 580] => handler: 632
+    bci [24, 722] => handler: 722
+  Stackmap Table:
+    full_frame(@84,{Object[#597],Object[#150],Object[#169],Object[#150],Object[#214],Object[#150],Object[#169],Object[#150],Object[#19],Object[#150],Object[#116],Object[#150],Integer,Object[#150],Object[#422],Object[#150],Object[#41],Object[#70],Top,Top,Object[#39],Object[#160],Object[#143],Object[#422],Object[#150],Top,Top,Top,Integer,Object[#150],Integer,Object[#150]},{})
+    full_frame(@629,{Object[#597],Object[#150],Object[#169],Object[#150],Object[#214],Object[#150],Object[#169],Object[#150],Object[#19],Object[#150],Object[#116],Object[#150],Integer,Object[#150],Object[#422],Object[#150],Object[#41],Object[#70],Top,Top,Object[#39],Object[#160],Object[#143],Object[#422],Object[#150],Object[#597],Object[#4],Object[#169],Integer,Object[#150],Integer,Object[#150],Object[#4],Object[#4],Object[#4],Object[#4],Integer,Object[#4],Object[#4],Top,Top,Top,Object[#150],Top,Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150]},{})
+    full_frame(@632,{Object[#597],Object[#150],Object[#169],Object[#150],Object[#214],Object[#150],Object[#169],Object[#150],Object[#19],Object[#150],Object[#116],Object[#150],Integer,Object[#150],Object[#422],Object[#150],Object[#41],Object[#70],Top,Top,Object[#39],Object[#160],Object[#143],Object[#422],Object[#150],Top,Top,Object[#169],Integer,Object[#150],Integer,Object[#150],Object[#4],Object[#4],Object[#4],Object[#4],Integer,Object[#4],Object[#4],Top,Top,Top,Object[#150],Top,Top,Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150]},{Object[#584]})
+    same_frame(@649)
+    full_frame(@667,{Object[#597],Object[#150],Object[#169],Object[#150],Object[#214],Object[#150],Object[#169],Object[#150],Object[#19],Object[#150],Object[#116],Object[#150],Integer,Object[#150],Object[#422],Object[#150],Object[#41],Object[#70],Top,Top,Object[#39],Object[#160],Object[#143],Object[#422],Object[#150],Top,Top,Top,Integer,Object[#150],Integer,Object[#150],Object[#4],Object[#4],Object[#4],Object[#4],Integer,Object[#4],Object[#4],Top,Top,Top,Top,Top,Top,Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150],Object[#150]},{})
+    full_frame(@722,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#39],Object[#160]},{Object[#90]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.springframework.test.context.BootstrapUtils.resolveExplicitTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:150)
+	at org.springframework.test.context.BootstrapUtils.resolveTestContextBootstrapper$$PHOSPHORTAGGED(BootstrapUtils.java:126)
+	... 27 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

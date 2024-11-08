@@ -1,0 +1,7 @@
+JUnit version 4.12
+.2024-10-25 06:51:18,817 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+....
+Time: 4.442
+
+OK (5 tests)
+

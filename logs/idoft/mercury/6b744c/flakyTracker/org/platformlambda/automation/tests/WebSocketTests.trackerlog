@@ -1,0 +1,69 @@
+JUnit version 4.13.2
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+2024-10-21 06:01:18.210 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.init.ParseArguments
+2024-10-21 06:01:18.682 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.MainModule
+2024-10-21 06:01:18.689 INFO  org.platformlambda.core.system.ServerPersonality:54 - Setting personality as REST
+2024-10-21 06:01:19.918 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2024-10-21 06:01:19.928 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+E
+Time: 10.139
+There was 1 failure:
+1) org.platformlambda.automation.tests.WebSocketTests
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    io/netty/util/internal/PlatformDependent0.copyMemory$$PHOSPHORTAGGED(JLedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @108: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[10]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @108
+    flags: { }
+    locals: { long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 1909 c000 4c3a 0a19 0ab6 0052 013a 0bbb
+    0x0000010: 0131 59b7 0132 3a0c 190a 190c 3a0d 190d
+    0x0000020: b802 7959 b401 3a5f b401 3b10 0819 0ab6
+    0x0000030: 0060 5d58 b800 6e59 190a 5f19 0b04 07b6
+    0x0000040: 005c 3a0b 57a3 0014 1e2c 2119 0516 0619
+    0x0000050: 0819 0ab8 027c a700 19b2 00ea b200 ed1e
+    0x0000060: 2c21 1905 1606 1908 190a 5f57 b802 7f19
+    0x0000070: 0a19 0bb6 006a 190a 190b b600 6a19 0a19
+    0x0000080: 0bb6 006a 190a b600 77b1 190a 190b b600
+    0x0000090: 6a19 0ab6 0077 bf                      
+  Exception Handler Table:
+    bci [15, 138] => handler: 138
+  Stackmap Table:
+    append_frame(@89,Object[#76],Object[#98],Object[#305])
+    same_frame(@111)
+    full_frame(@138,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#76],Object[#98]},{Object[#121]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at io.netty.util.internal.PlatformDependent.isAndroid$$PHOSPHORTAGGED(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.vertx.core.impl.Utils.<clinit>(Utils.java:30)
+	at io.vertx.core.file.impl.FileCache.setupCacheDir$$PHOSPHORTAGGED(FileCache.java:50)
+	at io.vertx.core.file.impl.FileCache.setupCache$$PHOSPHORTAGGED(FileCache.java:29)
+	at io.vertx.core.file.impl.FileResolver.<init>(FileResolver.java:64)
+	at io.vertx.core.impl.VertxBuilder.initFileResolver$$PHOSPHORTAGGED(VertxBuilder.java:316)
+	at io.vertx.core.impl.VertxBuilder.init$$PHOSPHORTAGGED(VertxBuilder.java:248)
+	at io.vertx.core.Vertx.vertx$$PHOSPHORTAGGED(Vertx.java:86)
+	at io.vertx.core.Vertx.vertx$$PHOSPHORTAGGED(Vertx.java:76)
+	at org.platformlambda.core.system.Platform.<clinit>(Platform.java:49)
+	at org.platformlambda.automation.MainModule.start$$PHOSPHORTAGGED(MainModule.java:80)
+	at org.platformlambda.core.system.AppStarter.executeOrderly$$PHOSPHORTAGGED(AppStarter.java:109)
+	at org.platformlambda.core.system.AppStarter.doApps$$PHOSPHORTAGGED(AppStarter.java:83)
+	at org.platformlambda.core.system.AppStarter.main$$PHOSPHORTAGGED(AppStarter.java:50)
+	at org.platformlambda.automation.mock.TestBase.setup$$PHOSPHORTAGGED(TestBase.java:45)
+	at org.platformlambda.automation.mock.TestBase.setup(TestBase.java)
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+

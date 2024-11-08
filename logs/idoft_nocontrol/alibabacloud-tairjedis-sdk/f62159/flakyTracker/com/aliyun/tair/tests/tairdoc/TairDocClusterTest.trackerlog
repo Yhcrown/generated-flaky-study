@@ -1,0 +1,22 @@
+JUnit version 4.13.1
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Connection refused (Connection refused)
+E
+Time: 0.048
+There was 1 failure:
+1) com.aliyun.tair.tests.tairdoc.TairDocClusterTest
+java.lang.NullPointerException
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Exception.<init>(Exception.java:54)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:60)
+	at java.lang.NullPointerException.<init>(NullPointerException.java)
+	at com.aliyun.tair.tests.tairdoc.TairDocTestBase.setUp(TairDocTestBase.java:20)
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+

@@ -1,0 +1,121 @@
+Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+Maven home: /workspace/apache-maven-3.8.8
+Java version: 1.8.0_422, vendor: Temurin, runtime: /shared-data/jdk8u422-b05/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-48-generic", arch: "amd64", family: "unix"
+       language  ... num_randomOrder_runs
+499        Java  ...                 65.0
+5664       Java  ...                 63.0
+5665       Java  ...                 63.0
+5667       Java  ...                 63.0
+5669       Java  ...                 63.0
+...         ...  ...                  ...
+708028     Java  ...                 61.0
+713108     Java  ...                  1.0
+731949     Java  ...                 73.0
+733065     Java  ...                 71.0
+733106     Java  ...                 66.0
+
+[698 rows x 13 columns]
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+activiti-activiti fail to build.
+already analyzed tachyon.MasterFaultToleranceTest
+already analyzed tachyon.MasterFaultToleranceTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.MasterInfoTest
+already analyzed tachyon.DataServerTest
+already analyzed tachyon.DataServerTest
+already analyzed tachyon.DataServerTest
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+already analyzed tachyon.MasterClientTest
+already analyzed tachyon.WorkerServiceHandlerTest
+already analyzed tachyon.WorkerServiceHandlerTest
+already analyzed tachyon.WorkerServiceHandlerTest
+already analyzed tachyon.WorkerServiceHandlerTest
+already analyzed tachyon.WorkerServiceHandlerTest
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+already analyzed tachyon.command.TFsShellTest
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio
+/workspace/benchmarks/projects//Alluxio-alluxio

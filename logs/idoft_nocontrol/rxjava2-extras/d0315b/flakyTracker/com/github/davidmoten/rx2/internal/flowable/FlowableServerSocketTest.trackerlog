@@ -1,0 +1,14 @@
+JUnit version 4.12
+.pool-1-thread-5: a
+.loop 0
+.pool-1-thread-1: hello there
+.....pool-1-thread-5: hello there
+.pool-1-thread-6: hell
+..pool-1-thread-9: 1234
+..pool-1-thread-10: 
+.pool-1-thread-5: hello there
+.
+Time: 24.625
+
+OK (15 tests)
+

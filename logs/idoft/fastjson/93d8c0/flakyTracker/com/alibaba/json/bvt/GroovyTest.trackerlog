@@ -1,0 +1,36 @@
+JUnit version 4.13.1
+.Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.jsr223.ScriptExtensions]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.NioGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.SqlGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.SwingGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.XmlGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.jsr223.ScriptStaticExtensions]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.jsr223.ScriptExtensions]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.NioGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.SqlGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.SwingGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.runtime.XmlGroovyMethods]
+Oct 21, 2024 6:18:17 AM org.codehaus.groovy.runtime.m12n.MetaInfExtensionModule newModule$$PHOSPHORTAGGED
+WARNING: Module [groovy-all] - Unable to load extension class [org.codehaus.groovy.jsr223.ScriptStaticExtensions]
+FlakyTracker Log: test_groovy may be flaky: FlakyTaintLabel{type=TIME, cause='java/lang/System.currentTimeMillis', file='groovy/lang/GroovyClassLoader', line=212, label=0}
+A@73bb197e
+{
+	"id":0,
+	"name":"jobs"
+}
+
+Time: 49.622
+
+OK (1 test)
+

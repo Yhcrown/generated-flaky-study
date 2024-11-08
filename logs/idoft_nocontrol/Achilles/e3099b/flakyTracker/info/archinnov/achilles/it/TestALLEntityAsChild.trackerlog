@@ -1,0 +1,96 @@
+JUnit version 4.10
+08:45:50,205 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:45:50,206 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+08:45:50,206 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/classes/logback.xml]
+08:45:50,208 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+08:45:50,209 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/classes/logback.xml]
+08:45:50,209 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/tmp/jars/achilles-schema-generator-6.0.1-SNAPSHOT.jar!/logback.xml]
+08:45:50,579 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+08:45:50,645 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Will scan for changes in [file:/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/classes/logback.xml] 
+08:45:50,645 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeTask scanning period to 30 seconds
+08:45:50,652 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:45:50,670 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+08:45:50,709 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:45:50,933 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [ACHILLES_DDL_SCRIPT] to DEBUG
+08:45:50,933 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [ACHILLES_DDL_SCRIPT] to false
+08:45:50,933 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ACHILLES_DDL_SCRIPT]
+08:45:50,936 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [ACHILLES_DML_STATEMENT] to DEBUG
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [ACHILLES_DML_STATEMENT] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ACHILLES_DML_STATEMENT]
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [info.archinnov.achilles.embedded] to INFO
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [info.archinnov.achilles.embedded] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[info.archinnov.achilles.embedded]
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [info.archinnov.achilles] to WARN
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [info.archinnov.achilles] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[info.archinnov.achilles]
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [info.archinnov.achilles.internals.cache.StatementsCache] to WARN
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [info.archinnov.achilles.internals.cache.StatementsCache] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[info.archinnov.achilles.internals.cache.StatementsCache]
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [info.archinnov.achilles.internals.entities.SimpleEntity] to TRACE
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [info.archinnov.achilles.internals.entities.SimpleEntity] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[info.archinnov.achilles.internals.entities.SimpleEntity]
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.cassandra.cql3.QueryProcessor] to OFF
+08:45:50,937 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.cassandra.cql3.QueryProcessor] to false
+08:45:50,937 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.apache.cassandra.cql3.QueryProcessor]
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.cassandra.db.Memtable] to OFF
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.cassandra.db.Memtable] to false
+08:45:50,938 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.apache.cassandra.db.Memtable]
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.cassandra.utils.CLibrary] to OFF
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.cassandra.utils.CLibrary] to false
+08:45:50,938 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.apache.cassandra.utils.CLibrary]
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.apache.cassandra.utils.SigarLibrary] to OFF
+08:45:50,938 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.cassandra.utils.SigarLibrary] to false
+08:45:50,938 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.apache.cassandra.utils.SigarLibrary]
+08:45:50,939 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to WARN
+08:45:50,939 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+08:45:50,939 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+08:45:50,947 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7439b2aa - Registering current configuration as safe fallback point
+
+08:45:51.276 [main] INFO  i.a.achilles.embedded.ServerStarter - Using existing data folder for unit tests : /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/data
+08:45:51.286 [main] INFO  i.a.achilles.embedded.ServerStarter - Using existing data folder for unit tests : /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/commitlog
+08:45:51.286 [main] INFO  i.a.achilles.embedded.ServerStarter - Using existing data folder for unit tests : /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/saved_caches
+08:45:51.286 [main] INFO  i.a.achilles.embedded.ServerStarter - Using existing data folder for unit tests : /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/hints
+08:45:51.286 [main] INFO  i.a.achilles.embedded.ServerStarter - Using existing data folder for unit tests : /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/cdc_raw
+08:45:51.334 [main] INFO  i.a.achilles.embedded.ServerStarter - Cleaning up embedded Cassandra data directory '/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/data'
+08:45:51.385 [main] INFO  i.a.achilles.embedded.ServerStarter - Cleaning up embedded Cassandra data directory '/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/commitlog'
+08:45:51.386 [main] INFO  i.a.achilles.embedded.ServerStarter - Cleaning up embedded Cassandra data directory '/workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/saved_caches'
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Cassandra listen address = localhost
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Cassandra RPC address = localhost
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Cassandra broadcast address = 
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Cassandra RPC broadcast address = 
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Random embedded Cassandra RPC port/Thrift port = 9160
+08:45:51.551 [main] INFO  i.a.achilles.embedded.ServerStarter -  Random embedded Cassandra Native port/CQL port = 9042
+08:45:51.552 [main] INFO  i.a.achilles.embedded.ServerStarter -  Random embedded Cassandra Storage port = 7465
+08:45:51.552 [main] INFO  i.a.achilles.embedded.ServerStarter -  Random embedded Cassandra Storage SSL port = 7897
+08:45:51.552 [main] INFO  i.a.achilles.embedded.ServerStarter -  Random embedded Cassandra Remote JMX port = null
+08:45:51.554 [main] INFO  i.a.achilles.embedded.ServerStarter -  Embedded Cassandra triggers directory = /workspace/benchmarks/projects/Achilles/integration-test-2_1/target/cassandra_embedded/cassandra_triggers
+08:45:51.555 [main] INFO  i.a.achilles.embedded.ServerStarter - Starting Cassandra...
+08:45:53.404 [pool-2-thread-1] ERROR o.a.c.utils.NativeLibraryLinux - Failed to link the C library against JNA. Native methods will be unavailable.
+java.lang.UnsatisfiedLinkError: Error looking up function 'findSymbol': /shared-data/jdk-inst//bin/java: undefined symbol: findSymbol
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.UnsatisfiedLinkError.<init>(UnsatisfiedLinkError.java:54)
+	at com.sun.jna.Function.<init>(Function.java:212)
+	at com.sun.jna.NativeLibrary.getFunction$$PHOSPHORTAGGED(NativeLibrary.java:541)
+	at com.sun.jna.NativeLibrary.getFunction$$PHOSPHORTAGGED(NativeLibrary.java:518)
+	at com.sun.jna.NativeLibrary.getFunction$$PHOSPHORTAGGED(NativeLibrary.java:504)
+	at com.sun.jna.Native.register$$PHOSPHORTAGGED(Native.java:1655)
+	at com.sun.jna.Native.register$$PHOSPHORTAGGED(Native.java:1529)
+	at com.sun.jna.Native.register$$PHOSPHORTAGGED(Native.java:1252)
+	at org.apache.cassandra.utils.NativeLibraryLinux.<clinit>(NativeLibraryLinux.java:53)
+	at org.apache.cassandra.utils.NativeLibrary.<clinit>(NativeLibrary.java:93)
+	at org.apache.cassandra.service.CassandraDaemon.setup$$PHOSPHORTAGGED(CassandraDaemon.java:196)
+	at org.apache.cassandra.service.CassandraDaemon.activate$$PHOSPHORTAGGED(CassandraDaemon.java:602)
+	at info.archinnov.achilles.embedded.ServerStarter.lambda$start$0$$PHOSPHORTAGGED(ServerStarter.java:163)
+	at info.archinnov.achilles.embedded.ServerStarter.invokeDynamicHelper$info$archinnov$achilles$embedded$ServerStarter$lambda$start$0$0(ServerStarter.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker$$PHOSPHORTAGGED(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run$$PHOSPHORTAGGED(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run$$PHOSPHORTAGGED(Thread.java:750)
+	at java.lang.Thread.run(Thread.java)
+08:45:53.405 [pool-2-thread-1] WARN  o.a.cassandra.service.StartupChecks - jemalloc shared library could not be preloaded to speed up memory allocations
+08:45:53.405 [pool-2-thread-1] WARN  o.a.cassandra.service.StartupChecks - JMX is not enabled to receive remote connections. Please see cassandra-env.sh for more info.
+08:45:53.407 [pool-2-thread-1] WARN  o.a.cassandra.service.StartupChecks - The JVM is not configured to stop on OutOfMemoryError which can cause data corruption. Use one of the following JVM options to configure the behavior on OutOfMemoryError:  -XX:+ExitOnOutOfMemoryError, -XX:+CrashOnOutOfMemoryError, or -XX:OnOutOfMemoryError="<cmd args>;<cmd args>"
+08:45:53.407 [pool-2-thread-1] ERROR o.a.c.service.CassandraDaemon - The native library could not be initialized properly. 

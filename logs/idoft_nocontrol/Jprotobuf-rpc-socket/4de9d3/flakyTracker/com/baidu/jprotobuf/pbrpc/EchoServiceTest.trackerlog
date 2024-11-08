@@ -1,0 +1,508 @@
+JUnit version 4.10
+.ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'log4j2.debug' to show Log4j2 internal initialization logging.
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+Oct 25, 2024 7:08:34 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public abstract java.util.concurrent.Future com.baidu.jprotobuf.pbrpc.EchoService.echoAsync(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho(com.baidu.jprotobuf.pbrpc.EchoInfo)
+.Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echo(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:35 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother(com.baidu.jprotobuf.pbrpc.EchoInfo)
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echo(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.transport.ChannelPoolObjectFactory wrap$$PHOSPHORTAGGED
+SEVERE: failed to get result from stp
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 0.0.0.0/0.0.0.0:1031
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.io.IOException.<init>(IOException.java:58)
+	at java.net.SocketException.<init>(SocketException.java:47)
+	at java.net.ConnectException.<init>(ConnectException.java:47)
+	at java.net.ConnectException.<init>(ConnectException.java)
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.checkConnect$$PHOSPHORTAGGED(SocketChannelImpl.java)
+	at sun.nio.ch.SocketChannelImpl.finishConnect$$PHOSPHORTAGGED(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect$$PHOSPHORTAGGED(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect$$PHOSPHORTAGGED(AbstractNioChannel.java:291)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey$$PHOSPHORTAGGED(NioEventLoop.java:634)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized$$PHOSPHORTAGGED(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys$$PHOSPHORTAGGED(NioEventLoop.java:498)
+	at io.netty.channel.nio.NioEventLoop.run$$PHOSPHORTAGGED(NioEventLoop.java:460)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run$$PHOSPHORTAGGED(SingleThreadEventExecutor.java:131)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run$$PHOSPHORTAGGED(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run$$PHOSPHORTAGGED(Thread.java:750)
+	at java.lang.Thread.run(Thread.java)
+Caused by: java.net.ConnectException: Connection refused
+	... 21 more
+
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.transport.ChannelPool getChannel$$PHOSPHORTAGGED
+SEVERE: Unable to validate object
+java.util.NoSuchElementException: Unable to validate object
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.util.NoSuchElementException.<init>(NoSuchElementException.java:57)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject$$PHOSPHORTAGGED(GenericObjectPool.java:506)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject$$PHOSPHORTAGGED(GenericObjectPool.java:363)
+	at com.baidu.jprotobuf.pbrpc.transport.ChannelPool.getChannel$$PHOSPHORTAGGED(ChannelPool.java:79)
+	at com.baidu.jprotobuf.pbrpc.transport.RpcChannel.getConnection$$PHOSPHORTAGGED(RpcChannel.java:73)
+	at com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy.invoke$$PHOSPHORTAGGED(ProtobufRpcProxy.java:499)
+	at com.sun.proxy.$Proxy13.echo$$PHOSPHORTAGGED(Unknown Source)
+	at com.baidu.jprotobuf.pbrpc.EchoServiceTest.testAutoRecoverConnection$$PHOSPHORTAGGED(EchoServiceTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate$$PHOSPHORTAGGED(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.transport.RpcChannelFutureListener operationComplete$$PHOSPHORTAGGED
+WARNING: build channel:[id: 0x79bfea10] failed
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echo(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+.Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoWithoutReturn(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:38 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+12
+.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoAuthenticateData(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.transport.handler.RpcServiceHandler$BackgroundTask run$$PHOSPHORTAGGED
+SEVERE: edu.columbia.cs.psl.phosphor.struct.LazyByteArrayObjTags cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyBooleanArrayObjTags
+E.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echo(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother(com.baidu.jprotobuf.pbrpc.EchoInfo)
+E.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoUseByteArrayInputParam(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam(byte[])
+.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoSnappy(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:null
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable(com.baidu.jprotobuf.pbrpc.EchoInfo)
+.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoWithAttachement(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:Trace [traceId=1729840123597, traceKey=41d17dead3ea4de0b1dd4c2d79f05667, spanId=0, parentSpanId=0]
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement(com.baidu.jprotobuf.pbrpc.EchoInfo)
+.Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[getRpcServiceMetaInfo] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.getRpcServiceMetaInfo
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[__rpc_meta_watch_service__] methodName[ping] from com.baidu.jprotobuf.pbrpc.meta.RpcServiceMetaServiceProvider.ping
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithoutReturn] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoWithoutReturn
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoUseByteArrayInputParam] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoUseByteArrayInputParam
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[businessExceptionCall] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.businessExceptionCall
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoTimeout] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.echoTimeout
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo2] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEchoAnnother
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echo] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.doEcho
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoWithAttachement] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAttachement
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoGzip] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoSnappy] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithSnappyEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.server.RpcServiceRegistry doRegiterService$$PHOSPHORTAGGED
+INFO: RPC service register log: serviceName[echoService] methodName[echoAuthenticateData] from com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithAuthenticationDataEnable
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy proxy$$PHOSPHORTAGGED
+INFO: Use Simple share channel pool to create protobuf RPC proxy with interface interface com.baidu.jprotobuf.pbrpc.EchoService
+server intercepr method:public abstract com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoService.echoGzip(com.baidu.jprotobuf.pbrpc.EchoInfo)
+trace info:Trace [traceId=1729840123597, traceKey=41d17dead3ea4de0b1dd4c2d79f05667, spanId=0, parentSpanId=0]
+Oct 25, 2024 7:08:43 AM com.baidu.jprotobuf.pbrpc.management.HttpServer start$$PHOSPHORTAGGED
+INFO: Http starting at port: 8866
+server intercepr method:public com.baidu.jprotobuf.pbrpc.EchoInfo com.baidu.jprotobuf.pbrpc.EchoServiceImpl.dealWithGzipEnable(com.baidu.jprotobuf.pbrpc.EchoInfo)
+
+Time: 11.192
+There were 2 failures:
+1) testAuthenticationData(com.baidu.jprotobuf.pbrpc.EchoServiceTest)
+java.lang.reflect.UndeclaredThrowableException
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:311)
+	at java.lang.Exception.<init>(Exception.java:102)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:96)
+	at java.lang.reflect.UndeclaredThrowableException.<init>(UndeclaredThrowableException.java:75)
+	at com.sun.proxy.$Proxy13.echoAuthenticateData$$PHOSPHORTAGGED(Unknown Source)
+	at com.baidu.jprotobuf.pbrpc.EchoServiceTest.testAuthenticationData$$PHOSPHORTAGGED(EchoServiceTest.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate$$PHOSPHORTAGGED(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: com.baidu.jprotobuf.pbrpc.ErrorDataException: A error occurred: errorCode=2001 errorMessage:edu.columbia.cs.psl.phosphor.struct.LazyByteArrayObjTags cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyBooleanArrayObjTags
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at com.baidu.jprotobuf.pbrpc.ErrorDataException.<init>(ErrorDataException.java:120)
+	at com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy.doWaitCallback$$PHOSPHORTAGGED(ProtobufRpcProxy.java:652)
+	at com.baidu.jprotobuf.pbrpc.client.ProtobufRpcProxy.invoke$$PHOSPHORTAGGED(ProtobufRpcProxy.java:587)
+	... 39 more
+2) testDynamiceTalkTimeout(com.baidu.jprotobuf.pbrpc.EchoServiceTest)
+junit.framework.AssertionFailedError: Shold throw time out exception here
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.AssertionError.<init>(AssertionError.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:74)
+	at junit.framework.AssertionFailedError.<init>(AssertionFailedError.java:14)
+	at junit.framework.Assert.fail$$PHOSPHORTAGGED(Assert.java:50)
+	at com.baidu.jprotobuf.pbrpc.EchoServiceTest.testDynamiceTalkTimeout$$PHOSPHORTAGGED(EchoServiceTest.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate$$PHOSPHORTAGGED(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 9,  Failures: 2
+

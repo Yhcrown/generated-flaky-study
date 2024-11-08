@@ -1,0 +1,69 @@
+JUnit version 4.12
+E
+Time: 1.283
+There was 1 failure:
+1) null
+org.spockframework.util.InternalSpockError: Failed to instantiate spec 'ResourceAuthorizationFilterSpec'
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Error.<init>(Error.java:88)
+	at org.spockframework.util.InternalSpockError.<init>(InternalSpockError.java:39)
+	at org.spockframework.runtime.BaseSpecRunner.createSpecInstance$$PHOSPHORTAGGED(BaseSpecRunner.java:113)
+	at org.spockframework.runtime.BaseSpecRunner.run$$PHOSPHORTAGGED(BaseSpecRunner.java:65)
+	at org.spockframework.runtime.Sputnik.run$$PHOSPHORTAGGED(Sputnik.java:63)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: java.lang.ExceptionInInitializerError
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Error.<init>(Error.java:58)
+	at java.lang.LinkageError.<init>(LinkageError.java:45)
+	at java.lang.ExceptionInInitializerError.<init>(ExceptionInInitializerError.java:78)
+	at java.lang.ExceptionInInitializerError.<init>(ExceptionInInitializerError.java)
+	at org.codehaus.groovy.reflection.ClassInfo.isValidWeakMetaClass$$PHOSPHORTAGGED(ClassInfo.java:271)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClassForClass$$PHOSPHORTAGGED(ClassInfo.java:241)
+	at org.codehaus.groovy.reflection.ClassInfo.getMetaClass$$PHOSPHORTAGGED(ClassInfo.java:297)
+	at org.apache.nifi.registry.security.authorization.ResourceAuthorizationFilterSpec.$getStaticMetaClass$$PHOSPHORTAGGED(ResourceAuthorizationFilterSpec.groovy)
+	at org.apache.nifi.registry.security.authorization.ResourceAuthorizationFilterSpec.<init>(ResourceAuthorizationFilterSpec.groovy)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:0)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance$$PHOSPHORTAGGED(DelegatingConstructorAccessorImpl.java:45)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:0)
+	at java.lang.reflect.Constructor.newInstance$$PHOSPHORTAGGED(Constructor.java:423)
+	at java.lang.Class.newInstance$$PHOSPHORTAGGED(Class.java:442)
+	at org.spockframework.runtime.BaseSpecRunner.createSpecInstance$$PHOSPHORTAGGED(BaseSpecRunner.java:107)
+	... 15 more
+Caused by: groovy.lang.GroovyRuntimeException: Conflicting module versions. Module [groovy-all is loaded in version 2.3.11 and you are trying to load version 2.4.12
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at groovy.lang.GroovyRuntimeException.<init>(GroovyRuntimeException.java:38)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl$DefaultModuleListener.onModule$$PHOSPHORTAGGED(MetaClassRegistryImpl.java:513)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromProperties$$PHOSPHORTAGGED(ExtensionModuleScanner.java:80)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanExtensionModuleFromMetaInf$$PHOSPHORTAGGED(ExtensionModuleScanner.java:74)
+	at org.codehaus.groovy.runtime.m12n.ExtensionModuleScanner.scanClasspathModules$$PHOSPHORTAGGED(ExtensionModuleScanner.java:56)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:113)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:74)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	... 29 more
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+

@@ -1,0 +1,16 @@
+JUnit version 4.12
+.pool-1-thread-2: a
+FlakyTracker Log: checkServerSocketReadsTcpPushWhenBufferSizeIs may be flaky: FlakyTaintLabel{type=NETWORK, cause='java/net/ServerSocket.accept', file='com/github/davidmoten/rx2/internal/flowable/FlowableServerSocket', line=92, label=5}
+.loop 0
+.pool-1-thread-1: hello there
+.....pool-1-thread-6: hello there
+.pool-1-thread-3: hell
+..pool-1-thread-5: 1234
+FlakyTracker Log: testEarlyUnsubscribe may be flaky: FlakyTaintLabel{type=NETWORK, cause='java/net/ServerSocket.accept', file='com/github/davidmoten/rx2/internal/flowable/FlowableServerSocket', line=92, label=5}
+..pool-1-thread-6: 
+.pool-1-thread-7: hello there
+.
+Time: 77.218
+
+OK (15 tests)
+

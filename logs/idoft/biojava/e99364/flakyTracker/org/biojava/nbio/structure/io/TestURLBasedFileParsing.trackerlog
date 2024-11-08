@@ -1,0 +1,49 @@
+JUnit version 4.13.1
+.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+08:15:11 [main] WARN  org.biojava.nbio.structure.align.util.UserConfiguration - Could not read dir from system property PDB_DIR or environment variable PDB_DIR, using system's temp directory /tmp
+E
+Time: 139.617
+There was 1 failure:
+1) testMMcifURL(org.biojava.nbio.structure.io.TestURLBasedFileParsing)
+java.net.ConnectException: Connection timed out (Connection timed out)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.io.IOException.<init>(IOException.java:58)
+	at java.net.SocketException.<init>(SocketException.java:47)
+	at java.net.ConnectException.<init>(ConnectException.java:47)
+	at java.net.ConnectException.<init>(ConnectException.java)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.socketConnect$$PHOSPHORTAGGED(PlainSocketImpl.java)
+	at java.net.AbstractPlainSocketImpl.doConnect$$PHOSPHORTAGGED(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress$$PHOSPHORTAGGED(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect$$PHOSPHORTAGGED(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect$$PHOSPHORTAGGED(SocksSocketImpl.java:392)
+	at java.net.Socket.connect$$PHOSPHORTAGGED(Socket.java:607)
+	at java.net.Socket.connect$$PHOSPHORTAGGED(Socket.java:556)
+	at sun.net.NetworkClient.doConnect$$PHOSPHORTAGGED(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:244)
+	at sun.net.www.http.HttpClient.New$$PHOSPHORTAGGED(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New$$PHOSPHORTAGGED(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient$$PHOSPHORTAGGED(HttpURLConnection.java:1228)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0$$PHOSPHORTAGGED(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect$$PHOSPHORTAGGED(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect$$PHOSPHORTAGGED(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0$$PHOSPHORTAGGED(HttpURLConnection.java:1572)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream$$PHOSPHORTAGGED(HttpURLConnection.java:1500)
+	at java.net.URL.openStream$$PHOSPHORTAGGED(URL.java:1093)
+	at org.biojava.nbio.core.util.InputStreamProvider.getInputStream$$PHOSPHORTAGGED(InputStreamProvider.java:124)
+	at org.biojava.nbio.structure.URLIdentifier.loadStructure$$PHOSPHORTAGGED(URLIdentifier.java:165)
+	at org.biojava.nbio.structure.align.client.StructureName.loadStructure$$PHOSPHORTAGGED(StructureName.java:509)
+	at org.biojava.nbio.structure.align.util.AtomCache.getStructure$$PHOSPHORTAGGED(AtomCache.java:503)
+	at org.biojava.nbio.structure.align.util.AtomCache.getStructure$$PHOSPHORTAGGED(AtomCache.java:487)
+	at org.biojava.nbio.structure.StructureIO.getStructure$$PHOSPHORTAGGED(StructureIO.java:101)
+	at org.biojava.nbio.structure.io.TestURLBasedFileParsing.testMMcifURL$$PHOSPHORTAGGED(TestURLBasedFileParsing.java:42)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

@@ -1,0 +1,39 @@
+JUnit version 4.13.1
+.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+08:14:40 [main] WARN  org.biojava.nbio.structure.align.util.UserConfiguration - Could not read dir from system property PDB_DIR or environment variable PDB_DIR, using system's temp directory /tmp
+FlakyTracker Log: testRefmacPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testRefmacPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.08:14:46 [main] WARN  org.biojava.nbio.structure.io.mmcif.SimpleMMcifConsumer - No _struct_asym category in file, no SEQRES groups will be added.
+FlakyTracker Log: testPhenixCifFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testPhenixCifFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: test2M7Y may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: test2M7Y may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: test3C5F may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: test3C5F may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: test4B19 may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: test4B19 may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.08:14:55 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id E (author id E) has entity type 'branched', considering it non-polymeric
+08:14:55 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id F (author id F) has entity type 'branched', considering it non-polymeric
+08:14:55 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id G (author id G) has entity type 'branched', considering it non-polymeric
+08:14:55 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id H (author id H) has entity type 'branched', considering it non-polymeric
+FlakyTracker Log: testStructureWithBranchedEntities may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testStructureWithBranchedEntities may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: test1B8GnoSeqresPdb may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: test1B8GnoSeqresPdb may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: testPhaserPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testPhaserPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: testNewLigandChain may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testNewLigandChain may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.08:14:59 [main] WARN  org.biojava.nbio.structure.io.mmcif.SimpleMMcifConsumer - The list of asym ids (from _struct_asym) and the list of author ids (from _entity_poly) for entity 1 have different lengths! Can't provide a mapping from asym ids to author chain ids
+FlakyTracker Log: testWaterOnlyChainCif may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testWaterOnlyChainCif may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: testWaterOnlyChainPdb may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testWaterOnlyChainPdb may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.FlakyTracker Log: testPhenixPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=203, label=6}
+FlakyTracker Log: testPhenixPdbFile may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/lang/System.getenv', file='org/biojava/nbio/structure/align/util/UserConfiguration', line=132, label=5}
+.
+Time: 27.402
+
+OK (13 tests)
+

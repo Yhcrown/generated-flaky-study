@@ -1,0 +1,53 @@
+JUnit version 4.12
+08:36:03.804 [main] DEBUG org.reflections.Reflections - going to scan these urls:
+file:/workspace/benchmarks/projects/cukes/cukes-samples/cukes-plugin-sample/target/test-classes/
+jar:file:/tmp/jars/cukes-core-0.0.33-SNAPSHOT.jar!/
+08:36:04.085 [main] INFO org.reflections.Reflections - Reflections took 265 ms to scan 2 urls, producing 21 keys and 63 values 
+08:36:04.126 [main] DEBUG org.reflections.Reflections - expanded subtype java.lang.Exception -> java.lang.RuntimeException
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype java.lang.Throwable -> java.lang.Exception
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype java.io.Serializable -> java.lang.Throwable
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> java.lang.Throwable
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.Tainted -> edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> java.lang.Exception
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> java.lang.RuntimeException
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype org.aopalliance.intercept.Interceptor -> org.aopalliance.intercept.MethodInterceptor
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype org.aopalliance.aop.Advice -> org.aopalliance.intercept.Interceptor
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype org.hamcrest.Matcher -> org.hamcrest.BaseMatcher
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype org.hamcrest.SelfDescribing -> org.hamcrest.Matcher
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> org.hamcrest.BaseMatcher
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> lv.ctco.cukes.core.internal.context.BaseContextHandler
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype java.lang.Comparable -> java.lang.Enum
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype java.io.Serializable -> java.lang.Enum
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> java.lang.Enum
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype gherkin.formatter.JSONFormatter -> cucumber.runtime.formatter.CucumberJSONFormatter
+08:36:04.136 [main] DEBUG org.reflections.Reflections - expanded subtype gherkin.formatter.Reporter -> gherkin.formatter.JSONFormatter
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype gherkin.formatter.Formatter -> gherkin.formatter.JSONFormatter
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype java.io.Closeable -> gherkin.formatter.Formatter
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype java.lang.AutoCloseable -> java.io.Closeable
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> gherkin.formatter.JSONFormatter
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> cucumber.runtime.formatter.CucumberJSONFormatter
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype com.google.inject.Module -> com.google.inject.AbstractModule
+08:36:04.137 [main] DEBUG org.reflections.Reflections - expanded subtype edu.columbia.cs.psl.phosphor.struct.TaintedWithObjTag -> com.google.inject.AbstractModule
+Feature: Plugins showcase
+..08:36:05.676 [main] INFO lv.ctco.cukes.plugins.SamplePlugin - Scenario executed in 373 ms
+.
+  Scenario: fast scenario                       [90m# features/showcase.feature:2[0m
+    [32mGiven [0m[32mlet variable "[0m[32m[1mtest[0m[32m" to be random UUID[0m [90m# GivenSteps.var_random_UUID(String)[0m
+.08:36:06.684 [main] INFO lv.ctco.cukes.plugins.SamplePlugin - Scenario executed in 1007 ms
+.
+  Scenario: slow scenario   [90m# features/showcase.feature:5[0m
+    [32mGiven [0m[32mwait for [0m[32m[1m1[0m[32m second[0m [90m# TestSteps.waitForSeconds(int)[0m
+.08:36:11.687 [main] INFO lv.ctco.cukes.plugins.SamplePlugin - Scenario executed in 5001 ms
+
+  Scenario: very slow scenario [90m# features/showcase.feature:8[0m
+    [32mGiven [0m[32mwait for [0m[32m[1m5[0m[32m seconds[0m   [90m# TestSteps.waitForSeconds(int)[0m
+
+3 Scenarios ([32m3 passed[0m)
+3 Steps ([32m3 passed[0m)
+0m6.390s
+
+
+Time: 8.3
+
+OK (6 tests)
+

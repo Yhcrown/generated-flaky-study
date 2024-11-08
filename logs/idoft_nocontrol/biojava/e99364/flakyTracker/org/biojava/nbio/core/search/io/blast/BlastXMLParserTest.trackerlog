@@ -1,0 +1,11 @@
+JUnit version 4.13.1
+.createObjects
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+.I.getFileExtensions
+I.setFile
+
+Time: 3.704
+
+OK (4 tests)
+

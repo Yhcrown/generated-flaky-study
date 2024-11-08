@@ -1,0 +1,12 @@
+JUnit version 4.12
+.2024-10-25 21:23:25,890 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+..2024-10-25 21:23:26,123 INFO [org.apache.dubbo.rpc.protocol.dubbo.LazyConnectExchangeClient:initClient] -  [DUBBO] Lazy connect to dubbo://127.0.0.1:9090/org.apache.dubbo.rpc.protocol.dubbo.IDemoService?codec=dubbo&heartbeat=60000&lazy=true&send.reconnect=true, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+.2024-10-25 21:23:26,156 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:45839, export /127.0.0.1:45839, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 21:23:26,159 INFO [org.apache.dubbo.rpc.protocol.dubbo.LazyConnectExchangeClient:initClient] -  [DUBBO] Lazy connect to dubbo://127.0.0.1:45839/org.apache.dubbo.rpc.protocol.dubbo.IDemoService?codec=dubbo&heartbeat=60000&lazy=true&send.reconnect=true&timeout=20000, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 21:23:26,167 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /172.17.0.5:45839 from NettyClient 172.17.0.5 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x8eec2808, L:/172.17.0.5:58790 - R:/172.17.0.5:45839]], dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 21:23:26,168 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient 6610172a78db/172.17.0.5 connect to the server /172.17.0.5:45839, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+
+Time: 0.374
+
+OK (4 tests)
+

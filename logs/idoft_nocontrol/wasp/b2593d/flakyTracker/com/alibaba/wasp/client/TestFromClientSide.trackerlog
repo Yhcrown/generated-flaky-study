@@ -1,0 +1,63 @@
+JUnit version 4.10
+24/10/25 06:44:33 INFO wasp.WaspTestingUtility: Starting up minicluster with 1 master(s) and 3 fserver(s) 
+Starting DataNode 0 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data1,/workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data2
+Starting DataNode 1 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data3,/workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data4
+Starting DataNode 2 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data5,/workspace/benchmarks/projects/wasp/target/test-data/a8ff283c-306c-468b-a719-966ac3956d09/dfscluster_afbf1d6d-d21f-4f9c-bcbd-2ca1e2bcdacd/dfs/data/data6
+24/10/25 06:44:37 INFO wasp.WaspTestingUtility: Shutting down mini wasp cluster
+Shutting down the Mini HDFS Cluster
+Shutting down DataNode 2
+Shutting down DataNode 1
+Shutting down DataNode 0
+24/10/25 06:44:41 INFO wasp.WaspTestingUtility: Minicluster is down
+E
+Time: 7.457
+There was 1 failure:
+1) com.alibaba.wasp.client.TestFromClientSide
+java.lang.VerifyError: (class: org/apache/zookeeper/server/NIOServerCnxnFactory, method: configure signature: (Ljava/net/InetSocketAddress;I)V) Unable to pop operand off an empty stack
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.apache.hadoop.hbase.zookeeper.MiniZooKeeperCluster.startup$$PHOSPHORTAGGED(MiniZooKeeperCluster.java:162)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniZKCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:518)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniZKCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:507)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:623)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster$$PHOSPHORTAGGED(HBaseTestingUtility.java:575)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster$$PHOSPHORTAGGED(WaspTestingUtility.java:172)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster$$PHOSPHORTAGGED(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.client.TestFromClientSide.setUpBeforeClass(TestFromClientSide.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate$$PHOSPHORTAGGED(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+

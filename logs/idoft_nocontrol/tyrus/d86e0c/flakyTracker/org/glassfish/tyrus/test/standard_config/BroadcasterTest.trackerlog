@@ -1,0 +1,30 @@
+JUnit version 4.10
+.Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.NetworkListener start$$PHOSPHORTAGGED
+INFO: Started listener bound to [0.0.0.0:8025]
+Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.HttpServer start$$PHOSPHORTAGGED
+INFO: [HttpServer] Started.
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket Registered apps: URLs all start with ws://localhost:8025
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket server started.
+Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.NetworkListener shutdownNow$$PHOSPHORTAGGED
+INFO: Stopped listener bound to [0.0.0.0:8025]
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server stop$$PHOSPHORTAGGED
+INFO: Websocket Server stopped.
+.Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.NetworkListener start$$PHOSPHORTAGGED
+INFO: Started listener bound to [0.0.0.0:8025]
+Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.HttpServer start$$PHOSPHORTAGGED
+INFO: [HttpServer-1] Started.
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket Registered apps: URLs all start with ws://localhost:8025
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket server started.
+Oct 25, 2024 8:48:26 AM org.glassfish.grizzly.http.server.NetworkListener shutdownNow$$PHOSPHORTAGGED
+INFO: Stopped listener bound to [0.0.0.0:8025]
+Oct 25, 2024 8:48:26 AM org.glassfish.tyrus.server.Server stop$$PHOSPHORTAGGED
+INFO: Websocket Server stopped.
+
+Time: 2.524
+
+OK (2 tests)
+

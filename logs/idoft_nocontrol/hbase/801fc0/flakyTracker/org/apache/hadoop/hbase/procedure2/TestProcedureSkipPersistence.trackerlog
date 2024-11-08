@@ -1,0 +1,52 @@
+JUnit version 4.12
+.2024-10-25 07:03:48,634 WARN  [Time-limited test] util.NativeCodeLoader(62): Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2024-10-25 07:03:49,026 INFO  [Time-limited test] procedure2.ProcedureExecutor(641): Starting 1 core workers (bigger of cpus/4 or 16) with max (burst) worker count=10
+2024-10-25 07:03:49,199 DEBUG [Time-limited test] util.CommonFSUtils$DfsBuilderUtility(872): org.apache.hadoop.hdfs.DistributedFileSystem not available, will not use builder API for file creation.
+2024-10-25 07:03:49,200 DEBUG [Time-limited test] util.CommonFSUtils$DfsBuilderUtility(877): org.apache.hadoop.hdfs.DistributedFileSystem$HdfsDataOutputStreamBuilder not available, will not use builder API for file creation.
+2024-10-25 07:03:49,353 INFO  [Time-limited test] wal.WALProcedureStore(1084): Rolled new Procedure Store WAL, id=1
+2024-10-25 07:03:49,361 INFO  [Time-limited test] procedure2.ProcedureExecutor(660): Recovered WALProcedureStore lease in 320msec
+2024-10-25 07:03:49,381 INFO  [Time-limited test] procedure2.ProcedureExecutor(674): Loaded WALProcedureStore in 19msec
+2024-10-25 07:03:49,391 INFO  [Time-limited test] procedure2.TimeoutExecutorThread(82): ADDED pid=-1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.ProcedureExecutor$CompletedProcedureCleaner; timeout=30000, timestamp=1729839859391
+2024-10-25 07:03:49,576 DEBUG [Time-limited test] procedure2.ProcedureExecutor(1124): Stored pid=1, state=RUNNABLE, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure
+2024-10-25 07:03:49,587 INFO  [PEWorker-1] procedure2.TimeoutExecutorThread(82): ADDED pid=1, state=WAITING_TIMEOUT, hasLock=true; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure; timeout=3600000, timestamp=1729843429587
+2024-10-25 07:03:49,600 INFO  [Time-limited test] hbase.Waiter(189): Waiting up to [30,000] milli-secs(wait.for.ratio=[1])
+2024-10-25 07:03:49,602 INFO  [Time-limited test] procedure2.ProcedureTestingUtility(94): RESTART - Stop
+2024-10-25 07:03:49,602 INFO  [Time-limited test] procedure2.ProcedureExecutor(705): Stopping
+2024-10-25 07:03:49,602 INFO  [Time-limited test] wal.WALProcedureStore(296): Stopping the WAL Procedure Store, isAbort=false
+2024-10-25 07:03:49,651 INFO  [Time-limited test] procedure2.ProcedureTestingUtility(106): RESTART - Start
+2024-10-25 07:03:49,652 INFO  [Time-limited test] procedure2.ProcedureExecutor(641): Starting 1 core workers (bigger of cpus/4 or 16) with max (burst) worker count=10
+2024-10-25 07:03:49,655 DEBUG [Time-limited test] wal.WALProcedureStore(1306): Opening Pv2 DeprecatedRawLocalFileStatus{path=file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000001.log; isDirectory=false; length=254; replication=1; blocksize=33554432; modification_time=1729839829650; access_time=0; owner=; group=; permission=rw-rw-rw-; isSymlink=false}
+2024-10-25 07:03:49,722 INFO  [Time-limited test] wal.WALProcedureStore(1084): Rolled new Procedure Store WAL, id=2
+2024-10-25 07:03:49,724 INFO  [Time-limited test] procedure2.ProcedureExecutor(660): Recovered WALProcedureStore lease in 70msec
+2024-10-25 07:03:49,745 INFO  [Time-limited test] wal.ProcedureWALFormatReader(175): Read 3 entries in file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000001.log
+2024-10-25 07:03:49,746 DEBUG [Time-limited test] procedure2.ProcedureExecutor(523): Loading pid=1, state=RUNNABLE, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure
+2024-10-25 07:03:49,749 DEBUG [Time-limited test] procedure2.Procedure(979): pid=1, state=RUNNABLE, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure held the lock before restarting, call acquireLock to restore it.
+2024-10-25 07:03:49,752 INFO  [Time-limited test] procedure2.ProcedureExecutor(674): Loaded WALProcedureStore in 27msec
+2024-10-25 07:03:49,753 INFO  [Time-limited test] procedure2.TimeoutExecutorThread(82): ADDED pid=-1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.ProcedureExecutor$CompletedProcedureCleaner; timeout=30000, timestamp=1729839859753
+2024-10-25 07:03:49,753 INFO  [PEWorker-1] procedure2.TimeoutExecutorThread(82): ADDED pid=1, state=WAITING_TIMEOUT, hasLock=true; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure; timeout=2000, timestamp=1729839831753
+2024-10-25 07:03:49,755 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore(1176): Removed log=file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000001.log, activeLogs=[/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000002.log]
+2024-10-25 07:03:49,756 INFO  [Time-limited test] hbase.Waiter(189): Waiting up to [30,000] milli-secs(wait.for.ratio=[1])
+2024-10-25 07:03:49,756 INFO  [Time-limited test] procedure2.ProcedureTestingUtility(94): RESTART - Stop
+2024-10-25 07:03:49,756 INFO  [Time-limited test] procedure2.ProcedureExecutor(705): Stopping
+2024-10-25 07:03:49,756 INFO  [Time-limited test] wal.WALProcedureStore(296): Stopping the WAL Procedure Store, isAbort=false
+2024-10-25 07:03:49,757 INFO  [Time-limited test] procedure2.ProcedureTestingUtility(106): RESTART - Start
+2024-10-25 07:03:49,757 INFO  [Time-limited test] procedure2.ProcedureExecutor(641): Starting 1 core workers (bigger of cpus/4 or 16) with max (burst) worker count=10
+2024-10-25 07:03:49,758 DEBUG [Time-limited test] wal.WALProcedureStore(1306): Opening Pv2 DeprecatedRawLocalFileStatus{path=file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000002.log; isDirectory=false; length=157; replication=1; blocksize=33554432; modification_time=1729839829756; access_time=0; owner=; group=; permission=rw-rw-rw-; isSymlink=false}
+2024-10-25 07:03:49,762 INFO  [Time-limited test] wal.WALProcedureStore(1084): Rolled new Procedure Store WAL, id=3
+2024-10-25 07:03:49,763 INFO  [Time-limited test] procedure2.ProcedureExecutor(660): Recovered WALProcedureStore lease in 5msec
+2024-10-25 07:03:49,764 INFO  [Time-limited test] wal.ProcedureWALFormatReader(175): Read 2 entries in file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000002.log
+2024-10-25 07:03:49,765 DEBUG [Time-limited test] procedure2.ProcedureExecutor(523): Loading pid=1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure
+2024-10-25 07:03:49,765 INFO  [Time-limited test] procedure2.TimeoutExecutorThread(82): ADDED pid=1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure; timeout=2000, timestamp=1729839831753
+2024-10-25 07:03:49,765 DEBUG [Time-limited test] procedure2.Procedure(979): pid=1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure held the lock before restarting, call acquireLock to restore it.
+2024-10-25 07:03:49,766 INFO  [Time-limited test] procedure2.ProcedureExecutor(674): Loaded WALProcedureStore in 2msec
+2024-10-25 07:03:49,766 INFO  [Time-limited test] procedure2.TimeoutExecutorThread(82): ADDED pid=-1, state=WAITING_TIMEOUT, hasLock=false; org.apache.hadoop.hbase.procedure2.ProcedureExecutor$CompletedProcedureCleaner; timeout=30000, timestamp=1729839859766
+2024-10-25 07:03:49,767 INFO  [Time-limited test] hbase.Waiter(189): Waiting up to [30,000] milli-secs(wait.for.ratio=[1])
+2024-10-25 07:03:51,755 INFO  [WALProcedureStoreSyncThread] wal.WALProcedureStore(1176): Removed log=file:/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000002.log, activeLogs=[/workspace/benchmarks/projects/hbase/hbase-procedure/target/test-data/07855c7d-a03f-ee37-8922-dec24da6267b/proc-logs/pv2-00000000000000000003.log]
+2024-10-25 07:03:51,757 INFO  [PEWorker-1] procedure2.ProcedureExecutor(1507): Finished pid=1, state=SUCCESS, hasLock=false; org.apache.hadoop.hbase.procedure2.TestProcedureSkipPersistence$TestProcedure in 2.3590sec
+2024-10-25 07:03:51,771 INFO  [Time-limited test] procedure2.ProcedureExecutor(705): Stopping
+2024-10-25 07:03:51,772 INFO  [Time-limited test] wal.WALProcedureStore(296): Stopping the WAL Procedure Store, isAbort=false
+
+Time: 5.019
+
+OK (1 test)
+

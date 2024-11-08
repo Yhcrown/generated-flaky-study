@@ -1,0 +1,395 @@
+JUnit version 4.12
+.log4j:WARN No appenders could be found for logger (org.apache.dubbo.common.logger.LoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+E
+Time: 3.812
+There was 1 failure:
+1) testFuture(org.apache.dubbo.remoting.transport.netty4.NettyClientToServerTest)
+org.apache.dubbo.remoting.RemotingException: Failed to bind NettyServer on localhost/127.0.0.1:10394, cause: Inconsistent stackmap frames at branch target 949
+Exception Details:
+  Location:
+    io/netty/util/internal/logging/MessageFormatter.arrayFormat$$PHOSPHORTAGGED(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;[Ljava/lang/Object;Lio/netty/util/internal/logging/FormattingTuple;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @949: aload
+  Reason:
+    Type top (current frame, locals[20]) is not assignable to integer (stack map, locals[20])
+  Current Frame:
+    bci: @848
+    flags: { }
+    locals: { 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedCharWithObjTag', integer, 'java/lang/Object', 'java/lang/Throwable', integer, 'java/lang/StringBuilder', integer, integer, integer, top, top, top, top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @949
+    flags: { }
+    locals: { 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedCharWithObjTag', integer, 'java/lang/Object', 'java/lang/Throwable', integer, 'java/lang/StringBuilder', integer, integer, integer, integer, integer, 'java/lang/Object', top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 1904 c000 133a 0819 08b6 0019 013a 09bb
+    0x0000010: 0057 59b7 005a 3a0a bb00 5c59 b700 5d3a
+    0x0000020: 0b2c 2d59 1908 5f19 0904 1017 b600 613a
+    0x0000030: 0957 c600 212c 2d5c 57b6 0065 5b57 b600
+    0x0000040: 6b59 1908 5f19 0905 1017 b600 613a 0957
+    0x0000050: 9a00 49bb 0039 1908 b600 1d5c 2a2b 0119
+    0x0000060: 08b6 001d 1908 b600 73c0 0013 b700 7619
+    0x0000070: 08b6 001d b800 2919 0819 09b6 007a 1905
+    0x0000080: 5fb5 003d 1905 5fb5 0037 1905 1908 1909
+    0x0000090: b600 7a19 08b6 0040 b02c 2d5c 57b6 0065
+    0x00000a0: 5b57 b600 6b04 1908 b600 1d3a 1d5f 191d
+    0x00000b0: b800 295b 5764 5f19 08b6 001d b800 293a
+    0x00000c0: 1e36 0c2c 2d15 0c19 1e3a 1d36 1f3a 2019
+    0x00000d0: 2015 1f19 1d19 05b6 007e 59b4 0037 c000
+    0x00000e0: 045f b400 3d19 205f b800 2919 08b6 001d
+    0x00000f0: b800 293a 213a 0d19 0d19 215f c100 505f
+    0x0000100: 5919 085f 1909 0610 17b6 0061 3a09 5799
+    0x0000110: 000f 190d 1921 5fc0 0050 5fa7 0009 0119
+    0x0000120: 08b6 001d 1908 1909 06b6 0081 1908 b600
+    0x0000130: 1db8 0029 3a22 3a0e 2a2b 5919 085f 1909
+    0x0000140: 0710 17b6 0061 3a09 57c7 004b bb00 3919
+    0x0000150: 08b6 001d 5c01 1908 b600 1d19 0e19 2219
+    0x0000160: 08b6 0073 c000 13b7 0076 1908 b600 1db8
+    0x0000170: 0029 1908 1909 b600 7a19 055f b500 3d19
+    0x0000180: 055f b500 3719 0519 0819 09b6 007a 1908
+    0x0000190: b600 40b0 2a2b 120c 1908 b600 1d19 0819
+    0x00001a0: 0a3a 1d19 1db6 0085 59b4 0088 5fb4 0089
+    0x00001b0: 1908 b600 1db8 0029 3a23 360f 150f 1923
+    0x00001c0: 0219 08b6 001d 5d58 b800 2959 1908 5f19
+    0x00001d0: 0908 1017 b600 613a 0957 1923 1908 b600
+    0x00001e0: 1db8 0029 3a23 a000 47bb 0039 1908 b600
+    0x00001f0: 1d5c 2a2b 190e 1922 1908 b600 73c0 0013
+    0x0000200: b700 7619 08b6 001d b800 2919 0819 09b6
+    0x0000210: 007a 1905 5fb5 003d 1905 5fb5 0037 1905
+    0x0000220: 1908 1909 b600 7a19 08b6 0040 b0bb 008b
+    0x0000230: 1908 b600 1d5c 2a2b 1908 190a 3a1d 191d
+    0x0000240: b600 8f59 b400 885f b400 8910 3219 08b6
+    0x0000250: 001d 3a1d 5f19 1db8 0029 5b57 605f 1908
+    0x0000260: b600 73c0 0013 b700 9219 08b6 001d b800
+    0x0000270: 293a 243a 1003 1908 b600 1d19 08b6 001d
+    0x0000280: b800 293a 2536 1103 1908 b600 1d19 08b6
+    0x0000290: 001d b800 293a 2636 1215 0f19 2359 1908
+    0x00002a0: 5f19 0910 0710 17b6 0061 3a09 5799 004d
+    0x00002b0: 2a2b 150f 1923 0419 08b6 001d 3a1d 5f19
+    0x00002c0: 1db8 0029 5b57 645f 1908 190b 3a1d 191d
+    0x00002d0: b600 9659 b400 985f b400 9910 5c19 08b6
+    0x00002e0: 001d 5d58 b800 2959 1908 5f19 0910 0810
+    0x00002f0: 17b6 0061 3a09 579f 000c 0419 08b6 001d
+    0x0000300: a700 0903 1908 b600 1d19 0819 0910 07b6
+    0x0000310: 0081 1908 1909 1008 b600 8119 0819 0910
+    0x0000320: 09b6 0081 1908 b600 1db8 0029 3a27 3613
+    0x0000330: 1513 1927 5919 085f 1909 100a 1017 b600
+    0x0000340: 613a 0957 1927 1908 b600 1db8 0029 3a27
+    0x0000350: 9900 6519 1019 242a 2b15 1119 2515 0f19
+    0x0000360: 2319 08b6 001d b800 293a 2836 1419 08b6
+    0x0000370: 001d b800 293a 2936 1519 08b6 001d b800
+    0x0000380: 293a 2a3a 1619 1619 2a5f c000 9b5f 1515
+    0x0000390: 1929 1514 1928 1908 1905 013a 1d3a 1f19
+    0x00003a0: 1f19 1db6 009f 59b4 0037 c000 8b5f b400
+    0x00003b0: 3d58 a701 1f19 1019 242a 2b15 1119 2515
+    0x00003c0: 0f19 2304 1908 b600 1d3a 1d5f 191d b800
+    0x00003d0: 295b 5764 5f19 08b6 001d b800 293a 2b36
+    0x00003e0: 1719 08b6 001d b800 293a 2c36 1819 08b6
+    0x00003f0: 001d b800 293a 2d3a 1919 1919 2d5f c000
+    0x0000400: 9b5f 1518 192c 1517 192b 1908 1905 013a
+    0x0000410: 1d3a 1f19 1f19 1db6 009f 59b4 0037 c000
+    0x0000420: 8b5f b400 3d58 150f 1923 0519 08b6 001d
+    0x0000430: 5d58 b800 2959 1908 5f19 0910 0b10 17b6
+    0x0000440: 0061 3a09 57a1 0056 2a2b 150f 1923 0519
+    0x0000450: 08b6 001d 3a1d 5f19 1db8 0029 5b57 645f
+    0x0000460: 1908 190b 3a1d 191d b600 9659 b400 985f
+    0x0000470: b400 9910 5c19 08b6 001d 5d58 b800 2959
+    0x0000480: 1908 5f19 0910 0d10 17b6 0061 3a09 57a0
+    0x0000490: 000c 0419 08b6 001d a700 0903 1908 b600
+    0x00004a0: 1d19 0819 0910 0bb6 0081 1908 1909 100c
+    0x00004b0: b600 8119 0819 0910 0db6 0081 1908 1909
+    0x00004c0: 100e b600 8119 08b6 001d b800 293a 2736
+    0x00004d0: 1319 0819 0910 0ab6 0081 150f 1923 0519
+    0x00004e0: 08b6 001d 3a1d 5f19 1db8 0029 5b57 605f
+    0x00004f0: 1908 b600 1db8 0029 3a25 3611 1513 1927
+    0x0000500: 5919 085f 1909 100f 1017 b600 613a 0957
+    0x0000510: 1923 1908 b600 1db8 0029 3a23 1926 1908
+    0x0000520: b600 1db8 0029 3a26 9900 7819 1019 242c
+    0x0000530: 2d15 1219 263a 1d36 1f3a 2019 2015 1f19
+    0x0000540: 1d19 05b6 007e 59b4 0037 c000 045f b400
+    0x0000550: 3d19 205f b800 2901 1908 b600 1d19 08b8
+    0x0000560: 00a3 1926 1908 b600 1db8 0029 3a26 8412
+    0x0000570: 0115 1219 2615 0c19 1e5d 58b8 0029 5919
+    0x0000580: 085f 1909 1010 1017 b600 613a 0957 1923
+    0x0000590: 1908 b600 1db8 0029 3a23 a400 2da7 00f0
+    0x00005a0: 1910 1924 120c 1908 b600 1d19 0819 0501
+    0x00005b0: 3a1d 3a1f 191f 191d b600 a659 b400 37c0
+    0x00005c0: 008b 5fb4 003d 582a 2b12 0c19 08b6 001d
+    0x00005d0: 1511 1925 1908 190a 3a1d 191d b600 a959
+    0x00005e0: b400 885f b400 8919 08b6 001d b800 293a
+    0x00005f0: 2336 0f15 0f19 2302 1908 b600 1d5d 58b8
+    0x0000600: 0029 5919 085f 1909 1012 1017 b600 613a
+    0x0000610: 0957 1923 1908 b600 1db8 0029 3a23 1925
+    0x0000620: 1908 b600 1db8 0029 3a25 1926 1908 b600
+    0x0000630: 1db8 0029 3a26 1927 1908 b600 1db8 0029
+    0x0000640: 3a27 1928 1908 b600 1db8 0029 3a28 1929
+    0x0000650: 1908 b600 1db8 0029 3a29 192a 1908 b600
+    0x0000660: 1db8 0029 3a2a 192b 1908 b600 1db8 0029
+    0x0000670: 3a2b 192c 1908 b600 1db8 0029 3a2c 192d
+    0x0000680: 1908 b600 1db8 0029 3a2d a0fc 0f19 0819
+    0x0000690: 0910 12b6 0081 1908 1909 1013 b600 8119
+    0x00006a0: 0819 0910 10b6 0081 1908 1909 1011 b600
+    0x00006b0: 8119 0819 0910 0fb6 0081 1910 1924 2a2b
+    0x00006c0: 1511 1925 2a2b 1908 190a 3a1d 191d b600
+    0x00006d0: 8f59 b400 885f b400 8919 08b6 001d b800
+    0x00006e0: 293a 2e36 1a19 08b6 001d b800 293a 2f36
+    0x00006f0: 1b19 08b6 001d b800 293a 303a 1c19 1c19
+    0x0000700: 305f c000 9b5f 151b 192f 151a 192e 1908
+    0x0000710: 1905 013a 1d3a 1f19 1f19 1db6 009f 59b4
+    0x0000720: 0037 c000 8b5f b400 3d58 bb00 3919 08b6
+    0x0000730: 001d 5c19 1019 2419 0819 0501 3a1d 3a1f
+    0x0000740: 191f 191d b600 ad59 b400 37c0 006d 5fb4
+    0x0000750: 003d 1512 1926 150c 191e 5d58 b800 2959
+    0x0000760: 1908 5f19 0910 1410 17b6 0061 3a09 57a3
+    0x0000770: 000a 190e 1922 a700 0901 1908 b600 1d19
+    0x0000780: 0819 0910 14b6 0081 1908 1909 1015 b600
+    0x0000790: 8119 08b6 0073 c000 13b7 0076 1908 b600
+    0x00007a0: 1db8 0029 1908 1909 b600 7a19 055f b500
+    0x00007b0: 3d19 055f b500 3719 0519 0819 09b6 007a
+    0x00007c0: 1908 b600 40b0 1908 1909 b600 7a19 08b6
+    0x00007d0: 0040 bf                                
+  Exception Handler Table:
+    bci [15, 1990] => handler: 1990
+  Stackmap Table:
+    full_frame(@83,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92]},{})
+    same_frame_extended(@153)
+    full_frame(@286,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37]},{})
+    full_frame(@292,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37]},{Object[#80],Object[#37]})
+    full_frame(@404,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37]},{})
+    full_frame(@557,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@665,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    same_frame_extended(@762)
+    same_frame(@771)
+    full_frame(@777,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Integer,Object[#37]})
+    full_frame(@949,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@1179,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@1185,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Integer,Object[#37]})
+    same_frame(@1233)
+    same_frame_extended(@1440)
+    same_frame(@1479)
+    same_frame_extended(@1677)
+    full_frame(@1913,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Uninitialized[#1834],Object[#37],Uninitialized[#1834],Object[#37],Object[#109],Object[#37]})
+    full_frame(@1919,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Uninitialized[#1834],Object[#37],Uninitialized[#1834],Object[#37],Object[#109],Object[#37],Object[#80],Object[#37]})
+    full_frame(@1990,{Top,Top,Top,Top,Top,Top,Top,Top,Object[#19],Object[#111]},{Object[#80]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Exception.<init>(Exception.java:84)
+	at org.apache.dubbo.remoting.RemotingException.<init>(RemotingException.java:72)
+	at org.apache.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServer.<init>(NettyServer.java:65)
+	at org.apache.dubbo.remoting.transport.netty4.NettyTransporter.bind$$PHOSPHORTAGGED(NettyTransporter.java:32)
+	at org.apache.dubbo.remoting.Transporter$Adaptive.bind$$PHOSPHORTAGGED(Transporter$Adaptive.java)
+	at org.apache.dubbo.remoting.Transporters.bind$$PHOSPHORTAGGED(Transporters.java:56)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchanger.bind$$PHOSPHORTAGGED(HeaderExchanger.java:44)
+	at org.apache.dubbo.remoting.exchange.Exchangers.bind$$PHOSPHORTAGGED(Exchangers.java:70)
+	at org.apache.dubbo.remoting.exchange.Exchangers.bind$$PHOSPHORTAGGED(Exchangers.java:55)
+	at org.apache.dubbo.remoting.exchange.Exchangers.bind$$PHOSPHORTAGGED(Exchangers.java:47)
+	at org.apache.dubbo.remoting.transport.netty4.NettyClientToServerTest.newServer$$PHOSPHORTAGGED(NettyClientToServerTest.java:32)
+	at org.apache.dubbo.remoting.transport.netty4.ClientToServerTest.setUp$$PHOSPHORTAGGED(ClientToServerTest.java:49)
+	at junit.framework.TestCase.runBare$$PHOSPHORTAGGED(TestCase.java:139)
+	at junit.framework.TestResult$1.protect$$PHOSPHORTAGGED(TestResult.java:122)
+	at junit.framework.TestResult.runProtected$$PHOSPHORTAGGED(TestResult.java:142)
+	at junit.framework.TestResult.run$$PHOSPHORTAGGED(TestResult.java:125)
+	at junit.framework.TestCase.run$$PHOSPHORTAGGED(TestCase.java:129)
+	at junit.framework.TestSuite.runTest$$PHOSPHORTAGGED(TestSuite.java:252)
+	at junit.framework.TestSuite.run$$PHOSPHORTAGGED(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run$$PHOSPHORTAGGED(JUnit38ClassRunner.java:86)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 949
+Exception Details:
+  Location:
+    io/netty/util/internal/logging/MessageFormatter.arrayFormat$$PHOSPHORTAGGED(Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;[Ljava/lang/Object;Lio/netty/util/internal/logging/FormattingTuple;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @949: aload
+  Reason:
+    Type top (current frame, locals[20]) is not assignable to integer (stack map, locals[20])
+  Current Frame:
+    bci: @848
+    flags: { }
+    locals: { 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedCharWithObjTag', integer, 'java/lang/Object', 'java/lang/Throwable', integer, 'java/lang/StringBuilder', integer, integer, integer, top, top, top, top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @949
+    flags: { }
+    locals: { 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedCharWithObjTag', integer, 'java/lang/Object', 'java/lang/Throwable', integer, 'java/lang/StringBuilder', integer, integer, integer, integer, integer, 'java/lang/Object', top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 1904 c000 133a 0819 08b6 0019 013a 09bb
+    0x0000010: 0057 59b7 005a 3a0a bb00 5c59 b700 5d3a
+    0x0000020: 0b2c 2d59 1908 5f19 0904 1017 b600 613a
+    0x0000030: 0957 c600 212c 2d5c 57b6 0065 5b57 b600
+    0x0000040: 6b59 1908 5f19 0905 1017 b600 613a 0957
+    0x0000050: 9a00 49bb 0039 1908 b600 1d5c 2a2b 0119
+    0x0000060: 08b6 001d 1908 b600 73c0 0013 b700 7619
+    0x0000070: 08b6 001d b800 2919 0819 09b6 007a 1905
+    0x0000080: 5fb5 003d 1905 5fb5 0037 1905 1908 1909
+    0x0000090: b600 7a19 08b6 0040 b02c 2d5c 57b6 0065
+    0x00000a0: 5b57 b600 6b04 1908 b600 1d3a 1d5f 191d
+    0x00000b0: b800 295b 5764 5f19 08b6 001d b800 293a
+    0x00000c0: 1e36 0c2c 2d15 0c19 1e3a 1d36 1f3a 2019
+    0x00000d0: 2015 1f19 1d19 05b6 007e 59b4 0037 c000
+    0x00000e0: 045f b400 3d19 205f b800 2919 08b6 001d
+    0x00000f0: b800 293a 213a 0d19 0d19 215f c100 505f
+    0x0000100: 5919 085f 1909 0610 17b6 0061 3a09 5799
+    0x0000110: 000f 190d 1921 5fc0 0050 5fa7 0009 0119
+    0x0000120: 08b6 001d 1908 1909 06b6 0081 1908 b600
+    0x0000130: 1db8 0029 3a22 3a0e 2a2b 5919 085f 1909
+    0x0000140: 0710 17b6 0061 3a09 57c7 004b bb00 3919
+    0x0000150: 08b6 001d 5c01 1908 b600 1d19 0e19 2219
+    0x0000160: 08b6 0073 c000 13b7 0076 1908 b600 1db8
+    0x0000170: 0029 1908 1909 b600 7a19 055f b500 3d19
+    0x0000180: 055f b500 3719 0519 0819 09b6 007a 1908
+    0x0000190: b600 40b0 2a2b 120c 1908 b600 1d19 0819
+    0x00001a0: 0a3a 1d19 1db6 0085 59b4 0088 5fb4 0089
+    0x00001b0: 1908 b600 1db8 0029 3a23 360f 150f 1923
+    0x00001c0: 0219 08b6 001d 5d58 b800 2959 1908 5f19
+    0x00001d0: 0908 1017 b600 613a 0957 1923 1908 b600
+    0x00001e0: 1db8 0029 3a23 a000 47bb 0039 1908 b600
+    0x00001f0: 1d5c 2a2b 190e 1922 1908 b600 73c0 0013
+    0x0000200: b700 7619 08b6 001d b800 2919 0819 09b6
+    0x0000210: 007a 1905 5fb5 003d 1905 5fb5 0037 1905
+    0x0000220: 1908 1909 b600 7a19 08b6 0040 b0bb 008b
+    0x0000230: 1908 b600 1d5c 2a2b 1908 190a 3a1d 191d
+    0x0000240: b600 8f59 b400 885f b400 8910 3219 08b6
+    0x0000250: 001d 3a1d 5f19 1db8 0029 5b57 605f 1908
+    0x0000260: b600 73c0 0013 b700 9219 08b6 001d b800
+    0x0000270: 293a 243a 1003 1908 b600 1d19 08b6 001d
+    0x0000280: b800 293a 2536 1103 1908 b600 1d19 08b6
+    0x0000290: 001d b800 293a 2636 1215 0f19 2359 1908
+    0x00002a0: 5f19 0910 0710 17b6 0061 3a09 5799 004d
+    0x00002b0: 2a2b 150f 1923 0419 08b6 001d 3a1d 5f19
+    0x00002c0: 1db8 0029 5b57 645f 1908 190b 3a1d 191d
+    0x00002d0: b600 9659 b400 985f b400 9910 5c19 08b6
+    0x00002e0: 001d 5d58 b800 2959 1908 5f19 0910 0810
+    0x00002f0: 17b6 0061 3a09 579f 000c 0419 08b6 001d
+    0x0000300: a700 0903 1908 b600 1d19 0819 0910 07b6
+    0x0000310: 0081 1908 1909 1008 b600 8119 0819 0910
+    0x0000320: 09b6 0081 1908 b600 1db8 0029 3a27 3613
+    0x0000330: 1513 1927 5919 085f 1909 100a 1017 b600
+    0x0000340: 613a 0957 1927 1908 b600 1db8 0029 3a27
+    0x0000350: 9900 6519 1019 242a 2b15 1119 2515 0f19
+    0x0000360: 2319 08b6 001d b800 293a 2836 1419 08b6
+    0x0000370: 001d b800 293a 2936 1519 08b6 001d b800
+    0x0000380: 293a 2a3a 1619 1619 2a5f c000 9b5f 1515
+    0x0000390: 1929 1514 1928 1908 1905 013a 1d3a 1f19
+    0x00003a0: 1f19 1db6 009f 59b4 0037 c000 8b5f b400
+    0x00003b0: 3d58 a701 1f19 1019 242a 2b15 1119 2515
+    0x00003c0: 0f19 2304 1908 b600 1d3a 1d5f 191d b800
+    0x00003d0: 295b 5764 5f19 08b6 001d b800 293a 2b36
+    0x00003e0: 1719 08b6 001d b800 293a 2c36 1819 08b6
+    0x00003f0: 001d b800 293a 2d3a 1919 1919 2d5f c000
+    0x0000400: 9b5f 1518 192c 1517 192b 1908 1905 013a
+    0x0000410: 1d3a 1f19 1f19 1db6 009f 59b4 0037 c000
+    0x0000420: 8b5f b400 3d58 150f 1923 0519 08b6 001d
+    0x0000430: 5d58 b800 2959 1908 5f19 0910 0b10 17b6
+    0x0000440: 0061 3a09 57a1 0056 2a2b 150f 1923 0519
+    0x0000450: 08b6 001d 3a1d 5f19 1db8 0029 5b57 645f
+    0x0000460: 1908 190b 3a1d 191d b600 9659 b400 985f
+    0x0000470: b400 9910 5c19 08b6 001d 5d58 b800 2959
+    0x0000480: 1908 5f19 0910 0d10 17b6 0061 3a09 57a0
+    0x0000490: 000c 0419 08b6 001d a700 0903 1908 b600
+    0x00004a0: 1d19 0819 0910 0bb6 0081 1908 1909 100c
+    0x00004b0: b600 8119 0819 0910 0db6 0081 1908 1909
+    0x00004c0: 100e b600 8119 08b6 001d b800 293a 2736
+    0x00004d0: 1319 0819 0910 0ab6 0081 150f 1923 0519
+    0x00004e0: 08b6 001d 3a1d 5f19 1db8 0029 5b57 605f
+    0x00004f0: 1908 b600 1db8 0029 3a25 3611 1513 1927
+    0x0000500: 5919 085f 1909 100f 1017 b600 613a 0957
+    0x0000510: 1923 1908 b600 1db8 0029 3a23 1926 1908
+    0x0000520: b600 1db8 0029 3a26 9900 7819 1019 242c
+    0x0000530: 2d15 1219 263a 1d36 1f3a 2019 2015 1f19
+    0x0000540: 1d19 05b6 007e 59b4 0037 c000 045f b400
+    0x0000550: 3d19 205f b800 2901 1908 b600 1d19 08b8
+    0x0000560: 00a3 1926 1908 b600 1db8 0029 3a26 8412
+    0x0000570: 0115 1219 2615 0c19 1e5d 58b8 0029 5919
+    0x0000580: 085f 1909 1010 1017 b600 613a 0957 1923
+    0x0000590: 1908 b600 1db8 0029 3a23 a400 2da7 00f0
+    0x00005a0: 1910 1924 120c 1908 b600 1d19 0819 0501
+    0x00005b0: 3a1d 3a1f 191f 191d b600 a659 b400 37c0
+    0x00005c0: 008b 5fb4 003d 582a 2b12 0c19 08b6 001d
+    0x00005d0: 1511 1925 1908 190a 3a1d 191d b600 a959
+    0x00005e0: b400 885f b400 8919 08b6 001d b800 293a
+    0x00005f0: 2336 0f15 0f19 2302 1908 b600 1d5d 58b8
+    0x0000600: 0029 5919 085f 1909 1012 1017 b600 613a
+    0x0000610: 0957 1923 1908 b600 1db8 0029 3a23 1925
+    0x0000620: 1908 b600 1db8 0029 3a25 1926 1908 b600
+    0x0000630: 1db8 0029 3a26 1927 1908 b600 1db8 0029
+    0x0000640: 3a27 1928 1908 b600 1db8 0029 3a28 1929
+    0x0000650: 1908 b600 1db8 0029 3a29 192a 1908 b600
+    0x0000660: 1db8 0029 3a2a 192b 1908 b600 1db8 0029
+    0x0000670: 3a2b 192c 1908 b600 1db8 0029 3a2c 192d
+    0x0000680: 1908 b600 1db8 0029 3a2d a0fc 0f19 0819
+    0x0000690: 0910 12b6 0081 1908 1909 1013 b600 8119
+    0x00006a0: 0819 0910 10b6 0081 1908 1909 1011 b600
+    0x00006b0: 8119 0819 0910 0fb6 0081 1910 1924 2a2b
+    0x00006c0: 1511 1925 2a2b 1908 190a 3a1d 191d b600
+    0x00006d0: 8f59 b400 885f b400 8919 08b6 001d b800
+    0x00006e0: 293a 2e36 1a19 08b6 001d b800 293a 2f36
+    0x00006f0: 1b19 08b6 001d b800 293a 303a 1c19 1c19
+    0x0000700: 305f c000 9b5f 151b 192f 151a 192e 1908
+    0x0000710: 1905 013a 1d3a 1f19 1f19 1db6 009f 59b4
+    0x0000720: 0037 c000 8b5f b400 3d58 bb00 3919 08b6
+    0x0000730: 001d 5c19 1019 2419 0819 0501 3a1d 3a1f
+    0x0000740: 191f 191d b600 ad59 b400 37c0 006d 5fb4
+    0x0000750: 003d 1512 1926 150c 191e 5d58 b800 2959
+    0x0000760: 1908 5f19 0910 1410 17b6 0061 3a09 57a3
+    0x0000770: 000a 190e 1922 a700 0901 1908 b600 1d19
+    0x0000780: 0819 0910 14b6 0081 1908 1909 1015 b600
+    0x0000790: 8119 08b6 0073 c000 13b7 0076 1908 b600
+    0x00007a0: 1db8 0029 1908 1909 b600 7a19 055f b500
+    0x00007b0: 3d19 055f b500 3719 0519 0819 09b6 007a
+    0x00007c0: 1908 b600 40b0 1908 1909 b600 7a19 08b6
+    0x00007d0: 0040 bf                                
+  Exception Handler Table:
+    bci [15, 1990] => handler: 1990
+  Stackmap Table:
+    full_frame(@83,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92]},{})
+    same_frame_extended(@153)
+    full_frame(@286,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37]},{})
+    full_frame(@292,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37]},{Object[#80],Object[#37]})
+    full_frame(@404,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37]},{})
+    full_frame(@557,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@665,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    same_frame_extended(@762)
+    same_frame(@771)
+    full_frame(@777,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Integer,Object[#37]})
+    full_frame(@949,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Top,Top,Top,Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@1179,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{})
+    full_frame(@1185,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Top,Top,Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Integer,Object[#37]})
+    same_frame(@1233)
+    same_frame_extended(@1440)
+    same_frame(@1479)
+    same_frame_extended(@1677)
+    full_frame(@1913,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Uninitialized[#1834],Object[#37],Uninitialized[#1834],Object[#37],Object[#109],Object[#37]})
+    full_frame(@1919,{Object[#109],Object[#37],Object[#31],Object[#37],Object[#21],Object[#51],Top,Top,Object[#19],Object[#111],Object[#87],Object[#92],Integer,Object[#4],Object[#80],Integer,Object[#139],Integer,Integer,Integer,Integer,Integer,Object[#4],Integer,Integer,Object[#4],Integer,Integer,Object[#4],Top,Object[#37],Top,Top,Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37],Object[#37]},{Uninitialized[#1834],Object[#37],Uninitialized[#1834],Object[#37],Object[#109],Object[#37],Object[#80],Object[#37]})
+    full_frame(@1990,{Top,Top,Top,Top,Top,Top,Top,Top,Object[#19],Object[#111]},{Object[#80]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at io.netty.util.internal.logging.Log4JLogger.debug$$PHOSPHORTAGGED(Log4JLogger.java:227)
+	at io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServer.doOpen$$PHOSPHORTAGGED(NettyServer.java:72)
+	at org.apache.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:63)
+	... 31 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

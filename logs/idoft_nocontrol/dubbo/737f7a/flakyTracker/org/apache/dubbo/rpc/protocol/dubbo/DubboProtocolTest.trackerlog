@@ -1,0 +1,891 @@
+JUnit version 4.12
+2024-10-25 06:56:56,845 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+.Exception occurred while instrumenting org/apache/dubbo/common/bytecode/Wrapper0:
+java.lang.IndexOutOfBoundsException
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Exception.<init>(Exception.java:54)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
+	at java.lang.IndexOutOfBoundsException.<init>(IndexOutOfBoundsException.java:46)
+	at java.lang.IndexOutOfBoundsException.<init>(IndexOutOfBoundsException.java)
+	at edu.columbia.cs.psl.phosphor.struct.harmony.util.ArrayList.get(ArrayList.java:333)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintAdapter.storeToLocals(TaintAdapter.java:562)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintAdapter.DUPN_XU(TaintAdapter.java:505)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintPassingMV.visitPopDupOrSwap(TaintPassingMV.java:1494)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintPassingMV.visitInsn(TaintPassingMV.java:1404)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.instrumenter.LocalVariableManager.visitInsn(LocalVariableManager.java:90)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.InsnNode.accept(InsnNode.java:65)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.InsnList.accept(InsnList.java:144)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:784)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintLoadCoercer$UninstTaintLoadCoercerMN.visitEnd(TaintLoadCoercer.java:295)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:805)
+	at edu.columbia.cs.psl.phosphor.instrumenter.PrimitiveArrayAnalyzer$PrimitiveArrayAnalyzerMN.visitEnd(PrimitiveArrayAnalyzer.java:424)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.instrumenter.PrimitiveArrayAnalyzer.visitEnd(PrimitiveArrayAnalyzer.java:245)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:805)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintTrackingClassVisitor$4.visitEnd(TaintTrackingClassVisitor.java:530)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.readMethod(ClassReader.java:1519)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(ClassReader.java:745)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(ClassReader.java:425)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.instrumentWithRetry(PreMain.java:284)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform(PreMain.java:180)
+	at edu.columbia.cs.psl.phosphor.PhosphorBaseTransformer.signalAndTransform(PhosphorBaseTransformer.java:62)
+	at edu.columbia.cs.psl.phosphor.PhosphorBaseTransformer.transform$$PHOSPHORTAGGED(PhosphorBaseTransformer.java:31)
+	at sun.instrument.TransformerManager.transform$$PHOSPHORTAGGED(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform$$PHOSPHORTAGGED(InstrumentationImpl.java:428)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:0)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass1$$PHOSPHORTAGGED(ClassLoader.java)
+	at java.lang.ClassLoader.defineClass$$PHOSPHORTAGGED(ClassLoader.java:756)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at javassist.ClassPool.toClass2$$PHOSPHORTAGGED(ClassPool.java:1183)
+	at javassist.ClassPool.toClass$$PHOSPHORTAGGED(ClassPool.java:1164)
+	at javassist.CtClass.toClass$$PHOSPHORTAGGED(CtClass.java:1305)
+	at org.apache.dubbo.common.bytecode.ClassGenerator.toClass$$PHOSPHORTAGGED(ClassGenerator.java:299)
+	at org.apache.dubbo.common.bytecode.ClassGenerator.toClass$$PHOSPHORTAGGED(ClassGenerator.java:259)
+	at org.apache.dubbo.common.bytecode.Wrapper.makeWrapper$$PHOSPHORTAGGED(Wrapper.java:245)
+	at org.apache.dubbo.common.bytecode.Wrapper.getWrapper$$PHOSPHORTAGGED(Wrapper.java:107)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getInvoker$$PHOSPHORTAGGED(JavassistProxyFactory.java:41)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getInvoker$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:110)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getInvoker$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocol$$PHOSPHORTAGGED(DubboProtocolTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+Saving org/apache/dubbo/common/bytecode/Wrapper0 to debug-preinst/
+java.lang.IndexOutOfBoundsException
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Exception.<init>(Exception.java:54)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
+	at java.lang.IndexOutOfBoundsException.<init>(IndexOutOfBoundsException.java:46)
+	at java.lang.IndexOutOfBoundsException.<init>(IndexOutOfBoundsException.java)
+	at edu.columbia.cs.psl.phosphor.struct.harmony.util.ArrayList.get(ArrayList.java:333)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintAdapter.storeToLocals(TaintAdapter.java:562)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintAdapter.DUPN_XU(TaintAdapter.java:505)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintPassingMV.visitPopDupOrSwap(TaintPassingMV.java:1494)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintPassingMV.visitInsn(TaintPassingMV.java:1404)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.instrumenter.LocalVariableManager.visitInsn(LocalVariableManager.java:90)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitInsn(MethodVisitor.java:336)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.InsnNode.accept(InsnNode.java:65)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.InsnList.accept(InsnList.java:144)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:784)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintLoadCoercer$UninstTaintLoadCoercerMN.visitEnd(TaintLoadCoercer.java:295)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:805)
+	at edu.columbia.cs.psl.phosphor.instrumenter.PrimitiveArrayAnalyzer$PrimitiveArrayAnalyzerMN.visitEnd(PrimitiveArrayAnalyzer.java:424)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.instrumenter.PrimitiveArrayAnalyzer.visitEnd(PrimitiveArrayAnalyzer.java:245)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.MethodVisitor.visitEnd(MethodVisitor.java:796)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:805)
+	at edu.columbia.cs.psl.phosphor.instrumenter.TaintTrackingClassVisitor$4.visitEnd(TaintTrackingClassVisitor.java:530)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.readMethod(ClassReader.java:1519)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(ClassReader.java:745)
+	at edu.columbia.cs.psl.phosphor.org.objectweb.asm.ClassReader.accept(ClassReader.java:425)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.instrumentWithRetry(PreMain.java:284)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.instrumentWithRetry(PreMain.java:322)
+	at edu.columbia.cs.psl.phosphor.PreMain$PCLoggingTransformer.transform(PreMain.java:180)
+	at edu.columbia.cs.psl.phosphor.PhosphorBaseTransformer.signalAndTransform(PhosphorBaseTransformer.java:62)
+	at edu.columbia.cs.psl.phosphor.PhosphorBaseTransformer.transform$$PHOSPHORTAGGED(PhosphorBaseTransformer.java:31)
+	at sun.instrument.TransformerManager.transform$$PHOSPHORTAGGED(TransformerManager.java:188)
+	at sun.instrument.InstrumentationImpl.transform$$PHOSPHORTAGGED(InstrumentationImpl.java:428)
+	at sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:0)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass1$$PHOSPHORTAGGED(ClassLoader.java)
+	at java.lang.ClassLoader.defineClass$$PHOSPHORTAGGED(ClassLoader.java:756)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at javassist.ClassPool.toClass2$$PHOSPHORTAGGED(ClassPool.java:1183)
+	at javassist.ClassPool.toClass$$PHOSPHORTAGGED(ClassPool.java:1164)
+	at javassist.CtClass.toClass$$PHOSPHORTAGGED(CtClass.java:1305)
+	at org.apache.dubbo.common.bytecode.ClassGenerator.toClass$$PHOSPHORTAGGED(ClassGenerator.java:299)
+	at org.apache.dubbo.common.bytecode.ClassGenerator.toClass$$PHOSPHORTAGGED(ClassGenerator.java:259)
+	at org.apache.dubbo.common.bytecode.Wrapper.makeWrapper$$PHOSPHORTAGGED(Wrapper.java:245)
+	at org.apache.dubbo.common.bytecode.Wrapper.getWrapper$$PHOSPHORTAGGED(Wrapper.java:107)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getInvoker$$PHOSPHORTAGGED(JavassistProxyFactory.java:41)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getInvoker$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:110)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getInvoker$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocol$$PHOSPHORTAGGED(DubboProtocolTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+method so far:
+java.lang.NoSuchMethodException: org.apache.dubbo.common.bytecode.Wrapper0.<init>(edu.columbia.cs.psl.phosphor.runtime.Taint)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.ReflectiveOperationException.<init>(ReflectiveOperationException.java:56)
+	at java.lang.NoSuchMethodException.<init>(NoSuchMethodException.java:51)
+	at java.lang.Class.getConstructor0$$PHOSPHORTAGGED(Class.java:3082)
+	at java.lang.Class.getDeclaredConstructor$$PHOSPHORTAGGED(Class.java:2178)
+	at java.lang.Class.getDeclaredConstructor(Class.java:0)
+	at edu.columbia.cs.psl.phosphor.runtime.ReflectionMasker.getTaintConstructor(ReflectionMasker.java:139)
+	at edu.columbia.cs.psl.phosphor.runtime.ReflectionMasker.fixAllArgs(ReflectionMasker.java:394)
+	at edu.columbia.cs.psl.phosphor.runtime.ReflectionMasker.fixAllArgs(ReflectionMasker.java:378)
+	at java.lang.Class.newInstance$$PHOSPHORTAGGED(Class.java:442)
+	at org.apache.dubbo.common.bytecode.Wrapper.makeWrapper$$PHOSPHORTAGGED(Wrapper.java:254)
+	at org.apache.dubbo.common.bytecode.Wrapper.getWrapper$$PHOSPHORTAGGED(Wrapper.java:107)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getInvoker$$PHOSPHORTAGGED(JavassistProxyFactory.java:41)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getInvoker$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:110)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getInvoker$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocol$$PHOSPHORTAGGED(DubboProtocolTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+2024-10-25 06:56:58,896 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9010, export /127.0.0.1:9010, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,117 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect$$PHOSPHORTAGGED] -  [DUBBO] Successed connect to server /172.17.0.5:9010 from NettyClient 172.17.0.5 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0xc62dbdd0, L:/172.17.0.5:43332 - R:/172.17.0.5:9010]], dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,118 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient 6610172a78db/172.17.0.5 connect to the server /172.17.0.5:9010, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+E.2024-10-25 06:56:59,190 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9050, export /127.0.0.1:9050, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,193 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect$$PHOSPHORTAGGED] -  [DUBBO] Successed connect to server /172.17.0.5:9050 from NettyClient 172.17.0.5 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0xff7b07fb, L:/172.17.0.5:38182 - R:/172.17.0.5:9050]], dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,194 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient 6610172a78db/172.17.0.5 connect to the server /172.17.0.5:9050, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+E.E.E.2024-10-25 06:56:59,246 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9020, export /127.0.0.1:9020, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,248 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect$$PHOSPHORTAGGED] -  [DUBBO] Successed connect to server /172.17.0.5:9020 from NettyClient 172.17.0.5 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0xc2dd491d, L:/172.17.0.5:42912 - R:/172.17.0.5:9020]], dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+2024-10-25 06:56:59,249 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient 6610172a78db/172.17.0.5 connect to the server /172.17.0.5:9020, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+E.E.E
+Time: 3.024
+There were 7 failures:
+1) testDubboProtocol(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy0.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy0', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocol$$PHOSPHORTAGGED(DubboProtocolTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+2) testPerm(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy1.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy1', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testPerm$$PHOSPHORTAGGED(DubboProtocolTest.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+3) testReturnNonSerialized(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy2.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy2', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testReturnNonSerialized$$PHOSPHORTAGGED(DubboProtocolTest.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+4) testDubboProtocolMultiService(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy3.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy3', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolMultiService$$PHOSPHORTAGGED(DubboProtocolTest.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+5) testDemoProtocol(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy4.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy4', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDemoProtocol$$PHOSPHORTAGGED(DubboProtocolTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+6) testNonSerializedParameter(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy5.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy5', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testNonSerializedParameter$$PHOSPHORTAGGED(DubboProtocolTest.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+7) testDubboProtocolWithMina(org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest)
+java.lang.VerifyError: Bad operand type when invoking <init>
+Exception Details:
+  Location:
+    org/apache/dubbo/common/bytecode/proxy6.add$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;ILedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag; @156: invokespecial
+  Reason:
+    Invalid type: 'edu/columbia/cs/psl/phosphor/runtime/Taint' (current frame, stack[6])
+  Current Frame:
+    bci: @156
+    flags: { }
+    locals: { 'org/apache/dubbo/common/bytecode/proxy6', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd }
+    stack: { 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', uninitialized 110, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+  Bytecode:
+    0x0000000: bb00 1659 b700 1a3a 0805 b800 205f bd00
+    0x0000010: 04b8 0026 b800 203a 0a3a 0919 0919 0a03
+    0x0000020: b800 201c 2dbb 0054 b800 205c 3a0b 3a0c
+    0x0000030: 3a0d 3a0e 3a0f 3610 190e 190d 190c 190b
+    0x0000040: 1510 190f 190e 190d 190c 190b 5757 583a
+    0x0000050: 0b36 0c58 5719 0b5c 150c 190b b700 8ab6
+    0x0000060: 002a 1909 190a 04b8 0020 1604 1906 bb00
+    0x0000070: 8cb8 0020 5c3a 0b3a 0c3a 0d3a 0e3a 0f37
+    0x0000080: 113a 1019 0e19 0d19 0c19 0b19 1016 1119
+    0x0000090: 0f19 0e19 0d19 0c19 0b57 5758 b700 8fb6
+    0x00000a0: 002a 2a2b 5f59 b400 2c5b 57b4 0030 b800
+    0x00000b0: 342a 2bb2 0038 b200 3b10 0ab8 0020 3a0b
+    0x00000c0: 360c 3a0d 190d 150c 190b 1908 b600 3f59
+    0x00000d0: b400 43c0 0045 5fb4 0048 190d 5fb8 0034
+    0x00000e0: 1909 190a 1908 0101 b900 4e0b 0059 b400
+    0x00000f0: 43c0 0004 5fb4 0048 3a14 3a13 1913 1914
+    0x0000100: 01b8 0020 575f 57a6 000e 03b8 0020 5f85
+    0x0000110: 5d58 a700 1a19 1319 145f c000 8c5f 1907
+    0x0000120: b800 9559 b400 985d 58b4 0099 1907 5fb5
+    0x0000130: 0099 1907 5b57 b500 9819 07b0          
+  Stackmap Table:
+    full_frame(@277,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{})
+    full_frame(@300,{Object[#2],Object[#28],Integer,Object[#28],Long,Object[#28],Object[#145],Object[#22],Object[#34],Object[#28],Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#28]},{Long,Object[#28]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.getDeclaredFields0$$PHOSPHORTAGGED(Class.java)
+	at java.lang.Class.privateGetDeclaredFields$$PHOSPHORTAGGED(Class.java:2583)
+	at java.lang.Class.getField0$$PHOSPHORTAGGED(Class.java:2975)
+	at java.lang.Class.getField$$PHOSPHORTAGGED(Class.java:1701)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:191)
+	at org.apache.dubbo.common.bytecode.Proxy.getProxy$$PHOSPHORTAGGED(Proxy.java:69)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory.getProxy$$PHOSPHORTAGGED(JavassistProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:66)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyFactory.getProxy$$PHOSPHORTAGGED(AbstractProxyFactory.java:35)
+	at org.apache.dubbo.rpc.proxy.wrapper.StubProxyFactoryWrapper.getProxy$$PHOSPHORTAGGED(StubProxyFactoryWrapper.java:65)
+	at org.apache.dubbo.rpc.ProxyFactory$Adaptive.getProxy$$PHOSPHORTAGGED(ProxyFactory$Adaptive.java)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolWithMina$$PHOSPHORTAGGED(DubboProtocolTest.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 7,  Failures: 7
+

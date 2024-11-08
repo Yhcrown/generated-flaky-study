@@ -1,0 +1,16 @@
+JUnit version 4.12
+.[25/10/24 09:20:02:002 GMT] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.registry.address to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+.[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.application.name to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.application.name to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+...........[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.monitor.address to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.monitor.protocol to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+.......[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.registry.address to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+[25/10/24 09:20:02:002 GMT] main  INFO config.AbstractConfig:  [DUBBO] Use System Property dubbo.registry.address to config dubbo, dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+..................
+Time: 0.189
+
+OK (38 tests)
+
+[25/10/24 09:20:02:002 GMT] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5
+[25/10/24 09:20:02:002 GMT] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: 2.7.0-SNAPSHOT, current host: 172.17.0.5

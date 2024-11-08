@@ -1,0 +1,34 @@
+JUnit version 4.10
+.Oct 21, 2024 9:12:46 AM org.glassfish.grizzly.http.server.NetworkListener start$$PHOSPHORTAGGED
+INFO: Started listener bound to [0.0.0.0:8025]
+Oct 21, 2024 9:12:46 AM org.glassfish.grizzly.http.server.HttpServer start$$PHOSPHORTAGGED
+INFO: [HttpServer] Started.
+Oct 21, 2024 9:12:47 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket Registered apps: URLs all start with ws://localhost:8025
+Oct 21, 2024 9:12:47 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket server started.
+FlakyTracker Log: testTyrusBroadcaster may be flaky: FlakyTaintLabel{type=RESOURCE, cause='java/lang/Runtime.availableProcessors', file='org/glassfish/grizzly/nio/transport/TCPNIOTransport', line=197, label=4}
+FlakyTracker Log: testTyrusBroadcaster may be flaky: FlakyTaintLabel{type=NETWORK, cause='java/nio/channels/SocketChannel.connect', file='org/glassfish/grizzly/nio/transport/TCPNIOConnectorHandler', line=137, label=10}
+Oct 21, 2024 9:12:49 AM org.glassfish.grizzly.http.server.NetworkListener shutdownNow$$PHOSPHORTAGGED
+INFO: Stopped listener bound to [0.0.0.0:8025]
+Oct 21, 2024 9:12:49 AM org.glassfish.tyrus.server.Server stop$$PHOSPHORTAGGED
+INFO: Websocket Server stopped.
+.Oct 21, 2024 9:12:49 AM org.glassfish.grizzly.http.server.NetworkListener start$$PHOSPHORTAGGED
+INFO: Started listener bound to [0.0.0.0:8025]
+Oct 21, 2024 9:12:49 AM org.glassfish.grizzly.http.server.HttpServer start$$PHOSPHORTAGGED
+INFO: [HttpServer-1] Started.
+Oct 21, 2024 9:12:49 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket Registered apps: URLs all start with ws://localhost:8025
+Oct 21, 2024 9:12:49 AM org.glassfish.tyrus.server.Server start$$PHOSPHORTAGGED
+INFO: WebSocket server started.
+FlakyTracker Log: testBroadcaster may be flaky: FlakyTaintLabel{type=RESOURCE, cause='java/lang/Runtime.availableProcessors', file='org/glassfish/grizzly/nio/transport/TCPNIOTransport', line=197, label=4}
+FlakyTracker Log: testBroadcaster may be flaky: FlakyTaintLabel{type=NETWORK, cause='java/nio/channels/SocketChannel.connect', file='org/glassfish/grizzly/nio/transport/TCPNIOConnectorHandler', line=137, label=10}
+Oct 21, 2024 9:12:49 AM org.glassfish.grizzly.http.server.NetworkListener shutdownNow$$PHOSPHORTAGGED
+INFO: Stopped listener bound to [0.0.0.0:8025]
+Oct 21, 2024 9:12:49 AM org.glassfish.tyrus.server.Server stop$$PHOSPHORTAGGED
+INFO: Websocket Server stopped.
+
+Time: 5.654
+
+OK (2 tests)
+

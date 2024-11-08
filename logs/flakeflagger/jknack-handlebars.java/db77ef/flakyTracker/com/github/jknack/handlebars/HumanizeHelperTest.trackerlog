@@ -1,0 +1,20 @@
+JUnit version 4.10
+........FlakyTracker Log: naturalDay may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: naturalDay may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+.FlakyTracker Log: naturalTime may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=148, label=1}
+FlakyTracker Log: naturalTime may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: naturalTime may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+FlakyTracker Log: naturalTime may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1241, label=12}
+..FlakyTracker Log: slugify may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: slugify may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+..FlakyTracker Log: transliterate may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: transliterate may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+..FlakyTracker Log: wordWrap may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: wordWrap may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+.FlakyTracker Log: ordinal may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Calendar.getInstance', file='com/github/jknack/handlebars/HumanizeHelperTest', line=122, label=0}
+FlakyTracker Log: ordinal may be flaky: FlakyTaintLabel{type=TIME, cause='java/util/Date.<init>', file='humanize/Humanize', line=1158, label=11}
+
+Time: 3.409
+
+OK (16 tests)
+

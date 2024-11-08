@@ -136,12 +136,13 @@ def build_project(target_dir):
     start_time = time.time()
     print('Building client ... ' + str(datetime.datetime.now()))
     os.environ['JAVA_HOME'] = JAVA_HOME
-    subprocess.run(
+    result = subprocess.run(
         MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true -am  ',
         shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     end_time = time.time()
     insertTimeInLog(start_time, end_time, build_log)
     os.chdir(cwd)
+    return result.returncode
 
 
 def run_randoop(project, target_dir):
@@ -235,9 +236,9 @@ def run_randoop(project, target_dir):
 def run_flaky_tracker_on_one_test(Test):
     target_dir = PROJECTS_DIRECTORY + '/' + Test['Project_Name']
     os.chdir(target_dir)
-    if Test['Module'] and Test['Module'] != '.':
-        if os.path.exists( target_dir + '/' + Test['Module']):
-            target_dir = target_dir + '/' + Test['Module']
+    # if Test['Module'] and Test['Module'] != '.':
+    #     if os.path.exists( target_dir + '/' + Test['Module']):
+    #         target_dir = target_dir + '/' + Test['Module']
     commit = Test['Project_Hash']
     subprocess.run('git checkout ' + commit, shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
     if os.path.isdir('/tmp/jars'):
@@ -316,10 +317,18 @@ def run_flaky_tracker_on_one_test(Test):
     #     shutil.rmtree(generated_dir+'/flakyTracker/')
     #find all test-classes
 
-    target_testclass = ".".join(Test['testname'].split('.')[:-1])
-    class_name = Test['testname'].split('.')[-2]
+
+
+    # target_testclass = ".".join(Test['testname'].split('.')[:-1])    
+    
+    
+    target_testclass = Test['testname'].split('#')[-2]  # flakeflagger
+    
+    print(target_testclass)
+    class_name = Test['testname'].split('#')[-2].split('.')[-1]
+    print(Test['testname'])
     # print(target_testclass)
-    for dir, subpath, files in os.walk(target_dir+'/target/test-classes'):
+    for dir, subpath, files in os.walk(target_dir):
         for file in files:
             if class_name in file:   #change here to '.class' to make it run all classes
                 flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
@@ -328,7 +337,7 @@ def run_flaky_tracker_on_one_test(Test):
                 flaky_tracker_dir = '/'.join(flaky_tracker_log.split('/')[0:len(flaky_tracker_log.split('/'))-1])
                 # os.path.dirname(flaky_tracker_log)
                 # print(flaky_tracker_log)
-                # print(flaky_tracker_cmd)
+                print(flaky_tracker_cmd)
                 if not os.path.exists(flaky_tracker_dir):
                     os.makedirs(flaky_tracker_dir)
                 try:
@@ -454,7 +463,7 @@ def run_flaky_tracker(project, target_dir, module = None):
                     os.makedirs(flaky_tracker_dir)
                 try:
                     subprocess.run(flaky_tracker_cmd, shell=True, stdout=open(flaky_tracker_log, 'w'),
-                                   stderr=subprocess.STDOUT, timeout=600)
+                                   stderr=open(flaky_tracker_log, 'w'), timeout=600)
                 except subprocess.TimeoutExpired as e:
                     with open(flaky_tracker_log, "a+") as f:
                         f.write(str(e))
@@ -933,6 +942,18 @@ def find_verified_flaky(project_name):
                     for test, count in verified_flaky_tests.items():
                         verified_tests_set.add(test)
 
+
+def check_if_failed(target_dir):
+    for dir, subpath, files in os.walk(target_dir):
+        for file in files:
+            if file == 'build.log':
+                with open(dir + '/' + file, 'r') as f:
+                    lines = f.readlines()
+                    for line in lines:
+                        if ('BUILD FAILURE' in line) or ('[ERROR]' in line):
+                            return -1
+                        if 'BUILD SUCCESS' in line:
+                            return 1
     
 analyzed_projects = set()
 
@@ -1004,6 +1025,7 @@ def test_idoft():
     print('UD true positive:?', len(idoft_ud_tests.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(idoft_ud_tests.intersection(tracker_flaky_tests_except_randoop)))
     
 flakeflagger_project_to_sha = {}
+
 def read_flakeflagger():
     path = './Project_Info.csv'
     df = pd.read_csv(path)
@@ -1012,6 +1034,8 @@ def read_flakeflagger():
     for index, project in need_process_projects.iterrows():
         flakeflagger_project_to_sha[project['Project_Name']] = project['Project_Hash']
     return need_process_projects
+
+
 def flakeflagger_flaky_tests():
     path = './test_results.csv'
     df = pd.read_csv(path)
@@ -1021,8 +1045,14 @@ def flakeflagger_flaky_tests():
     # print(flaky_tests)
     return flaky_tests
 
+
+
+
+ff_build_fail_projects = set()
+ff_flaky_tests = set()
+ff_tracker_flaky_tests = set()
 def test_flakeflagger():
-    flakeflagger_projects  = read_idoft()
+    flakeflagger_projects  = read_flakeflagger()
     flakeflagger_tests = flakeflagger_flaky_tests()
     for index, project in flakeflagger_projects.iterrows():
         project_name = project['Project_Name']
@@ -1032,15 +1062,21 @@ def test_flakeflagger():
         if not os.path.exists(target_dir):
             download_project(project, target_dir)
             # if not os.path.exists(target_dir + '/build.log'):
-            build_project(target_dir)
+            code = build_project(target_dir)
+            if code != 0:
+                ff_build_fail_projects.add(project_name)
+        if check_if_failed(target_dir) == -1:
+            ff_build_fail_projects.add(project_name)
 
     for index, Test in flakeflagger_tests.iterrows():
-        # if Test['Project_Name'] == 'aletheia':
-        #     continue
+        if Test['Project_Name'] in ff_build_fail_projects:
+            print(Test['Project_Name']+ " fail to build.")
+            continue
+        ff_flaky_tests.add(Test['Project_Name']+'#'+Test['testname'])
         # idoft_flaky_tests.add(Test["Project_Name"]+'#'+Test["testname"])
-        if Test['Category'] == 'UD':
-            idoft_ud_tests.add(Test["Project_Name"]+'#'+Test["testname"])
-        target_testclass = ".".join(Test['testname'].split('.')[:-1])
+        # if Test['Category'] == 'UD':
+        #     idoft_ud_tests.add(Test["Project_Name"]+'#'+Test["testname"])
+        target_testclass = Test['testname'].split('#')[-2]
         # print(Test['testname'])
         generated_dir = FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
         flaky_tracker_log = generated_dir + '/flakyTracker/' + target_testclass.replace('.','/')+'.trackerlog'
@@ -1050,6 +1086,11 @@ def test_flakeflagger():
         # if Test['Project_Name'] + '#' + target_testclass not in idoft_tested_class:
         #     print(Test['testname'].split('.')[-2])
         run_flaky_tracker_on_one_test(Test)
+    print(len(ff_build_fail_projects), ff_build_fail_projects)
+    parseTrackerLog(FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY, "flakeflagger_tracker_summary.csv")
+    print('true positive:',len(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)))
+    print('false positive:?', len(tracker_flaky_tests_except_randoop-idoft_flaky_tests),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-ff_flaky_tests))
+   
 
 if __name__ == '__main__':
     os.environ['JAVA_HOME'] = JAVA_HOME
@@ -1065,7 +1106,9 @@ if __name__ == '__main__':
     # # os.system('mvn -v')
     subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
                    stderr=subprocess.STDOUT, timeout=90)
-    test_idoft()
+    # test_idoft()
+    test_flakeflagger()
+    
     # test_project = 'yankeguo-xlog-java'
     # if not os.path.exists(PROJECTS_DIRECTORY):
     #     os.mkdir(PROJECTS_DIRECTORY)

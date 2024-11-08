@@ -1,0 +1,92 @@
+JUnit version 4.10
+.E
+Time: 1.52
+There was 1 failure:
+1) testCountQuery(org.apache.gora.ignite.mapreduce.IgniteStoreMapReduceTest)
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    org/apache/ignite/internal/util/GridUnsafe.copyMemory$$PHOSPHORTAGGED(Ljava/lang/Object;Ledu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/Object;Ledu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;JLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;)V @348: invokestatic
+  Reason:
+    Type 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' (current frame, stack[14]) is not assignable to 'edu/columbia/cs/psl/phosphor/runtime/Taint'
+  Current Frame:
+    bci: @348
+    flags: { }
+    locals: { 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedByteWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedIntWithObjTag', 'edu/columbia/cs/psl/phosphor/struct/TaintedLongWithObjTag' }
+    stack: { 'sun/misc/Unsafe', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/runtime/Taint', long, long_2nd, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack' }
+  Bytecode:
+    0x0000000: 190d c000 333a 0e19 0eb6 0039 013a 0fbb
+    0x0000010: 0160 59b7 02cb 3a10 bb01 9959 b702 203a
+    0x0000020: 11bb 0121 59b7 0122 3a12 160a 190c b202
+    0x0000030: cdb2 02d0 3a13 5d58 1913 b800 6b3a 1394
+    0x0000040: 1913 5919 0e5f 190f 0410 06b6 004e 3a0f
+    0x0000050: 579d 00f0 2a2b 5919 0e5f 190f 0510 06b6
+    0x0000060: 004e 3a0f 57c6 00dc 1905 1906 5919 0e5f
+    0x0000070: 190f 0610 06b6 004e 3a0f 57c6 00c6 0319
+    0x0000080: 0eb6 0065 190e b600 65b8 006b 3a16 3615
+    0x0000090: 1515 1916 5f85 5d58 160a 190c 3a13 5d58
+    0x00000a0: 1913 b800 6b3a 1394 1913 5919 0e5f 190f
+    0x00000b0: 0710 06b6 004e 3a0f 5719 1619 0eb6 0065
+    0x00000c0: b800 6b3a 169c 0071 b201 44b2 0147 1905
+    0x00000d0: 1906 1607 1909 1515 1916 5f85 5d58 3a13
+    0x00000e0: 5d58 1913 b800 6b3a 1361 1913 b201 44b2
+    0x00000f0: 0147 2a2b 2019 0415 1519 165f 855d 583a
+    0x0000100: 135d 5819 13b8 006b 3a13 6119 1319 0e19
+    0x0000110: 105f 57b8 015e 59b4 0163 5fb4 0164 190e
+    0x0000120: 57b8 016b 1916 190e b600 65b8 006b 3a16
+    0x0000130: 8415 01a7 ff5d 190e 190f 07b6 02d3 a700
+    0x0000140: 21b2 0144 b201 472a 2b20 1904 1905 1906
+    0x0000150: 1607 1909 160a 190c 190e 5f57 b802 e419
+    0x0000160: 0e19 0f05 b602 d319 0e19 0f06 b602 d319
+    0x0000170: 0e19 0f04 b602 d319 0e19 0fb6 006f 190e
+    0x0000180: 190f b600 6f19 0eb6 0072 b119 0e19 0fb6
+    0x0000190: 006f 190e b600 72bf                    
+  Exception Handler Table:
+    bci [15, 395] => handler: 395
+  Stackmap Table:
+    full_frame(@144,{Object[#4],Object[#103],Long,Object[#103],Object[#4],Object[#103],Long,Object[#103],Long,Object[#103],Object[#53],Object[#51],Object[#116],Object[#352],Object[#409],Object[#289],Top,Top,Integer,Object[#103]},{})
+    full_frame(@310,{Object[#4],Object[#103],Long,Object[#103],Object[#4],Object[#103],Long,Object[#103],Long,Object[#103],Object[#53],Object[#51],Object[#116],Object[#352],Object[#409],Object[#289]},{})
+    same_frame(@321)
+    same_frame(@351)
+    full_frame(@395,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#51],Object[#116]},{Object[#148]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.apache.ignite.internal.util.IgniteUtils.<clinit>(IgniteUtils.java:888)
+	at org.apache.ignite.internal.IgnitionEx.start$$PHOSPHORTAGGED(IgnitionEx.java:558)
+	at org.apache.ignite.internal.IgnitionEx.start$$PHOSPHORTAGGED(IgnitionEx.java:541)
+	at org.apache.ignite.Ignition.start$$PHOSPHORTAGGED(Ignition.java:310)
+	at org.apache.gora.ignite.GoraIgniteTestDriver.setUpClass$$PHOSPHORTAGGED(GoraIgniteTestDriver.java:40)
+	at org.apache.gora.ignite.mapreduce.IgniteStoreMapReduceTest.setUp$$PHOSPHORTAGGED(IgniteStoreMapReduceTest.java:45)
+	at junit.framework.TestCase.runBare$$PHOSPHORTAGGED(TestCase.java:132)
+	at junit.framework.TestResult$1.protect$$PHOSPHORTAGGED(TestResult.java:110)
+	at junit.framework.TestResult.runProtected$$PHOSPHORTAGGED(TestResult.java:128)
+	at junit.framework.TestResult.run$$PHOSPHORTAGGED(TestResult.java:113)
+	at junit.framework.TestCase.run$$PHOSPHORTAGGED(TestCase.java:124)
+	at junit.framework.TestSuite.runTest$$PHOSPHORTAGGED(TestSuite.java:243)
+	at junit.framework.TestSuite.run$$PHOSPHORTAGGED(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run$$PHOSPHORTAGGED(JUnit38ClassRunner.java:83)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:128)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

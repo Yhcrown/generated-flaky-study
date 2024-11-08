@@ -1,0 +1,71 @@
+Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+Maven home: /workspace/apache-maven-3.8.8
+Java version: 1.8.0_422, vendor: Temurin, runtime: /shared-data/jdk8u422-b05/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-40-generic", arch: "amd64", family: "unix"
+       language  ... num_randomOrder_runs
+499        Java  ...                 65.0
+5664       Java  ...                 63.0
+5665       Java  ...                 63.0
+5667       Java  ...                 63.0
+5669       Java  ...                 63.0
+...         ...  ...                  ...
+708028     Java  ...                 61.0
+713108     Java  ...                  1.0
+731949     Java  ...                 73.0
+733065     Java  ...                 71.0
+733106     Java  ...                 66.0
+
+[698 rows x 13 columns]
+                                  Project_Hash  ...                Project_Name
+75    6b744cdbb2206feca62848df92b3bf542f890be5  ...                     mercury
+77    b11f757a48600e53aaf3fcb7a3ba1ece6c463cb4  ...                    Activiti
+78    b11f757a48600e53aaf3fcb7a3ba1ece6c463cb4  ...                    Activiti
+79    b11f757a48600e53aaf3fcb7a3ba1ece6c463cb4  ...                    Activiti
+173   f6215930b9e21a5252c95296d9924b3c4524d9f6  ...  alibabacloud-tairjedis-sdk
+...                                        ...  ...                         ...
+6627  8277e11fc069d8e24df0d233ef2577cc75659b75  ...                     riptide
+6628  8277e11fc069d8e24df0d233ef2577cc75659b75  ...                     riptide
+6632  8277e11fc069d8e24df0d233ef2577cc75659b75  ...                     riptide
+6633  8277e11fc069d8e24df0d233ef2577cc75659b75  ...                     riptide
+6642  8277e11fc069d8e24df0d233ef2577cc75659b75  ...                     riptide
+
+[858 rows x 4 columns]
+Building client ... 2024-10-20 06:40:56.331587
+Building client ... 2024-10-20 06:45:42.217489
+Building client ... 2024-10-20 06:45:46.049322
+Building client ... 2024-10-20 06:46:09.190713
+Building client ... 2024-10-20 06:46:48.374436
+Building client ... 2024-10-20 06:47:42.755359
+Building client ... 2024-10-20 06:51:37.947908
+Building client ... 2024-10-20 07:02:50.672518
+Building client ... 2024-10-20 07:04:29.488225
+Building client ... 2024-10-20 07:08:14.265412
+Building client ... 2024-10-20 07:13:02.645118
+Building client ... 2024-10-20 07:18:12.577623
+Building client ... 2024-10-20 07:22:24.954172
+Building client ... 2024-10-20 07:22:45.948500
+Building client ... 2024-10-20 07:23:29.450488
+Building client ... 2024-10-20 07:24:01.427732
+Building client ... 2024-10-20 07:28:05.183432
+Building client ... 2024-10-20 07:28:31.049421
+Building client ... 2024-10-20 07:28:59.964084
+Building client ... 2024-10-20 07:30:14.288615
+Building client ... 2024-10-20 07:30:35.466053
+Building client ... 2024-10-20 07:30:51.119495
+Building client ... 2024-10-20 07:31:40.647773
+Building client ... 2024-10-20 07:32:38.760174
+Building client ... 2024-10-20 07:33:50.282026
+Building client ... 2024-10-20 07:34:22.140411
+Building client ... 2024-10-20 07:34:41.059623
+Building client ... 2024-10-20 07:35:00.833314
+Building client ... 2024-10-20 07:35:16.162340
+Building client ... 2024-10-20 07:35:39.421782
+Building client ... 2024-10-20 07:36:44.706823
+Building client ... 2024-10-20 07:36:52.962745
+Building client ... 2024-10-20 07:37:04.077645
+Building client ... 2024-10-20 07:38:32.673270
+Building client ... 2024-10-20 07:38:42.907195
+Building client ... 2024-10-20 07:38:56.154786
+Building client ... 2024-10-20 07:41:34.879769
+Building client ... 2024-10-20 07:43:11.525191

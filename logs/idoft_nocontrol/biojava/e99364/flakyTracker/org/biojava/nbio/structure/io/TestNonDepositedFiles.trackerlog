@@ -1,0 +1,15 @@
+JUnit version 4.13.1
+.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+08:11:10 [main] WARN  org.biojava.nbio.structure.align.util.UserConfiguration - Could not read dir from system property PDB_DIR or environment variable PDB_DIR, using system's temp directory /tmp
+.08:11:11 [main] WARN  org.biojava.nbio.structure.io.mmcif.SimpleMMcifConsumer - No _struct_asym category in file, no SEQRES groups will be added.
+....08:11:13 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id E (author id E) has entity type 'branched', considering it non-polymeric
+08:11:13 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id F (author id F) has entity type 'branched', considering it non-polymeric
+08:11:13 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id G (author id G) has entity type 'branched', considering it non-polymeric
+08:11:13 [main] WARN  org.biojava.nbio.structure.Model - Chain with asym id H (author id H) has entity type 'branched', considering it non-polymeric
+....08:11:14 [main] WARN  org.biojava.nbio.structure.io.mmcif.SimpleMMcifConsumer - The list of asym ids (from _struct_asym) and the list of author ids (from _entity_poly) for entity 1 have different lengths! Can't provide a mapping from asym ids to author chain ids
+...
+Time: 7.014
+
+OK (13 tests)
+

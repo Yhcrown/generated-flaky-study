@@ -1,0 +1,292 @@
+JUnit version 4.11
+.Setting dimension of target config to: 3
+Writing term vectors to tmp/testtermvectors.bin
+About to write 2 vectors of dimension 3 to Lucene format file: tmp/testtermvectors.bin ... finished writing vectors.
+Indexing to directory 'positional_index'...
+adding src/test/resources/testdata/John/Chapter_6
+adding src/test/resources/testdata/John/Chapter_21
+adding src/test/resources/testdata/John/Chapter_13
+adding src/test/resources/testdata/John/Chapter_7
+adding src/test/resources/testdata/John/Chapter_19
+adding src/test/resources/testdata/John/Chapter_12
+adding src/test/resources/testdata/John/Chapter_1
+adding src/test/resources/testdata/John/Chapter_8
+adding src/test/resources/testdata/John/Chapter_16
+adding src/test/resources/testdata/John/Chapter_18
+adding src/test/resources/testdata/John/Chapter_11
+adding src/test/resources/testdata/John/Chapter_9
+adding src/test/resources/testdata/John/Chapter_5
+adding src/test/resources/testdata/John/Chapter_2
+adding src/test/resources/testdata/John/Chapter_20
+adding src/test/resources/testdata/John/Chapter_10
+adding src/test/resources/testdata/John/Chapter_17
+adding src/test/resources/testdata/John/Chapter_14
+adding src/test/resources/testdata/John/Chapter_4
+adding src/test/resources/testdata/John/Chapter_3
+adding src/test/resources/testdata/John/Chapter_15
+2856 total milliseconds
+Indexing to directory 'predication_index'...
+
+Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: REAL, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+Normalizing and writing elemental vectors to elementalvectors
+About to write 1368 vectors of dimension 200 to Lucene format file: elementalvectors.bin ... finished writing vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: permtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: elementalvectors.bin
+Opening search vector store from file: permtermvectors.bin
+Searching term vectors, searchtype PERMUTATION
+Found vector for 'simon'
+.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: COMPLEX, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+Normalizing and writing elemental vectors to elementalvectors
+About to write 1368 vectors of dimension 200 to Lucene format file: elementalvectors.bin ... finished writing vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: permtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: elementalvectors.bin
+Setting vectortype of target config to: COMPLEX
+Opening search vector store from file: permtermvectors.bin
+Searching term vectors, searchtype PERMUTATION
+Found vector for 'simon'
+E.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: COMPLEX, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: termtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: termtermvectors.bin
+Setting vectortype of target config to: COMPLEX
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Seedlength: 4096, Dimension: 8192, Vector type: BINARY, Minimum frequency: 0, Maximum frequency: 2147483647, Number non-alphabet characters: 2147483647, Contents fields are: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating term vectors as superpositions of elemental document vectors ... 
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating semantic term vectors ...
+There are 1368 terms (and 21 docs).
+Training term vectors for field contents
+Processed 0 terms ... Processed 1000 terms ... 
+Created 1368 term vectors.
+Initializing new document vector store ... 
+Building document vectors ... Processed 0 terms ... Processed 1000 terms ... 
+Normalizing doc vectors ...
+Writing term vectors to termvectors
+About to write 1368 vectors of dimension 8192 to Lucene format file: termvectors.bin ... finished writing vectors.
+Writing doc vectors to docvectors
+About to write 21 vectors of dimension 8192 to Lucene format file: docvectors.bin ... finished writing vectors.
+Opening query vector store from file: termvectors
+Setting dimension of target config to: 8192
+Setting vectortype of target config to: BINARY
+Searching term vectors, searchtype SUM
+Found vector for 'peter'
+.Seedlength: 10, Dimension: 200, Vector type: REAL, Minimum frequency: 0, Maximum frequency: 2147483647, Number non-alphabet characters: 2147483647, Contents fields are: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating term vectors as superpositions of elemental document vectors ... 
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating semantic term vectors ...
+There are 1368 terms (and 21 docs).
+Training term vectors for field contents
+Processed 0 terms ... Processed 1000 terms ... 
+Created 1368 term vectors.
+Initializing new document vector store ... 
+Building document vectors ... Processed 0 terms ... Processed 1000 terms ... 
+Normalizing doc vectors ...
+Writing term vectors to termvectors
+About to write 1368 vectors of dimension 200 to Lucene format file: termvectors.bin ... finished writing vectors.
+Writing doc vectors to docvectors
+About to write 21 vectors of dimension 200 to Lucene format file: docvectors.bin ... finished writing vectors.
+Opening query vector store from file: termvectors.bin
+Opening search vector store from file: docvectors.bin
+Searching term vectors, searchtype SUM
+Found vector for 'peter'
+.Building positional index, Lucene index: positional_index, Seedlength: 4096, Vector length: 8192, Vector type: BINARY, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 8192 to Lucene format file: termtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: termtermvectors.bin
+Setting dimension of target config to: 8192
+Setting vectortype of target config to: BINARY
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: REAL, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: termtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: termtermvectors.bin
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Seedlength: 10, Dimension: 200, Vector type: REAL, Minimum frequency: 0, Maximum frequency: 2147483647, Number non-alphabet characters: 2147483647, Contents fields are: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating term vectors as superpositions of elemental document vectors ... 
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating semantic term vectors ...
+There are 1368 terms (and 21 docs).
+Training term vectors for field contents
+Processed 0 terms ... Processed 1000 terms ... 
+Created 1368 term vectors.
+Initializing new document vector store ... 
+Building document vectors ... Processed 0 terms ... Processed 1000 terms ... 
+Normalizing doc vectors ...
+Writing term vectors to termvectors
+About to write 1368 vectors of dimension 200 to Lucene format file: termvectors.bin ... finished writing vectors.
+Writing doc vectors to docvectors
+About to write 21 vectors of dimension 200 to Lucene format file: docvectors.bin ... finished writing vectors.
+Opening query vector store from file: termvectors.bin
+Searching term vectors, searchtype SUM
+Found vector for 'peter'
+.Building positional index, Lucene index: positional_index, Seedlength: 1024, Vector length: 2048, Vector type: BINARY, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 2048 to Lucene format file: drxntermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: drxntermvectors.bin
+Setting dimension of target config to: 2048
+Setting vectortype of target config to: BINARY
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Seedlength: 10, Dimension: 200, Vector type: COMPLEX, Minimum frequency: 0, Maximum frequency: 2147483647, Number non-alphabet characters: 2147483647, Contents fields are: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating term vectors as superpositions of elemental document vectors ... 
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Creating semantic term vectors ...
+There are 1368 terms (and 21 docs).
+Training term vectors for field contents
+Processed 0 terms ... Processed 1000 terms ... 
+Created 1368 term vectors.
+Initializing new document vector store ... 
+Building document vectors ... Processed 0 terms ... Processed 1000 terms ... 
+Normalizing doc vectors ...
+Writing term vectors to termvectors
+About to write 1368 vectors of dimension 200 to Lucene format file: termvectors.bin ... finished writing vectors.
+Writing doc vectors to docvectors
+About to write 21 vectors of dimension 200 to Lucene format file: docvectors.bin ... finished writing vectors.
+Opening query vector store from file: termvectors
+Setting vectortype of target config to: COMPLEX
+Searching term vectors, searchtype SUM
+Found vector for 'peter'
+.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: REAL, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: drxntermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: drxntermvectors.bin
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Building positional index, Lucene index: positional_index, Seedlength: 512, Vector length: 1024, Vector type: BINARY, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+Normalizing and writing elemental vectors to elementalvectors
+About to write 1368 vectors of dimension 1024 to Lucene format file: elementalvectors.bin ... finished writing vectors.
+About to write 1368 vectors of dimension 1024 to Lucene format file: permtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: elementalvectors.bin
+Setting dimension of target config to: 1024
+Setting vectortype of target config to: BINARY
+Opening search vector store from file: permtermvectors.bin
+Searching term vectors, searchtype PERMUTATION
+Found vector for 'simon'
+.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: COMPLEX, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: drxntermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: drxntermvectors.bin
+Setting vectortype of target config to: COMPLEX
+Searching term vectors, searchtype SUM
+Found vector for 'simon'
+.Building positional index, Lucene index: positional_index, Seedlength: 10, Vector length: 200, Vector type: REAL, Minimum term frequency: 0, Maximum term frequency: 2147483647, Number non-alphabet characters: 2147483647, Window radius: 5, Fields to index: [contents]
+Initialized LuceneUtils from Lucene index in directory: positional_index
+There are now elemental term vectors for 1368 terms (and 21 docs).
+Processed 0 documents ... Created 1368 term vectors ...
+Normalizing term vectors.
+About to write 1368 vectors of dimension 200 to Lucene format file: termtermvectors.bin ... finished writing vectors.
+Initialized LuceneUtils from Lucene index in directory: positional_index
+Writing vectors incrementally to file docvectors.bin ... Finished writing vectors.
+Opening query vector store from file: termtermvectors.bin
+Opening search vector store from file: docvectors.bin
+Searching term vectors, searchtype SUM
+Found vector for 'bread'
+
+Time: 13,057.499
+There was 1 failure:
+1) testBuildAndSearchComplexPermutationIndex(pitt.search.semanticvectors.integrationtests.RegressionTests)
+java.lang.AssertionError
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Error.<init>(Error.java:58)
+	at java.lang.AssertionError.<init>(AssertionError.java:49)
+	at org.junit.Assert.fail$$PHOSPHORTAGGED(Assert.java:86)
+	at org.junit.Assert.assertTrue$$PHOSPHORTAGGED(Assert.java:41)
+	at org.junit.Assert.assertTrue$$PHOSPHORTAGGED(Assert.java:52)
+	at pitt.search.semanticvectors.integrationtests.RegressionTests.testBuildAndSearchComplexPermutationIndex$$PHOSPHORTAGGED(RegressionTests.java:262)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall$$PHOSPHORTAGGED(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run$$PHOSPHORTAGGED(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively$$PHOSPHORTAGGED(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate$$PHOSPHORTAGGED(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate$$PHOSPHORTAGGED(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf$$PHOSPHORTAGGED(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild$$PHOSPHORTAGGED(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:127)
+	at org.junit.runners.Suite.runChild$$PHOSPHORTAGGED(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run$$PHOSPHORTAGGED(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule$$PHOSPHORTAGGED(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren$$PHOSPHORTAGGED(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000$$PHOSPHORTAGGED(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate$$PHOSPHORTAGGED(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run$$PHOSPHORTAGGED(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:138)
+	at org.junit.runner.JUnitCore.run$$PHOSPHORTAGGED(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:96)
+	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:47)
+	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:40)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java)
+
+FAILURES!!!
+Tests run: 14,  Failures: 1
+

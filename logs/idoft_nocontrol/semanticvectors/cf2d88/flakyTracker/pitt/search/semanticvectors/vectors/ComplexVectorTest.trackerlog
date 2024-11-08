@@ -1,0 +1,13 @@
+JUnit version 4.11
+.........0 4096 12288 ....Oct 25, 2024 8:58:20 AM pitt.search.semanticvectors.vectors.ComplexVector setDominantMode$$PHOSPHORTAGGED
+INFO: Globally setting complex DOMINANT_MODE to: 'CARTESIAN'
+ComplexVector.  Cartesian. Coordinates are:
+0.60000306 0.7999977 0.80022776 0.5996962 0.80022776 0.5996962 6.123234E-17 1.0 
+
+Oct 25, 2024 8:58:20 AM pitt.search.semanticvectors.vectors.ComplexVector setDominantMode$$PHOSPHORTAGGED
+INFO: Globally setting complex DOMINANT_MODE to: 'POLAR_DENSE'
+..
+Time: 0.299
+
+OK (15 tests)
+

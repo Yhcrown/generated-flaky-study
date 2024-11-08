@@ -1,0 +1,32 @@
+JUnit version 3.8.1
+......................................................PATH=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+BROWSER=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh
+JAVA_HOME=/shared-data/jdk8u422-b05/
+REMOTE_CONTAINERS_SOCKETS=["/tmp/vscode-ssh-auth-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock","/root/.gnupg/S.gpg-agent"]
+TERM=xterm-256color
+LANG=en_US.UTF-8
+VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-55a481e684.sock
+REMOTE_CONTAINERS=true
+VSCODE_GIT_ASKPASS_MAIN=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js
+MAVEN_HOME=/workspace/apache-maven-3.8.8/bin/mvn
+COLORTERM=truecolor
+REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-06aef43e-45be-42fe-bb0d-962cc794b821.sock
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VSCODE_GIT_ASKPASS_NODE=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node
+PWD=/workspace/benchmarks/projects/apache-commons-exec
+TERM_PROGRAM_VERSION=1.93.1
+GIT_ASKPASS=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh
+_=/usr/bin/python3
+SHELL=/bin/bash
+TERM_PROGRAM=vscode
+OLDPWD=/
+SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock
+HOSTNAME=6610172a78db
+HOME=/root
+SHLVL=2
+..........
+Time: 27.347
+
+OK (55 tests)
+

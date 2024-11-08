@@ -1,0 +1,54 @@
+JUnit version 4.13.1
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+.08:19:58 [main] WARN  org.biojava.nbio.structure.align.util.UserConfiguration - Could not read dir from system property PDB_DIR or environment variable PDB_DIR, using system's temp directory /tmp
+....08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 6.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 7.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 8.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 9.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 10.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 11.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 12.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 13.
+08:20:16 [main] WARN  org.biojava.nbio.structure.ecod.EcodInstallation - Unexpected number of fields in line 14.
+..EI.
+Time: 107.662
+There was 1 failure:
+1) testGetStructure(org.biojava.nbio.structure.test.ecod.EcodInstallationTest)
+java.net.UnknownHostException: mmtf.rcsb.org
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.io.IOException.<init>(IOException.java:58)
+	at java.net.UnknownHostException.<init>(UnknownHostException.java:47)
+	at java.net.AbstractPlainSocketImpl.connect$$PHOSPHORTAGGED(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect$$PHOSPHORTAGGED(SocksSocketImpl.java:392)
+	at java.net.Socket.connect$$PHOSPHORTAGGED(Socket.java:607)
+	at sun.security.ssl.SSLSocketImpl.connect$$PHOSPHORTAGGED(SSLSocketImpl.java:293)
+	at sun.net.NetworkClient.doConnect$$PHOSPHORTAGGED(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:560)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New$$PHOSPHORTAGGED(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient$$PHOSPHORTAGGED(AbstractDelegateHttpsURLConnection.java:203)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0$$PHOSPHORTAGGED(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect$$PHOSPHORTAGGED(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect$$PHOSPHORTAGGED(AbstractDelegateHttpsURLConnection.java:189)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect$$PHOSPHORTAGGED(HttpsURLConnectionImpl.java:167)
+	at org.biojava.nbio.core.util.FileDownloadUtils.downloadFile$$PHOSPHORTAGGED(FileDownloadUtils.java:126)
+	at org.biojava.nbio.structure.io.LocalPDBDirectory.downloadStructure$$PHOSPHORTAGGED(LocalPDBDirectory.java:550)
+	at org.biojava.nbio.structure.io.LocalPDBDirectory.downloadStructure$$PHOSPHORTAGGED(LocalPDBDirectory.java:498)
+	at org.biojava.nbio.structure.io.LocalPDBDirectory.getInputStream$$PHOSPHORTAGGED(LocalPDBDirectory.java:353)
+	at org.biojava.nbio.structure.io.LocalPDBDirectory.getStructureById$$PHOSPHORTAGGED(LocalPDBDirectory.java:327)
+	at org.biojava.nbio.structure.align.util.AtomCache.loadStructureFromMmtfByPdbId$$PHOSPHORTAGGED(AtomCache.java:872)
+	at org.biojava.nbio.structure.align.util.AtomCache.getStructureForPdbId$$PHOSPHORTAGGED(AtomCache.java:849)
+	at org.biojava.nbio.structure.ecod.EcodDomain.loadStructure$$PHOSPHORTAGGED(EcodDomain.java:459)
+	at org.biojava.nbio.structure.align.client.StructureName.loadStructure$$PHOSPHORTAGGED(StructureName.java:509)
+	at org.biojava.nbio.structure.align.util.AtomCache.getStructure$$PHOSPHORTAGGED(AtomCache.java:503)
+	at org.biojava.nbio.structure.align.util.AtomCache.getStructure$$PHOSPHORTAGGED(AtomCache.java:487)
+	at org.biojava.nbio.structure.test.ecod.EcodInstallationTest.testGetStructure$$PHOSPHORTAGGED(EcodInstallationTest.java:342)
+
+FAILURES!!!
+Tests run: 8,  Failures: 1
+

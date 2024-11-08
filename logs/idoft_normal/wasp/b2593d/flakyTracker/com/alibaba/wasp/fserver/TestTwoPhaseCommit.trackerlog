@@ -1,0 +1,300 @@
+JUnit version 4.10
+24/10/25 21:10:38 INFO wasp.WaspTestingUtility: Starting up minicluster with 1 master(s) and 3 fserver(s) 
+Starting DataNode 0 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data1,/workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data2
+Starting DataNode 1 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data3,/workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data4
+Starting DataNode 2 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data5,/workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/dfs/data/data6
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:53192
+24/10/25 21:10:39 INFO persistence.FileTxnSnapLog: Snapshotting: 0x0 to /workspace/benchmarks/projects/wasp/target/test-data/76fad200-60b3-400c-a6a7-d0eec3c4b3f5/dfscluster_dc7e3c6e-2e3c-46ff-b9ba-bf7965c9f6dc/zookeeper_0/version-2/snapshot.0
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53212
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57604
+24/10/25 21:10:39 INFO persistence.FileTxnLog: Creating new log file: log.1
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57620
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53220
+24/10/25 21:10:39 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53230
+24/10/25 21:10:40 ERROR metrics.SchemaMetrics: Inconsistent configuration. Previous configuration for using table name in metrics: true, new configuration: false
+24/10/25 21:10:42 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57622
+24/10/25 21:10:44 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53246
+24/10/25 21:10:44 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57634
+24/10/25 21:10:44 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57642
+24/10/25 21:10:44 INFO wasp.WaspTestingUtility: Connectting Zookeeper by address<localhost>:port<53192>
+24/10/25 21:10:44 DEBUG master.FMaster: Set serverside FConnection retries=100
+24/10/25 21:10:44 DEBUG ipc.WaspRPC: Using com.alibaba.wasp.ipc.ProtobufRpcEngine for com.alibaba.wasp.master.FMaster
+24/10/25 21:10:44 DEBUG zookeeper.ZKUtil: master:36839 opening connection to ZooKeeper with ensemble (localhost:53192)
+24/10/25 21:10:44 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1575504@6610172a78db
+24/10/25 21:10:44 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:57652
+24/10/25 21:10:44 DEBUG zookeeper.ZooKeeperWatcher: master:36839 Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+24/10/25 21:10:44 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 connected
+24/10/25 21:10:47 DEBUG fserver.FServer: Set serverside FConnection retries=100
+24/10/25 21:10:47 DEBUG ipc.WaspRPC: Using com.alibaba.wasp.ipc.ProtobufRpcEngine for com.alibaba.wasp.fserver.FServer
+24/10/25 21:10:47 DEBUG fserver.FServer: Set serverside FConnection retries=100
+24/10/25 21:10:47 DEBUG fserver.FServer: Set serverside FConnection retries=100
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:47 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:10:47 INFO master.ActiveMasterManager: Master=6610172a78db,36839,1729890644293
+24/10/25 21:10:47 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47782
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:37919 opening connection to ZooKeeper with ensemble (localhost:53192)
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34713 opening connection to ZooKeeper with ensemble (localhost:53192)
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34741 opening connection to ZooKeeper with ensemble (localhost:53192)
+24/10/25 21:10:47 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1575504@6610172a78db
+24/10/25 21:10:47 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1575504@6610172a78db
+24/10/25 21:10:47 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1575504@6610172a78db
+24/10/25 21:10:47 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:36518
+24/10/25 21:10:47 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:36510
+24/10/25 21:10:47 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47794
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:34741 Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:37919 Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:34713 Received ZooKeeper Event, type=None, state=SyncConnected, path=null
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34741 Set watcher on existing znode /wasp/master
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:37919 Set watcher on existing znode /wasp/master
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34713 Set watcher on existing znode /wasp/master
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34713 Retrieved 25 byte(s) of data from znode /wasp/master and set watcher; \x0A\x0C6610172a78db\x10\xE7\...
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:34741-0xff92c5845e38000a connected
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34741-0xff92c5845e38000a Retrieved 25 byte(s) of data from znode /wasp/master and set watcher; \x0A\x0C6610172a78db\x10\xE7\...
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:37919 Retrieved 25 byte(s) of data from znode /wasp/master and set watcher; \x0A\x0C6610172a78db\x10\xE7\...
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34713 /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:34741-0xff92c5845e38000a /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:47 DEBUG zookeeper.ZKUtil: fserver:37919 /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:37919-0xff92c5845e38000b connected
+24/10/25 21:10:47 DEBUG zookeeper.ZooKeeperWatcher: fserver:34713-0xff92c5845e38000c connected
+24/10/25 21:10:47 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47806
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 /wasp/balancer does not exist. Watcher is set.
+24/10/25 21:10:48 DEBUG zookeeper.ZooKeeperWatcher: fserver:34713-0xff92c5845e38000c Received ZooKeeper Event, type=NodeCreated, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:48 DEBUG zookeeper.ZooKeeperWatcher: fserver:37919-0xff92c5845e38000b Received ZooKeeper Event, type=NodeCreated, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:48 DEBUG zookeeper.ZooKeeperWatcher: fserver:34741-0xff92c5845e38000a Received ZooKeeper Event, type=NodeCreated, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:48 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeCreated, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:48 INFO master.FMaster: Server active/primary master; 6610172a78db,36839,1729890644293, sessionid=0xff92c5845e380008, cluster-up flag was=false
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:34741-0xff92c5845e38000a Retrieved 30 byte(s) of data from znode /wasp/shutdown and set watcher; \x0A\x1CFri Oct 25 21:10:48 G...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:37919-0xff92c5845e38000b Retrieved 30 byte(s) of data from znode /wasp/shutdown and set watcher; \x0A\x1CFri Oct 25 21:10:48 G...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:34713-0xff92c5845e38000c Retrieved 30 byte(s) of data from znode /wasp/shutdown and set watcher; \x0A\x1CFri Oct 25 21:10:48 G...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Retrieved 30 byte(s) of data from znode /wasp/shutdown and set watcher; \x0A\x1CFri Oct 25 21:10:48 G...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:34741-0xff92c5845e38000a Retrieved 38 byte(s) of data from znode /wasp/waspid; data=\x0A$13577a1b-f6a8-4937-9534-...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:34713-0xff92c5845e38000c Retrieved 38 byte(s) of data from znode /wasp/waspid; data=\x0A$13577a1b-f6a8-4937-9534-...
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: fserver:37919-0xff92c5845e38000b Retrieved 38 byte(s) of data from znode /wasp/waspid; data=\x0A$13577a1b-f6a8-4937-9534-...
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=MASTER_OPEN_ENTITYGROUP-6610172a78db,36839,1729890644293, corePoolSize=5, maxPoolSize=5
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=MASTER_CLOSE_ENTITYGROUP-6610172a78db,36839,1729890644293, corePoolSize=5, maxPoolSize=5
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=MASTER_SERVER_OPERATIONS-6610172a78db,36839,1729890644293, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=MASTER_TABLE_OPERATIONS-6610172a78db,36839,1729890644293, corePoolSize=1, maxPoolSize=1
+24/10/25 21:10:48 INFO fserver.FServer: ClusterId : 13577a1b-f6a8-4937-9534-98aede293bd8
+24/10/25 21:10:48 INFO fserver.FServer: ClusterId : 13577a1b-f6a8-4937-9534-98aede293bd8
+24/10/25 21:10:48 INFO fserver.FServer: ClusterId : 13577a1b-f6a8-4937-9534-98aede293bd8
+24/10/25 21:10:48 INFO fserver.FServer: Attempting connect to Master server at 6610172a78db,36839,1729890644293
+24/10/25 21:10:48 INFO fserver.FServer: Attempting connect to Master server at 6610172a78db,36839,1729890644293
+24/10/25 21:10:48 INFO fserver.FServer: Attempting connect to Master server at 6610172a78db,36839,1729890644293
+24/10/25 21:10:48 DEBUG ipc.WaspRPC: Using com.alibaba.wasp.ipc.ProtobufRpcEngine for com.alibaba.wasp.master.FServerStatusProtocol
+24/10/25 21:10:48 INFO fserver.FServer: Connected to master at 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 INFO fserver.FServer: Connected to master at 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 INFO fserver.FServer: Connected to master at 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 INFO fserver.FServer: Telling master at 6610172a78db,36839,1729890644293 that we are up with port=37919, startcode=1729890647341
+24/10/25 21:10:48 INFO fserver.FServer: Telling master at 6610172a78db,36839,1729890644293 that we are up with port=34741, startcode=1729890647358
+24/10/25 21:10:48 INFO fserver.FServer: Telling master at 6610172a78db,36839,1729890644293 that we are up with port=34713, startcode=1729890647320
+24/10/25 21:10:48 DEBUG ipc.NettyTransceiver: Using Netty bootstrap options: {connectTimeoutMillis=3000, tcpNoDelay=true}
+24/10/25 21:10:48 DEBUG ipc.NettyTransceiver: Connecting to 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 DEBUG master.FMaster: Started service threads
+24/10/25 21:10:48 INFO master.FServerManager: Waiting for fservers count to settle; currently checked in 0, slept for 0 ms, expecting minimum of 3, maximum of 3, timeout of 4500 ms, interval of 1500 ms.
+24/10/25 21:10:48 DEBUG ipc.NettyTransceiver: [id: 0x65330a33] OPEN
+24/10/25 21:10:48 DEBUG ipc.NettyServer: [id: 0x267d3266, /172.17.0.5:34768 => /172.17.0.5:36839] OPEN
+24/10/25 21:10:48 DEBUG ipc.NettyServer: [id: 0x267d3266, /172.17.0.5:34768 => /172.17.0.5:36839] BOUND: /172.17.0.5:36839
+24/10/25 21:10:48 DEBUG ipc.NettyServer: [id: 0x267d3266, /172.17.0.5:34768 => /172.17.0.5:36839] CONNECTED: /172.17.0.5:34768
+24/10/25 21:10:48 INFO ipc.NettyTransceiver: Successfully connected to bookie: 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 DEBUG ipc.NettyTransceiver: [id: 0x65330a33, /172.17.0.5:34768 => 6610172a78db/172.17.0.5:36839] BOUND: /172.17.0.5:34768
+24/10/25 21:10:48 DEBUG ipc.NettyTransceiver: [id: 0x65330a33, /172.17.0.5:34768 => 6610172a78db/172.17.0.5:36839] CONNECTED: 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:48 INFO master.FServerManager: Registering server=6610172a78db,34713,1729890647320
+24/10/25 21:10:48 INFO master.FServerManager: Registering server=6610172a78db,34741,1729890647358
+24/10/25 21:10:48 INFO master.FServerManager: Registering server=6610172a78db,37919,1729890647341
+24/10/25 21:10:48 INFO master.FServerManager: Finished waiting for fservers count to settle; checked in 3, slept for 50 ms, expecting minimum of 3, maximum of 3, master is running.
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: wasp.zookeeper.quorum=localhost
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: wasp.zookeeper.quorum=localhost
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: wasp.zookeeper.quorum=localhost
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: zookeeper.wasp.znode.parent=/wasp
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: zookeeper.wasp.znode.parent=/wasp
+24/10/25 21:10:48 INFO fserver.FServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:10:48 INFO fserver.FServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:10:48 DEBUG fserver.FServer: Config from master: zookeeper.wasp.znode.parent=/wasp
+24/10/25 21:10:48 INFO fserver.FServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:10:48 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeChildrenChanged, state=SyncConnected, path=/wasp/fs
+24/10/25 21:10:48 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:10:48 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:10:48 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,34713,1729890647320
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,34741,1729890647358
+24/10/25 21:10:48 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,37919,1729890647341
+24/10/25 21:10:48 INFO master.AssignmentManager: Clean cluster startup. Assigning user entityGroups
+24/10/25 21:10:48 DEBUG zookeeper.ZKAssign: master:36839-0xff92c5845e380008 Deleting any existing unassigned nodes
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_OPEN_ENTITYGROUP-6610172a78db,34741,1729890647358, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_OPEN_ENTITYGROUP-6610172a78db,37919,1729890647341, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_OPEN_ENTITYGROUP-6610172a78db,34713,1729890647320, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_CLOSE_ENTITYGROUP-6610172a78db,37919,1729890647341, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_CLOSE_ENTITYGROUP-6610172a78db,34741,1729890647358, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 DEBUG executor.ExecutorService: Starting executor service name=FSERVER_CLOSE_ENTITYGROUP-6610172a78db,34713,1729890647320, corePoolSize=3, maxPoolSize=3
+24/10/25 21:10:48 INFO fserver.FServer: Serving as 6610172a78db,37919,1729890647341, RPC listening on 6610172a78db/172.17.0.5:37919, sessionid=0xff92c5845e38000b
+24/10/25 21:10:48 INFO fserver.FServer: Serving as 6610172a78db,34713,1729890647320, RPC listening on 6610172a78db/172.17.0.5:34713, sessionid=0xff92c5845e38000c
+24/10/25 21:10:48 INFO fserver.FServer: Serving as 6610172a78db,34741,1729890647358, RPC listening on 6610172a78db/172.17.0.5:34741, sessionid=0xff92c5845e38000a
+24/10/25 21:10:48 INFO master.FMaster: Master has completed initialization
+24/10/25 21:10:48 INFO wasp.WaspTestingUtility: Wasp Minicluster is up
+.24/10/25 21:10:48 DEBUG meta.FMetaServicesImplWithoutRetry: FMeta {"cacheBlocks":true,"totalColumns":0,"row":"testtable1,,1729890648578.1234b2cb4a6b2d77be314c48d9b9d7a9.","families":{},"maxVersions":1,"timeRange":[0,9223372036854775807]} exists =false
+24/10/25 21:10:48 INFO fserver.EntityGroup: EntityGroup.openEntityGroup EntityGroup name ==testtable1,,1729890648578.1234b2cb4a6b2d77be314c48d9b9d7a9.
+24/10/25 21:10:48 DEBUG fserver.EntityGroup: Opening EntityGroup: {NAME => 'testtable1,,1729890648578.1234b2cb4a6b2d77be314c48d9b9d7a9.', STARTKEY => '', ENDKEY => '', ENCODED => 1234b2cb4a6b2d77be314c48d9b9d7a9,}
+24/10/25 21:10:48 DEBUG fserver.MetricsEntityGroupSourceImpl: Creating new MetricsEntityGroupSourceImpl for table testtable1 1234b2cb4a6b2d77be314c48d9b9d7a9
+24/10/25 21:10:48 DEBUG fserver.EntityGroup: Instantiated testtable1,,1729890648578.1234b2cb4a6b2d77be314c48d9b9d7a9.
+24/10/25 21:10:48 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:36530
+24/10/25 21:10:49 INFO redo.RedoLog: Init {NAME => 'testtable1,,1729890648578.1234b2cb4a6b2d77be314c48d9b9d7a9.', STARTKEY => '', ENDKEY => '', ENCODED => 1234b2cb4a6b2d77be314c48d9b9d7a9,} redolog, maxTransactionID = -9223372036854775808
+24/10/25 21:10:49 DEBUG meta.FMetaServicesImplWithoutRetry: FMeta {"cacheBlocks":true,"totalColumns":0,"row":"testtable2,,1729890649619.8e7cdf10c86796f40b0df6d22a02df2c.","families":{},"maxVersions":1,"timeRange":[0,9223372036854775807]} exists =false
+24/10/25 21:10:49 INFO fserver.EntityGroup: EntityGroup.openEntityGroup EntityGroup name ==testtable2,,1729890649619.8e7cdf10c86796f40b0df6d22a02df2c.
+24/10/25 21:10:49 DEBUG fserver.EntityGroup: Opening EntityGroup: {NAME => 'testtable2,,1729890649619.8e7cdf10c86796f40b0df6d22a02df2c.', STARTKEY => '', ENDKEY => '', ENCODED => 8e7cdf10c86796f40b0df6d22a02df2c,}
+24/10/25 21:10:49 DEBUG fserver.MetricsEntityGroupSourceImpl: Creating new MetricsEntityGroupSourceImpl for table testtable2 8e7cdf10c86796f40b0df6d22a02df2c
+24/10/25 21:10:49 DEBUG fserver.EntityGroup: Instantiated testtable2,,1729890649619.8e7cdf10c86796f40b0df6d22a02df2c.
+24/10/25 21:10:49 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:36546
+24/10/25 21:10:49 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:36558
+24/10/25 21:10:50 INFO redo.RedoLog: Init {NAME => 'testtable2,,1729890649619.8e7cdf10c86796f40b0df6d22a02df2c.', STARTKEY => '', ENDKEY => '', ENCODED => 8e7cdf10c86796f40b0df6d22a02df2c,} redolog, maxTransactionID = -9223372036854775808
+24/10/25 21:10:50 DEBUG meta.FMetaServicesImplWithoutRetry: FMeta {"cacheBlocks":true,"totalColumns":0,"row":"testtable3,,1729890650642.2b93ae47c51ebc9e1e8ce60d65e6931e.","families":{},"maxVersions":1,"timeRange":[0,9223372036854775807]} exists =false
+24/10/25 21:10:50 INFO fserver.EntityGroup: EntityGroup.openEntityGroup EntityGroup name ==testtable3,,1729890650642.2b93ae47c51ebc9e1e8ce60d65e6931e.
+24/10/25 21:10:50 DEBUG fserver.EntityGroup: Opening EntityGroup: {NAME => 'testtable3,,1729890650642.2b93ae47c51ebc9e1e8ce60d65e6931e.', STARTKEY => '', ENDKEY => '', ENCODED => 2b93ae47c51ebc9e1e8ce60d65e6931e,}
+24/10/25 21:10:50 DEBUG fserver.MetricsEntityGroupSourceImpl: Creating new MetricsEntityGroupSourceImpl for table testtable3 2b93ae47c51ebc9e1e8ce60d65e6931e
+24/10/25 21:10:50 DEBUG fserver.EntityGroup: Instantiated testtable3,,1729890650642.2b93ae47c51ebc9e1e8ce60d65e6931e.
+24/10/25 21:10:50 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47818
+24/10/25 21:10:51 INFO redo.RedoLog: Init {NAME => 'testtable3,,1729890650642.2b93ae47c51ebc9e1e8ce60d65e6931e.', STARTKEY => '', ENDKEY => '', ENCODED => 2b93ae47c51ebc9e1e8ce60d65e6931e,} redolog, maxTransactionID = -9223372036854775808
+E24/10/25 21:10:51 INFO wasp.WaspTestingUtility: Shutting down mini wasp cluster
+24/10/25 21:10:51 DEBUG util.JVMClusterUtil: Shutting down HBase Cluster
+24/10/25 21:10:51 INFO master.FMaster: Cluster shutdown requested
+24/10/25 21:10:51 INFO master.FServerManager: Waiting on fserver(s) to go down 6610172a78db,34713,1729890647320, 6610172a78db,34741,1729890647358, 6610172a78db,37919,1729890647341
+24/10/25 21:10:51 INFO balancer.BalancerChore: 6610172a78db,36839,1729890644293-BalancerChore exiting
+24/10/25 21:10:51 INFO balancer.ClusterStatusChore: 6610172a78db,36839,1729890644293-ClusterStatusChore exiting
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: fserver:34713-0xff92c5845e38000c Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: fserver:34741-0xff92c5845e38000a Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:51 INFO fserver.FServer: STOPPED: Shutdown requested
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: fserver:37919-0xff92c5845e38000b Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/shutdown
+24/10/25 21:10:51 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: fserver:34713-0xff92c5845e38000c /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: fserver:37919-0xff92c5845e38000b /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: fserver:34741-0xff92c5845e38000a /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 /wasp/shutdown does not exist. Watcher is set.
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34713,1729890647320
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34713,1729890647320; all entityGroups closed.
+24/10/25 21:10:51 INFO fserver.Leases: FServer:0;6610172a78db,34713,1729890647320 closing leases
+24/10/25 21:10:51 INFO fserver.Leases: FServer:0;6610172a78db,34713,1729890647320 closed leases
+24/10/25 21:10:51 DEBUG fserver.SplitThread: Waiting for Split Thread to finish...
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/fs/6610172a78db,34713,1729890647320
+24/10/25 21:10:51 INFO zookeeper.FServerTracker: FServer ephemeral node deleted, processing expiration [6610172a78db,34713,1729890647320]
+24/10/25 21:10:51 INFO master.FServerManager: Cluster shutdown set; 6610172a78db,34713,1729890647320 expired; onlineServers=2
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeChildrenChanged, state=SyncConnected, path=/wasp/fs
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34713,1729890647320; zookeeper connection closed.
+24/10/25 21:10:51 INFO fserver.FServer: FServer:0;6610172a78db,34713,1729890647320 exiting
+24/10/25 21:10:51 INFO fserver.FServer: STOPPED: Shutdown requested
+24/10/25 21:10:51 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,37919,1729890647341
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,34741,1729890647358
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,37919,1729890647341; all entityGroups closed.
+24/10/25 21:10:51 INFO fserver.Leases: FServer:1;6610172a78db,37919,1729890647341 closing leases
+24/10/25 21:10:51 INFO fserver.Leases: FServer:1;6610172a78db,37919,1729890647341 closed leases
+24/10/25 21:10:51 DEBUG fserver.SplitThread: Waiting for Split Thread to finish...
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,37919,1729890647341
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/fs/6610172a78db,37919,1729890647341
+24/10/25 21:10:51 INFO zookeeper.FServerTracker: FServer ephemeral node deleted, processing expiration [6610172a78db,37919,1729890647341]
+24/10/25 21:10:51 INFO master.FServerManager: Cluster shutdown set; 6610172a78db,37919,1729890647341 expired; onlineServers=1
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeChildrenChanged, state=SyncConnected, path=/wasp/fs
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,37919,1729890647341; zookeeper connection closed.
+24/10/25 21:10:51 INFO fserver.FServer: FServer:1;6610172a78db,37919,1729890647341 exiting
+24/10/25 21:10:51 INFO fserver.FServer: STOPPED: Shutdown requested
+24/10/25 21:10:51 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Set watcher on existing znode /wasp/fs/6610172a78db,34741,1729890647358
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34741,1729890647358
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34741,1729890647358; all entityGroups closed.
+24/10/25 21:10:51 DEBUG ipc.NettyTransceiver: Disconnecting from 6610172a78db/172.17.0.5:36839
+24/10/25 21:10:51 DEBUG ipc.NettyTransceiver: [id: 0x65330a33, /172.17.0.5:34768 :> 6610172a78db/172.17.0.5:36839] DISCONNECTED
+24/10/25 21:10:51 DEBUG ipc.NettyTransceiver: [id: 0x65330a33, /172.17.0.5:34768 :> 6610172a78db/172.17.0.5:36839] UNBOUND
+24/10/25 21:10:51 DEBUG ipc.NettyTransceiver: [id: 0x65330a33, /172.17.0.5:34768 :> 6610172a78db/172.17.0.5:36839] CLOSED
+24/10/25 21:10:51 DEBUG ipc.NettyTransceiver: Remote peer 6610172a78db/172.17.0.5:36839 closed connection.
+24/10/25 21:10:51 DEBUG ipc.NettyServer: [id: 0x267d3266, 6610172a78db/172.17.0.5:34768 :> /172.17.0.5:36839] DISCONNECTED
+24/10/25 21:10:51 DEBUG ipc.NettyServer: [id: 0x267d3266, 6610172a78db/172.17.0.5:34768 :> /172.17.0.5:36839] UNBOUND
+24/10/25 21:10:51 DEBUG ipc.NettyServer: [id: 0x267d3266, 6610172a78db/172.17.0.5:34768 :> /172.17.0.5:36839] CLOSED
+24/10/25 21:10:51 INFO fserver.Leases: FServer:2;6610172a78db,34741,1729890647358 closing leases
+24/10/25 21:10:51 INFO fserver.Leases: FServer:2;6610172a78db,34741,1729890647358 closed leases
+24/10/25 21:10:51 DEBUG fserver.SplitThread: Waiting for Split Thread to finish...
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeDeleted, state=SyncConnected, path=/wasp/fs/6610172a78db,34741,1729890647358
+24/10/25 21:10:51 INFO zookeeper.FServerTracker: FServer ephemeral node deleted, processing expiration [6610172a78db,34741,1729890647358]
+24/10/25 21:10:51 INFO master.FServerManager: Cluster shutdown set; 6610172a78db,34741,1729890647358 expired; onlineServers=0
+24/10/25 21:10:51 DEBUG master.FMaster: Stopping service threads
+24/10/25 21:10:51 INFO master.FMaster: Cluster shutdown set; onlineServer=0
+24/10/25 21:10:51 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:10:51 DEBUG zookeeper.ZooKeeperWatcher: master:36839-0xff92c5845e380008 Received ZooKeeper Event, type=NodeChildrenChanged, state=SyncConnected, path=/wasp/fs
+24/10/25 21:10:51 INFO fserver.FServer: stopping server 6610172a78db,34741,1729890647358; zookeeper connection closed.
+24/10/25 21:10:51 INFO fserver.FServer: FServer:2;6610172a78db,34741,1729890647358 exiting
+24/10/25 21:10:51 INFO meta.StorageCleanChore: Master:0;6610172a78db,36839,1729890644293.storageCleaner exiting
+24/10/25 21:10:51 INFO util.JVMClusterUtil: Shutdown of 1 master(s) and 3 fserver(s) complete
+24/10/25 21:10:51 DEBUG zookeeper.ZKUtil: master:36839-0xff92c5845e380008 Retrieved 25 byte(s) of data from znode /wasp/master; data=\x0A\x0C6610172a78db\x10\xE7\...
+24/10/25 21:10:51 INFO master.AssignmentManager$TimeoutMonitor: 6610172a78db,36839,1729890644293.timeoutMonitor exiting
+24/10/25 21:10:51 INFO master.AssignmentManager$TimerUpdater: 6610172a78db,36839,1729890644293.timerUpdater exiting
+24/10/25 21:10:51 INFO master.FMaster: FMaster main thread exiting
+24/10/25 21:10:53 INFO server.NIOServerCnxnFactory: NIOServerCnxn factory exited run method
+24/10/25 21:10:53 INFO server.SessionTrackerImpl: Shutting down
+24/10/25 21:10:53 INFO server.SyncRequestProcessor: Shutting down
+24/10/25 21:10:53 INFO server.SyncRequestProcessor: SyncRequestProcessor exited!
+24/10/25 21:10:53 INFO server.FinalRequestProcessor: shutdown of request processor complete
+Shutting down the Mini HDFS Cluster
+Shutting down DataNode 2
+24/10/25 21:10:54 INFO server.SessionTrackerImpl: SessionTrackerImpl exited loop!
+Shutting down DataNode 1
+Shutting down DataNode 0
+24/10/25 21:10:57 INFO wasp.WaspTestingUtility: Minicluster is down
+
+Time: 18.735
+There was 1 failure:
+1) testTwoPhaseCommit(com.alibaba.wasp.fserver.TestTwoPhaseCommit)
+java.lang.RuntimeException: org.apache.hadoop.hbase.TableNotFoundException: WASP_MESSAGE_QUEUE
+	at org.apache.hadoop.hbase.client.HTableFactory.createHTableInterface(HTableFactory.java:38)
+	at org.apache.hadoop.hbase.client.HTablePool.createHTable(HTablePool.java:265)
+	at org.apache.hadoop.hbase.client.HTablePool.findOrCreateTable(HTablePool.java:195)
+	at org.apache.hadoop.hbase.client.HTablePool.getTable(HTablePool.java:174)
+	at com.alibaba.wasp.storage.StorageActionManager.getTable(StorageActionManager.java:136)
+	at com.alibaba.wasp.storage.StorageActionManager.put(StorageActionManager.java:152)
+	at com.alibaba.wasp.messagequeue.MessageQueueClient.send(MessageQueueClient.java:75)
+	at com.alibaba.wasp.messagequeue.Publisher.doAsynchronous(Publisher.java:48)
+	at com.alibaba.wasp.fserver.TwoPhaseCommit.prepare(TwoPhaseCommit.java:110)
+	at com.alibaba.wasp.fserver.TwoPhaseCommit.submit(TwoPhaseCommit.java:128)
+	at com.alibaba.wasp.fserver.TestTwoPhaseCommit.testTwoPhaseCommit(TestTwoPhaseCommit.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+Caused by: org.apache.hadoop.hbase.TableNotFoundException: WASP_MESSAGE_QUEUE
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegionInMeta(HConnectionManager.java:1035)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:900)
+	at org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation.locateRegion(HConnectionManager.java:857)
+	at org.apache.hadoop.hbase.client.HTable.finishSetup(HTable.java:233)
+	at org.apache.hadoop.hbase.client.HTable.<init>(HTable.java:173)
+	at org.apache.hadoop.hbase.client.HTableFactory.createHTableInterface(HTableFactory.java:36)
+	... 43 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

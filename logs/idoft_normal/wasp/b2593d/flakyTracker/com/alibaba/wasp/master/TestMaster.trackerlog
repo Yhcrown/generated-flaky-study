@@ -1,0 +1,1577 @@
+JUnit version 4.10
+24/10/25 21:16:12 INFO wasp.WaspTestingUtility: Starting up minicluster with 1 master(s) and 2 fserver(s) 
+24/10/25 21:16:12 INFO hbase.HBaseTestingUtility: Starting up minicluster with 1 master(s) and 2 regionserver(s) and 2 datanode(s)
+24/10/25 21:16:12 INFO util.GSet: VM type       = 64-bit
+24/10/25 21:16:12 INFO util.GSet: 2% max memory = 141.27 MB
+24/10/25 21:16:12 INFO util.GSet: capacity      = 2^24 = 16777216 entries
+24/10/25 21:16:12 INFO util.GSet: recommended=16777216, actual=16777216
+24/10/25 21:16:12 INFO namenode.FSNamesystem: fsOwner=root
+24/10/25 21:16:12 INFO namenode.FSNamesystem: supergroup=supergroup
+24/10/25 21:16:12 INFO namenode.FSNamesystem: isPermissionEnabled=true
+24/10/25 21:16:12 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+24/10/25 21:16:12 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+24/10/25 21:16:12 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/name1 has been successfully formatted.
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/name2 has been successfully formatted.
+24/10/25 21:16:12 WARN impl.MetricsSystemImpl: Metrics system not started: Cannot locate configuration: tried hadoop-metrics2-namenode.properties, hadoop-metrics2.properties
+24/10/25 21:16:12 INFO util.GSet: VM type       = 64-bit
+24/10/25 21:16:12 INFO util.GSet: 2% max memory = 141.27 MB
+24/10/25 21:16:12 INFO util.GSet: capacity      = 2^24 = 16777216 entries
+24/10/25 21:16:12 INFO util.GSet: recommended=16777216, actual=16777216
+24/10/25 21:16:12 INFO namenode.FSNamesystem: fsOwner=root
+24/10/25 21:16:12 INFO namenode.FSNamesystem: supergroup=supergroup
+24/10/25 21:16:12 INFO namenode.FSNamesystem: isPermissionEnabled=true
+24/10/25 21:16:12 INFO namenode.FSNamesystem: dfs.block.invalidate.limit=100
+24/10/25 21:16:12 INFO namenode.FSNamesystem: isAccessTokenEnabled=false accessKeyUpdateInterval=0 min(s), accessTokenLifetime=0 min(s)
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Registered FSNamesystemStateMBean and NameNodeMXBean
+24/10/25 21:16:12 INFO namenode.NameNode: Caching file names occuring more than 10 times 
+24/10/25 21:16:12 INFO common.Storage: Number of files = 1
+24/10/25 21:16:12 INFO common.Storage: Number of files under construction = 0
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 loaded in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Edits file /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/name1/current/edits of size 4 edits # 0 loaded in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO common.Storage: Image file of size 110 saved in 0 seconds.
+24/10/25 21:16:12 INFO namenode.NameCache: initialized with 0 entries 0 lookups
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Finished loading FSImage in 33 msecs
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Total number of blocks = 0
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Number of invalid blocks = 0
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Number of under-replicated blocks = 0
+24/10/25 21:16:12 INFO namenode.FSNamesystem: Number of  over-replicated blocks = 0
+24/10/25 21:16:12 INFO hdfs.StateChange: STATE* Safe mode termination scan for invalid, over- and under-replicated blocks completed in 9 msec
+24/10/25 21:16:12 INFO hdfs.StateChange: STATE* Leaving safe mode after 0 secs.
+24/10/25 21:16:12 INFO hdfs.StateChange: STATE* Network topology has 0 racks and 0 datanodes
+24/10/25 21:16:12 INFO hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+24/10/25 21:16:12 INFO util.HostsFileReader: Refreshing hosts (include/exclude) list
+24/10/25 21:16:12 INFO namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+24/10/25 21:16:12 INFO namenode.FSNamesystem: ReplicateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+24/10/25 21:16:12 INFO namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: First cycle completed 0 blocks in 0 msec
+24/10/25 21:16:12 INFO namenode.FSNamesystem: InvalidateQueue QueueProcessingStatistics: Queue flush completed 0 blocks in 0 msec processing time, 0 msec clock time, 1 cycles
+24/10/25 21:16:12 INFO ipc.Server: Starting SocketReader
+24/10/25 21:16:12 INFO namenode.NameNode: Namenode up at: localhost/127.0.0.1:42965
+24/10/25 21:16:12 INFO mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+24/10/25 21:16:12 INFO http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+24/10/25 21:16:12 INFO http.HttpServer: dfs.webhdfs.enabled = false
+24/10/25 21:16:12 INFO http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 0
+24/10/25 21:16:12 INFO http.HttpServer: listener.getLocalPort() returned 42623 webServer.getConnectors()[0].getLocalPort() returned 42623
+24/10/25 21:16:12 INFO http.HttpServer: Jetty bound to port 42623
+24/10/25 21:16:12 INFO mortbay.log: jetty-6.1.26
+24/10/25 21:16:12 INFO mortbay.log: Extract jar:file:/tmp/jars/hadoop-core-1.0.4.jar!/webapps/hdfs to /tmp/Jetty_localhost_42623_hdfs____.ckhfod/webapp
+24/10/25 21:16:12 INFO mortbay.log: Started SelectChannelConnector@localhost:42623
+24/10/25 21:16:12 INFO namenode.NameNode: Web-server up at: localhost:42623
+24/10/25 21:16:12 INFO ipc.Server: IPC Server Responder: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server listener on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 0 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 1 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 3 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 2 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 5 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 4 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 7 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 8 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 6 on 42965: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 9 on 42965: starting
+Starting DataNode 0 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data1,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data2
+24/10/25 21:16:12 WARN impl.MetricsSystemImpl: Metrics system not started: Cannot locate configuration: tried hadoop-metrics2-datanode.properties, hadoop-metrics2.properties
+24/10/25 21:16:12 WARN util.MBeans: Hadoop:service=DataNode,name=MetricsSystem,sub=Control
+javax.management.InstanceAlreadyExistsException: MXBean already registered with name Hadoop:service=NameNode,name=MetricsSystem,sub=Control
+	at com.sun.jmx.mbeanserver.MXBeanLookup.addReference(MXBeanLookup.java:151)
+	at com.sun.jmx.mbeanserver.MXBeanSupport.register(MXBeanSupport.java:160)
+	at com.sun.jmx.mbeanserver.MBeanSupport.preRegister2(MBeanSupport.java:173)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:930)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.hadoop.metrics2.util.MBeans.register(MBeans.java:56)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.initSystemMBean(MetricsSystemImpl.java:500)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.init(MetricsSystemImpl.java:140)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.init(DefaultMetricsSystem.java:40)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.initialize(DefaultMetricsSystem.java:50)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1520)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1496)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.startDataNodes(MiniDFSCluster.java:417)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.<init>(MiniDFSCluster.java:280)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster(HBaseTestingUtility.java:451)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:619)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:575)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:172)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.master.TestMaster.beforeAllTests(TestMaster.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data1 is not formatted.
+24/10/25 21:16:12 INFO common.Storage: Formatting ...
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data2 is not formatted.
+24/10/25 21:16:12 INFO common.Storage: Formatting ...
+24/10/25 21:16:12 INFO datanode.DataNode: Registered FSDatasetStatusMBean
+24/10/25 21:16:12 INFO datanode.DataNode: Opened info server at 45351
+24/10/25 21:16:12 INFO datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+24/10/25 21:16:12 INFO http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+24/10/25 21:16:12 INFO datanode.DataNode: dfs.webhdfs.enabled = false
+24/10/25 21:16:12 INFO http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 0
+24/10/25 21:16:12 INFO http.HttpServer: listener.getLocalPort() returned 43253 webServer.getConnectors()[0].getLocalPort() returned 43253
+24/10/25 21:16:12 INFO http.HttpServer: Jetty bound to port 43253
+24/10/25 21:16:12 INFO mortbay.log: jetty-6.1.26
+24/10/25 21:16:12 INFO mortbay.log: Extract jar:file:/tmp/jars/hadoop-core-1.0.4.jar!/webapps/datanode to /tmp/Jetty_localhost_43253_datanode____.iors4o/webapp
+24/10/25 21:16:12 INFO mortbay.log: Started SelectChannelConnector@localhost:43253
+24/10/25 21:16:12 INFO ipc.Server: Starting SocketReader
+24/10/25 21:16:12 INFO datanode.DataNode: dnRegistration = DatanodeRegistration(127.0.0.1:45351, storageID=, infoPort=43253, ipcPort=33503)
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:45351 storage DS-2066391015-172.17.0.5-45351-1729890972575
+24/10/25 21:16:12 INFO net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:45351
+24/10/25 21:16:12 INFO datanode.DataNode: New storage id DS-2066391015-172.17.0.5-45351-1729890972575 is assigned to data-node 127.0.0.1:45351
+24/10/25 21:16:12 INFO datanode.DataNode: Finished generating blocks being written report for 2 volumes in 0 seconds
+24/10/25 21:16:12 INFO hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 127.0.0.1:45351 0 blocks
+24/10/25 21:16:12 INFO datanode.DataNode: Starting asynchronous block report scan
+24/10/25 21:16:12 INFO datanode.DataNode: DatanodeRegistration(127.0.0.1:45351, storageID=DS-2066391015-172.17.0.5-45351-1729890972575, infoPort=43253, ipcPort=33503)In DataNode.run, data = FSDataset{dirpath='/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data1/current,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data2/current'}
+24/10/25 21:16:12 INFO datanode.DataNode: Finished asynchronous block report scan in 0ms
+Starting DataNode 1 with dfs.data.dir: /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data3,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data4
+24/10/25 21:16:12 INFO ipc.Server: IPC Server Responder: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server listener on 33503: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 0 on 33503: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 1 on 33503: starting
+24/10/25 21:16:12 INFO datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 2 on 33503: starting
+24/10/25 21:16:12 WARN impl.MetricsSystemImpl: Metrics system not started: Cannot locate configuration: tried hadoop-metrics2-datanode.properties, hadoop-metrics2.properties
+24/10/25 21:16:12 WARN util.MBeans: Hadoop:service=DataNode,name=MetricsSystem,sub=Control
+javax.management.InstanceAlreadyExistsException: MXBean already registered with name Hadoop:service=NameNode,name=MetricsSystem,sub=Control
+	at com.sun.jmx.mbeanserver.MXBeanLookup.addReference(MXBeanLookup.java:151)
+	at com.sun.jmx.mbeanserver.MXBeanSupport.register(MXBeanSupport.java:160)
+	at com.sun.jmx.mbeanserver.MBeanSupport.preRegister2(MBeanSupport.java:173)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:930)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.hadoop.metrics2.util.MBeans.register(MBeans.java:56)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.initSystemMBean(MetricsSystemImpl.java:500)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.init(MetricsSystemImpl.java:140)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.init(DefaultMetricsSystem.java:40)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.initialize(DefaultMetricsSystem.java:50)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1520)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1496)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.startDataNodes(MiniDFSCluster.java:417)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.<init>(MiniDFSCluster.java:280)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster(HBaseTestingUtility.java:451)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:619)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:575)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:172)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.master.TestMaster.beforeAllTests(TestMaster.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:12 INFO datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+24/10/25 21:16:12 INFO hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:45351, blocks: 0, processing time: 0 msecs
+24/10/25 21:16:12 INFO datanode.DataNode: BlockReport of 0 blocks took 1 msec to generate and 1 msecs for RPC and NN processing
+24/10/25 21:16:12 INFO datanode.DataNode: Starting Periodic block scanner.
+24/10/25 21:16:12 INFO datanode.DataNode: Generated rough (lockless) block report in 0 ms
+24/10/25 21:16:12 INFO datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data3 is not formatted.
+24/10/25 21:16:12 INFO common.Storage: Formatting ...
+24/10/25 21:16:12 INFO common.Storage: Storage directory /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data4 is not formatted.
+24/10/25 21:16:12 INFO common.Storage: Formatting ...
+24/10/25 21:16:12 INFO datanode.DataNode: Registered FSDatasetStatusMBean
+24/10/25 21:16:12 WARN util.MBeans: Hadoop:service=DataNode,name=DataNodeInfo
+javax.management.InstanceAlreadyExistsException: Hadoop:service=DataNode,name=DataNodeInfo
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.hadoop.metrics2.util.MBeans.register(MBeans.java:56)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.registerMXBean(DataNode.java:517)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:393)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:299)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1582)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1521)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1496)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.startDataNodes(MiniDFSCluster.java:417)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.<init>(MiniDFSCluster.java:280)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniDFSCluster(HBaseTestingUtility.java:451)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:619)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.startMiniCluster(HBaseTestingUtility.java:575)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:172)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.master.TestMaster.beforeAllTests(TestMaster.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:12 INFO datanode.DataNode: Opened info server at 43723
+24/10/25 21:16:12 INFO datanode.DataNode: Balancing bandwith is 1048576 bytes/s
+24/10/25 21:16:12 INFO http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+24/10/25 21:16:12 INFO datanode.DataNode: dfs.webhdfs.enabled = false
+24/10/25 21:16:12 INFO http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 0
+24/10/25 21:16:12 INFO http.HttpServer: listener.getLocalPort() returned 44313 webServer.getConnectors()[0].getLocalPort() returned 44313
+24/10/25 21:16:12 INFO http.HttpServer: Jetty bound to port 44313
+24/10/25 21:16:12 INFO mortbay.log: jetty-6.1.26
+24/10/25 21:16:12 INFO mortbay.log: Extract jar:file:/tmp/jars/hadoop-core-1.0.4.jar!/webapps/datanode to /tmp/Jetty_localhost_44313_datanode____v8t9q4/webapp
+24/10/25 21:16:12 INFO mortbay.log: Started SelectChannelConnector@localhost:44313
+24/10/25 21:16:12 INFO ipc.Server: Starting SocketReader
+24/10/25 21:16:12 INFO datanode.DataNode: dnRegistration = DatanodeRegistration(127.0.0.1:43723, storageID=, infoPort=44313, ipcPort=33993)
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:43723 storage DS-292553745-172.17.0.5-43723-1729890972690
+24/10/25 21:16:12 INFO net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:43723
+24/10/25 21:16:12 INFO datanode.DataNode: New storage id DS-292553745-172.17.0.5-43723-1729890972690 is assigned to data-node 127.0.0.1:43723
+24/10/25 21:16:12 INFO datanode.DataNode: Finished generating blocks being written report for 2 volumes in 0 seconds
+24/10/25 21:16:12 INFO hdfs.StateChange: *BLOCK* NameNode.blocksBeingWrittenReport: from 127.0.0.1:43723 0 blocks
+24/10/25 21:16:12 INFO datanode.DataNode: Starting asynchronous block report scan
+24/10/25 21:16:12 INFO datanode.DataNode: DatanodeRegistration(127.0.0.1:43723, storageID=DS-292553745-172.17.0.5-43723-1729890972690, infoPort=44313, ipcPort=33993)In DataNode.run, data = FSDataset{dirpath='/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data3/current,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data4/current'}
+24/10/25 21:16:12 INFO datanode.DataNode: Finished asynchronous block report scan in 0ms
+24/10/25 21:16:12 INFO ipc.Server: IPC Server Responder: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server listener on 33993: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 0 on 33993: starting
+24/10/25 21:16:12 INFO datanode.DataNode: using BLOCKREPORT_INTERVAL of 3600000msec Initial delay: 0msec
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 1 on 33993: starting
+24/10/25 21:16:12 INFO ipc.Server: IPC Server handler 2 on 33993: starting
+24/10/25 21:16:12 INFO datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+24/10/25 21:16:12 INFO hdfs.StateChange: *BLOCK* NameSystem.processReport: from 127.0.0.1:43723, blocks: 0, processing time: 0 msecs
+24/10/25 21:16:12 INFO datanode.DataNode: BlockReport of 0 blocks took 0 msec to generate and 3 msecs for RPC and NN processing
+24/10/25 21:16:12 INFO datanode.DataNode: Starting Periodic block scanner.
+24/10/25 21:16:12 INFO datanode.DataNode: Generated rough (lockless) block report in 0 ms
+24/10/25 21:16:12 INFO datanode.DataNode: Reconciled asynchronous block report against current state in 0 ms
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:host.name=6610172a78db
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.version=1.8.0_422
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.vendor=Temurin
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.home=/shared-data/jdk8u422-b05/jre
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.class.path=/workspace/benchmarks/projects//wasp/target/classes:/workspace/benchmarks/projects//wasp/target/test-classes:/tmp/jars/zookeeper-3.4.5.jar:/tmp/jars/servlet-api-2.5-6.1.14.jar:/tmp/jars/commons-logging-1.1.1.jar:/tmp/jars/jets3t-0.7.1.jar:/tmp/jars/snappy-java-1.0.3.2.jar:/tmp/jars/protobuf-java-2.4.1.jar:/tmp/jars/protobuf-rpc-pro-demo-2.0.1.jar:/tmp/jars/druid-0.2.9.jar:/tmp/jars/oro-2.0.8.jar:/tmp/jars/jersey-json-1.8.jar:/tmp/jars/jackson-jaxrs-1.8.8.jar:/tmp/jars/high-scale-lib-1.1.1.jar:/tmp/jars/hadoop-test-1.0.4.jar:/tmp/jars/commons-digester-1.8.jar:/tmp/jars/avro-ipc-1.5.3.jar:/tmp/jars/jettison-1.3.1.jar:/tmp/jars/commons-math-2.1.jar:/tmp/jars/slf4j-api-1.4.3.jar:/tmp/jars/avro-1.5.3.jar:/tmp/jars/jetty-6.1.26.jar:/tmp/jars/jasper-runtime-5.5.23.jar:/tmp/jars/guava-12.0.1.jar:/tmp/jars/jackson-mapper-asl-1.8.8.jar:/tmp/jars/commons-codec-1.7.jar:/tmp/jars/commons-collections-3.2.1.jar:/tmp/jars/jruby-complete-1.6.8.jar:/tmp/jars/ftplet-api-1.0.0.jar:/tmp/jars/ftpserver-core-1.0.0.jar:/tmp/jars/commons-httpclient-3.0.1.jar:/tmp/jars/jamon-runtime-2.3.1.jar:/tmp/jars/protobuf-rpc-pro-duplex-2.0.1.jar:/tmp/jars/spring-aop-3.0.5.RELEASE.jar:/tmp/jars/mockito-all-1.9.0.jar:/tmp/jars/jersey-core-1.8.jar:/tmp/jars/log4j-1.2.17.jar:/tmp/jars/aopalliance-1.0.jar:/tmp/jars/jaxb-api-2.1.jar:/tmp/jars/commons-el-1.0.jar:/tmp/jars/hsqldb-1.8.0.10.jar:/tmp/jars/commons-net-1.4.1.jar:/tmp/jars/xmlenc-0.52.jar:/tmp/jars/jackson-core-asl-1.8.8.jar:/tmp/jars/libthrift-0.8.0.jar:/tmp/jars/protobuf-streamer-pro-1.2.3.jar:/tmp/jars/jsp-api-2.1-6.1.14.jar:/tmp/jars/spring-asm-3.0.5.RELEASE.jar:/tmp/jars/spring-core-3.0.5.RELEASE.jar:/tmp/jars/netty-3.2.4.Final.jar:/tmp/jars/kfs-0.3.jar:/tmp/jars/jasper-compiler-5.5.23.jar:/tmp/jars/jsp-2.1-6.1.14.jar:/tmp/jars/commons-io-2.4.jar:/tmp/jars/jsr305-1.3.9.jar:/tmp/jars/commons-beanutils-1.7.0.jar:/tmp/jars/httpclient-4.1.2.jar:/tmp/jars/hadoop-core-1.0.4.jar:/tmp/jars/hbase-0.94.7.jar:/tmp/jars/jetty-util-6.1.26.jar:/tmp/jars/netty-3.5.0.Final.jar:/tmp/jars/asm-3.1.jar:/tmp/jars/junit-4.10.jar:/tmp/jars/jackson-xc-1.8.8.jar:/tmp/jars/commons-beanutils-core-1.8.0.jar:/tmp/jars/spring-expression-3.0.5.RELEASE.jar:/tmp/jars/spring-context-3.0.5.RELEASE.jar:/tmp/jars/hbase-0.94.7-tests.jar:/tmp/jars/spring-beans-3.0.5.RELEASE.jar:/tmp/jars/commons-cli-1.2.jar:/tmp/jars/mina-core-2.0.0-M5.jar:/tmp/jars/commons-configuration-1.6.jar:/tmp/jars/hamcrest-core-1.1.jar:/tmp/jars/commons-lang-2.6.jar:/tmp/jars/httpcore-4.1.3.jar:/tmp/jars/ftpserver-deprecated-1.0.0-M2.jar:/tmp/jars/jersey-server-1.8.jar:/tmp/jars/htrace-1.49.jar:/tmp/jars/activation-1.1.jar:/tmp/jars/jaxb-impl-2.2.3-1.jar:/tmp/jars/slf4j-log4j12-1.4.3.jar:/tmp/jars/stax-api-1.0.1.jar:/tmp/jars/metrics-core-2.1.2.jar:/tmp/jars/velocity-1.7.jar:/tmp/jars/protobuf-java-format-1.2.jar:/tmp/jars/core-3.1.1.jar:::/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:java.compiler=<NA>
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:os.name=Linux
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:os.arch=amd64
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:os.version=6.8.0-40-generic
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:user.name=root
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:user.home=/root
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Server environment:user.dir=/workspace/benchmarks/projects/wasp
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/zookeeper_0/version-2 snapdir /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/zookeeper_0/version-2
+24/10/25 21:16:12 INFO server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:62828
+24/10/25 21:16:12 INFO persistence.FileTxnSnapLog: Snapshotting: 0x0 to /workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/zookeeper_0/version-2/snapshot.0
+24/10/25 21:16:12 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:59094
+24/10/25 21:16:12 INFO server.NIOServerCnxn: Processing stat command from /127.0.0.1:59094
+24/10/25 21:16:12 INFO server.NIOServerCnxn: Stat command output
+24/10/25 21:16:12 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:59094 (no session established for client)
+24/10/25 21:16:12 INFO zookeeper.MiniZooKeeperCluster: Started MiniZK Cluster and connect 1 ZK server on client port: 62828
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/hbase.version. blk_-1337372704530804831_1001
+24/10/25 21:16:12 INFO datanode.DataNode: Receiving block blk_-1337372704530804831_1001 src: /127.0.0.1:37166 dest: /127.0.0.1:43723
+24/10/25 21:16:12 INFO datanode.DataNode: Receiving block blk_-1337372704530804831_1001 src: /127.0.0.1:52444 dest: /127.0.0.1:45351
+24/10/25 21:16:12 INFO DataNode.clienttrace: src: /127.0.0.1:52444, dest: /127.0.0.1:45351, bytes: 3, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-1337372704530804831_1001, duration: 351212
+24/10/25 21:16:12 INFO datanode.DataNode: PacketResponder 0 for block blk_-1337372704530804831_1001 terminating
+24/10/25 21:16:12 INFO DataNode.clienttrace: src: /127.0.0.1:37166, dest: /127.0.0.1:43723, bytes: 3, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1337372704530804831_1001, duration: 1146955
+24/10/25 21:16:12 INFO datanode.DataNode: PacketResponder 1 for block blk_-1337372704530804831_1001 terminating
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-1337372704530804831_1001 size 3
+24/10/25 21:16:12 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/hbase.version from client DFSClient_1766991081
+24/10/25 21:16:12 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/hbase.version is closed by DFSClient_1766991081
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-1337372704530804831_1001 size 3
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-67
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting IPC Server listener on 45173
+24/10/25 21:16:12 INFO ipc.HBaseRpcMetrics: Initializing RPC Metrics with hostName=HMaster, port=45173
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:host.name=6610172a78db
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.version=1.8.0_422
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Temurin
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.home=/shared-data/jdk8u422-b05/jre
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.class.path=/workspace/benchmarks/projects//wasp/target/classes:/workspace/benchmarks/projects//wasp/target/test-classes:/tmp/jars/zookeeper-3.4.5.jar:/tmp/jars/servlet-api-2.5-6.1.14.jar:/tmp/jars/commons-logging-1.1.1.jar:/tmp/jars/jets3t-0.7.1.jar:/tmp/jars/snappy-java-1.0.3.2.jar:/tmp/jars/protobuf-java-2.4.1.jar:/tmp/jars/protobuf-rpc-pro-demo-2.0.1.jar:/tmp/jars/druid-0.2.9.jar:/tmp/jars/oro-2.0.8.jar:/tmp/jars/jersey-json-1.8.jar:/tmp/jars/jackson-jaxrs-1.8.8.jar:/tmp/jars/high-scale-lib-1.1.1.jar:/tmp/jars/hadoop-test-1.0.4.jar:/tmp/jars/commons-digester-1.8.jar:/tmp/jars/avro-ipc-1.5.3.jar:/tmp/jars/jettison-1.3.1.jar:/tmp/jars/commons-math-2.1.jar:/tmp/jars/slf4j-api-1.4.3.jar:/tmp/jars/avro-1.5.3.jar:/tmp/jars/jetty-6.1.26.jar:/tmp/jars/jasper-runtime-5.5.23.jar:/tmp/jars/guava-12.0.1.jar:/tmp/jars/jackson-mapper-asl-1.8.8.jar:/tmp/jars/commons-codec-1.7.jar:/tmp/jars/commons-collections-3.2.1.jar:/tmp/jars/jruby-complete-1.6.8.jar:/tmp/jars/ftplet-api-1.0.0.jar:/tmp/jars/ftpserver-core-1.0.0.jar:/tmp/jars/commons-httpclient-3.0.1.jar:/tmp/jars/jamon-runtime-2.3.1.jar:/tmp/jars/protobuf-rpc-pro-duplex-2.0.1.jar:/tmp/jars/spring-aop-3.0.5.RELEASE.jar:/tmp/jars/mockito-all-1.9.0.jar:/tmp/jars/jersey-core-1.8.jar:/tmp/jars/log4j-1.2.17.jar:/tmp/jars/aopalliance-1.0.jar:/tmp/jars/jaxb-api-2.1.jar:/tmp/jars/commons-el-1.0.jar:/tmp/jars/hsqldb-1.8.0.10.jar:/tmp/jars/commons-net-1.4.1.jar:/tmp/jars/xmlenc-0.52.jar:/tmp/jars/jackson-core-asl-1.8.8.jar:/tmp/jars/libthrift-0.8.0.jar:/tmp/jars/protobuf-streamer-pro-1.2.3.jar:/tmp/jars/jsp-api-2.1-6.1.14.jar:/tmp/jars/spring-asm-3.0.5.RELEASE.jar:/tmp/jars/spring-core-3.0.5.RELEASE.jar:/tmp/jars/netty-3.2.4.Final.jar:/tmp/jars/kfs-0.3.jar:/tmp/jars/jasper-compiler-5.5.23.jar:/tmp/jars/jsp-2.1-6.1.14.jar:/tmp/jars/commons-io-2.4.jar:/tmp/jars/jsr305-1.3.9.jar:/tmp/jars/commons-beanutils-1.7.0.jar:/tmp/jars/httpclient-4.1.2.jar:/tmp/jars/hadoop-core-1.0.4.jar:/tmp/jars/hbase-0.94.7.jar:/tmp/jars/jetty-util-6.1.26.jar:/tmp/jars/netty-3.5.0.Final.jar:/tmp/jars/asm-3.1.jar:/tmp/jars/junit-4.10.jar:/tmp/jars/jackson-xc-1.8.8.jar:/tmp/jars/commons-beanutils-core-1.8.0.jar:/tmp/jars/spring-expression-3.0.5.RELEASE.jar:/tmp/jars/spring-context-3.0.5.RELEASE.jar:/tmp/jars/hbase-0.94.7-tests.jar:/tmp/jars/spring-beans-3.0.5.RELEASE.jar:/tmp/jars/commons-cli-1.2.jar:/tmp/jars/mina-core-2.0.0-M5.jar:/tmp/jars/commons-configuration-1.6.jar:/tmp/jars/hamcrest-core-1.1.jar:/tmp/jars/commons-lang-2.6.jar:/tmp/jars/httpcore-4.1.3.jar:/tmp/jars/ftpserver-deprecated-1.0.0-M2.jar:/tmp/jars/jersey-server-1.8.jar:/tmp/jars/htrace-1.49.jar:/tmp/jars/activation-1.1.jar:/tmp/jars/jaxb-impl-2.2.3-1.jar:/tmp/jars/slf4j-log4j12-1.4.3.jar:/tmp/jars/stax-api-1.0.1.jar:/tmp/jars/metrics-core-2.1.2.jar:/tmp/jars/velocity-1.7.jar:/tmp/jars/protobuf-java-format-1.2.jar:/tmp/jars/core-3.1.1.jar:::/shared-data/common-jar/randoop-all-4.3.3.jar:/shared-data/common-jar/junit-4.13.2.jar:/shared-data/common-jar/hamcrest-core-2.2.jar:/shared-data/common-jar/guava-33.0.0-jre.jar
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:os.version=6.8.0-40-generic
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:user.name=root
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:user.home=/root
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Client environment:user.dir=/workspace/benchmarks/projects/wasp
+24/10/25 21:16:12 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=master:45173
+24/10/25 21:16:12 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:12 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:12 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:12 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:59102
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:59102
+24/10/25 21:16:12 INFO persistence.FileTxnLog: Creating new log file: log.1
+24/10/25 21:16:12 INFO server.ZooKeeperServer: Established session 0xff92c58974270000 with negotiated timeout 40000 for client /127.0.0.1:59102
+24/10/25 21:16:12 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c58974270000, negotiated timeout = 40000
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server Responder: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server listener on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 0 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 1 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 3 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 4 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 2 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 7 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 6 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 5 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 8 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: IPC Server handler 9 on 45173: starting
+24/10/25 21:16:12 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 45173: starting
+24/10/25 21:16:12 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=Master, sessionId=6610172a78db,45173,1729890972810
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: date
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: hdfsUser
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: hdfsRevision
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: hdfsUrl
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: hdfsDate
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: user
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: version
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: url
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: hdfsVersion
+24/10/25 21:16:12 INFO hbase.metrics: MetricsString added: revision
+24/10/25 21:16:12 INFO hbase.metrics: new MBeanInfo
+24/10/25 21:16:12 INFO hbase.metrics: new MBeanInfo
+24/10/25 21:16:12 INFO metrics.MasterMetrics: Initialized
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-82
+24/10/25 21:16:12 INFO ipc.HBaseRpcMetrics: Initializing RPC Metrics with hostName=MiniHBaseCluster$MiniHBaseClusterRegionServer, port=46295
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting IPC Server listener on 46295
+24/10/25 21:16:12 INFO hfile.CacheConfig: Allocating LruBlockCache with maximum size 1.7g
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting Thread-84
+24/10/25 21:16:12 INFO ipc.HBaseRpcMetrics: Initializing RPC Metrics with hostName=MiniHBaseCluster$MiniHBaseClusterRegionServer, port=37153
+24/10/25 21:16:12 INFO ipc.HBaseServer: Starting IPC Server listener on 37153
+24/10/25 21:16:12 INFO master.ActiveMasterManager: Deleting ZNode for /hbase/backup-masters/6610172a78db,45173,1729890972810 from backup master directory
+24/10/25 21:16:12 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270000 type:delete cxid:0x13 zxid:0xb txntype:-1 reqpath:n/a Error Path:/hbase/backup-masters/6610172a78db,45173,1729890972810 Error:KeeperErrorCode = NoNode for /hbase/backup-masters/6610172a78db,45173,1729890972810
+24/10/25 21:16:12 WARN zookeeper.RecoverableZooKeeper: Node /hbase/backup-masters/6610172a78db,45173,1729890972810 already deleted, and this is not a retry
+24/10/25 21:16:12 INFO master.ActiveMasterManager: Master=6610172a78db,45173,1729890972810
+24/10/25 21:16:12 INFO master.SplitLogManager: timeout = 300000
+24/10/25 21:16:12 INFO master.SplitLogManager: unassigned timeout = 180000
+24/10/25 21:16:12 INFO master.SplitLogManager: resubmit threshold = 3
+24/10/25 21:16:12 INFO master.SplitLogManager: found 0 orphan tasks and 0 rescan nodes
+24/10/25 21:16:12 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:37174, bytes: 7, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1337372704530804831_1001, duration: 449731
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/hbase.id. blk_-8510578013407869665_1002
+24/10/25 21:16:12 INFO datanode.DataNode: Receiving block blk_-8510578013407869665_1002 src: /127.0.0.1:37178 dest: /127.0.0.1:43723
+24/10/25 21:16:12 INFO datanode.DataNode: Receiving block blk_-8510578013407869665_1002 src: /127.0.0.1:52454 dest: /127.0.0.1:45351
+24/10/25 21:16:12 INFO DataNode.clienttrace: src: /127.0.0.1:52454, dest: /127.0.0.1:45351, bytes: 38, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8510578013407869665_1002, duration: 443367
+24/10/25 21:16:12 INFO datanode.DataNode: PacketResponder 0 for block blk_-8510578013407869665_1002 terminating
+24/10/25 21:16:12 INFO DataNode.clienttrace: src: /127.0.0.1:37178, dest: /127.0.0.1:43723, bytes: 38, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-8510578013407869665_1002, duration: 714030
+24/10/25 21:16:12 INFO datanode.DataNode: PacketResponder 1 for block blk_-8510578013407869665_1002 terminating
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-8510578013407869665_1002 size 38
+24/10/25 21:16:12 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-8510578013407869665_1002 size 38
+24/10/25 21:16:13 INFO regionserver.ShutdownHook: Installed shutdown hook thread: Shutdownhook:RegionServer:0;6610172a78db,46295,1729890972911
+24/10/25 21:16:13 INFO regionserver.ShutdownHook: Installed shutdown hook thread: Shutdownhook:RegionServer:1;6610172a78db,37153,1729890972923
+24/10/25 21:16:13 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=regionserver:37153
+24/10/25 21:16:13 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=regionserver:46295
+24/10/25 21:16:13 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:13 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:13 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47160
+24/10/25 21:16:13 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:47158
+24/10/25 21:16:13 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:47160
+24/10/25 21:16:13 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:47158
+24/10/25 21:16:13 INFO server.ZooKeeperServer: Established session 0xff92c58974270001 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:47160
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270001, negotiated timeout = 40000
+24/10/25 21:16:13 INFO server.ZooKeeperServer: Established session 0xff92c58974270002 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:47158
+24/10/25 21:16:13 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270002, negotiated timeout = 40000
+24/10/25 21:16:13 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/hbase.id from client DFSClient_1766991081
+24/10/25 21:16:13 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/hbase.id is closed by DFSClient_1766991081
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:52466, bytes: 42, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8510578013407869665_1002, duration: 207567
+24/10/25 21:16:13 INFO master.MasterFileSystem: BOOTSTRAP: creating ROOT and first META regions
+24/10/25 21:16:13 INFO regionserver.HRegion: creating HRegion -ROOT- HTD == '-ROOT-', {METHOD => 'table_att', IS_META => 'true', IS_ROOT => 'true'}, {NAME => 'info', ENCODE_ON_DISK => 'true', BLOOMFILTER => 'NONE', VERSIONS => '10', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => '2147483647', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'false', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = hdfs://localhost:42965/user/root/hbase Table name == -ROOT-
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/-ROOT-/70236052/.tmp/.regioninfo. blk_-4006823590059745122_1003
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-4006823590059745122_1003 src: /127.0.0.1:52470 dest: /127.0.0.1:45351
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-4006823590059745122_1003 src: /127.0.0.1:37194 dest: /127.0.0.1:43723
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:37194, dest: /127.0.0.1:43723, bytes: 109, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-4006823590059745122_1003, duration: 323810
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 0 for block blk_-4006823590059745122_1003 terminating
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:52470, dest: /127.0.0.1:45351, bytes: 109, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-4006823590059745122_1003, duration: 712342
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 1 for block blk_-4006823590059745122_1003 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-4006823590059745122_1003 size 109
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-4006823590059745122_1003 size 109
+24/10/25 21:16:13 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/-ROOT-/70236052/.tmp/.regioninfo from client DFSClient_1766991081
+24/10/25 21:16:13 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/-ROOT-/70236052/.tmp/.regioninfo is closed by DFSClient_1766991081
+24/10/25 21:16:13 INFO wal.HLog: FileSystem doesn't support getDefaultBlockSize
+24/10/25 21:16:13 INFO wal.HLog: HLog configuration: blocksize=64 MB, rollsize=60.8 MB, enabled=true, optionallogflushinternal=1000ms
+24/10/25 21:16:13 INFO wal.HLog:  for /user/root/hbase/-ROOT-/70236052/.logs/hlog.1729890973783
+24/10/25 21:16:13 INFO wal.HLog: Using getNumCurrentReplicas--HDFS-826
+24/10/25 21:16:13 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:13 INFO regionserver.Store: time to purge deletes set to 0ms in store info
+24/10/25 21:16:13 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:13 INFO util.ChecksumType: Checksum can use java.util.zip.CRC32
+24/10/25 21:16:13 INFO regionserver.HRegion: Onlined -ROOT-,,0.70236052; next sequenceid=1
+24/10/25 21:16:13 INFO regionserver.HRegion: creating HRegion .META. HTD == '.META.', {METHOD => 'table_att', IS_META => 'true'}, {NAME => 'info', ENCODE_ON_DISK => 'true', BLOOMFILTER => 'NONE', VERSIONS => '10', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => '2147483647', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'false', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = hdfs://localhost:42965/user/root/hbase Table name == .META.
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.META./1028785192/.tmp/.regioninfo. blk_-1584230025284546630_1005
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-1584230025284546630_1005 src: /127.0.0.1:52474 dest: /127.0.0.1:45351
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-1584230025284546630_1005 src: /127.0.0.1:37196 dest: /127.0.0.1:43723
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:37196, dest: /127.0.0.1:43723, bytes: 111, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1584230025284546630_1005, duration: 348727
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 0 for block blk_-1584230025284546630_1005 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-1584230025284546630_1005 size 111
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:52474, dest: /127.0.0.1:45351, bytes: 111, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-1584230025284546630_1005, duration: 633170
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-1584230025284546630_1005 size 111
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 1 for block blk_-1584230025284546630_1005 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.META./1028785192/.tmp/.regioninfo from client DFSClient_1766991081
+24/10/25 21:16:13 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.META./1028785192/.tmp/.regioninfo is closed by DFSClient_1766991081
+24/10/25 21:16:13 INFO wal.HLog: FileSystem doesn't support getDefaultBlockSize
+24/10/25 21:16:13 INFO wal.HLog: HLog configuration: blocksize=64 MB, rollsize=60.8 MB, enabled=true, optionallogflushinternal=1000ms
+24/10/25 21:16:13 INFO wal.HLog:  for /user/root/hbase/.META./1028785192/.logs/hlog.1729890973833
+24/10/25 21:16:13 INFO wal.HLog: Using getNumCurrentReplicas--HDFS-826
+24/10/25 21:16:13 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:13 INFO regionserver.Store: time to purge deletes set to 0ms in store info
+24/10/25 21:16:13 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:13 INFO regionserver.HRegion: Onlined .META.,,1.1028785192; next sequenceid=1
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/-ROOT-/70236052/.logs/hlog.1729890973783. blk_-3632564049542251747_1006
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-3632564049542251747_1006 src: /127.0.0.1:52488 dest: /127.0.0.1:45351
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-3632564049542251747_1006 src: /127.0.0.1:37198 dest: /127.0.0.1:43723
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.fsync: file /user/root/hbase/-ROOT-/70236052/.logs/hlog.1729890973783 for DFSClient_1766991081
+24/10/25 21:16:13 ERROR metrics.SchemaMetrics: Inconsistent configuration. Previous configuration for using table name in metrics: true, new configuration: false
+24/10/25 21:16:13 INFO regionserver.StoreFile: Delete Family Bloom filter type for hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f: CompoundBloomFilterWriter
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f. blk_-3160923501402686810_1007
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-3160923501402686810_1007 src: /127.0.0.1:52504 dest: /127.0.0.1:45351
+24/10/25 21:16:13 INFO datanode.DataNode: Receiving block blk_-3160923501402686810_1007 src: /127.0.0.1:37214 dest: /127.0.0.1:43723
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:37214, dest: /127.0.0.1:43723, bytes: 796, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3160923501402686810_1007, duration: 358685
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 0 for block blk_-3160923501402686810_1007 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-3160923501402686810_1007 size 796
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:52504, dest: /127.0.0.1:45351, bytes: 796, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 691465
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 1 for block blk_-3160923501402686810_1007 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f from client DFSClient_1766991081
+24/10/25 21:16:13 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f is closed by DFSClient_1766991081
+24/10/25 21:16:13 INFO regionserver.StoreFile: NO General Bloom and NO DeleteFamily was added to HFile (hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f) 
+24/10/25 21:16:13 INFO regionserver.Store: Flushed , sequenceid=2, memsize=392.0, into tmp file hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/52d2cdd0eda944d0958765c01087201f
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-3160923501402686810_1007 size 796
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:52514, bytes: 288, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 512, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 165592
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:52524, bytes: 804, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 241310
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:52526, bytes: 288, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 512, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 152311
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:52528, bytes: 804, op: HDFS_READ, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 203488
+24/10/25 21:16:13 INFO regionserver.Store: Added hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/info/52d2cdd0eda944d0958765c01087201f, entries=2, sequenceid=2, filesize=796.0
+24/10/25 21:16:13 INFO regionserver.HRegion: Finished memstore flush of ~392.0/392, currentsize=0.0/0 for region -ROOT-,,0.70236052 in 31ms, sequenceid=2, compaction requested=false
+24/10/25 21:16:13 INFO regionserver.Store: Closed info
+24/10/25 21:16:13 INFO regionserver.HRegion: Closed -ROOT-,,0.70236052
+24/10/25 21:16:13 INFO wal.HLog: Master:0;6610172a78db,45173,1729890972810.logSyncer exiting
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:37198, dest: /127.0.0.1:43723, bytes: 421, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3632564049542251747_1006, duration: 34922825
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 0 for block blk_-3632564049542251747_1006 terminating
+24/10/25 21:16:13 INFO DataNode.clienttrace: src: /127.0.0.1:52488, dest: /127.0.0.1:45351, bytes: 421, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3632564049542251747_1006, duration: 35306041
+24/10/25 21:16:13 INFO datanode.DataNode: PacketResponder 1 for block blk_-3632564049542251747_1006 terminating
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-3632564049542251747_1006 size 421
+24/10/25 21:16:13 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-3632564049542251747_1006 size 421
+24/10/25 21:16:14 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/-ROOT-/70236052/.logs/hlog.1729890973783 from client DFSClient_1766991081
+24/10/25 21:16:14 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/-ROOT-/70236052/.logs/hlog.1729890973783 is closed by DFSClient_1766991081
+24/10/25 21:16:14 INFO regionserver.Store: Closed info
+24/10/25 21:16:14 INFO regionserver.HRegion: Closed .META.,,1.1028785192
+24/10/25 21:16:14 INFO wal.HLog: Master:0;6610172a78db,45173,1729890972810.logSyncer exiting
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.META./1028785192/.logs/hlog.1729890973833. blk_-4832205701967710254_1007
+24/10/25 21:16:14 INFO datanode.DataNode: Receiving block blk_-4832205701967710254_1007 src: /127.0.0.1:37226 dest: /127.0.0.1:43723
+24/10/25 21:16:14 INFO datanode.DataNode: Receiving block blk_-4832205701967710254_1007 src: /127.0.0.1:52530 dest: /127.0.0.1:45351
+24/10/25 21:16:14 INFO DataNode.clienttrace: src: /127.0.0.1:52530, dest: /127.0.0.1:45351, bytes: 134, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-4832205701967710254_1007, duration: 360710
+24/10/25 21:16:14 INFO datanode.DataNode: PacketResponder 0 for block blk_-4832205701967710254_1007 terminating
+24/10/25 21:16:14 INFO DataNode.clienttrace: src: /127.0.0.1:37226, dest: /127.0.0.1:43723, bytes: 134, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-4832205701967710254_1007, duration: 539380
+24/10/25 21:16:14 INFO datanode.DataNode: PacketResponder 1 for block blk_-4832205701967710254_1007 terminating
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-4832205701967710254_1007 size 134
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-4832205701967710254_1007 size 134
+24/10/25 21:16:14 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.META./1028785192/.logs/hlog.1729890973833 from client DFSClient_1766991081
+24/10/25 21:16:14 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.META./1028785192/.logs/hlog.1729890973833 is closed by DFSClient_1766991081
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/-ROOT-/.tmp/.tableinfo.0000000001. blk_5331678350310494145_1008
+24/10/25 21:16:14 INFO datanode.DataNode: Receiving block blk_5331678350310494145_1008 src: /127.0.0.1:37236 dest: /127.0.0.1:43723
+24/10/25 21:16:14 INFO datanode.DataNode: Receiving block blk_5331678350310494145_1008 src: /127.0.0.1:52538 dest: /127.0.0.1:45351
+24/10/25 21:16:14 INFO DataNode.clienttrace: src: /127.0.0.1:52538, dest: /127.0.0.1:45351, bytes: 728, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_5331678350310494145_1008, duration: 360276
+24/10/25 21:16:14 INFO datanode.DataNode: PacketResponder 0 for block blk_5331678350310494145_1008 terminating
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_5331678350310494145_1008 size 728
+24/10/25 21:16:14 INFO DataNode.clienttrace: src: /127.0.0.1:37236, dest: /127.0.0.1:43723, bytes: 728, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_5331678350310494145_1008, duration: 616122
+24/10/25 21:16:14 INFO datanode.DataNode: PacketResponder 1 for block blk_5331678350310494145_1008 terminating
+24/10/25 21:16:14 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/-ROOT-/.tmp/.tableinfo.0000000001 from client DFSClient_1766991081
+24/10/25 21:16:14 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/-ROOT-/.tmp/.tableinfo.0000000001 is closed by DFSClient_1766991081
+24/10/25 21:16:14 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_5331678350310494145_1008 size 728
+24/10/25 21:16:14 INFO master.HMaster: Server active/primary master; 6610172a78db,45173,1729890972810, sessionid=0xff92c58974270000, cluster-up flag was=false
+24/10/25 21:16:14 INFO snapshot.SnapshotManager: Snapshot feature is not enabled, missing log and hfile cleaners.
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270002 type:create cxid:0x7 zxid:0x10 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270001 type:create cxid:0x7 zxid:0x11 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270001 type:create cxid:0x8 zxid:0x13 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270002 type:create cxid:0x9 zxid:0x15 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+24/10/25 21:16:14 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot already exists and this is not a retry
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270001 type:create cxid:0x9 zxid:0x16 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+24/10/25 21:16:14 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/acquired already exists and this is not a retry
+24/10/25 21:16:14 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/acquired already exists and this is not a retry
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270002 type:create cxid:0xb zxid:0x18 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/reached Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/reached
+24/10/25 21:16:14 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270001 type:create cxid:0xb zxid:0x19 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/reached Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/reached
+24/10/25 21:16:14 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/reached already exists and this is not a retry
+24/10/25 21:16:14 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/reached already exists and this is not a retry
+24/10/25 21:16:14 INFO procedure.ZKProcedureUtil: Clearing all procedure znodes: /hbase/online-snapshot/acquired /hbase/online-snapshot/reached /hbase/online-snapshot/abort
+24/10/25 21:16:14 WARN snapshot.SnapshotManager: Couldn't delete working snapshot directory: hdfs://localhost:42965/user/root/hbase/.hbase-snapshot/.tmp
+24/10/25 21:16:14 INFO regionserver.MemStoreFlusher: globalMemStoreLimit=2.8g, globalMemStoreLimitLowMark=2.4g, maxHeap=6.9g
+24/10/25 21:16:14 INFO regionserver.MemStoreFlusher: globalMemStoreLimit=2.8g, globalMemStoreLimitLowMark=2.4g, maxHeap=6.9g
+24/10/25 21:16:14 INFO master.ServerManager: Waiting for region servers count to settle; currently checked in 0, slept for 0 ms, expecting minimum of 2, maximum of 2, timeout of 4500 ms, interval of 1500 ms.
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Runs every 2hrs, 46mins, 40sec
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Runs every 2hrs, 46mins, 40sec
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Attempting connect to Master server at 6610172a78db,45173,1729890972810
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Attempting connect to Master server at 6610172a78db,45173,1729890972810
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Connected to master at 6610172a78db/172.17.0.5:45173
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Connected to master at 6610172a78db/172.17.0.5:45173
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Telling master at 6610172a78db,45173,1729890972810 that we are up with port=37153, startcode=1729890972923
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Telling master at 6610172a78db,45173,1729890972810 that we are up with port=46295, startcode=1729890972911
+24/10/25 21:16:14 INFO master.ServerManager: Registering server=6610172a78db,46295,1729890972911
+24/10/25 21:16:14 INFO master.ServerManager: Registering server=6610172a78db,37153,1729890972923
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:16:14 INFO wal.HLog: FileSystem doesn't support getDefaultBlockSize
+24/10/25 21:16:14 INFO wal.HLog: FileSystem doesn't support getDefaultBlockSize
+24/10/25 21:16:14 INFO wal.HLog: HLog configuration: blocksize=64 MB, rollsize=60.8 MB, enabled=true, optionallogflushinternal=1000ms
+24/10/25 21:16:14 INFO wal.HLog: HLog configuration: blocksize=64 MB, rollsize=60.8 MB, enabled=true, optionallogflushinternal=1000ms
+24/10/25 21:16:14 INFO wal.HLog:  for /user/root/hbase/.logs/6610172a78db,37153,1729890972923/6610172a78db%2C37153%2C1729890972923.1729890974755
+24/10/25 21:16:14 INFO wal.HLog: Using getNumCurrentReplicas--HDFS-826
+24/10/25 21:16:14 INFO wal.HLog:  for /user/root/hbase/.logs/6610172a78db,46295,1729890972911/6610172a78db%2C46295%2C1729890972911.1729890974755
+24/10/25 21:16:14 INFO wal.HLog: Using getNumCurrentReplicas--HDFS-826
+24/10/25 21:16:14 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=RegionServer, sessionId=RegionServer:0;6610172a78db,46295,1729890972911 - already initialized
+24/10/25 21:16:14 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=RegionServer, sessionId=RegionServer:1;6610172a78db,37153,1729890972923 - already initialized
+24/10/25 21:16:14 INFO hbase.metrics: new MBeanInfo
+24/10/25 21:16:14 INFO hbase.metrics: new MBeanInfo
+24/10/25 21:16:14 INFO metrics.RegionServerMetrics: Initialized
+24/10/25 21:16:14 INFO metrics.RegionServerMetrics: Initialized
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server Responder: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server listener on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server listener on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server Responder: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 0 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 0 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 1 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 1 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 2 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 2 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 3 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 3 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 4 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 4 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 5 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 5 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 6 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 6 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 7 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 7 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 8 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 8 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 9 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: IPC Server handler 9 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 0 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 0 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 1 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 1 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 2 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 2 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 3 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 3 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 4 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 4 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 5 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 5 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 6 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 6 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 7 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 7 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 8 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 8 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 9 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: PRI IPC Server handler 9 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 37153: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 46295: starting
+24/10/25 21:16:14 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 37153: starting
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Serving as 6610172a78db,46295,1729890972911, RPC listening on 6610172a78db/172.17.0.5:46295, sessionid=0xff92c58974270001
+24/10/25 21:16:14 INFO regionserver.SplitLogWorker: SplitLogWorker 6610172a78db,46295,1729890972911 starting
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Serving as 6610172a78db,37153,1729890972923, RPC listening on 6610172a78db/172.17.0.5:37153, sessionid=0xff92c58974270002
+24/10/25 21:16:14 INFO regionserver.SplitLogWorker: SplitLogWorker 6610172a78db,37153,1729890972923 starting
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Registered RegionServer MXBean
+24/10/25 21:16:14 INFO regionserver.HRegionServer: Registered RegionServer MXBean
+24/10/25 21:16:14 INFO master.ServerManager: Finished waiting for region servers count to settle; checked in 2, slept for 50 ms, expecting minimum of 2, maximum of 2, master is running.
+24/10/25 21:16:14 INFO master.MasterFileSystem: Log folder hdfs://localhost:42965/user/root/hbase/.logs/6610172a78db,37153,1729890972923 belongs to an existing region server
+24/10/25 21:16:14 INFO master.MasterFileSystem: Log folder hdfs://localhost:42965/user/root/hbase/.logs/6610172a78db,46295,1729890972911 belongs to an existing region server
+24/10/25 21:16:15 INFO catalog.RootLocationEditor: Unsetting ROOT region location in ZooKeeper
+24/10/25 21:16:15 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270000 type:delete cxid:0x2f zxid:0x1d txntype:-1 reqpath:n/a Error Path:/hbase/root-region-server Error:KeeperErrorCode = NoNode for /hbase/root-region-server
+24/10/25 21:16:15 WARN zookeeper.RecoverableZooKeeper: Node /hbase/root-region-server already deleted, and this is not a retry
+24/10/25 21:16:15 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270000 type:delete cxid:0x37 zxid:0x20 txntype:-1 reqpath:n/a Error Path:/hbase/table92/-ROOT- Error:KeeperErrorCode = NoNode for /hbase/table92/-ROOT-
+24/10/25 21:16:15 WARN zookeeper.RecoverableZooKeeper: Node /hbase/table92/-ROOT- already deleted, and this is not a retry
+24/10/25 21:16:15 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=hconnection
+24/10/25 21:16:15 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:15 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:15 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:15 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:33748
+24/10/25 21:16:15 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:33748
+24/10/25 21:16:15 INFO server.ZooKeeperServer: Established session 0xff92c58974270003 with negotiated timeout 40000 for client /127.0.0.1:33748
+24/10/25 21:16:15 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c58974270003, negotiated timeout = 40000
+24/10/25 21:16:15 INFO regionserver.HRegionServer: Received request to open region: -ROOT-,,0.70236052
+24/10/25 21:16:15 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:15 INFO regionserver.Store: time to purge deletes set to 0ms in store info
+24/10/25 21:16:15 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:15 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35530, bytes: 288, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 512, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 154497
+24/10/25 21:16:15 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35540, bytes: 804, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 175694
+24/10/25 21:16:15 INFO regionserver.HRegion: Onlined -ROOT-,,0.70236052; next sequenceid=3
+24/10/25 21:16:15 INFO regionserver.HRegionServer: Post open deploy tasks for region=-ROOT-,,0.70236052, daughter=false
+24/10/25 21:16:15 INFO catalog.RootLocationEditor: Setting ROOT region location in ZooKeeper as 6610172a78db,37153,1729890972923
+24/10/25 21:16:15 INFO regionserver.HRegionServer: Done with post open deploy task for region=-ROOT-,,0.70236052, daughter=false
+24/10/25 21:16:15 INFO handler.OpenedRegionHandler: Handling OPENED event for -ROOT-,,0.70236052 from 6610172a78db,37153,1729890972923; deleting unassigned node
+24/10/25 21:16:15 INFO master.AssignmentManager: The master has opened the region -ROOT-,,0.70236052 that was online on 6610172a78db,37153,1729890972923
+24/10/25 21:16:15 INFO master.HMaster: -ROOT- assigned=1, rit=false, location=6610172a78db,37153,1729890972923
+24/10/25 21:16:15 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35542, bytes: 516, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 156720
+24/10/25 21:16:15 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35552, bytes: 516, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3160923501402686810_1007, duration: 137000
+24/10/25 21:16:16 INFO server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0xff92c58974270000 type:delete cxid:0x4b zxid:0x2a txntype:-1 reqpath:n/a Error Path:/hbase/table92/.META. Error:KeeperErrorCode = NoNode for /hbase/table92/.META.
+24/10/25 21:16:16 WARN zookeeper.RecoverableZooKeeper: Node /hbase/table92/.META. already deleted, and this is not a retry
+24/10/25 21:16:16 INFO regionserver.HRegionServer: Received request to open region: .META.,,1.1028785192
+24/10/25 21:16:16 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:16 INFO regionserver.Store: time to purge deletes set to 0ms in store info
+24/10/25 21:16:16 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:16 INFO regionserver.HRegion: Onlined .META.,,1.1028785192; next sequenceid=1
+24/10/25 21:16:16 INFO regionserver.HRegionServer: Post open deploy tasks for region=.META.,,1.1028785192, daughter=false
+24/10/25 21:16:16 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=hconnection
+24/10/25 21:16:16 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:16 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43962
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:16 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43962
+24/10/25 21:16:16 INFO server.ZooKeeperServer: Established session 0xff92c58974270004 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43962
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270004, negotiated timeout = 40000
+24/10/25 21:16:16 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.logs/6610172a78db,37153,1729890972923/6610172a78db%2C37153%2C1729890972923.1729890974755. blk_-8319801342701921453_1010
+24/10/25 21:16:16 INFO datanode.DataNode: Receiving block blk_-8319801342701921453_1010 src: /127.0.0.1:35566 dest: /127.0.0.1:45351
+24/10/25 21:16:16 INFO datanode.DataNode: Receiving block blk_-8319801342701921453_1010 src: /127.0.0.1:60774 dest: /127.0.0.1:43723
+24/10/25 21:16:16 INFO hdfs.StateChange: BLOCK* NameSystem.fsync: file /user/root/hbase/.logs/6610172a78db,37153,1729890972923/6610172a78db%2C37153%2C1729890972923.1729890974755 for DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:16 INFO catalog.MetaEditor: Updated row .META.,,1.1028785192 with server=6610172a78db,37153,1729890972923
+24/10/25 21:16:16 INFO regionserver.HRegionServer: Done with post open deploy task for region=.META.,,1.1028785192, daughter=false
+24/10/25 21:16:16 INFO handler.OpenedRegionHandler: Handling OPENED event for .META.,,1.1028785192 from 6610172a78db,37153,1729890972923; deleting unassigned node
+24/10/25 21:16:16 INFO master.AssignmentManager: The master has opened the region .META.,,1.1028785192 that was online on 6610172a78db,37153,1729890972923
+24/10/25 21:16:16 INFO master.HMaster: .META. assigned=1, rit=false, location=6610172a78db,37153,1729890972923
+24/10/25 21:16:16 INFO catalog.MetaMigrationRemovingHTD: Meta version=0; migrated=true
+24/10/25 21:16:16 INFO catalog.MetaMigrationRemovingHTD: ROOT/Meta already up-to date with new HRI.
+24/10/25 21:16:16 INFO master.AssignmentManager: Clean cluster startup. Assigning userregions
+24/10/25 21:16:16 INFO master.HMaster: Registered HMaster MXBean
+24/10/25 21:16:16 INFO master.HMaster: Master has completed initialization
+24/10/25 21:16:16 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=hconnection
+24/10/25 21:16:16 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:16 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:33760
+24/10/25 21:16:16 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:33760
+24/10/25 21:16:16 INFO server.ZooKeeperServer: Established session 0xff92c58974270005 with negotiated timeout 40000 for client /127.0.0.1:33760
+24/10/25 21:16:16 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c58974270005, negotiated timeout = 40000
+24/10/25 21:16:17 INFO client.HConnectionManager$HConnectionImplementation: Closed zookeeper sessionid=0xff92c58974270005
+24/10/25 21:16:17 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270005
+24/10/25 21:16:17 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270005 closed
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:17 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:33760 which had sessionid 0xff92c58974270005
+24/10/25 21:16:17 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=hconnection
+24/10/25 21:16:17 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:17 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:33774
+24/10/25 21:16:17 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:33774
+24/10/25 21:16:17 INFO server.ZooKeeperServer: Established session 0xff92c58974270006 with negotiated timeout 40000 for client /127.0.0.1:33774
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c58974270006, negotiated timeout = 40000
+24/10/25 21:16:17 INFO hbase.HBaseTestingUtility: Minicluster is up
+24/10/25 21:16:17 INFO wasp.WaspTestingUtility: Connectting Zookeeper by address<localhost>:port<62828>
+24/10/25 21:16:17 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=master:35183
+24/10/25 21:16:17 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:17 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43968
+24/10/25 21:16:17 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43968
+24/10/25 21:16:17 INFO server.ZooKeeperServer: Established session 0xff92c58974270007 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43968
+24/10/25 21:16:17 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270007, negotiated timeout = 40000
+24/10/25 21:16:17 WARN impl.MetricsSystemImpl: Metrics system not started: Cannot locate configuration: tried hadoop-metrics2-wasp.properties, hadoop-metrics2.properties
+24/10/25 21:16:17 WARN util.MBeans: Hadoop:service=Wasp,name=MetricsSystem,sub=Control
+javax.management.InstanceAlreadyExistsException: MXBean already registered with name Hadoop:service=NameNode,name=MetricsSystem,sub=Control
+	at com.sun.jmx.mbeanserver.MXBeanLookup.addReference(MXBeanLookup.java:151)
+	at com.sun.jmx.mbeanserver.MXBeanSupport.register(MXBeanSupport.java:160)
+	at com.sun.jmx.mbeanserver.MBeanSupport.preRegister2(MBeanSupport.java:173)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:930)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.hadoop.metrics2.util.MBeans.register(MBeans.java:56)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.initSystemMBean(MetricsSystemImpl.java:500)
+	at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.init(MetricsSystemImpl.java:140)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.init(DefaultMetricsSystem.java:40)
+	at org.apache.hadoop.metrics2.lib.DefaultMetricsSystem.initialize(DefaultMetricsSystem.java:50)
+	at com.alibaba.wasp.metrics.BaseSourceImpl$DefaultMetricsSystemInitializer.init(BaseSourceImpl.java:43)
+	at com.alibaba.wasp.metrics.BaseSourceImpl.<init>(BaseSourceImpl.java:65)
+	at com.alibaba.wasp.master.MetricsMasterSourceImpl.<init>(MetricsMasterSourceImpl.java:49)
+	at com.alibaba.wasp.master.MetricsMasterSourceImpl.<init>(MetricsMasterSourceImpl.java:42)
+	at com.alibaba.wasp.master.metrics.MetricsMasterSourceFactory.create(MetricsMasterSourceFactory.java:35)
+	at com.alibaba.wasp.master.metrics.MetricsMaster.<init>(MetricsMaster.java:33)
+	at com.alibaba.wasp.master.FMaster.<init>(FMaster.java:329)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.alibaba.wasp.util.JVMClusterUtil.createMasterThread(JVMClusterUtil.java:133)
+	at com.alibaba.wasp.LocalWaspCluster.addMaster(LocalWaspCluster.java:198)
+	at com.alibaba.wasp.LocalWaspCluster.<init>(LocalWaspCluster.java:150)
+	at com.alibaba.wasp.MiniWaspCluster.init(MiniWaspCluster.java:166)
+	at com.alibaba.wasp.MiniWaspCluster.<init>(MiniWaspCluster.java:89)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniWaspCluster(WaspTestingUtility.java:214)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:184)
+	at com.alibaba.wasp.WaspTestingUtility.startMiniCluster(WaspTestingUtility.java:144)
+	at com.alibaba.wasp.master.TestMaster.beforeAllTests(TestMaster.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:20 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:16:20 INFO master.ActiveMasterManager: Master=6610172a78db,35183,1729890977097
+24/10/25 21:16:20 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=catalogtracker-on-org.apache.hadoop.hbase.client.HConnectionManager$HConnectionImplementation@4b057f8f
+24/10/25 21:16:20 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:20 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43972
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43972
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Established session 0xff92c58974270008 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43972
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270008, negotiated timeout = 40000
+24/10/25 21:16:20 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270008
+24/10/25 21:16:20 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270008 closed
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:20 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43972 which had sessionid 0xff92c58974270008
+24/10/25 21:16:20 INFO handler.CreateTableHandler: Attempting to create the table _FMETA_
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.tmp/_FMETA_/.tmp/.tableinfo.0000000001. blk_4077287058794543916_1011
+24/10/25 21:16:20 INFO datanode.DataNode: Receiving block blk_4077287058794543916_1011 src: /127.0.0.1:60784 dest: /127.0.0.1:43723
+24/10/25 21:16:20 INFO datanode.DataNode: Receiving block blk_4077287058794543916_1011 src: /127.0.0.1:35576 dest: /127.0.0.1:45351
+24/10/25 21:16:20 INFO DataNode.clienttrace: src: /127.0.0.1:35576, dest: /127.0.0.1:45351, bytes: 669, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_4077287058794543916_1011, duration: 1116716
+24/10/25 21:16:20 INFO datanode.DataNode: PacketResponder 0 for block blk_4077287058794543916_1011 terminating
+24/10/25 21:16:20 INFO DataNode.clienttrace: src: /127.0.0.1:60784, dest: /127.0.0.1:43723, bytes: 669, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_4077287058794543916_1011, duration: 1570522
+24/10/25 21:16:20 INFO datanode.DataNode: PacketResponder 1 for block blk_4077287058794543916_1011 terminating
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_4077287058794543916_1011 size 669
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_4077287058794543916_1011 size 669
+24/10/25 21:16:20 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=fserver:42017
+24/10/25 21:16:20 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=fserver:35325
+24/10/25 21:16:20 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:20 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:20 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43980
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43980
+24/10/25 21:16:20 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43982
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43982
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Established session 0xff92c58974270009 with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43980
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c58974270009, negotiated timeout = 40000
+24/10/25 21:16:20 INFO server.ZooKeeperServer: Established session 0xff92c5897427000a with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43982
+24/10/25 21:16:20 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c5897427000a, negotiated timeout = 40000
+24/10/25 21:16:20 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.tmp/_FMETA_/.tmp/.tableinfo.0000000001 from client DFSClient_1766991081
+24/10/25 21:16:20 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.tmp/_FMETA_/.tmp/.tableinfo.0000000001 is closed by DFSClient_1766991081
+24/10/25 21:16:20 INFO regionserver.HRegion: creating HRegion _FMETA_ HTD == '_FMETA_', {NAME => 'info', ENCODE_ON_DISK => 'true', BLOOMFILTER => 'NONE', VERSIONS => '3', IN_MEMORY => 'true', KEEP_DELETED_CELLS => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => '2147483647', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'} RootDir = hdfs://localhost:42965/user/root/hbase/.tmp Table name == _FMETA_
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.tmp/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/.regioninfo. blk_-5586972458569503066_1012
+24/10/25 21:16:20 INFO datanode.DataNode: Receiving block blk_-5586972458569503066_1012 src: /127.0.0.1:35592 dest: /127.0.0.1:45351
+24/10/25 21:16:20 INFO datanode.DataNode: Receiving block blk_-5586972458569503066_1012 src: /127.0.0.1:60800 dest: /127.0.0.1:43723
+24/10/25 21:16:20 INFO DataNode.clienttrace: src: /127.0.0.1:60800, dest: /127.0.0.1:43723, bytes: 228, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-5586972458569503066_1012, duration: 1095077
+24/10/25 21:16:20 INFO datanode.DataNode: PacketResponder 0 for block blk_-5586972458569503066_1012 terminating
+24/10/25 21:16:20 INFO DataNode.clienttrace: src: /127.0.0.1:35592, dest: /127.0.0.1:45351, bytes: 228, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-5586972458569503066_1012, duration: 1271250
+24/10/25 21:16:20 INFO datanode.DataNode: PacketResponder 1 for block blk_-5586972458569503066_1012 terminating
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-5586972458569503066_1012 size 228
+24/10/25 21:16:20 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-5586972458569503066_1012 size 228
+24/10/25 21:16:20 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.tmp/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/.regioninfo from client DFSClient_1766991081
+24/10/25 21:16:20 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.tmp/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/.regioninfo is closed by DFSClient_1766991081
+24/10/25 21:16:20 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:20 INFO regionserver.HRegion: Closed _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0.
+24/10/25 21:16:21 INFO catalog.MetaEditor: Added 1 regions in META
+24/10/25 21:16:21 INFO master.AssignmentManager: Bulk assigning 1 region(s) round-robin across 2 server(s)
+24/10/25 21:16:21 INFO master.AssignmentManager: 6610172a78db,37153,1729890972923 outstanding calls=1 of total=1
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Received request to open 1 region(s)
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Received request to open region: _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0.
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35608, bytes: 677, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_4077287058794543916_1011, duration: 174046
+24/10/25 21:16:21 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:21 INFO regionserver.Store: time to purge deletes set to 0ms in store info
+24/10/25 21:16:21 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:21 INFO regionserver.HRegion: Onlined _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0.; next sequenceid=1
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Post open deploy tasks for region=_FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0., daughter=false
+24/10/25 21:16:21 INFO catalog.MetaEditor: Updated row _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0. with server=6610172a78db,37153,1729890972923
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Done with post open deploy task for region=_FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0., daughter=false
+24/10/25 21:16:21 INFO master.AssignmentManager: The master has opened the region _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0. that was online on 6610172a78db,37153,1729890972923
+24/10/25 21:16:21 INFO master.AssignmentManager: Bulk assigning done
+24/10/25 21:16:21 INFO master.FMaster: Server active/primary master; 6610172a78db,35183,1729890977097, sessionid=0xff92c58974270007, cluster-up flag was=false
+24/10/25 21:16:21 INFO fserver.FServer: ClusterId : 28183318-2ae2-4e64-a751-3668c2f89e81
+24/10/25 21:16:21 INFO fserver.FServer: ClusterId : 28183318-2ae2-4e64-a751-3668c2f89e81
+24/10/25 21:16:21 INFO fserver.FServer: Attempting connect to Master server at 6610172a78db,35183,1729890977097
+24/10/25 21:16:21 INFO fserver.FServer: Attempting connect to Master server at 6610172a78db,35183,1729890977097
+24/10/25 21:16:21 INFO master.FServerManager: Waiting for fservers count to settle; currently checked in 0, slept for 0 ms, expecting minimum of 2, maximum of 2, timeout of 4500 ms, interval of 1500 ms.
+24/10/25 21:16:21 INFO fserver.FServer: Connected to master at 6610172a78db/172.17.0.5:35183
+24/10/25 21:16:21 INFO fserver.FServer: Connected to master at 6610172a78db/172.17.0.5:35183
+24/10/25 21:16:21 INFO fserver.FServer: Telling master at 6610172a78db,35183,1729890977097 that we are up with port=42017, startcode=1729890980144
+24/10/25 21:16:21 INFO fserver.FServer: Telling master at 6610172a78db,35183,1729890977097 that we are up with port=35325, startcode=1729890980125
+24/10/25 21:16:21 INFO ipc.NettyTransceiver: Successfully connected to bookie: 6610172a78db/172.17.0.5:35183
+24/10/25 21:16:21 INFO master.FServerManager: Registering server=6610172a78db,35325,1729890980125
+24/10/25 21:16:21 INFO master.FServerManager: Registering server=6610172a78db,42017,1729890980144
+24/10/25 21:16:21 INFO fserver.FServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:16:21 INFO fserver.FServer: Master passed us hostname to use. Was=6610172a78db, Now=6610172a78db
+24/10/25 21:16:21 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:16:21 WARN wasp.ZNodeClearer: No filename given to save the znode used, it won't be saved (Environment variable WASP_ZNODE_FILE is not set).
+24/10/25 21:16:21 INFO master.FServerManager: Finished waiting for fservers count to settle; checked in 2, slept for 50 ms, expecting minimum of 2, maximum of 2, master is running.
+24/10/25 21:16:21 INFO fserver.FServer: Serving as 6610172a78db,35325,1729890980125, RPC listening on 6610172a78db/172.17.0.5:35325, sessionid=0xff92c5897427000a
+24/10/25 21:16:21 INFO fserver.FServer: Serving as 6610172a78db,42017,1729890980144, RPC listening on 6610172a78db/172.17.0.5:42017, sessionid=0xff92c58974270009
+24/10/25 21:16:21 INFO master.AssignmentManager: Clean cluster startup. Assigning user entityGroups
+24/10/25 21:16:21 INFO master.FMaster: Master has completed initialization
+24/10/25 21:16:21 INFO wasp.WaspTestingUtility: Wasp Minicluster is up
+.24/10/25 21:16:21 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=com.alibaba.wasp.client.FConnectionManager$FConnectionImplementation@e84a8e1
+24/10/25 21:16:21 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:21 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:33778
+24/10/25 21:16:21 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:33778
+24/10/25 21:16:21 INFO server.ZooKeeperServer: Established session 0xff92c5897427000b with negotiated timeout 40000 for client /127.0.0.1:33778
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c5897427000b, negotiated timeout = 40000
+24/10/25 21:16:21 INFO handler.CreateTableHandler: lock table 'TestMaster' by CreateIndexHandler
+24/10/25 21:16:21 INFO handler.CreateTableHandler: Attempting to create the table TestMaster
+24/10/25 21:16:21 INFO handler.CreateTableHandler: Attempting to create the table WASP_ENTITY_TestMaster
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/.tmp/.tableinfo.0000000001. blk_-7461210638527961097_1013
+24/10/25 21:16:21 INFO datanode.DataNode: Receiving block blk_-7461210638527961097_1013 src: /127.0.0.1:60804 dest: /127.0.0.1:43723
+24/10/25 21:16:21 INFO datanode.DataNode: Receiving block blk_-7461210638527961097_1013 src: /127.0.0.1:35614 dest: /127.0.0.1:45351
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:35614, dest: /127.0.0.1:45351, bytes: 894, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-7461210638527961097_1013, duration: 1091352
+24/10/25 21:16:21 INFO datanode.DataNode: PacketResponder 0 for block blk_-7461210638527961097_1013 terminating
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:60804, dest: /127.0.0.1:43723, bytes: 894, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-7461210638527961097_1013, duration: 2189207
+24/10/25 21:16:21 INFO datanode.DataNode: PacketResponder 1 for block blk_-7461210638527961097_1013 terminating
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-7461210638527961097_1013 size 894
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-7461210638527961097_1013 size 894
+24/10/25 21:16:21 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/.tmp/.tableinfo.0000000001 from client DFSClient_1766991081
+24/10/25 21:16:21 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/.tmp/.tableinfo.0000000001 is closed by DFSClient_1766991081
+24/10/25 21:16:21 INFO regionserver.HRegion: creating HRegion WASP_ENTITY_TestMaster HTD == 'WASP_ENTITY_TestMaster', {METHOD => 'table_att', coprocessor$1 => '|com.alibaba.wasp.coprocessor.WaspAggregateImplementation|1073741823|'}, {NAME => 'd', ENCODE_ON_DISK => 'true', BLOOMFILTER => 'ROW', VERSIONS => '3', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'false', DATA_BLOCK_ENCODING => 'NONE', TTL => '2147483647', COMPRESSION => 'GZ', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOPE => '0'} RootDir = hdfs://localhost:42965/user/root/hbase/.tmp Table name == WASP_ENTITY_TestMaster
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/d2ad44b3bcf2c5690eb052eedf1717da/.tmp/.regioninfo. blk_-2754411921520587500_1014
+24/10/25 21:16:21 INFO datanode.DataNode: Receiving block blk_-2754411921520587500_1014 src: /127.0.0.1:60810 dest: /127.0.0.1:43723
+24/10/25 21:16:21 INFO datanode.DataNode: Receiving block blk_-2754411921520587500_1014 src: /127.0.0.1:35620 dest: /127.0.0.1:45351
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:35620, dest: /127.0.0.1:45351, bytes: 273, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-2754411921520587500_1014, duration: 944829
+24/10/25 21:16:21 INFO datanode.DataNode: PacketResponder 0 for block blk_-2754411921520587500_1014 terminating
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:60810, dest: /127.0.0.1:43723, bytes: 273, op: HDFS_WRITE, cliID: DFSClient_1766991081, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-2754411921520587500_1014, duration: 1339175
+24/10/25 21:16:21 INFO datanode.DataNode: PacketResponder 1 for block blk_-2754411921520587500_1014 terminating
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-2754411921520587500_1014 size 273
+24/10/25 21:16:21 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/d2ad44b3bcf2c5690eb052eedf1717da/.tmp/.regioninfo from client DFSClient_1766991081
+24/10/25 21:16:21 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.tmp/WASP_ENTITY_TestMaster/d2ad44b3bcf2c5690eb052eedf1717da/.tmp/.regioninfo is closed by DFSClient_1766991081
+24/10/25 21:16:21 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:21 INFO regionserver.HRegion: Closed WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da.
+24/10/25 21:16:21 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-2754411921520587500_1014 size 273
+24/10/25 21:16:21 INFO catalog.MetaEditor: Added 1 regions in META
+24/10/25 21:16:21 INFO master.AssignmentManager: Bulk assigning 1 region(s) round-robin across 2 server(s)
+24/10/25 21:16:21 INFO master.AssignmentManager: Bulk assigning done
+24/10/25 21:16:21 INFO master.AssignmentManager: 6610172a78db,46295,1729890972911 outstanding calls=1 of total=1
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Received request to open 1 region(s)
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Received request to open region: WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da.
+24/10/25 21:16:21 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60816, bytes: 902, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,46295,1729890972911, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-7461210638527961097_1013, duration: 110825
+24/10/25 21:16:21 INFO regionserver.HRegion: Setting up tabledescriptor config now ...
+24/10/25 21:16:21 INFO regionserver.RegionCoprocessorHost: Load coprocessor com.alibaba.wasp.coprocessor.WaspAggregateImplementation from HTD of WASP_ENTITY_TestMaster successfully.
+24/10/25 21:16:21 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/10/25 21:16:21 INFO compress.CodecPool: Got brand-new compressor
+24/10/25 21:16:21 INFO regionserver.Store: time to purge deletes set to 0ms in store d
+24/10/25 21:16:21 INFO regionserver.Store: hbase.hstore.compaction.min = 3
+24/10/25 21:16:21 INFO regionserver.HRegion: Onlined WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da.; next sequenceid=1
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Post open deploy tasks for region=WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da., daughter=false
+24/10/25 21:16:21 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=hconnection
+24/10/25 21:16:21 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:62828, initiating session
+24/10/25 21:16:21 INFO server.NIOServerCnxnFactory: Accepted socket connection from /0:0:0:0:0:0:0:1:43994
+24/10/25 21:16:21 INFO server.ZooKeeperServer: Client attempting to establish new session at /0:0:0:0:0:0:0:1:43994
+24/10/25 21:16:21 INFO server.ZooKeeperServer: Established session 0xff92c5897427000c with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:43994
+24/10/25 21:16:21 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:62828, sessionid = 0xff92c5897427000c, negotiated timeout = 40000
+24/10/25 21:16:21 INFO catalog.MetaEditor: Updated row WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da. with server=6610172a78db,46295,1729890972911
+24/10/25 21:16:21 INFO regionserver.HRegionServer: Done with post open deploy task for region=WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da., daughter=false
+24/10/25 21:16:21 INFO master.AssignmentManager: The master has opened the region WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da. that was online on 6610172a78db,46295,1729890972911
+24/10/25 21:16:22 INFO master.AssignmentManager: Bulk assigning 1 entityGroup(s) round-robin across 2 server(s)
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OFFLINE, ts=1729890982408, server=null} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OFFLINE, ts=1729890982411, server=null}
+24/10/25 21:16:22 INFO master.AssignmentManager: 6610172a78db,42017,1729890980144 unassigned znodes=1 of total=1
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OFFLINE, ts=1729890982411, server=null} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=PENDING_OPEN, ts=1729890982418, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:22 INFO ipc.NettyTransceiver: Successfully connected to bookie: 6610172a78db/172.17.0.5:42017
+24/10/25 21:16:22 INFO fserver.FServer: Received request to open entityGroup: TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.from /172.17.0.5:39448
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=PENDING_OPEN, ts=1729890982418, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPENING, ts=1729890982432, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:22 INFO fserver.EntityGroup: EntityGroup.openEntityGroup EntityGroup name ==TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.
+24/10/25 21:16:22 ERROR server.NIOServerCnxnFactory: Thread Thread[Thread-251,5,main] died
+java.lang.NullPointerException
+	at com.alibaba.wasp.fserver.EntityGroup.run(EntityGroup.java:1264)
+	at java.lang.Thread.run(Thread.java:750)
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPENING, ts=1729890982432, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPENING, ts=1729890982436, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:22 INFO fserver.FServer: Post open deploy tasks for entityGroup=TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117., daughter=false
+24/10/25 21:16:22 INFO fserver.FServer: Done with post open deploy task for entityGroup=TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117., daughter=false
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPENING, ts=1729890982436, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPEN, ts=1729890982438, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:22 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPEN, ts=1729890982438, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPEN, ts=1729890982440, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:22 INFO master.EntityGroupStates: Onlined entityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} on 6610172a78db,42017,1729890980144
+24/10/25 21:16:22 INFO master.AssignmentManager: The master has opened the entityGroup TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. that was online on 6610172a78db,42017,1729890980144
+24/10/25 21:16:22 INFO master.AssignmentManager: Bulk assigning done
+24/10/25 21:16:22 INFO ipc.NettyTransceiver: Successfully connected to bookie: 6610172a78db/172.17.0.5:35325
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:62828 sessionTimeout=180000 watcher=fconnection
+24/10/25 21:16:23 INFO zookeeper.RecoverableZooKeeper: The identifier of this process is 1590959@6610172a78db
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:62828, initiating session
+24/10/25 21:16:23 INFO server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:33786
+24/10/25 21:16:23 INFO server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:33786
+24/10/25 21:16:23 INFO server.ZooKeeperServer: Established session 0xff92c5897427000d with negotiated timeout 40000 for client /127.0.0.1:33786
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:62828, sessionid = 0xff92c5897427000d, negotiated timeout = 40000
+24/10/25 21:16:23 INFO master.TestMaster: EntityGroups after load: {{NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,},6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO master.TestMaster: Splitting table
+24/10/25 21:16:23 INFO fserver.FServer: Spliting TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. from /172.17.0.5:39448
+24/10/25 21:16:23 INFO master.TestMaster: Waiting for split result to be about to open
+24/10/25 21:16:23 INFO fserver.SplitTransaction: Starting split of entityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,}
+24/10/25 21:16:23 INFO fserver.EntityGroup: Running commit transaction of TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. before close
+24/10/25 21:16:23 INFO fserver.EntityGroup: Closed TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.
+24/10/25 21:16:23 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OPEN, ts=1729890982440, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=SPLITTING, ts=1729890983428, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO meta.FMetaServicesImplWithoutRetry: Offlined parent entityGroup TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. in META
+24/10/25 21:16:23 ERROR server.NIOServerCnxnFactory: Thread Thread[Thread-259,5,main] died
+java.lang.NullPointerException
+	at com.alibaba.wasp.fserver.EntityGroup.run(EntityGroup.java:1264)
+	at java.lang.Thread.run(Thread.java:750)
+24/10/25 21:16:23 ERROR server.NIOServerCnxnFactory: Thread Thread[Thread-260,5,main] died
+java.lang.NullPointerException
+	at com.alibaba.wasp.fserver.EntityGroup.run(EntityGroup.java:1264)
+	at java.lang.Thread.run(Thread.java:750)
+24/10/25 21:16:23 INFO fserver.FServer: Post open deploy tasks for entityGroup=TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6., daughter=true
+24/10/25 21:16:23 INFO meta.FMetaServicesImplWithoutRetry: Added daughter TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6., entityGroupLocation=6610172a78db,42017,1729890980144
+24/10/25 21:16:23 INFO fserver.FServer: Done with post open deploy task for entityGroup=TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6., daughter=true
+24/10/25 21:16:23 INFO fserver.FServer: Post open deploy tasks for entityGroup=TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c., daughter=true
+24/10/25 21:16:23 INFO meta.FMetaServicesImplWithoutRetry: Added daughter TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c., entityGroupLocation=6610172a78db,42017,1729890980144
+24/10/25 21:16:23 INFO fserver.FServer: Done with post open deploy task for entityGroup=TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c., daughter=true
+24/10/25 21:16:23 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=SPLITTING, ts=1729890983428, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=SPLITTING, ts=1729890983433, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO master.AssignmentManager: Received SPLIT for entityGroup 0cbf87a8f268a7c2ebde38250d7d3117 from server 6610172a78db,42017,1729890980144 but entityGroup was not first in SPLITTING state; continuing
+24/10/25 21:16:23 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} transitioned from {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=SPLITTING, ts=1729890983433, server=6610172a78db,42017,1729890980144} to {TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. state=OFFLINE, ts=1729890983434, server=null}
+24/10/25 21:16:23 INFO master.EntityGroupStates: Offlined entityGroup {NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117,} from 6610172a78db,42017,1729890980144
+24/10/25 21:16:23 WARN master.EntityGroupStates: Online a entityGroup not in EntityGroupStates: {NAME => 'TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.', STARTKEY => '', ENDKEY => '1234', ENCODED => 1f24634d354d68ebcc4485bc4fef031c,}
+24/10/25 21:16:23 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.', STARTKEY => '', ENDKEY => '1234', ENCODED => 1f24634d354d68ebcc4485bc4fef031c,} transitioned from null to {TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c. state=OPEN, ts=1729890983434, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO master.EntityGroupStates: Onlined entityGroup {NAME => 'TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.', STARTKEY => '', ENDKEY => '1234', ENCODED => 1f24634d354d68ebcc4485bc4fef031c,} on 6610172a78db,42017,1729890980144
+24/10/25 21:16:23 WARN master.EntityGroupStates: Online a entityGroup not in EntityGroupStates: {NAME => 'TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.', STARTKEY => '1234', ENDKEY => '', ENCODED => 3e20d1de48eb3407aad10de62e35f4b6,}
+24/10/25 21:16:23 INFO master.EntityGroupStates: EntityGroup {NAME => 'TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.', STARTKEY => '1234', ENDKEY => '', ENCODED => 3e20d1de48eb3407aad10de62e35f4b6,} transitioned from null to {TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6. state=OPEN, ts=1729890983434, server=6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO master.EntityGroupStates: Onlined entityGroup {NAME => 'TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.', STARTKEY => '1234', ENDKEY => '', ENCODED => 3e20d1de48eb3407aad10de62e35f4b6,} on 6610172a78db,42017,1729890980144
+24/10/25 21:16:23 ERROR meta.FMetaServicesImplWithoutRetry: deleteStorageTables WASP_TRANSACTION_0cbf87a8f268a7c2ebde38250d7d3117
+org.apache.hadoop.hbase.TableNotFoundException: org.apache.hadoop.hbase.TableNotFoundException: WASP_TRANSACTION_0cbf87a8f268a7c2ebde38250d7d3117
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.ipc.RemoteException.instantiateException(RemoteException.java:95)
+	at org.apache.hadoop.ipc.RemoteException.unwrapRemoteException(RemoteException.java:79)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTableAsync(HBaseAdmin.java:825)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTable(HBaseAdmin.java:848)
+	at com.alibaba.wasp.storage.StorageActionManager.deleteStorageTable(StorageActionManager.java:103)
+	at com.alibaba.wasp.meta.FMetaServicesImplWithoutRetry.deleteStorageTable(FMetaServicesImplWithoutRetry.java:194)
+	at com.alibaba.wasp.meta.FMetaStore.deleteStorageTable(FMetaStore.java:108)
+	at com.alibaba.wasp.meta.FMetaEditor.deleteStorageTable(FMetaEditor.java:161)
+	at com.alibaba.wasp.master.handler.SplitEntityGroupHandler.process(SplitEntityGroupHandler.java:66)
+	at com.alibaba.wasp.executor.EventHandler.run(EventHandler.java:198)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hbase.TableNotFoundException: WASP_TRANSACTION_0cbf87a8f268a7c2ebde38250d7d3117
+	at org.apache.hadoop.hbase.master.handler.DisableTableHandler.<init>(DisableTableHandler.java:62)
+	at org.apache.hadoop.hbase.master.HMaster.disableTable(HMaster.java:1417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.hbase.ipc.WritableRpcEngine$Server.call(WritableRpcEngine.java:320)
+	at org.apache.hadoop.hbase.ipc.HBaseServer$Handler.run(HBaseServer.java:1426)
+
+	at org.apache.hadoop.hbase.ipc.HBaseClient.call(HBaseClient.java:995)
+	at org.apache.hadoop.hbase.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:86)
+	at com.sun.proxy.$Proxy19.disableTable(Unknown Source)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.disableTableAsync(HBaseAdmin.java:823)
+	... 10 more
+24/10/25 21:16:23 INFO handler.SplitEntityGroupHandler: Handled SPLIT event; parent=TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117. daughter a=TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.daughter b=TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.
+24/10/25 21:16:23 INFO master.TestMaster: Making sure we can call getTableEntityGroups while opening
+24/10/25 21:16:23 INFO master.TestMaster: EntityGroups: {{NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117, OFFLINE => true, SPLIT => true,},6610172a78db,42017,1729890980144},{{NAME => 'TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.', STARTKEY => '', ENDKEY => '1234', ENCODED => 1f24634d354d68ebcc4485bc4fef031c,},6610172a78db,42017,1729890980144},{{NAME => 'TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.', STARTKEY => '1234', ENDKEY => '', ENCODED => 3e20d1de48eb3407aad10de62e35f4b6,},6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO master.TestMaster: Making sure we can call getTableEntityGroupClosest while opening
+24/10/25 21:16:23 INFO master.TestMaster: Result is: {{NAME => 'TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117.', STARTKEY => '', ENDKEY => '', ENCODED => 0cbf87a8f268a7c2ebde38250d7d3117, OFFLINE => true, SPLIT => true,},6610172a78db,42017,1729890980144}
+24/10/25 21:16:23 INFO wasp.WaspTestingUtility: Shutting down mini wasp cluster
+24/10/25 21:16:23 INFO client.FConnectionManager$FConnectionImplementation: Closing master protocol: com.alibaba.wasp.master.FMasterAdminProtocol
+24/10/25 21:16:23 INFO client.FConnectionManager$FConnectionImplementation: Closing zookeeper sessionid=0xff92c5897427000b
+24/10/25 21:16:23 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c5897427000b
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Session: 0xff92c5897427000b closed
+24/10/25 21:16:23 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:33778 which had sessionid 0xff92c5897427000b
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:23 INFO master.FMaster: Cluster shutdown requested
+24/10/25 21:16:23 INFO master.FServerManager: Waiting on fserver(s) to go down 6610172a78db,35325,1729890980125, 6610172a78db,42017,1729890980144
+24/10/25 21:16:23 INFO balancer.BalancerChore: 6610172a78db,35183,1729890977097-BalancerChore exiting
+24/10/25 21:16:23 INFO balancer.ClusterStatusChore: 6610172a78db,35183,1729890977097-ClusterStatusChore exiting
+24/10/25 21:16:23 INFO fserver.FServer: STOPPED: Shutdown requested
+24/10/25 21:16:23 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,35325,1729890980125
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,35325,1729890980125; all entityGroups closed.
+24/10/25 21:16:23 INFO fserver.Leases: FServer:0;6610172a78db,35325,1729890980125 closing leases
+24/10/25 21:16:23 INFO fserver.Leases: FServer:0;6610172a78db,35325,1729890980125 closed leases
+24/10/25 21:16:23 INFO zookeeper.FServerTracker: FServer ephemeral node deleted, processing expiration [6610172a78db,35325,1729890980125]
+24/10/25 21:16:23 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c5897427000a
+24/10/25 21:16:23 INFO master.FServerManager: Cluster shutdown set; 6610172a78db,35325,1729890980125 expired; onlineServers=1
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Session: 0xff92c5897427000a closed
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,35325,1729890980125; zookeeper connection closed.
+24/10/25 21:16:23 INFO fserver.FServer: FServer:0;6610172a78db,35325,1729890980125 exiting
+24/10/25 21:16:23 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43982 which had sessionid 0xff92c5897427000a
+24/10/25 21:16:23 INFO fserver.FServer: STOPPED: Shutdown requested
+24/10/25 21:16:23 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,42017,1729890980144
+24/10/25 21:16:23 INFO fserver.EntityGroup: Running commit transaction of TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6. before close
+24/10/25 21:16:23 INFO fserver.FServer: Waiting on 2 entityGroups to close
+24/10/25 21:16:23 INFO fserver.EntityGroup: Closed TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.
+24/10/25 21:16:23 INFO fserver.EntityGroup: Running commit transaction of TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c. before close
+24/10/25 21:16:23 INFO fserver.EntityGroup: Closed TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c.
+24/10/25 21:16:23 INFO fserver.SplitRequest: EntityGroup split, FMETA updated, and report to master. Parent=TestMaster,,1729890981384.0cbf87a8f268a7c2ebde38250d7d3117., new entityGroups: TestMaster,,1729890983424.1f24634d354d68ebcc4485bc4fef031c., TestMaster,1234,1729890983424.3e20d1de48eb3407aad10de62e35f4b6.. Split took 0sec
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,42017,1729890980144; all entityGroups closed.
+24/10/25 21:16:23 INFO fserver.Leases: FServer:1;6610172a78db,42017,1729890980144 closing leases
+24/10/25 21:16:23 INFO fserver.Leases: FServer:1;6610172a78db,42017,1729890980144 closed leases
+24/10/25 21:16:23 INFO zookeeper.FServerTracker: FServer ephemeral node deleted, processing expiration [6610172a78db,42017,1729890980144]
+24/10/25 21:16:23 INFO master.FServerManager: Cluster shutdown set; 6610172a78db,42017,1729890980144 expired; onlineServers=0
+24/10/25 21:16:23 INFO master.FMaster: Cluster shutdown set; onlineServer=0
+24/10/25 21:16:23 INFO ipc.NettyServer: Stopping server on 0
+24/10/25 21:16:23 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270009
+24/10/25 21:16:23 INFO meta.StorageCleanChore: Master:0;6610172a78db,35183,1729890977097.storageCleaner exiting
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270009 closed
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:23 INFO fserver.FServer: stopping server 6610172a78db,42017,1729890980144; zookeeper connection closed.
+24/10/25 21:16:23 INFO fserver.FServer: FServer:1;6610172a78db,42017,1729890980144 exiting
+24/10/25 21:16:23 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43980 which had sessionid 0xff92c58974270009
+24/10/25 21:16:23 INFO util.JVMClusterUtil: Shutdown of 1 master(s) and 2 fserver(s) complete
+24/10/25 21:16:23 INFO master.AssignmentManager$TimerUpdater: 6610172a78db,35183,1729890977097.timerUpdater exiting
+24/10/25 21:16:23 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270007
+24/10/25 21:16:23 INFO master.AssignmentManager$TimeoutMonitor: 6610172a78db,35183,1729890977097.timeoutMonitor exiting
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270007 closed
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:23 INFO master.FMaster: FMaster main thread exiting
+24/10/25 21:16:23 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43968 which had sessionid 0xff92c58974270007
+24/10/25 21:16:23 INFO hbase.HBaseTestingUtility: Shutting down minicluster
+24/10/25 21:16:23 INFO master.HMaster: Cluster shutdown requested
+24/10/25 21:16:23 INFO master.ServerManager: Waiting on regionserver(s) to go down 6610172a78db,46295,1729890972911, 6610172a78db,37153,1729890972923
+24/10/25 21:16:23 INFO master.CatalogJanitor: 6610172a78db,45173,1729890972810-CatalogJanitor exiting
+24/10/25 21:16:23 INFO master.HMaster$2: 6610172a78db,45173,1729890972810-BalancerChore exiting
+24/10/25 21:16:23 INFO regionserver.HRegionServer: STOPPED: Shutdown requested
+24/10/25 21:16:23 INFO ipc.HBaseServer: Stopping server on 46295
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 2 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 1 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 0 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 6 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 4 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 7 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 9 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 8 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 5 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 0 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 5 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 9 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 3 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 3 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 4 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 2 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: Stopping IPC Server listener on 46295
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 1 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:23 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:23 INFO regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+24/10/25 21:16:23 INFO ipc.HBaseServer: PRI IPC Server handler 6 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 8 on 46295: exiting
+24/10/25 21:16:23 INFO ipc.HBaseServer: IPC Server handler 7 on 46295: exiting
+24/10/25 21:16:23 INFO regionserver.SplitLogWorker: SplitLogWorker interrupted while waiting for task, exiting: java.lang.InterruptedException
+24/10/25 21:16:23 INFO regionserver.SplitLogWorker: SplitLogWorker 6610172a78db,46295,1729890972911 exiting
+24/10/25 21:16:23 INFO snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+24/10/25 21:16:23 INFO regionserver.MemStoreFlusher: RegionServer:0;6610172a78db,46295,1729890972911.cacheFlusher exiting
+24/10/25 21:16:23 INFO regionserver.HRegionServer$CompactionChecker: RegionServer:0;6610172a78db,46295,1729890972911.compactionChecker exiting
+24/10/25 21:16:23 INFO regionserver.LogRoller: LogRoller exiting.
+24/10/25 21:16:23 INFO regionserver.HRegionServer: stopping server 6610172a78db,46295,1729890972911
+24/10/25 21:16:23 INFO regionserver.Store: Closed d
+24/10/25 21:16:23 INFO regionserver.HRegion: Closed WASP_ENTITY_TestMaster,,1729890981396.d2ad44b3bcf2c5690eb052eedf1717da.
+24/10/25 21:16:23 INFO client.HConnectionManager$HConnectionImplementation: Closed zookeeper sessionid=0xff92c5897427000c
+24/10/25 21:16:23 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c5897427000c
+24/10/25 21:16:23 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43994 which had sessionid 0xff92c5897427000c
+24/10/25 21:16:23 INFO zookeeper.ZooKeeper: Session: 0xff92c5897427000c closed
+24/10/25 21:16:23 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:23 INFO snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+24/10/25 21:16:23 INFO regionserver.HRegionServer: stopping server 6610172a78db,46295,1729890972911; all regions closed.
+24/10/25 21:16:23 INFO wal.HLog: RegionServer:0;6610172a78db,46295,1729890972911.logSyncer exiting
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.logs/6610172a78db,46295,1729890972911/6610172a78db%2C46295%2C1729890972911.1729890974755. blk_2879707804158702619_1014
+24/10/25 21:16:23 INFO datanode.DataNode: Receiving block blk_2879707804158702619_1014 src: /127.0.0.1:35634 dest: /127.0.0.1:45351
+24/10/25 21:16:23 INFO datanode.DataNode: Receiving block blk_2879707804158702619_1014 src: /127.0.0.1:60824 dest: /127.0.0.1:43723
+24/10/25 21:16:23 INFO regionserver.HRegionServer: Closing user regions
+24/10/25 21:16:23 INFO DataNode.clienttrace: src: /127.0.0.1:60824, dest: /127.0.0.1:43723, bytes: 134, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,46295,1729890972911, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_2879707804158702619_1014, duration: 974832
+24/10/25 21:16:23 INFO datanode.DataNode: PacketResponder 0 for block blk_2879707804158702619_1014 terminating
+24/10/25 21:16:23 INFO DataNode.clienttrace: src: /127.0.0.1:35634, dest: /127.0.0.1:45351, bytes: 134, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,46295,1729890972911, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_2879707804158702619_1014, duration: 2816460
+24/10/25 21:16:23 INFO datanode.DataNode: PacketResponder 1 for block blk_2879707804158702619_1014 terminating
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_2879707804158702619_1014 size 134
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_2879707804158702619_1014 size 134
+24/10/25 21:16:23 INFO regionserver.StoreFile: Delete Family Bloom filter type for hdfs://localhost:42965/user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1: CompoundBloomFilterWriter
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1. blk_-1484970310884328637_1015
+24/10/25 21:16:23 INFO datanode.DataNode: Receiving block blk_-1484970310884328637_1015 src: /127.0.0.1:60834 dest: /127.0.0.1:43723
+24/10/25 21:16:23 INFO datanode.DataNode: Receiving block blk_-1484970310884328637_1015 src: /127.0.0.1:35650 dest: /127.0.0.1:45351
+24/10/25 21:16:23 INFO DataNode.clienttrace: src: /127.0.0.1:35650, dest: /127.0.0.1:45351, bytes: 2306, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-1484970310884328637_1015, duration: 1180439
+24/10/25 21:16:23 INFO datanode.DataNode: PacketResponder 0 for block blk_-1484970310884328637_1015 terminating
+24/10/25 21:16:23 INFO DataNode.clienttrace: src: /127.0.0.1:60834, dest: /127.0.0.1:43723, bytes: 2306, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1484970310884328637_1015, duration: 1646119
+24/10/25 21:16:23 INFO datanode.DataNode: PacketResponder 1 for block blk_-1484970310884328637_1015 terminating
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-1484970310884328637_1015 size 2306
+24/10/25 21:16:23 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-1484970310884328637_1015 size 2306
+24/10/25 21:16:23 INFO master.SplitLogManager$TimeoutMonitor: 6610172a78db,45173,1729890972810.splitLogManagerTimeoutMonitor exiting
+24/10/25 21:16:24 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.logs/6610172a78db,46295,1729890972911/6610172a78db%2C46295%2C1729890972911.1729890974755 from client DFSClient_hb_rs_6610172a78db,46295,1729890972911
+24/10/25 21:16:24 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.logs/6610172a78db,46295,1729890972911/6610172a78db%2C46295%2C1729890972911.1729890974755 is closed by DFSClient_hb_rs_6610172a78db,46295,1729890972911
+24/10/25 21:16:24 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1 from client DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1 is closed by DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO regionserver.StoreFile: NO General Bloom and NO DeleteFamily was added to HFile (hdfs://localhost:42965/user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1) 
+24/10/25 21:16:24 INFO regionserver.Store: Flushed , sequenceid=15, memsize=2.9k, into tmp file hdfs://localhost:42965/user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/.tmp/2ea77cdda9d74d8ea06bde9f2c76d7d1
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60844, bytes: 262, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 2048, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1484970310884328637_1015, duration: 124090
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60854, bytes: 778, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 1536, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1484970310884328637_1015, duration: 86868
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60860, bytes: 262, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 2048, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1484970310884328637_1015, duration: 122953
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60864, bytes: 778, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 1536, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-1484970310884328637_1015, duration: 213669
+24/10/25 21:16:24 INFO regionserver.Store: Added hdfs://localhost:42965/user/root/hbase/_FMETA_/db8d0c27835eba3b9ef42e4eab8e67a0/info/2ea77cdda9d74d8ea06bde9f2c76d7d1, entries=10, sequenceid=15, filesize=2.3k
+24/10/25 21:16:24 INFO regionserver.HRegion: Finished memstore flush of ~2.9k/2928, currentsize=0.0/0 for region _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0. in 417ms, sequenceid=15, compaction requested=false
+24/10/25 21:16:24 INFO regionserver.Store: Closed info
+24/10/25 21:16:24 INFO regionserver.HRegion: Closed _FMETA_,,1729890980169.db8d0c27835eba3b9ef42e4eab8e67a0.
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:0;6610172a78db,46295,1729890972911 closing leases
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:0;6610172a78db,46295,1729890972911 closed leases
+24/10/25 21:16:24 INFO zookeeper.RegionServerTracker: RegionServer ephemeral node deleted, processing expiration [6610172a78db,46295,1729890972911]
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270001
+24/10/25 21:16:24 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270001 closed
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:24 INFO regionserver.HRegionServer: stopping server 6610172a78db,46295,1729890972911; zookeeper connection closed.
+24/10/25 21:16:24 INFO regionserver.HRegionServer: RegionServer:0;6610172a78db,46295,1729890972911 exiting
+24/10/25 21:16:24 INFO master.ServerManager: Cluster shutdown set; 6610172a78db,46295,1729890972911 expired; onlineServers=1
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:47160 which had sessionid 0xff92c58974270001
+24/10/25 21:16:24 INFO hbase.MiniHBaseCluster: Hook closing fs=org.apache.hadoop.hbase.fs.HFileSystem@72e20988
+24/10/25 21:16:24 INFO regionserver.HRegionServer: STOPPED: Shutdown requested
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping server on 37153
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 0 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 1 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 3 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 3 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 0 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 4 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 2 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 7 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 6 on 37153: exiting
+24/10/25 21:16:24 INFO regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 7 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 2 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 8 on 37153: exiting
+24/10/25 21:16:24 INFO regionserver.MemStoreFlusher: RegionServer:1;6610172a78db,37153,1729890972923.cacheFlusher exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 9 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 5 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 4 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 1 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 6 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server listener on 37153
+24/10/25 21:16:24 INFO regionserver.LogRoller: LogRoller exiting.
+24/10/25 21:16:24 INFO regionserver.HRegionServer$CompactionChecker: RegionServer:1;6610172a78db,37153,1729890972923.compactionChecker exiting
+24/10/25 21:16:24 INFO snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+24/10/25 21:16:24 INFO regionserver.SplitLogWorker: SplitLogWorker interrupted while waiting for task, exiting: java.lang.InterruptedException
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 9 on 37153: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 8 on 37153: exiting
+24/10/25 21:16:24 INFO regionserver.HRegionServer: stopping server 6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO ipc.HBaseServer: PRI IPC Server handler 5 on 37153: exiting
+24/10/25 21:16:24 INFO regionserver.SplitLogWorker: SplitLogWorker 6610172a78db,37153,1729890972923 exiting
+24/10/25 21:16:24 INFO client.HConnectionManager$HConnectionImplementation: Closed zookeeper sessionid=0xff92c58974270004
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270004
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:43962 which had sessionid 0xff92c58974270004
+24/10/25 21:16:24 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270004 closed
+24/10/25 21:16:24 INFO snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:24 INFO regionserver.HRegionServer: Waiting on 2 regions to close
+24/10/25 21:16:24 INFO regionserver.StoreFile: Delete Family Bloom filter type for hdfs://localhost:42965/user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0: CompoundBloomFilterWriter
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0. blk_-3674169393658286164_1016
+24/10/25 21:16:24 INFO datanode.DataNode: Receiving block blk_-3674169393658286164_1016 src: /127.0.0.1:35666 dest: /127.0.0.1:45351
+24/10/25 21:16:24 INFO datanode.DataNode: Receiving block blk_-3674169393658286164_1016 src: /127.0.0.1:60866 dest: /127.0.0.1:43723
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:60866, dest: /127.0.0.1:43723, bytes: 1643, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3674169393658286164_1016, duration: 663513
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 0 for block blk_-3674169393658286164_1016 terminating
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:35666, dest: /127.0.0.1:45351, bytes: 1643, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-3674169393658286164_1016, duration: 1232356
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 1 for block blk_-3674169393658286164_1016 terminating
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-3674169393658286164_1016 size 1643
+24/10/25 21:16:24 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0 from client DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0 is closed by DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO regionserver.StoreFile: NO General Bloom and NO DeleteFamily was added to HFile (hdfs://localhost:42965/user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0) 
+24/10/25 21:16:24 INFO regionserver.Store: Flushed , sequenceid=16, memsize=1.6k, into tmp file hdfs://localhost:42965/user/root/hbase/.META./1028785192/.tmp/7550fa2f23224af79818a1a2e5275ea0
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60874, bytes: 627, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 1024, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3674169393658286164_1016, duration: 190219
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60876, bytes: 1143, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 512, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3674169393658286164_1016, duration: 180794
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-3674169393658286164_1016 size 1643
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60888, bytes: 627, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 1024, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3674169393658286164_1016, duration: 173837
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60904, bytes: 1143, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 512, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-3674169393658286164_1016, duration: 147182
+24/10/25 21:16:24 INFO regionserver.Store: Added hdfs://localhost:42965/user/root/hbase/.META./1028785192/info/7550fa2f23224af79818a1a2e5275ea0, entries=6, sequenceid=16, filesize=1.6k
+24/10/25 21:16:24 INFO regionserver.HRegion: Finished memstore flush of ~1.6k/1664, currentsize=0.0/0 for region .META.,,1.1028785192 in 16ms, sequenceid=16, compaction requested=false
+24/10/25 21:16:24 INFO regionserver.Store: Closed info
+24/10/25 21:16:24 INFO regionserver.HRegion: Closed .META.,,1.1028785192
+24/10/25 21:16:24 INFO regionserver.StoreFile: Delete Family Bloom filter type for hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0: CompoundBloomFilterWriter
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.allocateBlock: /user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0. blk_-8173707053532652669_1017
+24/10/25 21:16:24 INFO datanode.DataNode: Receiving block blk_-8173707053532652669_1017 src: /127.0.0.1:35670 dest: /127.0.0.1:45351
+24/10/25 21:16:24 INFO datanode.DataNode: Receiving block blk_-8173707053532652669_1017 src: /127.0.0.1:60918 dest: /127.0.0.1:43723
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:60918, dest: /127.0.0.1:43723, bytes: 806, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-8173707053532652669_1017, duration: 785403
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 0 for block blk_-8173707053532652669_1017 terminating
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:35670, dest: /127.0.0.1:45351, bytes: 806, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8173707053532652669_1017, duration: 1496944
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 1 for block blk_-8173707053532652669_1017 terminating
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-8173707053532652669_1017 size 806
+24/10/25 21:16:24 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0 from client DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0 is closed by DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-8173707053532652669_1017 size 806
+24/10/25 21:16:24 INFO regionserver.StoreFile: NO General Bloom and NO DeleteFamily was added to HFile (hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0) 
+24/10/25 21:16:24 INFO regionserver.Store: Flushed , sequenceid=17, memsize=392.0, into tmp file hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/.tmp/10e75602445e4903aa831cc26017c1e0
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60922, bytes: 298, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 512, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-8173707053532652669_1017, duration: 86939
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:43723, dest: /127.0.0.1:60936, bytes: 814, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-8173707053532652669_1017, duration: 199177
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35672, bytes: 298, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 512, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8173707053532652669_1017, duration: 113474
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:45351, dest: /127.0.0.1:35674, bytes: 814, op: HDFS_READ, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8173707053532652669_1017, duration: 175498
+24/10/25 21:16:24 INFO regionserver.Store: Added hdfs://localhost:42965/user/root/hbase/-ROOT-/70236052/info/10e75602445e4903aa831cc26017c1e0, entries=2, sequenceid=17, filesize=806.0
+24/10/25 21:16:24 INFO regionserver.HRegion: Finished memstore flush of ~392.0/392, currentsize=0.0/0 for region -ROOT-,,0.70236052 in 33ms, sequenceid=17, compaction requested=false
+24/10/25 21:16:24 INFO regionserver.Store: Closed info
+24/10/25 21:16:24 INFO regionserver.HRegion: Closed -ROOT-,,0.70236052
+24/10/25 21:16:24 INFO regionserver.HRegionServer: stopping server 6610172a78db,37153,1729890972923; all regions closed.
+24/10/25 21:16:24 INFO wal.HLog: RegionServer:1;6610172a78db,37153,1729890972923.logSyncer exiting
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:60774, dest: /127.0.0.1:43723, bytes: 3831, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-292553745-172.17.0.5-43723-1729890972690, blockid: blk_-8319801342701921453_1010, duration: 7721957131
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 0 for block blk_-8319801342701921453_1010 terminating
+24/10/25 21:16:24 INFO DataNode.clienttrace: src: /127.0.0.1:35566, dest: /127.0.0.1:45351, bytes: 3831, op: HDFS_WRITE, cliID: DFSClient_hb_rs_6610172a78db,37153,1729890972923, offset: 0, srvID: DS-2066391015-172.17.0.5-45351-1729890972575, blockid: blk_-8319801342701921453_1010, duration: 7723230291
+24/10/25 21:16:24 INFO datanode.DataNode: PacketResponder 1 for block blk_-8319801342701921453_1010 terminating
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:43723 is added to blk_-8319801342701921453_1010 size 3831
+24/10/25 21:16:24 INFO hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:45351 is added to blk_-8319801342701921453_1010 size 3831
+24/10/25 21:16:24 INFO hdfs.StateChange: Removing lease on  file /user/root/hbase/.logs/6610172a78db,37153,1729890972923/6610172a78db%2C37153%2C1729890972923.1729890974755 from client DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO hdfs.StateChange: DIR* NameSystem.completeFile: file /user/root/hbase/.logs/6610172a78db,37153,1729890972923/6610172a78db%2C37153%2C1729890972923.1729890974755 is closed by DFSClient_hb_rs_6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO master.ServerManager: Waiting on regionserver(s) to go down 6610172a78db,37153,1729890972923
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:1;6610172a78db,37153,1729890972923 closing leases
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:1;6610172a78db,37153,1729890972923 closed leases
+24/10/25 21:16:24 INFO zookeeper.RegionServerTracker: RegionServer ephemeral node deleted, processing expiration [6610172a78db,37153,1729890972923]
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270002
+24/10/25 21:16:24 INFO master.ServerManager: Cluster shutdown set; 6610172a78db,37153,1729890972923 expired; onlineServers=0
+24/10/25 21:16:24 INFO master.HMaster: Cluster shutdown set; onlineServer=0
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping server on 45173
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 0 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 0 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 2 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server listener on 45173
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 3 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 1 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 2 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: REPL IPC Server handler 1 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 6 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 7 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:24 INFO ipc.HBaseServer: Stopping IPC Server Responder
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 8 on 45173: exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 9 on 45173: exiting
+24/10/25 21:16:24 INFO cleaner.HFileCleaner: Master:0;6610172a78db,45173,1729890972810.archivedHFileCleaner exiting
+24/10/25 21:16:24 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270002 closed
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 4 on 45173: exiting
+24/10/25 21:16:24 INFO regionserver.HRegionServer: stopping server 6610172a78db,37153,1729890972923; zookeeper connection closed.
+24/10/25 21:16:24 INFO regionserver.HRegionServer: RegionServer:1;6610172a78db,37153,1729890972923 exiting
+24/10/25 21:16:24 INFO ipc.HBaseServer: IPC Server handler 5 on 45173: exiting
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /0:0:0:0:0:0:0:1:47158 which had sessionid 0xff92c58974270002
+24/10/25 21:16:24 INFO cleaner.LogCleaner: Master:0;6610172a78db,45173,1729890972810.oldLogCleaner exiting
+24/10/25 21:16:24 INFO hbase.MiniHBaseCluster: Hook closing fs=org.apache.hadoop.hbase.fs.HFileSystem@11568d1c
+24/10/25 21:16:24 INFO util.JVMClusterUtil: Shutdown of 1 master(s) and 2 regionserver(s) complete
+24/10/25 21:16:24 INFO master.AssignmentManager$TimeoutMonitor: 6610172a78db,45173,1729890972810.timeoutMonitor exiting
+24/10/25 21:16:24 INFO master.AssignmentManager$TimerUpdater: 6610172a78db,45173,1729890972810.timerUpdater exiting
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: Processed session termination for sessionid: 0xff92c58974270000
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: EventThread shut down
+24/10/25 21:16:24 INFO zookeeper.ZooKeeper: Session: 0xff92c58974270000 closed
+24/10/25 21:16:24 INFO master.HMaster: HMaster main thread exiting
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:59102 which had sessionid 0xff92c58974270000
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:33774 which had sessionid 0xff92c58974270006
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: Unable to read additional data from server sessionid 0xff92c58974270006, likely server has closed socket, closing socket connection and attempting reconnect
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:33786 which had sessionid 0xff92c5897427000d
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: Unable to read additional data from server sessionid 0xff92c5897427000d, likely server has closed socket, closing socket connection and attempting reconnect
+24/10/25 21:16:24 INFO server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:33748 which had sessionid 0xff92c58974270003
+24/10/25 21:16:24 INFO server.NIOServerCnxnFactory: NIOServerCnxn factory exited run method
+24/10/25 21:16:24 INFO zookeeper.ClientCnxn: Unable to read additional data from server sessionid 0xff92c58974270003, likely server has closed socket, closing socket connection and attempting reconnect
+24/10/25 21:16:24 INFO server.ZooKeeperServer: shutting down
+24/10/25 21:16:24 INFO server.SessionTrackerImpl: Shutting down
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: Shutting down
+24/10/25 21:16:24 INFO server.SyncRequestProcessor: Shutting down
+24/10/25 21:16:24 INFO server.PrepRequestProcessor: PrepRequestProcessor exited loop!
+24/10/25 21:16:24 INFO server.SyncRequestProcessor: SyncRequestProcessor exited!
+24/10/25 21:16:24 INFO server.FinalRequestProcessor: shutdown of request processor complete
+24/10/25 21:16:24 INFO zookeeper.MiniZooKeeperCluster: Shutdown MiniZK cluster with all ZK servers
+Shutting down the Mini HDFS Cluster
+Shutting down DataNode 1
+24/10/25 21:16:24 INFO mortbay.log: Stopped SelectChannelConnector@localhost:0
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:0;6610172a78db,46295,1729890972911.leaseChecker closing leases
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:0;6610172a78db,46295,1729890972911.leaseChecker closed leases
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:1;6610172a78db,37153,1729890972923.leaseChecker closing leases
+24/10/25 21:16:24 INFO regionserver.Leases: RegionServer:1;6610172a78db,37153,1729890972923.leaseChecker closed leases
+24/10/25 21:16:24 INFO ipc.Server: Stopping server on 33993
+24/10/25 21:16:24 INFO metrics.RpcInstrumentation: shut down
+24/10/25 21:16:24 INFO ipc.Server: IPC Server handler 0 on 33993: exiting
+24/10/25 21:16:24 INFO ipc.Server: Stopping IPC Server listener on 33993
+24/10/25 21:16:24 INFO ipc.Server: IPC Server handler 1 on 33993: exiting
+24/10/25 21:16:24 INFO datanode.DataNode: Waiting for threadgroup to exit, active threads is 1
+24/10/25 21:16:24 INFO ipc.Server: Stopping IPC Server Responder
+24/10/25 21:16:24 INFO ipc.Server: IPC Server handler 2 on 33993: exiting
+24/10/25 21:16:24 WARN datanode.DataNode: DatanodeRegistration(127.0.0.1:43723, storageID=DS-292553745-172.17.0.5-43723-1729890972690, infoPort=44313, ipcPort=33993):DataXceiveServer:java.nio.channels.AsynchronousCloseException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:205)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:256)
+	at sun.nio.ch.ServerSocketAdaptor.accept(ServerSocketAdaptor.java:113)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.run(DataXceiverServer.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+
+24/10/25 21:16:24 INFO datanode.DataNode: Exiting DataXceiveServer
+24/10/25 21:16:25 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:25 WARN zookeeper.ClientCnxn: Session 0xff92c58974270003 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+24/10/25 21:16:25 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:25 WARN zookeeper.ClientCnxn: Session 0xff92c58974270006 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+24/10/25 21:16:25 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:62828. Will not attempt to authenticate using SASL (unknown error)
+24/10/25 21:16:25 WARN zookeeper.ClientCnxn: Session 0xff92c5897427000d for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+24/10/25 21:16:25 INFO datanode.DataBlockScanner: Exiting DataBlockScanner thread.
+24/10/25 21:16:25 INFO datanode.DataNode: Waiting for threadgroup to exit, active threads is 0
+24/10/25 21:16:25 INFO datanode.DataNode: DatanodeRegistration(127.0.0.1:43723, storageID=DS-292553745-172.17.0.5-43723-1729890972690, infoPort=44313, ipcPort=33993):Finishing DataNode in: FSDataset{dirpath='/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data3/current,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data4/current'}
+24/10/25 21:16:25 INFO ipc.Server: Stopping server on 33993
+24/10/25 21:16:25 INFO metrics.RpcInstrumentation: shut down
+24/10/25 21:16:25 INFO datanode.DataNode: Waiting for threadgroup to exit, active threads is 0
+24/10/25 21:16:25 INFO datanode.FSDatasetAsyncDiskService: Shutting down all async disk service threads...
+24/10/25 21:16:25 INFO datanode.FSDatasetAsyncDiskService: All async disk service threads have been shut down.
+24/10/25 21:16:25 WARN util.MBeans: Hadoop:service=DataNode,name=FSDatasetState-UndefinedStorageId966587806
+javax.management.InstanceNotFoundException: Hadoop:service=DataNode,name=FSDatasetState-UndefinedStorageId966587806
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:427)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:415)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:546)
+	at org.apache.hadoop.metrics2.util.MBeans.unregister(MBeans.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.FSDataset.shutdown(FSDataset.java:2067)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.shutdown(DataNode.java:799)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.shutdownDataNodes(MiniDFSCluster.java:566)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.shutdown(MiniDFSCluster.java:550)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.shutdownMiniDFSCluster(HBaseTestingUtility.java:474)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.shutdownMiniCluster(HBaseTestingUtility.java:715)
+	at com.alibaba.wasp.WaspTestingUtility.shutdownMiniCluster(WaspTestingUtility.java:296)
+	at com.alibaba.wasp.master.TestMaster.afterAllTests(TestMaster.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:36)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:25 WARN datanode.FSDatasetAsyncDiskService: AsyncDiskService has already shut down.
+Shutting down DataNode 0
+24/10/25 21:16:25 INFO mortbay.log: Stopped SelectChannelConnector@localhost:0
+24/10/25 21:16:25 INFO ipc.Server: Stopping server on 33503
+24/10/25 21:16:25 INFO metrics.RpcInstrumentation: shut down
+24/10/25 21:16:25 INFO ipc.Server: IPC Server handler 0 on 33503: exiting
+24/10/25 21:16:25 INFO ipc.Server: Stopping IPC Server listener on 33503
+24/10/25 21:16:25 INFO ipc.Server: Stopping IPC Server Responder
+24/10/25 21:16:25 INFO ipc.Server: IPC Server handler 1 on 33503: exiting
+24/10/25 21:16:25 WARN datanode.DataNode: DatanodeRegistration(127.0.0.1:45351, storageID=DS-2066391015-172.17.0.5-45351-1729890972575, infoPort=43253, ipcPort=33503):DataXceiveServer:java.nio.channels.AsynchronousCloseException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:205)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:256)
+	at sun.nio.ch.ServerSocketAdaptor.accept(ServerSocketAdaptor.java:113)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiverServer.run(DataXceiverServer.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+
+24/10/25 21:16:25 INFO datanode.DataNode: Exiting DataXceiveServer
+24/10/25 21:16:25 INFO datanode.DataNode: Waiting for threadgroup to exit, active threads is 1
+24/10/25 21:16:25 INFO ipc.Server: IPC Server handler 2 on 33503: exiting
+24/10/25 21:16:25 INFO datanode.DataBlockScanner: Exiting DataBlockScanner thread.
+24/10/25 21:16:25 INFO datanode.DataNode: DatanodeRegistration(127.0.0.1:45351, storageID=DS-2066391015-172.17.0.5-45351-1729890972575, infoPort=43253, ipcPort=33503):Finishing DataNode in: FSDataset{dirpath='/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data1/current,/workspace/benchmarks/projects/wasp/target/test-data/7741c00a-b44d-4292-a363-0143eac8777e/dfscluster_dde7a174-14a4-4688-91fb-cf8b3d85fa1e/dfs/data/data2/current'}
+24/10/25 21:16:25 WARN util.MBeans: Hadoop:service=DataNode,name=DataNodeInfo
+javax.management.InstanceNotFoundException: Hadoop:service=DataNode,name=DataNodeInfo
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:427)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:415)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:546)
+	at org.apache.hadoop.metrics2.util.MBeans.unregister(MBeans.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.unRegisterMXBean(DataNode.java:522)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.shutdown(DataNode.java:737)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1471)
+	at java.lang.Thread.run(Thread.java:750)
+24/10/25 21:16:25 INFO ipc.Server: Stopping server on 33503
+24/10/25 21:16:25 INFO metrics.RpcInstrumentation: shut down
+24/10/25 21:16:25 INFO datanode.DataNode: Waiting for threadgroup to exit, active threads is 0
+24/10/25 21:16:25 INFO datanode.FSDatasetAsyncDiskService: Shutting down all async disk service threads...
+24/10/25 21:16:25 INFO datanode.FSDatasetAsyncDiskService: All async disk service threads have been shut down.
+24/10/25 21:16:25 WARN util.MBeans: Hadoop:service=DataNode,name=FSDatasetState-UndefinedStorageId710183365
+javax.management.InstanceNotFoundException: Hadoop:service=DataNode,name=FSDatasetState-UndefinedStorageId710183365
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1095)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:427)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:415)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:546)
+	at org.apache.hadoop.metrics2.util.MBeans.unregister(MBeans.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.FSDataset.shutdown(FSDataset.java:2067)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.shutdown(DataNode.java:799)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.shutdownDataNodes(MiniDFSCluster.java:566)
+	at org.apache.hadoop.hdfs.MiniDFSCluster.shutdown(MiniDFSCluster.java:550)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.shutdownMiniDFSCluster(HBaseTestingUtility.java:474)
+	at org.apache.hadoop.hbase.HBaseTestingUtility.shutdownMiniCluster(HBaseTestingUtility.java:715)
+	at com.alibaba.wasp.WaspTestingUtility.shutdownMiniCluster(WaspTestingUtility.java:296)
+	at com.alibaba.wasp.master.TestMaster.afterAllTests(TestMaster.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:36)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+24/10/25 21:16:25 WARN datanode.FSDatasetAsyncDiskService: AsyncDiskService has already shut down.
+24/10/25 21:16:25 INFO mortbay.log: Stopped SelectChannelConnector@localhost:0
+24/10/25 21:16:26 INFO server.SessionTrackerImpl: SessionTrackerImpl exited loop!
+24/10/25 21:16:26 WARN namenode.FSNamesystem: ReplicationMonitor thread received InterruptedException.java.lang.InterruptedException: sleep interrupted
+24/10/25 21:16:26 INFO namenode.FSNamesystem: Number of transactions: 114 Total time for transactions(ms): 0Number of transactions batched in Syncs: 10 Number of syncs: 83 SyncTimes(ms): 45 28 
+24/10/25 21:16:26 INFO namenode.DecommissionManager: Interrupted Monitor
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.hadoop.hdfs.server.namenode.DecommissionManager$Monitor.run(DecommissionManager.java:65)
+	at java.lang.Thread.run(Thread.java:750)
+24/10/25 21:16:26 INFO ipc.Server: Stopping server on 42965
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 4 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: Stopping IPC Server listener on 42965
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 5 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 3 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 8 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 9 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: Stopping IPC Server Responder
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 1 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 6 on 42965: exiting
+24/10/25 21:16:26 INFO metrics.RpcInstrumentation: shut down
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 7 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 0 on 42965: exiting
+24/10/25 21:16:26 INFO ipc.Server: IPC Server handler 2 on 42965: exiting
+24/10/25 21:16:26 INFO hbase.HBaseTestingUtility: Minicluster is down
+24/10/25 21:16:26 INFO wasp.WaspTestingUtility: Minicluster is down
+
+Time: 13.987
+
+OK (1 test)
+
+24/10/25 21:16:26 INFO regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=Thread[Thread-0,5,main]
+24/10/25 21:16:26 INFO regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=Thread[Thread-0,5,main]
+24/10/25 21:16:26 INFO regionserver.HRegionServer: STOPPED: Shutdown hook
+24/10/25 21:16:26 INFO regionserver.HRegionServer: STOPPED: Shutdown hook
+24/10/25 21:16:26 INFO regionserver.ShutdownHook: Shutdown hook finished.
+24/10/25 21:16:26 INFO regionserver.ShutdownHook: Starting fs shutdown hook thread.
+24/10/25 21:16:26 INFO regionserver.ShutdownHook: Shutdown hook finished.

@@ -1,0 +1,40 @@
+JUnit version 4.12
+log4j:WARN No appenders could be found for logger (org.apache.dubbo.common.logger.LoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+...SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+..2024-10-25 06:58:20.591:INFO::main: Logging initialized @6968ms to org.eclipse.jetty.util.log.StdErrLog
+2024-10-25 06:58:20.972:INFO:oejs.Server:main: jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_422-b05
+2024-10-25 06:58:21.141:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2024-10-25 06:58:21.141:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2024-10-25 06:58:21.147:INFO:oejs.session:main: node0 Scavenging every 660000ms
+2024-10-25 06:58:21.180:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@7634f118{/,null,AVAILABLE}
+2024-10-25 06:58:21.202:INFO:oejs.AbstractConnector:main: Started ServerConnector@6d0b531f{HTTP/1.1,[http/1.1]}{0.0.0.0:45117}
+2024-10-25 06:58:21.202:INFO:oejs.Server:main: Started @7580ms
+.2024-10-25 06:58:21.226:INFO:oejs.Server:main: jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_422-b05
+2024-10-25 06:58:21.235:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2024-10-25 06:58:21.235:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2024-10-25 06:58:21.235:INFO:oejs.session:main: node0 Scavenging every 600000ms
+2024-10-25 06:58:21.236:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@18f30dd0{/,null,AVAILABLE}
+2024-10-25 06:58:21.242:INFO:oejs.AbstractConnector:main: Started ServerConnector@25260ad2{HTTP/1.1,[http/1.1]}{0.0.0.0:34887}
+2024-10-25 06:58:21.248:INFO:oejs.Server:main: Started @7625ms
+2024-10-25 06:58:21.678:INFO:oejs.AbstractConnector:main: Stopped ServerConnector@25260ad2{HTTP/1.1,[http/1.1]}{0.0.0.0:34887}
+2024-10-25 06:58:21.678:INFO:oejs.session:main: node0 Stopped scavenging
+2024-10-25 06:58:21.685:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@18f30dd0{/,null,UNAVAILABLE}
+..2024-10-25 06:58:21.828:INFO:oejs.Server:main: jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_422-b05
+2024-10-25 06:58:21.840:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2024-10-25 06:58:21.841:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2024-10-25 06:58:21.841:INFO:oejs.session:main: node0 Scavenging every 600000ms
+2024-10-25 06:58:21.841:INFO:oejsh.ContextHandler:main: Started o.e.j.s.ServletContextHandler@300c56a0{/,null,AVAILABLE}
+2024-10-25 06:58:21.848:INFO:oejs.AbstractConnector:main: Started ServerConnector@5c90c7de{HTTP/1.1,[http/1.1]}{0.0.0.0:33733}
+2024-10-25 06:58:21.850:INFO:oejs.Server:main: Started @8227ms
+2024-10-25 06:58:21.859:INFO:oejs.AbstractConnector:main: Stopped ServerConnector@5c90c7de{HTTP/1.1,[http/1.1]}{0.0.0.0:33733}
+2024-10-25 06:58:21.860:INFO:oejs.session:main: node0 Stopped scavenging
+2024-10-25 06:58:21.860:INFO:oejsh.ContextHandler:main: Stopped o.e.j.s.ServletContextHandler@300c56a0{/,null,UNAVAILABLE}
+.
+Time: 7.197
+
+OK (9 tests)
+

@@ -1,0 +1,37 @@
+JUnit version 4.13.1
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
+.E
+Time: 2.142
+There was 1 failure:
+1) test3HBX(org.biojava.nbio.structure.io.mmtf.TestMmtfPerformance)
+java.net.UnknownHostException: mmtf.rcsb.org
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.io.IOException.<init>(IOException.java:58)
+	at java.net.UnknownHostException.<init>(UnknownHostException.java:47)
+	at java.net.AbstractPlainSocketImpl.connect$$PHOSPHORTAGGED(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect$$PHOSPHORTAGGED(SocksSocketImpl.java:392)
+	at java.net.Socket.connect$$PHOSPHORTAGGED(Socket.java:607)
+	at sun.security.ssl.SSLSocketImpl.connect$$PHOSPHORTAGGED(SSLSocketImpl.java:293)
+	at sun.security.ssl.BaseSSLSocketImpl.connect$$PHOSPHORTAGGED(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect$$PHOSPHORTAGGED(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer$$PHOSPHORTAGGED(HttpClient.java:560)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New$$PHOSPHORTAGGED(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient$$PHOSPHORTAGGED(AbstractDelegateHttpsURLConnection.java:203)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0$$PHOSPHORTAGGED(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect$$PHOSPHORTAGGED(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect$$PHOSPHORTAGGED(AbstractDelegateHttpsURLConnection.java:189)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0$$PHOSPHORTAGGED(HttpURLConnection.java:1572)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream$$PHOSPHORTAGGED(HttpURLConnection.java:1500)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream$$PHOSPHORTAGGED(HttpsURLConnectionImpl.java:268)
+	at java.net.URL.openStream$$PHOSPHORTAGGED(URL.java:1093)
+	at org.biojava.nbio.structure.io.mmtf.TestMmtfPerformance.test3HBX$$PHOSPHORTAGGED(TestMmtfPerformance.java:88)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

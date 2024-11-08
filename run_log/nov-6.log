@@ -1,0 +1,51 @@
+Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+Maven home: /workspace/apache-maven-3.8.8
+Java version: 1.8.0_422, vendor: Temurin, runtime: /shared-data/jdk8u422-b05/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-48-generic", arch: "amd64", family: "unix"
+       language  ... num_randomOrder_runs
+499        Java  ...                 65.0
+5664       Java  ...                 63.0
+5665       Java  ...                 63.0
+5667       Java  ...                 63.0
+5669       Java  ...                 63.0
+...         ...  ...                  ...
+708028     Java  ...                 61.0
+713108     Java  ...                  1.0
+731949     Java  ...                 73.0
+733065     Java  ...                 71.0
+733106     Java  ...                 66.0
+
+[698 rows x 13 columns]
+already analyzed org.activiti.spring.test.servicetask
+{'apache-hbase', 'wildfly-wildfly', 'zxing-zxing', 'apache-ambari', 'undertow-io-undertow', 'jknack-handlebars.java'}
+              Project Name     sha  ...  Line Label
+0     hector-client-hector  29e88d  ...    24     0
+1     hector-client-hector  29e88d  ...   343     2
+2     hector-client-hector  29e88d  ...    24     0
+3     hector-client-hector  29e88d  ...   233     1
+4   jknack-handlebars.java  db77ef  ...   122     0
+5   jknack-handlebars.java  db77ef  ...  1158    11
+6   jknack-handlebars.java  db77ef  ...   148     1
+7   jknack-handlebars.java  db77ef  ...   122     0
+8   jknack-handlebars.java  db77ef  ...  1158    11
+9   jknack-handlebars.java  db77ef  ...  1241    12
+10  jknack-handlebars.java  db77ef  ...   122     0
+11  jknack-handlebars.java  db77ef  ...  1158    11
+12  jknack-handlebars.java  db77ef  ...   122     0
+13  jknack-handlebars.java  db77ef  ...  1158    11
+14  jknack-handlebars.java  db77ef  ...   122     0
+15  jknack-handlebars.java  db77ef  ...  1158    11
+16  jknack-handlebars.java  db77ef  ...   122     0
+17  jknack-handlebars.java  db77ef  ...  1158    11
+18  apache-incubator-dubbo  737f7a  ...    59     6
+19  apache-incubator-dubbo  737f7a  ...    83    11
+20  apache-incubator-dubbo  737f7a  ...    59     6
+21          qos-ch-logback  0f5753  ...    40     2
+22          qos-ch-logback  0f5753  ...    39     0
+23          qos-ch-logback  0f5753  ...    39     0
+24           square-okhttp  129c93  ...   121     9
+25           square-okhttp  129c93  ...   121    15
+
+[26 rows x 8 columns]
+

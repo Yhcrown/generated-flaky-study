@@ -1,0 +1,56 @@
+JUnit version 4.10
+.[21:33:42] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[21:33:43]    __________  ________________ 
+[21:33:43]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[21:33:43]  _/ // (7 7    // /  / / / _/   
+[21:33:43] /___/\___/_/|_/___/ /_/ /x___/  
+[21:33:43] 
+[21:33:43] ver. 2.14.0#20220929-sha1:951e8deb
+[21:33:43] 2022 Copyright(C) Apache Software Foundation
+[21:33:43] 
+[21:33:43] Ignite documentation: https://ignite.apache.org
+[21:33:43] 
+[21:33:43] Quiet mode.
+[21:33:43]   ^-- Logging to file '/workspace/benchmarks/projects/gora/gora-ignite/ignite/work/log/ignite-0b9b7624.0.log'
+[21:33:43]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[21:33:43]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[21:33:43] 
+[21:33:43] OS: Linux 6.8.0-40-generic amd64
+[21:33:43] VM information: OpenJDK Runtime Environment 1.8.0_422-b05 Temurin OpenJDK 64-Bit Server VM 25.422-b05
+[21:33:43] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[21:33:43] Configured plugins:
+[21:33:43]   ^-- None
+[21:33:43] 
+[21:33:43] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[21:33:43] Initial heap size is 498MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[21:33:43] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[21:33:44] Data Regions Started: 4
+[21:33:44] 
+[21:33:44]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[21:33:44]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[21:33:44]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[21:33:44]       ...  initCfg=256MB, maxCfg=6356MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[21:33:44]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[21:33:44]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[21:33:44]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[21:33:44]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[21:33:45] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[21:33:45] Performance suggestions for grid  (fix if possible)
+[21:33:45] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[21:33:45]   ^-- Switch to the most recent 11 JVM version
+[21:33:45]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[21:33:45]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[21:33:45]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[21:33:45]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[21:33:45]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[21:33:45] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[21:33:45] 
+[21:33:45] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[21:33:45] 
+[21:33:45] Ignite node started OK (id=0b9b7624)
+[21:33:45] Topology snapshot [ver=1, locNode=0b9b7624, servers=1, clients=0, state=ACTIVE, CPUs=20, offheap=6.2GB, heap=6.9GB]
+[21:33:45]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+Formatting using clusterid: testClusterID
+[21:33:54] New version is available at ignite.apache.org: 2.16.0
+[21:34:07] Ignite node stopped OK [uptime=00:00:22.578]

@@ -1,0 +1,128 @@
+JUnit version 4.13.2
+2024-10-25 20:56:55.660 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.init.ParseArguments
+2024-10-25 20:56:55.676 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.MainModule
+2024-10-25 20:56:55.677 INFO  org.platformlambda.core.system.ServerPersonality:54 - Setting personality as REST
+2024-10-25 20:56:55.685 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2024-10-25 20:56:55.685 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2024-10-25 20:56:55.757 WARN  org.platformlambda.automation.MainModule:138 - Skipping file:/tmp/config/rest.yaml - /tmp/config/rest.yaml (No such file or directory)
+2024-10-25 20:56:55.780 INFO  org.platformlambda.automation.MainModule:135 - Loading config from classpath:/rest.yaml
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:727 - Loaded header_1 request headers {drop=[Upgrade-Insecure-Requests, cache-control, accept-encoding, host, connection]}
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:727 - Loaded header_1 response headers {add=[Strict-Transport-Security: max-age=31536000, Cache-Control: no-cache, no-store, Pragma: no-cache, Expires: Thu, 01 Jan 1970 00:00:00 GMT]}
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:640 - Loaded cors_1 CORS headers (*)
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/ws/token/{application} -> [ws.token.issuer], timeout=30s, tracing=true
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/ws/token/{application} -> [ws.token.issuer], timeout=30s
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/notification -> [ws.notification], timeout=30s, tracing=true
+2024-10-25 20:56:55.781 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/notification -> [ws.notification], timeout=30s
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/notification/{topic} -> [ws.notification], timeout=30s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/notification/{topic} -> [ws.notification], timeout=30s
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PUT /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - HEAD /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PATCH /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - DELETE /api/hello/world -> [hello.world, hello.world.2], timeout=10s, tracing=true
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/hello/world -> [hello.world, hello.world.2], timeout=10s
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/upload/demo -> [hello.world], timeout=15s, tracing=false
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/upload/demo -> [hello.world], timeout=15s
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PUT /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2024-10-25 20:56:55.782 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/nice/{task}/* -> [hello.world], timeout=12s
+2024-10-25 20:56:55.783 WARN  org.platformlambda.automation.config.RoutingEntry:483 - trust_all_cert=true for http://127.0.0.1:8100 is not relevant - Do you meant https?
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PUT /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/v1/* -> [http://127.0.0.1:8100], timeout=20s
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/hello/download -> [hello.download], timeout=20s, tracing=false
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/hello/download -> [hello.download], timeout=20s
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:247 - Number of exact URLs = 4
+2024-10-25 20:56:55.783 INFO  org.platformlambda.automation.config.RoutingEntry:265 - Number of wildcard URLs = 4
+2024-10-25 20:56:55.784 INFO  org.platformlambda.automation.config.WsEntry:85 - WebSocket /ws/api/notification:{token}, recipient: none.provided, publish: true, subscribe: true
+2024-10-25 20:56:55.785 INFO  org.platformlambda.automation.services.ServiceGateway:93 - HTTP trace headers [X-Correlation-Id, X-Trace-Id]
+2024-10-25 20:56:55.786 INFO  org.platformlambda.automation.util.Housekeeper:43 - Started
+2024-10-25 20:56:55.798 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE elastic.queue.cleanup with 1 instance started
+2024-10-25 20:56:55.813 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC async.http.request with 300 instances started
+2024-10-25 20:56:55.814 INFO  org.platformlambda.core.services.DistributedTrace:46 - Reporting to 'distributed.trace.processor' if present
+2024-10-25 20:56:55.815 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE distributed.tracing with 1 instance started
+2024-10-25 20:56:55.816 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (health.info), expiry 5000 ms, maxItems=2000
+2024-10-25 20:56:55.816 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE actuator.services with 10 instances started
+2024-10-25 20:56:55.817 INFO  org.platformlambda.core.system.PostOffice:68 - Includes [distributed.tracing, actuator.services]
+2024-10-25 20:56:55.821 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE async.http.response with 300 instances started
+2024-10-25 20:56:55.856 INFO  org.platformlambda.automation.ws.WsRequestHandler:332 - Started
+2024-10-25 20:56:55.891 INFO  org.platformlambda.automation.util.AsyncTimeoutHandler:42 - Async HTTP timeout handler started
+2024-10-25 20:56:55.891 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (ws.tokens), expiry 30000 ms, maxItems=2000
+2024-10-25 20:56:55.891 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (ws.conn.events), expiry 2000 ms, maxItems=2000
+2024-10-25 20:56:55.891 INFO  org.platformlambda.automation.MainModule:106 - REST automation running on port-8100
+2024-10-25 20:56:55.892 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE rest.automation.notification with 1 instance started
+2024-10-25 20:56:55.893 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2024-10-25 20:56:55.895 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC notification.manager with 10 instances started
+2024-10-25 20:56:55.900 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.token.issuer with 10 instances started
+2024-10-25 20:56:55.900 INFO  org.platformlambda.automation.services.NotificationManager:126 - Running in standalone mode
+2024-10-25 20:56:55.901 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.notification with 10 instances started
+2024-10-25 20:56:55.901 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE hello.world with 10 instances started
+.2024-10-25 20:56:55.902 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC my.ws.handler with 1 instance started
+2024-10-25 20:56:55.905 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.1
+2024-10-25 20:56:55.947 INFO  org.platformlambda.core.util.ElasticQueue:197 - Created holding area /tmp/reactive/rest-automation-2024102503ab5ba1dace44019f7ec7eb204cb7a6 in 137 ms
+2024-10-25 20:56:55.947 INFO  org.platformlambda.core.util.ElasticQueue:364 - Commit log started - com.sleepycat.je.Database@6d5c7617
+2024-10-25 20:56:55.982 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=ws.token.issuer, success=true, origin=2024102503ab5ba1dace44019f7ec7eb204cb7a6, start=2024-10-25T20:56:55.981Z, exec_time=0.275, from=http.request, id=33e62b72b2ab4cbc94d1047bceeac9e5}, annotations={}
+2024-10-25 20:56:55.982 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+2024-10-25 20:56:55.984 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=notification.manager, success=true, origin=2024102503ab5ba1dace44019f7ec7eb204cb7a6, start=2024-10-25T20:56:55.981Z, exec_time=1.786, from=ws.token.issuer, id=33e62b72b2ab4cbc94d1047bceeac9e5}, annotations={}
+2024-10-25 20:56:55.997 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=async.http.response, success=true, origin=2024102503ab5ba1dace44019f7ec7eb204cb7a6, start=2024-10-25T20:56:55.981Z, exec_time=15.475, from=ws.token.issuer, id=33e62b72b2ab4cbc94d1047bceeac9e5}, annotations={}
+2024-10-25 20:56:56.009 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:68 - Started
+2024-10-25 20:56:56.009 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:75 - Connection list [ws://127.0.0.1:8100/ws/notification/4441d1a6c3e74c86948171f961305b6c]
+2024-10-25 20:56:56.039 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.68354230.1 with 1 instance started
+2024-10-25 20:56:56.039 INFO  org.platformlambda.automation.ws.WsRequestHandler:152 - Session ws.68354230.1 started, ip=127.0.0.1, app=notification
+2024-10-25 20:56:56.050 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 - websocket.idle.timeout = 60 seconds
+2024-10-25 20:56:56.050 WARN  org.platformlambda.core.websocket.common.WsConfigurator:91 - websocket.text.size changed from 8192 to 65536
+2024-10-25 20:56:56.051 WARN  org.platformlambda.core.websocket.common.WsConfigurator:98 - websocket.binary.size changed from 8192 to 65536
+2024-10-25 20:56:56.051 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.in.69456.1 with 1 instance started
+2024-10-25 20:56:56.052 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.out.69456.1 with 1 instance started
+2024-10-25 20:56:56.053 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:82 - Session-0 WebSocketTests$$Lambda$103/371397455 connected to ws.client.in.69456.1 127.0.0.1, ws://127.0.0.1:8100/ws/notification/4441d1a6c3e74c86948171f961305b6c/2024102503ab5ba1dace44019f7ec7eb204cb7a6
+2024-10-25 20:56:56.053 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {path=/ws/notification/4441d1a6c3e74c86948171f961305b6c/2024102503ab5ba1dace44019f7ec7eb204cb7a6, route=ws.client.in.69456.1, tx_path=ws.client.out.69456.1, ip=127.0.0.1, query=, type=open, token=2024102503ab5ba1dace44019f7ec7eb204cb7a6} payload: null
+2024-10-25 20:56:56.078 INFO  org.platformlambda.automation.services.NotificationManager:98 - ws.68354230.1@2024102503ab5ba1dace44019f7ec7eb204cb7a6 subscribed to hello.world
+2024-10-25 20:56:56.079 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.69456.1, tx_path=ws.client.out.69456.1, type=string} payload: {
+  "time": "2024-10-25T20:56:56.077Z",
+  "type": "subscribe",
+  "message": "topic hello.world"
+}
+2024-10-25 20:56:56.079 INFO  org.platformlambda.automation.services.NotificationManager:98 - ws.68354230.1@2024102503ab5ba1dace44019f7ec7eb204cb7a6 subscribed to another.channel
+2024-10-25 20:56:56.080 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.69456.1, tx_path=ws.client.out.69456.1, type=string} payload: {
+  "time": "2024-10-25T20:56:56.079Z",
+  "type": "publish",
+  "message": "sending message to hello.world"
+}
+2024-10-25 20:56:56.080 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.69456.1, tx_path=ws.client.out.69456.1, type=string} payload: 1234567890
+2024-10-25 20:56:56.080 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.69456.1, tx_path=ws.client.out.69456.1, type=string} payload: {
+  "time": "2024-10-25T20:56:56.079Z",
+  "type": "subscribe",
+  "message": "topic another.channel"
+}
+E
+Time: 0.486
+There was 1 failure:
+1) userChannelTest(org.platformlambda.automation.tests.WebSocketTests)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at org.platformlambda.automation.tests.WebSocketTests.userChannelTest(WebSocketTests.java:131)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+2024-10-25 20:56:56.086 INFO  org.platformlambda.automation.ws.WsRequestHandler:371 - Stopped
+2024-10-25 20:56:56.086 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.69456.1, type=close, token=2024102503ab5ba1dace44019f7ec7eb204cb7a6} payload: null
+2024-10-25 20:56:56.087 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:139 - Session-0 ws.client.in.69456.1 closed (1001, Shutdown)
+2024-10-25 20:56:56.087 INFO  org.platformlambda.automation.ws.WsRequestHandler:271 - Session ws.68354230.1 closed
+2024-10-25 20:56:56.087 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.out.69456.1 stopped
+2024-10-25 20:56:56.087 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.in.69456.1 stopped
+2024-10-25 20:56:56.087 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-0 (ws.client.in.69456.1, ws.client.out.69456.1) released
+2024-10-25 20:56:56.087 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.68354230.1 stopped
+2024-10-25 20:56:56.088 INFO  org.platformlambda.automation.services.NotificationManager:205 - ws.68354230.1@2024102503ab5ba1dace44019f7ec7eb204cb7a6 unsubscribed from another.channel
+2024-10-25 20:56:56.088 INFO  org.platformlambda.automation.services.NotificationManager:205 - ws.68354230.1@2024102503ab5ba1dace44019f7ec7eb204cb7a6 unsubscribed from hello.world
+2024-10-25 20:56:56.088 INFO  org.platformlambda.automation.services.NotificationManager:220 - Notification topic another.channel cleared
+2024-10-25 20:56:56.088 INFO  org.platformlambda.automation.services.NotificationManager:220 - Notification topic hello.world cleared
+2024-10-25 20:56:56.686 INFO  org.platformlambda.core.util.ManagedCache:197 - Stopped
+2024-10-25 20:56:56.789 INFO  org.platformlambda.automation.util.Housekeeper:59 - Stopped
+2024-10-25 20:56:56.947 INFO  org.platformlambda.core.util.ElasticQueue:401 - Commit log stopped - com.sleepycat.je.Database@6d5c7617
+2024-10-25 20:56:56.958 INFO  org.platformlambda.core.util.ElasticQueue:166 - Holding area /tmp/reactive/rest-automation-2024102503ab5ba1dace44019f7ec7eb204cb7a6 cleared
