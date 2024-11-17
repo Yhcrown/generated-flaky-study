@@ -1,0 +1,59 @@
+JUnit version 4.10
+.13:09:44,686 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,697 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Setting discardingThreshold to 51
+13:09:44,697 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,698 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [bad] to AsyncAppender.
+13:09:44,698 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Setting discardingThreshold to 51
+13:09:44,699 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Worker thread will flush remaining events before exiting. 
+13:09:44,699 |-ERROR in ch.qos.logback.core.testUtil.NPEAppender[bad] - Appender [bad] failed to append. java.lang.NullPointerException
+	at java.lang.NullPointerException
+	at 	at ch.qos.logback.core.testUtil.NPEAppender.append(NPEAppender.java:21)
+	at 	at ch.qos.logback.core.AppenderBase.doAppend(AppenderBase.java:85)
+	at 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at 	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:234)
+13:09:44,699 |-ERROR in ch.qos.logback.core.testUtil.NPEAppender[bad] - Appender [bad] failed to append. java.lang.NullPointerException
+	at java.lang.NullPointerException
+	at 	at ch.qos.logback.core.testUtil.NPEAppender.append(NPEAppender.java:21)
+	at 	at ch.qos.logback.core.AppenderBase.doAppend(AppenderBase.java:85)
+	at 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at 	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:234)
+13:09:44,699 |-ERROR in ch.qos.logback.core.testUtil.NPEAppender[bad] - Appender [bad] failed to append. java.lang.NullPointerException
+	at java.lang.NullPointerException
+	at 	at ch.qos.logback.core.testUtil.NPEAppender.append(NPEAppender.java:21)
+	at 	at ch.qos.logback.core.AppenderBase.doAppend(AppenderBase.java:85)
+	at 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at 	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:234)
+13:09:44,699 |-ERROR in ch.qos.logback.core.testUtil.NPEAppender[bad] - Appender [bad] failed to append. java.lang.NullPointerException
+	at java.lang.NullPointerException
+	at 	at ch.qos.logback.core.testUtil.NPEAppender.append(NPEAppender.java:21)
+	at 	at ch.qos.logback.core.AppenderBase.doAppend(AppenderBase.java:85)
+	at 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at 	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:234)
+13:09:44,699 |-ERROR in ch.qos.logback.core.testUtil.NPEAppender[bad] - Appender [bad] failed to append. java.lang.NullPointerException
+	at java.lang.NullPointerException
+	at 	at ch.qos.logback.core.testUtil.NPEAppender.append(NPEAppender.java:21)
+	at 	at ch.qos.logback.core.AppenderBase.doAppend(AppenderBase.java:85)
+	at 	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:48)
+	at 	at ch.qos.logback.core.AsyncAppenderBase$Worker.run(AsyncAppenderBase.java:234)
+.13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Setting discardingThreshold to 51
+13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Setting discardingThreshold to 51
+13:09:44,700 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,701 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,701 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Setting discardingThreshold to 2
+13:09:44,758 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,822 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,822 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Setting discardingThreshold to 1
+13:09:44,834 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,867 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Attaching appender named [list] to AsyncAppender.
+13:09:44,867 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Setting discardingThreshold to 0
+13:09:44,892 |-INFO in ch.qos.logback.core.AsyncAppenderBaseTest$LossyAsyncAppender[null] - Worker thread will flush remaining events before exiting. 
+.13:09:44,927 |-INFO in ch.qos.logback.core.AsyncAppenderBase[null] - Attaching appender named [null] to AsyncAppender.
+13:09:44,928 |-ERROR in ch.qos.logback.core.AsyncAppenderBase[null] - Invalid queue size [0]
+
+Time: 0.249
+
+OK (8 tests)
+

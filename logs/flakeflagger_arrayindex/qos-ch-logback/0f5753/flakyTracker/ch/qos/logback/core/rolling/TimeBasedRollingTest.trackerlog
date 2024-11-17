@@ -1,0 +1,146 @@
+JUnit version 4.10
+..11:11:09,955 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,014 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/424324802/test1-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,031 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/424324802/test1-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,031 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,043 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:09 CST 2024
+11:11:10,098 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/424324802/test1-2024-11-12_11_11_09
+11:11:10,098 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:11:10,132 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:09 CST 2024
+11:11:10,143 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+
+.11:11:10,184 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use gz compression
+11:11:10,184 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1935952135/test2-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,185 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/1935952135/test2-%d{yyyy-MM-dd_HH_mm_ss}.gz'.
+11:11:10,185 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,185 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,185 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1935952135/test2-2024-11-12_11_11_10
+11:11:10,185 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:11:10,186 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,223 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/1935952135/test2-2024-11-12_11_11_10] as [target/test-output/1935952135/test2-2024-11-12_11_11_10.gz]
+11:11:10,224 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,225 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/1935952135/test2-2024-11-12_11_11_11] as [target/test-output/1935952135/test2-2024-11-12_11_11_11.gz]
+
+.11:11:10,236 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,236 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1432549318/test3-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,237 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/1432549318/test3-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,237 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,237 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,237 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1432549318/test3-2024-11-12_11_11_10
+11:11:10,237 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:11:10,238 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,238 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,240 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,240 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1432549318/test3-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,241 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/1432549318/test3-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,241 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,241 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:12 CST 2024
+11:11:10,241 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1432549318/test3-2024-11-12_11_11_12
+11:11:10,241 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:11:10,241 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:12 CST 2024
+
+.11:11:10,244 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,244 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/920133428/test4-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,245 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/920133428/test4-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,245 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,245 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,265 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/920133428/test4.log
+11:11:10,265 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/920133428/test4.log]
+11:11:10,266 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,266 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/920133428/test4.log] to [target/test-output/920133428/test4-2024-11-12_11_11_10]
+11:11:10,267 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,267 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/920133428/test4.log] to [target/test-output/920133428/test4-2024-11-12_11_11_11]
+11:11:10,268 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,269 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/920133428/test4-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,270 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/920133428/test4-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,270 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,270 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:12 CST 2024
+11:11:10,270 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/920133428/test4.log
+11:11:10,270 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/920133428/test4.log]
+11:11:10,271 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:12 CST 2024
+11:11:10,271 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/920133428/test4.log] to [target/test-output/920133428/test4-2024-11-12_11_11_12]
+
+.11:11:10,274 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,274 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/2076170700/test6-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,274 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/2076170700/test6-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,274 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,274 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,275 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/2076170700/test5.log
+11:11:10,275 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/2076170700/test5.log]
+11:11:10,275 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,275 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/2076170700/test5.log] to [target/test-output/2076170700/test6-2024-11-12_11_11_10]
+11:11:10,276 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,276 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/2076170700/test5.log] to [target/test-output/2076170700/test6-2024-11-12_11_11_11]
+
+.11:11:10,278 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use gz compression
+11:11:10,279 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/416407075/test6-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,279 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/416407075/test6-%d{yyyy-MM-dd_HH_mm_ss}.gz'.
+11:11:10,279 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,279 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,280 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/416407075/test6.log
+11:11:10,280 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/416407075/test6.log]
+11:11:10,280 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,281 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/416407075/test6.log] to [target/test-output/416407075/test6.log452793688142916.tmp]
+11:11:10,282 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/416407075/test6.log452793688142916.tmp] as [target/test-output/416407075/test6-2024-11-12_11_11_10.gz]
+11:11:10,283 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,283 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/416407075/test6.log] to [target/test-output/416407075/test6.log452793690593708.tmp]
+11:11:10,284 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/416407075/test6.log452793690593708.tmp] as [target/test-output/416407075/test6-2024-11-12_11_11_11.gz]
+
+.11:11:10,290 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use gz compression
+11:11:10,290 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/383139979/%d{yyyy-MM-dd, aux}/-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,291 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/383139979/%d{yyyy-MM-dd, aux}/-%d{yyyy-MM-dd_HH_mm_ss}.gz'.
+11:11:10,291 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,291 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,291 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/383139979/test7.log
+11:11:10,291 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/383139979/test7.log]
+11:11:10,390 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,391 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/383139979/test7.log] to [target/test-output/383139979/test7.log452793798101500.tmp]
+11:11:10,391 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/383139979/test7.log452793798101500.tmp] as [target/test-output/383139979/2024-11-12/-2024-11-12_11_11_10.gz]
+11:11:10,392 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - Created missing parent directories for [/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-core/target/test-output/383139979/2024-11-12/-2024-11-12_11_11_10.gz]
+11:11:10,392 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,392 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/383139979/test7.log] to [target/test-output/383139979/test7.log452793799602333.tmp]
+11:11:10,393 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - GZ compressing [target/test-output/383139979/test7.log452793799602333.tmp] as [target/test-output/383139979/2024-11-12/-2024-11-12_11_11_11.gz]
+
+.11:11:10,395 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use zip compression
+11:11:10,401 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/205210367/%d{yyyy-MM-dd, aux}/-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,402 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/205210367/%d{yyyy-MM-dd, aux}/-%d{yyyy-MM-dd_HH_mm_ss}.zip'.
+11:11:10,402 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,403 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,403 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/205210367/test8.log
+11:11:10,403 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/205210367/test8.log]
+11:11:10,404 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,405 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/205210367/test8.log] to [target/test-output/205210367/test8.log452793812711500.tmp]
+11:11:10,406 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - ZIP compressing [target/test-output/205210367/test8.log452793812711500.tmp] as [target/test-output/205210367/2024-11-12/-2024-11-12_11_11_10.zip]
+11:11:10,406 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - Created missing parent directories for [/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-core/target/test-output/205210367/2024-11-12/-2024-11-12_11_11_10.zip]
+11:11:10,407 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,409 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/205210367/test8.log] to [target/test-output/205210367/test8.log452793816291416.tmp]
+11:11:10,409 |-INFO in ch.qos.logback.core.rolling.helper.Compressor - ZIP compressing [target/test-output/205210367/test8.log452793816291416.tmp] as [target/test-output/205210367/2024-11-12/-2024-11-12_11_11_11.zip]
+
+.11:11:10,414 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,415 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/820175289/test4B-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,415 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/820175289/test4B-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,415 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,416 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:10 CST 2024
+11:11:10,416 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/820175289/test4B.log
+11:11:10,416 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/820175289/test4B.log]
+11:11:10,417 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:10 CST 2024
+11:11:10,417 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/820175289/test4B.log] to [target/test-output/820175289/test4B-2024-11-12_11_11_10]
+11:11:10,418 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:11 CST 2024
+11:11:10,418 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/820175289/test4B.log] to [target/test-output/820175289/test4B-2024-11-12_11_11_11]
+11:11:10,419 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:11:10,419 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/820175289/test4B-%d{yyyy-MM-dd_HH_mm_ss} for the active file
+11:11:10,426 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd_HH_mm_ss' from file name pattern 'target/test-output/820175289/test4B-%d{yyyy-MM-dd_HH_mm_ss}'.
+11:11:10,426 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over every second.
+11:11:10,426 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:11:12 CST 2024
+11:11:10,426 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/820175289/test4B.log
+11:11:10,426 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [target/test-output/820175289/test4B.log]
+11:11:10,426 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:12 CST 2024
+11:11:10,426 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/820175289/test4B.log] to [target/test-output/820175289/test4B-2024-11-12_11_11_12]
+11:11:10,427 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Elapsed period: Tue Nov 12 11:11:14 CST 2024
+11:11:10,427 |-INFO in c.q.l.co.rolling.helper.RenameUtil - Renaming file [target/test-output/820175289/test4B.log] to [target/test-output/820175289/test4B-2024-11-12_11_11_14]
+
+
+Time: 1.13
+
+OK (10 tests)
+

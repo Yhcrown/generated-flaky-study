@@ -34,7 +34,7 @@ def read_flakeflagger():
     need_process_projects['Project_Name'] = need_process_projects['Project_URL'].apply(lambda x: "-".join(x.split('/')[-2:]))
     for index, project in need_process_projects.iterrows():
         flakeflagger_project_to_sha[project['Project_Name']] = project['Project_Hash']
-
+    print(need_process_projects)
 def flakeflagger_flaky_tests():
     path = './test_results.csv'
     df = pd.read_csv(path)

@@ -1,0 +1,208 @@
+JUnit version 4.12
+.Nov 12, 2024 1:16:32 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:16:32 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.4.5.Final
+Nov 12, 2024 1:16:32 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.2.Final
+Nov 12, 2024 1:16:34 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.1.5.Final-redhat-1
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: JBAS014627: Attribute stack is deprecated, and it might be removed in future version!
+Nov 12, 2024 1:16:34 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: JBAS014627: Attribute cluster is deprecated, and it might be removed in future version!
+.Nov 12, 2024 1:16:34 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:16:35 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.6.Final
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:16:35 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+.Nov 12, 2024 1:16:35 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:17:16 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.7.SP1
+Nov 12, 2024 1:17:16 PM org.jboss.as.server.ServerEnvironment <init>
+ERROR: WFLYSRV0024: Cannot add module 'org.jboss.vfs' as URLStreamHandlerFactory provider
+org.jboss.modules.ModuleNotFoundException: org.jboss.vfs
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:294)
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:280)
+	at org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:605)
+	at org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:337)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.getServerEnvironment(TestModelControllerService11_0_0.java:151)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.initExtraModel(TestModelControllerService11_0_0.java:88)
+	at org.jboss.as.model.test.ModelTestModelControllerService.initModel(ModelTestModelControllerService.java:312)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.initModel(TestModelControllerService11_0_0.java:99)
+	at org.jboss.as.controller.AbstractControllerService.start(AbstractControllerService.java:340)
+	at org.jboss.as.model.test.ModelTestModelControllerService.start(ModelTestModelControllerService.java:407)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+.Nov 12, 2024 1:17:16 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:16 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:17 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.1.5.Final-redhat-1
+Nov 12, 2024 1:17:17 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: JBAS014627: Attribute stack is deprecated, and it might be removed in future version!
+Nov 12, 2024 1:17:17 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: JBAS014627: Attribute cluster is deprecated, and it might be removed in future version!
+.Nov 12, 2024 1:17:18 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:18 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.6.Final
+.Nov 12, 2024 1:17:19 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.7.SP1
+Nov 12, 2024 1:17:19 PM org.jboss.as.server.ServerEnvironment <init>
+ERROR: WFLYSRV0024: Cannot add module 'org.jboss.vfs' as URLStreamHandlerFactory provider
+org.jboss.modules.ModuleNotFoundException: org.jboss.vfs
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:294)
+	at org.jboss.modules.ModuleLoader.loadModule(ModuleLoader.java:280)
+	at org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:605)
+	at org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:337)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.getServerEnvironment(TestModelControllerService11_0_0.java:151)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.initExtraModel(TestModelControllerService11_0_0.java:88)
+	at org.jboss.as.model.test.ModelTestModelControllerService.initModel(ModelTestModelControllerService.java:312)
+	at org.wildfly.legacy.test.controller.subsystem_11_0_0.TestModelControllerService11_0_0.initModel(TestModelControllerService11_0_0.java:99)
+	at org.jboss.as.controller.AbstractControllerService.start(AbstractControllerService.java:340)
+	at org.jboss.as.model.test.ModelTestModelControllerService.start(ModelTestModelControllerService.java:407)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/local-cache=local/store=file' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/invalidation-cache=invalid/store=remote' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-flush-interval' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'queue-size' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/replicated-cache=repl/store=custom' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:17:19 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'singleton' in the resource at address '/subsystem=infinispan/cache-container=maximal/distributed-cache=dist/store=mixed-jdbc' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+
+Time: 47.546
+
+OK (6 tests)
+

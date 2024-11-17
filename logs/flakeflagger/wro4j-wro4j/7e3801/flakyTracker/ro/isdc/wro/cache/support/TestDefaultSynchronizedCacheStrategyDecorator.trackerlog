@@ -1,6 +1,6 @@
 JUnit version 4.11
 .EE.EE.EE.EE.EE.EEI
-Time: 1.842
+Time: 2.741
 There were 12 failures:
 1) shouldDecorateCacheStrategy(ro.isdc.wro.cache.support.TestDefaultSynchronizedCacheStrategyDecorator)
 java.lang.NoClassDefFoundError: ro/isdc/wro/config/ReadOnlyContext

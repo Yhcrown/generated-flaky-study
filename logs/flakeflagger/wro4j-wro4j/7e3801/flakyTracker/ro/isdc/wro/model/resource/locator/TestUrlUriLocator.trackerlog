@@ -1,6 +1,6 @@
 JUnit version 4.11
 .E.E.E.E.E.E.E.E.E.E
-Time: 1.019
+Time: 2.103
 There were 10 failures:
 1) cannotLocateMalformedUrl(ro.isdc.wro.model.resource.locator.TestUrlUriLocator)
 java.lang.NoClassDefFoundError: ro/isdc/wro/config/ReadOnlyContext

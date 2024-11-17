@@ -1,0 +1,9 @@
+JUnit version 4.11
+....0    INFO TestPreProcessorExecutor - availableProcessors: 8
+.....1388 ERROR PreProcessorExecutor - Cannot ignore missing resource:  ro.isdc.wro.model.resource.Resource@314c508a[JS,/uri,true]
+.1392 ERROR ExceptionHandlingProcessorDecorator - Failed to process the resource: ro.isdc.wro.model.resource.Resource@69b794e2[JS,,true] using processor: ro.isdc.wro.model.group.processor.TestPreProcessorExecutor$3@61d47554. Reason: Boom!
+
+Time: 1.532
+
+OK (10 tests)
+

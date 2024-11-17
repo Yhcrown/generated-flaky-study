@@ -1,0 +1,19 @@
+JUnit version 4.12
+.2024-11-12 10:54:21,948 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2024-11-12 10:54:24,793 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,895 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Close dubbo server: /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,908 INFO [org.apache.dubbo.remoting.transport.AbstractServer:close$$PHOSPHORTAGGED] -  [DUBBO] Close NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,915 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Unexport service: dubbo://127.0.0.1:20883/demo, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+....2024-11-12 10:54:24,930 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,931 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Close dubbo server: /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,932 INFO [org.apache.dubbo.remoting.transport.AbstractServer:close$$PHOSPHORTAGGED] -  [DUBBO] Close NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,940 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Unexport service: dubbo://127.0.0.1:20883/demo, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+.2024-11-12 10:54:24,946 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,947 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Close dubbo server: /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,948 INFO [org.apache.dubbo.remoting.transport.AbstractServer:close$$PHOSPHORTAGGED] -  [DUBBO] Close NettyServer bind /0.0.0.0:20883, export /127.0.0.1:20883, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 10:54:24,951 INFO [org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol:destroy$$PHOSPHORTAGGED] -  [DUBBO] Unexport service: dubbo://127.0.0.1:20883/demo, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+.
+Time: 6.59
+
+OK (7 tests)
+

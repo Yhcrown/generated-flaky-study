@@ -1,6 +1,6 @@
 JUnit version 4.8.2
 .E.E.E.E
-Time: 2.443
+Time: 3.964
 There were 4 failures:
 1) testHttpCreateConnection(org.apache.http.impl.pool.TestBasicConnPool)
 java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: createConnection signature: (Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpClientConnection;) Unable to pop operand off an empty stack
@@ -48,7 +48,7 @@ java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: 
 	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-2) testHttpsCreateConnection(org.apache.http.impl.pool.TestBasicConnPool)
+2) testHttpCreateEntry(org.apache.http.impl.pool.TestBasicConnPool)
 java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: createConnection signature: (Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpClientConnection;) Unable to pop operand off an empty stack
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
@@ -94,7 +94,7 @@ java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: 
 	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-3) testHttpCreateEntry(org.apache.http.impl.pool.TestBasicConnPool)
+3) testNullConstructor(org.apache.http.impl.pool.TestBasicConnPool)
 java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: createConnection signature: (Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpClientConnection;) Unable to pop operand off an empty stack
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
@@ -140,7 +140,7 @@ java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: 
 	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:53)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:45)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-4) testNullConstructor(org.apache.http.impl.pool.TestBasicConnPool)
+4) testHttpsCreateConnection(org.apache.http.impl.pool.TestBasicConnPool)
 java.lang.VerifyError: (class: org/apache/http/impl/pool/BasicConnPool, method: createConnection signature: (Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpClientConnection;) Unable to pop operand off an empty stack
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)

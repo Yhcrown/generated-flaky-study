@@ -1,7 +1,7 @@
 JUnit version 4.11
 .E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E..E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.FlakyTracker Log: defaultUseCachesSetsInitialValueOnly may be flaky: FlakyTaintLabel{type=ENVIRONMENT, cause='java/net/InetAddress.getLocalHost', file='com/squareup/okhttp/mockwebserver/MockWebServer', line=121, label=9}
 .E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E
-Time: 0.996
+Time: 1.481
 There were 84 failures:
 1) cacheCanUseCriteriaBesidesVariantObeyed(com.squareup.okhttp.internal.http.ResponseCacheTest)
 java.lang.NoSuchMethodError: com.squareup.okhttp.internal.Platform.get$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lcom/squareup/okhttp/internal/Platform;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;

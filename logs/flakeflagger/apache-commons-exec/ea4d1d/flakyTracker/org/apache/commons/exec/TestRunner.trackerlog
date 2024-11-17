@@ -1,32 +1,60 @@
 JUnit version 3.8.1
-......................................................PATH=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-BROWSER=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh
-JAVA_HOME=/shared-data/jdk8u422-b05/
-REMOTE_CONTAINERS_SOCKETS=["/tmp/vscode-ssh-auth-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock","/root/.gnupg/S.gpg-agent"]
-TERM=xterm-256color
-LANG=en_US.UTF-8
-VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-55a481e684.sock
-REMOTE_CONTAINERS=true
-VSCODE_GIT_ASKPASS_MAIN=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js
-MAVEN_HOME=/workspace/apache-maven-3.8.8/bin/mvn
-COLORTERM=truecolor
-REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock
-VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-06aef43e-45be-42fe-bb0d-962cc794b821.sock
-VSCODE_GIT_ASKPASS_EXTRA_ARGS=
-VSCODE_GIT_ASKPASS_NODE=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node
-PWD=/workspace/benchmarks/projects/apache-commons-exec
-TERM_PROGRAM_VERSION=1.93.1
-GIT_ASKPASS=/root/.vscode-server/bin/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh
-_=/usr/bin/python3
-SHELL=/bin/bash
-TERM_PROGRAM=vscode
-OLDPWD=/
-SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-4edd25c8-2d6e-4e04-a3d6-bb3bc956f224.sock
-HOSTNAME=6610172a78db
-HOME=/root
-SHLVL=2
+..........................................-n .
+-n .
+-n .
+-n .
+-n .
+-n .
+-n .
+-n .
+-n .
+.OpenJDK 64-Bit Server VM warning: CodeCache is full. Compiler has been disabled.
+OpenJDK 64-Bit Server VM warning: Try increasing the code cache size using -XX:ReservedCodeCacheSize=
+CodeCache: size=131072Kb used=23723Kb max_used=23723Kb free=107348Kb
+ bounds [0x0000000104480000, 0x0000000105c00000, 0x000000010c480000]
+ total_blobs=2783 nmethods=2143 adapters=556
+ compilation: disabled (not enough contiguous free space left)
+..PATH=/Users/yhcrown/anaconda3/envs/generated-flaky/bin:/Users/yhcrown/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/yhcrown/Library/Application Support/JetBrains/Toolbox/scripts
+CONDA_DEFAULT_ENV=generated-flaky
+JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+HOMEBREW_PREFIX=/opt/homebrew
+COMMAND_MODE=unix2003
+MAVEN_OPTS=
+CONDA_PREFIX=/Users/yhcrown/anaconda3/envs/generated-flaky
+MAVEN_HOME=/Users/yhcrown/Documents/tools/apache-maven-3.6.3/bin/mvn
+JAVA_MAIN_CLASS_25803=org.junit.runner.JUnitCore
+LOGNAME=yhcrown
+HOMEBREW_REPOSITORY=/opt/homebrew
+PWD=/Users/yhcrown/Documents/flaky_java_projects_ff/apache-commons-exec
+XPC_SERVICE_NAME=0
+PYCHARM_HOSTED=1
+PYCHARM_DISPLAY_PORT=63343
+CONDA_SHLVL=1
+INFOPATH=/opt/homebrew/share/info:
+_=/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack/bin/java
+__CFBundleIdentifier=com.jetbrains.pycharm
+PYTHONPATH=/Users/yhcrown/Documents/GitHub/generated-flaky-study:/Users/yhcrown/Applications/PyCharm Professional Edition.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend:/Users/yhcrown/Applications/PyCharm Professional Edition.app/Contents/plugins/python/helpers/pycharm_display
+SHELL=/bin/zsh
+PAGER=less
+PYTHONIOENCODING=UTF-8
+LSCOLORS=Gxfxcxdxbxegedabagacad
+HOMEBREW_CELLAR=/opt/homebrew/Cellar
+OLDPWD=/Users/yhcrown/Documents/flaky_java_projects_ff/apache-commons-exec
+USER=yhcrown
+ZSH=/Users/yhcrown/.oh-my-zsh
+TMPDIR=/var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.AURFOsu78S/Listeners
+PYTHONUNBUFFERED=1
+XPC_FLAGS=0x0
+__CF_USER_TEXT_ENCODING=0x1F5:0:0
+CONDA_PROMPT_MODIFIER=(generated-flaky) 
+LESS=-R
+LC_CTYPE=en_US.UTF-8
+LS_COLORS=di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
+SHLVL=0
+HOME=/Users/yhcrown
 ..........
-Time: 27.347
+Time: 30.308
 
 OK (55 tests)
 

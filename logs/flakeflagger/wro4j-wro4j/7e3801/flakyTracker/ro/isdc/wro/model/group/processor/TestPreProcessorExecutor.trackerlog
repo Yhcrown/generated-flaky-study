@@ -1,6 +1,6 @@
 JUnit version 4.11
 .E.E.E.E.E.E.E.E.E.E
-Time: 2.554
+Time: 3.631
 There were 10 failures:
 1) shouldNotFailWhenNoResourcesProcessed(ro.isdc.wro.model.group.processor.TestPreProcessorExecutor)
 java.lang.ExceptionInInitializerError

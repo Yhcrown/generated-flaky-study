@@ -1,22 +1,158 @@
 JUnit version 4.11
-.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-E.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-E.ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider org.codehaus.groovy.jsr223.GroovyScriptEngineFactory not found
-E..
-Time: 1.037
+.E.E.E..
+Time: 8.242
 There were 3 failures:
 1) shouldProcessValidCss(ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine)
-java.lang.NullPointerException
+java.lang.VerifyError: Inconsistent stackmap frames at branch target 1421
+Exception Details:
+  Location:
+    org/jruby/RubyModule.newMethod$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/builtin/IRubyObject;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/Visibility;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lorg/jruby/runtime/builtin/IRubyObject;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @1421: aload
+  Reason:
+    Type top (current frame, locals[29]) is not assignable to 'java/lang/Object' (stack map, locals[29])
+  Current Frame:
+    bci: @1280
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @1421
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 190e c000 7e3a 1119 11b6 0084 013a 12bb
+    0x0000010: 00cc 59b7 00cd 3a13 2a2b 1904 1905 1911
+    0x0000020: 190f 013a 143a 1519 1519 14b6 0499 59b4
+    0x0000030: 00b3 c004 545f b400 af19 11b6 0088 b800
+    0x0000040: 8e3a 173a 1619 1619 1719 1119 133a 1419
+    0x0000050: 14b6 049c 59b4 00d3 5fb4 00d4 5919 115f
+    0x0000060: 1912 0410 0cb6 00d8 3a12 5719 1719 11b6
+    0x0000070: 0088 b800 8e3a 179a 006b 1908 1909 5919
+    0x0000080: 115f 1912 0510 0cb6 00d8 3a12 5719 1719
+    0x0000090: 11b6 0088 b800 8e3a 17c6 0360 1916 1917
+    0x00000a0: 1911 190f 013a 143a 1519 1519 14b6 0620
+    0x00000b0: 59b4 00b3 c005 d85f b400 af19 0819 095d
+    0x00000c0: 58b8 008e 5919 115f 1912 0610 0cb6 00d8
+    0x00000d0: 3a12 5719 1719 11b6 0088 b800 8e3a 17a5
+    0x00000e0: 031a 150a 190b 5919 115f 1912 0810 0cb6
+    0x00000f0: 00d8 3a12 5719 1719 11b6 0088 b800 8e3a
+    0x0000100: 1799 01b4 2c2d 1904 1905 150c 190d 1911
+    0x0000110: 1913 3a14 1914 b906 5008 0059 b400 d35f
+    0x0000120: b400 d459 1911 5f19 1210 0610 0cb6 00d8
+    0x0000130: 3a12 5719 1719 11b6 0088 b800 8e3a 1799
+    0x0000140: 0032 bb00 1319 11b6 0088 5c2a 2bb2 0653
+    0x0000150: b206 5619 0419 0519 11b6 009e c000 7eb7
+    0x0000160: 0659 1911 b600 88b8 008e 3a17 3a16 a702
+    0x0000170: 8b2a 2b19 1119 0f01 3a14 3a15 1915 1914
+    0x0000180: b601 5259 b400 b3c0 00e5 5fb4 00af bb00
+    0x0000190: f119 11b6 0088 5c19 11b6 009e c000 7eb7
+    0x00001a0: 00f2 1306 5b19 11b6 0088 1911 190f 013a
+    0x00001b0: 143a 1519 1519 14b6 00f8 59b4 00b3 c000
+    0x00001c0: f15f b400 af19 0419 0519 1119 0f01 3a14
+    0x00001d0: 3a15 1915 1914 b600 f859 b400 b3c0 00f1
+    0x00001e0: 5fb4 00af 1306 5d19 11b6 0088 1911 190f
+    0x00001f0: 013a 143a 1519 1519 14b6 00f8 59b4 00b3
+    0x0000200: c000 f15f b400 af2a 2b19 1119 0f01 3a14
+    0x0000210: 3a15 1915 1914 b600 fc59 b400 b3c0 00fe
+    0x0000220: 5fb4 00af 1911 190f 013a 143a 1519 1519
+    0x0000230: 14b6 00f8 59b4 00b3 c000 f15f b400 af13
+    0x0000240: 04b1 1911 b600 8819 1119 0f01 3a14 3a15
+    0x0000250: 1915 1914 b600 f859 b400 b3c0 00f1 5fb4
+    0x0000260: 00af 1911 190f 013a 143a 1519 1519 14b6
+    0x0000270: 0101 59b4 00b3 c000 fe5f b400 af19 0419
+    0x0000280: 0519 1119 0f01 3a14 3a15 1915 1914 b604
+    0x0000290: b559 b400 b3c0 00c8 5fb4 00af 1911 b600
+    0x00002a0: 88b8 008e 1911 1912 b600 ed19 11b6 0088
+    0x00002b0: b800 8e57 bf2a 2b19 1119 0f01 3a14 3a15
+    0x00002c0: 1915 1914 b601 5259 b400 b3c0 00e5 5fb4
+    0x00002d0: 00af bb00 f119 11b6 0088 5c19 11b6 009e
+    0x00002e0: c000 7eb7 00f2 1306 5b19 11b6 0088 1911
+    0x00002f0: 190f 013a 143a 1519 1519 14b6 00f8 59b4
+    0x0000300: 00b3 c000 f15f b400 af19 0419 0519 1119
+    0x0000310: 0f01 3a14 3a15 1915 1914 b600 f859 b400
+    0x0000320: b3c0 00f1 5fb4 00af 1306 5d19 11b6 0088
+    0x0000330: 1911 190f 013a 143a 1519 1519 14b6 00f8
+    0x0000340: 59b4 00b3 c000 f15f b400 af2a 2b19 1119
+    0x0000350: 0f01 3a14 3a15 1915 1914 b600 fc59 b400
+    0x0000360: b3c0 00fe 5fb4 00af 1911 190f 013a 143a
+    0x0000370: 1519 1519 14b6 00f8 59b4 00b3 c000 f15f
+    0x0000380: b400 af13 04b1 1911 b600 8819 1119 0f01
+    0x0000390: 3a14 3a15 1915 1914 b600 f859 b400 b3c0
+    0x00003a0: 00f1 5fb4 00af 1911 190f 013a 143a 1519
+    0x00003b0: 1519 14b6 0101 59b4 00b3 c000 fe5f b400
+    0x00003c0: af19 0419 0519 1119 0f01 3a14 3a15 1915
+    0x00003d0: 1914 b604 b559 b400 b3c0 00c8 5fb4 00af
+    0x00003e0: 1911 b600 88b8 008e 1911 1912 b600 ed19
+    0x00003f0: 11b6 0088 b800 8e57 bf19 1619 175f c004
+    0x0000400: 545f 1911 190f 013a 143a 1519 1519 14b6
+    0x0000410: 0623 59b4 00b3 c000 025f b400 af19 11b6
+    0x0000420: 0088 b800 8e3a 223a 192a 2b19 11b6 0088
+    0x0000430: b800 8e3a 233a 1a19 1a19 2319 1919 225d
+    0x0000440: 58b8 008e 5919 115f 1912 1007 100c b600
+    0x0000450: d83a 1257 1923 1911 b600 88b8 008e 3a23
+    0x0000460: a500 7119 1a19 235f c000 025f 1911 1913
+    0x0000470: 3a14 1914 b604 a059 b400 d35f b400 d459
+    0x0000480: 1911 5f19 1210 0910 0cb6 00d8 3a12 5719
+    0x0000490: 2319 11b6 0088 b800 8e3a 2399 0036 191a
+    0x00004a0: 1923 5fc0 00da 5f19 1119 0f01 3a14 3a15
+    0x00004b0: 1915 1914 b606 5e59 b400 b3c0 0090 5fb4
+    0x00004c0: 00af 1911 b600 88b8 008e 3a23 3a1a a7ff
+    0x00004d0: 6919 1119 1210 09b6 01aa 1911 1912 1007
+    0x00004e0: b601 aa19 1119 1210 08b6 01aa 1506 1907
+    0x00004f0: 5919 115f 1912 100a 100c b600 d83a 1257
+    0x0000500: 9900 8d19 1919 2219 0419 0519 1a19 2319
+    0x0000510: 0419 0519 1619 172c 2d19 11b6 0088 b800
+    0x0000520: 8e3a 243a 1d19 11b6 0088 b800 8e3a 253a
+    0x0000530: 1e19 11b6 0088 b800 8e3a 263a 1f19 11b6
+    0x0000540: 0088 b800 8e3a 273a 2019 2019 275f c000
+    0x0000550: 025f 191f 1926 191e 1925 5fc0 0454 5f19
+    0x0000560: 1d19 2419 1119 0f01 3a14 3a15 1915 1914
+    0x0000570: b806 6359 b400 b3c0 0660 5fb4 00af 1911
+    0x0000580: b600 88b8 008e 3a28 3a18 a700 7819 1919
+    0x0000590: 2219 0419 0519 1a19 2319 0419 0519 1619
+    0x00005a0: 1719 11b6 0088 b800 8e3a 293a 2119 11b6
+    0x00005b0: 0088 b800 8e3a 2a3a 1b19 11b6 0088 b800
+    0x00005c0: 8e3a 2b3a 1c19 1c19 2b5f c000 025f 191b
+    0x00005d0: 192a 1921 1929 5fc0 0454 5f19 1119 0f01
+    0x00005e0: 3a14 3a15 1915 1914 b806 6959 b400 b3c0
+    0x00005f0: 0665 5fb4 00af 1911 b600 88b8 008e 3a28
+    0x0000600: 3a18 1911 1912 100a b601 aa19 1819 282a
+    0x0000610: 2b5f c003 375f 5e58 5fc0 0660 5f5e 5819
+    0x0000620: 1119 0f01 3a14 3a15 1915 1914 b606 6a59
+    0x0000630: b400 b3c0 0337 5fb4 00af 5819 1819 2819
+    0x0000640: 11b6 0088 b800 8e19 1119 12b6 00ed 190f
+    0x0000650: 5fb5 00af 190f 5fb5 00b3 190f 1911 1912
+    0x0000660: b600 ed19 11b6 00b6 b019 1119 12b6 00ed
+    0x0000670: 1911 b600 b6bf                         
+  Exception Handler Table:
+    bci [15, 1641] => handler: 1641
+  Stackmap Table:
+    full_frame(@226,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#1108],Object[#138]},{})
+    same_frame_extended(@369)
+    same_frame_extended(@693)
+    full_frame(@1017,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138]},{})
+    full_frame(@1079,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Top,Top,Top,Top,Top,Object[#138],Object[#138]},{})
+    same_frame_extended(@1233)
+    full_frame(@1421,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Object[#324],Object[#324],Object[#324],Object[#324],Top,Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1538,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Object[#324],Object[#2],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1641,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#126],Object[#239]},{Object[#196]})
+
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:251)
-	at java.lang.Exception.<init>(Exception.java:54)
-	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
-	at java.lang.NullPointerException.<init>(NullPointerException.java:60)
-	at java.lang.NullPointerException.<init>(NullPointerException.java)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.jruby.Ruby.initRoot$$PHOSPHORTAGGED(Ruby.java:1221)
+	at org.jruby.Ruby.init$$PHOSPHORTAGGED(Ruby.java:1128)
+	at org.jruby.Ruby.newInstance$$PHOSPHORTAGGED(Ruby.java:276)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime$$PHOSPHORTAGGED(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:156)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse$$PHOSPHORTAGGED(ScriptingContainer.java:1196)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:89)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:142)
 	at ro.isdc.wro.extensions.processor.support.sass.RubySassEngine.process$$PHOSPHORTAGGED(RubySassEngine.java:67)
 	at ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine.shouldProcessValidCss$$PHOSPHORTAGGED(TestRubySassEngine.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -56,14 +192,156 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:40)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
 2) shouldProcessValidSass(ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine)
-java.lang.NullPointerException
+java.lang.VerifyError: Inconsistent stackmap frames at branch target 1421
+Exception Details:
+  Location:
+    org/jruby/RubyModule.newMethod$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/builtin/IRubyObject;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/Visibility;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lorg/jruby/runtime/builtin/IRubyObject;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @1421: aload
+  Reason:
+    Type top (current frame, locals[29]) is not assignable to 'java/lang/Object' (stack map, locals[29])
+  Current Frame:
+    bci: @1280
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @1421
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 190e c000 7e3a 1119 11b6 0084 013a 12bb
+    0x0000010: 00cc 59b7 00cd 3a13 2a2b 1904 1905 1911
+    0x0000020: 190f 013a 143a 1519 1519 14b6 0499 59b4
+    0x0000030: 00b3 c004 545f b400 af19 11b6 0088 b800
+    0x0000040: 8e3a 173a 1619 1619 1719 1119 133a 1419
+    0x0000050: 14b6 049c 59b4 00d3 5fb4 00d4 5919 115f
+    0x0000060: 1912 0410 0cb6 00d8 3a12 5719 1719 11b6
+    0x0000070: 0088 b800 8e3a 179a 006b 1908 1909 5919
+    0x0000080: 115f 1912 0510 0cb6 00d8 3a12 5719 1719
+    0x0000090: 11b6 0088 b800 8e3a 17c6 0360 1916 1917
+    0x00000a0: 1911 190f 013a 143a 1519 1519 14b6 0620
+    0x00000b0: 59b4 00b3 c005 d85f b400 af19 0819 095d
+    0x00000c0: 58b8 008e 5919 115f 1912 0610 0cb6 00d8
+    0x00000d0: 3a12 5719 1719 11b6 0088 b800 8e3a 17a5
+    0x00000e0: 031a 150a 190b 5919 115f 1912 0810 0cb6
+    0x00000f0: 00d8 3a12 5719 1719 11b6 0088 b800 8e3a
+    0x0000100: 1799 01b4 2c2d 1904 1905 150c 190d 1911
+    0x0000110: 1913 3a14 1914 b906 5008 0059 b400 d35f
+    0x0000120: b400 d459 1911 5f19 1210 0610 0cb6 00d8
+    0x0000130: 3a12 5719 1719 11b6 0088 b800 8e3a 1799
+    0x0000140: 0032 bb00 1319 11b6 0088 5c2a 2bb2 0653
+    0x0000150: b206 5619 0419 0519 11b6 009e c000 7eb7
+    0x0000160: 0659 1911 b600 88b8 008e 3a17 3a16 a702
+    0x0000170: 8b2a 2b19 1119 0f01 3a14 3a15 1915 1914
+    0x0000180: b601 5259 b400 b3c0 00e5 5fb4 00af bb00
+    0x0000190: f119 11b6 0088 5c19 11b6 009e c000 7eb7
+    0x00001a0: 00f2 1306 5b19 11b6 0088 1911 190f 013a
+    0x00001b0: 143a 1519 1519 14b6 00f8 59b4 00b3 c000
+    0x00001c0: f15f b400 af19 0419 0519 1119 0f01 3a14
+    0x00001d0: 3a15 1915 1914 b600 f859 b400 b3c0 00f1
+    0x00001e0: 5fb4 00af 1306 5d19 11b6 0088 1911 190f
+    0x00001f0: 013a 143a 1519 1519 14b6 00f8 59b4 00b3
+    0x0000200: c000 f15f b400 af2a 2b19 1119 0f01 3a14
+    0x0000210: 3a15 1915 1914 b600 fc59 b400 b3c0 00fe
+    0x0000220: 5fb4 00af 1911 190f 013a 143a 1519 1519
+    0x0000230: 14b6 00f8 59b4 00b3 c000 f15f b400 af13
+    0x0000240: 04b1 1911 b600 8819 1119 0f01 3a14 3a15
+    0x0000250: 1915 1914 b600 f859 b400 b3c0 00f1 5fb4
+    0x0000260: 00af 1911 190f 013a 143a 1519 1519 14b6
+    0x0000270: 0101 59b4 00b3 c000 fe5f b400 af19 0419
+    0x0000280: 0519 1119 0f01 3a14 3a15 1915 1914 b604
+    0x0000290: b559 b400 b3c0 00c8 5fb4 00af 1911 b600
+    0x00002a0: 88b8 008e 1911 1912 b600 ed19 11b6 0088
+    0x00002b0: b800 8e57 bf2a 2b19 1119 0f01 3a14 3a15
+    0x00002c0: 1915 1914 b601 5259 b400 b3c0 00e5 5fb4
+    0x00002d0: 00af bb00 f119 11b6 0088 5c19 11b6 009e
+    0x00002e0: c000 7eb7 00f2 1306 5b19 11b6 0088 1911
+    0x00002f0: 190f 013a 143a 1519 1519 14b6 00f8 59b4
+    0x0000300: 00b3 c000 f15f b400 af19 0419 0519 1119
+    0x0000310: 0f01 3a14 3a15 1915 1914 b600 f859 b400
+    0x0000320: b3c0 00f1 5fb4 00af 1306 5d19 11b6 0088
+    0x0000330: 1911 190f 013a 143a 1519 1519 14b6 00f8
+    0x0000340: 59b4 00b3 c000 f15f b400 af2a 2b19 1119
+    0x0000350: 0f01 3a14 3a15 1915 1914 b600 fc59 b400
+    0x0000360: b3c0 00fe 5fb4 00af 1911 190f 013a 143a
+    0x0000370: 1519 1519 14b6 00f8 59b4 00b3 c000 f15f
+    0x0000380: b400 af13 04b1 1911 b600 8819 1119 0f01
+    0x0000390: 3a14 3a15 1915 1914 b600 f859 b400 b3c0
+    0x00003a0: 00f1 5fb4 00af 1911 190f 013a 143a 1519
+    0x00003b0: 1519 14b6 0101 59b4 00b3 c000 fe5f b400
+    0x00003c0: af19 0419 0519 1119 0f01 3a14 3a15 1915
+    0x00003d0: 1914 b604 b559 b400 b3c0 00c8 5fb4 00af
+    0x00003e0: 1911 b600 88b8 008e 1911 1912 b600 ed19
+    0x00003f0: 11b6 0088 b800 8e57 bf19 1619 175f c004
+    0x0000400: 545f 1911 190f 013a 143a 1519 1519 14b6
+    0x0000410: 0623 59b4 00b3 c000 025f b400 af19 11b6
+    0x0000420: 0088 b800 8e3a 223a 192a 2b19 11b6 0088
+    0x0000430: b800 8e3a 233a 1a19 1a19 2319 1919 225d
+    0x0000440: 58b8 008e 5919 115f 1912 1007 100c b600
+    0x0000450: d83a 1257 1923 1911 b600 88b8 008e 3a23
+    0x0000460: a500 7119 1a19 235f c000 025f 1911 1913
+    0x0000470: 3a14 1914 b604 a059 b400 d35f b400 d459
+    0x0000480: 1911 5f19 1210 0910 0cb6 00d8 3a12 5719
+    0x0000490: 2319 11b6 0088 b800 8e3a 2399 0036 191a
+    0x00004a0: 1923 5fc0 00da 5f19 1119 0f01 3a14 3a15
+    0x00004b0: 1915 1914 b606 5e59 b400 b3c0 0090 5fb4
+    0x00004c0: 00af 1911 b600 88b8 008e 3a23 3a1a a7ff
+    0x00004d0: 6919 1119 1210 09b6 01aa 1911 1912 1007
+    0x00004e0: b601 aa19 1119 1210 08b6 01aa 1506 1907
+    0x00004f0: 5919 115f 1912 100a 100c b600 d83a 1257
+    0x0000500: 9900 8d19 1919 2219 0419 0519 1a19 2319
+    0x0000510: 0419 0519 1619 172c 2d19 11b6 0088 b800
+    0x0000520: 8e3a 243a 1d19 11b6 0088 b800 8e3a 253a
+    0x0000530: 1e19 11b6 0088 b800 8e3a 263a 1f19 11b6
+    0x0000540: 0088 b800 8e3a 273a 2019 2019 275f c000
+    0x0000550: 025f 191f 1926 191e 1925 5fc0 0454 5f19
+    0x0000560: 1d19 2419 1119 0f01 3a14 3a15 1915 1914
+    0x0000570: b806 6359 b400 b3c0 0660 5fb4 00af 1911
+    0x0000580: b600 88b8 008e 3a28 3a18 a700 7819 1919
+    0x0000590: 2219 0419 0519 1a19 2319 0419 0519 1619
+    0x00005a0: 1719 11b6 0088 b800 8e3a 293a 2119 11b6
+    0x00005b0: 0088 b800 8e3a 2a3a 1b19 11b6 0088 b800
+    0x00005c0: 8e3a 2b3a 1c19 1c19 2b5f c000 025f 191b
+    0x00005d0: 192a 1921 1929 5fc0 0454 5f19 1119 0f01
+    0x00005e0: 3a14 3a15 1915 1914 b806 6959 b400 b3c0
+    0x00005f0: 0665 5fb4 00af 1911 b600 88b8 008e 3a28
+    0x0000600: 3a18 1911 1912 100a b601 aa19 1819 282a
+    0x0000610: 2b5f c003 375f 5e58 5fc0 0660 5f5e 5819
+    0x0000620: 1119 0f01 3a14 3a15 1915 1914 b606 6a59
+    0x0000630: b400 b3c0 0337 5fb4 00af 5819 1819 2819
+    0x0000640: 11b6 0088 b800 8e19 1119 12b6 00ed 190f
+    0x0000650: 5fb5 00af 190f 5fb5 00b3 190f 1911 1912
+    0x0000660: b600 ed19 11b6 00b6 b019 1119 12b6 00ed
+    0x0000670: 1911 b600 b6bf                         
+  Exception Handler Table:
+    bci [15, 1641] => handler: 1641
+  Stackmap Table:
+    full_frame(@226,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#1108],Object[#138]},{})
+    same_frame_extended(@369)
+    same_frame_extended(@693)
+    full_frame(@1017,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138]},{})
+    full_frame(@1079,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Top,Top,Top,Top,Top,Object[#138],Object[#138]},{})
+    same_frame_extended(@1233)
+    full_frame(@1421,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Object[#324],Object[#324],Object[#324],Object[#324],Top,Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1538,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Object[#324],Object[#2],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1641,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#126],Object[#239]},{Object[#196]})
+
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:251)
-	at java.lang.Exception.<init>(Exception.java:54)
-	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
-	at java.lang.NullPointerException.<init>(NullPointerException.java:60)
-	at java.lang.NullPointerException.<init>(NullPointerException.java)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.jruby.Ruby.initRoot$$PHOSPHORTAGGED(Ruby.java:1221)
+	at org.jruby.Ruby.init$$PHOSPHORTAGGED(Ruby.java:1128)
+	at org.jruby.Ruby.newInstance$$PHOSPHORTAGGED(Ruby.java:276)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime$$PHOSPHORTAGGED(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:156)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse$$PHOSPHORTAGGED(ScriptingContainer.java:1196)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:89)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:142)
 	at ro.isdc.wro.extensions.processor.support.sass.RubySassEngine.process$$PHOSPHORTAGGED(RubySassEngine.java:67)
 	at ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine.shouldProcessValidSass$$PHOSPHORTAGGED(TestRubySassEngine.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -103,7 +381,7 @@ java.lang.NullPointerException
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:40)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
 3) cannotProcessInvalidCss(ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine)
-java.lang.Exception: Unexpected exception, expected<ro.isdc.wro.WroRuntimeException> but was<java.lang.NullPointerException>
+java.lang.Exception: Unexpected exception, expected<ro.isdc.wro.WroRuntimeException> but was<java.lang.VerifyError>
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
 	at java.lang.Throwable.<init>(Throwable.java:288)
@@ -134,14 +412,156 @@ java.lang.Exception: Unexpected exception, expected<ro.isdc.wro.WroRuntimeExcept
 	at org.junit.runner.JUnitCore.runMainAndExit$$PHOSPHORTAGGED(JUnitCore.java:47)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:40)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-Caused by: java.lang.NullPointerException
+Caused by: java.lang.VerifyError: Inconsistent stackmap frames at branch target 1421
+Exception Details:
+  Location:
+    org/jruby/RubyModule.newMethod$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/builtin/IRubyObject;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/lang/String;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/jruby/runtime/Visibility;Ledu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;ZLedu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lorg/jruby/runtime/builtin/IRubyObject;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @1421: aload
+  Reason:
+    Type top (current frame, locals[29]) is not assignable to 'java/lang/Object' (stack map, locals[29])
+  Current Frame:
+    bci: @1280
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, top, top, top, top, top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { integer }
+  Stackmap Frame:
+    bci: @1421
+    flags: { }
+    locals: { 'org/jruby/RubyModule', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/builtin/IRubyObject', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'java/lang/String', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/jruby/runtime/Visibility', 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', integer, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, 'java/lang/Object', 'edu/columbia/cs/psl/phosphor/runtime/Taint', top, 'org/jruby/RubyModule', 'java/lang/Object', top, top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { }
+  Bytecode:
+    0x0000000: 190e c000 7e3a 1119 11b6 0084 013a 12bb
+    0x0000010: 00cc 59b7 00cd 3a13 2a2b 1904 1905 1911
+    0x0000020: 190f 013a 143a 1519 1519 14b6 0499 59b4
+    0x0000030: 00b3 c004 545f b400 af19 11b6 0088 b800
+    0x0000040: 8e3a 173a 1619 1619 1719 1119 133a 1419
+    0x0000050: 14b6 049c 59b4 00d3 5fb4 00d4 5919 115f
+    0x0000060: 1912 0410 0cb6 00d8 3a12 5719 1719 11b6
+    0x0000070: 0088 b800 8e3a 179a 006b 1908 1909 5919
+    0x0000080: 115f 1912 0510 0cb6 00d8 3a12 5719 1719
+    0x0000090: 11b6 0088 b800 8e3a 17c6 0360 1916 1917
+    0x00000a0: 1911 190f 013a 143a 1519 1519 14b6 0620
+    0x00000b0: 59b4 00b3 c005 d85f b400 af19 0819 095d
+    0x00000c0: 58b8 008e 5919 115f 1912 0610 0cb6 00d8
+    0x00000d0: 3a12 5719 1719 11b6 0088 b800 8e3a 17a5
+    0x00000e0: 031a 150a 190b 5919 115f 1912 0810 0cb6
+    0x00000f0: 00d8 3a12 5719 1719 11b6 0088 b800 8e3a
+    0x0000100: 1799 01b4 2c2d 1904 1905 150c 190d 1911
+    0x0000110: 1913 3a14 1914 b906 5008 0059 b400 d35f
+    0x0000120: b400 d459 1911 5f19 1210 0610 0cb6 00d8
+    0x0000130: 3a12 5719 1719 11b6 0088 b800 8e3a 1799
+    0x0000140: 0032 bb00 1319 11b6 0088 5c2a 2bb2 0653
+    0x0000150: b206 5619 0419 0519 11b6 009e c000 7eb7
+    0x0000160: 0659 1911 b600 88b8 008e 3a17 3a16 a702
+    0x0000170: 8b2a 2b19 1119 0f01 3a14 3a15 1915 1914
+    0x0000180: b601 5259 b400 b3c0 00e5 5fb4 00af bb00
+    0x0000190: f119 11b6 0088 5c19 11b6 009e c000 7eb7
+    0x00001a0: 00f2 1306 5b19 11b6 0088 1911 190f 013a
+    0x00001b0: 143a 1519 1519 14b6 00f8 59b4 00b3 c000
+    0x00001c0: f15f b400 af19 0419 0519 1119 0f01 3a14
+    0x00001d0: 3a15 1915 1914 b600 f859 b400 b3c0 00f1
+    0x00001e0: 5fb4 00af 1306 5d19 11b6 0088 1911 190f
+    0x00001f0: 013a 143a 1519 1519 14b6 00f8 59b4 00b3
+    0x0000200: c000 f15f b400 af2a 2b19 1119 0f01 3a14
+    0x0000210: 3a15 1915 1914 b600 fc59 b400 b3c0 00fe
+    0x0000220: 5fb4 00af 1911 190f 013a 143a 1519 1519
+    0x0000230: 14b6 00f8 59b4 00b3 c000 f15f b400 af13
+    0x0000240: 04b1 1911 b600 8819 1119 0f01 3a14 3a15
+    0x0000250: 1915 1914 b600 f859 b400 b3c0 00f1 5fb4
+    0x0000260: 00af 1911 190f 013a 143a 1519 1519 14b6
+    0x0000270: 0101 59b4 00b3 c000 fe5f b400 af19 0419
+    0x0000280: 0519 1119 0f01 3a14 3a15 1915 1914 b604
+    0x0000290: b559 b400 b3c0 00c8 5fb4 00af 1911 b600
+    0x00002a0: 88b8 008e 1911 1912 b600 ed19 11b6 0088
+    0x00002b0: b800 8e57 bf2a 2b19 1119 0f01 3a14 3a15
+    0x00002c0: 1915 1914 b601 5259 b400 b3c0 00e5 5fb4
+    0x00002d0: 00af bb00 f119 11b6 0088 5c19 11b6 009e
+    0x00002e0: c000 7eb7 00f2 1306 5b19 11b6 0088 1911
+    0x00002f0: 190f 013a 143a 1519 1519 14b6 00f8 59b4
+    0x0000300: 00b3 c000 f15f b400 af19 0419 0519 1119
+    0x0000310: 0f01 3a14 3a15 1915 1914 b600 f859 b400
+    0x0000320: b3c0 00f1 5fb4 00af 1306 5d19 11b6 0088
+    0x0000330: 1911 190f 013a 143a 1519 1519 14b6 00f8
+    0x0000340: 59b4 00b3 c000 f15f b400 af2a 2b19 1119
+    0x0000350: 0f01 3a14 3a15 1915 1914 b600 fc59 b400
+    0x0000360: b3c0 00fe 5fb4 00af 1911 190f 013a 143a
+    0x0000370: 1519 1519 14b6 00f8 59b4 00b3 c000 f15f
+    0x0000380: b400 af13 04b1 1911 b600 8819 1119 0f01
+    0x0000390: 3a14 3a15 1915 1914 b600 f859 b400 b3c0
+    0x00003a0: 00f1 5fb4 00af 1911 190f 013a 143a 1519
+    0x00003b0: 1519 14b6 0101 59b4 00b3 c000 fe5f b400
+    0x00003c0: af19 0419 0519 1119 0f01 3a14 3a15 1915
+    0x00003d0: 1914 b604 b559 b400 b3c0 00c8 5fb4 00af
+    0x00003e0: 1911 b600 88b8 008e 1911 1912 b600 ed19
+    0x00003f0: 11b6 0088 b800 8e57 bf19 1619 175f c004
+    0x0000400: 545f 1911 190f 013a 143a 1519 1519 14b6
+    0x0000410: 0623 59b4 00b3 c000 025f b400 af19 11b6
+    0x0000420: 0088 b800 8e3a 223a 192a 2b19 11b6 0088
+    0x0000430: b800 8e3a 233a 1a19 1a19 2319 1919 225d
+    0x0000440: 58b8 008e 5919 115f 1912 1007 100c b600
+    0x0000450: d83a 1257 1923 1911 b600 88b8 008e 3a23
+    0x0000460: a500 7119 1a19 235f c000 025f 1911 1913
+    0x0000470: 3a14 1914 b604 a059 b400 d35f b400 d459
+    0x0000480: 1911 5f19 1210 0910 0cb6 00d8 3a12 5719
+    0x0000490: 2319 11b6 0088 b800 8e3a 2399 0036 191a
+    0x00004a0: 1923 5fc0 00da 5f19 1119 0f01 3a14 3a15
+    0x00004b0: 1915 1914 b606 5e59 b400 b3c0 0090 5fb4
+    0x00004c0: 00af 1911 b600 88b8 008e 3a23 3a1a a7ff
+    0x00004d0: 6919 1119 1210 09b6 01aa 1911 1912 1007
+    0x00004e0: b601 aa19 1119 1210 08b6 01aa 1506 1907
+    0x00004f0: 5919 115f 1912 100a 100c b600 d83a 1257
+    0x0000500: 9900 8d19 1919 2219 0419 0519 1a19 2319
+    0x0000510: 0419 0519 1619 172c 2d19 11b6 0088 b800
+    0x0000520: 8e3a 243a 1d19 11b6 0088 b800 8e3a 253a
+    0x0000530: 1e19 11b6 0088 b800 8e3a 263a 1f19 11b6
+    0x0000540: 0088 b800 8e3a 273a 2019 2019 275f c000
+    0x0000550: 025f 191f 1926 191e 1925 5fc0 0454 5f19
+    0x0000560: 1d19 2419 1119 0f01 3a14 3a15 1915 1914
+    0x0000570: b806 6359 b400 b3c0 0660 5fb4 00af 1911
+    0x0000580: b600 88b8 008e 3a28 3a18 a700 7819 1919
+    0x0000590: 2219 0419 0519 1a19 2319 0419 0519 1619
+    0x00005a0: 1719 11b6 0088 b800 8e3a 293a 2119 11b6
+    0x00005b0: 0088 b800 8e3a 2a3a 1b19 11b6 0088 b800
+    0x00005c0: 8e3a 2b3a 1c19 1c19 2b5f c000 025f 191b
+    0x00005d0: 192a 1921 1929 5fc0 0454 5f19 1119 0f01
+    0x00005e0: 3a14 3a15 1915 1914 b806 6959 b400 b3c0
+    0x00005f0: 0665 5fb4 00af 1911 b600 88b8 008e 3a28
+    0x0000600: 3a18 1911 1912 100a b601 aa19 1819 282a
+    0x0000610: 2b5f c003 375f 5e58 5fc0 0660 5f5e 5819
+    0x0000620: 1119 0f01 3a14 3a15 1915 1914 b606 6a59
+    0x0000630: b400 b3c0 0337 5fb4 00af 5819 1819 2819
+    0x0000640: 11b6 0088 b800 8e19 1119 12b6 00ed 190f
+    0x0000650: 5fb5 00af 190f 5fb5 00b3 190f 1911 1912
+    0x0000660: b600 ed19 11b6 00b6 b019 1119 12b6 00ed
+    0x0000670: 1911 b600 b6bf                         
+  Exception Handler Table:
+    bci [15, 1641] => handler: 1641
+  Stackmap Table:
+    full_frame(@226,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#1108],Object[#138]},{})
+    same_frame_extended(@369)
+    same_frame_extended(@693)
+    full_frame(@1017,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138]},{})
+    full_frame(@1079,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Top,Top,Top,Top,Top,Object[#138],Object[#138]},{})
+    same_frame_extended(@1233)
+    full_frame(@1421,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Top,Object[#2],Object[#324],Top,Top,Object[#324],Object[#324],Object[#324],Object[#324],Top,Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1538,{Object[#2],Object[#138],Object[#529],Object[#138],Object[#254],Object[#138],Integer,Object[#138],Object[#1496],Object[#138],Integer,Object[#138],Integer,Object[#138],Object[#128],Object[#172],Top,Object[#126],Object[#239],Object[#204],Top,Top,Object[#324],Object[#138],Object[#324],Object[#2],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#324],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138],Object[#138]},{})
+    full_frame(@1641,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#126],Object[#239]},{Object[#196]})
+
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:251)
-	at java.lang.Exception.<init>(Exception.java:54)
-	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
-	at java.lang.NullPointerException.<init>(NullPointerException.java:60)
-	at java.lang.NullPointerException.<init>(NullPointerException.java)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.jruby.Ruby.initRoot$$PHOSPHORTAGGED(Ruby.java:1221)
+	at org.jruby.Ruby.init$$PHOSPHORTAGGED(Ruby.java:1128)
+	at org.jruby.Ruby.newInstance$$PHOSPHORTAGGED(Ruby.java:276)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime$$PHOSPHORTAGGED(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:156)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse$$PHOSPHORTAGGED(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse$$PHOSPHORTAGGED(ScriptingContainer.java:1196)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:89)
+	at org.jruby.embed.jsr223.JRubyEngine.eval$$PHOSPHORTAGGED(JRubyEngine.java:142)
 	at ro.isdc.wro.extensions.processor.support.sass.RubySassEngine.process$$PHOSPHORTAGGED(RubySassEngine.java:67)
 	at ro.isdc.wro.extensions.processor.support.sass.TestRubySassEngine.cannotProcessInvalidCss$$PHOSPHORTAGGED(TestRubySassEngine.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

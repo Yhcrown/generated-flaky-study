@@ -1,5 +1,6 @@
 JUnit version 4.12
-.log4j:ERROR Error occured while converting date.
+.2024-11-12 02:41:35,096 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+log4j:ERROR Error occured while converting date.
 java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia.cs.psl.phosphor.struct.LazyReferenceArrayObjTags
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
@@ -32,7 +33,6 @@ java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia
 	at org.apache.log4j.PatternLayout.format$$PHOSPHORTAGGED(PatternLayout.java:506)
 	at org.apache.log4j.WriterAppender.subAppend$$PHOSPHORTAGGED(WriterAppender.java:310)
 	at org.apache.log4j.WriterAppender.append$$PHOSPHORTAGGED(WriterAppender.java:162)
-	at org.apache.dubbo.common.utils.DubboAppender.append$$PHOSPHORTAGGED(DubboAppender.java:45)
 	at org.apache.log4j.AppenderSkeleton.doAppend$$PHOSPHORTAGGED(AppenderSkeleton.java:251)
 	at org.apache.log4j.helpers.AppenderAttachableImpl.appendLoopOnAppenders$$PHOSPHORTAGGED(AppenderAttachableImpl.java:66)
 	at org.apache.log4j.Category.callAppenders$$PHOSPHORTAGGED(Category.java:206)
@@ -80,9 +80,8 @@ java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to edu.columbia
 	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-[] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
 EI.E.E.E
-Time: 4.775
+Time: 5.526
 There were 4 failures:
 1) TestCallbackProviderLimit(org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest)
 java.lang.Exception: Unexpected exception, expected<org.apache.dubbo.rpc.RpcException> but was<java.lang.IllegalArgumentException>

@@ -1,0 +1,126 @@
+JUnit version 4.12
+.2024-11-12 12:07:44,199 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2024-11-12 12:07:44,439 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:52318, export /127.0.0.1:52318, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,471 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:52318 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x50acc89a, L:/10.145.71.80:52320 - R:/10.145.71.80:52318]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,472 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:52318, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,518 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52320/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.380906213?callbacks=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x50acc89a, L:/10.145.71.80:52320 - R:/10.145.71.80:52318]], url is: dubbo://127.0.0.1:52318/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=1&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,528 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx include a callback service :callback://127.0.0.1:52318/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52318/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+Recived callback: Sync callback msg .This is callback data. arg1:other custom args
+xxx invoke complete
+Recived callback: server invoke callback : arg:1731434864538
+callback result is :ok
+I.2024-11-12 12:07:44,541 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:52321, export /127.0.0.1:52321, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,544 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:52321 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,545 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:52321, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,548 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52322/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.475080947?callbacks=2&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], url is: dubbo://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=2&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:44,550 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx2 include a callback service :callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+callback1:this is callback msg,current time is :1731434864550
+Recived callback: server invoke callback : arg:1731434864644
+callback result is :ok
+callback1:this is callback msg,current time is :1731434864654
+Recived callback: server invoke callback : arg:1731434864751
+callback result is :ok
+callback1:this is callback msg,current time is :1731434864759
+Recived callback: server invoke callback : arg:1731434864857
+callback result is :ok
+callback1:this is callback msg,current time is :1731434864863
+Recived callback: server invoke callback : arg:1731434864967
+callback1:this is callback msg,current time is :1731434864970
+callback result is :ok
+
+2024-11-12 12:07:45,063 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52322/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.1992347709?callbacks=2&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], url is: dubbo://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=2&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:45,065 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx2 include a callback service :callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+Recived callback: server invoke callback : arg:1731434865078
+callback result is :ok
+callback2:this is callback msg,current time is :1731434865080
+Recived callback: server invoke callback : arg:1731434865184
+callback2:this is callback msg,current time is :1731434865186
+callback result is :ok
+Recived callback: server invoke callback : arg:1731434865291
+callback2:this is callback msg,current time is :1731434865294
+callback result is :ok
+callback2:this is callback msg,current time is :1731434865403
+Recived callback: server invoke callback : arg:1731434865401
+callback result is :ok
+callback2:this is callback msg,current time is :1731434865521
+Recived callback: server invoke callback : arg:1731434865521
+callback result is :ok
+
+2024-11-12 12:07:45,584 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52322/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.475080947?callbacks=2&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], url is: dubbo://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=2&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:45,585 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx2 include a callback service :callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+callback1:this is callback msg,current time is :1731434865629
+callback1:this is callback msg,current time is :1731434865739
+callback1:this is callback msg,current time is :1731434865853
+callback1:this is callback msg,current time is :1731434865962
+callback1:this is callback msg,current time is :1731434866068
+2024-11-12 12:07:46,106 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52322/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.475080947?callbacks=2&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], url is: dubbo://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=2&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,109 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx2 include a callback service :callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,123 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52322/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.1992347709?callbacks=2&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x45c190e2, L:/10.145.71.80:52322 - R:/10.145.71.80:52321]], url is: dubbo://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=2&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,125 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx2 include a callback service :callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52321/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=2&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+.2024-11-12 12:07:46,130 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:52323, export /127.0.0.1:52323, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,134 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:52323 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0xe998ff7c, L:/10.145.71.80:52324 - R:/10.145.71.80:52323]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,134 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:52323, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,136 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52324/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.1787065595?callbacks=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=10000000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0xe998ff7c, L:/10.145.71.80:52324 - R:/10.145.71.80:52323]], url is: dubbo://127.0.0.1:52323/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=1&group=test&retries=0&timeout=10000000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:46,138 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx include a callback service :callback://127.0.0.1:52323/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=10000000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52323/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=10000000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+Recived callback: Sync callback msg .This is callback data. arg1:other custom args
+xxx invoke complete
+Async...
+Recived callback: server invoke callback : arg:1731434866140
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866178
+callback2:this is callback msg,current time is :1731434866180
+Recived callback: server invoke callback : arg:1731434866246
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866286
+callback2:this is callback msg,current time is :1731434866291
+3  1
+Recived callback: server invoke callback : arg:1731434866353
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866397
+callback2:this is callback msg,current time is :1731434866403
+Recived callback: server invoke callback : arg:1731434866461
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866512
+callback2:this is callback msg,current time is :1731434866516
+5  3
+Recived callback: server invoke callback : arg:1731434866570
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866623
+callback2:this is callback msg,current time is :1731434866630
+Recived callback: server invoke callback : arg:1731434866674
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866736
+callback2:this is callback msg,current time is :1731434866741
+7  5
+Recived callback: server invoke callback : arg:1731434866783
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866846
+callback2:this is callback msg,current time is :1731434866849
+Recived callback: server invoke callback : arg:1731434866890
+callback result is :ok
+callback1:this is callback msg,current time is :1731434866952
+callback2:this is callback msg,current time is :1731434866957
+9  7
+Recived callback: server invoke callback : arg:1731434866997
+callback result is :ok
+callback1:this is callback msg,current time is :1731434867066
+callback2:this is callback msg,current time is :1731434867070
+Recived callback: server invoke callback : arg:1731434867102
+callback result is :ok
+11  9
+.2024-11-12 12:07:47,169 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:52325, export /127.0.0.1:52325, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:47,178 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:52325 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x02f8fbfc, L:/10.145.71.80:52326 - R:/10.145.71.80:52325]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:07:47,179 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:52325, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+callback1:this is callback msg,current time is :1731434867184
+2024-11-12 12:07:47,186 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:exportOrunexportCallbackService] -  [DUBBO] export a callback service :dubbo://10.145.71.80:52326/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback.1207963391?callbacks=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&is_callback_service=true&isserver=false&methods=yyy&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, on NettyChannel [channel=[id: 0x02f8fbfc, L:/10.145.71.80:52326 - R:/10.145.71.80:52325]], url is: dubbo://127.0.0.1:52325/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoService?callbacks=1&group=test&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+callback2:this is callback msg,current time is :1731434867186
+2024-11-12 12:07:47,188 INFO [org.apache.dubbo.rpc.protocol.dubbo.CallbackServiceCodec:referOrdestroyCallbackService] -  [DUBBO] method xxx include a callback service :callback://127.0.0.1:52325/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true, a proxy :interface org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback -> callback://127.0.0.1:52325/org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback?callbacks=1&connections=1&group=test&interface=org.apache.dubbo.rpc.protocol.dubbo.ExplicitCallbackTest$IDemoCallback&retries=0&timeout=1000&unxxx2.0.callback=false&xxx.0.callback=true&xxx2.0.callback=true has been created., dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+Recived callback: Sync callback msg .This is callback data. arg1:other custom args
+xxx invoke complete
+Recived callback: server invoke callback : arg:1731434867194
+callback result is :ok
+
+Time: 3.064
+
+OK (4 tests)
+

@@ -1,0 +1,14 @@
+JUnit version 4.10
+...isTooSoon successful at 20
+isTooSoon successful at 80
+isTooSoon successful at 320
+isTooSoon successful at 1280
+isTooSoon successful at 5120
+isTooSoon successful at 20480
+isTooSoon successful at 81920
+isTooSoon successful at 327680
+
+Time: 0.048
+
+OK (3 tests)
+

@@ -9,44 +9,50 @@ import re
 import csv
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-
+from pathlib import Path
+import glob
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
-# PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects/"
-PROJECTS_DIRECTORY = "/workspace/benchmarks/projects/"
+PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects_ff/"
+# PROJECTS_DIRECTORY = "/workspace/benchmarks/projects/"
 CURRENT_DIRECTORY = os.getcwd()
-# RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
-RANDOOP_GENERATED_DIRECTORY = "/workspace/benchmarks/randoop_tests/"
+RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
+# RANDOOP_GENERATED_DIRECTORY = "/workspace/benchmarks/randoop_tests/"
 
 
 
-WORKSPACE='/workspace/generated-flaky-study/'
-# WORKSPACE= os.getcwd()
+# WORKSPACE='/workspace/generated-flaky-study/'
+WORKSPACE= os.getcwd()
 # WORKSPACE="/shared-data/generated-flaky-study/"
 
-# TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
-TOOLS_DIRECTORY = "/shared-data/common-jar/"
+TOOLS_DIRECTORY = "/Users/yhcrown/Documents/tools/"
+# TOOLS_DIRECTORY = "/shared-data/common-jar/"
 
 RANDOOP_JAR = TOOLS_DIRECTORY + 'randoop-all-4.3.3.jar'
 GUAVA_JAR = TOOLS_DIRECTORY + 'guava-33.0.0-jre.jar'
-HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-2.2.jar'
+HAMCREST_JAR = TOOLS_DIRECTORY + 'hamcrest-core-1.3.jar'
 JUNIT_JAR = TOOLS_DIRECTORY + 'junit-4.13.2.jar'
+CURATOR_JAR = TOOLS_DIRECTORY + 'curator-test-5.7.1.jar'
 SUMMARY_LOG = WORKSPACE + '/logs/'
 # SUMMARY_LOG = '/shared-data/generated-flaky/logs/'
 
-# MVN_LOC = "/Users/yhcrown/Documents/tools/apache-maven-3.8.8/bin/mvn"
-MVN_LOC = "/workspace/apache-maven-3.8.8/bin/mvn"
+MVN_LOC = "/Users/yhcrown/Documents/tools/apache-maven-3.6.3/bin/mvn"
+# MVN_LOC = "/workspace/apache-maven-3.8.8/bin/mvn"
 
-# JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
-JAVA_HOME = "/shared-data/jdk8u422-b05/"
+JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+# JAVA_HOME = "/shared-data/jdk8u422-b05/"
 
-# INSTRUMENTED_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst/"
-INSTRUMENTED_JAVA_HOME = "/shared-data/jdk-inst/"
+INSTRUMENTED_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst/"
+# INSTRUMENTED_JAVA_HOME = "/shared-data/jdk-inst/"
 
-FLAKYTRACKER_JAR = "/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar"
-# CONTROL_TRACK_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack"
-CONTROL_TRACK_JAVA_HOME = "/shared-data/jdk-inst-controltrack/"
+# FLAKYTRACKER_JAR = "/shared-data/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar"
+FLAKYTRACKER_JAR = "/Users/yhcrown/Documents/GitHub/phosphor-flakyTracker/Phosphor/target/Phosphor-0.0.5-SNAPSHOT.jar"
+
+CONTROL_TRACK_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-controltrack"
+# CONTROL_TRACK_JAVA_HOME = "/shared-data/jdk-inst-controltrack/"
+
+ARRAY_INDEX_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst-arrayindex"
 
 IDOFT_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/idoft_normal/"
 
@@ -233,19 +239,97 @@ def run_randoop(project, target_dir):
 
 
 
+def fqcn_to_path(fqcn):
+    """
+    将全类名转换为相对路径，例如 com.example.TestClass -> com/example/TestClass.java
+    """
+    parts = fqcn.split('.')
+    class_name = parts[-1] + '.java'
+    package_path = os.path.join(*parts[:-1])
+    return os.path.join(package_path, class_name)
+
+def find_modules(root_dir):
+    """
+    遍历项目根目录，查找所有包含 pom.xml 和 src 目录的模块
+    """
+    modules = []
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        if 'pom.xml' in filenames and 'src' in dirnames:
+            modules.append(dirpath)
+    return modules
+
+def find_test_module(modules, fqcn):
+    """
+    在所有模块中查找包含指定测试类的模块
+    """
+    relative_path = fqcn_to_path(fqcn)
+    for module in modules:
+        test_file_path = os.path.join(module, 'src', 'test', 'java', relative_path)
+        if os.path.exists(test_file_path):
+            return module
+    return None
+
+def find_module_path(project_root,fqcn):
+    if not os.path.exists(project_root):
+        print(f"项目根目录不存在: {project_root}")
+        return
+
+    modules = find_modules(project_root)
+    if not modules:
+        print("未找到任何模块。请确保项目根目录及其子目录包含 pom.xml 和 src 目录。")
+        return
+
+    module = find_test_module(modules, fqcn)
+    if module:
+        relative_module = os.path.relpath(module, project_root)
+        if module == None:
+            print(f"测试类 {fqcn} 属于模块: root")
+        print(f"测试类 {fqcn} 属于模块: {relative_module}")
+    else:
+        print(f"未找到测试类 {fqcn} 所属的模块。")
+    return module
+
+
+
+
+
+ff_build_fail_projects = set()
+
 def run_flaky_tracker_on_one_test(Test):
     target_dir = PROJECTS_DIRECTORY + '/' + Test['Project_Name']
     os.chdir(target_dir)
+    os.environ['JAVA_HOME'] = JAVA_HOME
+
     # if Test['Module'] and Test['Module'] != '.':
     #     if os.path.exists( target_dir + '/' + Test['Module']):
     #         target_dir = target_dir + '/' + Test['Module']
     commit = Test['Project_Hash']
     subprocess.run('git checkout ' + commit, shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
+    build_log = target_dir + '/build.log'
+
+
+    result = subprocess.run(
+        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true ',
+        shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
+    if result.returncode!= 0:
+        ff_build_fail_projects.add(Test['Project_Name'])
+        print(Test['Project_Name'] + " fail to build")
+        return
+
     if os.path.isdir('/tmp/jars'):
         shutil.rmtree('/tmp/jars')
     os.mkdir('/tmp/jars')
     start_time = time.time()
-    os.environ['JAVA_HOME'] = JAVA_HOME
+
+    target_testclass = Test['testname'].split('#')[-2]  # flakeflagger
+    print(target_testclass)
+    class_name = Test['testname'].split('#')[-2].split('.')[-1]
+
+    target_dir = find_module_path(target_dir, target_testclass)
+    print(target_dir)
+
+    os.chdir(target_dir)
+
     subprocess.run(MVN_LOC+ ' dependency:copy-dependencies',
                    shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
     for dir, subdir, files in os.walk(target_dir):
@@ -257,62 +341,63 @@ def run_flaky_tracker_on_one_test(Test):
             break
     os.chdir(target_dir)
 
-    ## Linux platform
-    concat_class_path = '$(find ' + target_dir + ' -name \"classes\" -type d | paste -sd :)'
-    concat_class_path += ':$(find ' + target_dir + ' -name \"test-classes\" -type d | paste -sd :)'
-    concat_class_path += ':$(find /tmp/jars -name \"*.jar\" -type f | paste -sd :):'
-    concat_class_path += ':$(find '+target_dir+' -name \"dependency\" -type d | paste -sd :):'
-    # print(concat_class_path)
-    ## Mac os platform
 
-    # concat_class_path = '$(find ' + target_dir + ' -name "classes" -type d | xargs echo | tr \' \' \':\')'
+    result = subprocess.run(MVN_LOC+ ' dependency:build-classpath -Dmdep.outputFile=classpath.txt -DincludeScope=test',
+                   shell=True, stdout=open(os.devnull, 'w'), stderr=subprocess.STDOUT)
+
+
+    ## Linux platform
+    # concat_class_path = '$(find ' + target_dir + ' -name \"classes\" -type d | paste -sd :)'
+    # concat_class_path += ':$(find ' + target_dir + ' -name \"test-classes\" -type d | paste -sd :)'
+    # concat_class_path += ':$(find /tmp/jars -name \"*.jar\" -type f | paste -sd :):'
+    # concat_class_path += ':$(find '+target_dir+' -name \"dependency\" -type d | paste -sd :):'
+    # # print(concat_class_path)
+    ## Mac os platform
+    # concat_class_path = f'$(cat {classpath_txt}):$(find ' + target_dir + ' -name "classes" -type d | xargs echo | tr \' \' \':\')'
     # concat_class_path += ':$(find ' + target_dir + ' -name "test-classes" -type d | xargs echo | tr \' \' \':\')'
     # concat_class_path += ':$(find /tmp/jars -name "*.jar" -type f | xargs echo | tr \' \' \':\'):'
+    # classpath_txt = os.path.abspath('./classpath.txt')
 
+    # Read classpath.txt
+    classpath_entries = []
+    if os.path.exists('./classpath.txt'):
+        with open('./classpath.txt', 'r') as f:
+            classpath_entries = f.read().strip().split(':')  # Assuming classpath.txt is colon-separated
 
+    # Find all "classes" directories
+    classes_dirs = [str(p) for p in Path(target_dir).rglob('classes') if p.is_dir()]
+
+    # Find all "test-classes" directories
+    test_classes_dirs = [str(p) for p in Path(target_dir).rglob('test-classes') if p.is_dir()]
+
+    # Find all JAR files in /tmp/jars
+    jar_files = glob.glob(os.path.join(target_dir, '**', '*.jar'), recursive=True)
+
+    # Combine all parts to build the classpath
+    all_classpath = classpath_entries + classes_dirs + test_classes_dirs + jar_files
+
+    # Join using ':' as the separator (use ';' on Windows)
+    class_path = ':'.join(all_classpath)
 
     generated_dir = FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY+'/' + Test['Project_Name'] + '/' + Test['Project_Hash'][0:6] + '/'
 
 
-
-    if not os.path.exists(generated_dir):
-        os.makedirs(generated_dir)
-    class_list_file = '/tmp/classes.txt'
-    all_classes = []
-
-    for dir_path, subpaths, files in os.walk(target_dir):
-        for f in files:
-
-            if f.endswith('.class') and ('/classes/' in dir_path or '/test-classes/' in dir_path):
-                clz = (dir_path + '/' + f.split('.')[0]).split('/classes/')[-1].replace('/', '.')
-                if clz not in all_classes:
-                    all_classes.append(clz)
-
-    with open(class_list_file, 'w') as fw:
-        for clz in all_classes:
-            if '$' in clz:
-                clz = clz.split('$')[0]
-            fw.write(clz + '\n')
-
-    concat_class_path += RANDOOP_JAR + ':'
-    concat_class_path += JUNIT_JAR + ':'
-    concat_class_path += HAMCREST_JAR + ':'
-    concat_class_path += GUAVA_JAR
+    class_path += ':' + RANDOOP_JAR + ':'
+    class_path += JUNIT_JAR + ':'
+    class_path += HAMCREST_JAR + ':'
+    class_path += CURATOR_JAR + ':'
+    class_path += GUAVA_JAR
 
     # os.environ['JAVA_HOME'] = JAVA_HOME
 
     build_log = target_dir + '/buildFlaky.log'
     # start_time = time.time()
     os.environ['JAVA_HOME'] = JAVA_HOME
-    # os.environ['MAVEN_OPT'] = "-Xbootclasspath/a:" + FLAKYTRACKER_JAR + " -javaagent:"+FLAKYTRACKER_JAR
     os.chdir(target_dir)
     # subprocess.run(MVN_LOC+ ' -version', executable='/bin/zsh', shell=True, stdout=subprocess.STDOUT, stderr=subprocess.STDOUT)
     # subprocess.run(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java', executable='/bin/zsh', shell=True,
     #                stderr=subprocess.STDOUT, timeout=90, stdout=open(build_log, 'w'))
     # print(JAVA_HOME+'/bin/javac -cp '+concat_class_path+' '+target_dir+'/src/test/java/flaky/FlakyTest.java')
-    subprocess.run(
-        MVN_LOC + ' install -DskipTests -Ddependency-check.skip=true -Denforcer.skip=true -Drat.skip=true -Dmdep.analyze.skip=true -Dmaven.javadoc.skip=true -Dgpg.skip=true -Dlicense.skip=true ',
-        shell=True, stdout=open(build_log, 'w'), stderr=subprocess.STDOUT)
     # if os.path.exists(generated_dir+'/flakyTracker/'):
     #     shutil.rmtree(generated_dir+'/flakyTracker/')
     #find all test-classes
@@ -322,17 +407,22 @@ def run_flaky_tracker_on_one_test(Test):
     # target_testclass = ".".join(Test['testname'].split('.')[:-1])    
     
     
-    target_testclass = Test['testname'].split('#')[-2]  # flakeflagger
-    
-    print(target_testclass)
-    class_name = Test['testname'].split('#')[-2].split('.')[-1]
-    print(Test['testname'])
+
+    # os.environ['JAVA_HOME'] = CONTROL_TRACK_JAVA_HOME
+    # os.environ['MAVEN_OPTS'] = "-Xbootclasspath/a:" + FLAKYTRACKER_JAR + " -javaagent:"+FLAKYTRACKER_JAR
+    # subprocess.run(MVN_LOC + " -v", executable='/bin/zsh', shell=True,
+    #                stderr=subprocess.STDOUT, timeout=90)
+
+    # print(Test['testname'])
     # print(target_testclass)
     for dir, subpath, files in os.walk(target_dir):
         for file in files:
-            if class_name in file:   #change here to '.class' to make it run all classes
-                flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
-                # flaky_tracker_cmd = JAVA_HOME + "/bin/java " +" -cp " + concat_class_path + " org.junit.runner.JUnitCore "+ target_testclass
+            if class_name+".class" in file:   #change here to '.class' to make it run all classes
+                flaky_tracker_cmd = CONTROL_TRACK_JAVA_HOME + "/bin/java -javaagent:" + FLAKYTRACKER_JAR + " -Xbootclasspath/a:" + FLAKYTRACKER_JAR + "  -cp " + class_path + " org.junit.runner.JUnitCore "+ target_testclass
+                # flaky_tracker_cmd = JAVA_HOME + "/bin/java " +" -cp " + class_path + " org.junit.runner.JUnitCore "+ target_testclass
+                # flaky_tracker_cmd = MVN_LOC + " test -Dtest=" + target_testclass
+                print("----",dir+'/'+file)
+
                 flaky_tracker_log = generated_dir + '/flakyTracker/' + target_testclass.replace('.','/')+'.trackerlog'
                 flaky_tracker_dir = '/'.join(flaky_tracker_log.split('/')[0:len(flaky_tracker_log.split('/'))-1])
                 # os.path.dirname(flaky_tracker_log)
@@ -341,12 +431,13 @@ def run_flaky_tracker_on_one_test(Test):
                 if not os.path.exists(flaky_tracker_dir):
                     os.makedirs(flaky_tracker_dir)
                 try:
-                    subprocess.run(flaky_tracker_cmd, shell=True, stdout=open(flaky_tracker_log, 'w'),
-                                   stderr=subprocess.STDOUT, timeout=600)
+                    subprocess.run(flaky_tracker_cmd, shell=True,executable='/bin/zsh', stdout=open(flaky_tracker_log, 'w'),
+                                   stderr=subprocess.STDOUT,cwd = target_dir, timeout=300)
                 except subprocess.TimeoutExpired as e:
                     with open(flaky_tracker_log, "a+") as f:
                         f.write(str(e))
                     print(Test['Project_Name'], e)
+    os.environ['MAVEN_OPTS'] = ""
 
 
 def run_flaky_tracker(project, target_dir, module = None):
@@ -509,7 +600,7 @@ def parseTrackerLog(log_path, output_dir = "tracker_analysis.csv"):
                         if 'flaky.FlakyTest' in class_name or 'flaky.RandoopTest' in class_name: ## is randoop test
                             tracker_randoop_flaky_test.add(project_name+'#'+test_name)
                         else:
-                            tracker_flaky_tests_except_randoop.add(project_name+'#'+class_name+'.'+test_name)
+                            tracker_flaky_tests_except_randoop.add(project_name+'#'+class_name+'#'+test_name)
                             
                             
                         global random_num
@@ -1048,7 +1139,6 @@ def flakeflagger_flaky_tests():
 
 
 
-ff_build_fail_projects = set()
 ff_flaky_tests = set()
 ff_tracker_flaky_tests = set()
 def test_flakeflagger():
@@ -1065,8 +1155,8 @@ def test_flakeflagger():
             code = build_project(target_dir)
             if code != 0:
                 ff_build_fail_projects.add(project_name)
-        if check_if_failed(target_dir) == -1:
-            ff_build_fail_projects.add(project_name)
+        # if check_if_failed(target_dir) == -1:
+        #     ff_build_fail_projects.add(project_name)
 
     for index, Test in flakeflagger_tests.iterrows():
         if Test['Project_Name'] in ff_build_fail_projects:
@@ -1088,8 +1178,9 @@ def test_flakeflagger():
         run_flaky_tracker_on_one_test(Test)
     print(len(ff_build_fail_projects), ff_build_fail_projects)
     parseTrackerLog(FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY, "flakeflagger_tracker_summary.csv")
+    print(len(ff_flaky_tests))
     print('true positive:',len(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)))
-    print('false positive:?', len(tracker_flaky_tests_except_randoop-idoft_flaky_tests),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-ff_flaky_tests))
+    print('false positive:?', len(tracker_flaky_tests_except_randoop-ff_flaky_tests),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-ff_flaky_tests))
    
 
 if __name__ == '__main__':

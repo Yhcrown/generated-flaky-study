@@ -1,0 +1,100 @@
+JUnit version 4.12
+.Nov 12, 2024 1:12:55 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:12:55 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.4.5.Final
+Nov 12, 2024 1:12:55 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.2.Final
+Nov 12, 2024 1:12:55 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.6.Final
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'add-component-via-interceptor' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'integrity' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'confidentiality' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-target' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-client' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-replay' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-misordering' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+.Nov 12, 2024 1:12:55 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'add-component-via-interceptor' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'integrity' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'confidentiality' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-target' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-client' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-replay' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-misordering' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.OperationContextImpl validateCapabilities
+ERROR: WFLYCTL0362: Capabilities required by resource '/subsystem=iiop-openjdk' are not available:
+    org.wildfly.security.legacy-security-domain.security-domain; There are no known registration points which can provide this capability.
+Nov 12, 2024 1:12:55 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.6.Final
+.Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'add-component-via-interceptor' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'integrity' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'confidentiality' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-target' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-client' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-replay' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-misordering' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:55 PM org.jboss.as.controller.OperationContextImpl validateCapabilities
+ERROR: WFLYCTL0362: Capabilities required by resource '/subsystem=iiop-openjdk' are not available:
+    org.wildfly.security.legacy-security-domain.security-domain; There are no known registration points which can provide this capability.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'add-component-via-interceptor' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'integrity' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'confidentiality' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-target' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-client' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-replay' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-misordering' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.OperationContextImpl validateCapabilities
+ERROR: WFLYCTL0362: Capabilities required by resource '/subsystem=iiop-openjdk' are not available:
+    org.wildfly.security.legacy-security-domain.security-domain; There are no known registration points which can provide this capability.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'add-component-via-interceptor' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'integrity' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'confidentiality' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-target' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'trust-in-client' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-replay' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.AttributeDefinition validateAndSet
+INFO: WFLYCTL0028: Attribute 'detect-misordering' in the resource at address '/subsystem=iiop-openjdk' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 1:12:56 PM org.jboss.as.controller.OperationContextImpl validateCapabilities
+ERROR: WFLYCTL0362: Capabilities required by resource '/subsystem=iiop-openjdk' are not available:
+    org.wildfly.security.legacy-security-domain.security-domain; There are no known registration points which can provide this capability.
+.
+Time: 1.172
+
+OK (4 tests)
+

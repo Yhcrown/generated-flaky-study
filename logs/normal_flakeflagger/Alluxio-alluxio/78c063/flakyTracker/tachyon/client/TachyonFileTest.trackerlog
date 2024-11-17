@@ -1,0 +1,10 @@
+JUnit version 4.13.2
+.SLF4J: The following loggers will not work because they were created
+SLF4J: during the default configuration phase of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: org.apache.thrift.transport.TIOStreamTransport
+...
+Time: 1.676
+
+OK (4 tests)
+

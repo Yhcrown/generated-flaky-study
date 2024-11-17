@@ -1,0 +1,283 @@
+JUnit version 4.10
+.SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/yhcrown/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/yhcrown/Documents/flaky_java_projects_ff/ninjaframework-ninja/ninja-servlet-integration-test/target/ninja-servlet-integration-test-2.2.0/WEB-INF/lib/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+13:06:29,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:06:29,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:06:29,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/yhcrown/Documents/flaky_java_projects_ff/ninjaframework-ninja/ninja-servlet-integration-test/target/classes/logback.xml]
+13:06:29,574 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+13:06:29,574 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/yhcrown/Documents/flaky_java_projects_ff/ninjaframework-ninja/ninja-servlet-integration-test/target/ninja-servlet-integration-test-2.2.0/WEB-INF/classes/logback.xml]
+13:06:29,574 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/yhcrown/Documents/flaky_java_projects_ff/ninjaframework-ninja/ninja-servlet-integration-test/target/classes/logback.xml]
+13:06:29,637 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:06:29,641 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:06:29,644 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:06:29,653 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:06:29,679 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+13:06:29,679 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:06:29,680 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:06:29,680 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@40f08448 - Registering current configuration as safe fallback point
+
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+13:06:29.725 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:29.928 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:29.928 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:29.998 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.089 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 350 ms.
+13:06:30.089 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.090 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
+13:06:30.091 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@478ee483{/,null,AVAILABLE}
+13:06:30.135 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@7c2b6087{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.136 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3fffff43{HTTP/1.1}{0.0.0.0:58189}
+log from DemoServletFilter. request time is: 34 millis.
+13:06:30.318 [qtp1825027294-44] INFO  Ninja - In index 
+log from DemoServletFilter. request time is: 62 millis.
+13:06:30.385 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@7c2b6087{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.386 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@3fffff43{HTTP/1.1}{0.0.0.0:0}
+13:06:30.387 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.389 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 2ms
+13:06:30.389 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@478ee483{/,null,UNAVAILABLE}
+.13:06:30.392 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.401 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.402 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.403 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.413 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 20 ms.
+13:06:30.413 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.413 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.414 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@388ffbc2{/,null,AVAILABLE}
+13:06:30.414 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@a50b09c{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.414 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4da855dd{HTTP/1.1}{0.0.0.0:58191}
+log from DemoServletFilter. request time is: 6 millis.
+log from DemoServletFilter. request time is: 16 millis.
+13:06:30.444 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@a50b09c{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.445 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@4da855dd{HTTP/1.1}{0.0.0.0:0}
+13:06:30.445 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.445 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.445 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@388ffbc2{/,null,UNAVAILABLE}
+.13:06:30.447 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.455 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.455 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.456 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.465 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 17 ms.
+13:06:30.465 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.465 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.465 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@62d363ab{/,null,AVAILABLE}
+13:06:30.465 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@7889a1ac{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.466 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3aee3976{HTTP/1.1}{0.0.0.0:58193}
+log from DemoServletFilter. request time is: 12 millis.
+13:06:30.484 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@7889a1ac{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.484 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@3aee3976{HTTP/1.1}{0.0.0.0:0}
+13:06:30.485 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.485 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.485 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@62d363ab{/,null,UNAVAILABLE}
+.13:06:30.487 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.495 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.495 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.498 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.506 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 18 ms.
+13:06:30.507 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.507 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.507 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5d8445d7{/,null,AVAILABLE}
+13:06:30.507 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@37d80fe7{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.507 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@384fc774{HTTP/1.1}{0.0.0.0:58195}
+log from DemoServletFilter. request time is: 10 millis.
+13:06:30.532 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@37d80fe7{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.536 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@384fc774{HTTP/1.1}{0.0.0.0:0}
+13:06:30.536 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.536 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.536 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5d8445d7{/,null,UNAVAILABLE}
+.13:06:30.538 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.543 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.543 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.545 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.553 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 15 ms.
+13:06:30.553 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.553 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.553 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@29caf222{/,null,AVAILABLE}
+13:06:30.554 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@46cf05f7{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.554 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5851bd4f{HTTP/1.1}{0.0.0.0:58197}
+log from DemoServletFilter. request time is: 5 millis.
+13:06:30.564 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@46cf05f7{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.564 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@5851bd4f{HTTP/1.1}{0.0.0.0:0}
+13:06:30.564 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.564 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.564 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@29caf222{/,null,UNAVAILABLE}
+.13:06:30.566 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.571 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.576 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.577 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.587 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 21 ms.
+13:06:30.587 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.588 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
+13:06:30.589 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@32c0915e{/,null,AVAILABLE}
+13:06:30.589 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@106faf11{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.590 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@70f43b45{HTTP/1.1}{0.0.0.0:58199}
+log from DemoServletFilter. request time is: 4 millis.
+13:06:30.597 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@106faf11{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.598 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@70f43b45{HTTP/1.1}{0.0.0.0:0}
+13:06:30.598 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.598 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.598 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@32c0915e{/,null,UNAVAILABLE}
+.13:06:30.599 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.604 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.605 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.605 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.612 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 12 ms.
+13:06:30.612 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.612 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.612 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5c371e13{/,null,AVAILABLE}
+13:06:30.613 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@530a8454{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.613 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1e34c607{HTTP/1.1}{0.0.0.0:58201}
+log from DemoServletFilter. request time is: 4 millis.
+log from DemoServletFilter. request time is: 4 millis.
+13:06:30.629 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@530a8454{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.629 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1e34c607{HTTP/1.1}{0.0.0.0:0}
+13:06:30.629 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.629 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.629 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5c371e13{/,null,UNAVAILABLE}
+.13:06:30.631 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.636 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.636 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.637 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.645 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 14 ms.
+13:06:30.645 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.645 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.645 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6bb7cce7{/,null,AVAILABLE}
+13:06:30.646 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@41c62850{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.646 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6b530eb9{HTTP/1.1}{0.0.0.0:58203}
+log from DemoServletFilter. request time is: 4 millis.
+13:06:30.657 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@41c62850{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.658 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6b530eb9{HTTP/1.1}{0.0.0.0:0}
+13:06:30.658 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.658 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.659 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6bb7cce7{/,null,UNAVAILABLE}
+.13:06:30.660 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.669 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.669 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.671 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.681 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 18 ms.
+13:06:30.682 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.682 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.682 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7f2e0f{/,null,AVAILABLE}
+13:06:30.683 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1da6ee17{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.683 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@78d39a69{HTTP/1.1}{0.0.0.0:58206}
+log from DemoServletFilter. request time is: 4 millis.
+13:06:30.692 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1da6ee17{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.692 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@78d39a69{HTTP/1.1}{0.0.0.0:0}
+13:06:30.692 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.692 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.692 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1e7f2e0f{/,null,UNAVAILABLE}
+.13:06:30.694 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.699 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.699 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.700 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.705 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 10 ms.
+13:06:30.705 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.705 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.705 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6f815e7f{/,null,AVAILABLE}
+13:06:30.706 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@65e7f52a{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.706 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@304b9f1a{HTTP/1.1}{0.0.0.0:58208}
+log from DemoServletFilter. request time is: 7 millis.
+13:06:30.718 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@65e7f52a{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.718 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@304b9f1a{HTTP/1.1}{0.0.0.0:0}
+13:06:30.718 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.718 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.718 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6f815e7f{/,null,UNAVAILABLE}
+.13:06:30.720 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+13:06:30.724 [main] INFO  ninja.utils.SwissKnife - Could not load file conf/messages.en.properties (not a bad thing necessarily, but I am returing null)
+13:06:30.724 [main] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages.en.properties but it was specified in application.conf. Using default language instead.
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \
+\____|__  /___\____|__  /\________\____|__  /
+     web\/framework   \/                  \/ 2.2.0
+
+13:06:30.725 [main] INFO  Ninja - Using default eh cache implementation. (class ninja.cache.CacheEhCacheImpl) 
+13:06:30.731 [main] INFO  ninja.servlet.NinjaBootstap - Ninja injector started in 11 ms.
+13:06:30.731 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+13:06:30.731 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 0ms
+13:06:30.731 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4ee33af7{/,null,AVAILABLE}
+13:06:30.731 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6b04acb2{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.732 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@18388a3c{HTTP/1.1}{0.0.0.0:58210}
+log from DemoServletFilter. request time is: 1 millis.
+13:06:30.737 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6b04acb2{HTTP/1.1}{0.0.0.0:1000}
+13:06:30.737 [main] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@18388a3c{HTTP/1.1}{0.0.0.0:0}
+13:06:30.737 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+13:06:30.737 [main] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 0ms
+13:06:30.737 [main] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4ee33af7{/,null,UNAVAILABLE}
+
+Time: 1.248
+
+OK (11 tests)
+

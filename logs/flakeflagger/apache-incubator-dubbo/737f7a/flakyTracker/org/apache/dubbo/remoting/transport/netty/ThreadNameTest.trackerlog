@@ -1,16 +1,17 @@
 JUnit version 4.12
-.E
-Time: 0.108
+.2024-11-12 02:45:08,463 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+E
+Time: 5.697
 There was 1 failure:
 1) testThreadName(org.apache.dubbo.remoting.transport.netty.ThreadNameTest)
-java.lang.NoClassDefFoundError: org/jboss/netty/channel/ChannelFactory
+org.apache.dubbo.remoting.RemotingException: Failed to bind NettyServer on localhost/127.0.0.1:55555, cause: (class: org/jboss/netty/bootstrap/ServerBootstrap, method: bind$$PHOSPHORTAGGED signature: (Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/net/SocketAddress;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lorg/jboss/netty/channel/Channel;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;) Accessing value from uninitialized register 31
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:266)
-	at java.lang.Error.<init>(Error.java:70)
-	at java.lang.LinkageError.<init>(LinkageError.java:55)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
+	at java.lang.Throwable.<init>(Throwable.java:288)
+	at java.lang.Exception.<init>(Exception.java:84)
+	at org.apache.dubbo.remoting.RemotingException.<init>(RemotingException.java:72)
+	at org.apache.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+	at org.apache.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:61)
 	at org.apache.dubbo.remoting.transport.netty.ThreadNameTest.before$$PHOSPHORTAGGED(ThreadNameTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
@@ -46,19 +47,17 @@ java.lang.NoClassDefFoundError: org/jboss/netty/channel/ChannelFactory
 	at org.junit.runner.JUnitCore.runMain$$PHOSPHORTAGGED(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main$$PHOSPHORTAGGED(JUnitCore.java:36)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java)
-Caused by: java.lang.ClassNotFoundException: org.jboss.netty.channel.ChannelFactory
+Caused by: java.lang.VerifyError: (class: org/jboss/netty/bootstrap/ServerBootstrap, method: bind$$PHOSPHORTAGGED signature: (Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ljava/net/SocketAddress;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;Lorg/jboss/netty/channel/Channel;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;) Accessing value from uninitialized register 31
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:288)
-	at java.lang.Exception.<init>(Exception.java:84)
-	at java.lang.ReflectiveOperationException.<init>(ReflectiveOperationException.java:75)
-	at java.lang.ClassNotFoundException.<init>(ClassNotFoundException.java:82)
-	at java.net.URLClassLoader.findClass$$PHOSPHORTAGGED(URLClassLoader.java:387)
-	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass$$PHOSPHORTAGGED(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:351)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:0)
-	... 35 more
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.apache.dubbo.remoting.transport.netty.NettyServer.doOpen$$PHOSPHORTAGGED(NettyServer.java:70)
+	at org.apache.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:63)
+	... 36 more
 
 FAILURES!!!
 Tests run: 1,  Failures: 1

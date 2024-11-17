@@ -1,0 +1,14 @@
+JUnit version 4.10
+...13:08:18,626 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:08:18,626 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeFilter scanning period to 50 milliseconds
+13:08:18,626 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-classic/src/test/input/turbo/scan 1.xml]] every 0 seconds. 
+13:08:18,626 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+13:08:18,626 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to ERROR
+13:08:18,626 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:08:18,626 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3b95a09c - Registering current configuration as safe fallback point
+
+....II.
+Time: 0.775
+
+OK (8 tests)
+

@@ -1,0 +1,4 @@
+JUnit version 4.8.1
+11:05:10,872  INFO DatabaseDescriptor:121 - Loading settings from file:tmp/cassandra-auth.yaml
+11:05:11,500 ERROR DatabaseDescriptor:388 - Fatal error: null; Can't construct a java object for tag:yaml.org,2002:org.apache.cassandra.config.Config; exception=Cannot create property=data_file_directories for JavaBean=org.apache.cassandra.config.Config@3b14d63b; Unable to find property 'data_file_directories' on class: org.apache.cassandra.config.Config
+Bad configuration; unable to start server

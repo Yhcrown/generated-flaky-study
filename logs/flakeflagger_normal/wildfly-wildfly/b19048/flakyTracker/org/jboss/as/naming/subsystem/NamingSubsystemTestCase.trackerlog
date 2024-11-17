@@ -1,0 +1,18 @@
+JUnit version 4.12
+.Nov 12, 2024 1:14:06 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.4.5.Final
+Nov 12, 2024 1:14:06 PM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.2.Final
+....Nov 12, 2024 1:14:07 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:14:07 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.1.5.Final-redhat-1
+.Nov 12, 2024 1:14:07 PM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 1:14:07 PM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.2.6.Final
+..
+Time: 1.193
+
+OK (8 tests)
+

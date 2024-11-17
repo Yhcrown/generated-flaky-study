@@ -1,0 +1,60 @@
+JUnit version 4.11
+.Sass::SyntaxError: Invalid CSS after "$base": expected ":", was "= #f938ab;"
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066
+            tok! at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061
+        variable at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:495
+     block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:536
+  block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:526
+      stylesheet at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:70
+           parse at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:27
+        _to_tree at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:342
+         _render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:315
+          render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:262
+          (root) at <script>:4
+Sass::SyntaxError: Invalid CSS after "...ackground-color": expected ";", was ":"
+                expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129
+                expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066
+                    tok! at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061
+  declaration_or_ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:569
+                    call at org/jruby/RubyProc.java:255
+                 rethrow at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104
+  declaration_or_ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:575
+             block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:537
+          block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:529
+                   block at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:518
+                 ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:512
+  declaration_or_ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:574
+                    call at org/jruby/RubyProc.java:255
+                 rethrow at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1104
+  declaration_or_ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:575
+             block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:537
+          block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:529
+                   block at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:518
+                 ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:512
+             block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:536
+          block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:526
+              stylesheet at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:70
+                   parse at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:27
+                _to_tree at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:342
+                 _render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:315
+                  render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:262
+                  (root) at <script>:4
+...Sass::SyntaxError: Invalid CSS after "$base": expected ":", was "= #f938ab;"
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066
+            tok! at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061
+        variable at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:495
+     block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:536
+  block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:526
+      stylesheet at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:70
+           parse at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:27
+        _to_tree at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:342
+         _render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:315
+          render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:262
+          (root) at <script>:4
+.
+Time: 3.395
+
+OK (5 tests)
+

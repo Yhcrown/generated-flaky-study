@@ -1,0 +1,61 @@
+JUnit version 4.12
+2024-11-12 12:08:45,255 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+.2024-11-12 12:08:45,541 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9010, export /127.0.0.1:9010, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:45,569 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:9010 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x25b65b83, L:/10.145.71.80:52371 - R:/10.145.71.80:9010]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:45,569 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:9010, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+32800
+.2024-11-12 12:08:45,657 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9050, export /127.0.0.1:9050, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:45,660 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:9050 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0xc1c34655, L:/10.145.71.80:52372 - R:/10.145.71.80:9050]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:45,660 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:9050, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+take:334
+.2024-11-12 12:08:45,999 WARN [org.apache.dubbo.remoting.exchange.codec.ExchangeCodec:encodeResponse] -  [DUBBO] Fail to encode response: Response [id=1010, version=2.0.2, status=20, event=false, error=null, result=RpcResult [result=org.apache.dubbo.rpc.protocol.dubbo.support.NonSerialized@4063c1bb, exception=null]], send bad_response info instead, cause: Serialized class org.apache.dubbo.rpc.protocol.dubbo.support.NonSerialized must implement java.io.Serializable, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+java.lang.IllegalStateException: Serialized class org.apache.dubbo.rpc.protocol.dubbo.support.NonSerialized must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:395)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:369)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:389)
+	at org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:88)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:207)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:278)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:74)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:38)
+	at org.apache.dubbo.remoting.transport.netty4.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:70)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:738)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:730)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:816)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:723)
+	at io.netty.channel.ChannelDuplexHandler.write(ChannelDuplexHandler.java:106)
+	at org.apache.dubbo.remoting.transport.netty4.NettyServerHandler.write(NettyServerHandler.java:96)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:738)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:730)
+	at io.netty.channel.AbstractChannelHandlerContext.access$1900(AbstractChannelHandlerContext.java:38)
+	at io.netty.channel.AbstractChannelHandlerContext$AbstractWriteTask.write(AbstractChannelHandlerContext.java:1081)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteAndFlushTask.write(AbstractChannelHandlerContext.java:1128)
+	at io.netty.channel.AbstractChannelHandlerContext$AbstractWriteTask.run(AbstractChannelHandlerContext.java:1070)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:465)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+.hello world
+.2024-11-12 12:08:46,011 INFO [org.apache.dubbo.remoting.transport.AbstractServer:<init>] -  [DUBBO] Start NettyServer bind /0.0.0.0:9020, export /127.0.0.1:9020, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:46,013 INFO [org.apache.dubbo.remoting.transport.AbstractClient:connect] -  [DUBBO] Successed connect to server /10.145.71.80:9020 from NettyClient 10.145.71.80 using dubbo version 2.7.0-SNAPSHOT, channel is NettyChannel [channel=[id: 0x83818473, L:/10.145.71.80:52373 - R:/10.145.71.80:9020]], dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+2024-11-12 12:08:46,014 INFO [org.apache.dubbo.remoting.transport.AbstractClient:<init>] -  [DUBBO] Start NettyClient wireless-10-145-71-80.public.utexas.edu/10.145.71.80 connect to the server /10.145.71.80:9020, dubbo version: 2.7.0-SNAPSHOT, current host: 10.145.71.80
+..RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+RpcContext.getContext().getRemoteHost()=10.145.71.80
+32800
+
+Time: 0.884
+
+OK (7 tests)
+

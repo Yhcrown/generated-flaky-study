@@ -1,0 +1,56 @@
+JUnit version 4.8.1
+13:05:41,992  INFO DatabaseDescriptor:121 - Loading settings from file:tmp/cassandra.yaml
+13:05:42,034  INFO DatabaseDescriptor:172 - DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+13:05:42,098  INFO CommitLogSegment:50 - Creating new commitlog segment tmp/var/lib/cassandra/commitlog/CommitLog-1731438342098.log
+13:05:42,104  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Standard1, using 227
+13:05:42,105  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Standard1, using 1.0640625
+13:05:42,105  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Standard2, using 227
+13:05:42,105  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Standard2, using 1.0640625
+13:05:42,105  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for StandardByUUID1, using 227
+13:05:42,105  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for StandardByUUID1, using 1.0640625
+13:05:42,106  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super1, using 227
+13:05:42,106  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super1, using 1.0640625
+13:05:42,106  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super2, using 227
+13:05:42,106  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super2, using 1.0640625
+13:05:42,106  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super3, using 227
+13:05:42,106  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super3, using 1.0640625
+13:05:42,106  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Indexed1, using 227
+13:05:42,107  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Indexed1, using 1.0640625
+13:05:42,109  INFO AbstractCassandraDaemon:74 - Heap size: 257425408/3817865216
+13:05:42,110  INFO CLibrary:47 - JNA not found. Native methods will be disabled.
+13:05:42,131  INFO DatabaseDescriptor:413 - Couldn't detect any schema definitions in local storage.
+13:05:42,131  INFO DatabaseDescriptor:439 - Found table data in data directories. Consider using JMX to call org.apache.cassandra.service.StorageService.loadSchemaFromYaml().
+13:05:42,135  INFO ColumnFamilyStore:326 - Creating index org.apache.cassandra.db.Table@7b238ec5.Indexed1.626972746879656172
+13:05:42,136  INFO CommitLog:188 - No commitlog files found; skipping replay
+13:05:42,138  INFO ColumnFamilyStore:340 - Index Indexed1.626972746879656172 complete
+13:05:42,139  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for IndexInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438342098.log', position=424)
+13:05:42,139  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-IndexInfo@2034780171(42 bytes, 1 operations)
+13:05:42,139  INFO Memtable:155 - Writing Memtable-IndexInfo@2034780171(42 bytes, 1 operations)
+13:05:42,143  INFO SystemTable:80 - Upgrading to 0.7. Purging hints if there are any. Old hints will be snapshotted.
+13:05:42,144  INFO StorageService:294 - Cassandra version: 0.7.0-rc4
+13:05:42,144  INFO StorageService:295 - Thrift API version: 19.4.0
+13:05:42,146  INFO StorageService:317 - Loading persisted ring state
+13:05:42,147  INFO StorageService:325 - Starting up server gossip
+13:05:42,149  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for LocationInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438342098.log', position=848)
+13:05:42,149  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-LocationInfo@413601558(236 bytes, 4 operations)
+13:05:42,160  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/IndexInfo-e-1-Data.db (170 bytes)
+13:05:42,161  INFO Memtable:155 - Writing Memtable-LocationInfo@413601558(236 bytes, 4 operations)
+13:05:42,169  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/LocationInfo-e-1-Data.db (482 bytes)
+13:05:42,207  WARN StorageService:375 - Generated random token fioJ7Z41xSHHA6Dq. Random tokens will result in an unbalanced ring; see http://wiki.apache.org/cassandra/Operations
+13:05:42,207  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for LocationInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438342098.log', position=1144)
+13:05:42,208  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-LocationInfo@1453774246(53 bytes, 2 operations)
+13:05:42,208  INFO Memtable:155 - Writing Memtable-LocationInfo@1453774246(53 bytes, 2 operations)
+13:05:42,220  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/LocationInfo-e-2-Data.db (301 bytes)
+13:05:42,222  INFO Mx4jTool:72 - Will not load MX4J, mx4j-tools.jar is not in the classpath
+13:05:42,232  INFO CassandraDaemon:77 - Binding thrift service to localhost/127.0.0.1:9170
+13:05:42,232  INFO CassandraDaemon:91 - Using TFramedTransport with a max frame size of 15728640 bytes.
+13:05:42,233  INFO CassandraDaemon:119 - Listening for thrift clients...
+.13:05:42,240  INFO CassandraHostRetryService:37 - Downed Host Retry service started with queue size 3 and retry delay 10s
+13:05:42,263  INFO JmxMonitor:65 - Registering JMX me.prettyprint.cassandra.service:ServiceType=hector,MonitorType=hector
+
+Time: 0.381
+
+OK (1 test)
+
+13:05:42,312  INFO CassandraHostRetryService:44 - Downed Host retry shutdown hook called
+13:05:42,312  INFO CassandraHostRetryService:51 - Downed Host retry shutdown complete

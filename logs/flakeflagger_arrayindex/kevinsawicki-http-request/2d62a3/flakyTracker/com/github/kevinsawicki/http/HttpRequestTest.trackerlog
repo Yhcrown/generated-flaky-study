@@ -1,0 +1,10 @@
+JUnit version 4.10
+2024-11-12 11:06:38.840:INFO:oejs.Server:jetty-8.1.9.v20130131
+2024-11-12 11:06:39.590:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:64920
+2024-11-12 11:06:40.079:INFO:oejs.Server:jetty-8.1.9.v20130131
+2024-11-12 11:06:40.128:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:64923
+.................................................................................................................................................................
+Time: 4.351
+
+OK (161 tests)
+

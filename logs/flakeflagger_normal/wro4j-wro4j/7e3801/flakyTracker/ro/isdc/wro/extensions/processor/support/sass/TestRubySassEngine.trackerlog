@@ -1,0 +1,20 @@
+JUnit version 4.11
+...Sass::SyntaxError: Invalid CSS after "invalidCss": expected "{", was ""
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129
+        expected at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066
+            tok! at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061
+           block at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:517
+         ruleset at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:512
+     block_child at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:536
+  block_contents at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:526
+      stylesheet at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:70
+           parse at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/scss/parser.rb:27
+        _to_tree at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:342
+         _render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:315
+          render at jar:file:/Users/yhcrown/.m2/repository/me/n4u/sass/sass-gems/3.2.1/sass-gems-3.2.1.jar!/gems/sass-3.2.1/lib/sass/engine.rb:262
+          (root) at <script>:4
+..
+Time: 1.486
+
+OK (5 tests)
+

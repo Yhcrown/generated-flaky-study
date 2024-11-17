@@ -1,0 +1,7 @@
+JUnit version 4.11
+.....13:07:14.639 [ForkJoinPool-1-worker-161] ERROR com.ea.orbit.actors.runtime.Hosting - Timeout waiting for a server capable of handling: com.ea.orbit.actors.test.actors.ISomeActor
+.
+Time: 0.562
+
+OK (6 tests)
+

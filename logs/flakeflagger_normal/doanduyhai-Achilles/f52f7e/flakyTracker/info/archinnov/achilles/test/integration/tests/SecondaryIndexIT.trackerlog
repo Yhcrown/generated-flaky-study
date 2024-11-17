@@ -1,0 +1,194 @@
+JUnit version 4.10
+WARN  [13:03:59,633][] com.datastax.driver.core.FrameCompressor@:<clinit> Error loading Snappy library (org.xerial.snappy.SnappyError: [FAILED_TO_LOAD_NATIVE_LIBRARY] no native library is found for os.name=Mac and os.arch=aarch64). Snappy compression will not be available for the protocol. 
+INFO  [13:03:59,644][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/data' 
+INFO  [13:03:59,656][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/commitlog' 
+INFO  [13:03:59,656][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/saved_caches' 
+INFO  [13:03:59,760][] info.archinnov.achilles.embedded.ServerStarter@:start  Random embedded Cassandra RPC port/Thrift port = 9529 
+INFO  [13:03:59,760][] info.archinnov.achilles.embedded.ServerStarter@:start  Random embedded Cassandra Native port/CQL3 port = 9417 
+INFO  [13:03:59,760][] info.archinnov.achilles.embedded.ServerStarter@:start  Random embedded Cassandra Storage port = 7234 
+INFO  [13:03:59,761][] info.archinnov.achilles.embedded.ServerStarter@:start  Random embedded Cassandra Storage SSL port = 7894 
+INFO  [13:03:59,761][] info.archinnov.achilles.embedded.ServerStarter@:start  Embedded Cassandra triggers directory = /var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/cassandra_triggers 
+INFO  [13:03:59,761][] info.archinnov.achilles.embedded.ServerStarter@:start Starting Cassandra... 
+INFO  [13:03:59,761][] info.archinnov.achilles.embedded.CassandraConfig@:write  Temporary cassandra.yaml file = /Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/cassandra.yaml 
+WARN  [13:03:59,935][] org.apache.cassandra.service.CassandraDaemon@:setup OpenJDK is not recommended. Please upgrade to the newest Oracle Java release 
+WARN  [13:04:00,265][] org.apache.cassandra.db.SystemKeyspace@:getLocalHostId No host ID found, created e0a523cc-fce9-4512-86a6-4fe04baae70e (Note: This should happen exactly once per node). 
+WARN  [13:04:00,343][] org.apache.cassandra.service.StorageService@:joinTokenRing Generated random token [792696883447216538]. Random tokens will result in an unbalanced ring; see http://wiki.apache.org/cassandra/Operations 
+INFO  [13:04:00,658][] info.archinnov.achilles.persistence.PersistenceManagerFactory@:bootstrap Bootstrapping Achilles PersistenceManagerFactory for keyspace achilles_test 
+INFO  [13:04:02,051][] info.archinnov.achilles.internal.context.DaoContextFactory@:displayPreparedStatementsStats Prepare 27 SELECT, 26 DELETE, 4 COUNTER SELECT and 1 CLUSTERED COUNTER SELECT statements 
+INFO  [13:04:02,051][] info.archinnov.achilles.internal.context.DaoContextFactory@:displayPreparedStatementsStats Total prepared statements so far : 58 
+INFO  [13:04:02,135][] info.archinnov.achilles.persistence.PersistenceManagerFactory@:warmUpProxies Entity proxies warm up took 74 milli secs for 27 entities 
+.INFO  [13:04:02,145][] info.archinnov.achilles.internal.statement.cache.CacheManager@:displayCacheStatistics Total LRU cache size 1 
+DEBUG [13:04:02,150][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Prepared statement : [INSERT INTO CompleteBean(id,preferences,followers,name,friends) VALUES (:id,:preferences,:followers,:name,:friends) USING TTL :ttl;] with CONSISTENCY LEVEL [ONE] 
+DEBUG [13:04:02,150][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [8753915023501090090, {}, [], DuyHai, [], 0] 
+DEBUG [13:04:02,157][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Prepared statement : [INSERT INTO CompleteBean(id,preferences,followers,name,friends) VALUES (:id,:preferences,:followers,:name,:friends) USING TTL :ttl;] with CONSISTENCY LEVEL [ONE] 
+DEBUG [13:04:02,157][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [1718528574838979527, {}, [], John DOO, [], 0] 
+DEBUG [13:04:02,159][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Simple statement : [SELECT * FROM CompleteBean WHERE name=:name;] with CONSISTENCY LEVEL [DEFAULT] 
+DEBUG [13:04:02,159][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [John DOO] 
+ERROR [13:04:02,177][] org.apache.cassandra.service.CassandraDaemon@:uncaughtException Exception in thread Thread[WRITE-/127.0.0.1,5,main] 
+java.lang.NoClassDefFoundError: Could not initialize class org.xerial.snappy.Snappy
+	at org.xerial.snappy.SnappyOutputStream.<init>(SnappyOutputStream.java:79)
+	at org.xerial.snappy.SnappyOutputStream.<init>(SnappyOutputStream.java:66)
+	at org.apache.cassandra.net.OutboundTcpConnection.connect(OutboundTcpConnection.java:359)
+	at org.apache.cassandra.net.OutboundTcpConnection.run(OutboundTcpConnection.java:150)
+E.INFO  [13:04:14,232][] info.archinnov.achilles.internal.statement.cache.CacheManager@:displayCacheStatistics Total LRU cache size 2 
+DEBUG [13:04:14,232][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Prepared statement : [INSERT INTO enum_secondary_index(id,consistencyLevel) VALUES (:id,:consistencyLevel) USING TTL :ttl;] with CONSISTENCY LEVEL [ONE] 
+DEBUG [13:04:14,232][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [10, EACH_QUORUM, 0] 
+DEBUG [13:04:14,235][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Prepared statement : [INSERT INTO enum_secondary_index(id,consistencyLevel) VALUES (:id,:consistencyLevel) USING TTL :ttl;] with CONSISTENCY LEVEL [ONE] 
+DEBUG [13:04:14,236][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [11, EACH_QUORUM, 0] 
+DEBUG [13:04:14,238][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Prepared statement : [INSERT INTO enum_secondary_index(id,consistencyLevel) VALUES (:id,:consistencyLevel) USING TTL :ttl;] with CONSISTENCY LEVEL [ONE] 
+DEBUG [13:04:14,238][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [13, LOCAL_QUORUM, 0] 
+DEBUG [13:04:14,240][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog Simple statement : [SELECT * FROM enum_secondary_index WHERE consistencyLevel=:consistencyLevel;] with CONSISTENCY LEVEL [DEFAULT] 
+DEBUG [13:04:14,240][] ACHILLES_DML_STATEMENT@:writeDMLStatementLog 	 bound values : [EACH_QUORUM] 
+E.E.E
+Time: 50.963
+There were 4 failures:
+1) should_return_entities_for_indexed_query(info.archinnov.achilles.test.integration.tests.SecondaryIndexIT)
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))
+	at com.datastax.driver.core.exceptions.NoHostAvailableException.copy(NoHostAvailableException.java:65)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:256)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:172)
+	at com.datastax.driver.core.SessionManager.execute(SessionManager.java:92)
+	at info.archinnov.achilles.embedded.CassandraEmbeddedServer.truncateTable(CassandraEmbeddedServer.java:95)
+	at info.archinnov.achilles.test.integration.AchillesInternalCQLResource.truncateTables(AchillesInternalCQLResource.java:153)
+	at info.archinnov.achilles.junit.AchillesTestResource.after(AchillesTestResource.java:43)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:110)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+Caused by: com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))
+	at com.datastax.driver.core.RequestHandler.sendRequest(RequestHandler.java:103)
+	at com.datastax.driver.core.RequestHandler$1.run(RequestHandler.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2) should_find_entities_for_indexed_enum_query(info.archinnov.achilles.test.integration.tests.SecondaryIndexIT)
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))
+	at com.datastax.driver.core.exceptions.NoHostAvailableException.copy(NoHostAvailableException.java:65)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:256)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:172)
+	at com.datastax.driver.core.SessionManager.execute(SessionManager.java:92)
+	at info.archinnov.achilles.embedded.CassandraEmbeddedServer.truncateTable(CassandraEmbeddedServer.java:95)
+	at info.archinnov.achilles.test.integration.AchillesInternalCQLResource.truncateTables(AchillesInternalCQLResource.java:153)
+	at info.archinnov.achilles.junit.AchillesTestResource.after(AchillesTestResource.java:43)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:110)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+Caused by: com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))
+	at com.datastax.driver.core.RequestHandler.sendRequest(RequestHandler.java:103)
+	at com.datastax.driver.core.RequestHandler$1.run(RequestHandler.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+3) should_throw_clustered_exception_for_indexed_query(info.archinnov.achilles.test.integration.tests.SecondaryIndexIT)
+java.lang.AssertionError: 
+Expected: (exception with message a string containing "Index query is not supported for clustered entity" and an instance of info.archinnov.achilles.exception.AchillesException)
+     got: <com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:114)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+4) should_throw_empty_condition_exception_for_indexed_query(info.archinnov.achilles.test.integration.tests.SecondaryIndexIT)
+java.lang.AssertionError: 
+Expected: (exception with message a string containing "Index condition should not be null" and an instance of info.archinnov.achilles.exception.AchillesException)
+     got: <com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9417 (com.datastax.driver.core.exceptions.DriverException: Timeout during read))>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:114)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:18)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:117)
+	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:98)
+	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:53)
+	at org.junit.runner.JUnitCore.main(JUnitCore.java:45)
+
+FAILURES!!!
+Tests run: 4,  Failures: 4
+

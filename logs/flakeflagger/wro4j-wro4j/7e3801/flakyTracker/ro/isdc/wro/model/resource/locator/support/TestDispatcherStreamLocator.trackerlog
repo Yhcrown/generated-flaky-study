@@ -1,6 +1,6 @@
 JUnit version 4.11
 .E.E.E.E.E.E.E.E.E.E
-Time: 3.249
+Time: 4.637
 There were 10 failures:
 1) shouldMarkAsIncludedTheRequestWhenDispatcherIsUsed(ro.isdc.wro.model.resource.locator.support.TestDispatcherStreamLocator)
 java.lang.NoClassDefFoundError: ro/isdc/wro/config/ReadOnlyContext

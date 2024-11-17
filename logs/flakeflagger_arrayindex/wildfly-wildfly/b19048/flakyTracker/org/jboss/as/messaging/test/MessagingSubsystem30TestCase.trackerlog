@@ -1,0 +1,244 @@
+JUnit version 4.12
+...Nov 12, 2024 11:33:01 AM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 11:33:13 AM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.4.5.Final
+Nov 12, 2024 11:33:13 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 2.3.2.Final
+Nov 12, 2024 11:33:18 AM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.1.5.Final-redhat-1
+..Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.MessagingSubsystemParser processHornetQServer$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element CLUSTERED is deprecated and will not be taken into account
+Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.Messaging12SubsystemParser processBridge$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element FAILOVER_ON_SERVER_SHUTDOWN is deprecated and will not be taken into account
+.Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.MessagingSubsystemParser processHornetQServer$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element CLUSTERED is deprecated and will not be taken into account
+Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.Messaging12SubsystemParser processBridge$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element FAILOVER_ON_SERVER_SHUTDOWN is deprecated and will not be taken into account
+.Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.MessagingSubsystemParser processHornetQServer$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element CLUSTERED is deprecated and will not be taken into account
+Nov 12, 2024 11:33:22 AM org.jboss.as.messaging.Messaging12SubsystemParser processBridge$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element FAILOVER_ON_SERVER_SHUTDOWN is deprecated and will not be taken into account
+Nov 12, 2024 11:33:22 AM org.jboss.as.model.test.ChildFirstClassLoaderBuilder <init>
+INFO: To optimize this test use the org.jboss.model.test.cache.root and org.jboss.model.test.classpath.cache system properties to take advantage of cached classpaths
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'clustered' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'remoting-interceptors' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/bridge=bridge1' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/connection-factory=otherConnectionFactory' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/pooled-connection-factory=hornetq-ra' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'clustered' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'message-counter-enabled' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'remoting-interceptors' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/bridge=bridge1' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/connection-factory=otherConnectionFactory' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:22 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/pooled-connection-factory=hornetq-ra' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:23 AM org.jboss.msc.service.ServiceContainerImpl <clinit>
+INFO: JBoss MSC version 1.1.5.Final-redhat-1
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute clustered is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute remoting-interceptors is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute local-bind-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute local-bind-port is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-port is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-port is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute local-bind-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-port is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-address is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute group-port is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute failover-on-server-shutdown is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute failover-on-server-shutdown is deprecated, and it might be removed in future version!
+Nov 12, 2024 11:33:24 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: JBAS014627: Attribute failover-on-server-shutdown is deprecated, and it might be removed in future version!
+.Nov 12, 2024 11:33:25 AM org.jboss.as.messaging.MessagingSubsystemParser processHornetQServer$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element CLUSTERED is deprecated and will not be taken into account
+Nov 12, 2024 11:33:25 AM org.jboss.as.messaging.Messaging12SubsystemParser processBridge$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element FAILOVER_ON_SERVER_SHUTDOWN is deprecated and will not be taken into account
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'clustered' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'remoting-interceptors' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/bridge=bridge1' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/connection-factory=otherConnectionFactory' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/pooled-connection-factory=hornetq-ra' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:25 AM org.jboss.as.messaging.AddressSettingsValidator checkExpiryAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0071: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
+Nov 12, 2024 11:33:25 AM org.jboss.as.messaging.AddressSettingsValidator checkDeadLetterAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0072: There is no resource matching the dead-letter-address jms.queue.DLQ for the address-settings #, undelivered messages from destinations matching this address-setting will be lost!
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.MessagingSubsystemParser processHornetQServer$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element CLUSTERED is deprecated and will not be taken into account
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.Messaging12SubsystemParser processBridge$$PHOSPHORTAGGED
+WARN: WFLYMSG0009: Element FAILOVER_ON_SERVER_SHUTDOWN is deprecated and will not be taken into account
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'clustered' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'remoting-interceptors' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/bridge=bridge1' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/connection-factory=otherConnectionFactory' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/pooled-connection-factory=hornetq-ra' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.AddressSettingsValidator checkExpiryAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0071: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.AddressSettingsValidator checkDeadLetterAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0072: There is no resource matching the dead-letter-address jms.queue.DLQ for the address-settings #, undelivered messages from destinations matching this address-setting will be lost!
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'clustered' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'remoting-interceptors' in the resource at address '/subsystem=messaging/hornetq-server=default' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupA' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/broadcast-group=groupB' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'local-bind-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupC' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-address' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'group-port' in the resource at address '/subsystem=messaging/hornetq-server=default/discovery-group=groupD' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/bridge=bridge1' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/connection-factory=otherConnectionFactory' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.controller.AttributeDefinition validateAndSet$$PHOSPHORTAGGED
+INFO: WFLYCTL0028: Attribute 'failover-on-server-shutdown' in the resource at address '/subsystem=messaging/hornetq-server=default/pooled-connection-factory=hornetq-ra' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.AddressSettingsValidator checkExpiryAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0071: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
+Nov 12, 2024 11:33:26 AM org.jboss.as.messaging.AddressSettingsValidator checkDeadLetterAddress$$PHOSPHORTAGGED
+WARN: WFLYMSG0072: There is no resource matching the dead-letter-address jms.queue.DLQ for the address-settings #, undelivered messages from destinations matching this address-setting will be lost!
+.
+Time: 29.743
+
+OK (9 tests)
+

@@ -1,0 +1,32 @@
+JUnit version 4.10
+WARN  [02:46:45,560][] com.datastax.driver.core.FrameCompressor@:<clinit> Error loading Snappy library (org.xerial.snappy.SnappyError: [FAILED_TO_LOAD_NATIVE_LIBRARY] no native library is found for os.name=Mac and os.arch=aarch64). Snappy compression will not be available for the protocol. 
+INFO  [02:46:46,163][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles$$PHOSPHORTAGGED Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/data' 
+INFO  [02:46:46,331][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles$$PHOSPHORTAGGED Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/commitlog' 
+INFO  [02:46:46,332][] info.archinnov.achilles.embedded.ServerStarter@:cleanCassandraDataFiles$$PHOSPHORTAGGED Cleaning up embedded Cassandra data directory '/Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/saved_caches' 
+INFO  [02:46:49,260][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED  Random embedded Cassandra RPC port/Thrift port = 9592 
+INFO  [02:46:49,261][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED  Random embedded Cassandra Native port/CQL3 port = 9065 
+INFO  [02:46:49,261][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED  Random embedded Cassandra Storage port = 7080 
+INFO  [02:46:49,262][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED  Random embedded Cassandra Storage SSL port = 7860 
+INFO  [02:46:49,263][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED  Embedded Cassandra triggers directory = /var/folders/6v/t_t9cghd03nfq9mmw9_1tb6r0000gn/T/cassandra_triggers 
+INFO  [02:46:49,268][] info.archinnov.achilles.embedded.ServerStarter@:start$$PHOSPHORTAGGED Starting Cassandra... 
+INFO  [02:46:49,269][] info.archinnov.achilles.embedded.CassandraConfig@:write$$PHOSPHORTAGGED  Temporary cassandra.yaml file = /Users/yhcrown/Documents/flaky_java_projects_ff/doanduyhai-Achilles/integration-test/target/cassandra_embedded/cassandra.yaml 
+ERROR [02:46:51,130][] org.apache.cassandra.config.DatabaseDescriptor@:<clinit> Fatal error during configuration loading 
+java.lang.NullPointerException
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:251)
+	at java.lang.Exception.<init>(Exception.java:54)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:51)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:60)
+	at java.lang.NullPointerException.<init>(NullPointerException.java)
+	at org.apache.cassandra.config.DatabaseDescriptor.applyConfig$$PHOSPHORTAGGED(DatabaseDescriptor.java:277)
+	at org.apache.cassandra.config.DatabaseDescriptor.<clinit>(DatabaseDescriptor.java:111)
+	at org.apache.cassandra.service.CassandraDaemon.setup$$PHOSPHORTAGGED(CassandraDaemon.java:156)
+	at org.apache.cassandra.service.CassandraDaemon.activate$$PHOSPHORTAGGED(CassandraDaemon.java:496)
+	at info.archinnov.achilles.embedded.ServerStarter$1.run$$PHOSPHORTAGGED(ServerStarter.java:149)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker$$PHOSPHORTAGGED(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run$$PHOSPHORTAGGED(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run$$PHOSPHORTAGGED(Thread.java:750)
+	at java.lang.Thread.run(Thread.java)
+null
+Fatal error during configuration loading; unable to start. See log for stacktrace.

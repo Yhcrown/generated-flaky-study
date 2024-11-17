@@ -1,0 +1,62 @@
+JUnit version 4.8.1
+13:05:19,643  INFO TestContextManager:192 - @TestExecutionListeners is not present for class [class me.prettyprint.cassandra.dao.SimpleCassandraDaoTest]: using defaults.
+13:05:19,657  INFO DatabaseDescriptor:121 - Loading settings from file:tmp/cassandra.yaml
+13:05:19,695  INFO DatabaseDescriptor:172 - DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+13:05:19,755  INFO CommitLogSegment:50 - Creating new commitlog segment tmp/var/lib/cassandra/commitlog/CommitLog-1731438319755.log
+13:05:19,760  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Standard1, using 227
+13:05:19,761  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Standard1, using 1.0640625
+13:05:19,761  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Standard2, using 227
+13:05:19,761  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Standard2, using 1.0640625
+13:05:19,761  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for StandardByUUID1, using 227
+13:05:19,761  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for StandardByUUID1, using 1.0640625
+13:05:19,761  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super1, using 227
+13:05:19,762  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super1, using 1.0640625
+13:05:19,762  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super2, using 227
+13:05:19,762  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super2, using 1.0640625
+13:05:19,762  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Super3, using 227
+13:05:19,762  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Super3, using 1.0640625
+13:05:19,762  INFO DatabaseDescriptor:570 - memtable_throughput_in_mb not configured for Indexed1, using 227
+13:05:19,762  INFO DatabaseDescriptor:575 - memtable_operations_in_millions not configured for Indexed1, using 1.0640625
+13:05:19,765  INFO AbstractCassandraDaemon:74 - Heap size: 257425408/3817865216
+13:05:19,766  INFO CLibrary:47 - JNA not found. Native methods will be disabled.
+13:05:19,786  INFO DatabaseDescriptor:413 - Couldn't detect any schema definitions in local storage.
+13:05:19,786  INFO DatabaseDescriptor:439 - Found table data in data directories. Consider using JMX to call org.apache.cassandra.service.StorageService.loadSchemaFromYaml().
+13:05:19,790  INFO ColumnFamilyStore:326 - Creating index org.apache.cassandra.db.Table@6c76bc7b.Indexed1.626972746879656172
+13:05:19,790  INFO CommitLog:188 - No commitlog files found; skipping replay
+13:05:19,793  INFO ColumnFamilyStore:340 - Index Indexed1.626972746879656172 complete
+13:05:19,794  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for IndexInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438319755.log', position=424)
+13:05:19,794  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-IndexInfo@625016302(42 bytes, 1 operations)
+13:05:19,794  INFO Memtable:155 - Writing Memtable-IndexInfo@625016302(42 bytes, 1 operations)
+13:05:19,797  INFO SystemTable:80 - Upgrading to 0.7. Purging hints if there are any. Old hints will be snapshotted.
+13:05:19,798  INFO StorageService:294 - Cassandra version: 0.7.0-rc4
+13:05:19,798  INFO StorageService:295 - Thrift API version: 19.4.0
+13:05:19,800  INFO StorageService:317 - Loading persisted ring state
+13:05:19,801  INFO StorageService:325 - Starting up server gossip
+13:05:19,803  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for LocationInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438319755.log', position=848)
+13:05:19,803  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-LocationInfo@1003752023(236 bytes, 4 operations)
+13:05:19,815  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/IndexInfo-e-1-Data.db (170 bytes)
+13:05:19,815  INFO Memtable:155 - Writing Memtable-LocationInfo@1003752023(236 bytes, 4 operations)
+13:05:19,824  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/LocationInfo-e-1-Data.db (482 bytes)
+13:05:19,862  WARN StorageService:375 - Generated random token pOPGMkz6VIh3tflt. Random tokens will result in an unbalanced ring; see http://wiki.apache.org/cassandra/Operations
+13:05:19,862  INFO ColumnFamilyStore:648 - switching in a fresh Memtable for LocationInfo at CommitLogContext(file='tmp/var/lib/cassandra/commitlog/CommitLog-1731438319755.log', position=1144)
+13:05:19,862  INFO ColumnFamilyStore:952 - Enqueuing flush of Memtable-LocationInfo@1699679644(53 bytes, 2 operations)
+13:05:19,863  INFO Memtable:155 - Writing Memtable-LocationInfo@1699679644(53 bytes, 2 operations)
+13:05:19,875  INFO Memtable:162 - Completed flushing tmp/var/lib/cassandra/data/system/LocationInfo-e-2-Data.db (301 bytes)
+13:05:19,877  INFO Mx4jTool:72 - Will not load MX4J, mx4j-tools.jar is not in the classpath
+13:05:19,886  INFO CassandraDaemon:77 - Binding thrift service to localhost/127.0.0.1:9170
+13:05:19,887  INFO CassandraDaemon:91 - Using TFramedTransport with a max frame size of 15728640 bytes.
+13:05:19,888  INFO CassandraDaemon:119 - Listening for thrift clients...
+.13:05:19,908  INFO XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [cassandra-context-test-v2.xml]
+13:05:19,960  INFO GenericApplicationContext:447 - Refreshing org.springframework.context.support.GenericApplicationContext@158d2680: startup date [Tue Nov 12 13:05:19 CST 2024]; root of context hierarchy
+13:05:19,989  INFO DefaultListableBeanFactory:532 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c309d4d: defining beans [cassandraHostConfigurator,cluster,keyspaceOperator,simpleCassandraDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; root of factory hierarchy
+13:05:20,006  INFO CassandraHostRetryService:37 - Downed Host Retry service started with queue size 3 and retry delay 10s
+13:05:20,027  INFO JmxMonitor:65 - Registering JMX me.prettyprint.cassandra.service:ServiceType=hector,MonitorType=hector
+
+Time: 0.438
+
+OK (1 test)
+
+13:05:20,088  INFO GenericApplicationContext:938 - Closing org.springframework.context.support.GenericApplicationContext@158d2680: startup date [Tue Nov 12 13:05:19 CST 2024]; root of context hierarchy
+13:05:20,088  INFO CassandraHostRetryService:44 - Downed Host retry shutdown hook called
+13:05:20,088  INFO CassandraHostRetryService:51 - Downed Host retry shutdown complete
+13:05:20,088  INFO DefaultListableBeanFactory:421 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c309d4d: defining beans [cassandraHostConfigurator,cluster,keyspaceOperator,simpleCassandraDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; root of factory hierarchy

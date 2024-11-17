@@ -1,6 +1,6 @@
 JUnit version 4.11
 .E...E.E.E.E.E.E.E.E.E.I.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E...E.E.E.E.E.E.E..E.E.E.E.EII.E.E.E.E.E.E.E.E.E.E.E.E.E.EI.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.E.EI.E.E..E.E.E.E.E.E..E.E.E.E.E.E.E.E.E.EI.E.E.E.E.E.E.E.E.E..E.E.E.E.E.E.E.E.E..E.E.E.E.E.E.E.E.E.E.E.E.E..E.E.E.E.E..E.E.E.E.E.EI.E.E.E.E.E.E.E.E.E.E.EI.E.E.E.E.E.E.E.E.E.E.E..E.E.E.E..E.E
-Time: 1.104
+Time: 1.856
 There were 159 failures:
 1) connectViaHttpProxyToHttpsUsingProxyArg(com.squareup.okhttp.internal.http.URLConnectionTest)
 java.lang.VerifyError: Operand stack underflow

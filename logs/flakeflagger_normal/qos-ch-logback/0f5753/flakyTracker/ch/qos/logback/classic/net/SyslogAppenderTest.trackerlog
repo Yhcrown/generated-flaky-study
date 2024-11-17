@@ -1,0 +1,25 @@
+JUnit version 4.10
+....
+.SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [file:/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-classic/target/classes/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-classic/target/logback-classic-2.0.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-classic/bundle/logback-classic-2.0.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/yhcrown/Documents/flaky_java_projects_ff/qos-ch-logback/logback-classic/felix-cache/bundle2/version0.0/bundle.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+13:08:30,371 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:08:30,371 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:08:30,371 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+13:08:30,372 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Setting up default configuration.
+13:08:30,419 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.net.SyslogAppender]
+13:08:30,419 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [aSYSLOG]
+13:08:30,434 |-WARN in ch.qos.logback.classic.net.SyslogAppender[aSYSLOG] - The layout of a SyslogAppender cannot be set directly. See also http://logback.qos.ch/codes.html#syslog_layout
+13:08:30,435 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to TRACE
+13:08:30,435 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [aSYSLOG] to Logger[ROOT]
+13:08:30,435 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:08:30,435 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7c75222b - Registering current configuration as safe fallback point
+
+Time: 0.642
+
+OK (5 tests)
+

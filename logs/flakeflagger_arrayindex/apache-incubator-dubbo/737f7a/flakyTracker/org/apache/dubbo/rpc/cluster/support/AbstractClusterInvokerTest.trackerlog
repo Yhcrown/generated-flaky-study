@@ -1,0 +1,9 @@
+JUnit version 4.12
+.[12/11/24 10:52:27:027 CST] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+....FlakyTracker Log: testSelect_multiInvokers may be flaky: FlakyTaintLabel{type=RANDOM, cause='java/util/concurrent/ThreadLocalRandom.nextInt', file='org/apache/dubbo/rpc/cluster/loadbalance/LeastActiveLoadBalance', line=83, label=11}
+FlakyTracker Log: testSelect_multiInvokers may be flaky: FlakyTaintLabel{type=RANDOM, cause='java/util/concurrent/ThreadLocalRandom.nextInt', file='org/apache/dubbo/rpc/cluster/loadbalance/RandomLoadBalance', line=59, label=6}
+......
+Time: 9.542
+
+OK (11 tests)
+

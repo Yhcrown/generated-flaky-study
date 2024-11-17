@@ -1,0 +1,72 @@
+JUnit version 4.10
+..11:12:33,733 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,733 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,735 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,735 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,735 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Tue Nov 12 11:12:33 CST 2024
+11:12:33,738 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,738 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,738 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,742 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-12.txt
+11:12:33,742 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:12:33,743 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,743 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,743 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,743 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,744 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Wed Nov 13 11:12:33 CST 2024
+11:12:33,744 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,744 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,744 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,746 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-13.txt
+11:12:33,746 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:12:33,747 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,747 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,747 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,747 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,748 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Thu Nov 14 11:12:33 CST 2024
+11:12:33,748 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,748 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,748 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,750 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-14.txt
+11:12:33,750 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:12:33,751 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,751 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,751 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,751 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,751 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Fri Nov 15 11:12:33 CST 2024
+11:12:33,751 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,751 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,751 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,754 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-15.txt
+11:12:33,754 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:12:33,754 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,754 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,755 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,755 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,755 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sat Nov 16 11:12:33 CST 2024
+11:12:33,755 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,755 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,755 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,755 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - deleting target/test-output/1588582744/clean-2024-11-12.txt
+11:12:33,758 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-16.txt
+11:12:33,758 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+11:12:33,758 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+11:12:33,759 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt for the active file
+11:12:33,760 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'target/test-output/1588582744/clean-%d{yyyy-MM-dd}.txt'.
+11:12:33,760 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+11:12:33,760 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Nov 17 11:12:33 CST 2024
+11:12:33,760 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Cleaning on start up
+11:12:33,760 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - first clean up after appender initialization
+11:12:33,760 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - periodsElapsed = 64
+11:12:33,760 |-INFO in c.q.l.core.rolling.helper.TimeBasedArchiveRemover - deleting target/test-output/1588582744/clean-2024-11-13.txt
+11:12:33,762 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - Active log file name: target/test-output/1588582744/clean-2024-11-17.txt
+11:12:33,762 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[null] - File property is set to [null]
+
+.....randomOutputDir:target/test-output/157473597/
+start:1731431554333, end=1836626435191
+differenceInMonths:40
+....
+Time: 2.075
+
+OK (11 tests)
+

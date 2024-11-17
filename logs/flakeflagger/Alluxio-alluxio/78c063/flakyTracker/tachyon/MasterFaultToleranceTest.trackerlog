@@ -1,31 +1,66 @@
 JUnit version 4.13.2
-.EE.EE
-Time: 0.12
-There were 4 failures:
-1) getClientsTest(tachyon.MasterFaultToleranceTest)
-java.lang.NoClassDefFoundError: org/apache/log4j/Logger
+.Exception in thread "zk-main-thread" java.lang.NoSuchFieldError: configFileStr
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
 	at java.lang.Throwable.<init>(Throwable.java:266)
 	at java.lang.Error.<init>(Error.java:70)
 	at java.lang.LinkageError.<init>(LinkageError.java:55)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
-	at tachyon.LocalTachyonClusterMultiMaster.<clinit>(LocalTachyonClusterMultiMaster.java:23)
-	at tachyon.MasterFaultToleranceTest.before$$PHOSPHORTAGGED(MasterFaultToleranceTest.java:27)
-	... 38 trimmed
-Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Logger
+	at java.lang.IncompatibleClassChangeError.<init>(IncompatibleClassChangeError.java:55)
+	at java.lang.NoSuchFieldError.<init>(NoSuchFieldError.java:57)
+	at java.lang.NoSuchFieldError.<init>(NoSuchFieldError.java)
+	at org.apache.curator.test.QuorumConfigBuilder$1.<init>(QuorumConfigBuilder.java:94)
+	at org.apache.curator.test.QuorumConfigBuilder.buildConfig$$PHOSPHORTAGGED(QuorumConfigBuilder.java:92)
+	at org.apache.curator.test.QuorumPeerConfigBuilder.buildConfig$$PHOSPHORTAGGED(QuorumPeerConfigBuilder.java:45)
+	at org.apache.curator.test.TestingZooKeeperMain.lambda$start$0$$PHOSPHORTAGGED(TestingZooKeeperMain.java:226)
+	at org.apache.curator.test.TestingZooKeeperMain.invokeDynamicHelper$org$apache$curator$test$TestingZooKeeperMain$lambda$start$0$0(TestingZooKeeperMain.java)
+	at java.lang.Thread.run$$PHOSPHORTAGGED(Thread.java:750)
+	at java.lang.Thread.run(Thread.java)
+EE.Exception in thread "zk-main-thread" java.lang.NoSuchFieldError: configFileStr
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
-	at java.lang.Throwable.<init>(Throwable.java:288)
-	at java.lang.Exception.<init>(Exception.java:84)
-	at java.lang.ReflectiveOperationException.<init>(ReflectiveOperationException.java:75)
-	at java.lang.ClassNotFoundException.<init>(ClassNotFoundException.java:82)
-	at java.net.URLClassLoader.findClass$$PHOSPHORTAGGED(URLClassLoader.java:387)
-	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass$$PHOSPHORTAGGED(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass$$PHOSPHORTAGGED(ClassLoader.java:351)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:0)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.IncompatibleClassChangeError.<init>(IncompatibleClassChangeError.java:55)
+	at java.lang.NoSuchFieldError.<init>(NoSuchFieldError.java:57)
+	at java.lang.NoSuchFieldError.<init>(NoSuchFieldError.java)
+	at org.apache.curator.test.QuorumConfigBuilder$1.<init>(QuorumConfigBuilder.java:94)
+	at org.apache.curator.test.QuorumConfigBuilder.buildConfig$$PHOSPHORTAGGED(QuorumConfigBuilder.java:92)
+	at org.apache.curator.test.QuorumPeerConfigBuilder.buildConfig$$PHOSPHORTAGGED(QuorumPeerConfigBuilder.java:45)
+	at org.apache.curator.test.TestingZooKeeperMain.lambda$start$0$$PHOSPHORTAGGED(TestingZooKeeperMain.java:226)
+	at org.apache.curator.test.TestingZooKeeperMain.invokeDynamicHelper$org$apache$curator$test$TestingZooKeeperMain$lambda$start$0$0(TestingZooKeeperMain.java)
+	at java.lang.Thread.run$$PHOSPHORTAGGED(Thread.java:750)
+	at java.lang.Thread.run(Thread.java)
+EE
+Time: 103.204
+There were 4 failures:
+1) getClientsTest(tachyon.MasterFaultToleranceTest)
+java.lang.RuntimeException: org.apache.curator.test.FailedServerStartException: Timed out waiting for server startup
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:311)
+	at java.lang.Exception.<init>(Exception.java:102)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:96)
+	at tachyon.CommonUtils.runtimeException$$PHOSPHORTAGGED(CommonUtils.java:223)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:63)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:46)
+	at tachyon.MasterFaultToleranceTest.before$$PHOSPHORTAGGED(MasterFaultToleranceTest.java:27)
+	... 38 trimmed
+Caused by: org.apache.curator.test.FailedServerStartException: Timed out waiting for server startup
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.lang.IllegalStateException.<init>(IllegalStateException.java:55)
+	at org.apache.curator.test.FailedServerStartException.<init>(FailedServerStartException.java:28)
+	at org.apache.curator.test.TestingZooKeeperMain.blockUntilStarted$$PHOSPHORTAGGED(TestingZooKeeperMain.java:126)
+	at org.apache.curator.test.TestingZooKeeperMain.start$$PHOSPHORTAGGED(TestingZooKeeperMain.java:238)
+	at org.apache.curator.test.TestingZooKeeperServer.start$$PHOSPHORTAGGED(TestingZooKeeperServer.java:154)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:112)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:97)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:43)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:61)
 	... 41 more
 2) getClientsTest(tachyon.MasterFaultToleranceTest)
 java.lang.NullPointerException
@@ -38,15 +73,33 @@ java.lang.NullPointerException
 	at java.lang.NullPointerException.<init>(NullPointerException.java)
 	at tachyon.MasterFaultToleranceTest.after$$PHOSPHORTAGGED(MasterFaultToleranceTest.java:34)
 3) faultTest(tachyon.MasterFaultToleranceTest)
-java.lang.NoClassDefFoundError: Could not initialize class tachyon.LocalTachyonClusterMultiMaster
+java.lang.RuntimeException: org.apache.curator.test.FailedServerStartException: Timed out waiting for server startup
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:311)
+	at java.lang.Exception.<init>(Exception.java:102)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:96)
+	at tachyon.CommonUtils.runtimeException$$PHOSPHORTAGGED(CommonUtils.java:223)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:63)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:46)
+	at tachyon.MasterFaultToleranceTest.before$$PHOSPHORTAGGED(MasterFaultToleranceTest.java:27)
+	... 38 trimmed
+Caused by: org.apache.curator.test.FailedServerStartException: Timed out waiting for server startup
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
 	at java.lang.Throwable.<init>(Throwable.java:266)
-	at java.lang.Error.<init>(Error.java:70)
-	at java.lang.LinkageError.<init>(LinkageError.java:55)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java:59)
-	at java.lang.NoClassDefFoundError.<init>(NoClassDefFoundError.java)
-	at tachyon.MasterFaultToleranceTest.before$$PHOSPHORTAGGED(MasterFaultToleranceTest.java:27)
+	at java.lang.Exception.<init>(Exception.java:66)
+	at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+	at java.lang.IllegalStateException.<init>(IllegalStateException.java:55)
+	at org.apache.curator.test.FailedServerStartException.<init>(FailedServerStartException.java:28)
+	at org.apache.curator.test.TestingZooKeeperMain.blockUntilStarted$$PHOSPHORTAGGED(TestingZooKeeperMain.java:126)
+	at org.apache.curator.test.TestingZooKeeperMain.start$$PHOSPHORTAGGED(TestingZooKeeperMain.java:238)
+	at org.apache.curator.test.TestingZooKeeperServer.start$$PHOSPHORTAGGED(TestingZooKeeperServer.java:154)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:112)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:97)
+	at org.apache.curator.test.TestingServer.<init>(TestingServer.java:43)
+	at tachyon.LocalTachyonClusterMultiMaster.<init>(LocalTachyonClusterMultiMaster.java:61)
+	... 41 more
 4) faultTest(tachyon.MasterFaultToleranceTest)
 java.lang.NullPointerException
 	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)

@@ -1,0 +1,169 @@
+log4j:WARN No appenders could be found for logger (org.apache.maven.cli.logging.impl.UnsupportedSlf4jBindingConfiguration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+---------------------------------------------------
+constituent[0]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/conf/logging/
+constituent[1]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-plugin-api-3.6.3.jar
+constituent[2]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-compat-3.6.3.jar
+constituent[3]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-util-1.4.1.jar
+constituent[4]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/plexus-component-annotations-2.1.0.jar
+constituent[5]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-settings-builder-3.6.3.jar
+constituent[6]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/plexus-cipher-1.7.jar
+constituent[7]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/plexus-interpolation-1.25.jar
+constituent[8]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-spi-1.4.1.jar
+constituent[9]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/guice-4.2.1-no_aop.jar
+constituent[10]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-artifact-3.6.3.jar
+constituent[11]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-provider-3.6.3.jar
+constituent[12]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/cdi-api-1.0.jar
+constituent[13]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-slf4j-provider-3.6.3.jar
+constituent[14]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/plexus-utils-3.2.1.jar
+constituent[15]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/plexus-sec-dispatcher-1.4.jar
+constituent[16]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-repository-metadata-3.6.3.jar
+constituent[17]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/commons-cli-1.4.jar
+constituent[18]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-transport-wagon-1.4.1.jar
+constituent[19]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/commons-io-2.5.jar
+constituent[20]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/jansi-1.17.1.jar
+constituent[21]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-model-builder-3.6.3.jar
+constituent[22]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-embedder-3.6.3.jar
+constituent[23]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/wagon-file-3.3.4.jar
+constituent[24]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/org.eclipse.sisu.inject-0.3.4.jar
+constituent[25]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-connector-basic-1.4.1.jar
+constituent[26]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-settings-3.6.3.jar
+constituent[27]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-model-3.6.3.jar
+constituent[28]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-api-1.4.1.jar
+constituent[29]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/jcl-over-slf4j-1.7.29.jar
+constituent[30]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/wagon-http-3.3.4-shaded.jar
+constituent[31]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/org.eclipse.sisu.plexus-0.3.4.jar
+constituent[32]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/slf4j-api-1.7.29.jar
+constituent[33]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-builder-support-3.6.3.jar
+constituent[34]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/jsoup-1.12.1.jar
+constituent[35]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/wagon-provider-api-3.3.4.jar
+constituent[36]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-shared-utils-3.2.1.jar
+constituent[37]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-resolver-impl-1.4.1.jar
+constituent[38]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/maven-core-3.6.3.jar
+constituent[39]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/javax.inject-1.jar
+constituent[40]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/commons-lang3-3.8.1.jar
+constituent[41]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/guava-25.1-android.jar
+constituent[42]: file:/Users/yhcrown/Documents/tools/apache-maven-3.6.3/lib/jsr250-api-1.0.jar
+---------------------------------------------------
+Exception in thread "main" java.lang.VerifyError: Stack map does not match the one at exception handler 889
+Exception Details:
+  Location:
+    org/codehaus/plexus/DefaultPlexusContainer.discoverComponents$$PHOSPHORTAGGED(Ledu/columbia/cs/psl/phosphor/runtime/Taint;Lorg/codehaus/plexus/classworlds/realm/ClassRealm;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags;Ledu/columbia/cs/psl/phosphor/runtime/Taint;Ledu/columbia/cs/psl/phosphor/control/ControlFlowStack;Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag;[Lcom/google/inject/Module;Ljava/util/List;)Ledu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag; @889: aload
+  Reason:
+    Type top (current frame, locals[24]) is not assignable to 'java/lang/Object' (stack map, locals[24])
+  Current Frame:
+    bci: @24
+    flags: { }
+    locals: { 'org/codehaus/plexus/DefaultPlexusContainer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/codehaus/plexus/classworlds/realm/ClassRealm', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', '[Lcom/google/inject/Module;', 'java/util/List', 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', null, 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag' }
+    stack: { 'java/lang/RuntimeException' }
+  Stackmap Frame:
+    bci: @889
+    flags: { }
+    locals: { 'org/codehaus/plexus/DefaultPlexusContainer', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'org/codehaus/plexus/classworlds/realm/ClassRealm', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/struct/LazyReferenceArrayObjTags', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/control/ControlFlowStack', 'edu/columbia/cs/psl/phosphor/struct/TaintedReferenceWithObjTag', top, top, 'edu/columbia/cs/psl/phosphor/control/standard/StandardControlFlowStack', '[I', 'edu/columbia/cs/psl/phosphor/struct/TaintedBooleanWithObjTag', top, top, top, top, top, top, top, top, top, top, top, 'java/lang/Object', 'java/lang/Object', 'java/lang/Object', top, 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint', 'edu/columbia/cs/psl/phosphor/runtime/Taint' }
+    stack: { 'java/lang/RuntimeException' }
+  Bytecode:
+    0x0000000: 1906 c000 523a 0a19 0ab6 005b 013a 0bbb
+    0x0000010: 00be 59b7 00bf 3a0c bb01 9c19 0ab6 0066
+    0x0000020: 5c19 0ab6 00a7 c000 52b7 019d 190a b600
+    0x0000030: 66b8 0085 3a0e 3a0d 2a2b 5f59 b400 d25b
+    0x0000040: 57b4 00d0 b800 855c 190a b600 66b8 0085
+    0x0000050: 3a13 3a12 57c2 bb01 9f19 0ab6 0066 5c2c
+    0x0000060: 2d5f c001 a15f 190a b600 a7c0 0052 b701
+    0x0000070: a419 0ab6 0066 b800 853a 143a 0f2a 2b5f
+    0x0000080: 59b4 00d2 5b57 b400 d0b8 0085 2c2d 190a
+    0x0000090: 1907 013a 153a 1619 1619 15b9 0301 0700
+    0x00000a0: 59b4 0072 c000 045f b400 785f c001 ad5f
+    0x00000b0: 190a b600 66b8 0085 3a17 3a10 1910 1917
+    0x00000c0: 5919 0a5f 190b 0410 0cb6 0176 3a0b 57c6
+    0x00000d0: 004b 190d 190e bb03 0319 0ab6 0066 5c19
+    0x00000e0: 0f19 1419 1019 175e 585f c001 a85f 5e58
+    0x00000f0: 190a b600 a7c0 0052 b703 065e 585f c001
+    0x0000100: ad5f 5e58 190a 190c 3a15 1915 b901 b106
+    0x0000110: 0059 b401 4f5f b401 5058 190a 190b 04b6
+    0x0000120: 017f 2a2b 5f59 b401 2a5b 57b4 0128 b800
+    0x0000130: 852c 2d5d 58b8 0085 5919 0a5f 190b 0510
+    0x0000140: 0cb6 0176 3a0b 57a5 0170 2a2b 5f59 b401
+    0x0000150: 345b 57b4 0132 b800 852c 2d19 0a19 0c3a
+    0x0000160: 1519 15b6 030a 59b4 014f 5fb4 0150 5919
+    0x0000170: 0a5f 190b 0710 0cb6 0176 3a0b 579a 013a
+    0x0000180: 190d 190e bb01 a619 0ab6 0066 5c19 0f19
+    0x0000190: 142a 2b5f 59b4 011f 5b57 b401 1db8 0085
+    0x00001a0: 5e58 5fc0 01a8 5f5e 5819 0ab6 00a7 c000
+    0x00001b0: 52b7 030d 5e58 5fc0 01ad 5f5e 5819 0a19
+    0x00001c0: 0c3a 1519 15b9 01b1 0600 59b4 014f 5fb4
+    0x00001d0: 0150 58b2 01ba b201 bd2a 2b5f 59b4 0163
+    0x00001e0: 5b57 b401 61b8 0085 5d58 b800 8559 190a
+    0x00001f0: 5f19 0b08 100c b601 763a 0b57 a600 0cb2
+    0x0000200: 01b4 b201 b7a7 0012 2a2b 5f59 b401 635b
+    0x0000210: 57b4 0161 b800 8519 0a19 0b08 b601 7f19
+    0x0000220: 0a19 0b10 06b6 017f 190a b600 66b8 0085
+    0x0000230: 3a1b 3a11 190d 190e bb01 bf19 0ab6 0066
+    0x0000240: 5c19 0f19 142a 2b5f 59b4 011f 5b57 b401
+    0x0000250: 1db8 0085 1911 191b 190a b600 66b8 0085
+    0x0000260: 3a1c 3a18 190a b600 66b8 0085 3a1d 3a19
+    0x0000270: 190a b600 66b8 0085 3a1e 3a1a 191a 191e
+    0x0000280: 5fc0 01a8 5f19 1919 1d19 1819 1c19 0ab6
+    0x0000290: 00a7 c000 52b7 01c2 5e58 5fc0 01ad 5f5e
+    0x00002a0: 5819 0a19 0c3a 1519 15b9 01b1 0600 59b4
+    0x00002b0: 014f 5fb4 0150 5819 0a19 0b05 b601 7f19
+    0x00002c0: 0a19 0b06 b601 7f19 0a19 0b07 b601 7f19
+    0x00002d0: 1219 1357 c3a7 0027 190a b600 6619 1219
+    0x00002e0: 1357 c319 0ab6 0066 b800 8519 0a19 0bb6
+    0x00002f0: 01d5 190a b600 66b8 0085 57bf 190d 190e
+    0x0000300: 5fc0 01ad 5f19 0a19 0c3a 1519 15b9 0310
+    0x0000310: 0400 59b4 014f 5fb4 0150 5919 0a5f 190b
+    0x0000320: 1007 100c b601 763a 0b57 9a00 aa2a 2b5f
+    0x0000330: 59b4 0134 5b57 b401 32b8 0085 2c2d 2a2b
+    0x0000340: 190d 190e 1904 1905 5e58 5fc0 01ad 5f5e
+    0x0000350: 5819 0a19 0701 013a 153a 163a 1f19 1f19
+    0x0000360: 1619 15b6 01cd 59b4 0072 c001 cf5f b400
+    0x0000370: 7819 0ab6 0314 a700 5e19 0ab6 0066 190a
+    0x0000380: b600 66b8 0085 3a0e 3a0d 2a2b 190a 1907
+    0x0000390: 013a 153a 1619 1619 15b6 0318 59b4 0072
+    0x00003a0: c003 1a5f b400 782c 2d19 0a19 0701 3a15
+    0x00003b0: 3a16 1916 1915 b603 1d59 b400 72c0 0074
+    0x00003c0: 5fb4 0078 190d 190e 5fc0 009e 5f19 0ab9
+    0x00003d0: 0320 0700 190a 190b 1007 b601 7f01 190a
+    0x00003e0: b600 6619 0ab6 0066 b800 8519 0a19 0bb6
+    0x00003f0: 01d5 1907 5fb5 0078 1907 5fb5 0072 1907
+    0x0000400: 190a 190b b601 d519 0ab6 0096 b019 0a19
+    0x0000410: 0bb6 01d5 190a b600 96bf               
+  Exception Handler Table:
+    bci [86, 725] => handler: 728
+    bci [728, 739] => handler: 728
+    bci [24, 886] => handler: 889
+    bci [24, 1037] => handler: 1037
+  Stackmap Table:
+    full_frame(@282,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#412],Object[#129],Object[#415],Object[#429],Top,Object[#14],Object[#129],Object[#129],Top,Top,Object[#129]},{})
+    same_frame_extended(@520)
+    full_frame(@535,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#412],Object[#129],Object[#415],Object[#429],Top,Object[#14],Object[#129],Object[#129],Top,Top,Object[#129]},{Object[#350],Object[#129]})
+    full_frame(@695,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#412],Object[#129],Object[#415],Object[#429],Top,Object[#14],Object[#129],Object[#129],Top,Top,Object[#129],Object[#4],Object[#4],Object[#4],Top,Object[#129],Object[#129],Object[#129]},{})
+    full_frame(@728,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#412],Object[#129],Top,Top,Top,Object[#14],Object[#129],Top,Top,Top,Top,Object[#4],Object[#4],Object[#4],Top,Object[#129],Object[#129],Object[#129]},{Object[#158]})
+    full_frame(@764,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#412],Object[#129],Object[#415],Object[#429],Top,Object[#14],Object[#129],Object[#129],Top,Top,Object[#129],Object[#4],Object[#4],Object[#4],Top,Object[#129],Object[#129],Object[#129]},{})
+    full_frame(@889,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#4],Object[#4],Top,Object[#129],Object[#129],Object[#129]},{Object[#193]})
+    full_frame(@980,{Object[#2],Object[#129],Object[#293],Object[#129],Object[#124],Object[#129],Object[#88],Object[#93],Top,Top,Object[#82],Object[#379],Object[#190],Object[#4],Object[#129],Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#4],Object[#4],Object[#4],Top,Object[#129],Object[#129],Object[#129]},{})
+    full_frame(@1037,{Top,Top,Top,Top,Top,Top,Top,Top,Top,Top,Object[#82],Object[#379]},{Object[#158]})
+
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java)
+	at java.lang.Throwable.fillInStackTrace$$PHOSPHORTAGGED(Throwable.java:784)
+	at java.lang.Throwable.<init>(Throwable.java:266)
+	at java.lang.Error.<init>(Error.java:70)
+	at java.lang.LinkageError.<init>(LinkageError.java:55)
+	at java.lang.VerifyError.<init>(VerifyError.java:53)
+	at java.lang.VerifyError.<init>(VerifyError.java)
+	at org.apache.maven.cli.MavenCli.container$$PHOSPHORTAGGED(MavenCli.java:636)
+	at org.apache.maven.cli.MavenCli.doMain$$PHOSPHORTAGGED(MavenCli.java:282)
+	at org.apache.maven.cli.MavenCli.main$$PHOSPHORTAGGED(MavenCli.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke$$PHOSPHORTAGGED(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:0)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke$$PHOSPHORTAGGED(DelegatingMethodAccessorImpl.java:43)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:0)
+	at java.lang.reflect.Method.invoke$$PHOSPHORTAGGED(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced$$PHOSPHORTAGGED(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch$$PHOSPHORTAGGED(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode$$PHOSPHORTAGGED(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main$$PHOSPHORTAGGED(Launcher.java:347)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java)
