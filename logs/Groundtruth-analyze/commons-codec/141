@@ -1,0 +1,39 @@
+    public void testExecuteAsyncWithProcessDestroyer() throws Exception {
+
+      CommandLine cl = new CommandLine(foreverTestScript);
+      MockExecuteResultHandler handler = new MockExecuteResultHandler();
+      ShutdownHookProcessDestroyer processDestroyer = new ShutdownHookProcessDestroyer();
+      ExecuteWatchdog watchdog = new ExecuteWatchdog(Integer.MAX_VALUE);
+
+      assertTrue(exec.getProcessDestroyer() == null);
+      assertTrue(processDestroyer.size() == 0);
+      assertTrue(processDestroyer.isAddedAsShutdownHook() == false);
+
+      exec.setWatchdog(watchdog);
+      exec.setProcessDestroyer(processDestroyer);
+      exec.execute(cl, handler);
+
+      // wait for script to run
+      Thread.sleep(2000);
+      assertNotNull(exec.getProcessDestroyer());
+      assertTrue(processDestroyer.size() == 1);
+      assertTrue(processDestroyer.isAddedAsShutdownHook() == true);
+
+      // teminate it and the process destroyer is detached
+      watchdog.destroyProcess();
+      assertTrue(watchdog.killedProcess());
+      Thread.sleep(100);
+      assertTrue(processDestroyer.size() == 0);
+      assertTrue(processDestroyer.isAddedAsShutdownHook() == false);
+    }
+
+
+
+  <testcase classname="org.apache.commons.exec.DefaultExecutorTest" name="testExecuteAsyncWithProcessDestroyer" time="2.106">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.apache.commons.exec.DefaultExecutorTest.testExecuteAsyncWithProcessDestroyer(DefaultExecutorTest.java:324)
+</failure>
+  </testcase>

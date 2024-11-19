@@ -38,9 +38,10 @@ def read_flakeflagger():
 def flakeflagger_flaky_tests():
     path = './test_results.csv'
     df = pd.read_csv(path)
-    flaky_tests = df[["Project","Test"]].loc[df["IsFlaky"]==1]
+    flaky_tests = df[["Project","Test", "FirstFailingRunID"]].loc[df["IsFlaky"]==1]
     flaky_tests = flaky_tests.rename(columns={'Project':'Project_Name','Test':'testname'})
     flaky_tests["Project_Hash"] = flaky_tests['Project_Name'].apply(lambda x:flakeflagger_project_to_sha[x])
+    flaky_tests.to_csv('./flakeflagger_flaky.csv')
     print(flaky_tests)
 
 if __name__ == "__main__":
