@@ -44,6 +44,9 @@ def flakeflagger_flaky_tests():
     flaky_tests.to_csv('./flakeflagger_flaky.csv')
     print(flaky_tests)
 
+
+source_code_base = r"C:\Users\yhcro\Documents\GitHub\source-code-base"
+
 if __name__ == "__main__":
     # read_idoft()
     read_flakeflagger()
