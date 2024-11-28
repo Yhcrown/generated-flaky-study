@@ -1181,8 +1181,14 @@ def test_flakeflagger():
     print(len(ff_flaky_tests))
     print('true positive:',len(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)),'\n--------------------\n', sorted(ff_flaky_tests.intersection(tracker_flaky_tests_except_randoop)))
     print('false positive:?', len(tracker_flaky_tests_except_randoop-ff_flaky_tests),'\n--------------------\n',sorted(tracker_flaky_tests_except_randoop-ff_flaky_tests))
-   
 
+
+    with open("/Users/yhcrown/Documents/GitHub/generated-flaky-study/assertion_positive.txt", "r", encoding="utf-8") as file:
+        content = file.read().strip()  # 读取并去除首尾空格
+        assertion_positive = eval(content)
+    print("assertion count:", len(assertion_positive))
+    print("true positive:", len(tracker_flaky_tests_except_randoop.intersection(assertion_positive)))
+    print("false positive:", len(tracker_flaky_tests_except_randoop - assertion_positive))
 if __name__ == '__main__':
     os.environ['JAVA_HOME'] = JAVA_HOME
     os.environ['MAVEN_HOME'] = MVN_LOC

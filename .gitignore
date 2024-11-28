@@ -29,3 +29,5 @@ replay_pid*
 
 
 flakeflagger_failing_log/flakeflagger_assertion_failing_log
+flakeflagger_input_data/
+flakeflagger_failing_log/failing-test-reports-apache-hbase.tgz

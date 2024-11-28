@@ -3,9 +3,17 @@ import shutil
 import tarfile
 import xml.etree.ElementTree as ET
 import re
+from collections import defaultdict
 
-base_directory = r".\flakeflagger_failing_log"
-flakeflagger_input_dir = r".\f"
+
+base_directory = r"./flakeflagger_failing_log/"
+flakeflagger_input_dir = r"./flakeflagger_input_data/original_tests/"
+
+already_annotated = set()
+source_code_base = "/Users/yhcrown/Documents/flaky_java_projects_ff/"
+assertion_positive = set()
+
+test_messages = defaultdict(set)
 
 def extract_and_process_tgz(directory):
     """
@@ -36,7 +44,7 @@ def process_xml(xml_file, xml_path):
     """
     处理 XML 文件
     """
-    base_log_file = base_directory + './flakeflagger_assertion_failing_log/'
+    base_log_file = base_directory + '/flakeflagger_assertion_failing_log/'
     try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
@@ -56,9 +64,11 @@ def process_xml(xml_file, xml_path):
                     if not os.path.exists(log_dir):
                         os.makedirs(log_dir)
                     log_file = log_dir + "/" + xml_path.split("/")[-1]
-                    # print(xml_path)
+                    project = xml_path.split('/')[1]
+                    assertion_positive.add(project+'#'+classname+'#' + test_name)
+
                     simple_class_name = classname.split(".")[-1]
-                    process_error_log(failure.text, simple_class_name, None,xml_path)
+                    process_error_log(failure.text, simple_class_name, project, xml_path,message, classname+'-'+test_name)
                     with open(log_file, "w+") as f:
                         f.write(f"AssertionError in test: {test_name}, Class: {classname}, Message: {message} \n")
                         f.write(f"{failure.text}")
@@ -67,9 +77,10 @@ def process_xml(xml_file, xml_path):
         print(f"Failed to parse XML: {xml_path}, Error: {e}")
 
 
-already_annotated = {}
 
-def process_error_log(error_log, classname, source_code_base, path):
+
+
+def process_error_log(error_log, classname, project, path, message, test):
     """
     从错误日志中提取行号和方法名，并标注源码
     """
@@ -81,6 +92,22 @@ def process_error_log(error_log, classname, source_code_base, path):
         # file_name = match.group(3)
         line_number = int(match.group(3))
         # print(full_class, method_name, line_number)
+        source_dir2 = None
+        for dir, subpath, files in os.walk(source_code_base +"/"+ project):
+            for file in files:
+                if file == classname+".java":
+                    source_dir = dir+"/"+file
+        for dir, subpath, files in os.walk(flakeflagger_input_dir +"/"+ project + '/flakyMethods/'):
+            for file in files:
+                if file == test+".java":
+                    source_dir2 = dir+file
+        if source_dir2 is None:
+            return
+
+        test_messages[project+'#'+ classname+'#'+ str(line_number)].add(message)
+        if not (source_dir2+'#'+ str(line_number) + '#' + message in already_annotated):
+            annotate_source_file(source_dir, source_dir2, line_number, project,classname)
+            already_annotated.add(source_dir2+'#'+ str(line_number)+ '#' + message )
     else:
         print(f"error parsing{path}")
     # 查找源码文件
@@ -89,27 +116,44 @@ def process_error_log(error_log, classname, source_code_base, path):
     #     print(f"Found issue in {java_file_path}:{line_number}, Method: {method_name}")
     #     annotate_source_file(java_file_path, line_number, method_name)
 
-def annotate_source_file(file_path, line_number, message):
+def annotate_source_file(file_path, test_path, line_number, project,classname):
     """
     在源码文件中标注出问题行
     """
+    write_path = base_directory + '/assertion_error_tests/'+ project + '/'
+    if not os.path.exists(write_path):
+        os.makedirs(write_path)
+    write_path = write_path + test_path.split('/')[-1]
+    shutil.copy(test_path, write_path)
     try:
         with open(file_path, 'r') as file:
             lines = file.readlines()
 
+        with open(write_path, 'r') as test:
+            test_lines = test.readlines()
         # 插入标注信息
         if 0 < line_number <= len(lines):
-            lines[line_number - 1] = f"// --> : AssertionError occurred here: {message}  " + lines[line_number - 1]
+            original_line = lines[line_number - 1]
+            new_line = f"// --> Flaky assertion: possible message: "
+            for message in test_messages[project+'#'+ classname+'#'+ str(line_number)]:
+                new_line += f"{message}; "
+            new_line += lines[line_number - 1]
 
+            for i in range(0,len(test_lines)):
+                if normalize_string(original_line) in normalize_string(test_lines[i]) :
+                    test_lines[i] = new_line
         # 写回文件
-        with open(file_path, 'w') as file:
-            file.writelines(lines)
-        print(f"Annotated {file_path}:{line_number}")
+        #     write_path = base_directory+'/assertion_original_tests/'
+            with open(write_path, 'w+') as test:
+                test.writelines(test_lines)
+        print(f"Annotated {write_path}:{line_number}")
     except Exception as e:
         print(f"Failed to annotate {file_path}:{line_number}, Error: {e}")
 
-
+def normalize_string(s):
+    return re.sub(r"\s+", "", s)
 
 if __name__ == "__main__":
     # base_directory = r"C:\Users\yhcro\Documents\GitHub\generated-flaky-study\flakeflagger_failing_log"
     extract_and_process_tgz(base_directory)
+    print(assertion_positive)
