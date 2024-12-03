@@ -16,6 +16,9 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
 PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects_ff/"
 # PROJECTS_DIRECTORY = "/workspace/benchmarks/projects/"
+PROJECTS_DIRECTORY = "C:\\Users\\yhcro\\Documents\\FFprojects\\"
+
+
 CURRENT_DIRECTORY = os.getcwd()
 RANDOOP_GENERATED_DIRECTORY = "/Users/yhcrown/Documents/GitHub/generated-flaky-study/randoop_tests/"
 # RANDOOP_GENERATED_DIRECTORY = "/workspace/benchmarks/randoop_tests/"
@@ -1151,6 +1154,7 @@ def test_flakeflagger():
         target_dir = PROJECTS_DIRECTORY + project_name
         if not os.path.exists(target_dir):
             download_project(project, target_dir)
+            continue
             # if not os.path.exists(target_dir + '/build.log'):
             code = build_project(target_dir)
             if code != 0:
@@ -1201,8 +1205,8 @@ if __name__ == '__main__':
     # # print(os.environ['PATH'])
 
     # # os.system('mvn -v')
-    subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
-                   stderr=subprocess.STDOUT, timeout=90)
+    # subprocess.run(MVN_LOC+ " -v", executable='/bin/zsh', shell=True,
+    #                stderr=subprocess.STDOUT, timeout=90)
     # test_idoft()
     test_flakeflagger()
     

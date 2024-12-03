@@ -1,0 +1,77 @@
+﻿Project,Test,FlakyType,AssertionType,Comment,Fail line,,
+activiti-activiti,org.activiti.engine.test.jobexecutor.AsyncExecutorTest-testAsyncExecutorDisabledOnOneEngine.java,Async Wait,Data Consistency Assertions,Keyword function:waitForJobeExecutation,"// --> Flaky assertion: possible message: expected:<1> but was:<2>;       Assert.assertEquals(1, getAsyncExecutorJobCount(secondProcessEngine));
+",,
+activiti-activiti,org.activiti.engine.test.jobexecutor.AsyncExecutorTest-testAsyncFailingScript.java,Async Wait,Data Consistency Assertions,same as 2,"// --> Flaky assertion: possible message: expected:<3> but was:<4>;       Assert.assertEquals(3, getAsyncExecutorJobCount(processEngine));
+  ",,
+activiti-activiti,org.activiti.engine.test.jobexecutor.AsyncExecutorTest-testRegularAsyncExecution.java,Async Wait,Data Consistency Assertions,same as 2,"// --> Flaky assertion: possible message: expected:<1> but was:<0>;       Assert.assertEquals(1, processEngine.getTaskService().createTaskQuery().taskName(""The Task"").count());
+",,
+Alluxio-alluxio,tachyon.client.RemoteBlockInStreamTest-readTest4.java,Concurrency/Resources,State Verification Assertions,"Don't know the root reason, hide so deep. Guess that may due to this:     ret.inMemory = isFullyInMemory();",// --> Flaky assertion: possible message: ;       Assert.assertTrue(file.isInMemory());,,
+Alluxio-alluxio,tachyon.client.TachyonFSTest-deleteFileTest.java,Concurrency,Data Consistency Assertions,"state is not updated in time, there may be latent due to resources competation (high concurrency case)","// --> Flaky assertion: possible message: expected:<8000> but was:<6000>; expected:<2000> but was:<0>; expected:<10000> but was:<8000>;       Assert.assertEquals(writeBytes * (k + 1), workers.get(0).getUsedBytes());
+  ",,
+Alluxio-alluxio,tachyon.client.TachyonFSTest-lockBlockTest1.java,Concurrency,State Verification Assertions,Same as 5,// --> Flaky assertion: possible message: ;     Assert.assertFalse(tFile.isInMemory());,,
+Alluxio-alluxio,tachyon.client.TachyonFSTest-lockBlockTest3.java,Concurrency,State Verification Assertions,Same as 6,,,
+Alluxio-alluxio,tachyon.client.TachyonFSTest-unlockBlockTest1.java,Concurrency,State Verification Assertions,Same as 7,,,
+Alluxio-alluxio,tachyon.client.TachyonFSTest-unlockBlockTest3.java,Concurrency,State Verification Assertions,Same as 8,,,
+Alluxio-alluxio,tachyon.WorkerServiceHandlerTest-evictionTest.java,Concurrency,State Verification Assertions,Same as 9,,,
+apache-ambari,org.apache.ambari.server.agent.TestActionQueue-testConcurrentOperations.java,Concurrency/Async?,Data Consistency Assertions,"Keyword: Thread.sleep():Do not use lock, only relies on thread.sleep to ensure the complete of threads","  assertEquals(opsDequeued, opsEnqueued); lots of possible output",,
+apache-ambari,org.apache.ambari.server.agent.TestHeartbeatMonitor-testHeartbeatStateCommandsEnqueueing.java,Async Wait,State Verification Assertions,"Keyword: Thread.sleep():the shutdown process of monitor is Asynchronous,","  hm.start();
+  Thread.sleep(3 * heartbeatMonitorWakeupIntervalMS);
+  hm.shutdown();
+  hm.join(2 * heartbeatMonitorWakeupIntervalMS);
+  if (hm.isAlive()) {
+// --> Flaky assertion: possible message: HeartbeatMonitor should be already stopped;       fail(""HeartbeatMonitor should be already stopped"");
+  }",,
+apache-hbase,org.apache.hadoop.hbase.client.TestAdmin-testCreateBadTables.java,Concurrency,Data Consistency Assertions,"Tests oracle: Multiple threads try create table and this test wants to ensure only one can success, it's flaky when no one create successfully. The guess is that there is a lock, but the atomicity is not guaranteed","// --> Flaky assertion: possible message: expected:<1> but was:<0>;     assertEquals(1, successes.get());",,
+apache-hbase,org.apache.hadoop.hbase.client.TestScannerTimeout-test2481.java,Async Wait,Exception Assertions,"Keyword: Thread.sleep(), write and get in different thread"," catch (  ScannerTimeoutException e) {
+    LOG.info(""Got the timeout "" + e.getMessage(),e);
+    return;
+  }
+// --> Flaky assertion: possible message: We should be timing out;     fail(""We should be timing out"");",,
+apache-hbase,org.apache.hadoop.hbase.regionserver.TestHRegion-testWritesWhileGetting.java,Concurrency,Data Consistency Assertions,,,,
+apache-httpcore,org.apache.http.impl.nio.reactor.TestDefaultIOReactors-testGracefulShutdown,Network,State Verification Assertions," SessionRequest sessionRequest=this.client.openConnection(new InetSocketAddress(""localhost"",serverAddress.getPort()),queue);",// --> Flaky assertion: possible message: ;             Assert.assertNotNull(sessionRequest.getSession());,true positive,
+apache-httpcore,org.apache.http.nio.protocol.TestAsyncNHttpHandlers-testDelayedHttpException.java,Network,State Verification Assertions,same as 17,// --> Flaky assertion: possible message: ;             Assert.assertNotNull(sessionRequest.getSession());,true positive,
+apache-httpcore,org.apache.http.nio.protocol.TestAsyncNHttpHandlers-testHttpException,Network,State Verification Assertions,Same,,true positive,
+apache-httpcore,org.apache.http.nio.protocol.TestAsyncNHttpHandlers-testHttpPostWithNoEntities.java,Network,State Verification Assertions,Same,,true positive,
+apache-httpcore,org.apache.http.nio.protocol.TestAsyncNHttpHandlers-testNoRequestHandler.java,Network,State Verification Assertions,Same,,true positive,
+apache-httpcore,org.apache.http.nio.protocol.TestAsyncNHttpHandlers-testNoServiceHandler.java,Network,State Verification Assertions,Same,,true positive,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,all these 16 are true positive
+apache-httpcore,,,,"Some tests Executed a private method within the test, and the flaky assertion is located in this private method, hence the corresponding test was not directly detected.",,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-httpcore,,,,,,,
+apache-incubator-dubbo,org.apache.dubbo.remoting.transport.netty.ThreadNameTest-testThreadName,Async Wait,State Verification Assertions,"@Test public void testThreadName() throws Exception {
+  client.send(""hello"");
+  Thread.sleep(1000L * 5L);
+  if (!serverHandler.isSuccess() || !clientHandler.isSuccess()) {
+// --> Flaky assertion: possible message: ;             Assert.fail();
+  }
+}
+  we dont have much info about this test, they relies on the communitcation of client and server which are static field. Also, this assertion do not contain any information, we can not handle that.",,,
+apache-incubator-dubbo,org.apache.dubbo.rpc.cluster.support.AbstractClusterInvokerTest-testBindingAttachment.java,"Not sure, maybe OD",,"        // setup attachment
+        RpcContext.getContext().setAttachment(attachKey, attachValue);
+        Map<String, String> attachments = RpcContext.getContext().getAttachments();
+        Assert.assertTrue(""set attachment failed!"", attachments != null && attachments.size() == 1);
+Context is static field.","// --> Flaky assertion: possible message: set attachment failed!;         Assert.assertTrue(""set attachment failed!"", attachments != null && attachments.size() == 1);",,
+apache-incubator-dubbo,org.apache.dubbo.rpc.cluster.support.AbstractClusterInvokerTest-testSelect_multiInvokers.java,Random,Boundary Condition Assertions,"  int min=1000, max=5000;
+  Double d=(Math.random() * (max - min + 1) + min);
+  int runs=d.intValue();
+// --> Flaky assertion: possible message: ;         Assert.assertTrue(runs > min);",!! Miss a API: Math.random(),,
+doanduyhai-Achilles,info.archinnov.achilles.test.integration.tests.ClusteredEntityIT-should_persist_with_ttl,Time?,State Verification Assertions,RandomUtils.nextInt()  also missed,"  entity=manager.persist(entity,OptionsBuilder.withTtl(1));
+// --> Flaky assertion: possible message: expecting actual not to be null;   assertThat(manager.find(ClusteredEntity.class, compoundKey)).isNotNull();
+ ",,
+doanduyhai-Achilles,info.archinnov.achilles.test.integration.tests.ClusteredEntityIT-should_update_with_ttl,Time?,State Verification Assertions,"Same reason, may be due to the time-ish api, need to look deeper",,,
+elasticjob-elastic-job-lite,io.elasticjob.lite.event.rdb.JobEventRdbSearchTest-assertFindJobExecutionEventsWithTime,Time ,Data Consistency Assertions,Key : new Date(),,,
+elasticjob-elastic-job-lite,io.elasticjob.lite.event.rdb.JobEventRdbSearchTest-assertFindJobStatusTraceEventsWithTime.java,Time,Data Consistency Assertions,Same,,,
+elasticjob-elastic-job-lite,io.elasticjob.lite.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest-assertGetRegistryCenterTime,Async Wait？,,"@Test public void assertGetRegistryCenterTime(){
+  long regCenterTime=zkRegCenter.getRegistryCenterTime(""/_systemTime/current"");
+  assertTrue(regCenterTime <= System.currentTimeMillis());
+  long updatedRegCenterTime=zkRegCenter.getRegistryCenterTime(""/_systemTime/current"");
+  System.out.println(regCenterTime + "","" + updatedRegCenterTime);
+// --> Flaky assertion: possible message: ;         assertTrue(regCenterTime < updatedRegCenterTime);
+}
+  updated can be less than reg? why? need to look deeper.",,,
