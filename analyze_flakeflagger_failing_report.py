@@ -44,7 +44,7 @@ def process_xml(xml_file, xml_path):
     """
     处理 XML 文件
     """
-    base_log_file = base_directory + '/flakeflagger_assertion_failing_log/'
+    base_log_file = base_directory + '/flakeflagger_socket_failing_log/'
     try:
         tree = ET.parse(xml_file)
         root = tree.getroot()
@@ -54,12 +54,13 @@ def process_xml(xml_file, xml_path):
             classname = testcase.attrib.get("classname")
 
             # 查找失败的测试信息
-            failure = testcase.find("failure")
+            failure = testcase.find("error")
             if failure is not None:
                 message = failure.attrib.get("message", "")
                 # print(message)
                 # 检查错误是否为 AssertionError
-                if "AssertionError" in failure.text:
+                if "Socket" in failure.text:
+                # if "AssertionError" in failure.text:
                     log_dir = base_log_file + "/".join(xml_path.replace("failingLogs", "").split("/")[:-1])
                     if not os.path.exists(log_dir):
                         os.makedirs(log_dir)
@@ -68,9 +69,10 @@ def process_xml(xml_file, xml_path):
                     assertion_positive.add(project+'#'+classname+'#' + test_name)
 
                     simple_class_name = classname.split(".")[-1]
-                    process_error_log(failure.text, simple_class_name, project, xml_path,message, classname+'-'+test_name)
+                    # process_error_log(failure.text, simple_class_name, project, xml_path,message, classname+'-'+test_name)
                     with open(log_file, "w+") as f:
-                        f.write(f"AssertionError in test: {test_name}, Class: {classname}, Message: {message} \n")
+                        # f.write(f"AssertionError in test: {test_name}, Class: {classname}, Message: {message} \n")
+                        f.write(f"SocketError in test: {test_name}, Class: {classname}, Message: {message} \n")
                         f.write(f"{failure.text}")
                     # 如果需要记录，可以写入文件或保存到数据结构中
     except ET.ParseError as e:
