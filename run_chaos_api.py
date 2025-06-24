@@ -175,7 +175,7 @@ def process_xml(xml_file, xml_path):
                     #     # f.write(f"AssertionError in test: {test_name}, Class: {classname}, Message: {message} \n")
                     #     f.write(f"SocketError in test: {test_name}, Class: {classname}, Message: {message} \n")
                     #     f.write(f"{failure.text}")
-                    # 如果需要记录，可以写入文件或保存到数据结构中
+
     except ET.ParseError as e:
         print(f"Failed to parse XML: {xml_path}, Error: {e}")
 
