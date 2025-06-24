@@ -810,3 +810,5 @@
 21669,wro4j-wro4j,ro.isdc.wro.model.resource.locator.TestUrlUriLocator#testValidUrl,3783,7e3801e19fb43183c59607663ebd53c27a95cf77
 21932,zxing-zxing,com.google.zxing.aztec.encoder.EncoderTest#testAztecWriter,120,59ea393a08e568d0c662707bccf56895acfb02cf
 22008,zxing-zxing,com.google.zxing.pdf417.decoder.ec.ErrorCorrectionTestCase#testTooManyErrors,30,59ea393a08e568d0c662707bccf56895acfb02cf
+405,activiti-activiti,org.activiti.engine.test.api.repository.ProcessDefinitionSuspensionTest#testDelayedSuspendMultipleProcessDefinitionsByKey,9496,b11f757a
+398,activiti-activiti,org.activiti.engine.test.api.repository.ProcessDefinitionSuspensionTest#testSuspendProcessInstancesDuringProcessDefinitionSuspend,2131,b11f757a

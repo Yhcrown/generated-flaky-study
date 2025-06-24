@@ -28,6 +28,15 @@ hs_err_pid*
 replay_pid*
 
 
-flakeflagger_failing_log/flakeflagger_assertion_failing_log
+flakeflagger_failing_log/
 flakeflagger_input_data/
-flakeflagger_failing_log/failing-test-reports-apache-hbase.tgz
+iDFlakies/
+chaosapi-experiments-newproject/
+chaosapi-experiments-v9/
+chaosapi-experiments-v10/
+flakeflagger_original_test_report/
+chaosapi-experiments/
+failures_for_analyze/
+logs/
+temp-project-logs/
+idflakies-flakeflagger/

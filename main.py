@@ -16,7 +16,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.DEBUG)
 
 PROJECTS_DIRECTORY = "/Users/yhcrown/Documents/flaky_java_projects_ff/"
 # PROJECTS_DIRECTORY = "/workspace/benchmarks/projects/"
-PROJECTS_DIRECTORY = "C:\\Users\\yhcro\\Documents\\FFprojects\\"
+# PROJECTS_DIRECTORY = "C:\\Users\\yhcro\\Documents\\FFprojects\\"
 
 
 CURRENT_DIRECTORY = os.getcwd()
@@ -43,7 +43,7 @@ SUMMARY_LOG = WORKSPACE + '/logs/'
 MVN_LOC = "/Users/yhcrown/Documents/tools/apache-maven-3.6.3/bin/mvn"
 # MVN_LOC = "/workspace/apache-maven-3.8.8/bin/mvn"
 
-JAVA_HOME = "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home"
+JAVA_HOME = "/Library/Java/JavaVirtualMachines/jdk8u442-b06/Contents/Home/"
 # JAVA_HOME = "/shared-data/jdk8u422-b05/"
 
 INSTRUMENTED_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-inst/"
@@ -60,6 +60,9 @@ ARRAY_INDEX_JAVA_HOME = "/Users/yhcrown/Library/Java/JavaVirtualMachines/java8-i
 IDOFT_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/idoft_normal/"
 
 FLAKEFLAGGER_TRACKER_GENERATED_DIRECTORY = SUMMARY_LOG + "/flakeflagger/"
+
+# NEW_PROJECT_DIR =
+
 generated_dataset_labeled_flaky_test = set()
 
 RERUN_TIMES = 10
@@ -431,15 +434,15 @@ def run_flaky_tracker_on_one_test(Test):
                 # os.path.dirname(flaky_tracker_log)
                 # print(flaky_tracker_log)
                 print(flaky_tracker_cmd)
-                if not os.path.exists(flaky_tracker_dir):
-                    os.makedirs(flaky_tracker_dir)
-                try:
-                    subprocess.run(flaky_tracker_cmd, shell=True,executable='/bin/zsh', stdout=open(flaky_tracker_log, 'w'),
-                                   stderr=subprocess.STDOUT,cwd = target_dir, timeout=300)
-                except subprocess.TimeoutExpired as e:
-                    with open(flaky_tracker_log, "a+") as f:
-                        f.write(str(e))
-                    print(Test['Project_Name'], e)
+                # if not os.path.exists(flaky_tracker_dir):
+                #     os.makedirs(flaky_tracker_dir)
+                # try:
+                #     subprocess.run(flaky_tracker_cmd, shell=True,executable='/bin/zsh', stdout=open(flaky_tracker_log, 'w'),
+                #                    stderr=subprocess.STDOUT,cwd = target_dir, timeout=300)
+                # except subprocess.TimeoutExpired as e:
+                #     with open(flaky_tracker_log, "a+") as f:
+                #         f.write(str(e))
+                #     print(Test['Project_Name'], e)
     os.environ['MAVEN_OPTS'] = ""
 
 

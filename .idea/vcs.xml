@@ -2,5 +2,14 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/TheAlgorithms_Java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/alibaba_arthas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/apache_dubbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/dbeaver_dbeaver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/eugenp_tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/google_guava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/iluwatar_java-design-patterns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/macrozheng_mall" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temp_repo/netty_netty" vcs="Git" />
   </component>
 </project>
