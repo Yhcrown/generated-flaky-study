@@ -10,8 +10,6 @@ import  csv
 import pickle
 import json
 import re
-import signal
-
 
 # PROJECTS_DIRECTORY = "C:\\Users\\yhcro\\Documents\\FFprojects\\"
 flakeflagger_project_to_sha = {}
@@ -19,7 +17,7 @@ flakeflagger_project_to_sha = {}
 # JAVA_HOME = "C:\\Users\\yhcro\\IdeaProjects\\FlakyTracker\\OpenJDK8U-jdk_x64_windows_hotspot_8u402b06\\jdk8u402-b06\\jre\\"
 
 # CHAOS_API_DIR = r"C:\Users\yhcro\Documents\Code\ChaosAPI\target\ChaosAPI-1.0-SNAPSHOT.jar"
-CHAOS_API_DIR = "/Users/yhcrown/Documents/GitHub/ChaosAPI/target/ChaosAPI-1.0-SNAPSHOT.jar"
+# CHAOS_API_DIR = "/Users/yhcrown/Documents/GitHub/ChaosAPI/target/ChaosAPI-1.0-SNAPSHOT.jar"
 
 WORKSPACE= os.getcwd()
 SUMMARY_LOG = WORKSPACE + '/logs/'
@@ -240,28 +238,11 @@ def build_project(target_dir):
 def run_command(command, cwd):
     """Run a shell command and return (returncode, stdout, stderr)."""
     try:
-            p = subprocess.Popen(
-                command,
-                cwd=cwd,
-                shell=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True,
-                start_new_session=True  # 创建新的进程组
-            )
-            stdout, stderr = p.communicate(timeout=900)
-            return p.returncode, stdout, stderr
-
-    except subprocess.TimeoutExpired as e:
-            # 杀掉整个进程组
-            os.killpg(os.getpgid(p.pid), signal.SIGKILL)
-            # 可选：获取已捕获的输出
-            out = str(e.stdout) or ''
-            err = str(e.stderr) or ''
-            return -1, out, f'TimeoutExpired: killed process group (including children). stderr captured: {err}'
-
+        result = subprocess.run(command, cwd=cwd, shell=True,
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=900)
+        return result.returncode, result.stdout, result.stderr
     except Exception as e:
-            return -1, '', str(e)
+        return -1, '', str(e)
 
 def run_chaosapi(target_dir, log_dir):
     cmd = MVN_LOC + f" test -DargLine=\"-javaagent:{CHAOS_API_DIR} \" -Dmaven.test.failure.ignore=true"
@@ -379,6 +360,7 @@ def get_test_failures(reports_dir, target_set):
                 project =  dir.replace(reports_dir,' ').split('/')[0].strip()
 
                 config_name = reports_dir.split('/')[-2]
+                config_name = config_name.replace("-flakeflagger","")
                 if 'config_' in reports_dir:
                     if config_name not in project_dict[project]:
                         project_dict[project][config_name] = set()
@@ -679,15 +661,15 @@ def main():
 
         # continue
 
-        if project_name == 'apache-commons-exec':
-            continue
+        # if project_name != 'apache-commons-exec':
+        #     continue
 
 
 
         for dir, subpath, files in os.walk(WORKSPACE+'/chaos_agent_configs/'):
             for file in files:
                 args = build_agent_args(dir+'/'+file)
-                report_dir = WORKSPACE + '/chaosapi-experiments/' + file + '/'
+                report_dir = WORKSPACE + '/chaosapi-experiments-newproject/' + file + '/'
                 if not os.path.exists(report_dir):
                     os.makedirs(report_dir)
                 # if project_name in ['joel-costigliola-assertj-core']:
@@ -790,12 +772,12 @@ def analyze_positive_result(write_dir):
         sum_flaky_nod_tp= 0
 
         sum_tp_without_zone = 0
-        for project, info in list(project_dict.items()):
+        for project, info in project_dict.items():
             for key, value in group_dict.items():
                 value['tests'] = set()
                 value['other_config_tests'] = set()
 
-            temp_group_sum = set()
+            temp_group_sum = set()  
             # tests_str = '; '.join(info['tests'])
             # fixed_keys = ['total_tests', 'failed_tests', 'chaos_failed_tests', 'flaky_tests','passed_tests']
             if project in ['square-okhttp', 'orbit-orbit','undertow-io-undertow', 'wildfly-wildfly', 'apache-incubator-dubbo']:
@@ -823,15 +805,22 @@ def analyze_positive_result(write_dir):
 
             for key, value in info.items():
                 key = key.replace("-flakeflagger","")
+
                 if key not in fixed_keys:
                     temp_sum = set()
                     temp_sum.update(info['failed_tests'])
+
+                    if project == 'kevinsawicki-http-request':
+                        value = set()
+
+                    value = value - (info['failed_tests'] - info['flaky_tests']) - info['od_tests']
+
                     for key2 , value2 in info.items():
                         key2 = key2.replace("-flakeflagger", "")
 
                         if key2 != key and key2 not in fixed_keys:
                             temp_sum.update(value2)
-                    row.append(str(len(value - info['failed_tests'])) + '(' + str(
+                    row.append(str(len(value )) + '(' + str(
                         len(value.intersection(info['flaky_tests'])- info['od_tests'] )) + ')')
                     # row.append(str(len(value - info['failed_tests']))  + '->' + str(len(value.intersection(info['flaky_tests']))) + '->' + str(len(value-temp_sum)) + '->' + str(len((value-temp_sum).intersection(info['flaky_tests']))))
                     if len((value-temp_sum).intersection(info['flaky_tests'])) > 0:
@@ -845,13 +834,12 @@ def analyze_positive_result(write_dir):
 
                     for group in group_list:
                         if key.split('-flakeflagger')[0] in group_dict[group]['configs']:
-                            group_dict[group]['tests'].update(value)
+                            group_dict[group]['tests'].update( value )
                         else:
                             group_dict[group]['other_config_tests'].update(value)
-            if project == 'perwendel_spark':
-                print('--')
             for group_name, group_info in group_dict.items():
-                row.append ( str(len (group_info['tests'])) + '(' + str(len (  group_info['tests'] .intersection(info['flaky_tests'])  )) + ')')
+                row.append(str(len(group_info['tests'])) + '(' + str(
+                    len(group_info['tests'].intersection(info['flaky_tests']))) + ')')
 
             writer.writerow(row)
 
@@ -899,22 +887,13 @@ if __name__ == '__main__':
     print(stdout)
 
 
-    newProject = False
-    # newProject = True
-    ff_project_dict_cache_file = WORKSPACE + '/ff-project-dict.pkl'
-    if newProject:
-        for dir ,subpath, files in os.walk(WORKSPACE + '/' + 'chaosapi-experiments-newproject'):
-            if 'chaoslog' in dir:
-                for file in files:
-                    project_dict[file.replace(".agentlog","")] = default_project_dict()
-                break
 
-    else:
-        if os.path.exists(ff_project_dict_cache_file):
+    ff_project_dict_cache_file = WORKSPACE + '/ff-project-dict.pkl'
+    if os.path.exists(ff_project_dict_cache_file):
             with open(ff_project_dict_cache_file , "rb") as f:
                 project_dict = pickle.load(f)
             print("load project_dict from cache")
-        else:
+    else:
             extract_and_process_tgz(base_directory)
             print('save project_dict into '+ff_project_dict_cache_file)
             with open(ff_project_dict_cache_file , "wb") as f:
@@ -922,16 +901,18 @@ if __name__ == '__main__':
     # print(flaky_fail_to_text)
 
     # for project in
-    main()
+    # main()
+
 
 
 
     temp_fails = set()
-    # get_test_failures(WORKSPACE + '/flakeflagger_original_test_report/', original_fails)
-    # project_dict['jknack-handlebars.java']['flaky_tests'] = {'com.github.jknack.handlebars.HumanizeHelperTest#naturalTime'}
+    get_test_failures(WORKSPACE + '/flakeflagger_original_test_report/', original_fails)
+    project_dict['jknack-handlebars.java']['flaky_tests'] = {'com.github.jknack.handlebars.HumanizeHelperTest#naturalTime'}
     easily_triggered_flaky_tests = set()
+    find_flaky_test_from_idflakies()
 
-    for dir, subpath, files in os.walk(WORKSPACE+'/chaosapi-experiments-newproject/'):
+    for dir, subpath, files in os.walk(WORKSPACE+'/chaosapi-experiments/'):
             for path in subpath:
                 # print(path)
                 if 'config_' in path:
@@ -952,6 +933,13 @@ if __name__ == '__main__':
     print("easily triggered flaky tests:",len(easily_triggered_flaky_tests), easily_triggered_flaky_tests)
     print("keep failed tests:", len(original_fails - easily_triggered_flaky_tests), original_fails - easily_triggered_flaky_tests)
 
+    find_flaky_test_from_idflakies()
+
+    project_dict['joel-costigliola-assertj-core']['od_tests'] = set()
+    project_dict['joel-costigliola-assertj-core']['config_only_random_min'] = set()
+
+    project_dict['kevinsawicki-http-request']['failed_tests'] = set()
+
 
     with open(WORKSPACE+'/project_dict.json', 'w', encoding='utf-8') as f:
         json.dump(project_dict, f,  default=custom_serializer, ensure_ascii=False, indent=4)
@@ -970,7 +958,7 @@ if __name__ == '__main__':
 
     print("3:",len(chaos_fails))
 
-    analyze_positive_result(WORKSPACE+'/logs/chaos_fail_summary-new.csv')
+    analyze_positive_result(WORKSPACE+'/logs/chaos_fail_summary.csv')
     print(len(original_fails))
     print(len(chaos_fails))
     print(len(ff_true_positive))
