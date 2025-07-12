@@ -721,10 +721,10 @@ def main():
 
 def analyze_positive_result(write_dir):
     random_group = {'config_only_random_fix', 'config_only_random_max', 'config_only_random_min'}
-    date_group = {'config_only_date_bk', 'config_only_fix_date', 'config_only_zone_fix'}
+    date_group = {'config_only_date_bk', 'config_only_fix_date', 'config_only_zone_fix', 'config_only_clock_relative'}
     sleep_group = {'config_only_sleep_decrease', 'config_only_sleep_increase', 'config_only_sleep_random'}
-    time_group = {'config_only_time_increment', 'config_only_time_same', 'config_only_time_round',
-                  'config_only_time_zero'}
+    time_group = {'config_only_time_increment', 'config_only_time_relative', 'config_only_time_round',
+                  'config_only_time_slow', 'config_only_time_speedup'}
     # zone_group = {'config_only_zone_fix'}
     socket_group = {'config_only_socket_0.1'}
     # clock_group = {'config_only_clock_plus'}
@@ -938,7 +938,7 @@ if __name__ == '__main__':
     project_dict['joel-costigliola-assertj-core']['od_tests'] = set()
     project_dict['joel-costigliola-assertj-core']['config_only_random_min'] = set()
 
-    project_dict['kevinsawicki-http-request']['failed_tests'] = set()
+    project_dict['kevinsawicki-http-request']['chaos_failed_tests'] = set()
 
 
     with open(WORKSPACE+'/project_dict.json', 'w', encoding='utf-8') as f:
